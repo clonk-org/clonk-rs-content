@@ -1,2 +1,2 @@
 DE:Projektil
-US:Projectil
+US:Projectile

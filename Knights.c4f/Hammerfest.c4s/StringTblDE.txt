@@ -1,3 +1,11 @@
 MsgScore=Punkte
 MsgLeft=Schattenklingen
 MsgRight=Mantisorden
+MsgNeedsRelaunch=%s benötigt einen Relaunch!
+MsgDefeated=%s wurde besiegt!
+MsgOneRelaunchLeft=1 Relaunch verbleibt für die Schattenklingen
+MsgRelaunchesLeft=%d Relaunches verbleiben für die Schattenklingen
+MsgOneRelaunchRight=1 Relaunch verbleibt für den Mantisorden
+MsgRelaunchesRight=%d Relaunches verbleiben für den Mantisorden
+MsgRightWins=Der Mantisorden siegt!!
+MsgLeftWins=Die Schattenklingen entscheiden den Kampf für sich!

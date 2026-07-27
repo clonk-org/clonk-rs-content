@@ -23,8 +23,8 @@ public func InitializePlayer(iPlr)
 protected func Activate(iPlr)
 {
   var ms=ObjectCall(FindObjectOwner(ACNT, iPlr), "GetTeam");
-  if (ms) ms=Format("Du hast ein Gemeinschaftskonto mit: %s",ms);
-  if (!ms) ms="Du hast kein Gemeinschaftskonto.";
+  if (ms) ms=Format("You have a team account with: %s",ms);
+  if (!ms) ms="You have no team account.";
   MessageWindow(ms, iPlr);
 }
 

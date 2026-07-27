@@ -3,3 +3,6 @@ IsBuilding=!
 RocketIsStillThere=!
 ocketBuildingInProcess=!
 NoRocketAvailable=!
+rocketStarts=A rocket from player
+rocketStarts2=Launching in
+seconds=seconds

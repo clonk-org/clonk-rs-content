@@ -1,6 +1,6 @@
 [DefCore]
 id=BASE
-Name=Basis
+Name=Base
 Category=1154
 MaxUserSelect=1
 Height=34

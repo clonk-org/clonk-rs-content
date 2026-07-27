@@ -71,10 +71,10 @@ protected func ProduceMenu(object pClonk, fShowAll) {
 	               ObjectCount2(Find_Container(this), Find_ID(ERTH)) >= UNIT_metal_earth_cost ||
 	               ObjectCount2(Find_Container(this), Find_ID(ASHS)) >= UNIT_metal_ashes_cost
 	) {
-		AddMenuItem("Metall", "ProduceMetal", METL, pClonk);
+		AddMenuItem("Metal", "ProduceMetal", METL, pClonk);
 	}
 	if(fShowAll || ObjectCount2(Find_ID(OILT), Find_Func("PipelineConnectedWith", this))) {
-		AddMenuItem("Plastik", "ProducePlastic", PSTC, pClonk);
+		AddMenuItem("Plastic", "ProducePlastic", PSTC, pClonk);
 	}
 	
 	// Lore ebenfalls hardcoded..

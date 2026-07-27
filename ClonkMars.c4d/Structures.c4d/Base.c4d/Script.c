@@ -81,17 +81,17 @@ protected func ContextCancelResearch(object pClonk) {
 }
 
 protected func ContextRemoveSat() {
-	[Sat abmontieren|Image=SATD|Condition=HasSat]
+	[Detach satellite|Image=SATD|Condition=HasSat]
 	HasSat() -> SetAction("Idle");
 }
 
 protected func ContextStartReproduction(object pClonk) {
-	[Reproduktion|Image=SCNK|Condition=IsNotReproducing]
+	[Reproduction|Image=SCNK|Condition=IsNotReproducing]
 	pClonk -> StartReproduction();
 }
 
 protected func ContextStopReproduction(object pClonk) {
-	[Reproduktion stoppen|Image=SCNK|Condition=IsReproducing]
+	[Stop reproduction|Image=SCNK|Condition=IsReproducing]
 	pClonk -> StopReproduction();
 }
 
@@ -104,7 +104,7 @@ private func IsNotReproducing() {
 }
 
 protected func ContextBuy(object pClonk) {
-	[Objekte kaufen|Image=SATD|Condition=CapsuleCheck2]
+	[Buy objects|Image=SATD|Condition=CapsuleCheck2]
 	pClonk->ContainedCall("ContainedUp", this());
 }
 

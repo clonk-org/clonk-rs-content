@@ -1,6 +1,6 @@
 [DefCore]
 id=SOLA
-Name=Solarpanel
+Name=Solar Panel
 Category=1154
 MaxUserSelect=5
 Width=40

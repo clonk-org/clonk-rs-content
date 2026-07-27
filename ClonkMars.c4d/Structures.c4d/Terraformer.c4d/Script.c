@@ -215,7 +215,7 @@ protected func ControlThrow() {
 }
 
 protected func ContextRecreateDigger() {
-	[Digger neu erstellen]
+	[Recreate diggers]
 	RecreateDigger();
 }
 

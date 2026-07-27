@@ -27,7 +27,7 @@ func Display() {
 
 public func SortWare() {
   if(GetLength(aWare) != GetLength(aCount))
-    return(Log("Waffenautomat-PANICK. Den Devs melden!"));
+    return(Log("Weapons Automat PANIC. Report this to the devs!"));
   
   var length;
   while(Par(length++));

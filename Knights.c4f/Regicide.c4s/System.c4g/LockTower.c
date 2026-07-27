@@ -10,10 +10,10 @@
  protected func ControlThrowDouble(){  
    if(FindObject(CPTE,-5,-46,10,10)){ 
      Sound("Error");  
-     Message("Treppenhaus bereits offen",this()); 
+     Message("Staircase already open",this()); 
    }else{ 
      CreateObject(CPTE, 0, -31, GetOwner()); 
-     Message("Treppenhaus geöffnet",this()); 
+     Message("Staircase opened",this()); 
    }
    return(1);
  }
@@ -21,7 +21,7 @@
  protected func ControlDigDouble(){ 
    if(Var()=FindObject(CPTE,-5,-46,10,10)){
      RemoveObject(Var(),1);
-     Message("Treppenhaus geschlossen",this()); 
+     Message("Staircase closed",this()); 
    }
    return(1); 
  }

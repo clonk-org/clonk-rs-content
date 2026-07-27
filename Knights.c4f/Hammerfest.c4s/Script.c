@@ -80,7 +80,7 @@ protected func RemovePlayer(int player)
 protected func RelaunchPlayer(int player)
 {
  // Den Tod des Spielers verkünden
- Log("%s benötigt einen Relaunch!", GetPlayerName(player));
+ Log("$MsgNeedsRelaunch$", GetPlayerName(player));
  Sound("Trumpet");
 
  var team=CheckTeam(player);
@@ -92,11 +92,11 @@ protected func RelaunchPlayer(int player)
    if(relleft < 0)
     {
      EliminatePlayer(player);
-     Log("%s wurde besiegt!", GetPlayerName(player));
+     Log("$MsgDefeated$", GetPlayerName(player));
      return(1);
     }
-   if(relleft==1) { Log("1 Relaunch verbleibt für die Schattenklingen"); }
-   else Log("%d Relaunches verbleiben für die Schattenklingen",relleft);
+   if(relleft==1) { Log("$MsgOneRelaunchLeft$"); }
+   else Log("$MsgRelaunchesLeft$",relleft);
   }
  
  else
@@ -106,11 +106,11 @@ protected func RelaunchPlayer(int player)
    if(relright < 0)
     {
      EliminatePlayer(player);
-     Log("%s wurde besiegt!", GetPlayerName(player));
+     Log("$MsgDefeated$", GetPlayerName(player));
      return(1);
     }
-   if(relright==1) { Log("1 Relaunch verbleibt für den Mantisorden"); }
-   else Log("%d Relaunches verbleiben für den Mantisorden",relright);
+   if(relright==1) { Log("$MsgOneRelaunchRight$"); }
+   else Log("$MsgRelaunchesRight$",relright);
   }
 
  // Dem Spieler drei neue Ritter geben und diese ausrüsten
@@ -130,7 +130,7 @@ protected func RelaunchPlayer(int player)
 
 global func Team1Lose()
 {
-   Log("Der Mantisorden siegt!!");
+   Log("$MsgRightWins$");
    var winnerTeam = 1; 
 // ...und die Verlierer eliminieren
   for (var i = GetPlayerCount(); i--;)
@@ -142,7 +142,7 @@ global func Team1Lose()
 
 global func Team2Lose()
 {
-   Log("Die Schattenklingen entscheiden den Kampf für sich!");
+   Log("$MsgLeftWins$");
    var winnerTeam = -1; 
 // ...und die Verlierer eliminieren
   for (var i = GetPlayerCount(); i--;)

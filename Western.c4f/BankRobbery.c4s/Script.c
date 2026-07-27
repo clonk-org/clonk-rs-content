@@ -256,7 +256,7 @@ global func Team2Lose()
 
 protected func TimeUp()
 {
-   Log("Die Kavallerie kommt!");
+   Log("The cavalry is coming!");
    Sound("Trumpet");
    Schedule("Sound(\"Trumpet\")", 1, 1);
    var pTower;

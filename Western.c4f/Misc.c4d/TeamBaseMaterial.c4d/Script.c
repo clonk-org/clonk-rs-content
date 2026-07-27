@@ -23,8 +23,8 @@ public func InitializePlayer(iPlr)
 protected func Activate(iPlr)
 {
   var ms=ObjectCall(FindObjectOwner(BACN, iPlr), "GetTeam");
-  if (ms) ms=Format("Du teils dir dein kaufbares Material mit: %s",ms);
-  if (!ms) ms="Du teils dir dein kaufbares Material nicht.";
+  if (ms) ms=Format("You share your purchasable material with: %s",ms);
+  if (!ms) ms="You do not share your purchasable material.";
   MessageWindow(ms, iPlr);
 }
 

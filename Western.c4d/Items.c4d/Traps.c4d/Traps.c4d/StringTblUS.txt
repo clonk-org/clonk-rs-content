@@ -1,1 +1,4 @@
 Arm=Arm
+TxtArm=Set up
+MsgNoArm=Cannot be set up here!
+MsgNoTrapAllowedHere=No trap may be|set up here!

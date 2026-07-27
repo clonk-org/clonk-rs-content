@@ -1,2 +1,2 @@
 DE:Glasröhre
-US:Glas tube
+US:Glass Tube

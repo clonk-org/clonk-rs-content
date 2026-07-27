@@ -1,0 +1,2 @@
+DE:Solarpanel
+US:Solar Panel

@@ -56,11 +56,11 @@ global func UpgradeComplete(int iPlr, id ID) {
 }
 
 private func ApplyMenu(pClonk) {
-	CreateMenu(LABR, pClonk, this, 0, "Keine anwendbaren Upgrades!");
+	CreateMenu(LABR, pClonk, this, 0, "No applicable upgrades!");
 	
 	for(var ID in upgrades) {
 		if(ID -> ~CanApply(this, pClonk))
-			AddMenuItem(Format("%s anwenden", GetName(0, ID)), "ApplyUpgrade", ID, pClonk, 0, pClonk);
+			AddMenuItem(Format("Apply %s", GetName(0, ID)), "ApplyUpgrade", ID, pClonk, 0, pClonk);
 	}
 }
 
@@ -91,7 +91,7 @@ private func ResearchMenu(object pClonk) {
   	AddMenuItem("$TxtContinuedevelopement$", "SelectResearch", EffectVar(1, this, iEffectNumber), pClonk, 0, iEffectNumber);
   }
   
-  AddMenuItem("Neue Forschung", "NewResearch", GetID(), pClonk, 0, pClonk);
+  AddMenuItem("New research", "NewResearch", GetID(), pClonk, 0, pClonk);
 }
 
 private func NewResearch(id idImage, object pClonk) {
@@ -238,7 +238,7 @@ public func ContainedUp(object pClonk) {
 }
 
 public func ContainedDig(object pClonk) {
-	[Upgrades anwenden|Image=LABR]
+	[Apply upgrades|Image=LABR]
 	ApplyMenu(pClonk);
 	return 1;
 }

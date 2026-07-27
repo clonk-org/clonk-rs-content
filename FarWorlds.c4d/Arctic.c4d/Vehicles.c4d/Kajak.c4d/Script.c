@@ -7,7 +7,7 @@
 protected func Initialize() { SetAction("Stop"); }
 
 protected func ControlUpDouble(pClonk) {
-  [Einsteigen]
+  [Get In]
   //nur einsteigen, wenn er nicht rotiert
   if(GetR()) return();
   // Clonk geht ins Kajak

@@ -4,3 +4,4 @@ DescHeal=Heals the clonk, if there's enougth food in the storage.
 TxtEat=Eat
 DescEat=Feeds the clonk.
 Menu=Menu
+TxtMenu=Food menu

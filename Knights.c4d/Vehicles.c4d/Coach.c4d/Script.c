@@ -143,7 +143,7 @@ public func GetRider()
 private func NoGoodRider(pRider)
 {
   if (GetOCF(pRider) & OCF_CrewMember())
-    Message("%s kann keinen|Wagen steuern.",pRider,GetName(pRider));
+    Message("%s cannot drive|a coach.",pRider,GetName(pRider));
   return(0);
 }
 

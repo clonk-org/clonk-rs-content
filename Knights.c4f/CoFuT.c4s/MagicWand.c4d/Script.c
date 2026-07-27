@@ -24,17 +24,17 @@ protected func Entrance(clonktemp)
 
 public func Activate(pCaller)
 {
-  [Zaubern|Image=MCMS|Condition=ReadyToMagic]
+  [Cast spell|Image=MCMS|Condition=ReadyToMagic]
   // Nicht bereit
   if(!ReadyToMagic(pCaller)) return(0);
   // Clonk soll anhalten
     SetComDir(COMD_Stop(),pCaller);
   // Menü öffnen
-  CreateMenu(MCMS,pCaller,0,3,"Keine Zaubersprüche verfügbar",GetMagicEnergy());
+  CreateMenu(MCMS,pCaller,0,3,"No spells known",GetMagicEnergy());
  
   for(var cnt=0;cnt<GetLength(spells);cnt++)
     { 
-     AddMenuItem( "Zaubern: %s", "DoMagic", spells[cnt], pCaller);
+     AddMenuItem( "Conjure: %s", "DoMagic", spells[cnt], pCaller);
      
     }
   return(1);
@@ -53,7 +53,7 @@ protected func DoMagic(id idSpell)
   if (!ReadyToMagic(clonk)) return();
   // Nicht genug Zauberenergie
   if (GetMagicEnergy()<Value(idSpell) )
-    return( Message("Nicht genug|Zauberenergie!",this()), Sound("Error") );
+    return( Message("Not enough|magic energy!",this()), Sound("Error") );
   // Zauberobjekt erschaffen und aktivieren
   if (!ObjectCall(CreateObject(idSpell,0,0,GetOwner()),"Activate",clonk))
     // Zauber fehlgeschlagen

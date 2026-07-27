@@ -17,7 +17,7 @@ protected func InitPlayer(int player, int iTeam)
 
 protected func ContainedLeft()
 {
- [Links|Image=KTM1:5]
+ [$Left$|Image=KTM1:5]
  if (Global(iPlr)) return(1);
  Global(iPlr) = -1;
  DoPlrLaunch();
@@ -28,7 +28,7 @@ protected func ContainedLeft()
 
 protected func ContainedRight()
 {
- [Rechts|Image=KTM1:1|Condition=IsStart]
+ [$Right$|Image=KTM1:1|Condition=IsStart]
  if (Global(iPlr)) return(1);
  Global(iPlr) = 1;
  DoPlrLaunch();

@@ -29,7 +29,7 @@ public func ControlDig()
   
 public func ControlThrow(pClonk)
 {
-  [Schlüssel reinstecken/rausnehmen]
+  [Insert/remove key]
   if(Contents())
   {
     Exit(Contents());

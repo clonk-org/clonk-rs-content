@@ -114,7 +114,7 @@ protected func ControlDigDouble() {
 }
 
 protected func Activate(object pClonk) {
-	[Kristall verarbeiten]
+	[Process crystal]
 	pClonk -> CreateContents(CRYS);
 	Sound("Crystal*");
 	RemoveObject();

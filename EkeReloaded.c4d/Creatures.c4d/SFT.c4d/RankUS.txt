@@ -1,0 +1,48 @@
+Recruit
+Private
+Private First Class
+Lance Corporal
+Corporal
+Senior Corporal
+Sergeant
+Staff Sergeant
+Sergeant First Class
+Master Sergeant
+First Sergeant
+Sergeant Major
+Command Sergeant Major
+Second Lieutenant
+First Lieutenant
+Captain
+Senior Captain
+Major
+Lieutenant Colonel
+Colonel
+Brigadier General
+Major General
+Lieutenant General
+General
+The President's Man
+TPM Private
+TPM Private First Class
+TPM Lance Corporal
+TPM Corporal
+TPM Senior Corporal
+TPM Sergeant
+TPM Staff Sergeant
+TPM Sergeant First Class
+TPM Master Sergeant
+TPM First Sergeant
+TPM Sergeant Major
+TPM Command Sergeant Major
+TPM Second Lieutenant
+TPM First Lieutenant
+TPM Captain
+TPM Senior Captain
+TPM Major
+TPM Lieutenant Colonel
+TPM Colonel
+TPM Brigadier General
+TPM Major General
+TPM Lieutenant General
+TPM General

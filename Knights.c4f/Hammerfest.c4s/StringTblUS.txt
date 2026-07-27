@@ -1,3 +1,11 @@
 MsgScore=Points
 MsgLeft=Shadowblades
 MsgRight=Order Of Mantis
+MsgNeedsRelaunch=%s needs a relaunch!
+MsgDefeated=%s has been defeated!
+MsgOneRelaunchLeft=1 relaunch remains for the Shadowblades
+MsgRelaunchesLeft=%d relaunches remain for the Shadowblades
+MsgOneRelaunchRight=1 relaunch remains for the Order Of Mantis
+MsgRelaunchesRight=%d relaunches remain for the Order Of Mantis
+MsgRightWins=The Order Of Mantis is victorious!!
+MsgLeftWins=The Shadowblades win the battle!

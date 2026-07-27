@@ -8,7 +8,7 @@ func Initialize()
 {
   var cnt=Random(5); while (++cnt<12) PlaceBuilding();
   ProtectedCall(CreateObject(SGNL,LandscapeWidth()-20,LandscapeHeight()/2,-1),"ControlRight");
-  Log("Los geht's!");
+  Log("Here we go!");
   return(1);
 }
 

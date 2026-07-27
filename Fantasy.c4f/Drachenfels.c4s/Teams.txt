@@ -3,7 +3,7 @@ LastTeamID=2
 
   [Team]
   id=1
-  Name=Helden
+  Name=$TeamPlayers$
   Color=51200
   IconSpec="KNIG"
 
