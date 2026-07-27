@@ -1,0 +1,23 @@
+[DefCore]
+id=SBLT
+Name=Small shot bullet
+Version=4,9,5
+Category=4
+Width=4
+Height=8
+Offset=-2,-4
+Value=2
+Mass=3
+Components=METL=1;
+Picture=0,5,34,35
+Vertices=1
+VertexY=0
+VertexFriction=80
+Rebuy=1
+Collectible=1
+Rotate=1
+Float=1
+
+[Physical]
+Float=4000
+ 

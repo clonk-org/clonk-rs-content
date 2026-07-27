@@ -1,0 +1,5 @@
+TxtPutGetKey=Put/get key
+TxtTurnKey=Turn key
+TxtInfo=Info
+MsgNoKey=No key!
+MsgNoFit=Key doesn't fit!

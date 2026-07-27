@@ -1,0 +1,13 @@
+[DefCore]
+id=CBM2
+Version=4,9,8
+Name=Combomenu
+Category=C4D_StaticBack
+Width=1
+Height=1
+Picture=0,0,15,15
+LineConnect=C4D_EnergyHolder
+Vertices=1
+
+[Physical]
+Energy=1000

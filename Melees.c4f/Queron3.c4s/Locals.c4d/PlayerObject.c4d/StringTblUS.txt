@@ -1,0 +1,5 @@
+RndName0=The Oven
+RndName1=Your Brain
+RndName2=Emptiness
+RndName3=Your Wallet
+RndName4=Everything

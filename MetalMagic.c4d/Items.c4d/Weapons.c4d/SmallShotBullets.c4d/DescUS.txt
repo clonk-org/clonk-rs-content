@@ -1,0 +1,1 @@
+A pack of small shot bullets. They don't cause as much damage as the normal ones, but can't be dodged that easily, becaus of the spreading.

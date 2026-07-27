@@ -9,3 +9,12 @@
 /ClonkMars.c4f/** binary
 /EkeReloaded.c4d/** binary
 /EkeReloaded.c4f/** binary
+
+# Same reasoning for the CCAN packs recorded in THIRD_PARTY_GAME_CONTENT.md.
+# These ship a mixture of CRLF and LF files; normalizing rewrote roughly half
+# of Metal & Magic's bytes on the first commit attempt, which would have
+# changed every group checksum away from the upstream pack a non-clonk-rs peer
+# is running. Keep them byte-exact.
+/MetalMagic.c4d/** binary
+/MetalMagicExtra.c4d/** binary
+/Melees.c4f/Queron3.c4s/** binary

@@ -1,0 +1,2 @@
+MsgNoKey=No key!
+MsgNoFit=Key doesn't fit!

@@ -1,0 +1,17 @@
+Teiwaz:
+-------
+Fledermaus:	IROC=3;IHOL=3
+		Stein(3)=1 Holigon(6)=0,5 = 1.5
+Troll:		ICRS=4;IASH=3;IHOL=5;
+		Kristall(5)=0.8 Asche(3)=1 Holigon(6)=0.83	  = 2.63
+Echse:		ICRS=9;IROC=10;IGOL=7;IHOL=10;
+		Kristall(5)=1,8 Stein(3)=3,3 Gold(3)=2,3 Holigon(6)=1.7   = 9.1
+
+Sawelô
+------
+Phönix:		ISPH=4;IHOL=3;
+		Schwefel(4)=1 Holigon(6)=0,5		= 1.5
+Gigant:		ICRS=5;IBON=3;IHOL=6;
+		Kristall(5)=1 Knochen(4)=0.75 Holigon(6)=1 = 2.75
+Greif:		ICRS=12;ILOA=8;IGOL=6;IHOL=10;
+		Kristall(5)=2,4 Lehm(3)=2,6 Gold(3)=2 Holigon(6)=1.7   = 8.7

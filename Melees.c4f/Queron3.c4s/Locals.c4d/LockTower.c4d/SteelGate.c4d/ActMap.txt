@@ -1,0 +1,6 @@
+[Action]
+Name=Gate
+Procedure=FLOAT
+Delay=1
+FacetBase=1
+NextAction=Hold

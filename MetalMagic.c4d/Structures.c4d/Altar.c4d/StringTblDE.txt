@@ -1,0 +1,5 @@
+NeedBar=Es ist kein Holigon im Altar!
+NeedPaladin=Nur Paladine können den Altar benutzen!
+Blessing=Du fühlst dich gesegnet!
+AlreadyHave=Du lädst deine Karmaenergie bereits!
+AlreadyFull=Du hast bereits volle Karmaenergie!

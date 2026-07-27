@@ -1,0 +1,3 @@
+TxtSummon=Beschwören
+TxtNoRituals=Keine Rituale verfügbar.
+MsgNotEnoughIngredients=Nicht genug|alchemische Zutaten!|Es fehlen|%s.

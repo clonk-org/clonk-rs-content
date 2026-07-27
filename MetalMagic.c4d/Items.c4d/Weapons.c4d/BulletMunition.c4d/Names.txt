@@ -1,0 +1,2 @@
+DE:Kugelpaket
+US:Bullet pack

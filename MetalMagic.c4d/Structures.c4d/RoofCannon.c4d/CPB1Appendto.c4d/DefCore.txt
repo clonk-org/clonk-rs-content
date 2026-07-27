@@ -1,0 +1,6 @@
+[DefCore]
+id=CPBA
+Name=Appendto CPB1
+Version=4,9,5
+Category=1
+ 

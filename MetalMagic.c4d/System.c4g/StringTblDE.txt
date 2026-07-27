@@ -1,0 +1,7 @@
+NoPlrKnowledge=Keine Baupläne vorhanden
+Construction=Konstruktion
+Production=Produktion
+MsgNoPlace=%s kann hier nicht landen!
+CtxGriffonCall=Greif rufen
+CtxSaurianCall=Echse rufen
+CtrlActivateDesc=Bogen einsetzen

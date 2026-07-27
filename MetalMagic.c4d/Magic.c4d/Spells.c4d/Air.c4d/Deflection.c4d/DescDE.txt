@@ -1,0 +1,1 @@
+Wirft Objekte zurück, die den Clonk treffen würden.

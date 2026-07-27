@@ -1,0 +1,17 @@
+[DefCore]
+id=KRME
+Name=Helper
+Version=4,9,5
+Category=60817409
+MaxUserSelect=10
+Width=75
+Height=75
+Offset=-37,-37
+Vertices=1
+VertexY=1
+VertexFriction=20
+NoGet=1
+NoSell=1
+TimerCall=Timer
+Timer=1
+ 

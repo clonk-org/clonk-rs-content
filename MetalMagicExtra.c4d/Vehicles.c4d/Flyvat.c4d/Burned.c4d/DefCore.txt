@@ -1,0 +1,22 @@
+[DefCore]
+id=BFVT
+Name=BurnedFlyvat
+Version=4,9,5
+Category=4
+Width=79
+Height=50
+Offset=-39,-25
+Value=30
+Mass=40
+Components=WOOD=8;METL=6;
+Vertices=8
+VertexX=-29,28,0,0, -22,10,-19,20
+VertexY=0,0,-20,25, -14,15,15,-12
+VertexCNAT=1,2,4,8 ,5,10,9,6
+VertexFriction=50,50,50,50,50,50,50,50
+ContactIncinerate=5
+BlastIncinerate=35
+Grab=2
+Rotate=1
+Float=1
+ 

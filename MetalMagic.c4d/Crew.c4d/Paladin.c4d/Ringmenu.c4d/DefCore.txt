@@ -1,0 +1,15 @@
+[DefCore]
+id=PRMU
+Name=Ringmenu
+Category=1
+Width=1
+Height=1
+Picture=0,0,15,15
+LineConnect=256
+Vertices=1
+VertexX=0
+VertexY=+100
+VertexFriction=20
+
+[Physical]
+Energy=100000

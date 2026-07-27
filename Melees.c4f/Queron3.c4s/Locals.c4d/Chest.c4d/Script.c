@@ -1,0 +1,5 @@
+/*-- Truhe --*/
+
+#strict
+
+#include CHST

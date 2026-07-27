@@ -1,0 +1,2 @@
+DE:Hitzeaura
+US:Aura of heat

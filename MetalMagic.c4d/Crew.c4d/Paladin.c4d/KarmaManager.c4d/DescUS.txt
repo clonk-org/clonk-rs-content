@@ -1,0 +1,1 @@
+Is responsible for showing and managing the karma energy.

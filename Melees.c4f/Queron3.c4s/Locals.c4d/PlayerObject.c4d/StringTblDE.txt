@@ -1,0 +1,5 @@
+RndName0=Der Backofen
+RndName1=Dein Gehirn
+RndName2=Leere
+RndName3=Dein Geldbeutel
+RndName4=Alles

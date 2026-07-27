@@ -1,0 +1,34 @@
+## WizardKeep (Metall & Magie)
+
+TxtAscend=Ascend
+TxtMenu=Menu
+TxtTrainBattlemage=Train Battlemage
+TxtMagicItem=Create magic item
+NoPlrKnowledge=Keine Baupläne verfügbar
+TxtSelectProduction=Create magic item: %s
+
+NeedGold=Needs %d Gold!
+NeedMagiClonk=You need a Magiclonk.
+NeedEnergy=You need 100 magic energy.
+
+
+
+//WizardTower
+TxtNotEnoughIngredients=Not enough|alchemistic ingredients!|%s|are missing.
+TxtNotEnoughEnergy=Not enough|magical energy!
+TxtNoSpells=No spells available
+TxtDoMagic=Conjure: %s
+TxtConjure=Conjure
+TxtAimspellsleft=Aim spell left
+TxtAimspellsright=Aim spell right
+TxtContinuedevelopement=Continue developement of %s
+TxtResearch=Research
+TxtResearchs=Research: %s
+Txtsdeveloped=%s researched!
+TxtCancelresearch=Cancel research
+TxtAlreadyDeveloped=%s already known!
+TxtNothingLeft=No more spells to research!
+
+TxtNoCrystal=No crystal found.
+TxtConvertCrystal=Convert crystals.
+TxtSpecial2=Special2 to convert all.

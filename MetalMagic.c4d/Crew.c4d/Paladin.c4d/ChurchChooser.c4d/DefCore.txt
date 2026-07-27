@@ -1,0 +1,17 @@
+[DefCore]
+id=CHCS
+Name=ChurchChooser
+Version=4,9,5
+Category=48234497
+Width=100
+Height=100
+Offset=-50,-50
+Picture=0,0,100,100
+Vertices=1
+VertexY=1
+VertexFriction=20
+NoGet=1
+NoSell=1
+TimerCall=Timer
+Timer=1
+ 

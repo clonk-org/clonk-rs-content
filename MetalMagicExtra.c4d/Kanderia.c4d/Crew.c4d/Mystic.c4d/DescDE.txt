@@ -1,0 +1,3 @@
+Der Mystiker ist der Magiebegabte der Kanderier. Er zaubert nicht wie die meduvischen Zauberer mit Mana und Sprüchen, sondern nutz die Energie, die in Materialien steckt.
+
+Materialien laden sich im Inventar automatisch auf und können mit [Doppel-Graben] aktiviert werden um den Zauber aus zu lösen.

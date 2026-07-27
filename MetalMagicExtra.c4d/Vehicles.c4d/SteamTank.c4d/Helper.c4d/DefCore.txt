@@ -1,0 +1,14 @@
+[DefCore]
+id=STHP
+Name=SteamTankHelper
+Category=1
+Width=70
+Height=53
+Offset=-35,-26
+Value=0
+Mass=0
+Components=METL=4;
+Picture=0,0,64,64
+NoGet=1
+NoSell=1
+Rotate=1

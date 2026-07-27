@@ -1,0 +1,2 @@
+NeedSpellstone=Benötigt ein gebrochenen Holygon Barren in einem verbündetet Altar!
+AlreadyHas=Der Clonk hat diesen Effekt bereits.

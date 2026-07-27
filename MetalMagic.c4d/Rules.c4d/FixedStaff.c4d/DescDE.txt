@@ -1,0 +1,1 @@
+Das Stab kann nicht abgelegt werden und wird beim Tod entfernt.

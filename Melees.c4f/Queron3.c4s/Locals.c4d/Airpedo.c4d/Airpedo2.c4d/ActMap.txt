@@ -1,0 +1,17 @@
+[Action]
+Name=Remain
+Procedure=NONE
+Directions=2
+Delay=100
+FlipDir=1
+Facet=0,0,32,9
+NextAction=Hold
+
+[Action]
+Name=Fly
+Procedure=FLOAT
+Length=5
+Delay=1
+Facet=0,0,32,9
+NextAction=Fly
+Sound=Torpedo

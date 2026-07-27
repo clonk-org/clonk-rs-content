@@ -1,0 +1,11 @@
+[Particle]
+Name=BulletTail
+MaxCount=350
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,28,43,-15,-5
+GravityAcc=0
+RByV=2
+Delay=0
+Attach=1

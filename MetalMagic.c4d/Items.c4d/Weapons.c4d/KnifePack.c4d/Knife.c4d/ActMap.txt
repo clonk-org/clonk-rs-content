@@ -1,0 +1,7 @@
+[Action]
+Name=Shot
+NextAction=Shot
+Length=1
+Delay=1
+FacetBase=1
+PhaseCall=InFlight

@@ -1,0 +1,4 @@
+/*-- Verbranntes --*/
+
+#strict 2
+

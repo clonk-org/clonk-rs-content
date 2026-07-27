@@ -1,0 +1,2 @@
+NeedSpellstone=Needs a broken holygon ingot in an allied altar.
+SpellInfo=Instead of losing energy the clonk lossed mana.

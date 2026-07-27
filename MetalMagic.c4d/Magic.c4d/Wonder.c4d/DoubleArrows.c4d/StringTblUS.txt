@@ -1,0 +1,2 @@
+NeedSpellstone=Needs a broken holygon ingot in an allied altar.
+AlreadyHas=The Clonk already has this effect.

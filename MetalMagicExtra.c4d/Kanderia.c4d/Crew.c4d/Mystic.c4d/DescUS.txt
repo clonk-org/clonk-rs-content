@@ -1,0 +1,3 @@
+The mystic is the kanderian magic expert. He doesn't cast spells with magic energy like the meduvian Wizards do, but uses the energy, which can be found in materials.
+
+Materials in the inventory automatically are charged with magic and can be activated with [Dig-Double] to release the spell.

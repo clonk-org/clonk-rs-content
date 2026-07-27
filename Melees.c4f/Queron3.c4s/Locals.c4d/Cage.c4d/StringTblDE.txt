@@ -1,0 +1,3 @@
+CtrlOpen=Käfig öffnen
+MsgNoKey=Kein Schlüssel!
+MsgNoFit=Schlüssel passt nicht!

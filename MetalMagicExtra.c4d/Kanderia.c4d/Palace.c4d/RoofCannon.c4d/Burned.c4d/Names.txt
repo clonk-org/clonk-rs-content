@@ -1,0 +1,2 @@
+DE:Verbranntes Turmgeschütz
+US:Burned Towercannon

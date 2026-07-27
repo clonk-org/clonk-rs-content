@@ -1,0 +1,24 @@
+[DefCore]
+id=SHI2
+Name=Big Shield
+Version=4,9,5,2
+Category=3600
+MaxUserSelect=10
+Width=7
+Height=10
+Offset=-4,-5
+Value=15
+Mass=15
+Components=ANML=1;
+Picture=7,0,64,64
+Vertices=3
+VertexX=-4,+4,0
+VertexY=-5,-5,+5
+VertexFriction=80,80,80,80
+BurnTo=NONE
+Rebuy=1
+ConstructTo=NONE
+Collectible=1
+Rotate=1
+ColorByOwner=1
+ 

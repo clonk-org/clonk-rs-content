@@ -1,0 +1,1 @@
+NoTarget=No allied Clonk in range for changing position!

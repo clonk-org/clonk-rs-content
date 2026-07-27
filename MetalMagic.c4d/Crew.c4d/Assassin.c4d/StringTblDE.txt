@@ -1,0 +1,10 @@
+CtxConstructionDesc=Bauauftrag
+CtxHomeDesc=Zurück zur Basis
+CtxRelease=Entlassen
+CtrlMenuDesc=Menü
+CtxHideDesc=Tarnen
+CtxUnHideDesc=Enttarnen
+CtxCrackLockDesc=Schloss knacken
+MsgEnemyToNear=Tarnen nicht möglich.|Gegner zu nah.
+MsgNoArrow=Kein Pfeil
+CtrlInventoryDesc=Inventar auswählen

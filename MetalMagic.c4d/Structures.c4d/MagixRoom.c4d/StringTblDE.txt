@@ -1,0 +1,31 @@
+## WizardKeep (Metall & Magie)
+
+TxtMenu=Menü
+TxtTrainBattlemage=Kampfmagier ausbilden
+TxtMagicItem=Magischen Gegenstand erschaffen
+NoPlrKnowledge=Keine Baupläne verfügbar
+TxtSelectProduction=Magischen Gegenstand erschaffen: %s
+
+NeedGold=Braucht %d Gold!
+NeedMagiClonk=Es wird ein Magier benötigt.
+NeedEnergy=Braucht 100 Zauberenergie.
+
+//Zauberturm
+TxtNotEnoughIngredients=Nicht genug|alchemische Zutaten!|Es fehlen|%s.
+TxtNotEnoughEnergy=Nicht genug Zauberenergie!
+TxtNoSpells=Keine Zaubersprüche verfügbar
+TxtDoMagic=Zaubern: %s
+TxtConjure=Zaubern
+TxtAimspellsleft=Nach links zaubern
+TxtAimspellsright=Nach rechts zaubern
+TxtContinuedevelopement=Forschung an %s fortsetzen
+TxtResearch=Forschen
+TxtResearchs=Erforschen: %s
+Txtsdeveloped=%s erforscht!
+TxtCancelresearch=Forschung abbrechen
+TxtAlreadyDeveloped=% ist bereits erforscht!
+TxtNothingLeft=Keine Zauber mehr zu erforschen!
+
+TxtNoCrystal=Keine Kristalle gefunden.
+TxtConvertCrystal=Kristalle umwandeln.
+TxtSpecial2=Special2 für alle Kristalle.

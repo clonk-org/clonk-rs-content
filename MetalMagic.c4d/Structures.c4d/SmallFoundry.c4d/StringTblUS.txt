@@ -1,0 +1,7 @@
+# Steuerung
+ProduceMetal=Produce metal
+ProduceHoligon=Produce holigon
+
+# Produktion
+MsgOreNotAvailable=No ore found
+MsgFuelNotAvailable=No fuel found

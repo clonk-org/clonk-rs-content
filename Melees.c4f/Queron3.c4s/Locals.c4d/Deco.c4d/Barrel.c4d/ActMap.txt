@@ -1,0 +1,6 @@
+[Action]
+Name=Barrel
+Length=3
+Delay=0
+Facet=0,0,24,18,0,0
+NextAction=Hold

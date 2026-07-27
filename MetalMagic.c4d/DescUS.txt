@@ -1,0 +1,3 @@
+Metal and Magic contains the paladin and appropriate weapons, a new spell system, new spells and apt structures and other stuff.
+
+To use Metal and Magic correctly the original knight-pack and the original Fantasy pack made by RedWolfDesign is needed.

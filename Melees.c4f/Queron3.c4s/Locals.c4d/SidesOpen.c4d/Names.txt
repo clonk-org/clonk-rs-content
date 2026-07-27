@@ -1,0 +1,2 @@
+DE:Offener Spielfeldrand
+US:Sides open

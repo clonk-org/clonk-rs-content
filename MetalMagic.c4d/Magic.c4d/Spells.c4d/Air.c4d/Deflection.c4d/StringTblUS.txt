@@ -1,0 +1,1 @@
+SpellInfo=Objects will be reflected.

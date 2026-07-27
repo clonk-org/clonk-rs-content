@@ -1,0 +1,15 @@
+[DefCore]
+id=SLCR
+Name=Selector
+Category=16777217
+Width=1
+Height=1
+Picture=0,0,16,16
+LineConnect=256
+BorderBound=7
+Vertices=1
+VertexY=0
+
+[Physical]
+Magic=100000
+Energy=100000

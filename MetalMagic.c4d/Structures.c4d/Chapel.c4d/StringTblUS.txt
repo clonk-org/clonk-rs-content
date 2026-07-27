@@ -1,0 +1,36 @@
+# Chapel #
+
+# Menu #
+MakePaladin=Upgrade to paladin
+MakePriest=Upgrade to priest
+TxtHoly=Conjure wonder
+
+NeedMoney=You need %d money.
+Only1PLDN=Only one paladin allowed.
+AlreadyIs=Your clonk already is a paladin.
+AlreadyIsPriest=Your clonk already is a priest.
+
+ChurchService=Hold church service
+PriestNeeded=You need a priest.
+HolyWaterNeeded=You need holy water.
+
+ChruchServiceDesc=For a church service you need a priest and holy water. You wont lose karma energy automatically for a specific time.
+
+# Wonder #
+PainGrail=Paingrail
+FightFire=Fire of fight
+BloodThorns=Bloodthorns
+RevengeLightning=Revengelightnings
+HeavensBoon=Heaven's boon
+
+FightFireDesc=Clonk-to-Clonk-Fight enemies get damage.
+BloodThornsDesc=If you lose lives, near enemies will also lose some lives.
+PainGrailDesc=You get the damage, near enemies get, as lives.
+RevengeLightningDesc=Near enemies are damaged by lightnings.
+HeavensBoonDesc=You cannot get damage from non-hostile players.
+
+AlreadyHas=This Clonk has the effect already.
+
+# Revaluation #
+TxtNoKnight=Only knights can be|upgraded to paladins!
+TxtNoClonk=Only clonks can be|trained to priests!

@@ -1,0 +1,62 @@
+# Host menu
+MnuHostTitle=Settings
+MnuHostInfoCap=Here you can adjust a few things. Be quick though, the others are waiting!
+MnuHostRelaunchesCap=Relaunches
+MnuHostRelaunchesTxt=Here you can set how often players are relaunched after dying.
+MnuHostClonksCap=Clonks
+MnuHostClonksTxt=In this menu you can pick a clonk type for each relaunch (e.g. mage or knight).
+MnuHostReadyCap=FIGHT!
+MnuHostReadyTxt=Choosing this entry closes the menu and starts the game! Have fun!
+# Relaunch menu
+MnuRelaunchTitle=Relaunch options
+MnuRelaunchInfoCap=Currently set to %d relaunches.
+MnuRelaunchIncreaseCap=More relaunches
+MnuRelaunchDecreaseCap=Fewer relaunches
+# Clonk menu
+MnuClonkDefTitle=Clonk menu
+MnuClonkDefStartclonkCap=<c aaaaaa>Starting clonk:</c> %s
+MnuClonkDefStartclonkTxt=The %s takes the field first.
+MnuClonkDefRelaunchCap=<c cccccc>Relaunch %d:</c> %s
+MnuClonkDefUndefinedTxt=The clonk type for this relaunch still needs to be set!
+# Clonk selection menu
+MnuClonkTitle=Clonk selection menu
+MnuClonkCap=Select %s
+# Weapon menu
+MnuWeaponTitle=Choose your weapon!
+MnuWeaponSelectCap=Choose %s.
+
+MsgClonksMustBeDefined=You have to define all the clonks! Or just set fewer of them! :O
+
+MsgNoJump0=That looks rather wet!
+MsgNoJump1=Oh cold, I defy you!
+MsgNoJump2=SERVANT! The bath is filthy!
+MsgNoJump3=*cough*
+
+MsgWalk0=*cough* *cough*
+MsgWalk1=*spit*
+MsgWalk2=Hum de hum hum
+MsgWalk3=Where on earth is the sun?
+
+MsgAnvil0=*clang clang*
+MsgAnvil1=AAAAAOWW my thumb!!!
+MsgAnvil2=I need a lighter hammer! *pant*
+MsgAnvil3=Strike while the iron is hot!
+
+MsgJump0=HURRAY!!
+MsgJump1=*delight*
+MsgJump2=Yippeee!!
+MsgJump3=I got it!
+
+MsgHide0=A good moment to disappear..
+MsgHide1=I'm off..
+MsgUnHide0=Peekaboo!
+MsgUnHide1=Here I am!
+
+# Overload
+must_be_in_free=For this spell the clonk|has to be out|in the open!
+StillDelay=The spell delay has not expired yet!
+MsgIsRev=%s is already enchanted.
+MsgBlocked=%s cannot be upgraded|to a fish clonk.
+MsgOnlyOneBalloon=You are already hanging from a balloon!
+NpcKing=Sven the Second
+NpcKnight=Knight Yoghurt

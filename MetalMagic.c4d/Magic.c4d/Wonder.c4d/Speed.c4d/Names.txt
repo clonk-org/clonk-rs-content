@@ -1,0 +1,2 @@
+DE:Geschwindigkeit
+US:Speed

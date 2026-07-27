@@ -1,0 +1,4 @@
+MsgHero=Danke ihr tapferer Held!
+MsgHeroDead=Oh, der ist hin! Wo ist mein nächster Held?
+MsgHelp=Hilfe!
+MsgCursed=Ahh, %s verflucht seid ihr!

@@ -1,0 +1,39 @@
+[DefCore]
+id=FLVT
+Name=Flyvat
+Version=4,9,5
+Category=1284
+MaxUserSelect=2
+ContactCalls=1
+Width=60
+#170
+Height=50
+#104
+Offset=-30,-25
+#-85,-52
+Value=100
+Mass=500
+Components=WOOD=9;METL=5;
+Vertices=8
+VertexX=-29,28,0,0, -22,10,-19,20
+VertexY=0,0,-20,25, -14,15,15,-12
+VertexCNAT=1,2,4,8 ,5,10,9,6
+VertexFriction=50,50,50,50,50,50,50,50
+Entrance=-13,-7,25,35
+Grab=2
+GrabPutGet=3
+Float=1
+ContainBlast=1
+BorderBound=7
+VehicleControl=2
+#SolidMask=61,40,43,3,61,40
+SolidMask=61,43,43,3,6,16
+#TopFace=60,32,45,10,60,32
+TopFace=60,32,45,10,5,5
+Picture=3250,295,150,108
+BurnTo=BFVT
+BlastIncinerate=50
+
+[Physical]
+Energy=50000
+Float=200

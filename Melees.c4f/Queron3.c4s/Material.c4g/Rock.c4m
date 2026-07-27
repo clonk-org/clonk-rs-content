@@ -1,0 +1,14 @@
+[Material]
+Name=Rock
+Color=86,86,86
+Shape=3
+Density=50
+Friction=100
+#BlastFree=1
+#Blast2Object=ROCK
+#Blast2ObjectRatio=75
+MaxAirSpeed=100
+MaxSlide=250
+Placement=70
+TextureOverlay=Structure
+OverlayType=1

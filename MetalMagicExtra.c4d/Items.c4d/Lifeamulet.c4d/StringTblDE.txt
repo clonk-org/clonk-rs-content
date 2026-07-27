@@ -1,0 +1,2 @@
+TxtActivate=Aktivieren
+TxtExtinguish=Der Clonk brennt nicht

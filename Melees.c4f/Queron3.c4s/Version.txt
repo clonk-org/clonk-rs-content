@@ -1,0 +1,206 @@
+3.41
+* Man kann nicht über die Inventargrösse hinaus Objekte kaufen
+! NoStuck-Check beim (Re)spawn
+! Killbug: Spieler wird nicht mehr eliminiert, wenn sein Killer vor ihm stirbt
+! Ballonpack: Alle können es nun mit Doppel-Hoch bedienen; öffnet auch beim tumblen; + Mysti Zauber
+! Killverfolgung: Windstoss
+! Aufgeben erzeugt bei FadeOut und während Timer keinen Error mehr
+! Spielregel "Clonk plündern" hoffentlich nicht mehr plünderbar ;)
+! Geldsäcke können immer aufgenommen werden, ohne vorher etwas abzulegen
+3.4
++ Geheimer Keller
++ Assa Händler
++ Ballon Pack
++ Drachenstatue
++ Neue Bäume/Deko ein bisschen umgefärbt
++ Map: Sandhaufen im See; Pixel neben Turm links oben; Rote Dächer; Weisser Pool
++ Man kann tote Clonks plündern
++ Allgemein ein bisschen mehr Flints
++ Zauberer bietet Immunitätstrank an
++ Bücher und Schriftrollen jetzt herstellbar
++ Mehr Items besser verteilt (v.a. für Mystiker)
++ Schaden wird grafisch schöner angezeigt
+- Objekte verschwinden nicht mehr (bleiben beim Tod stattdessen im Clonk)
+- Steinschild nur noch mit Schriftrollen und Erdstab zauberbar
+- Logs entfernt :X
+- Stolperfluch entfernt
+! Schwerer Fehler behoben: Clonks (v.a. Assas) konnten mit wenig Leben nicht sterben
+! Schwerer Fehler behoben: Getarnte Zauberer werden nun korrekt relauncht, wenn unter den Spielfeldrand fallen
+! Mystiker gefixt
+! Bug, wo beim Teamscoreboard die Kills des Teams nicht richtig angezeigt wurden
+! Prinzessin: bewegt sich nach dem Tod nicht mehr; kann nur lebendig aufgenommen werden
+! Fischclonk: Keine Grafikfehler nach Umwandlung; Inventargrösse entspricht der des Zaubernden
+! Aufgeben berücksichtigt, keine fehlerhaften Logs mehr 
+* Neue Relaunchpositionen, u.a. Assa im Keller
+* Flints vom Flintwerfer fallen wieder runter
+* Neuer Hintergrund
+* Relaunchprozedere optisch verfeinert
+Balancing:
+* Twonkys Pfeile sind schwächer, teurer und lassen sich nur einzeln einkaufen (1 Stück = 6 Gold)
+* Prinzessin kann man nur noch für 6 Gold verkaufen
+* Zauberrollen kosten je nach Zauber
+* Sichtbereich wieder minim kleiner
+* Schädel für Mystiker weniger inba
+* Seltene Zauber sind viel seltener (auch Flüche!)
+* Aquaclonk kriegt kein Permawipftrank mehr
+* Clonks die durchs Treppenhaus oder Höhlen laufen befördern darin befindliche Clonks hinaus
+* Clonks können wieder zwei Gegenstände tragen
+aus Meat 1.1:
++ funktionierende Schlafbolzen
++ Keule ohne Errors
++ Mysti Zauber für Metall und Airpedo
+! Killverfolgung: Freeze, Hitzeaura, Nadelbolzen, Schwefelkugeln
+! Assas spawnen immer getarnt
+! Kein Alpha Hack für Assas
+* Alle Clonks können/könnten Inventar wechseln (auch Fischclonk)
+* Hitzeaura Reichweite verkleinert
+3.3
+* Versionsnummerierung geändert
++ Geldsäcke
++ Twonkys Pfeilpaket
++ Prinzessin, die man retten kann
++ Erde wieder sprengbar
++ Jeder Clonk kann jetzt Speere werfen
++ Mini AI eingebaut. Sorgt für Leben!
++ Zauber "Assassine aufdecken" eingefügt
++ Manakristall eingefügt
+- Inventarabfrage rausgenommen. Einkaufen ist jetzt auch mit vollem Inventar möglich!
+- Clonks haben normale Inventargrössen
+- Artefakt Zauber
+* Zauber ausgetauscht/eingeführt/entfernt
+* Andere Musik
+* Sichtweite verdoppelt
+* Flintwerfer überarbeitet -> Viel weniger Lag!
+* Nachrichten geändert
+* Ein bisschen an der Landschaft rumgeschnipselt
+* Landschaft neu eingerichtet (u.a. kein riesiges Dekoobjekt mehr)
+* Itemüberfluss verringert; nur momentan für Clonks nützliche Items; weniger Nahrung
+* Verfügbare Zauber auf Schriftrollen/Büchern angepasst (einige neu, unnütze rausgeschmissen)
+! Schadensberechnung korrigiert (u.a keine 0-Schaden mehr)
+! Bug behoben, wenn ein Mystiker mit Zauberbüchern zauberte
+! Verschiedene Zauber werden jetzt nicht mehr vom Zauberbuch gelöscht, wenn beim Zielen abgebrochen wird
+! Stabkills von Assas zählen jetzt als Kill
+1.24
+! Kompatibilität mit M&M 3
+1.23
+* Preis für Schwefelkugelpaket wieder erhöht
+* Ein bisschen an der Objektverteilung herumgedreht
+! Löscher überschneidet ID nicht mit dem 'Löschen'-Zauber
+1.22
++ Die Kiste im Geheimgang der Burg enthält immer eine Tarnen-Schriftrolle
++ Airpedos sind jetzt kaufbar
++ Ein bisschen mehr Deko
+- Icon entfernt/geändert
+* Ein bisschen an der Landschaft herumgefeilt
+* Titelbild geändert
+* Magische Eigenschaft vom Super-T-Flint geändert
+* Paladinwunder 'Geschwindigkeit' ein bisschen verlangsamt
+* Löscher überarbeitet (löscht nun ein bisschen früher)
+* Kleine Verbesserungen in der Landschaft
+! Man wird nicht mehr eliminiert wenn man als Flaschenclonk oder als Inhaltsobjekt die Klippe herunterfällt
+! Paladinwunder funktionieren nun auch wenn der Paladin mehr als einmal gebraucht wird
+! Umweltobjekt 'Offener Spielfeldrand' taucht nicht mehr in Regelmenü auf
+! Man kann die Shops nicht mehr verschieben
+! +1 Kill: Sound nur noch beim Killer
+! Damage ohne Verursacher ist weiss
+... kleineres Zeugs
+1.21
++ Icon eingefügt
+- Zauber 'Untote erwecken' und 'Wurmloch'
+* Titelbild geändert
+* Zelt in anderen Layer verschoben
+! Alle Spieler haben dieselben Zauber
+! Kristall nicht mehr sprengbar
+! Landscape verbessert
+! Scoreboardnamen werden wieder gekürzt
+1.20
++ Titelbild
++ Spezifische Kisten ergänzt
+- Assassin Waffenwahl: Den Knüppel gibt's jetzt nur noch zusammen mit dem Messer
+* Beschreibung geändert
+* Landscape: Kristalle!!11
+* Scoreboard wird nur noch auf Wunsch angezeigt
+! Scoreboard fixed
+! Intromusik beginnt nicht mehr neu
+1.11 [beta 2]
++ Skipdefs eingefügt
+- Devzeugs entfernt
+* Vordefinierte Clonks geändert
+! Musik startet richtig
+! Shop: Platz im Inventar wird richtig berechnet
+... kleineres Zeugs
+1.10 [beta 1]
++ Musik eingefügt
++ Geschütz auf RoofCannon
++ Seiten offen
++ Kaufläden
+- Skelett bis auf weiteres rausgenommen
+- CloseViewport Sound entfernt
+* Menüs überarbeitet, Sounds nur noch bei Host
+* Weniger Objekte in Kisten
+* Msg Objekt verbessert
+* Scoreboard: Teamgliederung nur noch bei TeamDist = Host
++ Scoreboard: Teamswitch wäre theoretisch supported :)
+! Scoreboard: Sortierung funktioniert jetzt. Teams werden aber absichtlich nicht sortiert (unnötig & verwirrend)!
+! Scoreboard: Wenn ein Spieler eliminiert wird werden seine Relaunches dem Team abgezogen
+! Killsound und Msg gefixt
+! Wenn man noch am Teamwählen ist wird man nicht mehr gejoint
+! Flintwerfer schluckt keine getarnten Magier und Flaschenclonks mehr
+... kleineres Zeugs
+1.06 [alpha 7]
++ Kill-Msg und Sound
++ Assassinen werden nun getarnt gejoint
+- Scoreobard-Titel wieder entfernt
+* FoW-Fade wieder zurückgesetzt
+* Scoreobard-Clonks halbtransparent
+* Einige Scripttechnische Verbesserungen
+! Damage wird nur noch bei wirklichen Schaden angezeigt
+1.05 [alpha 6]
++ Objektsauger entfernt jetzt überflüssige Objekte im Wasser
++ Wompfbeerenbusch und Pilze
+- Logs rausgenommen
+! Scoreobard den letzten Schliff verpasst
+... kleineres Zeugs
+1.04 [alpha 5]
++ Neue Kill/Death-Messages
+- Msg zu Spielbeginn
+- Altes Zeugs
+* Scoreboard verbessert
+1.03 [alpha 4]
++ Es gibt nun Zauberbücher und Schriftrollen mit tollen Zaubern :D
++ Kochkiste (Kiste neben Backtrog enthält jetzt viel feines Zeugs :D)
++ Neue Zauber eingefügt
++ Lenseflare und Gras
+- Hintergrund temporär rausgenommen (wird überarbeitet)
+* Paladin bekommt nun bei Waffenwahl "Zweihandschwert" statt einen Manatrank einen Steintrank
+* Schlucht "passierbar" gemacht
+* Kleine Verbesserungen an der Landscape
+* FoW-Fade verbessert
+* Sound bei Spielerbeitritt geändert
+* Maxplayer = 24
+! Bäume brennen nicht mehr
+! Kisten, Fahrstühle etc. können nicht mehr kaputtgehen
+! Der Flintwerfer schluckt keine Clonks mehr
+1.02 [alpha 3]
++ Kisten laden füllen sich mit der Zeit wieder auf
++ Ungünstige Relaunchpositionen entfernt
++ Ein paar Steine platziert
+* Katakomben komplett renoviert
+* Flintwerfer besser platziert
+* Tunnels verbessert
+! Kirchenwahl & Wunder gehen jetzt
+! viele kleinere Sachen
+1.01 [alha 2]
++ Hintergrund: verschönert, Dateigrösser reduziert und parallax gemacht
++ Schräge Fläche in der Höhle unten
++ Krötensprung ist jetzt wieder dabei
++ Alter Beschreibungstext eingefügt (US Version folgt bald)
+- Mehrere alte Sachen rausgeschmissen
+* Relaunchzeit verkürzt
+* Sichtbereich vergrössert
+* Magier bekommen Zauberenergie nachgeliefert
+* Paladine können mit dem Zweihänder schlagen
+! Scoreboard funktioniert jetzt richtig
+1.00 [alhpa 1]
+
++ hinzugefügt | - entfernt | * verändert | ! Bugfix

@@ -1,0 +1,7 @@
+TxtUse=Use Staff
+TxtError=%s can´t use this item!
+
+Fire=Fire
+Earth=Earth
+Air=Air
+Water=Water

@@ -1,0 +1,8 @@
+[Material]
+Name=Tunnel
+#Color=82,50,18
+Color=40,25,5
+Shape=2
+Placement=0
+TextureOverlay=Flare3
+OverlayType=1

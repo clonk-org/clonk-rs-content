@@ -1,0 +1,1 @@
+Sendet einen Frosthauch aus, der Gegner wegschleudert und einfriert.

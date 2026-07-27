@@ -1,0 +1,2 @@
+NeedSpellstone=Benötigt ein gebrochenen Holygon Barren in einem verbündetet Altar!
+OnTheGround=Der Clonk muss auf dem Boden stehen!

@@ -1,0 +1,1 @@
+Dematerializes the target and rematerializes him in the base. But the target drops all items while being teleported.

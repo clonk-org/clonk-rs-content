@@ -1,0 +1,1 @@
+SpellInfo=The clonk has an aura of airprotection.

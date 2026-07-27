@@ -1,0 +1,2 @@
+NeedSpellstone=Benötigt ein gebrochenen Holygon Barren in einem verbündetet Altar!
+SpellInfo=Schaden wird auf die Karmaenergie umgelenkt.

@@ -1,0 +1,3 @@
+Mass=Das Objekt ist zu schwer.
+must_be_in_free=Für diesen Zauber muss|sich der Clonk im|Freien befinden!
+NoObject=Ein Inventarobjekt wird für diesen Zauber benötigt.

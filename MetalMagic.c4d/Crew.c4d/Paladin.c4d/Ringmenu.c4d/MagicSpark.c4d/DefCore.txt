@@ -1,0 +1,11 @@
+[DefCore]
+id=MSPK
+;Version=4,91,4
+Name=Magic Spark
+Category=25165825
+Picture=0,0,10,10
+Width=10
+Height=10
+Offset=-5,-5
+NoFight=1
+NoBreath=1

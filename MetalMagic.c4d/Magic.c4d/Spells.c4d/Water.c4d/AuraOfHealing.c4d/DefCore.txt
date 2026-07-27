@@ -1,0 +1,8 @@
+[DefCore]
+id=MHGA
+Name=MagicHealAura
+Category=1
+Picture=0,0,64,64
+Version=4,9,5,4
+Value=28
+Components=IMUS=3;IGOL=1;

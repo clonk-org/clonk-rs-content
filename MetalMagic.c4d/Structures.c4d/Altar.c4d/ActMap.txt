@@ -1,0 +1,7 @@
+[Action]
+Name=Show
+Procedure=NONE
+Length=4
+Delay=0
+NextAction=Show
+Facet=0,0,50,45

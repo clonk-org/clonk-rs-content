@@ -1,0 +1,9 @@
+[DefCore]
+id=CV8W
+Name=CastlePlans
+Category=1
+MaxUserSelect=1
+Value=1
+Picture=8,0,64,64
+
+ 

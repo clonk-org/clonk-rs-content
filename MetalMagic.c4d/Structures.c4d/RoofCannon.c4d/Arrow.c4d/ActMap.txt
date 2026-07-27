@@ -1,0 +1,7 @@
+[Action]
+Name=Be
+Procedure=NONE
+FacetBase=1
+NextAction=Be
+Length=1
+Delay=0

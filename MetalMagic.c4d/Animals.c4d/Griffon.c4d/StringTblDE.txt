@@ -1,0 +1,5 @@
+TxtMovement=Bewegen
+TxtAttack=Beißen
+TxtLeave=Zurückverwandeln
+MsgNoGoodRider=%s kann nicht reiten.
+MsgCultsite=%s wird an der Kultstädte erschaffen.

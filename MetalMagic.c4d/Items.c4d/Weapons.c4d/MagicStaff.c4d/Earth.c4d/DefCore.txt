@@ -1,0 +1,24 @@
+[DefCore]
+id=SMER
+Version=4,5
+Name=Stab der Erde
+Category=3600
+MaxUserSelect=2
+Width=5
+Height=20
+Offset=-2,-10
+Value=20
+Mass=10
+Components=WOOD=1;CRYS=2;BHLG=1
+Picture=6,0,64,64
+Vertices=4
+VertexX=-2,2,0,0
+VertexY=0,0,-11,4
+VertexFriction=20,20,20,20
+BurnTo=NONE
+Rebuy=1
+Collectible=1
+BorderBound=1
+Rotate=1
+Float=2
+ColorByOwner=1

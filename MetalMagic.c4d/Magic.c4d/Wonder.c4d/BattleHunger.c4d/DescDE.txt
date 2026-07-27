@@ -1,0 +1,1 @@
+Gegner können für einige Sekunden den Nahkampf nicht abbrechen.

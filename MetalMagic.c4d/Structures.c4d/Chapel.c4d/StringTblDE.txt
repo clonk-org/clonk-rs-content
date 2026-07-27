@@ -1,0 +1,37 @@
+# Kapelle #
+
+# Menü #
+MakePaladin=Zum Paladin aufwerten
+MakePriest=Zum Priester ausbilden
+TxtHoly=Wunder wirken
+
+NeedMoney=Hierfür wird %d Geld benötigt.
+Only1PLDN=Nur ein Paladin erlaubt.
+AlreadyIs=Dein Clonk ist bereits Paladin.
+AlreadyIsPriest=Dein Clonk ist bereits ein Priester.
+
+ChurchService=Gottesdienst halten
+PriestNeeded=Es wird ein Priester gebraucht.
+HolyWaterNeeded=Es wird noch Weihwasser gebraucht.
+
+ChruchServiceDesc=Für einen Gottesdienst wird ein Priester sowie Weihwasser benötigt. Er stärkt das Ansehen bei der Gottheit. Man verliert dann eine Zeit lang keine Karmaenergie mehr automatisch.
+
+# Wunder #
+PainGrail=Schmerzgral
+BloodThorns=Blutdornen
+FightFire=Feuer des Kampfes
+RevengeLightning=Racheblitze
+HeavensBoon=Himmelssegen
+
+FightFireDesc=Nahkampfgegner erhalten Schaden.
+BloodThornsDesc=Wenn man selber schaden erleidet, erleiden Gegner auch Schaden.
+PainGrailDesc=Man bekommt den Schaden, den nahe Gegner verlieren, als Leben.
+RevengeLightningLightningDesc=Nahe Gegner werden von Blitzen geschaedigt.
+RevengeLightningDesc=Eine göttliche Blitzwolke begleitet dich und traktiert Gegner.
+HeavensBoonDesc=Du bekommst keinen Schaden von Verbündeten.
+
+AlreadyHas=Effekt bereits vorhanden.
+
+# Aufwertung #
+TxtNoKnight=Man kann nur Ritter|zu Paladinen aufwerten!
+TxtNoClonk=Man kann nur Clonks|zu Priestern ausbilden!

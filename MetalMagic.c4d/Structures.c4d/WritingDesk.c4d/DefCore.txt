@@ -1,0 +1,25 @@
+[DefCore]
+id=WDSK
+Version=4,9,5
+Name=Writing desk
+Category=1154
+MaxUserSelect=2
+Width=23
+Height=21
+Offset=-11,-10
+Value=40
+Mass=100
+Components=WOOD=3;
+Picture=0,21,64,64
+Vertices=4
+VertexX=-11,11,-11,11
+VertexY=-10,-10,9,9
+VertexFriction=50,50,100,100
+BurnTo=NONE
+Grab=2
+GrabPutGet=3
+ColorByOwner=1
+Construction=1
+CollectionLimit=4
+BlastIncinerate=100
+ 

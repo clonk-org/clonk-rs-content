@@ -1,0 +1,2 @@
+Regenerates the life of the carrier, by collecting magic energy from the environment and converting it. But the carrier has to stand at his position for a moment so the amulet can heal him.
+Double 'dig' to extinguish a clonk once. This action destroys the amulet.

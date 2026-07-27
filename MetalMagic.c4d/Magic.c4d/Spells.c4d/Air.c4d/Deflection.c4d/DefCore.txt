@@ -1,0 +1,8 @@
+[DefCore]
+id=MDFL
+Name=MagicDeflection
+Category=1
+Picture=0,0,64,64
+Version=4,9,5,4
+Value=32
+Components=IROC=5;IMUS=1;

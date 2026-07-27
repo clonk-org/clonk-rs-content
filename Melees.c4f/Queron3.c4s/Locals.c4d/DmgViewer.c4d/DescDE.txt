@@ -1,0 +1,1 @@
+Zeigt den Schaden an, den ein Clonk erleidet.

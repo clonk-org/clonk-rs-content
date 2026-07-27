@@ -1,0 +1,2 @@
+The altar. When a Paladin prays next to an altar, he will get magic energy faster.
+Aditionally you can put holigon stones in the altar so that paladins can charge up their karma by grabbing the altar and pressing [Up].

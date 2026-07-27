@@ -1,0 +1,1 @@
+Freezes near enemies and slows their movement.

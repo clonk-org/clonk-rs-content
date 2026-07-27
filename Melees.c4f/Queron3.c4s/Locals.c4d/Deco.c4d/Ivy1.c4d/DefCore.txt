@@ -1,0 +1,17 @@
+[DefCore]
+Name=Ivy
+id=IVY1
+Version=4'9'10'6
+Category=C4D_StaticBack
+Width=26
+Height=100
+Offset=-13,-50
+Picture=0,0,26,100
+Vertices=3
+VertexX=4,-2,-3
+VertexY=31,7,-43
+VertexFriction=20,20,20
+VertexCNAT=0,0,0
+Rotate=1
+StretchGrowth=1
+IncompleteActivity=1

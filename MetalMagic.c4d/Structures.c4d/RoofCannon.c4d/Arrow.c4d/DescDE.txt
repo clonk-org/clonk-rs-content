@@ -1,0 +1,1 @@
+Zeigt die Ausrichtung eines Geschützes an.

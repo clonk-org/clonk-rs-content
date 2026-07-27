@@ -1,0 +1,62 @@
+# Hostmenü
+MnuHostTitle=Einstellungen
+MnuHostInfoCap=Hier kannst du Verschiedenes einstellen. Beeil dich aber, die anderen warten!
+MnuHostRelaunchesCap=Relaunches
+MnuHostRelaunchesTxt=Hier kannst du einstellen, wie oft die Spieler nach dem Tod relauncht werden.
+MnuHostClonksCap=Clonks
+MnuHostClonksTxt=In diesem Menü kannst für jeden Relaunch einen Clontyp festlegen (z.B. Magier oder Ritter).
+MnuHostReadyCap=KAMPF!
+MnuHostReadyTxt=Beim wählen dieses Eintrags wird das Menü geschlossen und das Spiel gestartet! Viel Spass!
+# Relaunchmenü
+MnuRelaunchTitle=Relaunchoptionen
+MnuRelaunchInfoCap=Zurzeit sind %d Relaunches eingestellt.
+MnuRelaunchIncreaseCap=Mehr Relaunches
+MnuRelaunchDecreaseCap=Weniger Relaunches
+# Clonkmenü
+MnuClonkDefTitle=Clonkmenü
+MnuClonkDefStartclonkCap=<c aaaaaa>Startclonk:</c> %s
+MnuClonkDefStartclonkTxt=Als erstes wird der %s ins Feld geführt.
+MnuClonkDefRelaunchCap=<c cccccc>%d.Relaunch:</c> %s
+MnuClonkDefUndefinedTxt=Der Clonktyp für diesen Relaunch muss noch gesetzt werden!
+# Clonkauswahlmenü
+MnuClonkTitle=Clonkauswahlmenü
+MnuClonkCap=%s auswählen
+# Waffenmenü
+MnuWeaponTitle=Wähle deine Waffe!
+MnuWeaponSelectCap=%s wählen.
+
+MsgClonksMustBeDefined=Du musst schon alle Clonks definieren! Sonst stell halt weniger ein! :O
+
+MsgNoJump0=Das mutet sich recht nass an!
+MsgNoJump1=Oh Kälte, ich trotze dir!
+MsgNoJump2=DIENER! Das Bad ist schmutzig!
+MsgNoJump3=*hust*
+
+MsgWalk0=*hust* *hust*
+MsgWalk1=*spuck*
+MsgWalk2=Sum si sum sum
+MsgWalk3=Wo ist bloss die Sonne?
+
+MsgAnvil0=*kling kling*
+MsgAnvil1=AAAAAUAHH mein Daumen!!!
+MsgAnvil2=Ich brauche nen leichteren Hammer! *ächz*
+MsgAnvil3=Man muss das Eisen schmieden solange es heiss ist!
+
+MsgJump0=HURRAA!!
+MsgJump1=*freu*
+MsgJump2=Jippieee!!
+MsgJump3=Ich habs!
+
+MsgHide0=Ein guter Zeitpunkt um abzutauchen..
+MsgHide1=Ich verdufte..
+MsgUnHide0=Kuckuck!
+MsgUnHide1=Hier bin ich!
+
+# Overload
+must_be_in_free=Für diesen Zauber muss|sich der Clonk im|Freien befinden!
+StillDelay=Das Zauberdelay ist noch nicht abgelaufen!
+MsgIsRev=%s ist schon verzaubert.
+MsgBlocked=%s kann nicht zum|Fischclonk aufwerten.
+MsgOnlyOneBalloon=Du hängst schon an einem Ballon!
+NpcKing=Sven der Zweite
+NpcKnight=Ritter Yoghurt

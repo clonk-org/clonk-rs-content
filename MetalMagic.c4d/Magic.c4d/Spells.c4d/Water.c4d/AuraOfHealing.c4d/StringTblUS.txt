@@ -1,0 +1,1 @@
+SpellInfo=Everything in range will be healed.

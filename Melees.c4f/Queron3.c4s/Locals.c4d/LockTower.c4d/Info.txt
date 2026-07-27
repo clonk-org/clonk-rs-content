@@ -1,0 +1,10 @@
+Objektgestaltung:
+
+Sven Eberhardt (SvenSoft@gmx.de)
+Grafiken, Scripte
+
+Johannes Rueth (no.dr@firemail.de)
+GWE3-Validierung, Grafik, Bugfixing und kleinere Verbesserungen
+
+Samuel Beer (samuel.beer@gmx.ch)
+#strict 2 Adaptionen für CR, neue Schlüsselgrafik und ControlTransfer funktioniert

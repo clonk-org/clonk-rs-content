@@ -1,0 +1,8 @@
+[DefCore]
+id=MARK
+Name=MagicRockStrike
+Version=4,9,5,4
+Category=131073
+Value=32
+Components=ISPH=3;IROC=4;
+Picture=0,0,64,64

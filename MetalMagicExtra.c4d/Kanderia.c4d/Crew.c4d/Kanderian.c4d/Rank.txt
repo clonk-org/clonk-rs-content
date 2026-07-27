@@ -1,0 +1,54 @@
+# Rangsystem für Ritter
+# Basiserfahrung - noch nicht unterstützt!
+# Nicht benutzen!
+# Base=1000
+
+# Rangnamen
+Clonk
+Knecht
+Junge
+Page
+Wasserträger
+Stalljunge
+Völklicher
+Knappe
+Vogt
+Ehrenclonk
+Ritter
+Schanzmeister
+Schwertmeister
+Wache
+Mehlwache
+Recke
+Krieger
+Ordensritter
+Erzritter
+Paladin
+Burgbauer
+Kapitanus
+Junker
+Vasall
+Hofmeister
+Burgherr
+Schlossfürst
+Graf
+Baron
+Herzog
+Großherzog
+Kronvasall
+König
+Kaiser
+Absolutist
+Revolutionär
+Inquisitor
+Held
+Ritter Hotzenclonk
+Weißer Ritter
+Knightmare
+Midknight
+Illuminator
+Wipfretter
+Drachentöter
+Drachenzähmer
+Dragonit
+Messias

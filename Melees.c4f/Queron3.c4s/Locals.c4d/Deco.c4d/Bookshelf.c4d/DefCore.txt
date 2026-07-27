@@ -1,0 +1,16 @@
+[DefCore]
+Name=Bookshelf
+id=SHLF
+Version=4'9'10'6
+Category=C4D_StaticBack
+Value=100
+Mass=150
+Width=18
+Height=40
+Offset=-9,-20
+Picture=0,0,18,40
+Vertices=5
+VertexX=-9,8,8,-9,0
+VertexY=19,19,-17,-17,-20
+VertexFriction=20,20,20,20,20
+VertexCNAT=0,0,0,0,0

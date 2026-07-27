@@ -1,0 +1,10 @@
+[DefCore]
+id=FGOB
+Name=MagicObjectFling
+Version=4,9,5,4
+Category=1
+Width=1
+Height=1
+Picture=0,0,64,64
+Value=18
+Components=IASH=3;

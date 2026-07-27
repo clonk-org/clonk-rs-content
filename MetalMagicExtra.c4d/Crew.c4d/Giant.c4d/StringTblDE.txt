@@ -1,0 +1,1 @@
+MsgCultsite=%s wird an der Kultstädte erschaffen.

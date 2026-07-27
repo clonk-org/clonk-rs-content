@@ -1,0 +1,19 @@
+[DefCore]
+id=SHA2
+Version=4,9,5,2
+Name=Armed Big Shield
+Category=16
+MaxUserSelect=10
+Width=7
+Height=10
+Offset=-4,-5
+Value=15
+Mass=20
+Components=METL=1;
+Picture=7,0,64,64
+Vertices=1
+VertexX=0
+VertexY=0
+ColorByOwner=1
+NoSell=1
+NoGet=1

@@ -1,0 +1,2 @@
+Der Altar. Ein Paladin bekommt schneller Energie wenn er vor einem Altar betet.
+Zusätzlich können Holigonsteine in den Altar gelegt werden, so dass sich Paladine mit [Anfassen],[Oben] die Karmaenergie aufladen können.

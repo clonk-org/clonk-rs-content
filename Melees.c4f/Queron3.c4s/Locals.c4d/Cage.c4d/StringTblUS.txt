@@ -1,0 +1,3 @@
+CtrlOpen=Open cage
+MsgNoKey=No key!
+MsgNoFit=Key doesn't fit!

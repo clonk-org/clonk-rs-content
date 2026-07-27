@@ -1,0 +1,7 @@
+Bloodchurch=Legion des Teiwaz
+Lightchurch=Orden der Sawelô
+Choosed=gewählt.
+
+VotingEnded=Abstimmung beendet.
+Voting=Abstimmung zur Gottheit
+ChooseGod=Wahl der Gottheit

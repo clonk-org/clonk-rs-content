@@ -1,0 +1,14 @@
+[Particle]
+Name=Arrow
+MaxCount=1000
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,25,39,-12,-38
+Delay=0
+Repeats=1
+GravityAcc=0
+AlphaFade=9
+Additive=0
+Attach=1
+RByV=1

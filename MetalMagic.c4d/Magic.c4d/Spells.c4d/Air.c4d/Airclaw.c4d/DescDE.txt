@@ -1,0 +1,1 @@
+Erzeugt eine Klaue aus Luft, die Gegner etwas wegschleudert und verletzt.

@@ -1,0 +1,7 @@
+NoPlrKnowledge=No construction plans
+Construction=Construction
+Production=Production
+MsgNoPlace=%s cannot move to this position!
+CtxGriffonCall=Call griffon
+CtxSaurianCall=Call saurian
+CtrlActivateDesc=Use bow

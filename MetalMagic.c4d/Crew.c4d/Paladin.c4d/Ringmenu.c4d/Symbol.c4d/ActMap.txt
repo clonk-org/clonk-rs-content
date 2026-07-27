@@ -1,0 +1,8 @@
+[Action]
+Name=Symbol64x64
+Procedure=ATTACH
+Facet=0,0,64,64
+Length=1
+Delay=5
+NextAction=Symbol64x64
+StartCall=RecheckSymbol

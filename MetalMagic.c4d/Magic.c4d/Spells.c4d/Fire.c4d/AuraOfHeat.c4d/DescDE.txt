@@ -1,0 +1,2 @@
+Alles im Umkreis nimmt Schaden durch diese Aura.
+Durch erneutes Zaubern kann die Aura auch wieder abgeschaltet werden.

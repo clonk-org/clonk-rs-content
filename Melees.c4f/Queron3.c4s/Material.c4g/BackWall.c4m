@@ -1,0 +1,8 @@
+[Material]
+Name=BackWall
+Color=55,40,30
+#Color=62,50,38
+Shape=2
+Placement=5
+TextureOverlay=Flare3
+OverlayType=1

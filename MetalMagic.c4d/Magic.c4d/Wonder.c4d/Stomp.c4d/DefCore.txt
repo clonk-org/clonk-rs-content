@@ -1,0 +1,8 @@
+[DefCore]
+id=MSMT
+Name=MagicStomp
+Version=4,9,5,3
+Category=1
+Picture=0,0,64,64
+Value=30
+Components=IMUS=2;

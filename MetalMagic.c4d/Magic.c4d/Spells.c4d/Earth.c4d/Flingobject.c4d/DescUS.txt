@@ -1,0 +1,1 @@
+Flings the first contained object in the chosen direction.

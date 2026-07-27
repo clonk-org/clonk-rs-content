@@ -1,0 +1,2 @@
+DE:Heilungsaura
+US:Aura of healing

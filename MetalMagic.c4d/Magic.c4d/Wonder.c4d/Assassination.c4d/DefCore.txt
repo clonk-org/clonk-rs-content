@@ -1,0 +1,7 @@
+[DefCore]
+id=MASS
+Version=4,9,8
+Name=Assassination
+Category=C4D_StaticBack|C4D_Magic
+Value=35
+Picture=0,0,64,64

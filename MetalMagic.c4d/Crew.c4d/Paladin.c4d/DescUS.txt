@@ -1,0 +1,5 @@
+The paladin knows how to handle sword, shield, spear and axe, as well as bow and arrow. He can also use the magic sword and the musket. The paladin can carry up to three objects plus thirty arrows and 10 bullets.
+
+He can be ordered to attack enemy clonks or guard and defend a position.
+
+Inventory selection by key 'special 1'. Order menu by key 'special 2'. Additional information can be found in the weapons' object information.

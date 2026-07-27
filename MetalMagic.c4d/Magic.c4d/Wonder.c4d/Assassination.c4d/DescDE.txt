@@ -1,0 +1,1 @@
+Nach dem Laden feuert die Muskete einen abprallenden Strahl ab, der Schaden je nach bereits verlorenden Leben des Gegners macht.

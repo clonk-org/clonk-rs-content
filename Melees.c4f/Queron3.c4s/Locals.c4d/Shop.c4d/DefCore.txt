@@ -1,0 +1,12 @@
+[DefCore]
+id=STRE
+Name=Store
+Version=4,9,5
+Category=C4D_StaticBack
+Width=16
+Height=20
+Offset=-8,-10
+Vertices=1
+VertexX=0
+VertexY=2
+Entrance=-8,-10,16,20

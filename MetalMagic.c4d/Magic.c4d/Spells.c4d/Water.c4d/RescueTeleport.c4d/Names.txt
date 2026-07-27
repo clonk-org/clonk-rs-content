@@ -1,0 +1,2 @@
+DE:Rettungsteleport
+US:Rescue Teleport

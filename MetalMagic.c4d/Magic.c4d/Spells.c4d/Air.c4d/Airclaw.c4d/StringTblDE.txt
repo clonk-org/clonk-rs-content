@@ -1,0 +1,2 @@
+must_be_in_free=Für diesen Zauber muss|sich der Clonk im|Freien befinden!
+StillDelay=Das Zauberdelay ist noch nicht abgelaufen!

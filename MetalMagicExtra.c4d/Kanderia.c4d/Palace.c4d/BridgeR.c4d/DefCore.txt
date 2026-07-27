@@ -1,0 +1,17 @@
+[DefCore]
+id=CPBR
+Name=DrawbridgeRight
+Version=4,9,5,2
+Category=4
+Width=60
+Height=60
+Offset=-30,-30
+Value=40
+Mass=150
+Components=WOOD=3;METL=1;
+SolidMask=
+Picture=840,0,60,60
+Vertices=1
+VertexFriction=100
+HorizontalFix=1
+TopFace=0,0,60,60

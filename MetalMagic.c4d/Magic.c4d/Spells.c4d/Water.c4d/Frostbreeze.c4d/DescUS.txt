@@ -1,0 +1,1 @@
+Casts a frost breeze which flings enemies away and freezes them.

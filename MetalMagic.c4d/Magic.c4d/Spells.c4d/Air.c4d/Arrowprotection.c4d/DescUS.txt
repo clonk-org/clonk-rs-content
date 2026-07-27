@@ -1,0 +1,1 @@
+Creates a gravity field around the mage so a group of clonks is protected against arrows.

@@ -1,0 +1,1 @@
+Dematerialisiert den Zielclonk und rematerialisiert ihn in der Basis wieder. Dabei bleiben jedoch alle Objekte zurück, die der Clonk dabei hatte.

@@ -1,0 +1,14 @@
+[DefCore]
+id=LHTA
+Name=Append
+Version=4,9,5
+Category=8388609
+MaxUserSelect=10
+Width=6
+Height=6
+Offset=-3,-3
+Vertices=0
+VertexY=1
+VertexFriction=20
+ColorByOwner=1
+ 

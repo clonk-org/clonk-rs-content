@@ -1,0 +1,2 @@
+Similar to the magic tower.
+With dig, mages can be trained. With up, magic items can be constructed. 

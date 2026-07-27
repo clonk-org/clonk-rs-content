@@ -1,0 +1,7 @@
+NoPalisade=Keine Palisade
+Activate=%s aktivieren
+Door=Luke öffnen/schließen
+OpenDoor=Luke öffnen
+CloseDoor=Luke schließen
+Ascend=Aufsteigen
+HatchClosed=Die Luke ist geschlossen.

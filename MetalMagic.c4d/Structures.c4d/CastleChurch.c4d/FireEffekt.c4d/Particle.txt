@@ -1,0 +1,15 @@
+[Particle]
+Name=FireWave
+MaxCount=300
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,40,40,-20,-20
+Delay=6
+Repeats=1
+Reverse=1
+Additive=1
+AlphaFade=2
+GravityAcc=0
+Attach=1
+VertexCount=1

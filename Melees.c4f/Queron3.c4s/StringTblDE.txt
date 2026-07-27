@@ -1,0 +1,17 @@
+MsgHostConfiguring=@Host stellt alles ein..
+
+MsgTimeToRelaunch={{%i}}|%d
+MsgGo=Los los los!!
+MsgPlusKill=+1 Kill
+MsgKill=%s hat %s kaltgemacht!
+MsgKill2=%s killt %s!
+MsgKill3=%s hat %s um die Ecke gebracht!
+MsgTeamkill=%s hat Teamkumpel %s zum Spass gelyncht!
+MsgTeamkill2=%s hat Teamkamerad %s abgemurkst!
+MsgTeamkill3=%s hat wegen Missverständnissen Teamkumpel %s umgelegt!
+MsgSuicide=%s macht Selbstmord.
+MsgSuicide2=%s: Operation 'cooler Abgang' gescheitert!
+MsgSuicide3=%s hat sich umgelegt!
+MsgDeath=%s ist abgenippelt
+MsgDeath2=%s hat den Löffel abgegeben
+MsgDeath3=%s = tot

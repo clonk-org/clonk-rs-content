@@ -1,0 +1,16 @@
+[Action]
+Name=Close
+Length=10
+Delay=2
+Facet=0,40,23,10,0,40
+NextAction=Hold
+Procedure=ATTACH
+Reverse=1
+
+[Action]
+Name=Open
+Length=10
+Delay=2
+Facet=0,40,23,10,0,40
+NextAction=Hold
+Procedure=ATTACH

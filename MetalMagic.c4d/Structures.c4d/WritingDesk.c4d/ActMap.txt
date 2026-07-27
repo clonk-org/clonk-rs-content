@@ -1,0 +1,9 @@
+[Action]
+Name=Write
+Procedure=NONE
+Length=4
+Delay=6
+Facet=23,0,23,21
+NextAction=Write
+StartCall=Writing
+Sound=Write

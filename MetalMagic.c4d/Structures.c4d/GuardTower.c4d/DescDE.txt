@@ -1,0 +1,5 @@
+Schützt das Feldlager vor Eindringlingen. 
+
+Bedienung der Tore durch Anfassen und Rechts/Links. Aufstieg durch Rauf/Springen im Mittelbereich.
+
+Nun ist es nicht mehr möglich, die Tore vom Dach aus zu öffnen und zu schließen

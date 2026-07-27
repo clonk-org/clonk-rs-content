@@ -1,0 +1,8 @@
+[Action]
+Name=Shrub
+Directions=2
+FlipDir=1
+Length=1
+Delay=1
+Facet=0,0,106,150,0,0
+NextAction=Hold

@@ -1,0 +1,7 @@
+TxtUse=Stab verwenden
+TxtError=%s kann diesen Gegenstand|nicht einsetzen!
+
+Fire=Feuer
+Earth=Erde
+Air=Luft
+Water=Wasser

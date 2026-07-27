@@ -1,0 +1,12 @@
+[DefCore]
+Name=BigRock
+id=RCK1
+Version=4'9'10'6
+Category=C4D_StaticBack
+Mass=500
+Width=32
+Height=32
+Offset=-16,-16
+Picture=0,0,32,32
+Value=100
+Components=ROCK=4

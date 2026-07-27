@@ -1,0 +1,4 @@
+MsgHero=Thank you, brave hero!
+MsgHeroDead=Oh, that one is done for! Where is my next hero?
+MsgHelp=Help!
+MsgCursed=Ahh, %s, a curse upon you!

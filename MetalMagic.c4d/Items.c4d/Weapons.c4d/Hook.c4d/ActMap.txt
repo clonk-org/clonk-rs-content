@@ -1,0 +1,17 @@
+[Action]
+Name=Hooking
+Procedure=FLOAT
+NextAction=Hooking
+Length=1
+Delay=1
+FacetBase=1
+StartCall=Hooking
+
+[Action]
+Name=InFlight
+Procedure=NONE
+NextAction=InFlight
+Length=1
+Delay=1
+FacetBase=1
+StartCall=InFlight

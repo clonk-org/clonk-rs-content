@@ -1,0 +1,2 @@
+Everything in range will be damaged.
+Casting the spell twice turns the aura off.

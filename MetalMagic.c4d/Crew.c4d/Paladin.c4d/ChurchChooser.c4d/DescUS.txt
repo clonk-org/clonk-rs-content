@@ -1,0 +1,1 @@
+Manages the voting for the choosing of the god.

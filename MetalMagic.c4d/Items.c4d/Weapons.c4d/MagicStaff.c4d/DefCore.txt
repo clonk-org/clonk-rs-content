@@ -1,0 +1,25 @@
+[DefCore]
+id=SCKZ
+Version=4,5
+Name=Stab von Cra-Kla-Zoth
+Category=3600
+MaxUserSelect=2
+Width=4
+Height=23
+Offset=-2,-11
+Value=20
+Mass=10
+Components=WOOD=1;CRYS=3;BHLG=1
+Picture=8,9,50,66
+Vertices=4
+VertexX=-2,2,0,0
+VertexY=0,0,-11,4
+VertexFriction=20,20,20,20
+BurnTo=NONE
+Rebuy=1
+Collectible=1
+Rotate=1
+Float=2
+ColorByOwner=1
+Timer=3
+TimerCall=Coloring

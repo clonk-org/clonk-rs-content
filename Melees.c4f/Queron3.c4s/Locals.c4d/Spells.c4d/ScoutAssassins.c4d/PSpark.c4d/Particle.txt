@@ -1,0 +1,13 @@
+[Particle]
+Name=TSpark
+MaxCount=2000
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,16,16,-8,-8
+Delay=0
+Repeats=1
+GravityAcc=0
+AlphaFade=6
+Additive=1
+Attach=1

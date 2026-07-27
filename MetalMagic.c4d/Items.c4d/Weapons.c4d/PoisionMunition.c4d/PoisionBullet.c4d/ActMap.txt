@@ -1,0 +1,17 @@
+[Action]
+Name=Shot
+NextAction=Shot
+Procedure=FLOAT
+Length=1
+Delay=1
+PhaseCall=InFlight
+FacetBase=1
+
+[Action]
+Name=Down
+Procedure=NONE
+Length=1
+Delay=1
+PhaseCall=InFlight
+FacetBase=1
+NextAction=Down

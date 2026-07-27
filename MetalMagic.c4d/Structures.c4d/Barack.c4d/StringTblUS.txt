@@ -1,0 +1,7 @@
+NoPalisade=No palisade found
+Activate=Activate %s
+Door=Close/Open door
+OpenDoor=Open hatch
+CloseDoor=Close hatch
+Ascend=Ascend
+HatchClosed=The hatch is closed.

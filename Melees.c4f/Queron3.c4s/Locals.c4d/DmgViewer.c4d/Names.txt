@@ -1,0 +1,2 @@
+DE:Schadenanzeige
+US:Damage viewer

@@ -1,0 +1,2 @@
+DE:Magische Geschosse
+US:Homing Arrows

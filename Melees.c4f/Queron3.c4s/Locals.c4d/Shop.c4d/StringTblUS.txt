@@ -1,0 +1,39 @@
+MnuSellPrincess=Sell princess
+MnuBuy=Buy items
+MnuAbort=Cancel
+
+#King
+MnuKing0=I am King Sven the Second, ruler over the wide clonk pastures!
+MnuKing1=My royal bath has been soiled by filthy hordes!
+MnuKing2=Subject, honour your king by cleaning this bath!
+MnuKing3=A bloody day! Bring me a chilled red wine!
+MnuKing4=Away with you, treading through my bath with dirty feet!
+MnuKingPrincessSold=Oh what a fair maiden! For that I shall gladly grant you a few coins from my royal treasure chest!
+
+#Knight
+MnuKnight0=Eh, what do you want?
+MnuKnight1=Busy doing nothing.
+MnuKnight2=There's iron in that crate over there. Forge it yourself!
+MnuKnight3=I'm not even listening!
+MnuKnight4=I am a smith. A royal smith.
+MnuKnightPrincessSold=Thanks! I will forge her a cosy cage so she feels at home!
+
+#Librarian
+MnuLib0=They say I am intelligent.
+MnuLib1=To be or not to be, that is the question!
+MnuLib2=This crystal regenerates magic energy!
+MnuLib3=Hohoho! A good book!
+MnuLib4=I often mix up words. For example 'intelligent' and 'imbecile'.
+MnuLibPrincessSold=Many thanks! I think I shall write a long book about this creature!
+
+#Assassin
+MnuAssa0=How did you find me?
+MnuAssa1=dKkeoc?lqoelk[o]HJX_|_XEesäfv[o]eifgDFDF?
+MnuAssa2=Have you got the stuff?
+MnuAssa3=Hawaiian sunshine, Gipsy, Orange, Pancake, Mould, Stardust, Spice
+MnuAssa4=Did anyone follow you?
+
+MsgItemDelivered=+{{%i}}
+MsgPrincessSold=%s sold the princess and made a tidy pile of cash!
+MsgNotEnoughMoney=Not enough money!
+MsgInventoryFull=Inventory full!

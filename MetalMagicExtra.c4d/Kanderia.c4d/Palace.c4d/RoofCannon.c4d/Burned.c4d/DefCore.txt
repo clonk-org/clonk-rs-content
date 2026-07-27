@@ -1,0 +1,26 @@
+[DefCore]
+id=PFCB
+Name=BurnedPalaceTowerCannon
+Version=4,9,5,2
+Category=2
+MaxUserSelect=2
+Width=44
+Height=41
+Offset=-22,-20
+Value=25
+Mass=300
+Components=ROCK=3;WOOD=4;
+Vertices=5
+VertexX=-19,19,-19,19   ,  0
+VertexY=  0,0 ,20 ,20   ,-13
+VertexFriction=100,100,100,100
+Exclusive=1
+BlastIncinerate=250
+Construction=1
+ConstructTo=PRFC
+Grab=2
+Rotate=1
+ContainBlast=1
+HorizontalFix=1
+DragImagePicture=1
+ 

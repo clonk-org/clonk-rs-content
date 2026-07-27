@@ -1,0 +1,39 @@
+MnuSellPrincess=Prinzessin verkaufen
+MnuBuy=Items erwerben
+MnuAbort=Abbruch
+
+#König
+MnuKing0=Ich bin König Sven der Zweite, Herscher über die weiten Clonkweiden!
+MnuKing1=Mein königliches Bad wurde von schmutzigen Horden verdreckt!
+MnuKing2=Untertan, ehre deinen König mit der reinigung dieses Bades!
+MnuKing3=Ein blutiger Tag! Man bringe mir einen gekühlten Rotwein!
+MnuKing4=Hinfort mit dir, der du schmutzigen Fusses durch mein Bad schreitest!
+MnuKingPrincessSold=Oh was für ein holdes Weib! Dafür gewähre ich dir gerne ein paar Münzen aus meiner königlichen Schatztruhe!
+
+#Ritter
+MnuKnight0=Eh was willste?
+MnuKnight1=Bin beschäftigt mit Nichtstun.
+MnuKnight2=In der Kiste da drüben hat's Eisen. Kannst ja selber schmieden!
+MnuKnight3=Ich hör gar nicht zu!
+MnuKnight4=Ich bin ein Schmied. Ein königlicher Schmied.
+MnuKnightPrincessSold=Danke! Ich werde ihr ein gemütliches Käfig schmieden damit sie sich wohlfühlt!
+
+#Bibliothekar
+MnuLib0=Man sagt ich sei intelligent.
+MnuLib1=Sein oder nicht sein, dass ist hier die Frage!
+MnuLib2=Dieser Kristall regeneriert Zauberenergie!
+MnuLib3=Hohoho! Ein gutes Buch!
+MnuLib4=Ich verwechsle oft Wörter. Zum Beispiel 'intelligent' und 'debil'.
+MnuLibPrincessSold=Vielen Dank! Ich glaube ich werde ein langes Buch über dieses Geschöpf schreiben!
+
+#Assa
+MnuAssa0=Wie hast du mich gefunden?
+MnuAssa1=dKkeoc?lqoelk[o]HJX_|_XEes§fv[o]eifgDFDF?
+MnuAssa2=Hast du den Stoff?
+MnuAssa3=Hawailian sunshine, Gipsy, Orange, Pfannkuchen, Schimmel, Sternenstaub, Spice
+MnuAssa4=Ist dir jemand gefolgt?
+
+MsgItemDelivered=+{{%i}}
+MsgPrincessSold=%s hat die Prinzessin verkauft und ordentlich Kohle gemacht!
+MsgNotEnoughMoney=Nicht genug Geld!
+MsgInventoryFull=Inventar voll!

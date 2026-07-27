@@ -1,0 +1,10 @@
+[DefCore]
+id=_FR3
+Version=4,9,8
+Name=Furniture
+Category=C4D_StaticBack
+Width=21
+Height=14
+Offset=-10,-7
+Value=0
+Mass=0

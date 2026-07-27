@@ -1,0 +1,5 @@
+TxtPutGetKey=Schlüssel reinstecken
+TxtTurnKey=Schlüssel drehen
+TxtInfo=Gravur
+MsgNoKey=Kein Schlüssel!
+MsgNoFit=Schlüssel passt nicht!

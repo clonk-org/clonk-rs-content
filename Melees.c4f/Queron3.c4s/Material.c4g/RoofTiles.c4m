@@ -1,0 +1,12 @@
+[Material]
+Name=RoofTiles
+Color=240,0,0
+#Color=130,105,85
+Shape=0
+Density=50
+Friction=100
+MaxAirSpeed=100
+MaxSlide=250
+Placement=75
+TextureOverlay=Ridge
+OverlayType=1

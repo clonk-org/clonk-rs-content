@@ -1,0 +1,1 @@
+After loading, the musket fires a precise, ricocheting ray that deals damage depending on the already lost lifes of an enemy.

@@ -1,0 +1,3 @@
+TxtSummon=Summon
+TxtNoRituals=No rituals available.
+MsgNotEnoughIngredients=Not enough|alchemistic ingredients!|%s|are missing.

@@ -1,0 +1,17 @@
+[DefCore]
+id=AFTF
+Name=Claw
+Version=4,9,5
+Category=4
+MaxUserSelect=10
+Width=45
+Height=45
+Offset=-27,-27
+Value=10
+Mass=50
+Timer=2
+TimerCall=Check
+Rotate=1
+
+[Physical]
+Float=500

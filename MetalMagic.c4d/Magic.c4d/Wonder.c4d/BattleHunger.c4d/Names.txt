@@ -1,0 +1,2 @@
+DE:Kriegshunger
+US:Battlehunger

@@ -1,0 +1,1 @@
+Schleudert das erste Inhaltsobjekt in die anvisierte Richtung.

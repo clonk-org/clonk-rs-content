@@ -1,0 +1,7 @@
+[Action]
+Name=Rise
+Procedure=FLOAT
+FacetBase=1
+Length=1
+Delay=0
+NextAction=Hold

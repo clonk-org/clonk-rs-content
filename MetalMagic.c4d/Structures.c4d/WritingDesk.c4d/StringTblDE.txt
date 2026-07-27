@@ -1,0 +1,8 @@
+TxtProduce=Schreiben
+TxtCancelproduction=Herstellung abbrechen
+TxtNoPlans=Keine Baupläne vorhanden
+TxtProduceMenu=Herstellen: %s
+TxtNeedMaterial=%s benötigt noch:
+TxtNeedMaterialComponent=%dx %s
+
+OnlyMages=Kann nur von Magi benutzt werden.

@@ -1,0 +1,1 @@
+NoHiddenAssas=No assassins are hidden at the moment!

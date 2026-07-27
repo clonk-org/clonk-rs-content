@@ -1,0 +1,16 @@
+[DefCore]
+id=MGM2
+Name=MageSymbol
+Category=8388624
+Width=64
+Height=64
+Offset=-32,-32
+Picture=0,0,64,64
+Vertices=1
+BorderBound=1
+Rotate=0
+NoBreath=1
+NoFight=1
+StretchGrowth=1
+IncompleteActivity=1
+Exclusive=1
