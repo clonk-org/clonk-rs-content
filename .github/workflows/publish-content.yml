@@ -1,0 +1,117 @@
+name: Publish content
+
+# Publishes `content.zip` — the game data a clonk-rs client downloads when it
+# updates in place — from the repository the data actually lives in.
+#
+# The engine repository used to build this archive out of its `content/`
+# submodule and re-upload 225 MB on every daily release, even though the
+# content changes roughly four times per ninety days. It now references what is
+# published here instead.
+#
+# The archive is content-addressed: clonk-rs records its SHA-256 in the update
+# manifest and a client re-downloads only when that digest changes. So there
+# must be exactly one producer of these bytes, and `.github/pack-content` is
+# it — two "deterministic zip" implementations would have to agree byte for
+# byte forever, and the day they drifted every install would re-fetch the whole
+# archive for nothing.
+#
+# One release per commit on `main`, tagged `content-<sha>`, because the engine
+# repository pins this repository by exact commit and must resolve that pin to
+# an artifact with no lookup table in between. Commits that touch nothing a
+# client receives still publish, and cost nothing: their archive has the same
+# digest as the previous one, so no client downloads it again.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-content
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Build and publish content.zip
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # `--locked` so the zip and deflate implementations are the ones the
+      # lockfile pins. The archive's bytes depend on them, not on the compiler.
+      - name: Build the packaging tool
+        run: cargo build --release --locked --manifest-path .github/pack-content/Cargo.toml
+
+      # Twice, comparing the results. The packer pins the clock, the umask,
+      # entry order and the compression method, but an assertion is worth more
+      # than the intent: a digest that moved without the content moving would
+      # otherwise only be discovered by every client re-downloading.
+      - name: Build content.zip and prove it is reproducible
+        run: |
+          packer=.github/pack-content/target/release/pack-content
+          "$packer" first.zip
+          "$packer" content.zip
+          if ! cmp -s first.zip content.zip; then
+            echo "two builds of the same tree produced different archives" >&2
+            sha256sum first.zip content.zip >&2
+            exit 1
+          fi
+          rm -f first.zip first.sha256
+
+          # A floor, not a size check: it catches an empty container, which is
+          # what a packaging bug most plausibly produces.
+          size=$(wc -c < content.zip)
+          if [[ "$size" -lt 150000000 ]]; then
+            echo "content.zip is only $size bytes" >&2
+            exit 1
+          fi
+          echo "ok content.zip $size bytes"
+          cat content.sha256
+
+      # Created through the API by `gh`, which also creates the tag. A release
+      # per commit, so the engine repository can resolve its submodule pin
+      # directly: it pins a SHA and this names one.
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.sha }}
+        run: |
+          tag="content-${SHA}"
+
+          # Idempotent: re-running the workflow on a commit that already
+          # published must not fail, and must not replace bytes a client may
+          # already have verified against the manifest.
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "$tag is already published"
+            exit 0
+          fi
+
+          digest=$(cut -d' ' -f1 content.sha256)
+          cat > release-notes.md <<NOTES
+          Game content built from \`${SHA}\`.
+
+          \`content.zip\` is prefix-free and byte-reproducible; \`content.sha256\`
+          carries its digest in \`sha256sum -c\` form.
+
+              ${digest}
+
+          clonk-rs resolves this release from the commit its \`content\`
+          submodule pins, and records the digest above in its update manifest.
+          NOTES
+
+          gh release create "$tag" \
+            --target "$SHA" \
+            --title "Content ${SHA:0:12}" \
+            --notes-file release-notes.md \
+            content.zip content.sha256

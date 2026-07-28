@@ -18,3 +18,9 @@
 /MetalMagic.c4d/** binary
 /MetalMagicExtra.c4d/** binary
 /Melees.c4f/Queron3.c4s/** binary
+
+# Repository infrastructure, not game content. Keep it at LF: the eol=crlf rule
+# above is there to preserve pack bytes, and it would otherwise reach the shell
+# scripts embedded in the publishing workflow.
+/.github/pack-content/** text eol=lf
+/.github/workflows/publish-content.yml text eol=lf

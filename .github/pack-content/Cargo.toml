@@ -1,0 +1,21 @@
+[package]
+name = "pack-content"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dev-dependencies]
+tempfile = "3"
+
+[dependencies]
+anyhow = "1"
+ring = "0.17"
+# Pinned to the exact version and feature set the clonk-rs packaging tool used
+# when it still built this archive. The archive is content-addressed, so a zip
+# implementation that encodes the same files differently would change the digest
+# and make every client re-download 225 MB for nothing.
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
+
+[[bin]]
+name = "pack-content"
+path = "src/main.rs"
