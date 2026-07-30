@@ -10,7 +10,8 @@ Offset=-10,-20
 Value=35
 Mass=50
 Components=ICRS=4;IASH=2;IHOL=5;
-Picture=326,60,45,64
+Picture=416,0,32,40
+Scale=300
 PictureFE=371,60,45,64
 Vertices=7
 VertexX=0,0,0,-2,2,-4,4
