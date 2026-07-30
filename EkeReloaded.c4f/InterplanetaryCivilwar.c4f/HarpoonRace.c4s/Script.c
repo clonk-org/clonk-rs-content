@@ -2,6 +2,8 @@
 
 #strict
 
+static harpoonDeathMessage;
+
 func GetSftSuit() { return("Storm"); }
 
 func Initialize()
@@ -61,7 +63,7 @@ private func InitializeClonk(clonk)
 
 protected func RelaunchPlayer(player, lastSft)
 {
-  Log("%s tried to be Spiderman.", GetPlayerName(player));
+  Log(GetRelaunchMessage(), GetPlayerName(player));
 
   var clonk = CreateObject(SF5B, 0, 0, player);
   
@@ -77,4 +79,22 @@ protected func RelaunchPlayer(player, lastSft)
 
   InitializeClonk(clonk);
   return(1);
-}                 
+}
+
+private func GetRelaunchMessage()
+{
+  // reihum, damit nicht immer dieselbe Meldung kommt
+  harpoonDeathMessage = (harpoonDeathMessage + 1) % 10;
+
+  if (harpoonDeathMessage == 1) return("%s forgot to hold on.");
+  if (harpoonDeathMessage == 2) return("%s took the express route down.");
+  if (harpoonDeathMessage == 3) return("%s misjudged the swing.");
+  if (harpoonDeathMessage == 4) return("%s was reminded that gravity always wins.");
+  if (harpoonDeathMessage == 5) return("%s aimed for the rope and found the floor.");
+  if (harpoonDeathMessage == 6) return("%s let go a little too early.");
+  if (harpoonDeathMessage == 7) return("%s is having a rough day on the ropes.");
+  if (harpoonDeathMessage == 8) return("%s went out with style. Almost.");
+  if (harpoonDeathMessage == 9) return("%s needs a bigger harpoon.");
+
+  return("%s tried to be Spiderman.");
+}
