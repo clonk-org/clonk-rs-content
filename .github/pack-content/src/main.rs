@@ -144,7 +144,10 @@ fn content_files(root: &Path) -> Result<Vec<String>> {
         .output()
         .context("failed to list tracked files")?;
     if !output.status.success() {
-        bail!("`git ls-files` failed with status {:?}", output.status.code());
+        bail!(
+            "`git ls-files` failed with status {:?}",
+            output.status.code()
+        );
     }
 
     let tracked = output
