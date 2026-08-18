@@ -33,6 +33,29 @@ the packs or their individual assets. No attribution or license files were
 inserted into the classic group directories, so documenting the permission
 does not change their resource bytes or network checksums.
 
+### These packs contain packed groups, and must stay that way
+
+103 files inside `ClonkMars.*` and `EkeReloaded.*` are *packed* C4Groups
+rather than directories — 56 in `ClonkMars.c4d`, 1 in `ClonkMars.c4f`, 25 in
+`EkeReloaded.c4d` and 21 in `EkeReloaded.c4f`. For example
+`ClonkMars.c4d/Helpers.c4d/Explosion.c4d/Blast.c4d` is a single binary blob,
+while definitions elsewhere in the same pack are unpacked directories of
+`DefCore.txt`, `Script.c` and `Graphics.png`.
+
+This is how the packs were received, and it is deliberate. Unpacking them would
+rewrite the resource bytes and the group checksums this section is careful to
+preserve, so **do not unpack them for consistency with the rest of the tree.**
+
+Two consequences worth knowing before searching this repository:
+
+- `grep` does not see their scripts. A search for a C4Script function will
+  report fewer call sites than exist, and `grep -a` does not help, because the
+  contents are compressed rather than merely binary.
+- `git diff` shows `Binary files differ` for any change to one of them.
+
+Use the `c4group` tool to inspect one; explode a copy outside the repository
+rather than in place.
+
 ## Community packs added from CCAN
 
 **No permission has been obtained from the authors for the two packs in this
