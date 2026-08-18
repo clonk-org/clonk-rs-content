@@ -44,6 +44,19 @@ jobs:
       - name: Build the packaging tool
         run: cargo build --release --locked --manifest-path .github/pack-content/Cargo.toml
 
+      # The packer's own tests. They cover what the archive's digest depends on
+      # — entry order, the zip epoch, the fixed mode, prefix-freedom — and which
+      # paths are game data. `cargo build` does not compile #[cfg(test)] code, so
+      # before this step they had never run.
+      - name: Test the packaging tool
+        run: cargo test --locked --manifest-path .github/pack-content/Cargo.toml
+
+      - name: Lint the packaging tool
+        run: |
+          cargo fmt --check --manifest-path .github/pack-content/Cargo.toml
+          cargo clippy --locked --all-targets \
+            --manifest-path .github/pack-content/Cargo.toml -- -D warnings
+
       # The packer refuses a worktree that differs from the index, so this also
       # catches a change that only exists as an uncommitted artifact.
       - name: Build content.zip and prove it is reproducible
