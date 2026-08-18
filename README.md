@@ -1,8 +1,8 @@
 # Clonk Rust game content
 
-Game data for [Clonk Rust](https://github.com/syb0rg/clonk-rs), consumed as the
-`content/` submodule of the engine repository. This directory is the engine's
-data root (`General.ExePath` in classic terms), so every definition and
+Game data for [Clonk Rust](https://github.com/clonk-org/clonk-rs), consumed as
+the `content/` submodule of the engine repository. This directory is the
+engine's data root (`General.ExePath` in classic terms), so every definition and
 scenario pack the game should offer must live here.
 
 ## Origin
@@ -24,7 +24,7 @@ redistributing them.
 The engine repository pins this repository as a submodule:
 
 ```sh
-git clone --recurse-submodules https://github.com/syb0rg/clonk-rs.git
+git clone --recurse-submodules https://github.com/clonk-org/clonk-rs.git
 ```
 
 For an existing clone, `git submodule update --init --recursive`.
