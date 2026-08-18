@@ -1,0 +1,13 @@
+# Matches the engine repository's pin, so the one Rust program in this
+# repository is built by the same compiler as the rest of the project.
+#
+# Kept beside the crate rather than at the repository root on purpose: the root
+# is game data as far as the packaging tool is concerned, and a rust-toolchain
+# file there would ship to every client inside content.zip.
+#
+# rustup discovers this by walking up from the working directory, so the
+# workflow runs cargo from this directory rather than passing --manifest-path.
+[toolchain]
+channel = "1.97.1"
+profile = "minimal"
+components = ["clippy", "rustfmt"]
