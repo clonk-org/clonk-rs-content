@@ -1,5 +1,5 @@
 # Ownership of the parts of this repository where a mistake is expensive or
-# hard to reverse: the publishing pipeline, and the licensing record.
+# hard to reverse: the publishing pipeline and the version identity.
 #
 # Currently advisory. `main` requires the Validate check but not an approving
 # review, because a required approval would deadlock a solo maintainer. This
@@ -9,9 +9,6 @@
 # Packaging and CI. The packer is the single producer of content.zip's bytes,
 # and its exclusion list is mirrored in clonk-org/clonk-rs.
 /.github/                       @syb0rg
-
-# Licensing.
-/clonk_content_license.txt      @syb0rg
 
 # Version identity, which the engine reads and the update channel keys on.
 /Version.txt                    @syb0rg

@@ -11,7 +11,8 @@ The base packs — `Objects.c4d`, `Worlds.c4f`, `Fantasy.*`, `FarWorlds.*`,
 `Hazard.*`, `Knights.*`, `Western.*`, `Material.c4g`, `Music.c4g`, `Sound.c4g`,
 `Melees.c4f`, `Missions.c4f`, `Races.c4f`, `Tutorial.c4f` — originate from
 [legacyclonk/content](https://github.com/legacyclonk/content) and are covered by
-the CC BY-NC grant in [`clonk_content_license.txt`](clonk_content_license.txt).
+the Creative Commons Attribution-NonCommercial grant those packs are published
+under, not by the MIT licence that covers the engine source.
 
 `ClonkMars.*` and `EkeReloaded.*` are classic third-party packs included under
 separate, explicitly granted permission, and `MetalMagic.c4d`,
