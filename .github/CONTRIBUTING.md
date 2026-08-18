@@ -50,6 +50,26 @@ under-report call sites.
 - No new NUL bytes. Fifteen assets carry a stray trailing one already; that is a
   known backlog, not a licence to add more.
 
+## Extension casing is insignificant — leave it alone
+
+130 paths use an uppercase extension: 102 `.WAV`, 14 `.C4D`, 13 `.TXT`, one `.C`.
+This looks like something to tidy. It is not.
+
+Both engines match these case-insensitively, deliberately, because the classic
+one did:
+
+- definitions — `is_definition_file` in `clonk-engine` uses
+  `eq_ignore_ascii_case`, mirroring C++ `SEqualNoCase(GetExtension(szFilename), "c4d")`;
+- sounds — `sound_sample_available` lowercases both the request and the sample
+  name, mirroring `C4SoundSystem::PrepareFilename` and StdFile's
+  ASCII-insensitive `WildcardMatch`.
+
+So `LightningShot.C4D` loads exactly like `LightningShot.c4d`, on Linux as much
+as anywhere else. Renaming all 130 would move the archive digest — a re-download
+for every install — churn paths inside packs that are meant to be byte-exact, and
+buy nothing. Case-only renames also need a two-step dance to register on
+macOS and Windows.
+
 ## Versions
 
 Run `./set_version.sh <VERSION>` rather than editing `Version.txt` by hand. It
