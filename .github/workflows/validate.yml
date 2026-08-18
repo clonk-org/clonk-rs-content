@@ -39,23 +39,28 @@ jobs:
         with:
           persist-credentials: false
 
+      # Run from the crate directory rather than with --manifest-path, so rustup
+      # finds .github/pack-content/rust-toolchain.toml by walking up from here.
+      #
       # `--locked` for the same reason the publishing job uses it: the archive's
       # bytes depend on the zip and deflate implementations the lockfile pins.
       - name: Build the packaging tool
-        run: cargo build --release --locked --manifest-path .github/pack-content/Cargo.toml
+        working-directory: .github/pack-content
+        run: cargo build --release --locked
 
       # The packer's own tests. They cover what the archive's digest depends on
       # — entry order, the zip epoch, the fixed mode, prefix-freedom — and which
       # paths are game data. `cargo build` does not compile #[cfg(test)] code, so
       # before this step they had never run.
       - name: Test the packaging tool
-        run: cargo test --locked --manifest-path .github/pack-content/Cargo.toml
+        working-directory: .github/pack-content
+        run: cargo test --locked
 
       - name: Lint the packaging tool
+        working-directory: .github/pack-content
         run: |
-          cargo fmt --check --manifest-path .github/pack-content/Cargo.toml
-          cargo clippy --locked --all-targets \
-            --manifest-path .github/pack-content/Cargo.toml -- -D warnings
+          cargo fmt --check
+          cargo clippy --locked --all-targets -- -D warnings
 
       # The packer refuses a worktree that differs from the index, so this also
       # catches a change that only exists as an uncommitted artifact.
@@ -80,6 +85,62 @@ jobs:
           fi
           echo "ok content.zip $size bytes"
           cat content.sha256
+
+      # The in-run `cmp` above proves the packer is deterministic within one
+      # process on one machine. It cannot see the failure this repository
+      # actually fears: the same tree producing a different digest in a later
+      # run, on a different runner, after a dependency or compiler moved. That
+      # would make every install re-download 253 MB with nothing changed, and
+      # nothing would report it.
+      #
+      # So: when a branch changes nothing outside .github/, its archive must
+      # still hash to whatever the base commit already published.
+      #
+      # `.github/` is a deliberately conservative test rather than a reading of
+      # is_content_path. .gitignore and .gitattributes are outside it on purpose
+      # — an eol rule changes checked-out bytes, and therefore the archive.
+      - name: A branch that changes no content must not move the digest
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ -z "$BASE_SHA" ]]; then
+            echo "no base commit (not a pull request); skipping"
+            exit 0
+          fi
+
+          git fetch --depth=1 origin "$BASE_SHA"
+          changed=$(git diff --name-only "$BASE_SHA" HEAD)
+          if [[ -z "$changed" ]]; then
+            echo "no tracked files differ from the base; nothing to compare"
+            exit 0
+          fi
+
+          outside=$(grep -v '^\.github/' <<<"$changed" || true)
+          if [[ -n "$outside" ]]; then
+            echo "this branch changes files a client receives:"
+            sed 's/^/  /' <<<"$outside"
+            echo "a different digest is expected; skipping the comparison"
+            exit 0
+          fi
+
+          if ! gh release download "content-${BASE_SHA}" \
+                 --repo "$GITHUB_REPOSITORY" --pattern content.sha256 \
+                 --output base.sha256 2>/dev/null; then
+            echo "content-${BASE_SHA} is not published yet; skipping" >&2
+            exit 0
+          fi
+
+          want=$(cut -d' ' -f1 base.sha256)
+          got=$(cut -d' ' -f1 content.sha256)
+          if [[ "$want" != "$got" ]]; then
+            echo "the archive digest moved without any content changing" >&2
+            echo "  base ${BASE_SHA} published: $want" >&2
+            echo "  this branch produced:       $got" >&2
+            echo "every install would re-download the archive for nothing." >&2
+            exit 1
+          fi
+          echo "ok digest unchanged from the base commit: $got"
 
       - name: set_version.sh leaves the third-party packs alone
         run: .github/tests/test_set_version.sh
