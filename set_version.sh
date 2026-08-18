@@ -12,7 +12,7 @@ VERSION="$1"
 # Packs that carry their own upstream version rather than the LegacyClonk one.
 #
 # These are the directories .gitattributes marks `binary` so that nothing
-# rewrites their bytes, and THIRD_PARTY_GAME_CONTENT.md records as exact copies.
+# rewrites their bytes: they are exact copies of the packs as received.
 # Their Version.txt is part of what is redistributed unmodified -- ClonkMars is
 # "1.5 [Spirit]", Eke Reloaded is "1.7", Metal & Magic is "3.1b" -- and none of
 # them is terminated by a newline, so writing this project's version into them

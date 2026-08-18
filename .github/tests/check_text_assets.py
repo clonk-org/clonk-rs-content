@@ -9,8 +9,8 @@ is a German umlaut rendering as two characters somewhere nobody looks.
 This compares each *changed* asset against its previous version rather than
 auditing the tree, for two reasons. Seven in-group files are already UTF-8, and
 converting them back is not obviously right — one of them lives inside
-`ClonkMars.c4d`, whose bytes THIRD_PARTY_GAME_CONTENT.md describes as an exact
-copy. And fifteen carry a stray trailing NUL. Both are pre-existing backlogs; the
+`ClonkMars.c4d`, which is redistributed as an exact copy of the pack as
+received. And some carry a stray trailing NUL. Both are pre-existing backlogs; the
 point here is to stop the pile growing.
 
 Usage: check_text_assets.py [<base-ref>]     (default: origin/main)
