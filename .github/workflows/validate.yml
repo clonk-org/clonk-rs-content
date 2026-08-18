@@ -144,3 +144,18 @@ jobs:
 
       - name: set_version.sh leaves the third-party packs alone
         run: .github/tests/test_set_version.sh
+
+      # Compares changed assets against their previous version rather than
+      # auditing the tree: seven in-group files are already UTF-8 and fifteen
+      # carry a stray trailing NUL, both pre-existing backlogs. This stops the
+      # pile growing. Needs the base commit, which the digest step above fetches.
+      - name: Game text assets keep their encoding
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ -z "$BASE_SHA" ]]; then
+            echo "no base commit (not a pull request); skipping"
+            exit 0
+          fi
+          git fetch --depth=1 origin "$BASE_SHA"
+          python3 .github/tests/check_text_assets.py "$BASE_SHA"
