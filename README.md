@@ -14,10 +14,10 @@ The base packs — `Objects.c4d`, `Worlds.c4f`, `Fantasy.*`, `FarWorlds.*`,
 the CC BY-NC grant in [`clonk_content_license.txt`](clonk_content_license.txt).
 
 `ClonkMars.*` and `EkeReloaded.*` are classic third-party packs included under
-separate, explicitly granted permission. Their terms are **not** the CC BY-NC
-grant above — see
-[`THIRD_PARTY_GAME_CONTENT.md`](THIRD_PARTY_GAME_CONTENT.md) before
-redistributing them.
+separate, explicitly granted permission, and `MetalMagic.c4d`,
+`MetalMagicExtra.c4d` and `Melees.c4f/Queron3.c4s` come from CCAN. Their terms
+are **not** the CC BY-NC grant above. Establish the position for yourself
+before redistributing any of them.
 
 ## Usage
 

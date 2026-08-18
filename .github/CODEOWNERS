@@ -10,9 +10,7 @@
 # and its exclusion list is mirrored in clonk-org/clonk-rs.
 /.github/                       @syb0rg
 
-# Licensing. THIRD_PARTY_GAME_CONTENT.md records permissions obtained for packs
-# that are not covered by the CC BY-NC grant.
-/THIRD_PARTY_GAME_CONTENT.md    @syb0rg
+# Licensing.
 /clonk_content_license.txt      @syb0rg
 
 # Version identity, which the engine reads and the update channel keys on.

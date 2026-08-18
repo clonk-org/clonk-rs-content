@@ -21,8 +21,8 @@ expect the `Validate` job to tell you which files it saw as client-facing.
 
 ## Packs you must not touch casually
 
-`.gitattributes` marks these `binary`, and
-[`THIRD_PARTY_GAME_CONTENT.md`](../THIRD_PARTY_GAME_CONTENT.md) records why:
+`.gitattributes` marks these `binary`, because they are exact copies of the
+packs as received:
 
 - `ClonkMars.c4d`, `ClonkMars.c4f`
 - `EkeReloaded.c4d`, `EkeReloaded.c4f`
