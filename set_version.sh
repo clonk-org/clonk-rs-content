@@ -56,4 +56,3 @@ done
 write_version Version.txt
 echo "Version.txt -> $VERSION"
 
-echo "Please do not forget to add the latest version to updates/parts.txt if appropriate!"
