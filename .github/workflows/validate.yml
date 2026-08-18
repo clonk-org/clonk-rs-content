@@ -116,10 +116,15 @@ jobs:
             exit 0
           fi
 
+          # Two kinds of change legitimately move the digest: a file a client
+          # receives, and the packer itself, which decides what goes in. The
+          # packer never ships, so a path test alone would call a membership
+          # change "no content changed" and fail an honest pull request.
           outside=$(grep -v '^\.github/' <<<"$changed" || true)
-          if [[ -n "$outside" ]]; then
-            echo "this branch changes files a client receives:"
-            sed 's/^/  /' <<<"$outside"
+          packer=$(grep '^\.github/pack-content/' <<<"$changed" || true)
+          if [[ -n "$outside" || -n "$packer" ]]; then
+            echo "this branch changes what the archive contains:"
+            printf '%s\n' "$outside" "$packer" | grep -v '^$' | sed 's/^/  /'
             echo "a different digest is expected; skipping the comparison"
             exit 0
           fi
