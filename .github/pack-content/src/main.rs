@@ -299,7 +299,7 @@ mod tests {
         for path in [
             "Objects.c4d/Clonk.c4d/DefCore.txt",
             "Worlds.c4f/Gold.c4s/Scenario.txt",
-            "clonk_content_license.txt",
+            "Version.txt",
         ] {
             assert!(is_content_path(path), "{path:?} must ship to clients");
         }
@@ -311,7 +311,7 @@ mod tests {
         for (path, body) in [
             ("Objects.c4d/DefCore.txt", "objects"),
             ("Music.c4g/Track.ogg", "music"),
-            ("clonk_content_license.txt", "licence"),
+            ("Version.txt", "version"),
         ] {
             let full = temp.path().join(path);
             std::fs::create_dir_all(full.parent().expect("parent")).expect("create");
@@ -324,7 +324,7 @@ mod tests {
         vec![
             "Objects.c4d/DefCore.txt".to_string(),
             "Music.c4g/Track.ogg".to_string(),
-            "clonk_content_license.txt".to_string(),
+            "Version.txt".to_string(),
         ]
     }
 
@@ -376,7 +376,7 @@ mod tests {
             [
                 "Music.c4g/Track.ogg",
                 "Objects.c4d/DefCore.txt",
-                "clonk_content_license.txt"
+                "Version.txt"
             ]
         );
         assert!(

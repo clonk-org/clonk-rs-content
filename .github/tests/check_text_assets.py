@@ -25,7 +25,7 @@ import sys
 EXTENSIONS = (".txt", ".c", ".c4m")
 
 # Only files inside a Clonk group are game content. This keeps the rule off
-# repository documentation such as `clonk_content_license.txt` and
+# repository documentation such as `README.md` and
 # `third_party/Hazard/readme.txt`, which are project-authored and legitimately
 # UTF-8.
 GROUP_SUFFIXES = (".c4d", ".c4f", ".c4g", ".c4s", ".c4p")
