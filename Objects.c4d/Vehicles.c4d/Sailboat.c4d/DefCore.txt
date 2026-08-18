@@ -15,6 +15,7 @@ VertexFriction=80,80,80,80
 Value=15
 Mass=50
 Components=WOOD=3
+SolidMask=0,42,36,2,0,42
 Picture=0,44,64,64
 ContactIncinerate=5
 BlastIncinerate=35
