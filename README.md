@@ -12,8 +12,6 @@ The base packs — `Objects.c4d`, `Worlds.c4f`, `Fantasy.*`, `FarWorlds.*`,
 `Melees.c4f`, `Missions.c4f`, `Races.c4f`, `Tutorial.c4f` — originate from
 [legacyclonk/content](https://github.com/legacyclonk/content) and are covered by
 the CC BY-NC grant in [`clonk_content_license.txt`](clonk_content_license.txt).
-Clonk trademark terms are in
-[`clonk_trademark_license.txt`](clonk_trademark_license.txt).
 
 `ClonkMars.*` and `EkeReloaded.*` are classic third-party packs included under
 separate, explicitly granted permission. Their terms are **not** the CC BY-NC
