@@ -51,6 +51,9 @@ const ARCHIVE_NAME: &str = "content.zip";
 /// repository's packaging tool, which applies it when it copies this submodule
 /// into an installer. The two must agree, or a file would ship in the installer
 /// and never reach a client that updates in place — or the reverse.
+///
+/// `the_exclusion_list_matches_the_engine_repositorys_copy` pins these entries
+/// so that changing them here fails rather than diverging silently.
 const NON_CONTENT_ENTRIES: [&str; 6] = [
     ".git",
     ".github",
@@ -247,6 +250,35 @@ fn hex_digest(digest: &[u8]) -> String {
 mod tests {
     use super::*;
     use std::io::Read;
+
+    /// Pins the exclusion list itself, not just its effect.
+    ///
+    /// `NON_CONTENT_ENTRIES` is mirrored by `is_runtime_package_path` in the
+    /// engine repository (`xtask/src/main.rs`), which applies it when copying
+    /// this submodule into an installer. Nothing can check the other repository
+    /// from here, so this fails on any edit instead: the two must be changed
+    /// together, and a diff that touches only one side is the bug this catches.
+    ///
+    /// If this test fails because the list genuinely changed, update
+    /// `is_runtime_package_path` in `clonk-org/clonk-rs` in the same breath.
+    /// A file excluded on one side and not the other ships in the installer and
+    /// never reaches a client that updates in place, or the reverse.
+    #[test]
+    fn the_exclusion_list_matches_the_engine_repositorys_copy() {
+        assert_eq!(
+            NON_CONTENT_ENTRIES,
+            [
+                ".git",
+                ".github",
+                ".gitignore",
+                ".gitattributes",
+                ".editorconfig",
+                ".DS_Store",
+            ],
+            "NON_CONTENT_ENTRIES changed; update is_runtime_package_path in \
+             clonk-org/clonk-rs (xtask/src/main.rs) to match"
+        );
+    }
 
     #[test]
     fn repository_infrastructure_is_not_content() {
