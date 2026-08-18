@@ -63,6 +63,19 @@ const NON_CONTENT_ENTRIES: [&str; 6] = [
     ".DS_Store",
 ];
 
+/// Repository files that are infrastructure, matched **only at the root**.
+///
+/// These are ordinary names a game pack could legitimately contain, so they
+/// cannot join `NON_CONTENT_ENTRIES` — that list matches every path segment, and
+/// a definition shipping its own `README.md` would silently vanish from the
+/// archive and from installers. Anchoring them here keeps the deny rule to the
+/// one directory where these names mean packaging infrastructure.
+///
+/// `Version.txt` is deliberately absent: the engine reads the root one, and 28
+/// more live inside packs.
+const NON_CONTENT_ROOT_ENTRIES: [&str; 4] =
+    ["Makefile", "README.md", "set_version.sh", "third_party"];
+
 fn main() -> Result<()> {
     let mut arguments = std::env::args().skip(1);
     let output = arguments
@@ -179,10 +192,19 @@ fn content_files(root: &Path) -> Result<Vec<String>> {
 
 /// Whether a repository-relative path is game data a client should receive.
 fn is_content_path(path: &str) -> bool {
-    !path.is_empty()
-        && path
-            .split('/')
-            .all(|segment| !segment.is_empty() && !NON_CONTENT_ENTRIES.contains(&segment))
+    if path.is_empty() {
+        return false;
+    }
+    let mut segments = path.split('/');
+    let Some(root) = segments.next() else {
+        return false;
+    };
+    if NON_CONTENT_ROOT_ENTRIES.contains(&root) {
+        return false;
+    }
+    std::iter::once(root)
+        .chain(segments)
+        .all(|segment| !segment.is_empty() && !NON_CONTENT_ENTRIES.contains(&segment))
 }
 
 /// Writes a byte-reproducible zip of `files`, read from `root`.
@@ -278,6 +300,32 @@ mod tests {
             "NON_CONTENT_ENTRIES changed; update is_runtime_package_path in \
              clonk-org/clonk-rs (xtask/src/main.rs) to match"
         );
+        assert_eq!(
+            NON_CONTENT_ROOT_ENTRIES,
+            ["Makefile", "README.md", "set_version.sh", "third_party"],
+            "NON_CONTENT_ROOT_ENTRIES changed; update is_runtime_package_path in \
+             clonk-org/clonk-rs (xtask/src/main.rs) to match"
+        );
+    }
+
+    /// The root-anchored entries must not reach into packs.
+    ///
+    /// This is the whole reason they are a separate list: `NON_CONTENT_ENTRIES`
+    /// matches every segment, so putting `README.md` there would delete a
+    /// definition's own readme from the archive without a word.
+    #[test]
+    fn root_infrastructure_names_are_still_content_inside_a_pack() {
+        for path in [
+            "Objects.c4d/README.md",
+            "Worlds.c4f/Gold.c4s/Makefile",
+            "Knights.c4d/Crew.c4d/set_version.sh",
+            "Hazard.c4f/third_party/notes.txt",
+        ] {
+            assert!(
+                is_content_path(path),
+                "{path:?} is game data; only the repository root carries infrastructure"
+            );
+        }
     }
 
     #[test]
@@ -288,6 +336,10 @@ mod tests {
             ".gitignore",
             ".gitattributes",
             "Objects.c4d/.DS_Store",
+            "Makefile",
+            "README.md",
+            "set_version.sh",
+            "third_party/Hazard/readme.txt",
             "",
         ] {
             assert!(!is_content_path(path), "{path:?} must not ship to clients");
