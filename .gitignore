@@ -7,3 +7,12 @@ packed
 /content.sha256
 /first.zip
 /first.sha256
+
+# Editor leftovers. One of these — a Script.c~ holding a superseded revision of
+# a Lightning definition — was committed in the initial import and shipped to
+# every client inside content.zip until it was noticed.
+*~
+*.orig
+*.rej
+*.bak
+*.swp
