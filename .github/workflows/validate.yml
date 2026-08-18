@@ -1,0 +1,72 @@
+name: Validate
+
+# Runs on pull requests, so a change is exercised before it can publish.
+#
+# Until this existed, `publish-content.yml` was the first thing that ever ran
+# against a change: it triggers on push to `main` and cuts a public release from
+# whatever landed. A packaging failure was therefore discovered after the commit
+# was already on `main` and already resolvable by an engine submodule pin.
+#
+# This job deliberately reproduces the publishing job's *build* phase and stops
+# short of releasing. It does not share code with `publish-content.yml`: that
+# workflow is documented as the single producer of the archive's bytes, and
+# rewriting it to satisfy a validation requirement is a change to the release
+# path rather than to the checks around it. The cost is that the two build
+# blocks must be kept in step by hand; the size floor and the reproducibility
+# assertion below are copied from it on purpose.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Build content.zip and run repository checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # `--locked` for the same reason the publishing job uses it: the archive's
+      # bytes depend on the zip and deflate implementations the lockfile pins.
+      - name: Build the packaging tool
+        run: cargo build --release --locked --manifest-path .github/pack-content/Cargo.toml
+
+      # The packer refuses a worktree that differs from the index, so this also
+      # catches a change that only exists as an uncommitted artifact.
+      - name: Build content.zip and prove it is reproducible
+        run: |
+          packer=.github/pack-content/target/release/pack-content
+          "$packer" first.zip
+          "$packer" content.zip
+          if ! cmp -s first.zip content.zip; then
+            echo "two builds of the same tree produced different archives" >&2
+            sha256sum first.zip content.zip >&2
+            exit 1
+          fi
+          rm -f first.zip first.sha256
+
+          # A floor, not a size check: it catches an empty container, which is
+          # what a packaging bug most plausibly produces.
+          size=$(wc -c < content.zip)
+          if [[ "$size" -lt 150000000 ]]; then
+            echo "content.zip is only $size bytes" >&2
+            exit 1
+          fi
+          echo "ok content.zip $size bytes"
+          cat content.sha256
+
+      - name: set_version.sh leaves the third-party packs alone
+        run: .github/tests/test_set_version.sh
