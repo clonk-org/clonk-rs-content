@@ -1,2 +1,2 @@
-DE:Missionen
-US:Missions
+DE:Herausforderungen
+US:Challenges
