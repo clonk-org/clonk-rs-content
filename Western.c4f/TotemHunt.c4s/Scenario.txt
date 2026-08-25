@@ -16,7 +16,7 @@ SkipDefs=SMGC=1;
 StructNeedEnergy=0
 ValueOverloads=FLAG=50;_BOK=15;GBLT=40;EGBL=40;CRWN=60;WHKY=7;RMET=5
 Goals=MELE=1;
-Rules=CNMT=1;REAC=1;FGRV=1;TACC=1;ST4V=1;
+Rules=CNMT=1;REAC=1;FGRV=1;TACC=1;ST4V=1;SHBS=1;
 
 [Player1]
 Wealth=10,0,0,250

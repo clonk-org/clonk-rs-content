@@ -12,7 +12,7 @@ Definition2=Western.c4d
 [Game]
 StructNeedEnergy=0
 Goals=GLDM=1;
-Rules=ENRG=1;TACC=1;CNMT=1;NDFO=1;NDWA=1;
+Rules=ENRG=1;TACC=1;CNMT=1;NDFO=1;NDWA=1;SHBS=1;
 
 [Player1]
 Crew=COWB=2;TRPR=1;

@@ -12,7 +12,7 @@ Definition1=Objects.c4d
 
 [Game]
 StructNeedEnergy=0
-Rules=CNMT=1;ENRG=1;FGRV=1;TKNW=1;TACC=1;COAN=1;
+Rules=CNMT=1;ENRG=1;FGRV=1;TKNW=1;TACC=1;COAN=1;SHBS=1;
 Goals=SCRG=1;
 
 [Player1]

@@ -13,7 +13,7 @@ Definition1=Objects.c4d
 [Game]
 StructNeedEnergy=0
 Goals=GLDM=1;OILP=1;VALG=15;
-Rules=ENRG=1;FGRV=1;TACC=1;NMTT=1;CNMT=1;
+Rules=ENRG=1;FGRV=1;TACC=1;NMTT=1;CNMT=1;SHBS=1;
 
 [Player1]
 Wealth=100
