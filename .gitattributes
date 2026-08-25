@@ -27,7 +27,6 @@
 # Desc*.rtf files. Without this rule the eol=crlf default would normalise those
 # text files on staging and move the bytes of a pack we do not own.
 /Collection.c4f/** binary
-/Extra.c4g/** binary
 
 # Exploded into directories rather than left as single packed files: cargo xtask
 # scenario-sweep walks the filesystem, so a packed .c4f hides every scenario

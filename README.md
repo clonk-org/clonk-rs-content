@@ -22,7 +22,7 @@ before redistributing any of them.
 
 `Collection.c4f` and the packs it depends on — `BlacksCMC-Waffenmod.c4d`,
 `Clinfinity.c4d`, `ClonkPartyRes.c4d`, `ClonkPartyRes2.c4d`, `Clonkrix.c4d`,
-`EkeBot.c4d`, `Explorer.c4d`, `Extra.c4g`, `GIDL_Race.c4d`, `Golems.*`,
+`EkeBot.c4d`, `Explorer.c4d`, `GIDL_Race.c4d`, `Golems.*`,
 `INEXSzenarioObjekte.c4d`, `InExantros.C4D`, `Jetbelt.c4d`, `KdD_Magie_Pack.c4d`,
 `KnightMelees.c4d`, `KnightSkirmishs.c4d`, `ModernCombat.*`, `PhysGun.c4d`,
 `Ropepack.c4d`, `RopepackRemake.c4d`, `RufDerWipfe.c4d`, `WesternBalancing.c4d`,

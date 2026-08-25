@@ -60,6 +60,18 @@ ship inside `Collection.c4f`.
 - `Newton.c4p`, a player file.
 - `Clonk.log`, `LGPL.txt`, `OpenSSL.txt` and the two license texts this
   repository already removed deliberately.
+- `Extra.c4g`. `Extra.c4g` is the *classic global override group*, and the
+  engine requires it to resolve inside `planet/`:
+  `mapped_classic_extra_group_path` (`clonk-app/src/main_parts/assets.rs:1883-1902`)
+  hard-errors on a copy found anywhere else, which took out GUI bootstrap —
+  every font and GUI surface — across 389 tests. The name is reserved, so a
+  content-root copy is not an option, and renaming it would be worse: the
+  material-overload lookup keys on that exact name
+  (`main_parts/resources.rs:800-813`), so a renamed group would be 104 MB the
+  engine never reads. Its contents were additive presentation only — music and
+  loader art overlaid onto ClonkMars, Fantasy, GIDL_Race, Hazard, Knights,
+  Metal & Magic and Western, all of which keep the music and loaders they
+  already ship. No definition or scenario depended on it.
 
 ## Shape on disk
 
