@@ -14,7 +14,7 @@ Definition2=Western.c4d
 StructNeedEnergy=0
 Goals=MELE=1;
 ValueOverloads=WHKY=7;
-Rules=CNMT=1;FGRV=1;REAC=1;TACC=1;DRSI=1;_ETG=0;
+Rules=CNMT=1;FGRV=1;REAC=1;TACC=1;DRSI=1;_ETG=0;SHBS=1;
 
 [Player1]
 Crew=COWB=4;

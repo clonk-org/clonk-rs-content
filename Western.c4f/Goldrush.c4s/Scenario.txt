@@ -14,7 +14,7 @@ Definition3=Western.c4f\Misc.c4d
 
 [Game]
 StructNeedEnergy=0
-Rules=CNMT=1;ENRG=1;REAC=1;TKNW=1;TACC=1;_ETG=0;
+Rules=CNMT=1;ENRG=1;REAC=1;TKNW=1;TACC=1;_ETG=0;SHBS=1;
 
 [Player1]
 Crew=COWB=2;TRPR=1;

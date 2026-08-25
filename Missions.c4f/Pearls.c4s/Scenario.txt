@@ -14,7 +14,7 @@ Definition1=Objects.c4d
 
 [Game]
 Goals=RMOB=1
-Rules=TACC=1;FGRV=1;ENRG=1;CNMT=1;
+Rules=TACC=1;FGRV=1;ENRG=1;CNMT=1;SHBS=1;
 
 [Player1]
 Crew=CLNK=1;

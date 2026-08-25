@@ -14,7 +14,7 @@ Definition2=Western.c4d
 StructNeedEnergy=0
 Goals=MELE=1;
 ValueOverloads=FLAG=60;WHKY=7;
-Rules=FGRV=1;REAC=1;TACC=1;_ETG=0;AMSP=1;
+Rules=FGRV=1;REAC=1;TACC=1;_ETG=0;AMSP=1;SHBS=1;
 
 [Player1]
 Wealth=15

@@ -13,7 +13,7 @@ Definition2=Knights.c4d
 [Game]
 Goals=MELE=1
 StructNeedEnergy=0
-Rules=CNMT=1;ENRG=1;FGRV=0;TACC=1;
+Rules=CNMT=1;ENRG=1;FGRV=0;TACC=1;SHBS=1;
 
 [Player1]
 Clonks=5

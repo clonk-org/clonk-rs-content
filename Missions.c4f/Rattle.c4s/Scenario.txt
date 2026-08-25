@@ -15,7 +15,7 @@ Definition1=Objects.c4d
 [Game]
 StructNeedEnergy=0
 Goals=GLDM=1
-Rules=CNMT=1;ENRG=1;TACC=1
+Rules=CNMT=1;ENRG=1;TACC=1;SHBS=1
 
 [Player1]
 Position=205,29

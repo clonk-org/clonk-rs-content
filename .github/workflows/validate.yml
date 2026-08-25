@@ -150,6 +150,9 @@ jobs:
       - name: set_version.sh leaves the third-party packs alone
         run: .github/tests/test_set_version.sh
 
+      - name: Shared Bases stays opt-in per scenario
+        run: .github/tests/test_shared_bases_scenarios.sh
+
       # Compares changed assets against their previous version rather than
       # auditing the tree: seven in-group files are already UTF-8 and fifteen
       # carry a stray trailing NUL, both pre-existing backlogs. This stops the

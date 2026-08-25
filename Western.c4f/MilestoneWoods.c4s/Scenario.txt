@@ -13,7 +13,7 @@ Definition2=Western.c4d
 
 [Game]
 StructNeedEnergy=0
-Rules=CNMT=1;ENRG=1;FGRV=1;NDWA=1;TKNW=1;TACC=1;NDFO=1;
+Rules=CNMT=1;ENRG=1;FGRV=1;NDWA=1;TKNW=1;TACC=1;NDFO=1;SHBS=1;
 
 [Player1]
 Position=172,59
