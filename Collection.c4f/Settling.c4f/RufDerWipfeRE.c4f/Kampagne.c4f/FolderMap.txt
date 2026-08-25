@@ -1,0 +1,130 @@
+[FolderMap]
+ScenInfoArea=670,110,270,480
+FullscreenBG=1
+	
+	[Scenario]
+	File=1Intro.c4s
+	Area=190,240,150,100
+	BaseImage=Circle
+	OverlayImage=Circle2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=75
+	TitleOffY=60
+	TitleAlign=1
+	Title=Intro
+	
+	[AccessGfx]
+	Access=SoBeRdW1
+	OverlayImage=Arrow5
+	Area=330,280,60,40
+	
+	[Scenario]
+	File=2Teudoburger.c4s
+	Area=350,230,200,130
+	BaseImage=Circle
+	OverlayImage=Circle2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=100
+	TitleOffY=65
+	TitleAlign=1
+	Title=1.Teudoburger Wald
+
+	[AccessGfx]
+	Access=SoBeRdW2
+	OverlayImage=Arrow
+	Area=400,320,40,60
+	
+	[Scenario]
+	File=3Frangreich.c4s
+	Area=360,350,150,100
+	BaseImage=Circle
+	OverlayImage=Circle2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=75
+	TitleOffY=60
+	TitleAlign=1
+	Title=2.Frangreich
+	
+	[AccessGfx]
+	Access=SoBeRdW3
+	OverlayImage=Arrow3
+	Area=470,380,40,40
+	
+	[Scenario]
+	File=4Schweids.c4s
+	Area=450,395,125,100
+	BaseImage=Circle
+	OverlayImage=Circle2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=60
+	TitleOffY=60
+	TitleAlign=1
+	Title=3.Schweids
+	
+	[AccessGfx]
+	Access=SoBeRdW4
+	OverlayImage=Arrow4
+	Area=375,450,80,40
+
+	[Scenario]
+	File=5Arallsee.c4s
+	Area=240,405,140,120
+	BaseImage=Circle
+	OverlayImage=Circle2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=70
+	TitleOffY=70
+	Title=4.Arallsee
+	
+	[AccessGfx]
+	Access=SoBeRdW5
+	OverlayImage=Arrow3
+	Area=340,470,60,60
+
+	[Scenario]
+	File=6Sybirien.c4s
+	Area=405,505,100,100
+	BaseImage=Circle
+	OverlayImage=Circle2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=75
+	TitleOffY=60
+	TitleAlign=1
+	Title=5.Sybirien
+	
+	[AccessGfx]
+	Access=SoBeRdW5
+	OverlayImage=Arrow4
+	Area=300,535,80,40
+	
+	[Scenario]
+	File=7Armagedeon.c4s
+	Area=150,505,150,100
+	BaseImage=Circle
+	OverlayImage=Circle2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=75
+	TitleOffY=60
+	TitleAlign=1
+	Title=6.Armagedeon

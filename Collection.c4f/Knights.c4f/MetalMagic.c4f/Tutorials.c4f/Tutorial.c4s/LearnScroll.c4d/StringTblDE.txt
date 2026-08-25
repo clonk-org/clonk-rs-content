@@ -1,0 +1,10 @@
+MsgLearnedSkill=Fähigkeit %s gelernt!
+MsgLearnedSpell=Zauperspruch %s gelernt!
+MsgLearnedWonder=Wunder %s gelernt!
+MsgLearnedPlan=Bauplan %s erhalten!
+MsgNoSpell=Unleserlich.
+MsgKnown=%s kann ich schon.
+MsgIntro=Hinweis: Aktiviere Schriftrollen, um Zauber oder Baupläne zu lernen!
+MsgNoPaladin=Nur ein Paladin kann Wunder lernen!
+MsgWrongChurch=Du hast nicht die passende Kirche für dieses Wunder!
+MsgNoBaseSkill=Du brauchst die Fertigkeit %s um %s zu lernen.

@@ -1,0 +1,32 @@
+Enthält Kommentare über nicht in die Sammlung aufgenommenen Szenarien die wohl in einem eigenen Ordner gelandet wären.
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+First Aid Pack (FirstAidPack.c4f)
+	- Codename: Modern Combat gilt als Nachfolgeprojekt von den gleichen Autoren und selben Spielprinzip, macht also quasi alles besser als das First Aid Pack
+
+GentleClonker (GentleClonker.c4s)
+	- sehr dunkel, sehr undeutliche Grafiken
+	- Maussteuerung notwenig, daher nicht mit mehr als einem Spieler pro Computer spielbar
+	- wirkt unfertig, eigentlich nur eine Arena
+	
+Command & Clonquer (CommandClonquerRemakeV1_0.c4f)
+	* lustige Idee: Alarmstufe Rot in Clonk
+	+ Kampagne - aber nur single-player
+	- Multiplayer-Kampf ist recht langweilig, bzw. der Kampf generell
+	- recht alt (GWE4), entsprechend die Grafiken (old_gfx?) - selbst im remake
+	
+Clonker-Strike (Clonker-Strike.c4f)
+	- kann (natürlich) nicht mithalten mit dem ~10 Jahre? später entstandenen CMC
+	- vielleicht läuft es eher unter Clonk Planet
+	
+Stippel Attack (StippelAttack.c4f)
+	- nutzt das alte Eke Pack. Vielleicht läuft es unter CP / GWE3?
+
+Wipfbone Airforce (Wipfbone_Airforce.c4s)
+	- nutzt das alte Eke Pack und First Aid Pack, beides wurde nicht in diese Sammlung aufgenommen
+
+Stippel Valley 2.0 (StippelValley_v_2_0_.c4s)
+	- nutzt das First Aid Pack, welches nicht in diese Sammlung aufgenommen wurde

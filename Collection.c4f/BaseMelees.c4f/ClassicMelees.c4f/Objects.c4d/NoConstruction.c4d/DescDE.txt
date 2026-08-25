@@ -1,0 +1,1 @@
+Sorgt dafür, dass gelöschte Gebäude nicht neu gebaut werden können.

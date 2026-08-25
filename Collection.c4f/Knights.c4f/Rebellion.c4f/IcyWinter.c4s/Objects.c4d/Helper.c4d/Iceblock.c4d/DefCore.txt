@@ -1,0 +1,12 @@
+[DefCore]
+id=ICBL
+Name=Iceblock
+Category=16
+Width=20
+Height=26
+Offset=-10,-13
+TopFace=0,0,20,26
+Value=10
+Mass=80
+Picture=0,0,20,26
+Components=Ice=4;

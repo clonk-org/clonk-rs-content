@@ -1,0 +1,6 @@
+[Material]
+Name=MetallBackWall
+Color=72,72,72,112,112,112,152,152,152
+Shape=0
+OverlayType=2
+Placement=1

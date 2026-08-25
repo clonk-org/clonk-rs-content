@@ -1,0 +1,79 @@
+/* Dynamische Himmelsinseln */
+
+// Basic island shape
+overlay Islands { grp=1; invert=1;
+  // islands
+  overlay { algo=bozo; a=3; invert=1; zoomX=50; zoomY=-10; turbulence=100000; } &
+  overlay { algo=rndchecker; a=5; rotate=125; zoomX=-20; zoomY=-20; turbulence=100; } &
+  // loose bounds
+  overlay { x=5; y= 15; wdt=90; hgt=85; loosebounds=1; turbulence=10; };
+  };
+
+// Basic InEarth
+overlay InEarth { algo=bozo; a=8; turbulence=10000; };
+
+// randomly alter mat
+overlay AlterMat { algo=rndchecker; zoomX=-100; zoomY=-100; };
+
+
+// skylands map
+map SkyLands {
+
+
+  // Group 1: base=rock
+  Islands & overlay { mat=Granite; tex=Rough;
+
+    // earth top-layers
+    overlay { algo=border; a=0; b=1; turbulence=100; mat=Earth; tex=Smooth; oy=-1; };
+
+    // liquids
+    //overlay { algo=border; invert=1; a=1; b=1; turbulence=1000;  mat=Water; tex=Smooth; };
+
+    // bounds for liquids
+    //overlay { algo=border; a=1; b=1; oy=1; mat=Earth; tex=Rough; };
+
+    // Granite
+    InEarth { mat=Granite; tex=Rough; };
+
+    // Granite
+    InEarth { mat=Sulphur; tex=Swirl; };
+    InEarth { mat=Coal; tex=Swirl; };
+    InEarth { mat=Ore; tex=Rough; };
+    InEarth { mat=Crystal; tex=Structure; };
+
+    // ore
+    InEarth { mat=Earth; tex=Ridge; AlterMat { mat=Earth; tex=Rough; }; 
+
+};
+
+    // ice
+    InEarth { mat=Ice; tex=Rough; AlterMat { mat=Earth; tex=Rough; }; };
+    
+    // overlay earth
+    AlterMat & overlay { algo=border; a=3; b=3; turbulence=12; mat=Earth; tex=Smooth; };
+    };
+
+
+  // Group 2: base=earth
+  Islands & overlay { mat=Earth; tex=Rough;
+
+    // rock top-layers
+    overlay { algo=border; a=0; b=1; turbulence=100; mat=Earth; tex=Smooth; oy=1;
+      // inner rock: granite
+      AlterMat { mat=Granite; tex=Rough; };
+      };
+
+    // crystal
+    InEarth { mat=Crystal; tex=Structure; a=9; sub=0; };
+    InEarth { mat=Coal; tex=Swirl; a=11; sub=0; };
+    InEarth { mat=Sulphur; tex=Swirl; a=14; sub=0; };
+    InEarth { mat=Ore; tex=Rough; a=11; sub=0; };
+    InEarth { mat=Gold; tex=Rough; a=25; sub=0; };
+
+    // overlay earth
+    AlterMat & overlay { algo=border; a=1; b=1; turbulence=100; mat=Earth; tex=Smooth; } ;
+
+    };
+
+
+  };

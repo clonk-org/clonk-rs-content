@@ -1,0 +1,12 @@
+[DefCore]
+id=_DC4
+Name=Decoration
+Version=4,9,5,2
+Category=1
+Width=64
+Height=128
+Offset=-32,-64
+Value=30
+Mass=10
+Components=WOOD=10;
+ 

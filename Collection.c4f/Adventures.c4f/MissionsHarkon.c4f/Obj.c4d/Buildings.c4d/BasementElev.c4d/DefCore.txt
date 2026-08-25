@@ -1,0 +1,17 @@
+[DefCore]
+id=BASH
+Version=4,9,8
+Name=BasementHarkon
+Category=1
+Width=38
+Height=10
+Offset=-19,0
+Vertices=2
+VertexX=-11,11
+VertexY=-5,-5
+VertexFriction=100,100
+Value=1
+Mass=10
+Components=ROCK=2
+SolidMask=0,0,38,10,0,0
+Construction=1

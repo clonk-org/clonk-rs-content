@@ -1,0 +1,17 @@
+[DefCore]
+id=HRN1
+Name=Horn1
+Version=4,9,5
+Category=C4D_Background|C4D_StaticBack
+Width=30
+Height=34
+Offset=-15,-17
+Picture=0,0,30,34
+Vertices=1
+VertexY=1
+VertexFriction=20
+Rebuy=1
+StretchGrowth=1
+Rotate=1
+IncompleteActivity=1
+Oversize=1

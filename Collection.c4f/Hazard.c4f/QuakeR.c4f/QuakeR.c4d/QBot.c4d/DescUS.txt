@@ -1,0 +1,7 @@
+Great clonk.
+
+The Quake-Bot is similar to the hazard bot. He fires his weapon on Throw, and can fire the alternate firemode on Dig, if supported by the weapon.
+
+Like the hazard the Quake-Bot is able to perform a backflip and aim with a weapon.
+
+In addition he can change his appearence over the context-menu.

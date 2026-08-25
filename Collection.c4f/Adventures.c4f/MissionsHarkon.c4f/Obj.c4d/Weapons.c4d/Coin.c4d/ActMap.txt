@@ -1,0 +1,16 @@
+[Action]
+Name=Fly
+Procedure=NONE
+Length=4
+Delay=1
+Facet=6,0,6,6
+NextAction=Fly2
+
+[Action]
+Name=Fly2
+Procedure=NONE
+Length=4
+Delay=1
+Reverse=1
+Facet=6,0,6,6
+NextAction=Fly

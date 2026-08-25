@@ -1,0 +1,5 @@
+MsgPart1=Gute Arbeit!|Du hast einen Teil des Körpers gefunden.|Wir schicken dir jetzt eine Lore mit Material.|Bau dir eine Basis und suche nun den anderen Teil des Körpers.
+MsgPart2=Gut gemacht!|Du hast einen weiteren Teil des Körpers gefunden.|Wir geben dir jetzt ein bisschen Geld für deine Mühen.|Suche nun weitere Teile der Statue
+MsgPart3=Sehr Gut!|Du hast den rechten Arm gefunden.|Suche jetzt die Reste des linken Arms.|Du hast dir auch eine Belohnung verdient.
+MsgPart4=Super!|Der linke Arm ist wieder an einem Stück.|Für die Teile musst du immer tiefer gehen.|Hier hast du eine Lore mit Material.
+MsgPart5=Exzellent!|Nur noch ein Teil fehlt!| Wir sind Zuversichtlich und schicken dir mehr Geld.

@@ -1,0 +1,23 @@
+Neueste Clonk'sche Luftfahrttechnologie. Leider noch nicht ganz ungefährlich und nur für einen Clonk geeignet.
+
+Der Helikopter verfügt über eine Seilwinde mit Haken, mit dem verschiedene (leichte) Objekte transportiert werden können.
+ 
+Steuerung des Helikopters:
+-Springen: hoch
+-Links: links 
+-Rechts: rechts 
+-Stop: runter bzw. aussteigen wenn Heli am Boden stillsteht
+-Graben: Geschwindigkeit halten bzw. stoppen wenn Heli sehr langsam fliegt
+
+Steuerung der Seilwinde:
+-Werfen: ein-/ausfahren oder stoppen
+-Doppelgraben: Objekt verbinden / loslassen 
+-Graben: verbundenes Objekt auslösen
+
+Hinweise: 
+-Mit Pfeiltreffern in die Heckflosse kann der Heli zum Absturz gebracht werden.  
+-Kaputte Helis können repariert werden. Dazu einfach Heli+2 Holz+2 Metall in Werkstatt bringen und Heli "herstellen" auswählen
+
+
+Kritik / Fragen / Verbesserungsvorschläge an:
+rhierl@gmx.de

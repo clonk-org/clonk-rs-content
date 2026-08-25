@@ -1,0 +1,8 @@
+[Material]
+Name=AccWall
+Color=62,50,38,62,60,40,86,72,56
+Shape=1
+Placement=5
+Density=10
+TextureOverlay=SmallRock
+OverlayType=1

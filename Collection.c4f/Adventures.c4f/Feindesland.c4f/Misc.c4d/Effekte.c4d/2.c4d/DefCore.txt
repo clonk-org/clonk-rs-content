@@ -1,0 +1,16 @@
+[DefCore]
+id=EFK2
+Name=New Object
+Version=4,9,5
+Category=1
+MaxUserSelect=10
+Width=320
+Height=240
+Offset=-3,-3
+Value=10
+Mass=10
+Components=EFK2=1;
+Picture=
+Vertices=1
+VertexY=1
+VertexFriction=20

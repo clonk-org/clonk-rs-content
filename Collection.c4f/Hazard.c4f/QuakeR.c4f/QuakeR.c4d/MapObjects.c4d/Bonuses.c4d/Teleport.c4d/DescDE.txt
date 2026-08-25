@@ -1,0 +1,1 @@
+Über das Kontextmenü kann sich der Clonk einmalig an eine zufällige Stelle auf der Map teleportieren.

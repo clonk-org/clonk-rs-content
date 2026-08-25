@@ -1,0 +1,8 @@
+[Action]
+Name=Be
+Length=31
+Delay=3
+Facet=0,0,50,50
+NextAction=Idle
+StartCall=Show
+EndCall=Hide

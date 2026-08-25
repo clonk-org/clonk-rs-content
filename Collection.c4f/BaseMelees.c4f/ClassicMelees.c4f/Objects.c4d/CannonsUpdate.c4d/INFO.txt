@@ -1,0 +1,24 @@
+Änderungen:
+Haubitze und Kampfgeschütz haben gleiche Reichweite.
+Munition für Luftabwehrgeschütz hat weniger Reichweite.
+Flamenwerfer verschießt Feuerstoß anstatt Flammen.
+Luftabwehrgeschütz hängt nicht mehr im Fahrstuhl fest.
+Reichweite vom Artilleriegeschütz leicht vergrößert.
+Kampfgeschütz Schussmenu entfernt.
+Flammenwerfer kann mit Säure als Munition Gas versprühen.
+Neuer Aufsatz: Rakete.
+
+Geschütze(Munition) aufsteigend nach Reichweiten:
+Flammenwerfer(Feuer)
+Flammenwerfer(Gas)
+Blitzgeschütz
+Katapult
+Flüssigkeitskanone
+Luftabwehrgeschütz(Pfeilen)
+Luftabwehrgeschütz(Munition)
+Kampfgeschütz / Haubitze
+Artilleriegeschütz(Clonk)
+Artilleriegeschütz(Gegenstand)
+Rakete volle Betankung (1 Ölfass)*
+
+*Ungenau und Windabhängig

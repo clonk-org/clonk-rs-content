@@ -1,0 +1,14 @@
+[DefCore]
+id=_MUS
+Name=MusicHelper
+Category=1
+Width=17
+Height=17
+Picture=0,1,15,15
+MoveToRange=10
+BorderBound=7
+TimerCall=Timer
+Timer=1
+
+[Physical]
+Float=300

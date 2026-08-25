@@ -1,0 +1,9 @@
+Relaunch=%s hat schon %d von %d Relaunches verbraucht.
+Winner=%s hat gewonnen!
+MsgCrossbow=Armbrust wählen
+MsgHook=Hacken wählen
+MsgDagger=Messer wählen
+DescCrossbow=Der Clonk bekommt eine Armbrust mit Munition.
+DescHook=Der Clonk startet mit einem Hacken und einer Armbrust.
+DescDagger=Der Clonk erhält eine Messertpack.
+Score=Spielstand

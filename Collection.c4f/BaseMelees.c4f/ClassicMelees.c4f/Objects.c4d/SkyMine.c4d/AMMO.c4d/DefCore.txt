@@ -1,0 +1,13 @@
+[DefCore]
+id=_SKA
+Version=4,9,8
+Name=SkyMineAmmo
+Category=C4D_Object
+Width=3
+Height=3
+Offset=-1,-1
+Vertices=1
+VertexY=1
+Value=0
+Mass=1
+Picture=3,0,35,35

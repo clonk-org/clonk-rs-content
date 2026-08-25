@@ -1,0 +1,10 @@
+[DefCore]
+id=UBRL
+Name=Überlandleitung
+Version=4,9,1,3
+Value=100
+Category=33
+Width=1
+Height=1
+Picture=0,0,64,64
+MaxUserSelect=1

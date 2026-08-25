@@ -1,0 +1,17 @@
+[DefCore]
+id=_RLT
+Name=Rail
+Version=4,9,5
+Category=1
+Width=70
+Height=13
+Offset=-35,-7
+Value=10
+Mass=10
+Components=WOOD=2
+Vertices=4
+VertexX=-35,35,-35,35
+VertexY=-5,-5,4,4
+VertexFriction=50,50,50,50
+TopFace=0,0,70,13
+Rotate=1

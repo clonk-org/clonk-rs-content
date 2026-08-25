@@ -1,0 +1,9 @@
+[DefCore]
+id=WNWT
+Version=4,9,8
+Name=WarningWatch
+Category=C4D_Living
+Width=14
+Height=9
+Offset=-7,-23
+Picture=7,0,7,7

@@ -1,0 +1,2 @@
+TxtFuse=Zünder: %d Sekunden
+TxtChangeFuse=Zünder einstellen

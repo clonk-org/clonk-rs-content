@@ -1,0 +1,2 @@
+DE: Feuerstelle
+US: Stove

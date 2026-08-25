@@ -1,0 +1,10 @@
+0.90 Veröffentlichung
+0.91 Hotfix
+
+Brennende Tiefen
+! Spawnbug behoben
+
+Allgemein
+* Kaufbare Materialien
+* Nachlieferung
+* Baupläne

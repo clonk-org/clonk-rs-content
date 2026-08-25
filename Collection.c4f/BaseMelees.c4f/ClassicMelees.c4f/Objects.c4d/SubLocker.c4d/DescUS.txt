@@ -1,0 +1,1 @@
+Clonks cannot enter Submarines containing enemy Clonks.

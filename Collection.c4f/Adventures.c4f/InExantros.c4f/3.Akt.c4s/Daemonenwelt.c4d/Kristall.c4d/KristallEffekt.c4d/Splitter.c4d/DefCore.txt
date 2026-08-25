@@ -1,0 +1,12 @@
+[DefCore]
+id=KSP_
+Name=Kristallsplitter
+Category=4
+Width=128
+Height=128
+Offset=-64,-64
+Value=0
+Mass=1
+Picture=0,0,128,128
+Vertices=0
+Rotate=1

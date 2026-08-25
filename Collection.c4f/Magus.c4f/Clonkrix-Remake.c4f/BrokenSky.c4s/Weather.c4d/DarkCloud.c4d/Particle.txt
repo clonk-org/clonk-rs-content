@@ -1,0 +1,12 @@
+[Particle]
+Name=DarkCloud
+MaxCount=1000
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,200,100,-100,-50
+Delay=0
+AlphaFade=1
+Additive=0
+Attach=1
+GravityAcc=3

@@ -1,0 +1,7 @@
+JoinAssassin=%s joins the assassin.
+JoinGuards=%s supports the guards.
+TeamAssassin=Assassin
+TeamGuard=Guards
+Relaunch=%s (%s) died.
+GoalReached=The gemstones could be stolen!
+GoalFailed=The assassins were not able to steal enough gemstones!

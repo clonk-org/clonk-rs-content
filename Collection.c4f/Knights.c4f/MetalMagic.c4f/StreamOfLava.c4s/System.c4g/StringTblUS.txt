@@ -1,0 +1,9 @@
+NothingToBuy=You cant buy anything
+Buy=Buy %s
+NotAviable=%s is not aviable!
+NotEnoughMoney=You have not enough money!
+CtxtBuy=Buy
+
+CtrlActivateBag=Attach bag
+MsgAlreadyHasBag=%s is already wearing|an alchemist's bag!
+MsgPuton=Bag put on.

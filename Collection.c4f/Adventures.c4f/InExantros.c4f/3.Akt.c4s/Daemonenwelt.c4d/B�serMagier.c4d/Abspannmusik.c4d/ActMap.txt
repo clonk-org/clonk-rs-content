@@ -1,0 +1,8 @@
+[Action]
+Name=Check
+Procedure=NONE
+Length=1
+Delay=200
+Facet=0,0,1,1
+Sound=Abspannmusik
+NextAction=Check

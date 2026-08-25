@@ -1,0 +1,13 @@
+[Action]
+Name=Chair1
+Procedure=NONE
+Length=1
+Delay=0
+Facet=36,0,10,17
+
+[Action]
+Name=Chair2
+Procedure=NONE
+Length=1
+Delay=0
+Facet=46,0,10,17

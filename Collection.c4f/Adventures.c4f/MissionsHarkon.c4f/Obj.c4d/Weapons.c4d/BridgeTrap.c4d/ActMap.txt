@@ -1,0 +1,15 @@
+[Action]
+Name=Locked
+Facet=40,0,40,11,0,-4
+Length=1
+Delay=1
+StartCall=TestEnemy
+NextAction=Locked
+
+[Action]
+Name=BreakDown
+Facet=40,0,40,11,0,-4
+Length=1
+Delay=1
+StartCall=TestEnemy2
+NextAction=BreakDown

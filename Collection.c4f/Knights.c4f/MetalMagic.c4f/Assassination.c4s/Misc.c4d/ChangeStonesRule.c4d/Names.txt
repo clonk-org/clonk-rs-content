@@ -1,0 +1,2 @@
+DE:Juwelenzahl aendern
+US:Change gemstone amount

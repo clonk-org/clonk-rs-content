@@ -1,0 +1,14 @@
+[Particle]
+Name=Heart
+MaxCount=300
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,10,10,-5,-5
+Delay=1
+Repeats=1
+Reverse=1
+FadeOutLen=40
+FadeOutDelay=1
+AlphaFade=0
+Additive=1

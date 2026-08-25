@@ -1,0 +1,4 @@
+Relaunch=%s benötigt einen Relaunch.
+TLeft=Götterbund (Links)
+TRight=Magierorden (Rechts)
+StatueLives=Energie der Statue

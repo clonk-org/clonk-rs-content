@@ -1,0 +1,2 @@
+DE:Energieleiste
+US:Energy bar

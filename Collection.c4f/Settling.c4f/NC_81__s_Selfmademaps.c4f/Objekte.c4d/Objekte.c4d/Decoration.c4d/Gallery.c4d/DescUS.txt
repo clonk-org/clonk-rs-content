@@ -1,0 +1,1 @@
+Prevents the mine from collapse.

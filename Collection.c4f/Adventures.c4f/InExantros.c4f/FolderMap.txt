@@ -1,0 +1,45 @@
+[FolderMap]
+MinResX=640
+MinResY=480
+ScenInfoArea=360,290,348,274
+FullscreenBG=1
+
+	[Scenario]
+	File=1.Akt.c4s
+	BaseImage=h1a.png
+	OverlayImage=h1b.png
+	Area=66,406,103,58
+	
+	[Scenario]
+	Access=Schattenwald
+	File=2.Akt.c4s
+	BaseImage=h2a.png
+	OverlayImage=h2b.png
+	Area=415,99,103,56
+	
+	[Scenario]
+	Access=Damonwelt
+	File=3.Akt.c4s
+	BaseImage=h3a.png
+	OverlayImage=h3b.png
+	Area=809,438,104,54
+	
+	[AccessGfx]
+	Access=Schattenwald
+	OverlayImage=i2.png
+	Area=261,179,59,63
+	
+	[AccessGfx]
+	Access=Schattenwald
+	OverlayImage=i3.png
+	Area=76,544,203,125
+	
+	[AccessGfx]
+	Access=Schattenwald
+	OverlayImage=i4.png
+	Area=306,382,58,142
+	
+	[AccessGfx]
+	Access=Damonwelt
+	OverlayImage=i5.png
+	Area=677,314,327,347

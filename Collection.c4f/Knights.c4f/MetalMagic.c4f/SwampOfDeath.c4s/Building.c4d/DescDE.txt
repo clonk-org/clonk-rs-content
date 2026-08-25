@@ -1,0 +1,1 @@
+Stellt die Grundfunktionen von einen Gebäude zur verfügung.

@@ -1,0 +1,8 @@
+Statue=Oh no! The gold idol has been stolen!
+Statue2=We have to get it back!
+
+Intro=Intro
+Abort=Skip intro
+AbortDesc=Aborts the intro immediately.
+CloseMenu=Close menu
+CloseMenuDesc=Closes this menu.

@@ -1,0 +1,2 @@
+NoAnimal=Kein Greif oder Echse verfügbar!
+MustStand=Der Paladin muss auf dem Boden stehen.

@@ -1,0 +1,7 @@
+RecBow=recruit Archer
+RecLanc=recruit Lancebearer
+RecSwor=recruit Swordman
+Ascend=To the roof
+AlreadyIs=%s is already %s
+TxtNoKnight=%s is no Clonk!
+NeedMoney=%d Honor needed!

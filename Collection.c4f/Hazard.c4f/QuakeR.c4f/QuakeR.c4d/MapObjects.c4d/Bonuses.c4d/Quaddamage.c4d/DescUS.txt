@@ -1,0 +1,1 @@
+All weapon-damage is tripled (although the name says different.)

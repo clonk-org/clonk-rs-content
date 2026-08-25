@@ -39,6 +39,14 @@ build_fixture() {
 	printf '1.7' >"$root/EkeReloaded.c4d/Version.txt"
 	printf '3.1b' >"$root/MetalMagic.c4d/Version.txt"
 
+	# The Ultimate Clonk Compilation packs. Covered here so that dropping one
+	# from THIRD_PARTY_PACKS fails a check rather than silently restamping a
+	# pack this project does not own.
+	mkdir -p "$root/Collection.c4f" "$root/Golems.c4f" "$root/ModernCombat.c4f"
+	printf '2.0' >"$root/Collection.c4f/Version.txt"
+	printf '4.95.5' >"$root/Golems.c4f/Version.txt"
+	printf 'R1.9' >"$root/ModernCombat.c4f/Version.txt"
+
 	# MetalMagicExtra ships without a Version.txt at all.
 	mkdir -p "$root/MetalMagicExtra.c4d"
 
@@ -83,6 +91,9 @@ expect_bytes "ClonkMars.c4d" "$tmp/ClonkMars.c4d/Version.txt" '1.5 [Spirit]'
 expect_bytes "EkeReloaded.c4d" "$tmp/EkeReloaded.c4d/Version.txt" '1.7'
 expect_bytes "MetalMagic.c4d" "$tmp/MetalMagic.c4d/Version.txt" '3.1b'
 expect_bytes "Queron3.c4s" "$tmp/Melees.c4f/Queron3.c4s/Version.txt" '3.41'
+expect_bytes "Collection.c4f" "$tmp/Collection.c4f/Version.txt" '2.0'
+expect_bytes "Golems.c4f" "$tmp/Golems.c4f/Version.txt" '4.95.5'
+expect_bytes "ModernCombat.c4f" "$tmp/ModernCombat.c4f/Version.txt" 'R1.9'
 
 echo "a pack with no Version.txt is not given one:"
 if [ -e "$tmp/MetalMagicExtra.c4d/Version.txt" ]; then

@@ -1,0 +1,3 @@
+CtrlRead=Lesen
+MsgCantRead=Das kann ich nicht lesen.
+ErrNoRead=Ich kann garnicht lesen.

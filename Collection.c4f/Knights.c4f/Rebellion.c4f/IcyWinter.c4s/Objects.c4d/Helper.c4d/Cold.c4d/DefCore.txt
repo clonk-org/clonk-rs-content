@@ -1,0 +1,8 @@
+[DefCore]
+id=WNCL
+Name=WarningCold
+Version=4,9,5
+Category=8
+Width=7
+Height=7
+Offset=-3,-20

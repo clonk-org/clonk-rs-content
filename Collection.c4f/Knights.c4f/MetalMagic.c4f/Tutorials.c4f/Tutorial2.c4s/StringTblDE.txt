@@ -1,0 +1,8 @@
+MsgLoadingSect=Landschaft wird geladen...
+MsgLoadingFail=Fehler beim Laden der Sektion.
+TeamEnemy=Gegner
+
+BtnRepeatRound=Runde &wiederholen
+BtnRepeatRoundDesc=Noch einmal probieren.
+BtnNextRound=&Nächste Runde
+BtnNextRoundDesc=Weiter mit der nächsten Runde.

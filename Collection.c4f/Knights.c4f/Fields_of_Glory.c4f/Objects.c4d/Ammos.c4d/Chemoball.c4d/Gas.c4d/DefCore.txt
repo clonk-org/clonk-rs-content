@@ -1,0 +1,16 @@
+[DefCore]
+id=GAS_
+Name=Gas
+Category=2
+Value=10000 
+Width=62
+Height=60
+Offset=-31,-30
+Picture=0,0,62,60
+StretchGrowth=1
+Oversize=1
+IncompleteActivity=1
+Vertices=3
+VertexX=-3,3,0
+VertexY=3,3,-3
+VertexFriction=1,1,1

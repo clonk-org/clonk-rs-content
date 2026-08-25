@@ -1,0 +1,2 @@
+DE:Zettel
+US:Note

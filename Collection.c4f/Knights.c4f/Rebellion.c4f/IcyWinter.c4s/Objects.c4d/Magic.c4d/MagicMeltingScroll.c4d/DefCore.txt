@@ -1,0 +1,21 @@
+[DefCore]
+id=_MSC
+Name=Magic Melting Scroll
+Category=3600
+Version=4,9,5
+MaxUserSelect=1
+Width=5
+Height=10
+Offset=-5,-5
+Value=2
+Mass=5
+Components=WOOD=1;
+Picture=5,0,64,64
+Vertices=2
+VertexY=-5,5
+VertexFriction=15,15
+Rotate=1
+Rebuy=1
+Collectible=1
+Float=1
+NoSell=1

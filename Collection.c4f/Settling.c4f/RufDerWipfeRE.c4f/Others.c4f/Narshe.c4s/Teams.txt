@@ -1,0 +1,17 @@
+[Teams]
+Active=1
+AllowTeamSwitch=0
+
+	[Team]
+	id=1
+	Name=Narshe
+	Color=10616832
+	PlrStartIndex=1
+	IconSpec=Portrait:CLN2::2
+
+	[Team]
+	id=2
+	Name=Imperial
+	Color=255
+	PlrStartIndex=2
+	IconSpec=Portrait:CLN2::Soldier1

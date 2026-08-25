@@ -1,0 +1,2 @@
+Serves as oriel and staircase of a castle. 
+Should be build after the inner castle is finished.

@@ -1,0 +1,38 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+Das CMC-Pack hat eigentlich schon genug Szenarien. Dennoch, da einiges für CMC entstanden ist, hier noch zumindest die schönsten. Von Look & Feel sollten sie gleichauf mit dem CMC-Pack sein.
+
+--------------------------------------------------------
+
+Train (CMC_Train.c4s)
+	+ Die Illusion eines sich schnell bewegenden Zuges ist wirklich gut gelungen
+	- natürlich recht eindimensional
+
+CMC - Festung (CMC_Fortress.c4s)
+	* schön designt, etwa auf CMC-Pack Niveau
+
+CMC Code Death (CMC_CodeDeath.c4s)
+	* schön designt, etwa auf CMC-Pack Niveau
+
+Industrial Docks (CMC_IndustrialDocks.c4s)
+	* schön designt, etwa auf CMC-Pack Niveau
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Mahagony Mill (CMC_MahagonyMill.c4s)
+	+ Das Sägewerk-Ambiente ist eine lustige Dekoration
+	- allerdings geht es wenige Sekunden nach Spielanfang schon auf die Nerven
+	- Landschaft ist ansonsten nicht besonders interessant
+	- CCAN: +1,5
+
+CMC - Hot Desert (CMC-Hot_Desert_v_1_0.c4s)
+	- man hätte noch mehr machen können mit dem Wüsten-Theme
+	- sehr eindimensional
+
+Kasernenstadt (Kasernenstadt.c4s)
+	- vergleichsweise hässlich
+	
+Combat Army (CombatArmy.c4f)
+	- nicht schlecht, aber reicht an das Niveau von CMC nicht heran (obwohl es ja eigentlich ein Addon dazu ist).

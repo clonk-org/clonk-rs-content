@@ -1,0 +1,3 @@
+MsgJoinShadow=%s gehört den Angreifern an!
+MsgJoinMantis=%s verteidigt die Krone!
+MsgRelaunchCountdown=Noch %d Min. %d|bis zum Relaunch!

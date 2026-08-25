@@ -1,0 +1,24 @@
+[DefCore]
+id=KWGB
+Version=4,9,8
+Name=Verbrannter Winzer
+Category=C4D_Structure
+Width=90
+Height=60
+Offset=-45,-30
+Vertices=5
+VertexX=-30,10,43,-40,12
+VertexY=-23,-29,29,29,29
+VertexFriction=50,50,100,100
+Value=35
+Mass=1000
+Components=KMSH=3;ROCK=3;
+Picture=0,0,90,60
+Entrance=-35,09,12,22
+Exclusive=1
+ContactIncinerate=3
+BlastIncinerate=12
+Construction=1
+ConstructTo=KWZR
+Rotate=0
+Float=1

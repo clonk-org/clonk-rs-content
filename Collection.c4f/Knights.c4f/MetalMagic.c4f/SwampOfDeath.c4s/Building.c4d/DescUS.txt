@@ -1,0 +1,1 @@
+Contains the basic functions of a building.

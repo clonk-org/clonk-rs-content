@@ -1,0 +1,10 @@
+[Material]
+Name=Snow
+Color=90,90,90,110,110,110,130,130,130
+Shape=2
+Density=50
+Friction=40
+Placement=20
+TextureOverlay=Spots
+PXSGfx=Snow
+PXSGfxRt=0,0,32,32,-16,-16

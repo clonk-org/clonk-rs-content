@@ -1,0 +1,15 @@
+[DefCore]
+id=BLOD
+Name=Blood
+Version=4,9,1,3
+Category=4
+MaxUserSelect=0
+Value=0
+Mass=0
+Width=2
+Height=2
+Offset=-1,-1
+Picture=4,4,57,56
+Vertices=1
+TimerCall=Decay
+Collectible=0

@@ -1,0 +1,3 @@
+The first mobile home base.
+
+An empty tent can be wrapped up by grabbing and double click 'dig'.

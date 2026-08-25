@@ -1,0 +1,53 @@
+NoSinglePlayerInNetwork=Im Netzwerk werden Mitspieler benötigt.
+NoBotsAvailable=Dieses Szenario ist nicht Bot-kompatibel. Bots sind deaktiviert.
+
+Options=Optionen ändern
+ChangeBotCount=Bots
+ChangeBlood=Blut
+ChangeFragCount=Punkteanzahl
+
+ActualSettings=Momentane Einstellungen
+
+ChangeBotInfo=Hier wird die Anzahl der computergesteuerten Bots geändert und der Me vs. Bots-Modus de-/aktiviert.
+ChangeBloodInfo=Hier wird die Blutmenge geändert und ob es liegen bleibt.
+ChangeFragsInfo=Hier wird eingestellt wieviele Punkte man zum Gewinnen braucht.
+
+#Bot-Optionen
+AddBot=Bot hinzufügen
+RemoveBot=Bot entfernen
+NewTeam=Neues Team
+HarderBots=Schwerere Bots
+EasierBots=Leichtere Bots
+
+#Blut-Optionen
+NoBlood=Kein Blut
+NormalBlood=Normal
+LotsOfBlood=Viel
+BloodVanishes=Blut verschwindet
+BloodStays=Blut bleibt
+EnableParticleBlood=Partikelblut aktivieren
+DisableParticleBlood=Partikelblut deaktivieren
+EnableBodies=Leichenteile aktivieren
+DisableBodies=Leichenteile deaktivieren
+
+Blood1=Bei Treffern kommt kein Blut.
+Blood2=Bei Treffern kommt normal viel Blut.
+Blood3=Bei Treffern kommt viel Blut.
+BloodDur1=Das Blut verschwindet mit der Zeit.
+BloodDur2=Das Blut bleibt da.
+BloodParticle1=Statt Material wird Partikelblut verschleudert. (bessere Performance)
+BloodParticle2=Statt Partikel wird Blut-Material verschleudert.
+BodyParts1=Leichen zersplattern bei Treffern in Einzelteile.
+BodyParts2=Leichen zersplattern bei Treffern nur in Blut.
+
+BloodAmountSet=Blutmenge gesetzt
+ParticleBloodEnabled=Partikelblut aktiviert
+ParticleBloodDisabled=Partikelblut deaktiviert
+BodyPartsEnabled=Leichen zersplattern
+BodyPartsDisabled=Leichen zersplattern nicht
+
+#Frags-Optionen
+More=Mehr
+Less=Weniger
+FragsSet=Punkteanzahl gesetzt
+Points=Punkte

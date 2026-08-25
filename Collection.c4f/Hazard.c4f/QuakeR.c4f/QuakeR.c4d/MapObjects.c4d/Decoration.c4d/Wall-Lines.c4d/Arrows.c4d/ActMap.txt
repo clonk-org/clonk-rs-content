@@ -1,0 +1,8 @@
+[Action]
+Name=Glow
+Procedure=None
+Length=4
+Delay=3
+Facet=0,0,15,13
+FacetBase=1
+NextAction=Glow

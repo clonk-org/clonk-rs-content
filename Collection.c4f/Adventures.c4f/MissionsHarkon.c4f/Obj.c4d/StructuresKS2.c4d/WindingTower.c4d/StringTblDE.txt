@@ -1,0 +1,9 @@
+Coal=Kohle abbauen
+Ore=Eisenerz abbauen
+Rock=Stein abbauen
+ProducedCoal=Kohlestück abgebaut!
+ProducedOre=Eisenerzstück abgeaut!
+ProducedRock=Steinstück abgeaut!
+Producesth.=Material wählen
+Work=Abbaumenü
+Full=Gebäude ist voll!

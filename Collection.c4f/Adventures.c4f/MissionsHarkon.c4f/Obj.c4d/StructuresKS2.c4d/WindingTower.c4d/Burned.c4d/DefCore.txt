@@ -1,0 +1,24 @@
+[DefCore]
+id=KWTB
+Version=4,9,8
+Name=Verbrannter Förderturm
+Category=C4D_Structure
+Width=90
+Height=79
+Offset=-45,-40
+Vertices=4
+VertexX=40,-29,-24,40
+VertexY=-39,-1,24,39
+VertexFriction=50,50,100,100
+Value=35
+Mass=1000
+Components=KMSH=5;ROCK=3;
+Picture=0,0,90,79
+Entrance=18,8,22,32
+Exclusive=1
+ContactIncinerate=3
+BlastIncinerate=12
+Construction=1
+ConstructTo=KWTR
+Rotate=0
+Float=1

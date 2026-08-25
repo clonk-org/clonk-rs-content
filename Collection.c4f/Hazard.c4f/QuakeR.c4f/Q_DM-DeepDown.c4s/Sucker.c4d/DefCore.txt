@@ -1,0 +1,11 @@
+[DefCore]
+id=SUCK
+Version=4,9,8,2
+Name=Sucker
+Category=C4D_StaticBack|C4D_Background
+Width=64
+Height=64
+Offset=-32,-32
+Picture=0,0,64,64
+StretchGrowth=1
+IncompleteActivity=1

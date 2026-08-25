@@ -1,0 +1,13 @@
+[DefCore]
+id=_FRM
+Name=Farmer
+Version=4,9,5
+Category=2049
+MaxUserSelect=10
+Components=CLNK=1;
+Picture=192,100,32,40
+PictureFE=224,100,32,40
+NoGet=1
+NoSell=1
+ColorByOwner=1
+Value=25

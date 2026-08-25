@@ -1,0 +1,5 @@
+[DefCore]
+id=_DSL
+Name=DifficultySelector
+Category=1
+Version=4,9,5

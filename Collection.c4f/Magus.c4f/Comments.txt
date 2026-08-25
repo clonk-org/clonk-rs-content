@@ -1,0 +1,231 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+--------------------------------------------------------
+
+Clonkrix-Remake (Clonkrix-Remake.c4f)
+	* Full-Conversion-Mod vom Zaubern, aber selse Spielmechanik: Kombo-Zaubern
+	+ mehr Action, so Richtung Hazard
+	+ CCAN: +2,2
+
+Turnier der Zauberer (Turnier_der_Zauberer.c4s)
+	* kleine Magus-Arena
+	+ mit KI!
+	+ mit Story!
+	+ mit neuem interessantem Magie-System!
+	- letztlich rotiert man immer nur die gleichen 5 Zauber im gleichen Muster
+	+ 2. Platz des Fantasy-Wettbewerbs
+	+ CCAN: +2,5
+
+Himmelsbrücken (SkyBridge.c4s)
+	+ tolle Idee: Magus-Melee plus (quasi) ein Kletter-Rennen
+	+ viele Einstellungsmöglichkeiten
+	- läuft auf 99% Windstöße hinaus...
+	+ CCAN: +2,2
+
+Argons Ehre [T mod. v2] (Argon_Tournament.c4s)
+	* kleine Magus-Arena, Pfeil&Bogen + einige Magus-Zbraubersprüche
+	- wirklcih sehr simpel, no extras
+	+ Musik
+	+ CCAN: +2,6
+	+ wurde auch viel in Liga gespielt (dies ist die verbesserte Version aus dem Tournament)
+
+Balance (Z4Balance.c4s)
+	+ sehr beliebt in der Liga
+	+ CCAN: +2,3
+
+Eispalast (IcePalace.c4s)
+	* kleine Magus-Arena
+	+ hübsche Landkarte
+	- schwierig überhaupt zueinander hinzukommen (manchmal, Landschaft ist dynamisch)
+	* CCAN: +1,7
+
+CastCavern (CastCavern.c4s)
+	* Magus-Arena mit einigen Extraregeln
+	+ klein
+	- etwas krackselig
+	- durch die ganzen neuen Kombos und Zauber bräuchte man wohl einiges an Übung um das gekonnt zu spielen
+	+ 2. Platz im Magische Melees Wettbewerb
+	* CCAN: +1,8
+
+Checkerfield (Checkerfield.c4s)
+	* Magus-Arena mit KdD Magie Pack
+	+ klein
+	- manchmal kommt man physikalisch garnicht zu den anderen, etwas unwegsam (Krötensprung ein muss)
+	+ CCAN: +2,1
+
+Etagenkampf....
+	+ sehr beliebt in der Liga
+	+ recht pures Magus-Melee
+	ja welche Version denn? Etagenkampf - Limeox Edit oder Etagenkampf [s2modv8] oder noch eine andere?
+	-> Etagenkampf[s2edit] kam später (soweit ich weiß) und wurde offenbar mehr in der Liga gespielt, entsprechend denke ich, wurde das Szenario mehr gestreamlined, camperstellen entfernt und so weiter
+	- CCAN: nur +1,4 (aber super viele Votes)
+
+Brücken ?! (bridges2.c4s)
+	* kleine Magus-Arena
+	+ lustige Idee mit den Plattformen
+	- diese Happy XMAS Dinger sind verwirrend (soweit ich weiß sind sie reine Deko)
+	- man ist eigentlich am besten beraten, immer auf der gleichen plattform zu bleiben weil es wirklich schwierig ist, eine andere zu treffen
+	- letztlich recht ähnlich zu Argon's Ehre und Himmelsbrücken
+	+ CCAN: +2,0
+
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Magic Jumpers (Magic_Jumpers2_706.c4s)
+	+ lustige Mechanik mit den Borders: linker Rand = rechter Rand, oberer Rand = unterer Rand
+	- schon mit zwei Spielern sehr unübersichtlich und chaotisch
+	+ neue Zauber die zur Karte passen (Schüsse die mehr oder weniger geradeaus gehen)
+	+ gut für Magiesystem-Anfänger, da Herunterfallen nicht tödlich ist und es keinen klaren Vorteil oben/unten gibt
+	- unausbalancierte Zauber: Am besten Steinschlag/Feuerball spammen
+	- Magier können sich jederzeit heilen. So wird es bei ähnlichem Skill letztlich zu eine Endlosrunde / Sandbox
+	- CCAN: +0.6
+
+Mystika (Mystika.c4s)
+* Arena mit dem M&M? Mystikern
++ (fast?) einziges Szenario mit diesen Mystikern
++ Konzept der Mystiker ist lustig: Je nachdem welche Gegenstände sie in der Hand haben, können sie bestimmte Zauber sprechen (mit Cooldown)
++ ganz hübsch gestaltete Landschaft, aber etwas zu groß
+- Man muss erstmal herausfinden, was die einzelnen Gegenstände zaubern. (Warum?)
+- Man kann sich mit dem Holigon ständig heilen -> Endlosrunde
+- Man spawnt mit sehr schwachen Gegenständen (Zaubern), gut geeignet für Spawnkills
+- Mystiker sind mit ihren drei Gegenständen (Zaubern) recht schwach, da u.a. die Cooldowns so lang sind. Im Zweifelsfall kann man immer weglaufen
+- kein gutes visuelles Feedback, wann der Cooldown der Zauber vorbei ist
+- CCAN: +0.3, 10/12 Platz im Magische Melees Contest
+
+Aidos (Aidos.c4s)
+	* Magus-Arena
+	+ ganz schöne Landschaft
+	- viele camper-Positionen, man kommt auch schwer wieder herauf
+
+Höhlenkampf der Magie ((G)Höhlenkampf der Magie.c4s)
+	* Magus-Melee in Höhle
+	- da wie immer der "high ground" ein großer Vorteil ist, ist es sehr zufällig wer wo also mit welchem Vorteil man spawnt
+	- sehr ähnlich zu (G)Kristall.c4s	
+	- eigentlich nur eine Karte + zwei Zauber
+
+Kristall ((G)Kristall.c4s)
+	* Magus-Melee in Höhle
+	- schwierig überhaupt zueinander hinzukommen (manchmal, Landschaft ist dynamisch)
+	+ begrenzte Anzahl an Zauber, nicht so overwhelming
+	- sehr ähnlich wie Höhlenkampf der Magie, erinnert auch an das Alchemie-Szenario im Originalpack
+
+Blackfield [T mod. v7.42]
+	* typische Magus-Arena
+	- Landschaft ist recht hässlich und etwas groß
+	- nicht wirklich was besonderes
+	+ Drachen! Aber:
+	- ERROR: "Spezial-Zauber" (offenbar: doppel-unten) verhindert dass man den Drachen ordentlich steuern kann
+
+Changing World (SLChangingWorld0.997.c4s)
+	* Magus-Arenen mit vielen Auswählmöglichkeiten
+	* mit Skin-Auswahl - naja
+	- 22(!!!) verschiedene Arenen auswählbar am Anfang im "Menü", inklusive einige bekannte wie Etagenkampf, aber die meisten sind leider recht uninspiriert, also Quantität statt Qualität
+
+Pfeil und Flüssigkeit 2.0 (Pfeil_und_Fluessigkeit_2_0.c4s)
+	- zu groß. Zauber passen nicht zur Größe der Landschaft (Platformen zu weit für Reichtweite der Zauber auseinander)
+	+ Musik
+	- effektivster Zauber scheint immer der Steinschlag (ggf. mit Feuerpfeilen) zu sein 
+	- man kann sich heilen. D.h. kann ewig dauern
+
+Magisches Melee (MagicMelee.c4s) - aus Magische_Melees.c4f
+	* kleine Arena-Karte auf der Magier sich v.a. Flints herbeizaubern und sich gegenseitig damit bewerfen
+	+ Idee ist ganz nett
+	- letztlich scheint sich einfach mit den Flints zu bewerfen die effektivste Methode zu gewinnen sein. es sei denn man kann in Windeseile die Kombos zaubern, was eigentlich nur im Internetspiel (weil langsam) geht
+
+Spellwars 1.4 (Spellwarsmap.c4s)
+	- langweilige Karte
+	+ abwechslungsreiches Spielziel: Capture the flag
+	- viele Extra-Zauber aus KdD, aber ist evtl. etwas overwhelming?? Um die "richtigen" Zaubersprüche zu wählen, muss man eigentlich die Zauber + KdD Zauber auswändig kennen - im Team. Das ist also eine recht unwahrscheinliche Konfiguration
+
+Sommerfest in Irelion (Sommerfest_in_Irelion.c4s)
+	+ hübsche Landschaft
+	- zu groß
+	- nichts weiter, eigentlich nur eine Landschaft
+
+Magius-Technikus (DM_CTF_MagiusTechnikus.c4s)
+	+ lustige Idee: Magus gegen Hazard
+	- außer die beiden Clonks sind perfekt ausbalanciert (das sind sie nicht), ist es inherent unfair
+	+ teilweise schön, teilweise hässlich designte Landschaft. Insgesamt ok
+	- Es gibt schon "Kampf der Generationen" mit weitaus mehr Auswahl als diese beiden. "Kampf der Generationen" wurde auch in der Liga gespielt, also sicherlich besser ausbalanciert
+
+Bridgefield (SLBridgefield.c4s)
+	* Magier auf Brücken
+	- es gibt eigentlich schon genug Szenarien mit Brücken (a la Wagonkampf etc.)
+
+Gipfelkampf (MountainsTop.c4s)
+	* Magus-Handgemenge
+	- bester Zauber scheint hier zu sein, Windstoß zu spammen
+	- simple, langweilige Landschaft
+
+Wissen ist Macht (Wissen_ist_Macht.c4s)
+	+ nette Idee mit dem Aufsammeln von Zaubersprüchen
+	+ recht nette Karte
+	- Zaubersprüche spawnen nicht nach
+	- Karte zu groß, laggt durch Regen
+	- man kann durchaus in Lava nachspawnen
+	- sehr vom Zufall abhängig, ob man sich fürs Melee sinnvolle Zaubersprüche aneignen kann: dementsprechend läuft das Gameplay so, dass sich alle erstmal aus dem Weg gehen um die Zaubersprüche zu ergattern und erst später aufeinanderprallen - da hätte man den Spielern möglicherweise auch gleich ein zufälliges Inventar aus Zaubern geben können
+
+Magische Melees (Magische_Melees.c4f)
+- langweilige Landschaft
+- man kann per Magie Flints ins Inventar zaubern. Aber gut, dann kann man die Flints auch gleich im Erdreich verteilen / Spawnpunkte
+
+Magischer Wasserkanal der Golems (Magischer_Wasserkanal_der_Golems_1_2.c4s)
+- zu groß, man trifft sich kaum (es gibt halt ~5 durch Wassertunnel abgetrennte Bereiche)
+- etwas pointless, wozu das getauche?
+
+Maguskampf an den schwebenden Eisflächen
+ (Maguskampf_an_den_schwebenden_Eisflaechen.c4s)
+- eigentlich nur eine Landschaft (Eis-Himmelsinseln)
+
+Kampf der Magi (Kampf_der_Magi.c4s)
+	* Magus-Arena
+	- etwas unzerstörbare-Bricks Landschaft
+	- Heilzauber und überall Kisten mit Broten verfügbar, d.h. Gegner ziehen sich einfach immer zurück um sich kurz zu heilen und es nimmt nie ein Ende
+
+Kampf der Magi v1.45 (Kampf_der_Magi_v1_45.c4s)
+	* Magus-Arena
+	- ätzende krackselige unzerstörbare-Bricks Landschaft ohne gerade Wände, Decken und Böden (ich denke das ist ein Bug)
+
+Zauberwald (Zauberwald.c4s)
+	* Magus-Melee bei denen sich jeder Magus am Anfang 6 Zauber auswählen muss
+	- zu große und nicht so interessante Landschaft
+
+Feuerland (Firaland.c4s)
+	* Magus-Handgemenge
+	- fast einfach nur eine Landkarte
+
+Skyline (Skyline.c4s)
+	* Magus-Handgemenge
+	- fast einfach nur eine Landkarte (sehr ähnlich zu PolarSkies.c4s)
+
+Polare Himmel (PolarSkies.c4s)
+	* Magus-Handgemenge
+	- fast einfach nur eine Landkarte
+
+Boxkampf (Boxkampf.c4s)
+	+ Magus-artiger Kampf (so Richtung Clonkrix-Remake)
+	- wirkt billig und/oder unfertig
+	- langweilige "Landschaft" und Deko, oldgfx-Clonk
+
+Zauberwelt (MagicWorld.c4s)
+	+ 1. Platz im Magische Mächte Wettbewerb (aber es gab nur vier Einsendungen)
+	- hauptsächlich nur eine normale Landkarte mit ein paar Extrazaubern (zu GWE4-Zeiten, also bevor viele Zauber in Clonk Endeavour hinzugefügt wurden)
+	- alte Magieclonk-Grafik
+
+Alchemistro (Alchemistro.c4s)
+	* Alchemie-Magus-Arena
+	- Magie in einer Arena mit Alchemie funktioniert nicht so recht. Man hat keinen Überblick darüber, für welche Zauber man denn nuch eigentlich genug Zutaten hat
+
+Magischer Wald (MagicalForest.c4s)
+	+ Alchemie-Magus-Melee
+	- eigentlich genauso wie das Alchemie-Szenario im Originalpaket, nur Landschaft is langweiliger
+
+Vulkan (SLVulkano.c4s)
+	* Magie-Arena auf kleinen Himmelsinseln über Lava
+	- sehr basic, im Prinzip nur eine Karte
+
+Kampf der Lehrlinge (SLKampf_der_Lehrlinge.c4s)
+	- langweilige Landschaft
+	- es gibt schon ein Alchemie-Szen im Originalpack, ist sehr ähnlich nur dass hier eben die Landschaft noch langweiliger ist

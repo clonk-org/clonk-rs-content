@@ -1,0 +1,5 @@
+[Action]
+Name=Ready
+Procedure=ATTACH
+FacetBase=1
+NextAction=HOLD

@@ -1,0 +1,17 @@
+[Action]
+Name=Shoot
+Procedure=None
+Directions=1
+Length=10
+Delay=2
+Facet=0,0,20,9,0,0
+NextAction=Shoot
+
+[Action]
+Name=RunOut
+Procedure=None
+Directions=1
+Length=10
+Delay=2
+Facet=0,9,20,9
+Reverse=1

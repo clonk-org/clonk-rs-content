@@ -1,0 +1,14 @@
+[Particle]
+Name=TriangleSpark
+MaxCount=2000
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,39,32,-19,-16
+Delay=0
+Repeats=1
+GravityAcc=0
+AlphaFade=4
+Additive=1
+Attach=1
+RByV=2

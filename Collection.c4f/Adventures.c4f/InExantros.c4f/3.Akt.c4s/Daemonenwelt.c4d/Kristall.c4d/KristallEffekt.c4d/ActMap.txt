@@ -1,0 +1,6 @@
+[Action]
+Name=Timer
+Length=1
+Delay=3
+NextAction=Timer
+StartCall=Timer

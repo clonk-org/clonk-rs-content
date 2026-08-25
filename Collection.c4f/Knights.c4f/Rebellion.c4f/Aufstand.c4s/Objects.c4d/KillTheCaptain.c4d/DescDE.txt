@@ -1,0 +1,2 @@
+Ein Spieler pro Team erhält einen Captain, welcher durch einen Stern über seinem Kopf 
+identifiziert wird. Wird dieser Captain getötet, ist das gesamte Team eliminiert.

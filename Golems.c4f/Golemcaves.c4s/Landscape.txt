@@ -1,0 +1,79 @@
+overlay mat { algo=rndchecker; zoomX=-80; zoomY=-80; loosebounds=1; turbulence=750; };
+overlay caves {
+  algo=rndchecker; loosebounds=1; turbulence=200; mat=Tunnel;
+  tex=Smooth; zoomX=90; zoomY=0; a=1;
+  mat { mat=Tunnel; tex = Rough; a = 2; };
+  mat { a = 12; };
+  mat { y=69; hgt=1; mat = Earth; tex = Smooth; };
+  overlay { y=70; mat=DuroLava; tex=Liquid;
+    mat { mat = Granite; a=17; tex=Rock;
+      mat { mat = Granite; tex=Rough; a = 3; };
+      mat { mat = Granite; tex=Ridge; a = 3; };
+      mat { mat = Rock; tex=Ridge; a = 3; };
+    };
+  };
+};
+overlay dots {
+  algo = random;
+  a = 10;
+};
+
+map Kaesekuchen {
+  //Zuerst backen sie den Untergrund. Das sieht so aus:
+  overlay { mat=Earth; tex=Rough;
+    //Zur abwechslung noch andere Texturen hinzumischen:
+    mat { mat=Earth; a=6; tex=Smooth; };
+    mat { mat=Earth; a=6; tex=Smooth2; };
+    mat { mat=Earth; a=6; tex=Ridge; };
+
+    dots { mat=Ashes; tex=Smooth3; a=18;
+      mat { mat=Ashes; tex=Rough; a=4; };
+      mat { mat=Ashes; tex=Ridge; a=4; };
+      mat { mat=FlyAshes; tex=Smooth; a=4; };
+    };
+
+    //500g Graumehl
+    mat { mat=Rock; a=15; tex=Rock;
+      //Sorgen sie auch hier für Abwechslung
+      mat { mat=Granite; a=17; zoomX = -20; zoomY = -40; };
+      };
+    //Ein wenig Salz und Backmehl..
+    mat {
+      mat=Ore; tex=Ridge; a=13;
+      mat { mat=Ore; tex=Rough; a = 3; };
+      mat { mat=Ore; tex=Rock; a = 3; };
+    };
+    mat {
+      mat=Coal; tex=Swirl; a=14;
+    };
+    mat {
+      mat=Sulphur; tex=Swirl; a=14; zoomX = -80; zoomY = -70;
+    };
+    //Zucker
+    mat {
+      mat=Crystal; tex=Flare; a=6; zoomX = -70; zoomY = -70;
+      mat { mat=Crystal; tex=Structure; a = 3; };
+      mat { mat=Crystal; tex=Structure2; a = 3; };
+    };
+    //Safran macht den Kuchen gelb oder so
+    mat {
+      mat=Gold; tex=Rough; a=17;
+      mat { mat=Gold; tex=Flare; a = 4; };
+      mat { mat=Gold; tex=Structure3; a = 4; };
+      mat { mat=Gold; tex=Smooth3; a = 4; };
+      dots { mat=Granite; tex=Structure2; zoomX = 60; zoomY = 60; };
+      dots { mat=Tunnel; tex=Smooth; zoomX = 60; zoomY = 60; };
+    };
+    //Beim Backen können Löcher entstehen
+    caves { zoomX=-20; zoomY=-20; };
+    caves { zoomX=90; zoomY=40; 
+      mat { mat=Sand; tex=Smooth; a=35; zoomX=-80; zoomY=-95; };
+    };
+    caves { zoomX=40; zoomY=40;
+      mat { mat=Sand; tex=Smooth; a=35; zoomX=-80; zoomY=-95; };
+    };
+  };
+};
+//Das war's auch schon! Nach genügend Spaß und Eleminierung der Gegner Kuchen aus dem Ofen holen, eine halbe Stunde abkühlen lassen und mit Puderzucker garniert servieren.
+    
+

@@ -1,0 +1,7 @@
+[Action]
+Name=Walk
+Procedure=NONE
+Directions=2
+Facet=0,0,10,12
+
+

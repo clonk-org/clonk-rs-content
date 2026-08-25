@@ -1,0 +1,5 @@
+Throws a Squeeker that attacks everything. Can also bury itself and used as a living mine.
+
+Ammunition(max.): 20
+Firemode 1: Squeeker
+Firemode 2: Squeeker-Mine

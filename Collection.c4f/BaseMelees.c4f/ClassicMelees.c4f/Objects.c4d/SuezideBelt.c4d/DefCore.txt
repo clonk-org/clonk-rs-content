@@ -1,0 +1,19 @@
+[DefCore]
+id=_BLT
+Name=Suezide Belt
+Version=4,9,5
+Category=C4D_Object|C4D_SelectMaterial|C4D_SelectKnowledge|C4D_SelectHomebase
+MaxUserSelect=5
+Height=4
+Width=10
+Offset=-5,-2
+Vertices=2
+VertexX=-3,3
+VertexFriction=100,100
+Value=25
+Mass=30
+Components=WOOD=1;METL=1;GUNP=4
+Picture=0,10,64,54
+Collectible=1
+BlastIncinerate=10
+Rebuy=1

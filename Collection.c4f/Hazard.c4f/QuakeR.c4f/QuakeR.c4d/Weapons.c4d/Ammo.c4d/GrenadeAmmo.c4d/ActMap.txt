@@ -1,0 +1,8 @@
+[Action]
+Name=Turn
+Procedure=None
+Directions=1
+Length=18
+Delay=2
+Facet=0,0,16,16
+NextAction=Turn

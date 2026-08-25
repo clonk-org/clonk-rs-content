@@ -1,0 +1,88 @@
+[FolderMap]
+ScenInfoArea=520,85,355,490
+MinResX=800
+MinResY=600
+	
+	[Scenario]
+	File=Dynamic.c4f
+	Area=150,100,150,135
+	BaseImage=FMDynamic
+	OverlayImage=FMDynamic2
+	TitleUseBookFont=0
+	TitleColorInactive=128
+	TitleColorActive=255
+	TitleFontSize=16
+	TitleOffX=94
+	TitleOffY=-16
+	TitleAlign=1
+	Title=TITLE
+	
+	[Scenario]
+	File=Kampagne.c4f
+	Area=150,280,150,135
+	BaseImage=FMKampange
+	OverlayImage=FMKampange2
+	TitleUseBookFont=0
+	TitleColorInactive=65520
+	TitleColorActive=4390656
+	TitleFontSize=16
+	TitleOffX=94
+	TitleOffY=-16
+	TitleAlign=1
+	Title=TITLE
+	
+	[Scenario]
+	File=Static.c4f
+	Area=150,460,150,135
+	BaseImage=FMStatic
+	OverlayImage=FMStatic2
+	TitleUseBookFont=0
+	TitleColorInactive=16776960
+	TitleColorActive=16711680
+	TitleFontSize=16
+	TitleOffX=94
+	TitleOffY=-16
+	TitleAlign=1
+	Title=TITLE
+	
+	[Scenario]
+	File=Missions.c4f
+	Area=300,180,150,135
+	BaseImage=FMMissions
+	OverlayImage=FMMissions2
+	TitleUseBookFont=0
+	TitleColorInactive=47712
+	TitleColorActive=65478
+	TitleFontSize=16
+	TitleOffX=94
+	TitleOffY=-16
+	TitleAlign=1
+	Title=TITLE
+		
+	[Scenario]
+	File=Others.c4f
+	Area=300,360,150,135
+	BaseImage=FMMelees
+	OverlayImage=FMMelees2
+	TitleUseBookFont=0
+	TitleColorInactive=6366976
+	TitleColorActive=16725504
+	TitleFontSize=16
+	TitleOffX=94
+	TitleOffY=-16
+	TitleAlign=1
+	Title=TITLE
+	
+	[Scenario]
+	File=Tutorial.c4s
+	Area=0,400,125,200
+	BaseImage=FMTutorial
+	OverlayImage=FMTutorial2
+	TitleUseBookFont=0
+	TitleColorInactive=128
+	TitleColorActive=255
+	TitleFontSize=16
+	TitleOffX=65
+	TitleOffY=-16
+	TitleAlign=1
+	Title=TITLE

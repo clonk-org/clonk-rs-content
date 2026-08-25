@@ -1,0 +1,18 @@
+[DefCore]
+id=_OLL
+Version=4,9,8
+Name=Oil lamp
+Category=C4D_Vehicle|C4D_SelectKnowledge
+Width=13
+Height=10
+Offset=-6,-5
+Vertices=4
+VertexX=0,7,0,-6
+VertexY=-6,-1,4,0
+VertexFriction=20,20,20,20
+VertexCNAT=0,0,0,0
+Value=11
+Mass=50
+Components=GOLD=1
+Picture=0,26,64,64
+Grab=1

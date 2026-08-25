@@ -1,0 +1,3 @@
+TxtNooreavailable=Kein Kristall verfügbar.
+TxtNeedsfueltoburn=Kein Brennmaterial verfügbar.
+TxtProducemetal=Edel-Kristallproduktion

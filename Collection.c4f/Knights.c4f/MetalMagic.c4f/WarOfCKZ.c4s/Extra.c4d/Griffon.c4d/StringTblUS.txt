@@ -1,0 +1,5 @@
+TxtMovement=Move
+TxtAttack=Bite
+TxtLeave=Retransform
+MsgNoGoodRider=%s cannot ride.
+MsgCultsite=%s will be summoned at the cultsite.

@@ -1,0 +1,117 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+Es ist klar dass hier durchgehend sehr schwierige Szenarien drin sind, weil darum geht es ja bei den Rätselszenarien.
+
+Sie sollten aber nicht frustrierend sein. Frustrierend wäre z.B. wenn man durch Zufall oder durch nicht-schaffen eines Geschicklichkeits-Rätsels ganz von vorne anfangen muss oder man gar eliminiert wird.
+Außerdem ist es weniger frustrierend wenn man die Möglichkeit hat, stattdessen (erstmal) andere Rätsel zu lösen oder wenn ein Rätsel mehrere Lösungswege hat. Hinweise sind da auch wichtig.
+
+--------------------------------------------------------
+
+Turm der Verzweiflung (S2Tower.c4s)
+	+ schön gestaltet
+	+ hunderte Levels mit jeweils unterschiedlichen Rätseln
+	+ Hinweise für Rätsel
+	+ Möglichkeit, Rätsel (erstmal) auszulassen
+	
+Schloss Seltsam (1_S2Curious.c4s)
+	+ schön gestaltet
+	+ Hinweise für Rätsel
+	+ auswählbare Rätsel-Schwierigkeitsstufen
+	+ auch ein bischen Action-Adventure
+	+ 1. Platz im Knobelszenarien Szenariogestaltungswettbewerb
+
+Der verlorene Bote (S2Jungle_1.c4s)
+	+ tolle Landschaft und Dekoration
+	+ tolle Story und Dialoge
+	+ interessante und abwechslungsreiche Rätsel
+	+ verteilt sich über mehrere Sektionen
+
+Weihnachtsdebakel 2014 (S2Christmas2014.c4s)
+	+ auch ein bischen Action-Adventure
+
+Mount Vikto (2_MountVikto.c4s)
+	+ 2. Platz im Knobelszenarien Szenariogestaltungswettbewerb
+	- Errors! möglicherweise Game-Breaking oder ich bin zu doof das erste Rätsel zu lösen
+
+Turm der Magie (4_TowerOfMagic.c4s)
+	+ ganz hübsch designt
+	+ einige Hinweise
+	+ 4. Platz im Knobelszenarien Szenariogestaltungswettbewerb
+
+Der Spiegel der Träume (Mirror_of_Dreams.c4s)
+	* Mix aus Rätseladventure und Hindernislauf
+	+ Landschaft ganz schön designt
+	+ tolle Story
+	+ viele Fallen und Rätsel
+	+ Musik
+	- singleplayer
+	- teilweise unnötigerweise sehr schwer (ständig speichern muss man)
+
+Das Clonk Quiz 3 - Meister des Quiz (Das_Clonk_Quiz_3_Meister_des_Quiz.c4s)
+	+ eigentlich nur ein triviales Clonk-Quiz, aber unglaublich aufwändig gemacht
+	+ aus der Clonk Quiz-Reihe das beste, weil
+	+ Story, Musik, Joker, ...
+	- singleplayer
+	- unter Clonk Rage einige errors (Joker funktionieren nicht?)	
+
+Tempelflucht (TempleEscape_League.c4s)
+	+ hübscher Tempel
+	- keine Hinweise
+	+ 3. Platz im Knobelszenarien Szenariogestaltungswettbewerb
+
+Kshuntan Ravine (KshuntanRavine.c4s)
+	+ Sven2 hat es mit 7 Leuten ge-playtestet und fand es gut
+	+ Niveau auf CCAN: 1.9
+	+ Hindernisse haben mehrere mögliche Lösungen
+	+ hübsche Landschaft
+
+Grabräuber (Grabrauber_League.c4s)
+	+ Musik!
+	+ hübscher Tempel
+
+Entweihung des Tempels (TempleProfanation.c4s)
+	+ Musik!
+	+ hübscher Tempel
+	+ Hinweise
+	+ kurz
+
+Tempelflucht (_D_Tempelflucht.c4s)
+	+ einige Hinweise
+
+Tempelwahn (_D_Tempelwahn.c4s)
+	+ einige Hinweise
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Diviner Quest (DivinerQuest.c4s)
+	* Oddball: Rätseladventure plus Siedelszenario?
+	+ Multiplayer
+	+ Landschaft sieht ganz interessant aus
+	- etwas unklar worauf es hinausläuft... wo soll man genau hin? Was soll man genau machen?
+	- super langwierig
+	- dass man in regelmäßigen Abständen seine Basis Meteoriten schützen muss, nebst Tempelerkundung, ist eher ein nerviger Chore
+	* möglicherweise wäre dieses Szenario als "schwieriges Siedelszenario" geeignet, sollte es diese Kategorie doch noch geben
+
+Rätselpanik (5_Raetselpanik.c4s)
+	- eher nicht so hübsch designt; wirkt unfertig weil die Landkarte so fade ist
+	+ aber ist wohl anfängerfreundlich(er)
+	- 5. Platz im Knobelszenarien Szenariogestaltungswettbewerb
+
+Götze des Grauens v1.1 (Wettbewerb) (S2SmallQuest.c4s)
+	- offenbar sehr schwere Rätsel (weil überhaupt nur das Lösen des Szenarios schon als Errungenschaft galt in dem Wettbewerb)
+	+ Hinweise
+	- kein Relaunch oder Checkpoints
+	- Landschaft nicht schön designt, insbesondere gibts von Sven2 wesentlich schöneres
+
+Warzenauge (Warzenauge.c4s)
+	+ Endgegner am Ende
+	- unerbittliche Rätsel die auch Geschick erfordern und kein Relaunch / Checkpoints -> frustrierend!
+	- gleich erstes Rätsel erfordert Wissen Spielmechanik-Detail die man auch als Bug einordnen könnte
+	- eher lieblos gestaltete Landschaft
+
+Der Turm der heiligen Statue 2.2 (Die_heilige_Statue_2_2.c4s)
+	- nicht so hübsch designt
+	- Der Bildschirm wackelt die ganze Zeit nervig, das geht auf den Keks!!! (wegen dem Rumble-Effekt der Feuersteinfalle)
+	+ eher einfach

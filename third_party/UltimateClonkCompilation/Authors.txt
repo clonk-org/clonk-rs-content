@@ -1,0 +1,122 @@
+Originale Autoren verschiedener im Originalpack enthaltenen Szenarien. Die meisten davon wurden über die Jahre von verschiedenen Teammitgliedern gefixt und überarbeitet, gelistet ist jeweils nur der Originalautor.
+
+Worlds.c4f/
+    Goldmine.c4s        - Matthes Bender    
+    Outset.c4s          - Matthes Bender    
+    Mountains.c4s       - ???
+    Tropical.c4s        - Matthes Bender    
+    SkyIslands.c4s      - Matthes Bender    
+	(aka Skylands.c4s)
+    Desert.c4s          - Matthes Bender    
+    ArcticOcean.c4s     - Matthes Bender    
+    Ashlands.c4s        - Matthias Rottländer (Matthi)
+	(aka Dynamic.c4f/Ascheland.c4s)
+    Watercaves.c4s      - Tobias Zwick (Newton)
+	(aka Dynamic.c4f/Cave.c4s)
+    FoggyCliffs.c4s     - Tobias Zwick (Newton)
+	(aka Dynamic.c4f/Islands.c4s)
+	Lavacaves.c4s       - ???
+    SkyAtoll.c4s        - Tobias Zwick (Newton)
+	(aka Dynamic.c4f/Skylands.c4s)
+	Chasm.c4s           - Tobias Zwick (Newton)
+	(aka Dynamic.c4s/Vulcan.c4s)
+
+
+Melees.c4f/
+    MinorMelee.c4s      - Matthes Bender  
+    (aka Easy.c4f/Melee.c4s)	
+    SharkLake.c4s       - Matthes Bender
+	(aka Easy.c4f/Lake.c4s)
+    Castle.c4s          - Matthes Bender    
+    Canyon.c4s          - Julian Raschke
+	Mountaincombat.c4s  - Tyron Madlener (Tyrone)
+	Theft.c4s           - Julian Raschke
+	(aka Missions.c4f/Thieves.c4s)
+	Clepal.c4s          - Sven Eberhardt (Sven2)
+	CliffFight.c4s      - Matthias Rottländer (Matthi)
+	Massif.c4s          - Florian Groß (flgr)
+	Greed.c4s           - Tyron Madlener (Tyrone)
+	(aka GoldRush.c4s)
+
+Missions.c4f/
+	Treasure.c4s        - Julian Raschke
+    Frontier.c4s        - Matthes Bender    
+	Rattle.c4s          - Matthes Bender    
+	Funnel.c4s          - Julian Raschke
+	Regeneration.c4s    - Julian Raschke
+	SkyVillage.c4s      - Julian Raschke
+	(aka Village.c4s)
+	Pearls.c4s          - Matthes Bender    
+    LastWill.c4s        - Steffen Wenz
+	High.c4s            - Julian Raschke
+	Rocks.c4s           - Julian Raschke
+	Submine.c4s         - Matthes Bender    
+	Low.c4s             - Sven Eberhardt (Sven2)
+	SevenKeys.c4s       - Peter Wortmann (PeterW)
+
+Races.c4f/
+    GoldRace.c4s        - Richard Gerum (Randrian)
+    Wipfrace.c4s        - Tyron Madlener (Tyrone)
+	MonsterRescue.c4s   - Richard Gerum (Randrian)
+    Skyrace.c4s         - Sven Eberhardt (Sven2)
+    Caverace.c4s        - Sven Eberhardt (Sven2)
+	GlowingPeak.c4s     - Richard Gerum (Randrian)
+	Tritonpath.c4s      - Richard Gerum (Randrian)
+
+FarWorlds.c4f/
+    Arctic.c4s          - Markus Lütkemeyer, Matthes Bender; Überarbeitung: Tobias Zwick (Newton), Günther Brammer
+	Deep.c4s            - Thomas Hirsch (sum), Matthes Bender; Überarbeitung:  Tobias Zwick (Newton), Matthias Rottländer (Matthi)
+	Jungle.c4s			- Thomas Hirsch (sum), Matthes Bender; Überarbeitung: Tobias Zwick (Newton)
+
+Knights.c4f/              Überarbeitung: Tim Wölfle (timi) (nicht klar welche)
+	Camp.c4s			- Matthes Bender
+	CoFuT.c4s           - Ben Zachau (xpendable); Überarbeitung: Tim Wölfle (timi)
+	Dunkelfels.c4s      - Matthes Bender
+	Paxhill.c4s         - Sven Eberhardt (Sven2)
+    Hammerfest.c4s      - Markus Hoppe (Shamino)
+	Kingdoms.c4s        - Sven Eberhardt (Sven2)
+    Regicide.c4s        - Markus Hoppe (Shamino)
+	Tournament.c4s      - Matthes Bender
+
+Fantasy.c4f/
+	Alchemy.c4s         - ???
+	Crystalvalley.c4s   - ???
+    Drachenfels.c4s     - Sven Eberhardt (Sven2)
+	SkiesOfFire.c4s     - ???
+
+Western.c4f/
+    LastHope.c4s        - Richard Gerum (Randrian)
+	RedrockBay.c4s      - ???
+	MilestoneWoods.c4s  - ???
+	GoldenCanyon.c4s    - ???
+	Goldrush.c4s        - Richard Gerum glaubt dass es von ihm sei, aber Shamino habe auch einen Beitrag geleistet
+	BankRobbery.c4s     - ???
+	CaptureTheFlag.c4s  - ???
+	DeadMansValley.c4s  - Richard Gerum erinnert sich dass er es überarbeitet habe, aber der Originalautor sei er nicht gewesen
+    FallingStarsPeak.c4s- ???
+	MinersCreek.c4s     - Markus Hoppe (Shamino)
+    ShootTheSheriff.c4s - Markus Hoppe (Shamino)
+	TotemHunt.c4s       - ???
+
+Golems.c4f/
+    FrostyHills.c4s     - Florian Groß (flgr)
+    Golemcaves.c4s      - Florian Groß (flgr)
+    IceBridges.c4s      - Florian Groß (flgr)
+
+-----------------
+
+Knights.c4d/            - Tobias Bender, Matthes Bender, Sven Eberhardt (Sven2)
+
+-----------------
+
+nur bis Clonk Endeavour enthalten:
+
+Maps.c4f/
+    Crystal.c4s     - Julian Raschke
+	Icecaves.c4s    - Matthes Bender    
+	Islands.c4s     - Julian Raschke
+	Lavacave.c4s    - Matthes Bender    
+    Lavalakes.c4s   - Julian Raschke
+	Sand.c4s        - Matthes Bender    
+	Skylands.c4s    - Matthes Bender    
+	Valley.c4s      - Matthes Bender    

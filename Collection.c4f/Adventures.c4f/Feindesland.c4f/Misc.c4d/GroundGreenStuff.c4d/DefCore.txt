@@ -1,0 +1,16 @@
+[DefCore]
+id=ZGRE
+Name=Vegetation
+Category=1
+Width=40
+Height=40
+Offset=-20,-20
+Value=10
+Mass=1
+Vertices=1
+VertexX=4
+VertexY=-1
+VertexFriction=10
+Components=WOOD=1;
+Rotate=1
+Chop=0

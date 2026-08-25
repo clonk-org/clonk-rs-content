@@ -1,0 +1,3 @@
+DescOpen=Truhe öffnen
+DescTake=Herausnehmen
+DescClose=Truhe schließen

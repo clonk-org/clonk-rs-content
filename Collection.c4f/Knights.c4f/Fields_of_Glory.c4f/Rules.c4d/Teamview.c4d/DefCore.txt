@@ -1,0 +1,8 @@
+[DefCore]
+id=RTVW
+Name=Teamview
+Version=4,9,5
+Value=1
+Category=524289
+MaxUserSelect=1
+Picture=10,0,40,42

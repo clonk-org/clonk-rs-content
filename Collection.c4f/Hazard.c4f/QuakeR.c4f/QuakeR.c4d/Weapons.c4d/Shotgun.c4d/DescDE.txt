@@ -1,0 +1,5 @@
+Verschießt eine große Projektilladung. Ideal für kurze Distanzen.
+
+Muniton(max.): 80
+Schussmodus 1: Streuschuss.
+Schussmodus 2: N/A.

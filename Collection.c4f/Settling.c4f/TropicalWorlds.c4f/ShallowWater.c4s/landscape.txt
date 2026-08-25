@@ -1,0 +1,27 @@
+/* Lapsus Map */
+
+//overlay Mat { algo=rndchecker; a=8; zoomX=-70; zoomY=-100; turbulence=1000; };
+overlay Mat { algo=boxes; a=4; b=20; zoomX=60; turbulence=1000; };
+overlay Mat2 { algo=rndchecker; a=3; hgt=40; mat=Sand; tex=Smooth; turbulence=100; zoomX=-100; zoomY=-100; loosebounds=1; sub=1; };
+overlay Earth { algo=rndchecker; a=3; turbulence=10000; zoomX=-90; zoomY=-90;
+ };
+
+map Lapse {
+  // Meer
+  overlay { algo=solid; y=56; mat=Water; tex=Liquid; sub=0; };
+
+    overlay { algo=solid; x=-20; wdt=140; y=65; mat=Earth; tex=Rough; turbulence=500; loosebounds=1; zoomX=60;
+    Earth { mat=Coral3; tex=Coral1; rotate=90; zoomX=10;zoomY=20;};
+    Earth { mat=Coral1; tex=Coral2; rotate=90; zoomX=10;zoomY=20;};
+    Earth { mat=Coral2; tex=Coral3; rotate=90; zoomX=10;zoomY=20;};
+    Earth { mat=Earth; tex=Ridge; };
+    Earth { mat=Earth; tex=Smooth; };
+    Earth { mat=Gold; tex=Rough; };
+    Earth { mat=Rock; tex=Rock; };
+    Earth { mat=Ore; tex=Swirl; };
+    Earth { mat=Coal; tex=Swirl; };
+    Earth { mat=Sulphur; tex=Swirl; };
+    Earth { mat=Earth; tex=Smooth2; };
+    overlay { algo=border; a=2; b=2; mat=Sand; tex=Smooth3; x=-20; turbulence=0; sub=0; };
+  };
+};

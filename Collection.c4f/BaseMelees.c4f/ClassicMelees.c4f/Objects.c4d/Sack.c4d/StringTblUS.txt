@@ -1,0 +1,2 @@
+TxtCollect=Pick up sack
+TxtError=No free hand

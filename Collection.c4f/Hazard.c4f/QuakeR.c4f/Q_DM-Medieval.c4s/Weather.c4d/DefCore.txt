@@ -1,0 +1,10 @@
+[DefCore]
+id=WEDA
+Name=EnvironmentWeather
+Version=4,9,5
+Value=1
+Category=65
+MaxUserSelect=3
+Picture=0,0,64,64
+Timer=1
+TimerCall=Rain

@@ -1,0 +1,41 @@
+Respectcredits
+==============
+
+Großer Dank geht an:
+--------------------
+
+* Nachtfalter
+ - für seine Grafiken und das Logo
+ - für viele der Skys
+ - die Waffengrafiken
+ - die Foldermap
+ - und vor allem für die genialen (und genial ausgestalteten) Szenarien
+
+* Mimmo
+ - für seine Grafiken
+ - und Szenarienideen
+
+* Icewing
+ - für seine Scriptarbeiten
+
+* bb-generation
+ - fürs SVN-Hosting
+
+Außerdem Leute die Respectcredits bekommen:
+-------------------------------------------
+
+* Freakclonk für den Quakebot und den Spy
+* Simsi für den ABC-Clonk Skin
+* Valentin(Valentin130) für die Clonkgrafik des Future-, Schutzanzug- und Droidenskins
+* Kanibal für den Bauer-Skin und Bugfixes
+* Zapper für den Wooza-Skin und Bugfixes
+* KKenny für die Grundlage des Medieval-Wetters
+* Randrian für den Medieval-Blitz
+* Das M&M-Team für den (Dunklen)Priester, die Assassine und das Skelett
+* RwD für die Originalclonks ;)
+
+* Zerg für sein Betatesting
+
+* Hazard für die Waffenbasis
+
+Außerdem an alle die mitgemacht haben für Test und Vorschläge, und fürs mitmachen generell. ;)

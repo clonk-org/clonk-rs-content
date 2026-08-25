@@ -1,0 +1,17 @@
+[DefCore]
+id=CHAN
+Name=Chain
+Version=4,9,5
+Category=1048577
+MaxUserSelect=10
+Width=32
+Height=512
+Offset=-16,-256
+Value=10
+Mass=10
+Components=_NEW=1;
+Picture=0,0,32,128
+Vertices=1
+VertexY=1
+VertexFriction=20
+Rebuy=1

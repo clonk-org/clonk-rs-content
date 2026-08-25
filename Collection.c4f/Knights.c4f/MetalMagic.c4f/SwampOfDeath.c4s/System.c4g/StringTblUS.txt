@@ -1,0 +1,8 @@
+TxtCreateconstructionsi=Create construction site
+TxtNoconstructionplansa=No construction plans available
+TxtConstructions=Construction: %s
+NotEnoughMoney=Not enought money!
+TxtRepair=Repair: %s
+TxtNoPlans=No recipes
+TxtProduceMenu=Brew: %s
+TxtUpgrade=Upgrade: %s

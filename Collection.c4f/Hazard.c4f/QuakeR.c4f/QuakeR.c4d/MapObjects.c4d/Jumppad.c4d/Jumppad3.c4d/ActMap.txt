@@ -1,0 +1,9 @@
+[Action]
+Name=Blink
+Procedure=NONE
+Length=24
+Directions=2
+FlipDir=1
+Delay=3
+Facet=0,0,11,11
+NextAction=Blink

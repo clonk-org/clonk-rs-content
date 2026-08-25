@@ -1,0 +1,16 @@
+[Action]
+Name=Shoot
+Procedure=None
+Directions=1
+Length=3
+Delay=2
+Facet=0,0,20,9,0,0
+NextAction=Recharge
+
+[Action]
+Name=Recharge
+Procedure=None
+Directions=1
+Length=7
+Delay=10
+Facet=60,0,20,9,0,0

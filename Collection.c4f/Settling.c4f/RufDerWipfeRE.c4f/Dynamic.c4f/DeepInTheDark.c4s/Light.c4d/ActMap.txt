@@ -1,0 +1,7 @@
+[Action]
+Name=Attach
+Procedure=ATTACH
+Length=1
+Delay=5
+EndCall=CheckDist
+NextAction=Attach

@@ -1,0 +1,13 @@
+[Action]
+Name=HutB
+Procedure=NONE
+Length=1
+Delay=0
+Facet=0,0,80,90,-20,-40
+
+[Action]
+Name=HutC
+Procedure=NONE
+Length=1
+Delay=0
+Facet=0,0,50,55,5,-5

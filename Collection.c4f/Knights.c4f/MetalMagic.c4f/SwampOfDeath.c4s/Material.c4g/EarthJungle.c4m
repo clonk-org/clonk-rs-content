@@ -1,0 +1,13 @@
+[Material]
+Name=EarthJungle
+Color=122,110,58, 142,126,70, 166,142,86
+Shape=2
+Density=50
+Friction=80
+DigFree=1
+MaxAirSpeed=100
+MaxSlide=1
+Corrode=75
+Soil=1
+Placement=30
+TextureOverlay=Smooth

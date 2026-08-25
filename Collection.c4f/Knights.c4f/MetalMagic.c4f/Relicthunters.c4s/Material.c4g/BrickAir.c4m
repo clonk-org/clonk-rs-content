@@ -1,0 +1,10 @@
+[Material]
+Name=BrickAir
+Color=80,85,180,120,120,220,100,100,255
+ColorAnimation=1
+Alpha=128,128,128,128,128,128
+Shape=0
+Density=50
+Placement=60
+TextureOverlay=Brick
+OverlayType=1

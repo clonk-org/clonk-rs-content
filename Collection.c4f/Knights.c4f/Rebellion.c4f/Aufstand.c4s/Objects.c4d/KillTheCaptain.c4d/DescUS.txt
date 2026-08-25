@@ -1,0 +1,2 @@
+One player of each team gets a captain. When this captain is dead, the whole team will be 
+eliminated.

@@ -1,0 +1,12 @@
+[DefCore]
+id=B_1D
+Name=Building1Door
+Category=1
+Width=41
+Height=28
+Offset=-20,-14
+Vertices=1
+VertexX=-40
+VertexY=-78
+VertexFriction=100
+Entrance=0,-14,21,28

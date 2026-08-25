@@ -1,0 +1,10 @@
+[DefCore]
+id=_VIW
+Name=Sicht
+Version=4,9,5
+Category=2097153
+Width=2
+Height=2
+Vertices=1
+Offset=-1,-1,10485761
+TopFace=0,0,2,2

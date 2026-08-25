@@ -1,0 +1,260 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+--------------------------------------------------------
+
+Palisaden Kampf (PalisadeFightIndi.c4s)
+	+ chaotische Arena mit Indianern
+	+ lustige Idee mit den sich umherschiebenden Palisaden
+
+Palisaden Kampf Artillerie (PalisadeFightAtillery.c4s)
+	+ ballerburg-artiges Teammelee, macht Spaß!
+	+ sich verändernde "Burg" sorgt für Abwechslung
+
+Hold Your Colours! (bColors.c4s)
+	+ interessante Idee
+	+ 1. Platz im Magische Melees Wettbewerb
+
+Eisschlucht (Icechasm.c4s)
+	+ kleine chaotische Arena mit Inuitclonks
+	+ 1. Platz im Micro-Melee Wettbewerb
+
+Magmagemenge (MagmaMelee.c4s)
+	+ kleine actionreiche Arena mit Urwaldclonks
+	+ 2. Platz im Micro-Melee Wettbewerb
+
+Wer ist der Maulwurf? (Mole.c4s)
+	+ Chaotisches Handgemenge mit interessantem Spielziel
+
+In der Tiefe (Melow.c4s)
+	+ Chaotisches Handgemenge mit interessantem Spielziel / Spielmechanik
+	* an sich recht ähnlich zu Mole.c4s, nur die Melee-Variation / Spielmechanik ist noch anders
+	- bischen unwegsame Landschaft für ein schnelles Melee
+
+Kampf der Katapulte (KdK.c4s)
+	+ Katapultkampf auf das wesentlichste reduziert
+	+ kurz
+	+ lustig dass die Flints an den Rändern abprallen
+
+Kampf der Katapulte Extreme (KdK_Extreme.c4s)
+	* wie Kampf der Katapulte (=Katapultkampf aufs wesentliche reduziert), aber chaotischer: Gravitationswechsel, mehr unterschiedliche Flints, Schriftrollen mit Zaubersprüchen
+	+ letztlich tut es dem Szenario gut, etwas chaotischer zu sein, denn in KdK ist es möglich, sich auf den anderen einzuschießen und quasi zu spawncampen. Das ist hier weniger extrem.
+	- einige Scriptfehler (bei Atombombe)
+	- SEHR chaotisch. Es ist eigentlich dem Zufall überlassen wer gewinnt, das ist wirklich total just for fun
+	+ Musik
+
+Tiefenjagd (DepthCharge.c4s)
+	+ Ach was, der Kampf mit U-Booten kann ja doch Spaß machen!
+
+Tempelschubsen (TemplePushing.c4s)
+	- nicht die neueste Version (r0.931, neueste ist r0.958), aber immerhin läuft es auf CR
+	+ war sehr beliebt in der Liga, eines der letzten Szenarien die noch so en-masse gespielt wurden
+	+ sehr umfangreich
+	+ kurze, fixe Runden
+
+Kampf der Generationen (Z4BattleOfGenerations.c4s)
+	+ Arena-Karte
+	+ einfach mal alle Clonks gegeneinander antreten lassen, lsutige Idee
+
+Flaggenfangen (Flag.c4s)
+	+ Melee mit interessantem Spielziel (hold the flag)
+	- ansonsten langweilige KArte und wenig Extras
+
+Jungle Flurry (JungleFlurry.c4s)
+	+ Urwald-Handgemenge auf kleiner Karte
+	+ 5. Platz im Micro-Melee Wettbewerb
+	- ähnlich wie aber etwas langweiliger als Magmagemenge
+
+Rote Rakete (RedRocket.c4s)
+	+ keine, simple Arena, die aber funktioniert
+	+ mit einigen Extras: Zaubersprüchen, herunterfallenden Steinen und Schieße-Stein-Schnellzauber
+
+Tal der Dummköpfe (SillyVally.c4s)
+	- total beliebig: variierende Schwerkraft, per Klick herbeibeschwörbare Teraflints, fliegender Magus, fliegende Burg, ....
+	+ aber fällt wohl in die "Fun" Kategorie, so wie Spy vs Panzer
+
+Eke Wagon Fight (EkeWagonFight.c4s)
+	- NOCH ein Wagon Fight, aber diesmal EKE.
+	+ gut umgesetzt. Mit Regeneffekt!
+	- uninteressanter als mit Rittern oder Hazards, SFTs können ja nur geradeaus schießen
+	- lauter Waffen, aber kaum Munition dafür -> Pistolen-Duelle?
+	- ähnlich zu Eke Elevators vom selben Autor
+
+Mondlandschaft (MoonmapRejoin.c4s)
+	- eigentlich nur normales kleines Handgemenge auf "Mondlandschaft" mit Flints im Boden
+	+ geringere Gravitation + eigener Look für Clonks
+	+ Explosiionen!!! (sind nochmal lustiger bei geringer Gravitation)
+	- also, eigentlich zu simpel... aber hat evtl. Spaßpotential... müsste man mal testen
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Der Sonnentempel (SunTemple.c4s)
+	+ Urwald-Handgemenge (davon gibt es nicht viele)
+	+ hübsch gestaltete Landschaft
+	- ansonsten nix spezielles
+	- ziemlich unfaire Aufteilung der Teams: das Team links ist oben (kann also mit einem Flint einfach runterspringen und die gegnerische Bambushüttenbasis zerstören), Urwaldclonks sind farblich generell schwer auseinanderzuhalten was das ganze noch einfacher macht, und das Team links ist näher am Tempel dran, wo es viele weitere Waffen gibt.
+
+Gärten von Kriluto (GardensofKriluto.c4s)
+	+ Indianer-Arena! Davon gibt es nicht viele
+	* ansonsten eher schmucklose Arena-Karte, zweckmäßig
+	- aber welche Waffen spawnen hier? Pfeil&Bogen, Speer, Tomahawk (wie Speer). Insofern, eigentlich wie Ritter, und da gibt es einige weitere Arenen die interessanter sind
+
+Magische Lava (FMLava_contest.c4s)
+	+ lustige Spielmechanik mit der Lava (man wirft Sachen in die Lava und bekommt dafür Flints ins Inventar)
+	- das wars eigentlich schon... eigentlich kein großer Unterschied dazu, die Sachen einfach im Erdreich zu spawnen...
+	- ziemlich unwegsame Landschaft
+	+ 1. Platz in irgend einem Wettbewerb
+
+Vogelschlacht (BirdFight.c4s)
+	+ lustige IDee: Clonks die auf Vögeln reiten und sich mit Flints beschmeißen
+	- das wars eigentlich, vielleicht für 5 minuten spaßig
+	- ERROR: manchmal kommt ein Fehler und man bekommt garkeinen Vogel als Reittier
+
+Wipfkampf [T mod. v2] (Wipfkampf_Tournament.c4s)
+	+ lustige Idee: clonks die auf Wipfen reiten und sich mit Flints beschmeißen
+	- das wars eigentlich...
+	- extrem langweilige Landscahft (und unzerstörbar), sehr eindimensional
+
+DynWipfkampf (DM3DynWipffight_.c4s)
+	* siehe oben. die langweilige Landschaft wird dadurch dass sie dynamisch ist auch nicht wirklich interessanter
+
+12 Uhr mittags NET2 (12_Uhr_mittags_NET2.c4s)
+	* Western-Team-Melee
+	- sehr langweilige (=flache) Landschaft
+	- 7. Platz im Western Szenarien Gestaltungswettbewerb
+
+Eke Elevators (EkeElevators.c4s)
+	- NOCH ein Crazy Elevators, aber diesmal mit EKE.
+	+ hübsch umgesetzt, FWIW
+	- uninteressanter als mit Rittern oder Hazards, SFTs können ja nur geradeaus schießen
+	- lauter Waffen, aber kaum Munition dafür -> Pistolen-Duelle?
+	- beste Überlebensstrategie ist, besser auf dem eigenen Elevator stehen zu bleiben. Es ist viel zu einfach, ausversehen herunterzufallen oder durch zufällig erscheinenden Dingen getroffen zu werden
+	- ähnlich zu Eke Wagon Fight vom selben Autor
+
+
+Eke Space (EkeSpace.c4f)
+	* eigentlich nur Eke dem Namen nach. Komplett neu entwickelt, obwohl vermutlich viel von EKE kopiert wurde. If Hazard and EKE had a Child... it would be Eke Space. Hat Hazard-ähnliches Arena-feel
+	+ macht mehr Spaß als normales SFT finde ich
+	- aber offensichtlich unfertig. Einige Levels haben z.B. noch "Neues Szenario\n Beschreibung."
+	- Levels selbst sind so-lala designt. Nicht zu vergleichen mit CMC, teilweise etwa wie Hazard. (Vielleicht weil es unfertig ist.)
+	- sehr wenig Auswahl an Waffen
+
+Bow-Fight (BowFight.c4s)
+	* lustige Idee: Ritter schweben herum, prallen an den Wänden ab und schießen mit Pfeilen aufeinander
+	+ kurz
+	- aber letztlich recht eintönig: Nur ein Waffe - Bogen. Es hätte den gleichen Effekt gehabt, die Clonks auf umherfliegende Plattformen zu stellen, nur dass man dann noch von Plattform zu Plattform springen könnte und evtl. andere Waffen einsetzen könnte (wie zum Beispiel in Steinfresser - Powergrind.c4s)
+
+Klippen-Schubsen (CliffPushing_0.c4s)
+	- es existiert eine erweiterte Variante namens Tempelschubsen (TemplePushing.c4s)
+
+Heißes Eis (Heisses-Eis-v1.1.c4s)
+	+ sehr einfache kleine Arena
+	- aber vielleicht zu einfach... ist ja fast wie Kleines Handgemenge
+	- durch die Eisschmelze ist es im späteren Verlauf so, dass man einander garnicht mehr erreichen kann 🤷
+
+Gruselschloss-KI (Castle-AI.c4s)
+	* schwierig das einzusortieren - es ist eigentlich ein Melee gegen KI
+	- kein Wiederspielwert weil die "KI" immer genau das gleiche macht
+	+ lustige Idee, macht für ein paar Minuten Spaß
+	- ERROR: nachdem Hörx Feuerfaust gezaubert hat, kommt ein Syntaxerror und er steht nurnoch rum (also im Prinzip sobald man es geschafft hat, nach oben zu kommen)
+
+Arena Extended (Arena_Extended.c4s)
+	* erweiterte Version von "Arena", dem Gewinner des Skullbreak Melee 2000
+	- gleiches Spielprinzip wie das Original, nur "mehr", was nicht unbedingt dem Spielspaß förderlich ist: Es gibt jetzt so viele unterschiedliche Flints und Zufallsereignisse dass es eigentlich vollkommen zufällig ist, welchen Effekt jetzt der geworfene Flint hat. Man hat auch so viel mit den KI-Gegnern zu tun dass man kaum gegeneinander kämpft und kaum dazu kommt, die Kiste zu benutzen. Außerdem weiterhin veraltete Grafiken aus Clonk Planet Ära
+
+Am 24. Dezember (Am_24__Dezember.c4s)
+	* einfach eine Schneeballschlacht, Schneebälle spawnen automatisch in der Hand
+	+ schöne Stimmung
+	- sehr simpel, es ist wirklich nur Schneeball-werfen
+
+Hydrovalley (m0Waterb.c4s) - aus m0Games.c4f
+	* kleine Arena
+	+ schöne Idee
+	+ schön designte Landschaft
+	+ klein
+	- vermutlich läuft es darauf hinaus, dass an den Geschütztürmen nur gecampt wird
+
+Fluggefecht (m0FlyFight.c4s) - aus m0Games.c4f
+	+ schön designte Landschaft
+	+ klein
+	- Flugmonster bringen irgendwie nix und sind nach sehr kurzer Zeit schon unten rausgefallen. Der Rest der Landschaft ist taktisch eher unspannend
+
+Lava kommt von unten hoch (lkvuh.c4s)
+	+ actionreich
+	- Wie Höhlenklettern (Wettrennen)
+	- funktioniert eigentlich nur wenn Spieler trotz Melee-Spielziel zusammenarbeiten: also die eigentliche Siegbedingung missachten. Andererseits muss das Spielziel ja Melee und nicht Rennen sein, weil Relaunch in diesem Szenario keinen Sinn macht. Was Sinn machen würde, wäre ein lkvuh-mirror (zwei Teams gegeneinander, oder gleich kooperativ)
+
+Bridgefight (Bridgefight.c4s)
+	- wie Wagonfight, nur schlechter
+
+Kleine Melees (Kleine_Melees.c4f)
+	* Sammlung aus vielen einfachen Melees, zumeist einfach dynamische Karten
+	(Kommentare zu einzelnen Szenarien)
+	* Der Höllenvulkan: Die Landschaft ist tatsächlich ganz nett, aber es ist immernoch einfach eine Landschaft mit Melee-Spielziel
+	- Eiskönig: SFT mit Flammenwerfer... not much to it
+	- Frosthöhle: frostige Höhlenlandschaft, nichts weiter
+	- Luftherrschaft: Jeder spawnt mit Luftschiff und spawnenden Flints - also einfach nach oben fliegen...
+	- Mondlandschaft: sehr simple Landschaft mit weißer Erde und Flints im boden
+	- Säurehöhle: Schon wieder SFT mit Flammenwerfer
+	- Todeswetter: einfach ne hügelige Landscahft mit viel Naturkatastrophen
+	- Unterwasserkampf: einfach Aquaclonks mit Flints in Wasserinseln
+
+Spark Land (Spark_Land.c4s)
+	* Basis-Melee mit zufällen Items die auf der Landschaft erscheinen
+	- flache langweilige Landschaft
+	- it's just that, ...
+
+Magic Clonks (Magic_Clonks.c4s)
+	+ Clonks reiten auf Besen und bekämpfen sich mit Powerups - Mario Kart style
+	- die Umsetzung ist langweilig (zu wenig powerups, keine Hindernisse, Powerups relativ uninteressant usw...) - wirkt insgesamt unfertig
+	- sehr schwer zu sterben, weil wenig Waffen spawnen und oft Heilung spawnt
+
+Killersteine (EC_Killerrocks_v_1_41.c4s)
+	--- funktioniert nicht: Im Test macht der Stein 0 Schaden
+	- langweilige, künstliche	Landschaft
+	+ Idee könnte ganz lustig sein
+
+Himmelsgemenge (SLSkyMeleeRejoin.c4s)
+	- eigentlich nur normales kleines Handgemenge, aber auf einer Himmelsinsel
+
+Kleines Vulkangemenge (SLVulcanoMelee.c4s)
+	- eigentlich nur normales kleines Handgemenge, aber mit Lava unten
+	- inherent unfair, wenn z.B. einer oben und einer unten (bei der Lava) spawnt
+
+Kleines Vulkangemenge (Vulcano Melee.c4s)
+  - simple Karte mit bischen Lava, that's it
+
+Kleines Gemenge (SLMinorFight.c4s)
+	- eigentlich nur normales kleines Handgemenge
+
+Kleines Gemenge (MinorFight.c4s)
+	- simple Karte mit bischen Säure, that's it
+
+Kleines Handgemenge Universal (Kleines_Handgemenge_Universal.c4f)
+	- literally "Kleines Handgemenge" aber mit Regelwähler der einem die Anzahl Respawns, Naturkatastrophen usw usf einstellen lässt und man "Outfits" auswählen kann. Aber ¯\_(ツ)_/¯, dadurch wirds auch nicht interessanter
+
+Explosives Gemenge (SLM_Explosiv_VII.c4s / M_Explosiv_VII.c4s)
+	- langweilige Landschaft
+	- nicht viel dran, fast wie ein kleines Handgemenge
+
+Kampf im Vulkan (KiVreloaded.c4s)
+	- nichts besonderes: Lavalandschaft mit Vulkanen und spawnenden Flints im Erdreich
+
+Battle of Water (Waterbattles.c4s)
+	- starker Regen, Hydroclonks, wenig Gravitation, spawnende Flints. Uninteressant.
+	- durch sehr starken Regen laggt es auch etwas
+
+Sandkasten (Sandkasten.c4s)
+	- Durch FlySand quasi eindimensionale Landkarte.
+	- Ein paar Flints im Sandreich, das wars 
+
+===============================================
+            Aussortierte Kandidaten 
+			läuft nicht mit Clonk Rage
+===============================================
+
+Atlantis - Versunkene Stadt (Sunken_Atlantis.c4s)
+	+ ganz nette dynamisch generierte Landschaft
+	* Platz 3/5 im Desktop Missions Wettbewerb
+	(läuft weder unter clonk Endeavour noch Clonk Rage)

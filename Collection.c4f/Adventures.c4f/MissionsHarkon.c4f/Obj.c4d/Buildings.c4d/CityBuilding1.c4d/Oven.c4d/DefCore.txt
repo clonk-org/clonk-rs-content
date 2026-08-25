@@ -1,0 +1,11 @@
+[DefCore]
+id=B_1O
+Name=Building1Oven
+Category=1
+Width=8
+Height=15
+Offset=-4,-8
+Vertices=1
+VertexX=-73
+VertexY=-79
+VertexFriction=100

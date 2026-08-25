@@ -1,0 +1,4 @@
+Relaunch=%s benötigt einen Relaunch.
+TLeft=Legion des Teiwaz (Links)
+TRight=Orden der Sawelô (Rechts)
+TtlRelicts=Relikte

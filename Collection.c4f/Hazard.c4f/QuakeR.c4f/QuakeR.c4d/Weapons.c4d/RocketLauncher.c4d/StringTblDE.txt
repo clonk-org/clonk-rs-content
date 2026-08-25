@@ -1,0 +1,2 @@
+Missile=Normal
+4Missiles=Mehrfachschuss

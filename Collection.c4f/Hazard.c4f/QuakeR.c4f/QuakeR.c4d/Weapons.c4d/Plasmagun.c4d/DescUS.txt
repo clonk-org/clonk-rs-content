@@ -1,0 +1,6 @@
+Fires plasma-projectiles. Absolutely deadly on middle to short ranges.
+Alternatively the projectiles can be charged and shot fast.
+
+Ammunition(max.): 150
+Firemode 1: Normal
+Firemode 2: Charge

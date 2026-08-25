@@ -1,0 +1,5 @@
+CtrlRead=Lesen
+
+MageNotToPirates=Hier will ich nicht lang - zum Rat geht es nach Osten
+KnightNotToPirates=Hier will ich nicht lange - nach Telotiosus muss ich nach Westen den Tunnel unter der Burg nehmen
+ClonkNotToPirates=Ich sollte mich erst ausbilen lassen, bevor ich mich zu weit weg wage.

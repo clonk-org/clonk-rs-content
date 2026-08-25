@@ -1,0 +1,8 @@
+RecBow=Bogenschützen rekrutieren
+RecLanc=Lanzenträger rekrutieren
+RecSwor=Schwertkämpfer rekrutieren
+Ascend=Aufs Dach
+Recruit=Ausbilden
+AlreadyIs=%s ist schon ein %s
+TxtNoClonk=%s ist kein Clonk!
+NeedMoney=Es werden %d Ehre benötigt!

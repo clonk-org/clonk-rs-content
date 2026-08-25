@@ -1,0 +1,3 @@
+TeamLeft=Rustuff
+TeamRight=McClomby
+TxtBasicsRocket=Um die Reichweite der Rakete einzustellen fasse sie an und drücke Graben. Bring die Rakete und ein Ölfass in den Geschützturm. Die Rakete kann maximal 1 Fass Treibstoff laden.

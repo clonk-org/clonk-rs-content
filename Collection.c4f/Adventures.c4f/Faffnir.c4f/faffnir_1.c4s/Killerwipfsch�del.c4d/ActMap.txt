@@ -1,0 +1,11 @@
+[Action]
+Name=GLIM
+Procedure=NONE
+Directions=2
+FlipDir=1
+Length=4
+Delay=20
+Facet=0,4,24,16
+NextAction=GLIM
+
+

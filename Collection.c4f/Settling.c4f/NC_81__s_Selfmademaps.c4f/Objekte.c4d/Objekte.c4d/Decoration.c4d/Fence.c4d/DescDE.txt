@@ -1,0 +1,1 @@
+Hält verschiedene Tiere davon ab, einen bestimmten Bereich zu verlassen.

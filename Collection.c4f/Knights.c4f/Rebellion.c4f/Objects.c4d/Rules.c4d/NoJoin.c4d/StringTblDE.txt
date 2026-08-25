@@ -1,0 +1,7 @@
+
+DescTime=Noch sind Spielerbeitritte erlaubt!
+DescNoJoin=Keine Spieler dürfen dem laufenden Spiel beitreten.
+
+LogTime=Bald können keine Spieler mehr beitreten!
+LogNoJoin=Ab jetzt gilt Beitrittsverbot!
+

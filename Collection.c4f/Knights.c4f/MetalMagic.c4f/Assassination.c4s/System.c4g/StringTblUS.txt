@@ -1,0 +1,101 @@
+Seen1=Is anyone out there?
+Seen2=Yikes!
+Seen3=I think I heared something..
+Seen4=I hear dead people o_O
+Seen5=There, a shadow!
+Seen6=Somebody scurries there!
+
+AlchemMage1=I'm brewing an invisibility potion!
+AlchemMage2=Hihihi
+AlchemMage3=I like mushrooms!
+AlchemMage4=These woolen hoods are so itchy..
+AlchemMage5=On the left you can see my apprentice, hihihi
+AlchemMage6=Red elephants, hihihi!
+
+AlchemClonk1=My master is moronic o_O
+AlchemClonk2=Weird crystals are growing here
+AlchemClonk3=My master always collects mushrooms
+AlchemClonk4=I think my master smokes the mushrooms...
+AlchemClonk5=It's boring here
+
+LaborSorc1=I have no material left
+LaborSorc2=Some idiot stole my flints
+LaborSorc3=Maybe I can extract sulphur from wood...
+LaborSorc4=Our king is mad.
+LaborSorc5=I heard that the murderers are comming!
+
+King1=Let the assassins come!
+King2=I have no fear
+King3=When we have won there will be a feast!
+King4=I like roast
+King5=I hear footfalls continuously
+
+NextToKing1=Our king will kill us all
+NextToKing2=That guy is megalomaniac
+NextToKing3=We will all die
+NextToKing4=When this is over we will drop him first
+NextToKing5=Where is my bodyguard? :(
+
+ArmoryKnight1=I am the lord of the cache!
+ArmoryKnight2=Help yourself
+ArmoryKnight3=Today there a free bows!
+ArmoryKnight4=My swords are growing rusty already :(
+ArmoryKnight5=It's quite dark up here
+
+KitchenSorc1=I'm the chef here
+KitchenSorc2=In the pot you will find some fishes
+KitchenSorc3=Who wants some cookies?
+KitchenSorc4=I am the king of omelets!
+KitchenSorc5=I hope we will all get out of this alive
+
+WaterClonk1=Split, splat!
+WaterClonk2=Hihi, water!
+WaterClonk3=I love water
+WaterClonk4=Without my shoes I'm a aqua clonk!
+WaterClonk5=I can breath under water! *blub*
+WaterClonk6=I like Toblerone!
+
+WorkshopClonk1=I hope I have enough wood for the winter
+WorkshopClonk2=I don't think we will die here
+WorkshopClonk3=The alchemist wants to extract sulphur from MY wood o_O
+WorkshopClonk4=My wood already starts to go mouldly
+WorkshopClonk5=Shall I build you a catapult?
+
+BedroomClonk1=I'm tired
+BedroomClonk2=I cannot sleep
+BedroomClonk3=Some idiot put cookies in the beds..
+BedroomClonk4=The cookies crumble so much..
+BedroomClonk5=It's so loud here
+
+WebClonk1=Do you see the spider webs here?
+WebClonk2=Bah, squirmy
+WebClonk3=Someone just has to clean up here
+WebClonk4=I want a cleaning woman!
+WebClonk5=I can hear the spiders scuttling
+
+LibClonk1=I like books *mjum*
+LibClonk2=The saints of death... weird book..
+LibClonk3=Reading, reading, reading!
+LibClonk4=Do you want to borrow a book?
+LibClonk5=DON'T damage my books!
+
+WatchClonk1=I's always me who has to be the sentry..
+WatchClonk2=Can you see the camp far back there?
+WatchClonk3=I see something!
+WatchClonk4=It's cold and draughty here
+WatchClonk5=The bad guys are already building up a camp :(
+
+MageDom1=I am the best magician in the world!
+MageDom2=Pay attention or I will turn you into a frog!
+MageDom3=My brother down at the alchemist's hut smokes mushrooms :(
+MageDom4=I like to cast a spell
+MageDom5=Our king is a wolverine
+MageDom6=I want world domination!!
+
+ConfessFather1=The king always confess to me
+ConfessFather2=Did you know that the king is wearing girdles?
+ConfessFather3=Do you want to confess?
+ConfessFather4=The king has three wives!
+ConfessFather5=Good that there is no confessional secret! \\o/
+
+CtxKeyDesc=Use key

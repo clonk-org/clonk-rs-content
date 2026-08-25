@@ -1,0 +1,3 @@
+Eine Bombe speziell zur Bekämpfung von U-Booten. Besonders kranke Clonker setzten diese Waffe auch zum Fischen ein.
+Wenn sie unter Wasser explodiert, erzeugt sie eine Druckwelle, die die dünne Haut von U-Booten zerdrückt.
+Mit <Doppel-Graben> kann der Zünder eingestellt werden.

@@ -1,0 +1,6 @@
+
+DescTime=Players can still join!
+DescNoJoin=No player is allowed to join the running game.
+
+LogTime=Soon no player can join the game!
+LogNoJoin=Hence, joining is forbidden!

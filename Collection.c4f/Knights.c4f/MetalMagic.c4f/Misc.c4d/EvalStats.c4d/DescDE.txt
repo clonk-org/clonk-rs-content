@@ -1,0 +1,1 @@
+Am Ende des Spieles werden im Auswertungsdialog ein paar Statistiken angezeigt.

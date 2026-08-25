@@ -1,0 +1,7 @@
+[Material]
+Name=Wall2
+Color=200,200,200,210,210,210,220,220,220
+Shape=2
+Placement=5
+TextureOverlay=Wall
+OverlayType=3

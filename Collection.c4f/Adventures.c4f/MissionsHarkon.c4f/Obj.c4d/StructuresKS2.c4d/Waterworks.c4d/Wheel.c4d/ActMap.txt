@@ -1,0 +1,16 @@
+[Action]
+Name=Wheel
+Procedure=NONE
+Length=30
+Delay=3
+Facet=0,0,45,24,0,0
+FacetBase=0
+NextAction=Wheel
+EndCall=TurningWheel
+
+[Action]
+Name=Stand
+Procedure=NONE
+Length=30
+Delay=0
+Facet=0,0,45,24,0,0

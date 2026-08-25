@@ -1,0 +1,2 @@
+DE:Schutzwand
+US:Protector

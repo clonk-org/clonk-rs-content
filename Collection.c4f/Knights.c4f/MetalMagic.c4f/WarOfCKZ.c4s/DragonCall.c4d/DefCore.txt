@@ -1,0 +1,8 @@
+[DefCore]
+id=_SDR
+Name=SummonDragon
+Category=131072
+Picture=0,0,64,64
+Version=4,9,5,4
+Value=0
+Components=ICRS=9;IBON=8;IGOL=6;ISPH=10;IASH=4;IPRL=1;INEC=4;

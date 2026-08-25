@@ -1,0 +1,5 @@
+Standardwaffe. Verschieﬂt Projektile in Salven. 
+
+Muniton(max.): 250
+Schussmodus 1: Normal
+Schussmodus 2: Streuschuss

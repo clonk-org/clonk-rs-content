@@ -1,0 +1,53 @@
+NoSinglePlayerInNetwork=You must have at least 2 human players when playing over network.
+NoBotsAvailable=This map is not compatible with bots. Bots are deactivated.
+
+Options=Change Options
+ChangeBotCount=Bots
+ChangeBlood=Blood
+ChangeFragCount=Score
+
+ActualSettings=Actual settings
+
+ChangeBotInfo=You can change the amount of Bots here.
+ChangeBloodInfo=You can change the amount of blood and several blood-settings here.
+ChangeFragsInfo=You can change how many Frags are needed to win.
+
+#Bot-Optionen
+AddBot=Add Bot
+RemoveBot=Remove Bot
+NewTeam=New Team
+HarderBots=Harder Bots
+EasierBots=Easier Bots
+
+#Blut-Optionen
+NoBlood=No Blood
+NormalBlood=Normal
+LotsOfBlood=Lots
+BloodVanishes=Blood vanishes
+BloodStays=Blood stays
+EnableParticleBlood=Activate particleblood
+DisableParticleBlood=Deactivate particleblood
+EnableBodies=Activate body parts
+DisableBodies=Deactivate body parts
+
+Blood1=No blood is casted when a Clonk is hit.
+Blood2=A normal amount of blood is casted when a Clonk is hit.
+Blood3=Lots of blood is casted when a Clonk is hit.
+BloodDur1=Blood vanishes over time.
+BloodDur2=Blood stays.
+BloodParticle1=Blood will be cast as particles. (better performance)
+BloodParticle2=Blood will be cast as material.
+BodyParts1=Corpses are blasted into body parts.
+BodyParts2=Corpses are blasted into blood.
+
+BloodAmountSet=Blood amount set
+ParticleBloodEnabled=Particleblood activated
+ParticleBloodDisabled=Particleblood deactivated
+BodyPartsEnabled=Corpses cast body parts
+BodyPartsDisabled=Corpses don't cast body parts
+
+#Frags-Optionen
+More=More
+Less=Less
+FragsSet=Score set
+Points=Points

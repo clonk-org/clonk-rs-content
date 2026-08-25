@@ -1,0 +1,8 @@
+[DefCore]
+id=WPNT
+Name=WayPoint
+Category=16
+Width=15
+Height=15
+Offset=-7,-7
+Picture=0,0,15,15

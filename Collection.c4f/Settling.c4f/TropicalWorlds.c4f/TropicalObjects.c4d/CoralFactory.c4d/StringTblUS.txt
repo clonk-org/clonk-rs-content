@@ -1,0 +1,3 @@
+TxtNooreavailable=No Crystal available.
+TxtNeedsfueltoburn=Needs fuel to burn.
+TxtProducemetal=Produce High Crystal

@@ -1,0 +1,17 @@
+[DefCore]
+id=_ROT
+Name=Rotorblatt
+Version=4,9,1,3
+Category=16
+Width=28
+Height=2
+Offset=-14,-1
+Mass=10
+Components=WOOD=1;
+Picture=0,0,28,2
+Vertices=2
+VertexX=-12,12
+VertexY=1,1
+VertexFriction=80,80
+Rotate=1
+TimerCall=Decay

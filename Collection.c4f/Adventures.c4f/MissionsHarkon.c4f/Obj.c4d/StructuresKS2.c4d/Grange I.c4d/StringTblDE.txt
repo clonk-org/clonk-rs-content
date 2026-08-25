@@ -1,0 +1,3 @@
+Upgrade=Weiterentwickeln
+Stage1=Stufe Zwo
+NotEnoughMaterials=Es werden insgesamt 5 Holz benötigt!

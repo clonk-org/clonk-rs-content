@@ -1,0 +1,16 @@
+[Material]
+Name=Earth2
+Color=50,0,100,50,0,10,50,0,100
+Shape=2
+Density=50
+Friction=80
+Dig2Object=ERTH
+Dig2ObjectRatio=200
+Dig2ObjectRequest=1
+Blast2PXSRatio=0
+MaxAirSpeed=100
+MaxSlide=1
+Corrode=75
+Soil=1
+Placement=30
+TextureOverlay=Smooth

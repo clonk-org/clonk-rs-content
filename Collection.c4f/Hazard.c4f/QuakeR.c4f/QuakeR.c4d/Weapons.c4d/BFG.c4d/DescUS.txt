@@ -1,0 +1,5 @@
+Big. Fuckin'. Gun.
+
+Ammunition(max.): 5
+Firemode 1: Deadly
+Firemode 2: N/A.

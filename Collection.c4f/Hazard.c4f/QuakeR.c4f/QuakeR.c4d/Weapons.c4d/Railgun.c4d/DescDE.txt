@@ -1,0 +1,6 @@
+Feuert einen Laserstrahl der mehrere Gegner durchstößt und an Wänden abprallt.
+Alternativ lässt sich ein Strahl abfeuern, der zwar schwächer ist, aber Wände durchdringen kann.
+
+Muniton(max.): 40
+Schussmodus 1: Strahl
+Schussmodus 2: X-Ray

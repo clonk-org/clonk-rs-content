@@ -1,0 +1,7 @@
+film1=Aaah... Das Hühnchen ist dem Koch wirklich gelungen!
+film2=Meister...?
+film3=Ihr wagt es, mich beim Essen zu stören?
+film4=Ich bitte um Gnade Meister, aber...
+film5=Was ist passiert? Sprecht!
+film6=Die Anhänger des Königs greifen von beiden Seiten an!
+film7=Zu den Waffen!

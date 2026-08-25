@@ -1,0 +1,17 @@
+[DefCore]
+id=793B
+Name=Tafel
+Version=4,9,5
+Category=1
+MaxUserSelect=10
+Width=15
+Height=15
+Offset=-7,-7
+Value=10
+Mass=10
+Picture=0,0,15,15
+Vertices=1
+VertexY=1
+VertexFriction=20
+
+ 

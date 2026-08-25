@@ -1,0 +1,18 @@
+[Teams]
+AllowHostilityChange=true
+LastTeamID=2
+TeamColors=true
+
+  [Team]
+  id=1
+  Name=Team Zap
+  PlrStartIndex=1
+  Color=16770052
+  IconSpec="ZAP1"
+
+  [Team]
+  id=2
+  Name=Team Monster
+  PlrStartIndex=2
+  Color=51200
+  IconSpec="MONS"

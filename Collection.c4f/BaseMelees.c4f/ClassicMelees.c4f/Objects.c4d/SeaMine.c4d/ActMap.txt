@@ -1,0 +1,14 @@
+[Action]
+Name=Wait
+Delay=1
+FacetBase=1
+NextAction=Wait
+StartCall=CheckLiquid
+
+[Action]
+Name=Activated
+Delay=8
+Procedure=SWIM
+FacetBase=1
+NextAction=Activated
+StartCall=Check

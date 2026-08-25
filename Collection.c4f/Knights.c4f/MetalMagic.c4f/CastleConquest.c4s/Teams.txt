@@ -1,0 +1,13 @@
+[Teams]
+
+	[Team]
+	id=1
+	Name=$TCastle$
+	PlrStartIndex=1
+	IconSpec=TMS1:7
+
+	[Team]
+	id=2
+	Name=$TCamp$
+	PlrStartIndex=2
+	IconSpec=TMS1:6

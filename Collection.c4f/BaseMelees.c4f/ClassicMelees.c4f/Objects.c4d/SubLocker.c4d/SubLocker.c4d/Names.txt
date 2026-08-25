@@ -1,0 +1,2 @@
+DE:U-Boot-Schutz
+US:Sub locker

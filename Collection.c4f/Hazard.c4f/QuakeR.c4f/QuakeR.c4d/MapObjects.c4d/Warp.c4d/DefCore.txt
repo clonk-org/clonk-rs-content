@@ -1,0 +1,15 @@
+[DefCore]
+id=QWRP
+Version=4,9,8,2
+Name=Warp
+Category=C4D_StaticBack
+Timer=1
+TimerCall=CheckWarp
+Width=30
+Height=25
+Offset=-15,-12
+Vertices=1
+VertexY=12
+Components=QWRP=1
+Picture=0,0,30,25
+Rotate=1

@@ -1,0 +1,7 @@
+Toller Clonk.
+
+Dem Hazardclonk sehr ähnlich, kann der Quake-Bot auf Werfen seine Waffe abfeuern, und auf Graben, falls vorhanden, den alternativen Feuermodus abfeuern.
+
+Wie der Hazard auch beherrscht er den Backflip und das Zielen.
+
+Außerdem kann er über das Kontextmenü sein Aussehen ändern!

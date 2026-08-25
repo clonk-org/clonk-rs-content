@@ -1,0 +1,4 @@
+Relaunch=%s needs a relaunch.
+TLeft=Alliance of Gods(Left)
+TRight=Mage order (Right)
+StatueLives=Statue's lives

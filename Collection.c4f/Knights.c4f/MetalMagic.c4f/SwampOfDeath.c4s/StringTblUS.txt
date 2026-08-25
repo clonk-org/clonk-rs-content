@@ -1,0 +1,10 @@
+NameNekro=Nekromancer
+MsgEnd=The Nekromancer has been defeated!
+
+MnuChooseDifficulty=Choose a difficulty
+MnuLevelItmHard=Difficulty: hard
+MnuLevelItmNormal=Difficulty: normal
+MnuLevelItmEasy=Difficulty: easy
+MnuLevelItmHardDesc=Enemies: strong and many
+MnuLevelItmNormalDesc=Enemies: medium
+MnuLevelItmEasyDesc=Enemies: weak and few

@@ -1,0 +1,17 @@
+[PlayerInfoList]
+LastPlayerID=3
+
+  [Client]
+  ID=0
+  Flags=Initial
+
+    [Player]
+    Name="Gegner"
+    Filename="ScriptPlr-1.c4p"
+    Flags=Joined|AttributesFixed|NoScenarioInit|NoEliminationCheck|Invisible
+    ID=1
+    Type=Script
+    Color=65535
+    SavgamePlayer=1
+    Team=2
+    GameNumber=10

@@ -1,0 +1,4 @@
+MsgLeft=Assaulter
+MsgRight=Defender
+Eliminated=%s has to wait for a relaunch.
+Log1=Team %d wins.

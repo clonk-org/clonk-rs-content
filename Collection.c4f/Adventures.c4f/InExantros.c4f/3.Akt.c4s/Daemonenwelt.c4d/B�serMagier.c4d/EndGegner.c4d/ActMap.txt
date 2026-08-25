@@ -1,0 +1,17 @@
+[Action]
+Name=Check
+Procedure=NONE
+Length=1
+Delay=10
+Facet=0,0,1,1
+NextAction=Check
+EndCall=Timer
+
+[Action]
+Name=New
+Procedure=NONE
+Length=1
+Delay=10
+Facet=0,0,1,1
+NextAction=New
+EndCall=Gegner

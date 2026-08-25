@@ -1,0 +1,62 @@
+/* Acid Bridge */
+
+//Bridge
+
+overlay Bridge	{ grp=1; invert=1;
+			overlay { algo=sin; zoomX=80; zoomY=10; ox=-4; oy=40; } ^
+			overlay { algo=sin; zoomX=80; zoomY=10; ox=-4; oy=60; } &
+			overlay { algo=bozo; a=5; turbulence=10000; loosebounds=1;
+				overlay { algo=rndchecker; zoomX=50; zoomY=50; } |
+				overlay { algo=random; a=1; };
+				};				
+		};
+
+overlay Base	{ grp=1; invert=1;
+			overlay { algo=random; a=10; zoomX=99; zoomY=99; } ^
+			overlay { algo=bozo; a=-2; turbulence=1000; };
+		};
+
+overlay InEarth	{ algo=bozo; a=10; turbulence=10000; };
+
+map Acid_Bridge	{
+
+		overlay		{ algo=solid; mat=FlyAshes; tex=Smooth; x=0; y=60; wdt=30; hgt=4; };
+		overlay		{ algo=solid; mat=FlyAshes; tex=Smooth; x=70; y=60; wdt=30; hgt=4; };
+		overlay		{ algo=solid; mat=Tunnel; x=0; y=64; wdt=30; hgt=26; };
+		overlay		{ algo=solid; mat=Tunnel; x=70; y=64; wdt=30; hgt=26; };
+		overlay		{ algo=solid; mat=Acid; tex=Liquid; x=0; y=85; wdt=100; hgt=15; };
+
+		//Bridge
+		Bridge & overlay	{ mat=Rock; tex=Rough; x=30; y=0; wdt=40; hgt=100;
+					overlay { mat=Granite; tex=Rough; algo=random; a=1; };
+					};
+		//Base Left
+		Base & overlay	{ mat=Earth; tex=Smooth; x=0; y=60; wdt=30; hgt=100;
+				InEarth { mat=Gold; tex=Rough; };
+				InEarth { mat=Ore; tex=Rough; };
+				InEarth { mat=Crystal; tex=Smooth; };
+				InEarth { mat=Sulphur; tex=Smooth; };
+				InEarth { mat=Coal; tex=Smooth; };
+				overlay { algo=border; mat=Earth; tex=Rough; a=1; b=1; };
+				};
+ 
+		//Base Right
+		Base & overlay	{ mat=Earth; tex=Smooth; x=70; y=60; wdt=30; hgt=100;
+				InEarth { mat=Gold; tex=Rough; };
+				InEarth { mat=Ore; tex=Rough; };
+				InEarth { mat=Crystal; tex=Smooth; };
+				InEarth { mat=Sulphur; tex=Smooth; };
+				InEarth { mat=Coal; tex=Smooth; };
+				overlay { algo=border; mat=Earth; tex=Rough; a=1; b=1; };
+				};
+
+		//Center Ground
+		Base & overlay	{ mat=Earth; tex=Smooth; x=30; y=90; wdt=40; hgt=100;
+				InEarth { mat=Gold; tex=Rough; };
+				InEarth { mat=Ore; tex=Rough; };
+				InEarth { mat=Crystal; tex=Smooth; };
+				InEarth { mat=Sulphur; tex=Smooth; };
+				InEarth { mat=Coal; tex=Smooth; };
+				overlay { algo=border; mat=Earth; tex=Rough; a=1; b=1; };
+				};
+		};

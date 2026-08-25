@@ -1,0 +1,1 @@
+Removes blood if activated.

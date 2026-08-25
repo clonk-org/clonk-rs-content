@@ -1,0 +1,10 @@
+[DefCore]
+id=WATR
+Version=4,9,5
+Name=Explosion
+Category=131072
+Width=1
+Height=1
+Value=52
+Picture=
+Components=ISPH=8;IASH=4;

@@ -1,0 +1,2 @@
+DE:Karten
+US:Cards

@@ -1,0 +1,14 @@
+[DefCore]
+id=QBRD
+Name=Redeemer
+Version=4,9,8,2
+Category=C4D_Vehicle
+Width=20
+Height=10
+Offset=-10,-5
+Components=QBRD=1
+Picture=0,0,20,10
+Collectible=1
+Vertices=1
+VertexY=5
+VertexFriction=100

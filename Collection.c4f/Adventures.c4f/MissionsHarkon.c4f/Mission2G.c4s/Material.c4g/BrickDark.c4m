@@ -1,0 +1,8 @@
+[Material]
+Name=BrickDark
+Color=60,65,75
+Shape=0
+Density=50
+Placement=60
+TextureOverlay=Brick
+OverlayType=1

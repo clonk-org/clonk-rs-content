@@ -1,0 +1,6 @@
+Fires a laserbeam that pierces several enemies and bounces of walls.
+Alternatively a ray which is weaker but pierces walls kann be shot.
+
+Ammunition(max.): 40
+Firemode 1: Beam
+Firemode 2: X-Ray

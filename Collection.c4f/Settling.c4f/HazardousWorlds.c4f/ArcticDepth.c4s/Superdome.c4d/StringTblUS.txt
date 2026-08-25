@@ -1,0 +1,3 @@
+TxtNewTechnologiesdevel=New Technologies developed.
+ErrNoWater=The superdome has to|be build under water!
+ErrDepth=The superdome has to|be build deeper.

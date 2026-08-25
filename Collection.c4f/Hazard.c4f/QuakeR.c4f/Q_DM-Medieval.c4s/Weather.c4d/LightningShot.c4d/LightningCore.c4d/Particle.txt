@@ -1,0 +1,16 @@
+[Particle]
+Name=LightningCore
+MaxCount=10000
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+#CollisionFn=Stop
+Face=0,0,25,25,-13,-13
+Repeats=1
+GravityAcc=0
+AlphaFade=100
+#VertexCount=1
+#VertexY=-50
+Additive=1
+Attach=1
+RByV=2

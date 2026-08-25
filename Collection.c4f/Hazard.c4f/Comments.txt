@@ -1,0 +1,175 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+Das Hazard-Pack hat eigentlich schon genug Szenarien. Dennoch, da einiges für Hazard entstanden ist, hier noch zumindest die schönsten. Von Look & Feel sollten sie gleichauf mit dem Hazard-Pack sein.
+
+--------------------------------------------------------
+
+Quake R (QuakeR.c4f)
+	+ full conversion mod der noch shooter-iger ist
+	- ansonsten eigentlich hässlicher, aber mehr action
+
+Hot Pot (AS_HotPot.c4s)
+	+ es gibt nur wenige AS-Szenarien, dieses ist eines
+	+ interessant: noch asymetrischer weil Angreifer "Ninjas" (unsichtbar, nur Kettensäge und Sprengsätze) sind
+	- Fehler: Teleporter nach unten für Verteidiger ist verbuggt -> man landet in Lava
+	- (im lokalen Spiel ist die Unsichtbarkeit der Ninjas etwas witzlos, da man ja auf den anderen Bildschirm gucken kann)
+	- Ninjas haben es anfangs sehr leicht, weil sie überall verteilt in der Basis schon mit Sprengsatz im Inventar spawnen (und unsichtbar sind), später mag es frustrierend sein, denn der finale Computer ist genau dort, wo die Verteidiger spawnen
+
+Deathball (BR_Deathball.c4s)
+	+ Bombing-Run mit interessanten Waffen und so
+
+BR - Skyline (BR_Skyline.c4s)
+	+ hübsch designtes Bombing-Run
+
+Aztec (DM_Temple.c4s)
+	+ schön designt, Fallen
+
+Tundra v.1.2 (DM_Tundra.c4s)
+	+ schön designt
+
+LMS - Crate Fight (LMS_CrateFight.c4s)
+	+ klein, kurz, chaotisch
+
+
+
+DM - Jetbelt (DM_Airbag.c4s)
+	+ verschiedene Spielmodi
+	+ einziges (gutes) Szenario dass den Jetbelt nutzt
+
+PDM_SteamPower (PDM_SteamPower.c4s) - aus PhysGunScenarios.c4f
+	+ kurz, klein
+	+ PhysGun ist lustig
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Crothos Minen (CrothosMinenv10.c4s)
+	- viel zu viel Nebel, das sieht ja aus als hätte man den grauen Star!
+	+ interessant: asymetrisches Capture the Flag (mit drei Teams) auf sehr kleiner Karte
+	- Test ergab dass die Platzierung der einzelnen Teams leider sehr unausbalanciert ist.
+	  Insbesondere für das mittlere (linke) Team macht es wenig Spaß,
+		das untere Team hingegen ist meist außen vor und kann sich einer großen Auswahl an Waffen bedienen
+
+TriomAtrics (TriomAtrics.c4f)
+	+ gute Idee und Umsetzung
+	- aber benötigt Maus und es gibt keine KI, insofern nicht für diese Collection geeignet
+
+PDM_Core (PDM_Core.c4s) - aus PhysGunScenarios.c4f
+	+ hübsch designt
+	- Capture the flag funktioniert nicht wirklich mit PhysGun - zu einfach zu entkommen, zu schwer getroffen zu werden
+
+CTF_Tempel (CTF_Tempel.c4s)
+	- zu groß
+	+ ganz nett (aber nicht außerordentlich) designt
+	- ausschließlich CTF
+
+Last Battle (DM_LastBattle.c4s)
+	+ ganz hübsch designt
+	- ERROR bei Auswahl des Alienjagdt-Spielziels - Spiel startet nicht
+
+Aliens (Ali_ns_1_2.c4s)
+	+ es gibt nicht so viele Alienjagd-Szenarien
+	- aber die Landschaft ist doch ziemilch uninspiriert
+
+Stalwart (DM_Stalwart.c4s) - aus BattleEvolutions.c4f
+	* nichts besonderes
+	* extrem klein
+
+Hazard Battles (HazardBattles.c4f)
+	+ interessante Schlachtkreuzer
+	- diese sind ein wenig schwer zu benutzen
+	- die meisten Szenarien sind ein wenig eintönig. Hier wurde geklotzt, statt auf Qualität zu achten
+	- leider funktioneren diese Schlachtkreuzer nicht so wirklich für Hazard (2)!!
+
+BoneZone (BoneZone.c4s)
+	- lustige Idee (koop Zombiegemetzel), aber funktioniert nicht. Implementierung hinkt
+
+Hazardwars (Hazardwars_.c4f)
+	- insgesamt scheint dieses Pack nur für Hazard 1.0 zu funktionieren. Es gibt einen Fix mit dem es auf Hazard 1.5 funktioniert, aber die aktuelle Version ist 2.0
+	(Kommentare zu einzelnen Szenarien in dieser Sammlung:
+	- TDM_Schlachtfeld, TDM_ColdWar sind zu eindimensional, AS_Eroberung, nich schön designt, und es gibt Errors (Predator nicht nutzbar)
+	-  CTF_Space Fight.c4s is so überbelichtet dass man nichts sieht
+	- in DM_Ruins.c4s ist das Raumschiff verbuggt, insgesamt sieht die Karte nicht besonders interessant aus
+	- verglichen mit Hazard _Tempel.c4f ist es nicht hübsch gemacht. Außerdem, Errors
+	- CTF_Jungle.c4s ist zu groß
+	- ... usw., qualitativ sind die alle ähnlich
+
+Clonk-Maniacs Zombiepanik (CM-Zombie.c4f)
+	+ interessantes asymetrisches Spielprinzip
+	- Karten alle ziemlich hässlich
+	- einige Karten habe kein richtiges Ziel ("Testscenario", "Zombie-Massaker")
+	- andere Karten sind schlecht ausbalanciert (CM_Z_The Hills have 2 Eis, CM_Z_Bunkerfort) oder viel zu groß für dieses Spielprinzip (CM_Z_City18 final.c4s)
+
+ZS_Maps (Zombie_Survivalmaps.c4f)
+	* gleiches wie "Clonk-Maniacs Zombiepanik ". Von den gleichen Machern?
+
+DM - Space (DM - Space.c4s)
+	+ interessante Idee: zero-grav-deathmatch mit eigener Hazardsteuerung
+	- Umsetzung nicht gelungen, Landschaft langweilig
+
+Techtan (Tech.c4s)
+	- langweilige, eindimensionale Karte
+	
+Epic (TDM_Epic.c4s)
+	- eine verbesserte Version dieses Szenarios bereits als DEST_EpicVoltage.c4s ins Hazardpack übernommen
+	
+Extreme Voltage (DEST_Voltage.c4s) - aus BattleEvolutions.c4f
+	- eine verbesserte Version dieses Szenarios bereits als DEST_EpicVoltage.c4s ins Hazardpack übernommen
+
+Gamma Breschnew (AH_DeepSea.c4s) - aus BattleEvolutions.c4f
+	- bereits CTF_DeepSea.c4s des Hazardpacks um Alienhunt-Spielziel ergänzt
+
+Sektor 5 (DM_Sector5.c4s) - aus BattleEvolutions.c4f
+	- ziemlich bleak von der Dekoration her
+
+Liero (Liero.c4s)
+	- wirkt unfertig
+	- Fehler bei Waffe wechseln 
+	- hässliche/langweilige Landschaft
+
+Gateway to Hell (GatewayToHell.c4f)
+	* Hazard "full-conversion" mit Zombies, basiert nichtmal auf Hazard. Kopiert oder alles selbst gemacht?
+	+ hell yeah, Kampf gegen Zombies!
+	+ FolderMap und so, hübsch
+	+ einige hübsche Effekte
+	+ Musik!
+	- teils uralte Grafiken (Clonk-Planet Clonks, Pixelgrafiken teilweise aus Clonk 4 Projekten)
+	- verbuggt: laggt teilweise stark, respawn ist verbuggt
+	- Waffen unausbalanciert. Man kann sich einfach mit der Kettensäge hinstellen und warten
+	- keine der vier Karten sind sonderlich interessant. Sehen auch nicht so gut aus
+	- kein Ziel?
+	* viele Waffen, die aber wiederum alle sehr ähnlich sind
+	- wie bei EKE kann man nur geradeaus schießen, das schränkt die taktischen Möglichkeiten doch sehr ein
+	* nicht auf CCAN auffindbar. Etwa unfertige beta von der Clonkforge oder so? Wirkt jedenfalls unfertig
+
+Stippel Bekämpfung (Stippel_Bekaempfung.c4s)
+	+ Lustig: Hazards gegen Stippen und Hazards können ihre Aliens einsetzen
+	- Kampf gegen Windmühlen - die Tentakeldinger sind (praktisch?) unsterblich, die Stippel vermehren sich schneller als dass man sie vernichten kann
+	- langweilige Landschaft
+
+Übungsszen (Uebungsszen.c4s)
+	- wie der Name schon sagt bloß ein Übungsszen für den "Predator" aus Hazard-Ships.c4d, kein Spielziel
+
+Hazards jumpin area (Hazards_jumpinarea_1_0.c4s)
+	--- Script-Errors, insb. bei Relaunch
+	* maybe lustige Idee, aber macht kein Spaß IMO
+
+Rumble in the Earth Tunnel (Hazard) (RumbleInThe_Tunnel.c4s)
+	- sehr langweilige Landschaft, viel zu groß
+
+Mechs (Mechs.c4s)
+	- mit aktueller Hazard-Version nicht spielbar
+	- langweilige Landschaft
+
+Onslaught - Crato (ONS_Crato.c4s)
+	* laut Beschreibung ein neues Spielprinzip, aber es wird nicht erklärt was
+	- mit aktueller Hazard-Version nicht spielbar
+
+Stippel-Training (SM - Training.c4s)
+	+ offenbar Spielmodus dass einer die Stippel spielt und der andere die Hazards? Aber:
+	- mit aktueller Hazard-Version nicht spielbar
+
+Stippel-Massaker (Stippel-Massaker.c4s)
+	- Ist das ein Scherz? Man stirbt sofort, weil der Spawnpunkt voller Stippel ist
+	- Landschaft ist auch langweilig

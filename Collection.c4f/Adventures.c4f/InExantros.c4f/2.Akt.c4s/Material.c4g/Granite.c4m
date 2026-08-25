@@ -1,0 +1,8 @@
+[Material]
+Name=Granite
+Color=60,45,33,87,41,45,111,67,51
+Shape=2
+Density=50
+Friction=100
+MaxAirSpeed=100
+MaxSlide=250

@@ -1,0 +1,10 @@
+TKing=Team König
+TPaladin=Team Paladin
+
+MageGo1=Keh weck!
+MageGo2=Verschwinde!
+MageGo3=Mach, dass du fortkommst!
+
+MageDmg1=Auts
+MageDmg2=Pass doch auf!
+MageDmg3=Aua!

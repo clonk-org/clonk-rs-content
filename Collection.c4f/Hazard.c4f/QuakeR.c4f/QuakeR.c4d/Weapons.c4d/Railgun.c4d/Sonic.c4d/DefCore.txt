@@ -1,0 +1,15 @@
+[DefCore]
+id=QSNW
+Version=4,9,5
+Name=Shot
+Category=4
+Width=18
+Height=11
+Offset=-9,-5
+Rotate=1
+Vertices=0
+StretchGrowth=1
+IncompleteActivity=1
+
+[Physical]
+Float=100000

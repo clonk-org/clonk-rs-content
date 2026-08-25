@@ -1,0 +1,17 @@
+[Action]
+Name=Brazzel
+Procedure=None
+Directions=1
+Length=8
+Delay=3
+Facet=0,0,20,13,0,0
+NextAction=Brazzel
+
+[Action]
+Name=Sword
+Procedure=None
+Directions=1
+Length=1
+Delay=0
+Facet=66,17,20,7,0,0
+NextAction=Sword

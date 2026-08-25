@@ -1,0 +1,15 @@
+[Teams]
+FreeForAll=0
+TeamColors=0
+
+	[Team]
+	id=1
+	Name=$castle$
+	IconSpec=KING
+	Color=255
+
+	[Team]
+	id=2
+	Name=$village$
+	IconSpec=_FRM
+	Color=16711680

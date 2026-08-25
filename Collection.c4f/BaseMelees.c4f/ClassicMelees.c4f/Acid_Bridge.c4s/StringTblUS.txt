@@ -1,0 +1,4 @@
+TeamLeft=Rustuff
+TeamRight=Hörx
+TeamLeftJoin=%s defendes the freedom for %s.
+TeamRightJoin=%s defendes the freedom for %s.

@@ -1,0 +1,13 @@
+[Action]
+Name=Loop
+Delay=10
+FacetBase=1
+NextAction=Loop
+InLiquidAction=Sink
+
+[Action]
+Name=Sink
+Delay=1
+FacetBase=1
+NextAction=Sink
+StartCall=Sink

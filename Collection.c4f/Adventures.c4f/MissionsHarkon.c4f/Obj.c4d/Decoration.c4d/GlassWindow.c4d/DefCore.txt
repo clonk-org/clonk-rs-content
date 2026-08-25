@@ -1,0 +1,8 @@
+[DefCore]
+id=GWD_
+Version=4,9,8
+Name=GlassWindow
+Category=C4D_StaticBack
+Width=55
+Height=61
+Offset=-28,-30

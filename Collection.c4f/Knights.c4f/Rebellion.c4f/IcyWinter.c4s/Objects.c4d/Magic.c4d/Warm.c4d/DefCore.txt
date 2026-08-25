@@ -1,0 +1,8 @@
+[DefCore]
+id=_MWM
+Name=MagicWarming
+Version=4,9,5,3
+Category=131073
+Picture=0,0,64,64
+Value=14
+Components=ISPH=2;

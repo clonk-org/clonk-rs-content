@@ -1,0 +1,8 @@
+[Action]
+Name=Be
+Procedure=FLOAT
+FlipDir=1
+Length=9
+Delay=0
+Facet=0,0,64,64
+NextAction=Hold

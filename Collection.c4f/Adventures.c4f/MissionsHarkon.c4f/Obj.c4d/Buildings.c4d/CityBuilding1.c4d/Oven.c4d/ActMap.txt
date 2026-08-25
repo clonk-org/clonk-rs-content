@@ -1,0 +1,9 @@
+[Action]
+Name=Burn
+Procedure=ATTACH
+Length=12
+Delay=4
+Facet=0,0,8,15
+Reverse=1
+NextAction=Burn
+PhaseCall=DoSmoke

@@ -1,0 +1,7 @@
+[Material]
+Name=WallGrey
+Color=86,86,86,106,106,106,126,126,126
+Shape=1
+Placement=5
+TextureOverlay=CastleWall
+OverlayType=1

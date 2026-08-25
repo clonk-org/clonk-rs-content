@@ -1,0 +1,8 @@
+[Material]
+Name=EarthGlatt
+Color=97,65,43,117,81,55,141,97,71
+Shape=0
+Density=50
+Placement=60
+TextureOverlay=Smooth3
+OverlayType=3

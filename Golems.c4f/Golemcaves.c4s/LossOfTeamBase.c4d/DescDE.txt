@@ -1,0 +1,1 @@
+Ein Team ist eliminiert, wenn es kein Basisgebäude mehr besitzt.

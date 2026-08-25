@@ -1,0 +1,15 @@
+ 
+[Action]
+Name=Right
+Length=8
+Facet=0,0,9,32,0,0
+NextAction=Left
+Delay=4
+
+[Action]
+Name=Left
+Length=8
+Reverse=1
+Facet=0,0,9,32,0,0
+NextAction=Right
+Delay=4

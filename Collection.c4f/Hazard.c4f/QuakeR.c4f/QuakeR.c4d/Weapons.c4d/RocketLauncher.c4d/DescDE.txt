@@ -1,0 +1,6 @@
+Verwandelt garantiert jedes Schaltfeld in ein tolles Feuerwerk.
+Raketen können auch gesammelt und auf einmal abgefeuert werden.
+
+Muniton(max.): 40
+Schussmodus 1: Rakete
+Schussmodus 2: Mehrfachschuss

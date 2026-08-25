@@ -1,0 +1,161 @@
+[FolderMap]
+MinResX=1024
+MinResY=768
+ScenInfoArea=750,50,250,567
+FullscreenBG=1
+	
+	[Scenario]
+	File=Q_CtF-OpenSky.c4s
+	BaseImage=CTF-Open.Sky.png
+	OverlayImage=CTF-Open.Sky_Highlight.png
+	Area=491,252,218,114
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q_DM-Medieval.c4s
+	BaseImage=Q_DM-Medieval.png
+	OverlayImage=Q_DM-Medieval_Highlight.png
+	Area=349,179,178,96
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q_DM-Renegade.c4s
+	BaseImage=Q_DM-Renegade.png
+	OverlayImage=Q_DM-Renegade_Highlight.png
+	Area=368,538,182,102
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q_DM-Fray.c4s
+	BaseImage=Q_DM-Fray.png
+	OverlayImage=Q_DM-Fray_Highlight.png
+	Area=363,472,223,65
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q_DM-Frostbite.c4s
+	BaseImage=Q_DM-Frostbite.png
+	OverlayImage=Q_DM-Frostbite_Highlight.png
+	Area=27,114,138,70
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q_DM-DeepDown.c4s
+	BaseImage=Q_DM-DeepDown.png
+	OverlayImage=Q_DM-DeepDown_Highlight.png
+	Area=199,370,110,41
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q4_Map 1.c4s
+	BaseImage=Q4_Map1.png
+	OverlayImage=Q4_Map1_Highlight.png
+	Area=99,431,78,74
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q4_Map 3.c4s
+	BaseImage=Q4_Map3.png
+	OverlayImage=Q4_Map3_Highlight.png
+	Area=176,509,72,47
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q4_Map 4 Chinatown.c4s
+	BaseImage=Q4_Map4.png
+	OverlayImage=Q4_Map4_Highlight.png
+	Area=128,484,75,27
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+
+	[Scenario]
+	File=Q4_Map 2.c4s
+	BaseImage=Q4_Map2.png
+	OverlayImage=Q4_Map2_Highlight.png
+	Area=249,431,85,40
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Q_DM-BloodySun.c4s
+	BaseImage=Q_DM-BloodySun.png
+	OverlayImage=Q_DM-BloodySun_Highlight.png
+	Area=433,369,118,59
+	Title=TITLE
+	TitleFontSize=1
+	TitleColorInactive=2130706432
+	TitleColorActive=16764672
+	TitleOffX=75
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+

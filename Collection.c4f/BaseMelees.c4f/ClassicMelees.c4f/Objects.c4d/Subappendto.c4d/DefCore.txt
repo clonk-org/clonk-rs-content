@@ -1,0 +1,6 @@
+[DefCore]
+id=_APS
+Version=4,9,8
+Name=Appendto Submarine
+Picture=1856,0,64,64
+Category=1

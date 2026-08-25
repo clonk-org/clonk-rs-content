@@ -1,0 +1,7 @@
+JoinLeft=%s hilft dem linken Team.
+JoinRight=%s unterstuetzt das rechte Team.
+Relaunch=%s (%s) starb.
+TeamWins=Team %s hat alle drei Heiligtuemer und gewinnt!
+Left=Links
+Right=Rechts
+Middle=Mitte

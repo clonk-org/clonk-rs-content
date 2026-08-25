@@ -1,0 +1,4 @@
+NoMore=You cannot change options anymore!
+Inc=Increase gemstone amount to be stolen
+Dec=Decrease gemstone amount to be stolen
+Stat=%d gemstones to be stolen|The time is %.2d:%.2dmin.

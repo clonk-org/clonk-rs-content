@@ -1,0 +1,1 @@
+Teams are eliminated when they lose their last base building.

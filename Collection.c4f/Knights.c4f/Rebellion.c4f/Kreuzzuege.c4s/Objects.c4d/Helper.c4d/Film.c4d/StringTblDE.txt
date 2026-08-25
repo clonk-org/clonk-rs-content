@@ -1,0 +1,8 @@
+Statue=Oh nein! Die Statue wurde gestohlen!
+Statue2=Wir müssen sie zurückholen!
+
+Intro=Intro
+Abort=Film überspringen
+AbortDesc=Beendet den Film sofort.
+CloseMenu=Menü schließen
+CloseMenuDesc=Schließt dieses Menü. Der Film kann dann nicht mehr übersrpungen werden.

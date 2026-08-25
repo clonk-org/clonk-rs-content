@@ -1,0 +1,3 @@
+MsgLoadingSect=Landschaft wird geladen...
+MsgLoadingFail=Fehler beim Laden der Sektion.
+TeamEnemy=Gegner

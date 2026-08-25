@@ -1,0 +1,192 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+--------------------------------------------------------
+
+GIDL Race (GIDL_Race.c4s)
+	+ Mario Kart Klon
+	+ viele verschiedene Karten und Spielmodi
+
+Clonkparty 2 (Clonkparty2.c4s)
+	+ viele lustige Minispiele in schneller Folge
+	+ hübsch gestaltet
+
+Clonk Party Remake 8.3 (ClonkPartyRemake8.c4s)
+	+ viele lustige Minispiele in schneller Folge
+	- die ganzen Sounds gehen einem sehr schnell auf die Nerven. (Sounds rausgenommen)
+
+Clonk Knight Party 1.3 (Clonk_Knight_Party.c4s)
+	+ viele lustige Minispiele in schneller Folge
+
+Kronensuchen (S2CrownHiding.c4s)
+	+ sehr beliebtes Team-Versteckspiel
+	- im Splitscreen-Modus ist's eher witzlos
+
+Zombieschloss (ZombieCastle.c4s)
+	+ Zombies schlachten macht Spaß
+	+ Progression durch Burgenausbau, Herstellen von mehr Waffen, rekrutieren von AI-Rittern, ...
+	+ fetzige Musik und Sounds
+
+Get the Cookie (GTC-Knight.c4s)
+	+ lustiges Minispiel
+	+ viele Karten
+
+Flintwand (FlintWall.c4s)
+	+ lustiges Minispiel das mehr Spieltiefe hat als man denkt (siehe Beschreibung): mit Haubitzen kooperativ Steine oben abschießen...
+	- sehr hektisch, nicht ganz klar was man so macht und wann man gewonnen hat? Wenn das überhaupt geht
+
+Krieg der Götter (Warofthegods_0.c4s)
+	+ bischen wie Pax Britannica: Einheiten und Helden rekrutieren, techen,...
+	- kommt man einmal ins Hintertreffen, kann man sich nicht mehr erholen. Es ist auch nicht klar, welche Einheiten gegen welche anderen stark sind
+	- nur 2 Spieler
+
+FlintRainer2 v.1 (FlintRainer2.c4s)
+	+ interessanter Twist auf Flintrain: Spieler sind abwechselnd der Flintrain-Gott
+	- alle Spieler brauchen eine Maus, d.h. nur im Netzwerk spielbar
+
+Blobby Fußball (BlobbySoccer.c4s)
+	- ziemlich hässlich
+	* ein zwei Runden machen Spaß, danach wird es langweilig
+	* unendlich viele Einstellungsmöglichkeiten (die aber teilweise recht sinnlos sind)
+	+ Tor-Replay?? Whoa!
+
+BlobbyVolly (BlobbyVolley.c4s)
+	* ein zwei Runden machen Spaß, danach wird es langweilig
+
+Minesweeper (Minesweeper.c4s)
+	+ Minesweeper, aber alle spielen gleichzeitig (wie ein Wettkampf)
+	+ etwas hässlich
+
+War Stars (WarStars1_1.c4s)
+	+ ein bischen wie Lovers in Dangerous Space Time aber als Team-Melee
+	+ Musik
+	- unter vier Spielern macht es wohl keinen Spaß, man bräuchte eher noch mehr (8 wäre gut...)
+	- uff, dass da alles voller Planeten ist, ist ein bischen übertrieben...
+
+
+Ballerburg (Ballerburg.c4s)
+	- hässlich
+	+ eigene "Wirtschaftssimulation", mit aufleveln und so
+	+ Explosionen
+
+Monster Arena (MonsterArena.c4s)
+	+ interessanter Monsterjagd-Team-Wettkampf mit techen
+	- nicht selbsterklärend, man sollte die Beschreibung vorher lesen. Auch dann weiß man nicht unbedingt wie man am besten spielt
+
+Verrückte Weihnacht (Crazy_X-Mas.c4s)
+	+ kurz
+	+ ganz hübsch mit den verschneiten Gebäuden
+	- ähnlich wie Kuchenbacken (aber wesentlich älter)
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+OmgMania (OmgMania.c4s)
+	* Sammlung von "Clonk Party" Minispielen. Es sind immer die die gleichen:
+		1. Flintregen
+		2. Kugeln ausweichen
+		3. "Stepmania"
+		4. Hindernislauf (statisch)
+		5. so eine Art Simon Says/Minesweeper (zieht sich ziemlich)
+		6. Snake
+	+ Spiele sind okay
+	+ Musik
+	- jede Runde spielt sich exakt gleich
+
+Zombie Wars (Knight-Add-on) (ZombieWarsKA.c4s)
+	+ Musik!
+	- nach wie vor langweiligst-mögliche LAndschaft
+	+ lustige Waffen für die unterschiedlichen Clonks, man kann sich tagsüber einbunkern
+	- völlig unausbalanciert
+	- es spielt sich am Ende ẁie eine Sandbox
+	- es hat gewisse Ähnlichkeiten mit ZombieCastle.c4s, nur ist jenes besser durchdacht und es gibt eine art Progression, die hier fehlt
+
+Zombie Wars Remake 1.1 (ZombieWarsRemake.c4s)
+	+ cool dass man verschiedene Clonks auswählen kann, die alle unterschiedliche Stärken haben
+	- schwach dass SFT, Hazard, Ritter und Cowboy wenig Sinn machen, weil man quasi nie Munition bekommt! Na toll!
+	- komplett flache Landschaft, nur Erde
+	- alte Clonk-Grafiken für "Zombies"
+	- total unfair: man startet mit nix, Zombies fallen sofort und ständig vom Himmel und gehen alle sofort in den Clonk-Nahkampf. Sehr nervig.
+	ZombieCastle.c4s ist ähnlich, aber besser
+
+ZombieWars (ZombieWars.c4f)
+	- es gibt ein Remake, das Original benutzt z.B. das alte Eke Pack
+	- "beta", also unfertig?
+
+Pac-Man v2.25 (Pac-Man.c4s)
+	+ Pac-Man Klon bei denen die anderen Spieler die Geister spielen
+	- unter vier Spielern nicht wirklich fair, über vier Spielern auch nicht
+	- schnell langweilig, nach einer Runde hat mans eigentlich...
+	- keine Variation in der Karte
+
+Wipfz (Wipfz.c4s)
+	+ lustige Idee: Worms-Verschnitt
+	- ziemlich simple langweilige Landschaft
+	- unnötig komplizierte UI: man kämpft sich durch Menüs
+	- gleichzeitig ziehen statt in Runden wie bei Worms funktioniert nicht so recht, spielmechanisch gesehen: 1. fast egal wo man steht, solange in Schusslinie und 2. wer sich zuerst durch die Menüs klickt, gewinnt
+
+Base Jumpers (BaseJumperz.c4s)
+	+ kurz, lustig gemacht (Musik hat daran sicherlich einen Anteil)
+	- natürlich schwer für Leute die das mit dem Terajump nicht so drauf haben
+	- mit der Extra.c4g-Lösung in dieser Collection kommt die Szenarioeigene Musik nur selten vor
+	- letztlich trainiert man hier einen Move, den Experten genausogut in anderen Szenarien anwenden können
+
+Memory (MemoryFix.c4s)
+	+ einfach Memory
+	- im Splitscreen ist das etwas doof
+	- naja, ist halt Memory... man startet nicht unbedingt Clonk, um Memory zu spielen. Ja, das trifft wohl auf viele Experimental-Szenarien zu, aber es ist ja auch nicht so als sei Memory ein besonders interessantes Spiel in-the-first-place. Es gibt auch Schach für Clonk... aber warum?
+
+Kuchenbacken (CakeBaking.c4s)
+	* Dinge fallen von oben herunter, man muss sie einsammeln
+	+ sehr kurz
+	- wird schnell langweilig, wenig Wiederspielwert
+	- sehr ähnlich wie Crazy X Mas mit zwar leicht interessanterem Spielmechanismus aber weniger schön gemacht
+
+[v-cm]KI Massaker (ki_massacre.c4s)
+	* zwei Spieler schicken eine Ritter-KI-Armee in den Kampf, spaßig!
+	+ kurz
+	- ähnlich wie War of the Gods, nur simpler und älter
+
+Net2-Hüpfcontest (S2Jumper2.c4s)
+	- wie BaseJumperz.c4s nur weniger lustig gemacht
+
+Clonkparty (Clonkparty.c4s)
+	+ einige lustige Minispiele in schneller Folge 
+	- Clonk Party Remake (solange man nicht all die nervigen Sounds benutzt) hat alles was dies auch hat, und mehr
+
+Wolkenbruch (Wolkenbruch.c4s)
+	+ kooperativer Flintregen (vergrabe dich!)
+	+ Explosionen! Macht Spaß!
+	- einfach bis ganz nach unten Graben und sich dort verstecken, dann hat man gewonnen. Wenig Action also
+	- keine Hindernisse o.Ä. zu überwinden auf dem Weg nach unten
+	- dass man Relaunches hat, macht nicht wirklich Sinn
+
+Clemminge (Clemmings.c4s)
+	* Lemminge-Klon
+	- Max 1 Spieler
+	- erfordert Maussteuerung
+	- GAMEBREAKING ERRORS!!!
+
+Die tote Ebene (TheDeadPlain.c4s)
+	- langweilige Landschaft, bzw. keine Landschaft
+	- eigentlich drei getrennte Spiele (die man am Anfang per Abstimmung auswählt), aber es wird nur eines gespielt. Alle sind so, naja
+	+ 3. Platz im Ritterturnier-Wettbewerb
+
+Trirena (Trirena.c4s)
+	+ schöne Story
+	- alle drei Spiele haben erhebliche Probleme / sind kaum oder nicht spielbar
+	- die drei Spiele sind auch nicht besonders gut
+	+ 1. Platz im Ritterturnier-Wettbewerb
+
+Flintturmregen (Flintturmregen.c4f)
+	- Script-Adventure-Style Flintregen, Autor spielt mit Spielern
+
+===============================================
+            Aussortierte Kandidaten 
+			(läuft nicht mit Clonk Rage)
+===============================================
+
+Mau-Mau (Maumau.c4s)
+	* garnicht mehr Clonk: Mau-Mau (gegen KI)
+	- nur für 1 Spieler
+	(funktioniert nicht mit Clonk Rage - Spieler und KI ziehen nur Karo 7, lol)

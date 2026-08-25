@@ -1,0 +1,10 @@
+[DefCore]
+id=QDUM
+Name=Dummy
+Version=4,9,5
+Category=C4D_StaticBack
+Width=16
+Height=20
+Offset=-8,-10
+Picture=192,100,32,40
+ 

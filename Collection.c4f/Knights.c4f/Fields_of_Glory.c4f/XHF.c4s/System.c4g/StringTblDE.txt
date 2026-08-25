@@ -1,0 +1,6 @@
+NothingToBuy=Du kannst nichts kaufen
+Buy=%s kaufen
+NotAviable=Du kannst kein %s kaufen!
+NotEnoughMoney=Nicht genug Geld!
+TxtNobridgeallowedhere=Hier darf keine Brücke|gebaut werden!
+TxtBuildmetalbridge=Metallbrücke bauen

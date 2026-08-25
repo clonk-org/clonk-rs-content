@@ -1,0 +1,9 @@
+NothingToBuy=Du kannst nichts kaufen
+Buy=%s kaufen
+NotAviable=Du kannst kein %s kaufen!
+NotEnoughMoney=Nicht genug Geld!
+CtxtBuy=Kaufen
+
+CtrlActivateBag=Anlegen
+MsgAlreadyHasBag=%s trägt bereits|einen Alchemiebeutel!
+MsgPuton=Alchemiebeutel angelegt.

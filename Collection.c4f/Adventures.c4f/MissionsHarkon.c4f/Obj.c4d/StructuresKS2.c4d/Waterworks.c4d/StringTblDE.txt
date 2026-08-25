@@ -1,0 +1,3 @@
+Clogged=Das Rad ist verstopft!
+Water=Wasser fördern
+AlreadyPump=Das Gebäude fördert|gerade Wasser!

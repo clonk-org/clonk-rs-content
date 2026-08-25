@@ -1,0 +1,217 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+--------------------------------------------------------
+
+Klassische Melees (ClassicMelees.c4f)
+	* Rundenordner mit klassischen Basis-melees
+	+ ziemlich viel Variation und neue Objekte
+	- sind ansonten alle recht klassisch (wie der Name schon sagt), so sehr vom Originalpack unterscheiden sie sich nicht
+
+Druckwellenkampf (Druckwellenkampf.c4s)
+	+ aus irgendwelchen Gründen sehr beliebt, wurde oft Online gespielt daher lass ich es mal unbesehen drin
+
+Basenkampf (base_fight.c4s)
+	* Basis-Melee mit vielen Einstellungsmöglichkeiten
+
+Sky Mayhem (ºSkylies.c4s)
+	+ +2,6 auf CCAN
+	+ viele zusätzliche Waffen zum austesten
+	+ man merkt da steckt viel Liebe/Aufwand drin
+	+ linker Rand = rechter Rand, so ist das Team was in der Mitte startet nicht benachteiligt
+	+ wahlweise auch nicht auf Himmelsinseln sondern auf tropischen Inseln startbar
+
+Schatzjäger (TreasureHunters.c4s)
+	+ ganz interessantes Ziel: Team-Melee UND Schatzsuchen im Tempel
+	+ hübsch designt
+	+ Sachen mit Indianern gibts nicht so viel
+	+ CCAN: +2.3
+
+Wasser (Wasser.c4s)
+	+ 2. Platz im Tiefseeschlacht-Wettbewerb
+	+ Cofut im Wasser!
+	+ einige zusätzliche Waffen
+	- wie alle Tiefsee-Melees ist es schwierig seine eigene Basis zu verteidigen
+
+Bucht der Rätsel (BoR.c4s)
+	+ 1. Platz im Tiefseeschlacht-Wettbewerb
+	+ Tiefsee-Basen-Melee! davon gibt es nicht viele
+	+ viele interessante Extras: neue Fische, der Zauberer Tyr, Forschung, ...
+	- etwas schwer zu verteidigen. Gewinnt der, der als erstes angreift?
+
+Kampf am Zwillingscanyon (TwinCanyon.c4s)
+	* Basis-Meleee mit drei Parteien
+	+ interessante dynamische Landschaft
+	* die die in der Mitte starten scheinen einen starken Vorteil zu haben weil sie höher sind. Auf der anderen Seite sind sie halt in der Mitte und werden ggf. von beiden Seiten angegriffen... hmm
+
+Vulcanyon ((G)VolcanicMelee.c4s)
+	* Basis-Melee
+	+ Beschleunigter Aufbau, Vulkan der nach X Zeit ausbricht und weitere Einstellungsmöglichkeiten
+	+ schön designte Landschaft
+
+
+Kampf der Himmelsdörfer (Skyfigth.c4s)
+	* Basenmelee
+	+ mit Startphase zum Aufbauen der Basis
+	+ interessante Objekte die den Basenkampf interessanter machen sollen
+
+Kampf am grünen Stein (GreenRock.c4s)
+	* Basis-Melee links und rechts von Säurevulkan
+	* letztlich hat wohl der gewonnen, der zuerst seine Seite des Vulkans erklommen bzw. erschlossen hat. Auf der anderen Seite ist das natürlich trotzdem eine Challenge die es von andern Basismelees unterscheidet
+
+Inselspringen (Inselspringen.c4s)
+	* Basis-Melee (und eigentlich auch Siedlung)
+	+ taktische Möglichkeiten sind ganz gut: über den See, hoch zur Himmelsinseln, unten herum, Dracheier in der Mitte,...  
+	- nichts extra, auch keine Aufbau-Zeit
+	- ERROR: Spiel beendet sich nicht wenn ein Team eliminiert wurde!
+	- im Test: Könige sind sehr stark, sie sollten nicht auch noch kaufbar sein
+
+Eke vs Western - Die Reise (EKE_vs_Western_-_Die_Reise.c4s)
+	+ CCAN: +2.1
+	+ Basismelee Western vs EKE, gibt es so sonst nicht
+	* Balancing schwierig, aber laut Testern gelungen (einige haben mehrere Western-Spieler vs 1 EKE Spieler)
+	- Landschaft etwas groß, etwas grob designt
+
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Klippenkampf (Clifffight.c4s)
+	+ 2. Platz im traditionelles Melee Wettbewerb
+	- (verbesserte Version) schon in Originalpack übernommen für Clonk Rage
+
+Divara (Divara.c4s)
+	* 4/10 Platz im Magische Melees Wettbewerb
+	+ kleine Landschaft, kein ewiger Basisbau
+	- es fehlt an Möglichkeiten, effektiv die andere Basis anzugreifen
+
+Schlacht um RattleHill (RattleHill.c4s)
+	+ um-die-Wette-Geld-scheffeln/Rattlesnake Canyon nette Idee
+	- etwas langwierig
+	- CCAN Kommentare lassen andeuten dass das Spielziel nicht so wie gedacht funktioniert - Kampf kostet Geld, und wenn es nur durch MElee zu gewinnen ist, dann ist die Eliminierung des Gegners der effektivere Weg
+
+King of the Island (KOTI.c4s)
+	* Basis-Melee auf tropischen Inseln
+	+ Aufbauzeit
+	- statische nicht besonders interessante Karte
+	- durch den See als Barriere könnte sich das ziemlich hinziehen (Angriff mit U-Booten macht nicht wirklich Sinn)
+	- sehr ähnliche Landschaft wie Inselspringen
+
+Teufelsschlucht (Teufelsschlucht.c4s)
+	* Standard-Basis-Melee, nichts extra
+	+ Schluchten zwischen den Spielern erlauben für eine gewisse Aufbau-Zeit
+	- 10. Platz im traditionelles Melee Wettbewerb
+	- jeder gegen jeden, das heißt der 3. und 4. Spieler hat ein Problem, da er auf beiden Seiten Feinde hat
+	- ähnlich wie (das neuere) TwinCanyon, nur dass das genannte fairer ist
+
+Thunder Canyon (Thunder_Canyon.c4s)
+	+ eines der wenigen Basismelees mit EKE
+	- taktisch bietet die Karte... keine? Möglichkeiten? - letztlich Lehmbrücken bauen und rüberrennen? Vielleicht ist EKE nicht für Basismelees ausgelegt oder der Autor hat vergessen, entsprechende Objekte kaufbar zu machen
+
+Kampf in den Bergen (Kampf_in_den_Bergen_v1_5.c4s)
+	- klassisches Burg vs Burg, davon gibt es schon einige im Originalpaket
+	- zudem wenig taktische Möglichkeiten, da ein tiefer Canyon die beiden Burgen trennt 
+
+Manarubine (Manarubine.c4s)
+	- 9/12 Platz im Magische Melees Wettbewerb
+	+ nette Idee
+	- CCAN Niveau -0.1
+	- Spielprinzip funktioniert nicht wie gedacht. Es läuft auf Elimination hinaus. Schade.
+
+Gruselschloss-KI (Castle-AI.c4s)
+	* schwierig das einzusortieren - es ist eigentlich ein Melee gegen KI
+	- kein Wiederspielwert weil die "KI" immer genau das gleiche macht
+	+ lustige Idee, macht für ein paar Minuten Spaß
+	- ERROR: nachdem Hörx Feuerfaust gezaubert hat, kommt ein Syntaxerror und er steht nurnoch rum (also im Prinzip sobald man es geschafft hat, nach oben zu kommen)
+
+Wasserdörfer (WaterVillages.c4s)
+	* Basis-Melee mit Unterwasserbasen
+	+ dritter Platz in einem Wettbewerb (vergessen welcher)
+	- etwas langatmig / Landschaft groß
+	- letztlich läuft es wohl wieder nur auf die Taktik Explosives herstellen -> mit U-Boot auf Wand schießen um gegnerische Basis zu schwemmen bzw. Flaggenklau hinaus. Das Problem ist, dass man im Wasser nicht wirklich sinnvoll kämpfen und d.h. gegnerische Clonks aufhalten kann
+
+Facing Worlds (CN_Facing_Worlds.c4s)
+	- eigentlich nur eine (unspektakuläre) Landschaft
+	- manchmal startet einer startet oben, einer unten in der Höhle, wie unfair ist das denn?!
+	+ 3. Platz im traditionelles Melee Wettbewerb
+
+Der azorische Krieg (Azoren.c4s)
+	* normales Basis-Melee
+	- quasi wie HAifischsee nur größer, keine Extras oder irgendwas was es interessanter macht
+	- (sehr ähnlich wie King of the Island, das aber wesentlich später entstanden ist)
+
+Talschlacht (Valleyfight.c4s)
+	- langweilige Landschaft, nix extra, keine Möglichkeit sich rechtzeitig vor Flaggenklauern zu schützen
+
+Steininseln (Steininseln.c4s)
+	- hässliche/künstliche Landschaft, nichts extra
+
+Tal des Todes (Tal_des_Todes.c4s)
+	* Basis-Melee
+	- sehr limitierte taktische Möglichkeiten
+	- nichts besonderes, also normales Basis-Melee wie man es aus dem Originalpack kennt
+
+Eke Team Attack (Eke_Team_Attack_v1_62.c4s)
+	* Basis-Melee mit EKE
+	- hässliche unzerstörbare recht eindimensionale Landschaft
+	- letztlich nur Landschaft mit EKE-Pack
+	- anfangs keine Basis bereits gebaut und keine Aufbauzeit sorgt für unspaßiges Base-Rushing
+
+Estates (Estates.c4s)
+	- eher eine Sandbox für das alternative Wirtschaftssystem, aber Spielziel ist Melee. Als Siedelszenario wäre es möglicherweise besser gewesen.
+	- recht langweilige Landschaft
+
+Magie oder keine Magie (Magie_oder_keine_Magie.c4s)
+	- normale Sinus-Landschaft
+	- unfaire Teams (Magie-Clonks vs nicht-Magie-Clonks)
+	- nichts weiter
+
+White (White.c4s)
+	* ein Team spielt Paladine, eines Assasinen aus Metall & Magie
+	- das wars
+	- langweilige flache Landschaft
+
+Revolution (Revolution_V__0__7.c4s)
+	- flache langweilige Landschaft
+	-- Teams sehr unfair. Die Aufständischen haben keine Basis und können auch keine bauen??
+	- wirkt kaputt (Burgteile fehlen)
+
+Uferkampf (RiversideFight.c4s)
+	- bereits als CliffFight.c4s in veränderter Form ins Originalpack übernommen
+
+EKE Melee (EKE_Melee.c4f)
+	- recht eindimensionale Landschaft
+	- man spielt zwar SFTs, aber außer die Pistole nutzt man eigentlich nur Dinge die auch im Originalpack sein könnten (Brandbombe, Flints, ...)
+
+EkeWars (EkeWars.c4f)
+	- eigentlich nur eine Sammlung von Karten. Ziel: Basismelee. Davon gibt es schon genug in EkeReloaded.c4f
+
+Helikopterabsturz im Dschungel (Helikopterabsturz_im_Dschungel.c4s)
+- eigentlich nur eine Karte. (Eine unnötig große)
+
+Mittelalterlicher Kampf (Medieval_Battle.c4s)
+	* EKE Basenmelee aber SFTs sind in fertig gebauten Ritterburgen
+	- nichts weiter
+
+XZone (Xzone.c4s)
+	- eindimensionale Landkarte
+	- sehr begrenzte taktische Möglichkeiten
+
+OilWars EXTREME 1.5 (Oilwars_Extreme_1_5_by_Aljoscha_Frensch.c4s)
+	* OilWars mit zusammengewürfelten Extra-Krams und Anpassungen
+	- ist eher Sandbox für diesen Extra-Krams, das meiste sind irgendwelche Flints
+
+Oilwars BSDBlackStyle v2.6 (Oilwars_BSDBlack2-6.c4s)
+	- NOCH ein OilWars. Was ist hier los? Einzige Änderung: Teams können nicht rushen.
+
+OilWars The Island (OilWarsTheIsland_v3_2011.c4s)
+	- NOCH ein OilWars. Jetzt reichts aber! Einzige Änderung: In der Mitte ist ein Canyon 
+
+OilWars 2 (Oilwars_2_Maps.c4f)
+	- NOCH ein OilWars. Ich werd nicht mehr! Einzige Änderung: leicht anders Designte Landschaft und schreckliche Musik
+
+Super Mega OilWars (Super_Mega_OilWars.c4s)
+	- NOCH ein OilWars. Das ist nur ein Savegame, das nicht funktioniert, argh!
+
+OilWars boni Edition (OilWars_boni_Edition_v_1_5_0_42.c4s)
+	- NOCH ein ... ne, moment, das ist Satire! Well done, +3 Vote!

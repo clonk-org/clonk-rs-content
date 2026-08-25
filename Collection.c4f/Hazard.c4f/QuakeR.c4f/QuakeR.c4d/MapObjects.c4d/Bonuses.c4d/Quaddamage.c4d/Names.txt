@@ -1,0 +1,2 @@
+DE:Quad-Damage
+US:Quad-Damage

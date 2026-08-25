@@ -1,0 +1,15 @@
+[DefCore]
+id=SCHN
+Name=Schiene
+Category=1
+Value=30
+Mass=0
+Width=110
+Height=24
+Offset=-55,0
+Picture=0,0,110,24
+Vertices=4
+VertexX=-10,-10,10,10
+VertexY=11,-10,-10,11
+VertexFriction=80,80,80,80
+Rotate=1

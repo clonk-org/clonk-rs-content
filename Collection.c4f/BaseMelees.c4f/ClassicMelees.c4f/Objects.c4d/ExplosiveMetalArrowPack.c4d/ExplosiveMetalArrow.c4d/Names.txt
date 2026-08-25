@@ -1,0 +1,2 @@
+DE:Metallsprengpfeil
+US:Explosive metalarrow

@@ -1,0 +1,17 @@
+[DefCore]
+id=DKR_
+Name=Kristall
+Version=4,9,5
+Category=1
+MaxUserSelect=10
+Width=300
+Height=300
+Offset=-150,-150
+Value=0
+Mass=50000
+Picture=0,0,300,300
+Vertices=1
+VertexY=1
+VertexFriction=100
+Rotate=1
+Float=1

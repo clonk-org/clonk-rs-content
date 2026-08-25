@@ -1,0 +1,9 @@
+[Teams]
+AllowHostilityChange=0
+AllowTeamSwitch=0
+
+	[Team]
+	id=1
+	Name=Spione
+	IconSpec=LMM1:4
+	PlrStartIndex=1

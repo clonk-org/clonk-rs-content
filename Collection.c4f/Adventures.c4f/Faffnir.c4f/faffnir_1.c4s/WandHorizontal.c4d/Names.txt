@@ -1,0 +1,2 @@
+DE:Wand Horizontal
+US:Wall

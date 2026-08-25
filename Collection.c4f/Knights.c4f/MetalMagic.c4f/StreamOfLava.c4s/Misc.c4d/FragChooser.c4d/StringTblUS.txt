@@ -1,0 +1,8 @@
+Inc=Increase relaunches
+Dec=Decrease relaunches
+nope=Only the first player can choose the relaunches
+show=Relaunchs at %d
+
+IncF=Increase fraglimit
+DecF=Decrease fraglimit
+showF=Fraglimit at %d

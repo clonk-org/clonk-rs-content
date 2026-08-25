@@ -1,0 +1,4 @@
+BuyG=Samen kaufen
+NowGrow=Die Samen wurden ausgesetzt.
+AlreadyProduce=Es wachsen bereits Pflanzen!
+Finish=Weinfässer abholbereit!

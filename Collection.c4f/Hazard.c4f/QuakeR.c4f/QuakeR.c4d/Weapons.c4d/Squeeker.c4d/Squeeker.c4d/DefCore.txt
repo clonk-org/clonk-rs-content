@@ -1,0 +1,30 @@
+[DefCore]
+id=QSQK
+Version=4,9,8,2
+Name=Squeeker
+Category=C4D_Living
+Mass=50
+Width=12
+Height=8
+Offset=-6,-4
+Vertices=4
+VertexX=-4, 0, 4, 0, -5, 5
+VertexY=-2, 3, -2, -4, -4, -4
+VertexCNAT=1, 8, 2, 4, 1, 2
+VertexFriction=100,100,100,100,100,100
+TimerCall=Life
+Pathfinder=1
+Timer=20
+NoBreath=1
+NoFight=1
+
+[Physical]
+Energy=30000
+Walk=120000
+Jump=40000
+Swim=140000
+Scale=70000
+Hangle=70000
+Breath=8000000
+CanScale=1
+CanHangle=1

@@ -1,0 +1,2 @@
+done=Die Goldstatue ist wieder aufgebaut und das Dorf ist gerettet!
+notdone=Du musst noch eine Goldstatue bauen. Aber gib acht, dass sie im Dorf steht!

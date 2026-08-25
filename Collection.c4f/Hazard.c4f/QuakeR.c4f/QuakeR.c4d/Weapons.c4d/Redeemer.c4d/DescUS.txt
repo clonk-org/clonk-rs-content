@@ -1,0 +1,6 @@
+Absolute annihilation.
+Can be fired normal or as a controllabele rocket.
+
+Ammunition(max.): 1
+Firemode 1: Nuclear rocket
+Firemode 2: Controlled rocket

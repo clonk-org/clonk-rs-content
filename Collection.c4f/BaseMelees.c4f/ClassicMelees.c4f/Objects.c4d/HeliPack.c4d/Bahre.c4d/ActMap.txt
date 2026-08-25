@@ -1,0 +1,15 @@
+[Action]
+Name=Emty
+Procedure=NONE
+Facet=0,0,20,10
+Directions=2
+NextAction=Hold
+
+[Action]
+Name=Trans
+Procedure=NONE
+Facet=21,0,20,10
+Directions=2
+Delay=2
+NextAction=Hold
+

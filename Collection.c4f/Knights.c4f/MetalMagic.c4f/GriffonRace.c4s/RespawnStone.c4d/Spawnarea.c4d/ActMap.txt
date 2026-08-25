@@ -1,0 +1,16 @@
+[Action]
+Name=Placement
+Procedure=FLOAT
+Length=1
+Delay=0
+NextAction=Hold
+Facet=0,0,4,4,-2,-2
+
+[Action]
+Name=Active
+Procedure=FLOAT
+Length=1
+Delay=20
+NextAction=Active
+Facet=1,1,1,1
+StartCall=CheckClonk

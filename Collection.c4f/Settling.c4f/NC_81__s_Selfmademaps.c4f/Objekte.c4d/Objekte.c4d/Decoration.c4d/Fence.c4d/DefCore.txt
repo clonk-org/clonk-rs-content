@@ -1,0 +1,17 @@
+[DefCore]
+id=FE6C
+Name=Fence
+Mass=50
+Category=1154
+Version=4,9,5
+Picture=0,35,63,126
+Offset=-5,-18
+Value=20
+Width=10
+Height=35
+Components=WOOD=2;
+SolidMask=0,0,10,35
+BlastIncinerate=30
+Vertices=2
+VertexX=0,0
+VertexY=-14,14

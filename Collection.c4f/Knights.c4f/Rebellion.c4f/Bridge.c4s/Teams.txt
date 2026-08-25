@@ -1,0 +1,15 @@
+[Teams]
+FreeForAll=0
+TeamColors=1
+
+	[Team]
+	id=1
+	Name=$left$
+	IconSpec=Portrait:KNIG::1
+	Color=255
+
+	[Team]
+	id=2
+	Name=$right$
+	IconSpec=Portrait:KNIG::3
+	Color=16711680

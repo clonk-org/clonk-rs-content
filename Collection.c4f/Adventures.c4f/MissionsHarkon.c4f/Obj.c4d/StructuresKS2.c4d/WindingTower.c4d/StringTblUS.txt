@@ -1,0 +1,6 @@
+Coal=Mining Coal
+Ore=Mining Ore
+ProducedCoal=Coalpiece produced!
+ProducedOre=Orepiece produced
+Producesth.=Choose Material
+Work=Mining

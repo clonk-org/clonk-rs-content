@@ -1,0 +1,4 @@
+Relaunch=%s needs a relaunch.
+TLeft=Legion of Teiwaz (Left)
+TRight=Order of Sawelô (Right)
+ScenDesc=Conquer the sainthood in the middle and try to hold it as long as possible! The team, which has a total of 10 min been in possession of the sainthood wins the melee.

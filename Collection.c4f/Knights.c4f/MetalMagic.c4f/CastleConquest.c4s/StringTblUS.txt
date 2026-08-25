@@ -1,0 +1,2 @@
+TCastle=Team Castle (middle)
+TCamp=Team Camp (sides)

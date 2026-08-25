@@ -1,0 +1,2 @@
+DE:Windmühle
+US:Windmill

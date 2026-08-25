@@ -1,0 +1,7 @@
+
+HostChoosesDifficulty=wählt den Schwierigkeitsgrad.|Die anderen müssen solange warten...
+Easy=Der Schwierigkeitsgrad '<c 88ff88>Leicht</c>' wurde gewählt!
+Normal=Der Schwierigkeitsgrad '<c ffff88>Normal</c>' wurde gewählt!
+Hard=Der Schwierigkeitsgrad '<c ff8888>Schwer</c>' wurde gewählt!|Ha ha! Viel Glück, du Wurm!
+
+Relaunch=%s startet neu.

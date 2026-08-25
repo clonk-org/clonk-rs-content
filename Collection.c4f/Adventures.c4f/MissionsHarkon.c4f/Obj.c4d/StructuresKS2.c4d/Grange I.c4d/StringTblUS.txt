@@ -1,0 +1,3 @@
+TxtUpgrade=Upgrade Grange
+TxtStage1=Stage Two
+TxtNotEnoughMaterials=Needs 5 Wood.

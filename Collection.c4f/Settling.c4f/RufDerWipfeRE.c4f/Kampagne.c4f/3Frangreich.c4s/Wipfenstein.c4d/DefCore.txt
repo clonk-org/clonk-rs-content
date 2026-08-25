@@ -1,0 +1,21 @@
+[DefCore]
+id=FEST
+Name=Burg Wipfenstein
+Version=4,9,1
+Category=1154
+MaxUserSelect=3
+Width=280
+Height=150
+Offset=-140,-75
+Value=35
+Mass=1000
+Components=_Y1A=6;ROCK=20;METL=8;
+Vertices=4
+VertexX=23,-130,-130,130,130
+VertexY=-79,-75,75,-75,75
+VertexFriction=50,50,100,100
+Exclusive=1
+Entrance=-66,54,49,22
+Construction=1
+ContainBlast=1
+AttractLightning=1

@@ -1,0 +1,5 @@
+[Script]
+Go=true
+
+[Effects]
+GlobalEffects=IntCPW2CastleChange(1,1,0,2,0,CPW2)

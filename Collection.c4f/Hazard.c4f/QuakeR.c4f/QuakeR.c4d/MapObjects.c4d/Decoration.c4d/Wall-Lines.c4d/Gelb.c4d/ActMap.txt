@@ -1,0 +1,8 @@
+[Action]
+Name=Scan
+Procedure=None
+Length=40
+Delay=1
+Facet=0,0,100,10
+FacetBase=1
+NextAction=Scan

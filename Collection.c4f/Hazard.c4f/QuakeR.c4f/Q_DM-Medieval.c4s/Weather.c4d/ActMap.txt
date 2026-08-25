@@ -1,0 +1,5 @@
+[Action]
+Name=Weather
+Length=1
+Delay=4
+NextAction=Weather

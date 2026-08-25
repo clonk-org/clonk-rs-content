@@ -1,0 +1,2 @@
+DE:Lastenaufzug
+US:Freight elevator

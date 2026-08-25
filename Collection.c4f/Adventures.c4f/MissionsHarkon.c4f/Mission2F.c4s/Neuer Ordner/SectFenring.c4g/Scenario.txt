@@ -1,0 +1,16 @@
+[Head]
+NoInitialize=1
+
+[Landscape]
+ExactLandscape=0
+MapWidth=80
+MapHeight=60
+NewStyleLandscape=1
+LeftOpen=600
+RightOpen=600
+NoScan=1
+
+[Weather]
+Climate=100,0
+Wind=-100,0
+ 

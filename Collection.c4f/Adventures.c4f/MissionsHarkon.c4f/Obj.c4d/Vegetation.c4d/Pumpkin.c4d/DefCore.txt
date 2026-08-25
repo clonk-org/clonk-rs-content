@@ -1,0 +1,10 @@
+[DefCore]
+id=PMK_
+Version=4,9,8
+Name=Pumpkin
+Category=C4D_StaticBack
+MaxUserSelect=3
+Width=63
+Height=29
+Offset=-31,-15
+Rotate=1

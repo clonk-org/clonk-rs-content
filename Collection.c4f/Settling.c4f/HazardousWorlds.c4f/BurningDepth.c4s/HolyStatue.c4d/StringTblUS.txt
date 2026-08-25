@@ -1,0 +1,5 @@
+MsgPart1=Nice!|You've found the first part of the body.|We send you a lorry with materials.|Build a base and watch for the other part of the body.
+MsgPart2=Fine!|You've got the other part of the body.|We'll support you with a little amount of gold.|Now look for the right arm.
+MsgPart3=Impressive!|The right arm is on its place again.|Now look for the broken left arm.|Here is a little bonus for you.
+MsgPart4=Amazing!|The left arm is now where it used to be.|The last parts are deep down.|But here is a lory with materials for you.
+MsgPart5=Excellent!|Just one part is missing.|We are looking forward to see the complete statue|and send you more gold.

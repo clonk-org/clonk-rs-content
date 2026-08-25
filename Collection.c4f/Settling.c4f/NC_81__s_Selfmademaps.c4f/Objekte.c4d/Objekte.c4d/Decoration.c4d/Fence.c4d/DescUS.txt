@@ -1,0 +1,1 @@
+Prevents animals from running away.

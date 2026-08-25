@@ -1,0 +1,44 @@
+[FolderMap]
+MinResX=640
+MinResY=480
+ScenInfoArea=10,80,214,502
+FullscreenBG=1
+
+	[Scenario]
+	File=TropicalSeas.c4s
+	OverlayImage=Highlight.png
+	Area=320,450,180,90
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=2130706432
+	TitleColorActive=16711680
+	TitleOffX=70
+	TitleOffY=40
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=ShallowWater.c4s
+	OverlayImage=Highlight.png
+	Area=575,450,170,105
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=2130706432
+	TitleColorActive=16711680
+	TitleOffX=70
+	TitleOffY=40
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=CoralSkys.c4s
+	OverlayImage=Highlight.png
+	Area=605,170,255,200
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=2130706432
+	TitleColorActive=16711680
+	TitleOffX=125
+	TitleOffY=100
+	TitleAlign=1
+	TitleUseBookFont=0

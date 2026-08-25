@@ -1,0 +1,7 @@
+JoinLeft=%s helps the left Team.
+JoinRight=%s supports the right team.
+Relaunch=%s (%s) died.
+TeamWins=Team %s has all three sainthoods and wins!
+Left=Left
+Right=Right
+Middle=Middle

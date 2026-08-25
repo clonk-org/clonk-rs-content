@@ -1,0 +1,16 @@
+[PlayerInfoList]
+LastPlayerID=1
+
+  [Client]
+  ID=0
+  Flags=Initial|Developer
+
+    [Player]
+    Name="$TeamSkeletons$"
+    Flags=Joined|AttributesFixed|NoScenarioInit|NoEliminationCheck|Invisible
+    ID=1
+    Type=Script
+    Color=65535
+    OriginalColor=65535
+    GameNumber=10
+    Team=2

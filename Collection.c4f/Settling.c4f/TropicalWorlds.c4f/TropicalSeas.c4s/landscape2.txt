@@ -1,0 +1,52 @@
+/* Lapsus Map */
+
+//overlay Mat { algo=rndchecker; a=8; zoomX=-70; zoomY=-100; turbulence=1000; };
+overlay Mat { algo=boxes; a=4; b=20; zoomX=60; turbulence=1000; };
+overlay Mat2 { algo=rndchecker; a=3; hgt=40; mat=Sand; tex=Smooth; turbulence=100; zoomX=-100; zoomY=-100; loosebounds=1; sub=1; };
+overlay Earth { algo=rndchecker; a=3; turbulence=10000; zoomX=-90; zoomY=-90; };
+
+map Lapse {
+  // Meer
+  overlay { algo=solid; y=18px; mat=Water; tex=Liquid; sub=0; };
+
+
+  overlay { algo=lines; y=15px; hgt=10px; a=25; b=55; mat=Earth; tex=Smooth; turbulence=80; loosebounds=1; sub=1;
+    overlay { algo=rndchecker; a=8; mat=Earth; tex=Swirl; turbulence=100; sub=1; };
+    Mat2 { algo=bozo; a=8; sub=0; };
+
+    overlay { algo=border; a=2; b=2; mat=Earth; tex=Smooth3; turbulence=50; sub=1; }; 
+    overlay { algo=border; b=2; hgt=50; b=0; mat=Sand; tex=Smooth; turbulence=1000; sub=1; };
+  };
+  overlay { algo=solid; loosebounds=1; zoomY=-50; turbulence=1000;
+    x=-100; wdt=300; y=12px; } &
+
+  overlay { algo=sin; zoomX=60; zoomY=33; lambda=0; loosebounds=1; invert=1; turbulence=1000;
+    ox=25px; x=-100; wdt=300; oy=12px; hgt=61; } &
+
+  overlay { algo=bozo; a=10; loosebounds=1; invert=1; turbulence=1000;
+    ox=0 - 100; x=-100; wdt=300; y=70; } &
+
+  overlay { algo=sin; mat=Earth; tex=Ridge; zoomY=-5; zoomX=60; sub=0; turbulence=100;
+    ox=-20px; oy=5px;
+    Earth { mat=Rock; tex=Structure; };
+    Earth { mat=Rock; tex=Flare3; };
+    Mat2 { };
+
+    overlay { algo=border; a=2; b=2; mat=Sand; tex=Smooth3; turbulence=0; sub=0; };
+
+    overlay { algo=border; b=2; hgt=25; b=0; mat=Sand; tex=Smooth; turbulence=1000; sub=0; };
+    };
+    overlay { algo=solid; x=-20; wdt=140; y=75; mat=Earth; tex=Rough; turbulence=500; loosebounds=1; zoomX=60;
+        Earth { mat=Coral3; tex=Coral1; rotate=90; zoomX=10;zoomY=20;};
+    Earth { mat=Coral1; tex=Coral2; rotate=90; zoomX=10;zoomY=20;};
+    Earth { mat=Coral2; tex=Coral3; rotate=90; zoomX=10;zoomY=20;};
+    Earth { mat=Earth; tex=Ridge; };
+    Earth { mat=Earth; tex=Smooth; };
+    Earth { mat=Gold; tex=Rough; };
+    Earth { mat=Rock; tex=Rock; };
+    Earth { mat=Ore; tex=Swirl; };
+    Earth { mat=Coal; tex=Swirl; };
+    Earth { mat=Sulphur; tex=Swirl; };
+    Earth { mat=Earth; tex=Smooth2; };
+  };
+};

@@ -1,0 +1,8 @@
+[Action]
+Name=WarnAction
+Procedure=ATTACH
+Length=2
+Delay=15
+Facet=0,0,10,12
+FacetBase=0
+NextAction=WarnAction

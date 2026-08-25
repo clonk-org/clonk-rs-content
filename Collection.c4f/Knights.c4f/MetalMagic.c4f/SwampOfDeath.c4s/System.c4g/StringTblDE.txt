@@ -1,0 +1,8 @@
+TxtCreateconstructionsi=Baustelle errichten
+TxtNoconstructionplansa=Keine Baupläne verfügbar
+TxtConstructions=Konstruktion: %s
+NotEnoughMoney=Nicht genug Geld!
+TxtRepair=Reparieren: %s
+TxtNoPlans=Keine Rezepte
+TxtProduceMenu=Brauen: %s
+TxtUpgrade=Ausbauen: %s

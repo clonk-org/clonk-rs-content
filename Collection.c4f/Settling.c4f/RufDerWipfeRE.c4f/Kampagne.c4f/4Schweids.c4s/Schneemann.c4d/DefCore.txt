@@ -1,0 +1,7 @@
+[DefCore]
+id=SCHN
+Name=Schneemann
+Category=1
+MaxUserSelect=10
+Width=16
+Height=20

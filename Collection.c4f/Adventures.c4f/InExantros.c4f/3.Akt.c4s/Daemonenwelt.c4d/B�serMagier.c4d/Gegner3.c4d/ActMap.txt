@@ -1,0 +1,8 @@
+[Action]
+Name=New
+Procedure=NONE
+Length=1
+Delay=40
+Facet=0,0,1,1
+NextAction=New
+EndCall=Gegner

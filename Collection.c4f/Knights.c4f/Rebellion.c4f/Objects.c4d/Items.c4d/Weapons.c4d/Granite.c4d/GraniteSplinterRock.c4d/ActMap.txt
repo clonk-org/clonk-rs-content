@@ -1,0 +1,8 @@
+[Action]
+Name=Rock
+Directions=2
+Length=3
+Delay=0
+Facet=0,0,6,6
+NextAction=Hold
+FlipDir=1

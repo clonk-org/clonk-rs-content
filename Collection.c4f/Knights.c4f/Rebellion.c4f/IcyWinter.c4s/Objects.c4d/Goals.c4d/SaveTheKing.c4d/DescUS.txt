@@ -1,0 +1,1 @@
+The attackers must bring the king to the left or right border of the map. The defenders must kill the king.

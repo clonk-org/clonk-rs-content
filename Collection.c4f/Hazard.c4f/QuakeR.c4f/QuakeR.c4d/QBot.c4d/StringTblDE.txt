@@ -1,0 +1,2 @@
+ChangeSkin=Aussehen wechseln
+Random=Zufall

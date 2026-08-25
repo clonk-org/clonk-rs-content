@@ -1,0 +1,16 @@
+[Teams]
+AllowHostilityChange=false
+LastTeamID=2
+TeamColors=true
+
+  [Team]
+  id=1
+  Name=Rustuff
+  PlrStartIndex=1
+  IconSpec="_HEL"
+
+  [Team]
+  id=2
+  Name=McClomby
+  PlrStartIndex=2
+  IconSpec="BLMP"

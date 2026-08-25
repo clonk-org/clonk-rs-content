@@ -1,0 +1,9 @@
+Relaunch=%s has already waste %d of %d relaunches.
+Winner=%s has won!
+MsgCrossbow=Choose crossbow
+MsgHook=Choose hook
+MsgDagger=Choose knifes
+DescCrossbow=The clonk starts with a crossbow and munition.
+DescHook=The clonk recieves a hook and a crossbow.
+DescDagger=The clonk gets a knife-pack.
+Score=Score

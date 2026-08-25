@@ -1,0 +1,5 @@
+BuyG=Buy Grain
+BuyS=BuyScythe
+ProduceBread=Bake bread
+NotenoughFlour=Not enough Flour!
+NotenoughMoney=Not enough Money!

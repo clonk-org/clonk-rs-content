@@ -1,0 +1,7 @@
+JoinAssassin=%s tritt den Meuchelmördern bei.
+JoinGuards=%s unterstuetzt die Wachen.
+TeamAssassin=Meuchelmörder
+TeamGuard=Wachen
+Relaunch=%s (%s) starb.
+GoalReached=Die Edelsteine konnten gestohlen werden!
+GoalFailed=Die Meuchelmörder konnten nicht genug Edelsteine stehlen!

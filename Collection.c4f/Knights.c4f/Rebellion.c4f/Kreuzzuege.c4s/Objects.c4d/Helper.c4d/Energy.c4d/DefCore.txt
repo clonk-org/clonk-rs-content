@@ -1,0 +1,13 @@
+[DefCore]
+id=_EBR
+Name=Energy bar
+Category=25165825
+Version=4,9,5
+Picture=0,0,18,4
+Offset=-9,-2
+Width=18
+Height=4
+NoSell=1
+NoGet=1
+Timer=5
+TimerCall=Check

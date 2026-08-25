@@ -1,0 +1,118 @@
+map Frostyhills {
+  /* Definitionen */
+  overlay Mat {
+    algo = bozo;
+    sub = 1;
+    a = 30;
+    turbulence = 5000;
+    zoomX = 40;
+    zoomY = 20;
+  };
+
+  overlay Dots {
+    algo = random;
+    a = 2;
+  };
+
+  overlay AlterMat {
+    sub = 1;
+    turbulence = 10;
+    algo = rndchecker;
+    zoomX = -70;
+    zoomY = -70;
+  };
+
+  /* Karte an sich */
+  overlay Mountains {
+    zoomX = 99;
+    turbulence = 100;
+    grp = 1;
+    // Erde
+    overlay Earth { algo=sin; oy = 10; mat=Earth; tex=Smooth; zoomX = 80; zoomY = 60; turbulence = 100; oy = 30;
+      // Materialien in Erde
+      overlay InEarth {
+        mask = 1;
+
+        // Erdvariationen
+        AlterMat { mat = Earth; tex = Smooth2; a = 4; };
+        AlterMat { mat = Earth; tex = Smooth3; a = 4; };
+        AlterMat { mat = Earth; tex = Ridge; a = 4; };
+
+        // Eis
+        AlterMat { mat = Ice; tex = Smooth; zoomY = -50; a = 8; };    
+
+        // Kohle
+        AlterMat { mat = Coal; tex = Swirl; a = 6; };
+        
+        // Kristall
+        AlterMat { mat = Crystal; tex = Ridge; a = 9;
+          AlterMat { mat = Crystal; tex = Flare; a = 3; };
+        };
+        // Gold-Stein-Gemisch
+        AlterMat { mat = Rock; tex = Smooth; a = 6; zoomX = 35; zoomY = 35;
+          // Goldpunkte
+          Dots { mat = Gold; tex = Ridge; };
+          // Rahmen
+          overlay { algo = border; a = 2; b = 2; mat = Granite; tex = Rock; turbulence = 50; loosebounds = 1;
+            AlterMat {a = 10; mat = Rock; tex = Rock; zoomX = -90; zoomY = -90; sub = 0; };
+          };
+        };
+
+        AlterMat {mat = DuroLava; tex = Liquid; a = 4; zoomY = -90; zoomX = 20;
+          // Rahmen
+          overlay { algo = border; a = 3; b = 1; mat = Granite; tex = Rough; loosebounds = 1;
+            zoomX = 50; zoomY = 50;
+            AlterMat { mat = Earth; tex = Smooth; a = 1; };
+            AlterMat { mat = Ashes; tex = Smooth3; a = 2; };
+            AlterMat { mat = Granite; tex = Rock; a = 2; };
+          };
+        };
+
+        // Tunnel
+        AlterMat {mat = Tunnel; tex = Smooth; zoomX = -75; zoomY = -60; a = 10;
+          // Rahmen
+          overlay { algo = border; a = 1; b = 1;
+            mat = FlyAshes; tex = Smooth; loosebounds = 1;
+            Dots { mat = Granite; tex = Rough; a = 3; };
+          };
+        };
+      };
+
+      // Eisrand (unten)
+      overlay IceBorder { algo = border; a = 15; b = 15; mat = Ice; tex = Structure; sub = 1;
+        AlterMat { mat = Ice; tex = Ridge; sub = 1; a = 1;
+          AlterMat { mat = Ice; tex = Flare; sub = 1; a = 3; };
+          AlterMat { mat = Ice; tex = Flare2; sub = 1; a = 4; };
+        };
+        AlterMat { mat = Rock; tex = Smooth2; zoomX = -70; zoomY = -50; sub = 1; };
+        AlterMat { mat = Granite; tex = Rough; sub = 1; a = 3;
+          AlterMat { mat = Granite; tex = Smooth2; sub = 1; a = 3; };
+          AlterMat { mat = Granite; tex = Rock; sub = 1; a = 5; };
+        };
+      };
+      // Schneerand (mittig)
+      overlay SnowBorder { algo = border; a = 7; b = 7; mat = Snow; tex = Spots; sub = 0;
+        AlterMat { mat = Snow; tex = Sponge; sub = 0; a = 2; zoomX = 30; zoomY = 60;
+          AlterMat { mat = Snow; tex = Spots; a = 4; sub = 0; };
+          AlterMat { mat = Snow; tex = Spots2; a = 4; sub = 0; };
+          AlterMat { mat = Snow; tex = Sponge; a = 4; sub = 0; };
+          Dots { mat = Ice; tex = Sponge; a = 4; sub = 0; };
+        };
+        AlterMat { mat = Ice; tex = Smooth; zoomX = -50; zoomY = -50; sub = 0; loosebounds = 1; turbulence = 500;
+          AlterMat { mat = Ice; tex = Spots; tex = Structure; sub = 0; a = 3; };
+          AlterMat { mat = Ice; tex = Sponge; tex = Structure; sub = 0; a = 3; };
+          Dots { mat = Snow; tex = Spots; a = 4; sub = 0; };
+        };
+      };
+      // Erdrand (ganz oben)
+      overlay EarthBorder { algo = border; a = 1; b = 1; mat = Earth; tex = Smooth3; sub = 0;
+        AlterMat {a = 2; mat = Earth; tex = Smooth; sub = 0; };
+        AlterMat {a = 4; mat = Ashes; tex = Swirl; sub = 0; };
+      };
+      // Kristallrand (oberst)
+      overlay CrystalBorder { algo = border; a = 1; b = 10; mask = 1;
+        AlterMat {a = 8; mat = Crystal; tex = Flare; sub = 0; };
+      };
+    };
+  };
+};

@@ -1,0 +1,2 @@
+NoAnimal=No griffon or saurian available.
+MustStand=The paladin must stand on the floor for this wonder.

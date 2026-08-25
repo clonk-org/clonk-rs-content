@@ -1,0 +1,8 @@
+[DefCore]
+id=_RMT
+Name=MagicRemount
+Version=4,9,5,3
+Category=131073
+Picture=0,0,64,64
+Value=15
+Components=IMUS=2;

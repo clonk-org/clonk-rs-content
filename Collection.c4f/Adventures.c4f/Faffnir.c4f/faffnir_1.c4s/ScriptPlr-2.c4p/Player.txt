@@ -1,0 +1,19 @@
+[Player]
+RankName=Rang
+Score=500
+Rounds=5
+RoundsWon=5
+TotalPlayingTime=8
+
+[Preferences]
+Control=0
+AutoContextMenu=0
+
+[LastRound]
+Title="Faffnir 1"
+Date=1225819744
+Duration=1
+Won=1
+FinalScore=100
+TotalScore=500
+Bonus=100

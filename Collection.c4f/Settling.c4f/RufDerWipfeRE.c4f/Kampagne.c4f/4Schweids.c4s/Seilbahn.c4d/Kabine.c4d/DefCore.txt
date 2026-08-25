@@ -1,0 +1,17 @@
+[DefCore]
+id=SBKA
+Name=Kabine
+Category=4
+MaxUserSelect=3
+Width=41
+Height=28
+Offset=-20,-14
+Value=80
+Mass=1600
+Vertices=5
+VertexX=0,
+VertexY=-8,
+VertexFriction=50,50,100,100
+BlastIncinerate=70
+SolidMask=41,0,41,28
+Entrance=-17,-5,16,18

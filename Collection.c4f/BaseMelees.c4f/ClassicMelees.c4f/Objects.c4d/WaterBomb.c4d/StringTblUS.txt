@@ -1,0 +1,2 @@
+TxtFuse=Fuse: %d seconds
+TxtChangeFuse=Change fuse

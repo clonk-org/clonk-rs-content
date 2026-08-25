@@ -1,0 +1,12 @@
+[DefCore]
+id=FLVS
+Name=Symbol
+Version=4,9,5
+Category=8388609
+MaxUserSelect=10
+Width=3
+Height=1
+Offset=-1,-1
+Vertices=1
+VertexY=-20
+VertexFriction=20

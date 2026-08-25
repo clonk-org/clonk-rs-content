@@ -1,0 +1,10 @@
+[DefCore]
+id=QMNG
+Name=Manager
+Version=4,9,5
+Category=C4D_StaticBack|C4D_Rule
+MaxUserSelect=1
+Width=1
+Height=1
+Offset=-1,-1
+Picture=0,0,64,64

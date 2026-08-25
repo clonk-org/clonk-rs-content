@@ -1,0 +1,8 @@
+Relaunch=%s hat schon %d von %d Relaunches verbraucht.
+Winner=%s hat gewonnen!
+MsgMusket=Muskete wählen
+MsgBow=Bogen wählen
+MsgSword=Schwert wählen
+DescMusket=Der Clonk bekommt eine Muskete mit Munition.
+DescBow=Der Clonk startet mit einem Bogen und zwei Pfeilpaketen.
+DescSword=Der Clonk erhält einen Zweihänder, ein Schild und ein Schwert.

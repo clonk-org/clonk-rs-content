@@ -1,0 +1,11 @@
+[DefCore]
+id=_TIM
+Name=Timer
+Category=1
+Version=4,9,5
+Picture=0,0,17,16
+Offset=-8,-8
+Width=17
+Height=16
+Timer=38
+TimerCall=Check

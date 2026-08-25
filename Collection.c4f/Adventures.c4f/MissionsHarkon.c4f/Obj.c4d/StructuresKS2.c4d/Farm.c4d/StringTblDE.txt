@@ -1,0 +1,5 @@
+BuyG=Samen kaufen
+BuyS=Sense kaufen
+ProduceBread=Brot backen
+NotenoughFlour=Nicht genügend Mehl vorhanden!
+NotenoughMoney=Nicht genug Geld!

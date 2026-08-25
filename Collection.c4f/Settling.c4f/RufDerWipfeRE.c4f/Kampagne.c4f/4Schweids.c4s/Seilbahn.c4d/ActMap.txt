@@ -1,0 +1,16 @@
+[Action]
+Name=Right
+Procedure=NONE
+FacetBase=1
+Delay=35
+NextAction=Right
+FacetTopFace=1
+EnergyUsage=100
+
+[Action]
+Name=Left
+Procedure=NONE
+Facet=80,0,80,60
+Delay=35
+NextAction=Left
+FacetTopFace=1

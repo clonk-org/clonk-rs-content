@@ -1,0 +1,2 @@
+TimeTo=%d Sekunden bis zum Beitreten.
+NoSainthood=Dein Team hat gerade kein Heiligtum.

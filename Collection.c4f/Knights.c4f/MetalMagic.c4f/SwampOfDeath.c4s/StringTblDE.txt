@@ -1,0 +1,10 @@
+NameNekro=Totenbeschwörer
+MsgEnd=Der Totenbeschwörer wurde besiegt!
+
+MnuChooseDifficulty=Spielstufe wählen
+MnuLevelItmHard=Schwierigkeit: Schwer
+MnuLevelItmNormal=Schwierigkeit: Normal
+MnuLevelItmEasy=Schwierigkeit: Leicht
+MnuLevelItmHardDesc=Gegner: stark und viele
+MnuLevelItmNormalDesc=Gegner: mittel
+MnuLevelItmEasyDesc=Gegner: schwach und wenig

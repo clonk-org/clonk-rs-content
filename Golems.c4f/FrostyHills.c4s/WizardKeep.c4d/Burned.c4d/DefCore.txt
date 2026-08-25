@@ -1,0 +1,22 @@
+[DefCore]
+id=BZKP
+Name=Burned wizard keep
+Version=4,9,5
+Category=2
+Width=64
+Height=90
+Offset=-32,-45
+Value=80
+Mass=4500
+Components=ROCK=6;WOOD=2;
+Picture=0,0,64,90
+Vertices=4
+VertexX=-22,31,20,-27
+VertexY=-44,-36,44,44
+VertexFriction=100,100,100,100
+Construction=1
+Exclusive=1
+ConstructTo=WZKP
+Rotate=1
+BlastIncinerate=110
+ContainBlast=1
