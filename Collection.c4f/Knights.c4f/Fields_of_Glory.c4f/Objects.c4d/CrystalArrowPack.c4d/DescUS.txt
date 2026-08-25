@@ -1,0 +1,2 @@
+Deadly ammunition against magic liveforms.
+If the taget has magic power, this will cause deadly damage.

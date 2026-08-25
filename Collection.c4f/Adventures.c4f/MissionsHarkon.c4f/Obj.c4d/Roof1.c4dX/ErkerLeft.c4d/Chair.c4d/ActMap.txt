@@ -1,0 +1,11 @@
+[Action]
+Name=Walk
+FlipDir=1
+Procedure=WALK
+Directions=2
+Length=1
+Delay=1000
+Facet=0,0,10,15
+NextAction=Walk
+
+

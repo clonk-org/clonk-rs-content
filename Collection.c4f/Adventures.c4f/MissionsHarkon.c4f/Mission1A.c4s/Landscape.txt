@@ -1,0 +1,8 @@
+overlay mat { algo=rndchecker; zoomX=-35; zoomY=-35; a=10; turbulence=200; loosebounds=1; };
+overlay gold { mat=Gold; algo=rndchecker; loosebounds=1; turbulence=500; zoomX=-30; zoomY=-30; tex=Rough; a=10; };
+overlay rect {  wdt=10px; hgt=10px; };
+
+map World
+  {
+  rect { mat=Water; tex=Liquid; sub=0; x=0px; y=0px; };
+  };

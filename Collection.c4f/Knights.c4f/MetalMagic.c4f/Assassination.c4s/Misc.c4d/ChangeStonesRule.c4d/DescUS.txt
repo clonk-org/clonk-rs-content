@@ -1,0 +1,1 @@
+Here the first player can change the amount of gemstones to be stolen.

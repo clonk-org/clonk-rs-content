@@ -1,0 +1,7 @@
+[DefCore]
+id=LADR
+Name=LadderHelper
+Category=1
+Width=20
+Height=100
+Offset=-10,-50

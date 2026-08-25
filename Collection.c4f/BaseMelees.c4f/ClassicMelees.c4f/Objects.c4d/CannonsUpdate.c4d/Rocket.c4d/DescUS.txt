@@ -1,0 +1,1 @@
+Heavy long range weapon. Is infected by wind and has low target accuracy. Load the rocket with oil at the cannon tower. The rocket can carry fuel from 1 oil barrel. The rockets fuel tank and therefore range can be setup at the dismantled rocket by command dig.

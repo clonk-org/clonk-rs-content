@@ -1,0 +1,14 @@
+[Material]
+Name=Waste
+Color=128,64,0,65,116,50,119,47,47
+Shape=2
+Density=50
+Friction=80
+BlastFree=1
+Blast2PXSRatio=1
+MaxAirSpeed=25
+WindDrift=60
+Instable=1
+MaxSlide=1
+Placement=20
+TextureOverlay=Muell

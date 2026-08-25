@@ -1,0 +1,2 @@
+Red=Rebels
+Blue=CivilProtection

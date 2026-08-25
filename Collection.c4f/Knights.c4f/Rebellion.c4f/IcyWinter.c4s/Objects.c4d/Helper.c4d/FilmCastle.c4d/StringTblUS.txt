@@ -1,0 +1,7 @@
+film1=Aaah... This chicken tastes very good! Yummy!
+film2=Master...?
+film3=You risk disturbing me while eating?
+film4=I beg your pardon, but...
+film5=What happened? Talk!
+film6=The followers of the king attack from both sides!
+film7=Spring to arms!

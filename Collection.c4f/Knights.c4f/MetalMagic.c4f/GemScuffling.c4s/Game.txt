@@ -1,0 +1,6 @@
+[Script]
+GlobalNamed=4;lgt_enlightment=A0,lgt_last_lgt_frame=A0,aGems=a[2;a[0;],a[0;]],aTeamsPayed=a[0;]
+Go=true
+
+[Effects]
+GlobalEffects=IntCPW2CastleChange(1,1,0,2,0,HJ5P)

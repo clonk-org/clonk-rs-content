@@ -1,0 +1,1 @@
+TimeTo=%d seconds until the relaunch.

@@ -1,0 +1,14 @@
+[Teams]
+LastTeamID=2
+
+  [Team]
+  id=1
+  Name=Left team
+  Color=15990784
+  IconSpec="TMS1:4"
+
+  [Team]
+  id=2
+  Name=Right team
+  Color=51200
+  IconSpec="TMS1:7"

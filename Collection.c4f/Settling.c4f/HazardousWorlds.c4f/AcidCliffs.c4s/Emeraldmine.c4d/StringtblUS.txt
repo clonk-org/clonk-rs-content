@@ -1,0 +1,3 @@
+MsgGoalFulfilled=All emerald has been mined.
+MsgGoalUnfulfilled=You still have to mine %d units of solid emerald and collect %d emeralds.
+MsgGoalUnfulfilled2=You still have to mine an unknown amount of solid emerald and collect %d emeralds.

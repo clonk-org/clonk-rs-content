@@ -1,0 +1,5 @@
+[DefCore]
+id=BM5P
+Name=SubLocker
+Version=4,9,8
+Category=1

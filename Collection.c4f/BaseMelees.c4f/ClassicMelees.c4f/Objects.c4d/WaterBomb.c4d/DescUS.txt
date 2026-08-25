@@ -1,0 +1,2 @@
+A water bomb, made to destroy submarines. While exploding under water, it creates a preasure wave, destroying the thin skin of submarines.
+Press <Double Dig> to change the countdown.

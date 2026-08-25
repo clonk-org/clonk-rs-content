@@ -1,0 +1,18 @@
+[Teams]
+AllowHostilityChange=true
+LastTeamID=2
+TeamColors=true
+
+  [Team]
+  id=1
+  Name=Rustuff
+  PlrStartIndex=1
+  Color=65280
+  IconSpec="SNKE"
+
+  [Team]
+  id=2
+  Name=Hörx
+  PlrStartIndex=2
+  Color=34304
+  IconSpec="MONS"

@@ -19,6 +19,52 @@
 /MetalMagicExtra.c4d/** binary
 /Melees.c4f/Queron3.c4s/** binary
 
+# The Ultimate Clonk Compilation v3.0 curation and the dependency packs it
+# needs. Same reasoning again: these are exact copies of packs as received from
+# their individual authors, so nothing may rewrite their bytes.
+#
+# Collection.c4f holds packed .c4s scenarios next to plain Folder.txt/Title.txt/
+# Desc*.rtf files. Without this rule the eol=crlf default would normalise those
+# text files on staging and move the bytes of a pack we do not own.
+/Collection.c4f/** binary
+/Extra.c4g/** binary
+
+# Exploded into directories rather than left as single packed files: cargo xtask
+# scenario-sweep walks the filesystem, so a packed .c4f hides every scenario
+# inside it from the sweep. MissionsHarkon.c4f is exploded for a second reason —
+# at 105 MB packed it exceeds GitHub's per-file push limit.
+/Golems.c4f/** binary
+/ModernCombat.c4f/** binary
+
+# Left packed, one file each. A packed group returns its stored header order,
+# which is host-stable and is what C++ C4MaterialMap::Load consumes, where an
+# unpacked directory would return unsorted readdir order.
+/BlacksCMC-Waffenmod.c4d binary
+/Clinfinity.c4d binary
+/ClonkPartyRes.c4d binary
+/ClonkPartyRes2.c4d binary
+/Clonkrix.c4d binary
+/EkeBot.c4d binary
+/Explorer.c4d binary
+/GIDL_Race.c4d binary
+/Golems.c4d binary
+/INEXSzenarioObjekte.c4d binary
+/InExantros.C4D binary
+/Jetbelt.c4d binary
+/KdD_Magie_Pack.c4d binary
+/KnightMelees.c4d binary
+/KnightSkirmishs.c4d binary
+/ModernCombat.c4d binary
+/PhysGun.c4d binary
+/Ropepack.c4d binary
+/RopepackRemake.c4d binary
+/RufDerWipfe.c4d binary
+/WesternBalancing.c4d binary
+/WesternBugfixes.c4d binary
+/ZombieWars.c4d binary
+/Zombieland.c4d binary
+/Zombiesounds.c4d binary
+
 # Repository infrastructure, not game content. Keep it at LF: the eol=crlf rule
 # above is there to preserve pack bytes, and it would otherwise reach the shell
 # scripts embedded in the workflows and the test scripts beside them.

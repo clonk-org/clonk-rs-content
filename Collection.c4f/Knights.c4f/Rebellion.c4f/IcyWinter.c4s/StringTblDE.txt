@@ -1,0 +1,11 @@
+
+castle=Lorthemus' Garde
+left=Invasoren von links
+right=Invasoren von rechts
+
+EmptyCastle=Da niemand für Lorthemus spielen wollte, ist jetzt %s in der Burg.
+
+melting=Ah... Der Eisblock beginnt zu schmelzen!
+tlog1=Thanathos gehört jetzt zu %s.
+tlog2=Ziel der Angreifer ist nun, ihn lebend an den linken oder rechten Rand der Karte zu bringen.
+free=Ich bin frei! Aber... wo bin ich hier??

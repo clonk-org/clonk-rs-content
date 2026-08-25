@@ -1,0 +1,5 @@
+A gauntlet for punching people. Very hard. The ultimate melee-weapon.
+You can punch enemies with it, or fling them away with the second firemode.
+
+Firemode 1: Punch
+Firemode 2: Impulse

@@ -1,0 +1,2 @@
+Bäume sind nun auch im Vordergrund, damit ein Wald auch ein wenig wie ein Wald wirkt.
+Das macht sich aber beim Durchlaufen eines "Waldes" nicht so bemerkbar, sondern erst wenn man da z.B. Häuser baut und so.

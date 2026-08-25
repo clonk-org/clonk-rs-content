@@ -1,0 +1,3 @@
+Je öfter dieses Objekt aktiviert ist, umso mehr ist die Landkarte in Dunkelheit gehüllt.
+Durch an Tunneln oder an Gebäuden angebrachten Fackeln kann man einige Stellen etwas aufhellen, Basen haben immer einen Sichtradius.
+Je nachdem, ob Tag oder Nacht ist, der Clonk sich im Freien oder im Tunnel befindet, variiert der Sichtradius der Fackeln und Clonks.

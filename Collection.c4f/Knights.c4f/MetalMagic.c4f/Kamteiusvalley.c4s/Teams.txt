@@ -1,0 +1,13 @@
+[Teams]
+
+	[Team]
+	id=1
+	Name=$TKing$
+	PlrStartIndex=1
+	IconSpec=TMS1:3
+
+	[Team]
+	id=2
+	Name=$TPaladin$
+	PlrStartIndex=2
+	IconSpec=TMS1:2

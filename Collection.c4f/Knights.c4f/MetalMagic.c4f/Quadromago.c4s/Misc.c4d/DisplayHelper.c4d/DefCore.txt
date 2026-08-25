@@ -1,0 +1,13 @@
+[DefCore]
+id=DSHP
+Name=Helper
+Version=4,9,5
+Category=4
+MaxUserSelect=10
+Width=6
+Height=6
+Offset=-3,-3
+
+[Physical]
+Float=1000
+ 

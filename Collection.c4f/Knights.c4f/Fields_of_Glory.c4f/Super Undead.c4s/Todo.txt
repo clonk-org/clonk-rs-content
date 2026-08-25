@@ -1,0 +1,20 @@
+
+Sparks:
+IDs nach bedarf ändern
+FoG/Sparks.c4g/Zeile27
+
+Equipment:
+Ids nach bedarf ändern
+Fog/Script.c/Equip()
+
+Relaunchzahl:
+Zahl nach bedarf ändern
+Fog/Script.c/static const MaxRelaunch = 2;
+
+RelaunchSparks:
+Bei nicht bedarf entfernen. Ich find die sehen toll aus :)
+Fog/Script.c/RelaunchPlayer()/ PlacementEffects() entfernen
+
+Startposition für relaunchende:
+Immo ist sie irgendwo in der mitte. Kann aber bei bedarf geändert werden
+Fog/Script.c/RelaunchPlayer/var iX=

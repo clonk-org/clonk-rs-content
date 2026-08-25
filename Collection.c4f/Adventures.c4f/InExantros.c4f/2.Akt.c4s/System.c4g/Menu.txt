@@ -1,0 +1,47 @@
+#strict
+#appendto KNIG
+
+private func ShowUnbuckleMenu()
+{
+  var obj;
+  CreateMenu(S_01, 0, 0, 0, "$CtxEquipment$", 0, 1);
+  var i = 0;
+
+  AddMenuItem("$OutBag$", "OutBag", S_07, 0, 0, 0);
+  AddMenuItem("$Bag$", "Bag", S_08, 0, 0, 0);
+
+
+//DAS HIER IST NEU!!!
+  if(gxtele==1)  AddMenuItem("Telepotieren", "XTeleport", S_03, 0, 0, 0);
+
+
+
+  AddMenuItem("Tagebuch", "Eintrag", S_09, 0, 0, 0);
+  AddMenuItem("Zauberbuch", "Zauberbuch", S_10, 0, 0, 0);
+  if(Contents(0))  AddMenuItem("Objektinformation", "InfoObject", GetID(Contents(0)), this(), 0, GetID(Contents(0)));
+
+  if(pWeapon)  AddMenuItem(Format("%s %s", GetName(pWeapon),GetValueString(pWeapon)), Format("MenuEquipment()"), GetID(pWeapon), 0,0,0,0, 4, pWeapon);
+	else AddMenuItem("<i>Waffe-Leer</i> ", Format("MenuEquipment()"), S_11, 0, 0, 0);
+
+  if(pWeapon)  if(ObjectCall(pWeapon,"IsTwohanded"))
+	AddMenuItem("<i>($MsgTwoHandedWeapon$)</i> ", Format("MenuEquipment(%d)", 1), S_12, 0, 0, 0);
+	else
+  if(obj = GetWearObject(1))
+	AddMenuItem(Format("%s %s", DoGetName(obj),GetValueString(obj)), Format("MenuEquipment(%d)", 1), DoGetID(obj), 0,0,0,0, 4, DoGetObj(obj));
+	else AddMenuItem("<i>Schild-Leer</i> ", Format("MenuEquipment(%d)", 1), S_12, 0, 0, 0);
+  if(obj = GetWearObject(2))
+	AddMenuItem(Format("%s %s", DoGetName(obj),GetValueString(obj)), Format("MenuEquipment(%d)", 2), DoGetID(obj), 0,0,0,0, 4, DoGetObj(obj));
+	else AddMenuItem("<i>Kopf-Leer</i> ", Format("MenuEquipment(%d)", 2), S_13, 0, 0, 0);
+  if(obj = GetWearObject(3))
+	AddMenuItem(Format("%s %s", DoGetName(obj),GetValueString(obj)), Format("MenuEquipment(%d)", 3), DoGetID(obj), 0,0,0,0, 4, DoGetObj(obj));
+	else AddMenuItem("<i>Torso-Leer</i> ", Format("MenuEquipment(%d)", 3), S_14, 0, 0, 0);
+  if(obj = GetWearObject(4))
+	AddMenuItem(Format("%s %s", DoGetName(obj),GetValueString(obj)), Format("MenuEquipment(%d)", 4), DoGetID(obj), 0,0,0,0, 4, DoGetObj(obj));
+	else AddMenuItem("<i>Beine-Leer</i> ", Format("MenuEquipment(%d)", 4), S_15, 0, 0, 0);
+  AddMenuItem("$ShowWerte$", "ShowWerte", S_16, 0, 0, 0);
+  if(pLern>0)  AddMenuItem("Lernen", "UpWerte",S_17, 0, 0, 0);
+}
+
+XTeleport:
+  GameCall("XTeleport",this());
+  return(1);

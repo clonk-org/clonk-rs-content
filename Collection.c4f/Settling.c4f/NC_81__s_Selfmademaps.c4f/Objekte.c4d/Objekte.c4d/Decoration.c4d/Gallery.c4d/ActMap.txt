@@ -1,0 +1,8 @@
+[Action]
+Name=Stand
+Procedure=NONE
+Directions=2
+Length=1
+Facet=0,0,23,45
+NextAction=Hold
+FlipDir=1

@@ -1,0 +1,8 @@
+[DefCore]
+id=RIVW
+Name=Idolview
+Version=4,9,5
+Value=1
+Category=524289
+MaxUserSelect=1
+Picture=0,0,22,32

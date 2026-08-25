@@ -1,0 +1,101 @@
+Seen1=Ist da wer?
+Seen2=Huch?
+Seen3=Ich habe doch was gehört...
+Seen4=Ich höre tote Menschen O_o
+Seen5=Da, ein Schatten!
+Seen6=Da huscht doch wer!
+
+AlchemMage1=Ich brau mir einen Unsichtbarkeitstrank!
+AlchemMage2=Hihihi
+AlchemMage3=Ich mag Pilze!
+AlchemMage4=Diese Kapuzen aus Wolle kratzen so...
+AlchemMage5=Das da links ist mein Lehrling, hihihi
+AlchemMage6=Rosa Elefanten, hihihi!
+
+AlchemClonk1=Mein Meister ist irre o_O
+AlchemClonk2=Komische Kristalle wachsen hier
+AlchemClonk3=Mein Meister sammelt andauernd Pilze
+AlchemClonk4=Ich glaube mein Meister raucht die Pilze...
+AlchemClonk5=Hier ist es langweilig
+
+LaborSorc1=Ich habe kein Material mehr
+LaborSorc2=Irgendein Depp hat meine Flints geklaut
+LaborSorc3=Vielleicht kann man Schwefel aus Holz pressen...
+LaborSorc4=Unser König ist verrückt.
+LaborSorc5=Ich habe gehört die Mörder kommen!
+
+King1=Lasst die Assassinen nur kommen!
+King2=Ich habe keine Angst
+King3=Wenn wir gewonnen haben gibt es ein Festmahl!
+King4=Ich mag Braten
+King5=Ich höre hier andauernd Schritte...
+
+NextToKing1=Unser König bringt uns noch um
+NextToKing2=Der Typ hier ist grössenwahnsinnig
+NextToKing3=Wir werden alle sterben
+NextToKing4=Wenn das hier vorbei ist, wird er erstmal abgesetzt
+NextToKing5=Wo ist mein Leibwächter? :(
+
+ArmoryKnight1=Ich bin der Herr des Waffenlagers!
+ArmoryKnight2=Bedient euch nur
+ArmoryKnight3=Heute gibt es gratis Bögen!
+ArmoryKnight4=Meine Schwerter sind schon rostig :(
+ArmoryKnight5=Hier oben ist es dunkel
+
+KitchenSorc1=Ich bin hier der Koch
+KitchenSorc2=Im Topf sind noch ein paar Fische
+KitchenSorc3=Wer mag Kekse?
+KitchenSorc4=Ich bin der Omelettkönig!
+KitchenSorc5=Ich hoffe wir kommen hier alle lebend raus
+
+WaterClonk1=Plitsche, platsche!
+WaterClonk2=Hihi, Wasser!
+WaterClonk3=Ich mag Wasser
+WaterClonk4=Ohne meine Schuhe bin ich ein Aquaclonk!
+WaterClonk5=Ich kann unter Wasser atmen! *blub*
+WaterClonk6=Ich mag Toblerone!
+
+WorkshopClonk1=Ich hoffe, das Holz reicht für den Winter
+WorkshopClonk2=Ich denke nicht, dass wir sterben
+WorkshopClonk3=Der Alchemist will aus meinem Holz Schwefel pressen o_O
+WorkshopClonk4=Mein Holz schimmelt schon
+WorkshopClonk5=Soll ich dir ein Katapult basteln?
+
+BedroomClonk1=Ich bin müde
+BedroomClonk2=Ich kann nicht schlafen
+BedroomClonk3=Irgendein Depp hat Kekse in die Betten gepackt
+BedroomClonk4=Die Kekse krümeln so sehr...
+BedroomClonk5=Hier ist's so laut
+
+WebClonk1=Siehst du die Spinnenweben hier?
+WebClonk2=Bäh, eklig!
+WebClonk3=Irgendwer muss hier mal sauber machen
+WebClonk4=Ich will eine Putzfrau haben!
+WebClonk5=Ich höre Spinnen trapsen!
+
+LibClonk1=Ich mag Bücher *mjam*
+LibClonk2=Die Heiligtümer des Todes.. komisches Buch..
+LibClonk3=Lesen, lesen, lesen!
+LibClonk4=Willst du ein Buch ausleihen?
+LibClonk5=Wehe jemand beschädigt meine Bücher!
+
+WatchClonk1=Immer muss ich Ausschau halten..
+WatchClonk2=Da hinten ist ein Lager!
+WatchClonk3=Ich sehe was!
+WatchClonk4=Hier ist es kalt und zugig
+WatchClonk5=Die Bösen bauen schon ein Lager auf :(
+
+MageDom1=Ich bin der beste Zauberer der Welt!
+MageDom2=Pass auf, sonst verwandel ich dich in einen Frosch!
+MageDom3=Mein Bruder unten in der Alchemiehütte raucht Pilze :(
+MageDom4=Ich mag was zaubern
+MageDom5=Unser König ist ein Vielfrass
+MageDom6=Ich will die Weltherrschaft!!
+
+ConfessFather1=Bei mir beichtet der König immer
+ConfessFather2=Wusstest du, dass der König Strapsen trägt? :O
+ConfessFather3=Willst du beichten?
+ConfessFather4=Der König hat drei Frauen!
+ConfessFather5=Zum Glück gibt es kein Beichtgeheimnis! \\o/
+
+CtxKeyDesc=SChlüssel benutzen

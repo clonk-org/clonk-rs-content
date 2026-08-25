@@ -1,0 +1,2 @@
+Mit diesem Zauber kann der König aufgetaut werden. Es gibt eine Abklingzeit von 10 Sekunden, bevor die Schriftrolle 
+wieder aktiviert werden kann.

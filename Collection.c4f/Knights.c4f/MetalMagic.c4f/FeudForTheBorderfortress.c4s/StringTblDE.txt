@@ -1,0 +1,4 @@
+MsgLeft=Angreifer
+MsgRight=Verteidiger
+Eliminated=%s hat's erwischt.
+Log1=Team %d gewinnt.

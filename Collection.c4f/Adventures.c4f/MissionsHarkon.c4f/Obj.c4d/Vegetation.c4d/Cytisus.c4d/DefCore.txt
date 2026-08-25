@@ -1,0 +1,15 @@
+[DefCore]
+id=_CYT
+Name=Cytisus
+Version=4,9,5
+Category=1
+Width=42
+Height=50
+Offset=-21,-25
+Value=10
+Mass=1
+Components=WOOD=1;
+Picture=0,0,42,50
+Rotate=1
+Chop=0
+

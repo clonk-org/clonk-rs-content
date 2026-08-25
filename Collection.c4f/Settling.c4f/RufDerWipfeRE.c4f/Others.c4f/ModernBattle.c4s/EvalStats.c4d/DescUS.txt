@@ -1,0 +1,1 @@
+Whem the game is over some states are shown in the evaluation dialog.

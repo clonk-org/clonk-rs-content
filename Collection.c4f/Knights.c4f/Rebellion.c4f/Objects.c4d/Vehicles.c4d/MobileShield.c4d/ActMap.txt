@@ -1,0 +1,7 @@
+[Action]
+Name=Ready
+Directions=2
+Length=1
+Facet=0,0,27,30
+NextAction=Hold
+FlipDir=1

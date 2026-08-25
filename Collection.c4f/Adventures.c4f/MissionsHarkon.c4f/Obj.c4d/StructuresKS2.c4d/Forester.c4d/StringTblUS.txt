@@ -1,0 +1,4 @@
+BuySeed=Tree Seed
+NotenoughWood=No Woodpiece!
+ProduceShelves=Cut shelves
+NotenoughMoney=Not enough Money!

@@ -1,0 +1,74 @@
+/* CivilHigh */
+
+// Basic island shape
+overlay Islands { grp=1; invert=1;
+  // islands
+  			overlay { algo=sin; zoomX=80; zoomY=10; ox=-10; oy=15; } ^
+			overlay { algo=sin; zoomX=80; zoomY=10; ox=-10; oy=80; } &
+			overlay { algo=bozo; a=20; turbulence=10000; loosebounds=1;
+				overlay { algo=rndchecker; zoomX=-50; zoomY=-50; } |
+				overlay { algo=random; a=1; };
+				} &
+  // loose bounds
+  overlay { x=5; y= 10; wdt=90; hgt=90; loosebounds=1; turbulence=10; };
+  };
+
+// Basic InEarth
+overlay InEarth { algo=bozo; a=8; turbulence=10000; };
+
+// randomly alter mat
+overlay AlterMat { algo=rndchecker; zoomX=-50; zoomY=-50; };
+
+
+// skylands map
+map SkyLands {
+
+
+  // Group 1: base=rock
+  Islands & overlay { mat=Rock; tex=Rough;
+
+    // earth top-layers
+    overlay { algo=border; a=0; b=1; turbulence=100; mat=Earth; tex=Smooth; oy=-1; };
+
+    // liquids
+    overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Water; tex=Smooth; };
+
+    // bounds for liquids
+    overlay { algo=border; a=1; b=1; oy=1; mat=Earth; tex=Rough; };
+
+    // gold
+    InEarth { mat=Gold; tex=Rough; };
+
+    // ore
+    InEarth { mat=Ore; tex=Ridge; AlterMat { mat=Ore; tex=Rough; }; };
+
+    // overlay earth
+    AlterMat & overlay { algo=border; a=3; b=3; turbulence=10; mat=Earth; tex=Smooth; };
+    };
+
+
+  // Group 2: base=earth
+  Islands & overlay { mat=Earth; tex=Rough;
+
+    // rock top-layers
+    overlay { algo=border; a=0; b=1; turbulence=100; mat=Earth; tex=Smooth; oy=1;
+      // inner rock: granite
+      AlterMat { mat=Granite; tex=Rough; };
+      };
+
+    // coal
+    InEarth { mat=Coal; tex=Swirl; };
+
+    // crystal
+    InEarth { mat=Crystal; tex=Structure; a=9; sub=0; };
+
+    // sulphur
+    InEarth { mat=Sulphur; tex=Swirl; };
+
+    // overlay earth
+    AlterMat & overlay { algo=border; a=1; b=1; turbulence=100; mat=Earth; tex=Smooth; } ;
+
+    };
+
+
+  };

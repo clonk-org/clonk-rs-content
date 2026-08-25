@@ -1,0 +1,2 @@
+Relaunch=%s benötigt einen Relaunch.
+Score=Spielstand

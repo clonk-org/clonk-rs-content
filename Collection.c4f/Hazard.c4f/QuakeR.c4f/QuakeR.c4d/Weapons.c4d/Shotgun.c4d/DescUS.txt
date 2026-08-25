@@ -1,0 +1,5 @@
+Fires a large amount of projectiles. Ideal for short ranges.
+
+Ammunition(max.): 80
+Firemode 1: Spread shots
+Firemode 2: N/A.

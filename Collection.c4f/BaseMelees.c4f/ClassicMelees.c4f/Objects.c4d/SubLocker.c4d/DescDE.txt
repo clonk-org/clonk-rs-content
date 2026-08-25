@@ -1,0 +1,1 @@
+Verhindert, dass Clonks U-Boote mit feindlicher Besatzung kapern.

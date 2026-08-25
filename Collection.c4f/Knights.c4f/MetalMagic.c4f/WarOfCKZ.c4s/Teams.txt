@@ -1,0 +1,15 @@
+[Teams]
+
+	[Team]
+	id=1
+	Name=$TLeft$
+	Color=8921634
+	PlrStartIndex=1
+	IconSpec=TMS1:4
+
+	[Team]
+	id=2
+	Name=$TRight$
+	Color=16772659
+	PlrStartIndex=2
+	IconSpec=TMS1:8

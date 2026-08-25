@@ -1,0 +1,3 @@
+TxtNewTechnologiesdevel=Neue Technologien entwickelt.
+ErrNoWater=Die Superkuppel muss|unterwasser gebaut werden!
+ErrDepth=Die Superkuppel muss|tiefer gebaut werden!

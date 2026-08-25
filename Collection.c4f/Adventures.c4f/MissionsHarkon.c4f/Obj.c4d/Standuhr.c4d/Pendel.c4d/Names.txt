@@ -1,0 +1,2 @@
+DE:Pendel
+US:Pendulum

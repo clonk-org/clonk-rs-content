@@ -1,0 +1,7 @@
+[Material]
+Name=Gold
+Color=10,30,50,10,20,75,30,40,100
+Shape=0
+Placement=5
+TextureOverlay=SmallRock
+OverlayType=3

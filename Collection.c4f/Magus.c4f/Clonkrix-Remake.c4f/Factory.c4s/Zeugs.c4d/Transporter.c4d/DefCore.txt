@@ -1,0 +1,14 @@
+[DefCore]
+id=TRNS
+Name=Transporter
+Category=4
+Width=48
+Height=38
+Offset=-24,0
+Value=100
+Mass=100
+Picture=0,0,44,23
+SolidMask=0,0,48,38,0,0
+
+[Physical]
+Float=100

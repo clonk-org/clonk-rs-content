@@ -1,0 +1,6 @@
+Absolute Vernichtung.
+Kann normal oder als Lenkrakete abgefeuert werden.
+
+Muniton(max.): 1
+Schussmodus 1: Nuklearrakete
+Schussmodus 2: Lenkrakete

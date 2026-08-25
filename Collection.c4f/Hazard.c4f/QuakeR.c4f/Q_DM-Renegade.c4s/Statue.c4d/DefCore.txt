@@ -1,0 +1,13 @@
+[DefCore]
+id=QDST
+Name=Statue
+Version=4,9,5
+Category=1
+MaxUserSelect=1
+Width=55
+Height=80
+Offset=-35,-50
+Value=500
+Mass=2000
+Components=ROCK=500;
+Picture=0,0,55,80

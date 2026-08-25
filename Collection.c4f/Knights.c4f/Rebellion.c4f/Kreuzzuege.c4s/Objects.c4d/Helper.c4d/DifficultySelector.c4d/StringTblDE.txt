@@ -1,0 +1,7 @@
+Caption=Schwierigkeitsgrad wählen
+Easy=Leicht
+EasyDesc=Niedrige Schwierigkeitsstufe
+Normal=Normal
+NormalDesc=Mittlere Schwierigkeitsstufe
+Hard=Schwierig
+HardDesc=Hohe Schwierigkeitsstufe

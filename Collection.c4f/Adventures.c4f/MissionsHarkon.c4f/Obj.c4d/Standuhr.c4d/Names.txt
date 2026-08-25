@@ -1,0 +1,2 @@
+DE:Standuhr
+US:Grandfather clock

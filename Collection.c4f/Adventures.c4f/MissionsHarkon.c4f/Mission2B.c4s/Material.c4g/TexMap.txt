@@ -1,0 +1,48 @@
+# Automatically generated texture map
+# Contains material-texture-combinations added at runtime
+# Import materials from global file as well
+OverloadMaterials
+# Import textures from global file as well
+OverloadTextures
+
+1=Ashes-Spots
+2=FlyAshes-Spots
+3=Granite-Rock
+4=CastleWallGrey-TransB
+5=CastleWallGrey-Windows
+6=CastleWallGrey-Fleckig
+7=CastleWallGrey-RoughDark
+8=CastleWallGrey-Pillars
+9=WhiteWall-Forest
+10=Tunnel-Rough
+11=Ore-Structure
+12=Brick-Brick
+13=BrickGrey-Brick
+14=DuroLava-Smooth
+15=Water-Smooth
+16=Lava-Smooth
+17=Earth-MossyRock
+18=Earth-MossyRock
+19=Earth-MossyRock
+20=Earth-MossyRock
+21=BrickGrey-SmallRock
+22=BrickGrey-BrickBrocken
+23=BrickGrey-RoughDark
+24=Granite-Rough
+25=Ore-Rock
+26=Gold-Rough
+27=CastleWallGrey-SmallRock
+28=Rock-Rough
+29=Coal-Swirl
+30=FlyAshes-Smooth
+31=Crystal-Flare
+32=WhiteWall-PrisionWall
+33=WhiteWall-DarkWall
+34=BrickDark-Brick
+35=Water-Liquid
+36=Earth-DarkRock
+37=EarthTexture-DarkRock
+38=EarthTexture-DarkRockBrick
+39=Granite-DarkRock
+40=Rock-DarkRock
+41=Crystal-Structure

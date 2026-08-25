@@ -1,0 +1,7 @@
+
+HostChoosesDifficulty=chooses the degree of difficulty for the scenario.
+Easy=The severity '<c 88ff88>Easy</c>' was chosen!
+Normal=The severity '<c ffff88>Normal</c>' was chosen!
+Hard=The severity '<c ff8888>Schwer</c>' was chosen!
+
+Relaunch=%s relaunchs.

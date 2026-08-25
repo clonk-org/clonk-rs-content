@@ -1,0 +1,9 @@
+
+Msg1=Let's massacre these traitors!
+Msg2=Kill the king!
+
+Empty1=Nobody plays in the castle -> Abort!
+Empty2=Nobody plays in the village -> Abort!
+
+castle=Follower of the king
+village=Rebellious farmers

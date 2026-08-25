@@ -1,0 +1,2 @@
+TCastle=Team Burg (innen)
+TCamp=Team Lager (außen)

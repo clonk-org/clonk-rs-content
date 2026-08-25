@@ -1,0 +1,9 @@
+[DefCore]
+id=_CRD
+Version=4,9,8
+Name=Cards
+Category=C4D_Living
+Width=20
+Height=27
+Offset=-13,-18
+Picture=0,0,20,27

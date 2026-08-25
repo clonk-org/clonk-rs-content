@@ -1,0 +1,14 @@
+[Material]
+Name=Water
+Color=77,105,190,77,105,190,77,105,190
+Alpha=0,0,0,0,0,0
+ColorAnimation=1
+Density=25
+Instable=1
+MaxAirSpeed=25
+MaxSlide=10000
+WindDrift=30
+Corrode=100
+Extinguisher=1
+Placement=10
+TextureOverlay=Liquid

@@ -1,0 +1,2 @@
+DE:Shotgun Munition
+US:Shotgun ammo

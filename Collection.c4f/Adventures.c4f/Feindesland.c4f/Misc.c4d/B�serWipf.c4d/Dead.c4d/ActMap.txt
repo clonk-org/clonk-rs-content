@@ -1,0 +1,9 @@
+[Action]
+Name=Dead
+Procedure=NONE
+Directions=1
+Length=1
+Delay=1000
+Facet=0,0,24,18
+NextAction=Dead
+EndCall=UndeadCheck

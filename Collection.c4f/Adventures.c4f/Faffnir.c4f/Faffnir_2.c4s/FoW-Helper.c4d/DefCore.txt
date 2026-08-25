@@ -1,0 +1,17 @@
+[DefCore]
+id=613B
+Name=FoW Helper
+Version=4,9,5
+Category=58720257
+MaxUserSelect=10
+Width=760
+Height=200
+Offset=-380,-100
+Value=10
+Mass=10
+Picture=6,0,64,64
+Rebuy=1
+TimerCall=ClonkSuch
+Timer=35
+
+ 

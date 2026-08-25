@@ -1,0 +1,1 @@
+Holds a magical energy charge and blows clonks in a direction.

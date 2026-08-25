@@ -1,0 +1,16 @@
+[Teams]
+MaxScriptPlayers=0
+
+	[Team]
+	id=1
+	Name=$TeamGuard$
+	Color=8921634
+	PlrStartIndex=1
+        IconSpec=TMS1:4
+
+	[Team]
+	id=2
+	Name=$TeamAssassin$
+	Color=16772659
+	PlrStartIndex=2
+        IconSpec=TMS1:5

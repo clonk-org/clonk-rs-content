@@ -1,0 +1,4 @@
+TeamLeft=Hörx
+TeamRight=Mankel
+TeamCenterLeft=Rustuff
+TeamCenterRight=McClomby

@@ -1,0 +1,118 @@
+/* Lapsus Map */
+
+//overlay Mat { algo=rndchecker; a=8; zoomX=-70; zoomY=-100; turbulence=1000; };
+overlay Mat { algo=boxes; a=4; b=20; zoomX=60; turbulence=1000; };
+overlay Mat2 { algo=rndchecker; a=3; hgt=40; mat=Sand; tex=Smooth; turbulence=100; zoomX=-100; zoomY=-100; loosebounds=1; sub=1; };
+overlay Earth { algo=rndchecker; a=3; turbulence=10000; zoomX=-90; zoomY=-90;
+ };
+overlay Islands { grp=1; invert=1;
+  //Inseln :)
+  overlay { algo=bozo; a=110; invert=1; zoomX=10; zoomY=-10; turbulence=100000; y=-20; } &
+  overlay { algo=rndchecker; a=4; rotate=115; zoomX=-20; zoomY=-20; turbulence=100; y=-20; } &
+  //lose bounds ;D
+  overlay { x=5; wdt=90; hgt=95; loosebounds=1; turbulence=10; y=-20;  };
+  };
+//InErde
+overlay InEarth { algo=bozo; a=1; turbulence=10000; };
+
+// randomly alter mat
+overlay AlterMat { algo=rndchecker; zoomX=-100; zoomY=-100; };
+map Lapse {
+  // Meer  Islands & overlay { mat=Earth; tex=Rough;
+
+    // earth top-layers
+    overlay { algo=border; a=3; b=3; turbulence=100; mat=Earth; tex=Smooth; oy=-1; };
+        // Gold
+    overlay { algo=border; invert=1; a=3; b=1; turbulence=1000; mat=Gold; tex=Rough; };
+    // Stein
+   overlay { algo=border; invert=1; a=1; b=2; turbulence=1000; mat=Rock; tex=Rough; };
+  //Erz
+       overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Ore; tex=Rough; };
+  overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Coal; tex=Swirl; };
+  
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Sulphur; tex=Swirl; };
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Tunnel; tex=Smooth2; };    
+      
+// overlay earth
+    AlterMat & overlay { algo=border; a=4; b=4; turbulence=10; mat=Earth; tex=Smooth; };
+    };
+
+    
+  // bounds for liquids
+    overlay { algo=border; a=1; b=1; oy=1; mat=Earth; tex=Rough; };
+    // bounds for liquids
+    overlay { algo=border; a=1; b=1; oy=1; mat=Earth; tex=Rough; };
+
+  Islands & overlay { mat=Earth; tex=Rough;
+
+  // bounds for liquids
+    overlay { algo=border; a=1; b=1; oy=1; mat=Earth; tex=Rough; };
+    // bounds for liquids
+    overlay { algo=border; a=1; b=1; oy=1; mat=Earth; tex=Rough; };
+ // Gold
+    overlay { algo=border; invert=1; a=3; b=1; turbulence=1000; mat=Gold; tex=Rough; };
+    // Stein
+   overlay { algo=border; invert=1; a=1; b=2; turbulence=1000; mat=Rock; tex=Rough; };
+  //Erz
+       overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Ore; tex=Rough; };
+  overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Coal; tex=Swirl; };
+  
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Sulphur; tex=Swirl; };
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Tunnel; tex=Smooth2; };    
+    
+    // Gold
+    overlay { algo=border; invert=1; a=3; b=1; turbulence=1000; mat=Gold; tex=Rough; };
+    // Stein
+   overlay { algo=border; invert=1; a=1; b=2; turbulence=1000; mat=Rock; tex=Rough; };
+  //Erz
+       overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Ore; tex=Rough; };
+  overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Coal; tex=Swirl; };
+  
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Sulphur; tex=Swirl; };
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Tunnel; tex=Smooth2; };    
+    
+    // Gold
+    overlay { algo=border; invert=1; a=3; b=1; turbulence=1000; mat=Gold; tex=Rough; };
+
+    // Stein
+   overlay { algo=border; invert=1; a=1; b=2; turbulence=1000; mat=Rock; tex=Rough; };
+  //Erz
+       overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Ore; tex=Rough; };
+  overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Coal; tex=Swirl; };
+  
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Coral1; tex=Coral1; };
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Coral2; tex=Coral2; };
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Coral3; tex=Coral4; };
+
+overlay { algo=border; invert=1; a=1; b=1; turbulence=1000; mat=Tunnel; tex=Smooth2; };    
+    
+// Some FlySand in es
+    overlay { algo=border; a=0; b=1; turbulence=100; mat=FlySand; tex=Smooth; oy=1;
+      
+      AlterMat { mat=Earth; tex=Rough;
+      mat=Coral1; tex=Coral2;
+      mat=Coral2; tex=Coral3;
+      mat=Coral3; tex=Coral1;      
+       };
+      };
+
+    // overlay earth
+    AlterMat & overlay { algo=border; a=3; b=3; turbulence=100; mat=Earth; tex=Smooth; } ;
+
+    }; // END ISTLAND
+
+
+  overlay { algo=solid; y=80; mat=Water; tex=Liquid; sub=0; };
+
+    overlay { algo=solid; x=-20; wdt=140; y=90; mat=Earth; tex=Rough; turbulence=500; loosebounds=1; zoomX=60;
+    Earth { mat=Earth; tex=Ridge; };
+    Earth { mat=Earth; tex=Smooth; };
+    Earth { mat=Gold; tex=Rough; };
+    Earth { mat=Rock; tex=Rock; };
+    Earth { mat=Ore; tex=Swirl; };
+    Earth { mat=Coal; tex=Swirl; };
+    Earth { mat=Sulphur; tex=Swirl; };
+    Earth { mat=Earth; tex=Smooth2; };
+    overlay { algo=border; a=2; b=2; mat=Sand; tex=Smooth3; x=-20; turbulence=0; sub=0; };
+  };
+};

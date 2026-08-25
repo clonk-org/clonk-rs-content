@@ -1,0 +1,13 @@
+[Action]
+Name=NotDiscovered
+Procedure=NONE
+FacetBase=1
+Delay=30
+NextAction=NotDiscovered
+EndCall=WatchExplorer
+
+[Action]
+Name=IsDiscovered
+FacetBase=1
+Procedure=NONE
+NextAction=HOLD

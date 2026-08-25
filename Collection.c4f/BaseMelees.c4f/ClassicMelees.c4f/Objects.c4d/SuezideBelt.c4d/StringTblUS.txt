@@ -1,0 +1,3 @@
+CtrlActivateDesc=Buckle
+TxtNoIdol=No friendly idol near
+TxtNoClonk=Only Clonks can wear the belt

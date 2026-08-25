@@ -1,0 +1,2 @@
+TxtCollect=Sack aufnehmen
+TxtError=Keine Hand frei

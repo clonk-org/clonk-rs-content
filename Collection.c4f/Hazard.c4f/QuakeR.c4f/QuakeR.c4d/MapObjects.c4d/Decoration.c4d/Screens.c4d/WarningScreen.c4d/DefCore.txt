@@ -1,0 +1,12 @@
+[DefCore]
+id=QWSC
+Version=4,9,8,2
+Name=Warning Screen
+Category=C4D_StaticBack
+Width=85
+Height=60
+Offset=-42,-30
+Picture=0,0,85,60
+StretchGrowth=1
+IncompleteActivity=1
+Oversize=1

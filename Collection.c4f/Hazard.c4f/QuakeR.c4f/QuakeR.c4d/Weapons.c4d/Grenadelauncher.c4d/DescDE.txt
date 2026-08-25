@@ -1,0 +1,5 @@
+Verschleudert Granaten auf den Gegner.
+
+Muniton(max.): 18
+Schussmodus 1: Granate
+Schussmodus 2: Nagelbombe

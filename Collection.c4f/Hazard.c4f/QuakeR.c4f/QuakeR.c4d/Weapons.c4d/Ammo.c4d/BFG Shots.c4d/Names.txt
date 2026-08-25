@@ -1,0 +1,2 @@
+DE:BFG-Geschoss
+US:BFG-Shot

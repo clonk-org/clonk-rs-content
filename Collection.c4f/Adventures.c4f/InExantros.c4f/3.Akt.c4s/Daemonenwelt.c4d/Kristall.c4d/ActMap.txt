@@ -1,0 +1,8 @@
+[Action]
+Name=Check
+Procedure=FLOAT
+Length=1
+Delay=2
+Facet=0,0,300,300
+NextAction=Check
+EndCall=Timer

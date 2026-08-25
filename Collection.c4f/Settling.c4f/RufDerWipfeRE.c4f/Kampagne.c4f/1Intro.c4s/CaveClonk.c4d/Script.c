@@ -1,0 +1,4 @@
+/*-- Höhlenclonk --*/
+
+#strict
+#include CLNK

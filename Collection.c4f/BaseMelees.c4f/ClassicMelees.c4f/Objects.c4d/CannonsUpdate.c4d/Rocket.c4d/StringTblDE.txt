@@ -1,0 +1,4 @@
+TxtFillLevel=Rakete Treibstofftank
+TxtMoreFuel=Mehr Treibstoff
+TxtLessFuel=Weniger Treibstoff
+TxtSetFuel=Tankfüllung

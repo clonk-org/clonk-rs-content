@@ -1,0 +1,7 @@
+_HEL=Helikopter
+_HAK=Haken
+_ROP=Seil
+_LER=Hilfsobjekt
+_BR9=Bahre
+_BM9=Bombe
+_ROT=Rotorblatt

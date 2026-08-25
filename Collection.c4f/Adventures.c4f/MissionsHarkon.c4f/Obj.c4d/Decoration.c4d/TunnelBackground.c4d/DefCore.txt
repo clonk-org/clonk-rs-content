@@ -1,0 +1,8 @@
+[DefCore]
+id=BGT_
+Version=4,9,8
+Name=BackgroundTunnel
+Category=C4D_StaticBack
+Width=111
+Height=39
+Offset=-60,-20

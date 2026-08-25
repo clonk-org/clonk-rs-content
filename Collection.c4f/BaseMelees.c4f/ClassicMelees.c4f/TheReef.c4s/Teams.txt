@@ -1,0 +1,17 @@
+[Teams]
+LastTeamID=2
+TeamColors=true
+
+  [Team]
+  id=1
+  Name=Rustuff
+  PlrStartIndex=1
+  Color=15990784
+  IconSpec="SUB1"
+
+  [Team]
+  id=2
+  Name=McClomby
+  PlrStartIndex=2
+  Color=51200
+  IconSpec="SLBT"

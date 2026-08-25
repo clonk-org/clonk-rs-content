@@ -1,0 +1,8 @@
+[Material]
+Name=BrickBig
+Color=120,110,85
+Shape=0
+Density=50
+Placement=60
+TextureOverlay=BrickBig
+OverlayType=1

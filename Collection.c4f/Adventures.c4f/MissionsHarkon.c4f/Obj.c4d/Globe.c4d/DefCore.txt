@@ -1,0 +1,16 @@
+[DefCore]
+id=_GLB
+Name=New Object
+Version=4,9,5
+Category=1
+MaxUserSelect=10
+Width=16
+Height=22
+Offset=-8,-11
+Value=10
+Mass=10
+Components=_GLB=1;
+Picture=624,0,64,64
+
+
+ 

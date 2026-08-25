@@ -1,0 +1,14 @@
+[Action]
+Name=Be
+Directions=2
+FlipDir=1
+Facet=0,0,25,45
+Length=3
+
+[Action]
+Name=Attach
+Procedure=ATTACH
+Directions=2
+FlipDir=1
+Facet=0,0,25,45
+Length=3

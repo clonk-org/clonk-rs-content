@@ -1,0 +1,8 @@
+[Material]
+Name=BrickGrey
+Color=106,106,106
+Shape=0
+Density=50
+Placement=0
+TextureOverlay=Brick
+OverlayType=1

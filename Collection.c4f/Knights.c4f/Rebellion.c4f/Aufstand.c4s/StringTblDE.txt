@@ -1,0 +1,9 @@
+
+Msg1=Lasst uns diese Verräter niedermetzeln!
+Msg2=Nieder mit dem König!
+
+Empty1=Kein Spieler in der Burg: Ohne Anhänger kann sich der beste König nicht verteidigen...
+Empty2=Kein Spieler im Dorf: Wozu einen Aufstand niederschlagen, wenn keine Aufständischen da sind?
+
+castle=Anhänger des Königs
+village=Aufständisches Bauernvolk

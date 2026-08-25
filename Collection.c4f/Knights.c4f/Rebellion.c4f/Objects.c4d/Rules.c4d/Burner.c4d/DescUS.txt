@@ -1,0 +1,3 @@
+When this rule is activated, kings are able to burn, too.
+
+The rule was originally created by Tim Wölfle (timi).

@@ -1,0 +1,10 @@
+[DefCore]
+id=GOBT
+Name=Gold für Blut
+Version=4,9,5
+Value=1
+Category=524289
+MaxUserSelect=1
+Picture=0,0,64,64
+ 
+

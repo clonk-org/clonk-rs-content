@@ -1,0 +1,15 @@
+[DefCore]
+id=CLK_
+Name=Clock
+Version=4,9,5
+Category=60817411
+MaxUserSelect=10
+Width=60
+Height=40
+Offset=-30,-55
+Vertices=1
+VertexY=1
+VertexFriction=20
+Timer=35
+TimerCall=Tick
+ColorByOwner=1

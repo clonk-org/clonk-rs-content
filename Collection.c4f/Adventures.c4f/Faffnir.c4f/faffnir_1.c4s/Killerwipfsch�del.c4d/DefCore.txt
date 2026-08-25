@@ -1,0 +1,17 @@
+[DefCore]
+id=MSKU
+Version=4,9,8,1
+Name=MightySkull
+Category=C4D_Object|C4D_SelectInEarth|C4D_SelectVegetation
+MaxUserSelect=1
+Width=24
+Height=21
+Offset=-12,-7
+Vertices=1
+VertexY=6
+VertexFriction=50
+Value=200
+Mass=5
+Components=IBON=6
+Picture=0,42,60,55
+Collectible=1

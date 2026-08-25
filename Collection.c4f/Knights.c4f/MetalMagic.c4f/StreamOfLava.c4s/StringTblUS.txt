@@ -1,0 +1,2 @@
+Relaunch=%s needs a relaunch.
+Score=Score

@@ -1,0 +1,17 @@
+[Action]
+Name=Turn
+Procedure=FLOAT
+Length=25
+Delay=2
+Facet=0,0,32,32
+NextAction=Turn
+FlipDir=1
+
+[Action]
+Name=TurnUp
+Procedure=FLOAT
+Length=25
+Delay=2
+Facet=0,32,32,32
+NextAction=TurnUp
+FlipDir=1

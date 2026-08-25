@@ -1,0 +1,8 @@
+Relaunch=%s has already waste %d of %d relaunches.
+Winner=%s has won!
+MsgMusket=Choose musket
+MsgBow=Choose bow
+MsgSword=Choose sword
+DescMusket=The clonk starts with a musket and munition.
+DescBow=The clonk recieves a bow with two packs of arrows.
+DescSword=The clonk gets a two-handed sword, a shield and a normal sword.

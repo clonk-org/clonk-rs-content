@@ -1,0 +1,54 @@
+# Automatically generated texture map
+# Contains material-texture-combinations added at runtime
+# Import materials from global file as well
+OverloadMaterials
+# Import textures from global file as well
+OverloadTextures
+
+1=Granite-Rock
+2=CastleWallGrey-TransB
+3=CastleWallGrey-Windows
+4=CastleWallGrey-Fleckig
+5=CastleWallGrey-RoughDark
+6=CastleWallGrey-Pillars
+7=Lava-Smooth
+8=Gold-Rough
+9=CastleWallGrey-SmallRock
+10=Rock-Rough
+11=Crystal-Flare
+12=Ashes-Spots
+13=FlyAshes-Spots
+14=WallGrey-TransB
+15=WallGrey-Windows
+16=WallGrey-Fleckig
+17=WallGrey-RoughDark
+18=WallGrey-Pillars
+19=WhiteWall-Forest
+20=Tunnel-Smooth
+21=Tunnel-Rough
+22=Ore-Structure
+23=Tunnel-Smooth2
+24=Brick-Brick
+25=BrickBig-BrickBig
+26=BrickDark-Brick
+27=BrickGrey-Brick
+28=DuroLava-Smooth
+29=Water-Smooth
+30=Earth-MossyRock
+31=Earth-MossyRock
+32=Earth-MossyRock
+33=Earth-MossyRock
+34=BrickGrey-SmallRock
+35=BrickGrey-BrickBrocken
+36=BrickGrey-RoughDark
+37=Granite-Rough
+38=Ore-Rock
+39=Wall-SmallRock
+40=WallGrey-SmallRock
+41=Rock-MossyRock
+42=Coal-Swirl
+43=Sand-Smooth3
+44=FlyAshes-Smooth
+45=WallGrey-CastleWall
+46=BrickGrey-LeftBorder
+47=BrickGrey-RightBorder

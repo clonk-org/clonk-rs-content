@@ -1,0 +1,19 @@
+[Teams]
+Active=1
+Custom=1
+
+	[Team]
+	id=1
+	Name=Westländer
+	PlrStartIndex=1
+	Color=10116667
+	IconSpec=Portrait:CLN2:Soldier2
+	MaxPlayer=12
+
+	[Team]
+	id=2
+	Name=Ostländer
+	PlrStartIndex=2
+	Color=16711680
+	IconSpec=Portrait:CLN2:Soldier1
+	MaxPlayer=12

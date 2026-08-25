@@ -1,0 +1,2 @@
+The most important object!
+It saves and handles the settings.

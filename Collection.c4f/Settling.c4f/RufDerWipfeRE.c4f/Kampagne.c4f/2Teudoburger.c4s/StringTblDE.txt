@@ -1,0 +1,4 @@
+TxtPose1=Höhle der Verkündung
+TxtPose2=Spitzhohenmusterberg
+TxtPose3=Clothischer Vorort
+TxtUnDef=Komisches Unbekanntes Ding

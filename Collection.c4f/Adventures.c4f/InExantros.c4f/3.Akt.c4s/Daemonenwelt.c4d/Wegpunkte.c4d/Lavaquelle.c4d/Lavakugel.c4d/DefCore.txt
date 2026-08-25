@@ -1,0 +1,13 @@
+[DefCore]
+id=_LAV
+Name=Lavakugel
+Category=4
+Width=10
+Height=10
+Offset=-5,-5
+Picture=10,0,40,40
+Mass=1
+Value=0
+TimerCall=Timer
+Timer=4
+Rotate=1

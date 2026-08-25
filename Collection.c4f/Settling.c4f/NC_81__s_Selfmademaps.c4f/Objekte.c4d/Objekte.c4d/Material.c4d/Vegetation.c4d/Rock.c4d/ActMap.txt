@@ -1,0 +1,6 @@
+[Action]
+Name=Standard
+Delay=0
+Length=6
+Facet=0,0,32,32
+NextAction=Hold

@@ -1,0 +1,3 @@
+DE:Begehbare Holzhütte
+US:Accessible wooden cabin
+CH:Rinlufbares Holzhüsi

@@ -1,0 +1,26 @@
+Scoreboard
+Elevator
+Discharge
+Smith
+Medt
+Egor
+Erwin
+Tolk
+Horx
+Gert
+Hanz
+Werog
+Fukat
+Gustav
+Sophie
+BorderCastle
+4
+2
+3
+Armored2
+Calypso
+Tunnel zur Grenzburg
+5
+Armored1
+Armored3
+ 

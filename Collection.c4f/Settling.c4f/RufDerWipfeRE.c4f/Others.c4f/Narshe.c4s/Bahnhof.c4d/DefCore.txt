@@ -1,0 +1,10 @@
+[DefCore]
+id=BAHN
+Name=Bahnhof
+Category=1048577
+MaxUserSelect=10
+Width=300
+Height=80
+Offset=-150,-40
+Entrance=12,19,21,23
+TopFace=0,80,300,80

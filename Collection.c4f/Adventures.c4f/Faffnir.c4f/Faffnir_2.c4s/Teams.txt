@@ -1,0 +1,17 @@
+[Teams]
+LastTeamID=7
+
+  [Team]
+  id=1
+  Name=Assasin
+  Color=1
+  IconSpec="ASAS"
+
+  [Team]
+  id=7
+  Name=Kanderianer
+  PlayerCount=1
+  Players=1
+  Color=16711680
+  IconSpec="KAND"
+  MaxPlayer=1

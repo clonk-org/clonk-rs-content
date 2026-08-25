@@ -1,0 +1,3 @@
+MsgTooFewPlayers=Zu wenig Teilnehmer für Königsrettung.
+MsgKingKilled=Der König wurde getötet!
+MsgKingSaved=Der König wurde evakuiert!

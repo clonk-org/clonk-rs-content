@@ -1,0 +1,12 @@
+[DefCore]
+id=_BRB
+Name=BigRopeBridge
+Category=1
+Version=4,9,5
+Offset=-182,-23
+Width=365
+Height=46
+Picture=0,92,195,104
+SolidMask=32,39,304,7,32,39
+TopFace=0,46,365,46
+Exclusive=1

@@ -1,0 +1,12 @@
+[DefCore]
+id=_DSF
+Name=DecorationSmallFenring
+Version=4,9,5,2
+Category=1
+Width=30
+Height=60
+Offset=-15,-30
+Value=30
+Mass=10
+Components=WOOD=10;
+ 

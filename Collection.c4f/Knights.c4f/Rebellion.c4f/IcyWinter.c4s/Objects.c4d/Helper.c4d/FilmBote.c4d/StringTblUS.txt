@@ -1,0 +1,2 @@
+log=A messenger has arrived.
+film=I'm bringing weapon plans, sire!

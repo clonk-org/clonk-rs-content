@@ -1,0 +1,3 @@
+Paladin=Paladin
+Mage=Magus
+Assassin=Meuchelmörder

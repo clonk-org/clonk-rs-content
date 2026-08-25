@@ -1,0 +1,2 @@
+DE:Redeemer-Explosion
+US:Redeemer-Blast

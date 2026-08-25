@@ -1,0 +1,3 @@
+MsgTooFewPlayers=Too few players for saving the king.
+MsgKingKilled=The king was killed!
+MsgKingSaved=The king was saved!

@@ -1,0 +1,10 @@
+[DefCore]
+id=A_CB
+Version=4,9,8,8
+Name=Append to Clonk Ballon
+Category=1
+Width=1
+Height=1
+Offset=-1,-1
+Value=0
+Picture=0,4,64,64

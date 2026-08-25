@@ -1,0 +1,3 @@
+Wenn diese Regel aktiviert ist, kann auch der König brennen.
+
+Diese Spielregel wurde ursprünglich von Tim Wölfle (timi) erstellt.

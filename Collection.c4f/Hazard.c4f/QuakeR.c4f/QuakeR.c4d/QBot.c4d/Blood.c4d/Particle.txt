@@ -1,0 +1,12 @@
+[Particle]
+Name=Blood
+MaxCount=600
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+Face=0,0,64,64,-32,-32
+Delay=0
+GravityAcc=100
+RByV=1
+Additive=0
+AlphaFade=15

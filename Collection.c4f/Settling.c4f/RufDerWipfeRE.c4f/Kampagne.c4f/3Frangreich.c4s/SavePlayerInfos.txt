@@ -1,0 +1,17 @@
+[PlayerInfoList]
+LastPlayerID=1
+
+  [Client]
+  ID=0
+  Flags=Initial
+
+    [Player]
+    Name="Du Champagnje"
+    Flags=Joined|AttributesFixed|NoScenarioInit|NoEliminationCheck|Invisible
+    ID=1
+    Type=Script
+    Team=2
+    Color=16711680
+    GameNumber=1
+    GameJoinFrame=0
+    Type=Script

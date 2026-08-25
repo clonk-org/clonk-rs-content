@@ -1,0 +1,10 @@
+[DefCore]
+id=DCLH
+Version=4,9,8
+Name=DeathCloth
+Category=C4D_StaticBack
+MaxUserSelect=3
+Width=24
+Height=20
+Offset=-12,-10
+Rotate=1

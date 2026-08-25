@@ -1,0 +1,464 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+--------------------------------------------------------
+
+Keepers (Z4Keepers.c4s)
+	+ Interessant: Mischung aus Melee und Dungeoncrawler!
+	+ dynamisch generierte (aber trotzdem) sehr interessante und hübsch designte Karte
+	- aber ich versteh's nicht! Warum mussten Zappers Sachen immer so kompliziert sein?
+	- Spiel-Setup benötigt Zugriff auf Konsole - nicht so recht geeignet für lokales Spiel
+
+Zufallsarenen (Zufallsarena.c4s)
+	+ eigentlich nicht eine, sondern pro Relaunch jeweils ganz viele unterschiedliche HAndgemenge, toll!
+
+Queron 3.41 (Queron3_41.c4s)
+	+ sehr niedlich gestaltete Arena
+	+ einige neue Spielmechaniken
+
+Stimmelsinseln+ v2.84 (S2Stylands.c4s)
+	* Mini-Basenmelee/Arena
+	+ klein, kurz
+
+Wagon Fight [s2mod v2] (WagonFight_s2mod.c4s)
+	* Klassiker: Chaotisches Melee auf sich bewegenden Wagons
+
+CrazyElevator 2¾ [T mod. v2] (ElevatorFight_Tournament.c4s)
+	* Chaotisches Ritter-Melee
+	+ Musik!
+	- sehr ähnlich wie Wagon Fight, nur vertikal
+
+Kampf in Sesostris (War_in_Sesostris.c4s)
+	+ kreatives Spielziel
+	+ schöne kleine Arena-Landschlaft
+
+DynMelee (Dynmelee1_2.c4s)
+	+ viele einfache Melees in einem
+	+ bischen aufgemacht wie ein Wettbewerb
+
+Rebellion (Rebellion.c4f)
+	* im großen und ganzen hübsch gestalteter Rittermlee-Ordner
+	+ Musik!
+	+ Eisiger Winter hat sogar eine Story!
+	- Weiß nicht ob das 2 vs 1 in Feldlager fair ist
+	- Kreuzzüge ist zu groß
+	+ Die Brücke ist schön kompakt
+
+Höllenarenea (HellFight.c4s)
+	+ Story!
+	+ viele Einstellungsmöglichkeiten (und KI-Gegner)
+	* stimmige Landschaft (Hölle), aber etwas langweilig
+
+Arenafight (Arenafight137.c4s)
+	* 1vs1 Arena-Kampf wo die Spieler die gerade nicht an der Reihe sind wetten können, wer gewinnt
+	- etwas langweilig für die die warten
+	+ Möglichkeit, sich nach Gewinn (oder Wettgewinn) aufzurüsten
+
+Adept (Z4Adept.c4s)
+	+ kurzweiliges Rittermelee mit Shops und Upgrades
+	+ hübsche Landschaft
+	+ coole neue Spielelemente (aufleveln, Schriftrollen kaufen und nutzen)
+	- man kann sich einfach immer Heilungsgegenstände kaufen - damit kann eine Runde ewig dauern
+
+Ritter Melees (KnightMelees.c4f):
+	- traditionelle Melees wo Clonks durch Ritter ausgetauscht wurden, aher eher uninteressant weil zu nah am Original.
+	(Kommentare zu einzelnen Szenarien:)
+	- Ritter Training: Eher Tutorial oder Mini-Adventure
+	- Klepal: Clepal aber mit Rittern...
+	- Großer Schatzklau: Diebstahl aber mit Rittern...
+	- Felsenkönige: Wie Massif aber mit Rittern...
+	- Kristallgier: Wie Goldgier aber mit Rittern...
+	- Bergscharmützel: Wie Berggefecht aber mit Rittern...
+	- Ritter am Canyon: Wie Kampf am Canyon aber mit Rittern...
+	- Das verfluchte Schloss: Wie Das Gruselschloss aber mit Rittern...
+	- Fischsee: Wie Haifischsee aber mit Rittern...
+	- Lavabrücke EXP: Das gleiche wie Lavabrücke nur ohne Basis
+	- Klippenritter: Spieler starten manchmal unten in der Höhle... ist wohl ein Bug, lol
+	- Klippenritter EXP: Zu groß, zu wenig Möglichkeiten in andere Basis zu kommen, ansonsten ein normales Ritterburgenmelee mit einigen Extras
+
+	- insgesamt nicht unbedingt schlechte Szenarien, aber auch nichts außerordentlich gutes. Quantität statt...
+
+Ritter Geplänkel (KnightSkirmishs.c4f)
+	(Kommentare zu einzelnen Szenarien:)
+	- Ohne Ehre und Adel: Cofut Klon
+	- Burgen Koller: Burg Neferkare Chendu ist sehr ähnlich aber besser
+	- Wettkampf der Bogenschützen: sehr zufällig wie die Plattformen fahren um in Schussweite zu kommen. Ein falscher Sprung und man muss warten + von vorne anfangen, eher frustrierend
+	- Kanonenfutter: Ähnlich wie Cofut, nur irgendwie schlechter
+	- Kanonenfutter 2: Nur wirklich unwesentlich anders als Kanonenfutter 1
+	- Das Erbe: Hier gibts nicht viel... in Erdblock mit Sprengpfeilen rumlaufen und Waffenspawns aufsammeln...
+	- Ritter gegen Magier:
+	  - asymetrisches Basismelee (ich wage aber zu behaupten dass Magi den Rittern sehr überlegen sind)
+	  - künstliche teilweise unzerstörbare Landschaft
+	* Feuerland: die Bazooka macht irgendwie Spaß
+	- Kanonen Wahnsinn:
+	  - Kanonenballerei, aber ganz schön wenig Munition, dafür (da ist Palisadenkampf Artillerie z.B. interessanter)
+	  - etwas hässliche Landschaft
+	- Graben Krieg: Ziemlich normale/uninteressante Ritter-Arena
+	- Felsentanz: 
+	  * Eher ein Flintregen, aber auch genug Material um der Gegenseite das Leben schwer zu machen
+	  - Wie bei den meisten Flintregen ist die beste Taktik wohl, sich an den Rand zu stellen und nichts zu machen
+	- Steinfresser:
+	  - Arena ähnlich wie Waggonkampf (aber weniger interessant)
+	  - recht hässlich
+	- Der Tag an dem der Himmel Feuer fing: Bazooka macht irgendwie Spaß. Dieses Szenario ist etwas interessanter als Feuerland. Funktioniert aber letztlich nicht so recht, siehe einzelner Eintrag
+	
+	- insgesamt nicht unbedingt schlechte Szenarien, aber auch nichts außerordentlich gutes. Quantität statt...
+
+DynDungeon (Dyndungeon.c4s)
+	+ Ritter-Arena, dynamisch generiert
+	+ hoher Wiederspielwert durch andere Dungeon-Layouts
+	- etwas hässlich, die Räume sind sehr eintönig
+	- es kommt gerne mal vor dass der Clonk in der Wand gespawnt wird oder gleich eliminiert wird
+
+Burg Neferkare Chendu (Castle_Neferkare_Chendu.c4s)
+	* Arenakampf in zufällig generierter Burg
+
+Von Fischen und Wipfen (FishandWipf.c4s)
+	* etwa wie Cofut aber mit ein paar Extras (Kanonen die man per Magie aufladen kann,..)
+	+ schön designt
+	- sehr ähnlich wie Cofut
+
+Eisiger Feldzug ((G)IceCorpse.c4s)
+	+ SEHR schön designt
+	- eigentlich langweilge Landschaft; sehr ähnlich wie Knights.c4f/Tournament.c4s
+
+Lawinenkampf (Avalanche_Tournament.c4s)
+	* klassisches Ritter-Melee in Eishöhlen. Konzept: man muss erstmal ein Zelt für eine Basis finden
+	+ eigene Musik und etwas Athmosphäre durch weißen FOW
+	- eigentlich nicht wirklich was besonderes
+	(dies ist die gefixte und fürs Turnier verbesserte Version)
+
+Fields of Glory (Fields_of_Glory.c4f)
+	* eigentlich 4mal fast das gleiche Szenario:
+	- Classic.c4s ist sehr wie Tournament.c4s mit ein paar Kanonen
+	- XHF.c4s geht mehr in Richtung Cofut
+	- Dawn of the dead.c4s: Man bekopmmt ein Skelettclonk pro Kill
+	+ Super Undead.c4s: Man bekommt ein Skelettclonk pro Kill, und es upgraded sich
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Geteilte Burg (SharedCastle.c4s)
+	* Burgen-Basis-Melee in denen die Burgen direkt aneinander geklebt sind
+	+ CTF Spielziel: Klau feindliche Krone, Reichsapfel und Zepter
+	+ hübsches Setup, schön verteilte Waffen überall
+	+ schnelle Action
+	- CCAN: +0.8
+	- immer die gleiche Burg (Burg wird nicht dynamisch generiert) und die stehlbaren Gegenstände sind immer an der gleichen Stelle
+	- sobald einer in die andere Burg hineinkommt (am einfachsten wohl oben per Lehmbrücke) scheint es für das andere Team eigentlich vorbei zu sein, da dieser einfach viel zu schnell viel zu viele Eingänge öffnen kann
+	- Dass Flagge abnehmbar (=klaubar) ist, führt das eigentliche Spielziel ad absurdum -> es ist viel einfacher die gegnerische Flagge zu klauen, als alle drei Gegenstände
+	- Team-Auswahl ist etwas kaputt (man muss es doppelt machen)
+
+Xeron (m0Xeron_Lava.c4s)
+	+ whoa, was ist das für ne fetzige Musik?
+	+ kleine Arena, hübsch designt
+	- errors
+	(andere Versionen mit anderem Ambiente existieren, aber das Lava-Ambiente ist am interessantesten)
+	--- leider ist der Relaunch verbuggt (man kann nicht relaunchen)
+
+Eden1.1 (Eden11.c4s)
+* kleine Ritter-Arena in Höhlen-Gängen, Waffen-spawns
++ CCAN: +2,1
+* ganz hübsch designt, aber etwas zu groß
+- einige Objekte können nicht platziert werden, fehlt da was? (MetalMagic 2 vs 3?)
+- Kombination aus 1. links rauslaufen = rechts reinlaufen und 2. nachspawnende Heil-Items sorgt im zweifelsfall für eine Endlosrunde
+
+Käseberge (Cheesemountains.c4s)
+	+ Ritter-Handgemenge mit Flagge und Zelt
+	* sehr ähnlich wie Gelände, nur in Teams, etwas interessantere Landschaft
+	- im wesentlichen nur eine dynamische Landschaft
+
+Wolkenkampf (SkyFight.c4s)
+	* simples Team-Melee bei dem man sich schnell eine Burg bauen sollte
+	- im wesentlichen nur eine dynamische Landschaft
+	- Burgbau ist ohne anfängliche Nicht-Angriffs-Zeit immer schwer, v.A. wenn die gesamte Landschaft eine durchlöcherte Himmelsinsel ist
+	- ist gibt auch andere Himmelsinseln-mit-Ritter Basismelees (z.B. Lawinenkampf)
+
+Himmelsinseln Kanderiens (Himmelsinseln_Kanderiens.c4s)
+	* Ritter-Arena
+	+ interessante Idee: Drei Relaunches je Spieler - 1. M&M Kanderianer, 2. M&M Paladin, 3. König
+	- Idee funktioniert letzlich nicht gut:
+		Kanderianer ist nur ein verkappter Ritter (der keinen Speer werfen kann),
+		Paladin hatte im Test extrem wenig HP (wurden mit wenigen Pfeilen gespawncampt),
+		König kann sich dank unbegrenzter Mana ad infinitum heilen
+	- man kann Gegenstände in Stores kaufen, aber nichts sinnvolles
+
+Der Tag an dem der Himmel Feuer fing (Gecko Edition) (TDtSCF_GEdit.c4s)
+	* mit tragbarem Kanönchen bewaffnete Ritter in Luftschiffen versuchen dem Kontor des Gegenteams zuerst genug Schaden zuzufügen
+	+ interessante Kill-Belohnungen, d.h. Upgrades für das eigene Luftschiff
+	* lustige Achievements, die aber wie etwa die Hazard Kill-Messages leider überhaupt nicht zur Geltung kommen
+	- tragbare Kanone ist ganz lustig, aber super-frickelig zu bedienen weil man ja auch noch gleichzeitig das Luftschiff steuern muss
+	- es zieht sich SEHR lange hin, denn man muss das gegnerische Kontor *sehr* oft treffen und Gegner spawnen mit neuem Luftschiff und Kanone nach 10s
+	— man hat nur 1 Munition und die Funken in der Mitte der Landschaft die einem zufällige neue Munition geben sind schwer einzusammeln
+
+Die Schlacht um Meridian (Die_Schlacht_um_Meridan.c4s)
+* kleines (Basis)melee in einer Paladin-Arena
+- die Landschaft ist ein wenig zu simpel
+- einige Objekte können nicht platziert werden, fehlt da was? (MetalMagic 2 vs 3?)
+
+Die Killervögel (Killervoegel.c4s)
+	+ interessante Idee: asymetrisches Team-Melee - Killervögel vs Ritter
+	+ hübsch gestaltete Landschaft
+	- für Killervögel-Spieler sehr hakelig - nicht klar wie man genau stehen muss um Schaden zu machen (und wenig Schadens-Feedback)
+	- Killervögel regenerieren. Vögel können sich einfach zurückziehen und warten. So kann das Spiel dann ewig dauern
+	* (insofern ist das Gameplay weder für Ritter noch Vögel so recht befriedigend)
+
+Eiserner Horizont (iron_horizon.c4s)
+	* simple kleine Himmelsinseln-Karte in den zufällig Ritter-Waffen spawnen
+	- ständige Erdbeben sind wegen des Bildschirm-ruckelns nervig
+	- eigentlich nur eine Landschaft mit zufälligen Spawns, nix besonderes
+	- durch Zufällige Landschaft und Spawns kommt es häufig zu Situationen, wo man garnicht wegkommt, wo man steht
+
+Himmelsschlacht (Himmelschlacht.c4s)
+	* Ritter-Arena auf winzigen Himmelsinseln mit Pfeilen die viele unterschiedliche Effekte haben
+	- scheint verbuggt: Brücken die durch Brückenpfeile entstehen schleudern einen Spieler immer davon weg
+	- Alleinstellungsmerkmal sind die vielen unterschiedlichen Pfeile, die sind alle jedoch nicht sonderlich interessant
+
+Die Schwebeburgen (Hovercastles.c4s)
+	+ lustige Idee: man hat eine Schwebeburg mit der man durch die Gegend fahren kann und an anderen Burgen abprallt
+	+ ist insgesamt lustig, die Burgen prallen aneinander ab
+	- eher wie eine Sandbox, denn Melee funktioniert nur beschränkt: Jeder würde einfach nach oben fahren und von oben Flints auf die andere Burg werfen
+	- zumindest das Burgen-verbinden ist verbuggt
+	- in Tal der Dummköpfe gibt es auch Schwebeburgen, aber dort gibt es noch weitere lustige Elemente auf
+
+Wasser - Marsch (Wasser_-_Marsch.c4s)
+	* Ritter/Magus/Clonk-Arena
+	+ Pyramide füllt sich langsam mit Wasser, effektive Levelgröße ändert sich also
+	- ansonsten relativ standard, etwas zu groß
+	- keine Relaunches!
+	- unfertig, auch markiert als unfertig
+
+Wagon Fight Insane Train ((G)WagonFightInsaneTrain.c4s)
+	* Modifikation des Klassikers Wagon Fight
+	+ lustige Idee mit den Zügen
+	- nervige Sounds
+	- sehr ähnlich wie Wagon Fight, ich denke der s2mod war der beliebteste der vielen Varianten
+
+Nebel Arena ((G)NebelArena.c4s)
++ hübsche Ritter-Arena
+* 10/23. Platz im Micro Melee Wettbewerb
+- CCAN Niveau: +0.9
+- diverse Bugs
+- "Jump of faith"s enden oft tödlich, Bewegung überhaupt is recht schwierig
+
+Tötet den König (KillDaKing_net2.c4s)
+	- langweilige Landschaft
+	+ kurz, schnell, chaotisch
+	- es scheint mir als sei es (für den König) sehr einfach, sich zu verschanzen
+
+Katakomben Kampf ((G)DungeonBattle.c4s)
+	+ sehr stimmig designt
+	+ klein, kurz
+	- Landschaft ist ziemlich unspannend - nichts zerstörbar, flache Ebenen
+	- wenig Waffen oder taktische Möglichkeiten, die gegnerische Basis anzugreifen
+	- viel zu dunkel (gamma)
+	- man kann nichts sehen wenn zwei Clonks dicht aneinander stehen, weil beide einen Lichtschein haben, der zu praktisch weiß addiert wird
+
+Nur mit Pfeil und Bogen ZE Edition (TmPuB_ZE.c4s)
+	+ lustige Auswahl an Pfeilpaketen
+	- Landschaft recht langweilig
+	- wirkt eher wie ein Demo-Szenario für diese ganzen Pfeilpakete
+	- ERROR: Platzierung von Monstern und Schlangen funktioniert nicht
+
+Gerodu v1.12 (Gerodu.c4s)
+	* kleine Ritter-Arena mit diesem unzerstörbarem Brick-Material
+	- Waffen usw. spawnen nicht nach
+	- sehr ähnlich wie andere solche Ritter-Arenen
+
+BridgeFight [T mod. v2] (BridgeFight_Tournament.c4s)
+	* Chaotisches Ritter-Melee
+	- sehr ähnlich wie Wagon Fight, CrazyElevator usw., nur dass sich die Plattformen nicht bewegen
+	- verschiedene Plattformen sind, da zufällig platziert, oft garnicht zu erreichen
+
+Cave Runners (CaveRunners.c4s)
+	+ kleine Arena-Karte
+	- mittelmäßige Karte, Karte ist statisch
+
+Ced's Rache (Ced'sRevenge.c4s)
+	+ kleine Arena-Karte, schön designt
+	- aber teils sehr unfair
+	- letztlich gibt es bessere M&M Arena-Karten, z.B. Queron, Xeron
+
+Die Katakomben von Burg Munkel (Die_Katakomben_von_Burg_Munkel.c4s)
+	* asymetrisches 3-Team-Basis Melee
+	- soetwas ist sehr schwer auszubalancieren: es sieht so aus als hätte der rechte Spieler einen massiven Vorteil und der untere einen massiven Nachteil
+	- viele Errors
+
+Schlacht in Ma'ankyr (Schlacht_in_Ma_ankyr.c4s)
+	+ hübsch gestaltete kleine Arena
+	- sehr ähnlich wie Kampf in Sesostris
+	- ERROR: mit aktuellem M&M Pack teilweise nicht kompatibel ("Mystiker" bei Charakterauswahl auswählen führt zu Spielereliminierung)
+
+Queron (Queron.c4s)
+	+ gut gestaltete Ritter-Arena
+	- offenbar eine frühere Iteration von Queron 3 obwohl die Landschaft ganz anders ist. Also lieber nur Queron 3 behalten
+
+Sandsturm (Desert_storm.c4s)
+	+ interessante Idee mit dem Waggon als Basis
+	+ schön designt, klein
+	- dass die Basis mobil ist, bringt nicht viel, da alle Vertiefungen mit Lava vollaufen und die Landschaft zu uneben ist um den schweren Waggon woanders hinzuschieben. Katapult und Kanonen (an Startposition) haben garnicht die Reichweite um die gegnerische Basis zu treffen. Selbst ein Zelt als Basis wäre nützlicher gewesen
+
+Teranas Ebenen (Teranas_Ebenen.c4s)
+	* Ritter-Aufbau-Melee
+	- viel zu große Landschaft; auf viel zu lange Runden ausgelegt
+	- viele Errors
+
+Kastenkampf (KastenKampf.c4s)
+	+ lustige "Schach" Idee
+	+ kurz, schnell
+	- letztlich ist das Schachspiel wenig strategisch, die Arenen ebenso unspannend
+	- ERROR: der zweite Spieler hat VIER Clonks weniger, auf der Gegenseite sind das die stärksten Einheiten
+
+High Knights (_G_HighKnights.c4s)
+	* Ritter-Arena
+	- nicht viel los hier, ein paar Ausrüstungsgegenstände in der Erde vergraben und langsam nachspawnende Sachen, das wars
+
+Bounce Arena (BounceArena.c4s)
+	* Ritter-Arena
+	+ klein
+	- die Trampoline sind eher Hindernisse: Es ist zu leicht, darin festzustecken; es ist nicht möglich damit einen kontrollierten Sprung zu machen; es ist nicht wirklich möglich, damit einen kontrollierten Angriff (e.g Flints) zu machen
+	- ansonsten ist Landschaft eher langweilig - es gibt genug andere Ritter-Arenen
+	+ die Zuschauer sind ein nettes Gimmik
+	+ sehr gute Bewertung auf CCAN: 2.5 (warum??)
+
+Eine Grube voller Ritter (AsylumCave.c4s)
+	* Ritter-Arena
+	+ klein
+	- Arena ist etwas krackselig
+	- nichts besonderes, ganz normal Ritter mit ein paar Schatztruhen
+	+ sehr gute Bewertung auf CCAN: 2.8 (warum??)
+
+Der Tunnel (Tunnel2.c4s)
+	+ schön gestaltet
+	- viel zu groß, Landschaft zu unwegsam
+	- nicht ganz klar was die vorgesehene Spieltaktik sein soll... mit Kanonen aufeinander schießen?
+
+Marsch der Klingen (Marsch_der_Klingen.c4s)
+	* Burgen-Melee
+	- wirkt etwas unfertig (version 0.9b, "Geschichte folgt noch")
+	- wenig taktische Möglichkeiten, läuft wohl auf Kanonenbeschuss hinaus
+
+Kampf der Giganten (FighOfTheGiants_Tournament.c4s)
+	* Ritter-Arena mit Wurfäxten
+	+ schön designt
+	+ klein
+	- außer der Wurfaxt gibt es hier nicht wirklich irgendetwas, dass es von anderen Szenarien abhebt
+
+Himmelsburgen (SkyCastles.c4s)
+	* Basenmelee
+	+ Helikopter
+	- scheint sehr auf Kampf mit Luftschiffen + Helis abzuzielen, andere Taktik kaum möglich
+	- etwas groß
+
+Dreithronetal (ThreeThronesValley.c4s)
+	* klassisches Burgenmelee
+	- zu groß, dauert vermutlich ewig
+
+Battle of Fürstenfeld (BoF.c4s)
+	* zwei symetrische Ritterburgen
+	* hatte einige für die damalige Zeit innovative Sachen die aber später standard waren
+	- Karte birgt wenig taktische Möglichkeiten
+
+Zwillingsburg2 - Der Krieg danach (Zwillingsburg2-Der_Krieg_danach.c4s)
+	* klassisches Burgenmelee (mit halbkaputten Burgen)
+	- zu groß, dauert vermutlich zu lang
+	- sehr eingeschränkte taktische Möglichkeiten. Es läuft auf Artilleriebeschuss hinaus
+
+
+Tal der Kriege (Kriegstal.c4s)
+	* sehr asymetrisches Burgen-Melee
+	- Balance passt nicht:
+	  der dritte Spieler in der Mitte hat Feinde zu beiden Seiten und schlechtere Clonks, zudem ist ide Burg im Tal, sehr unfair
+	  der Spieler rechts ist weitaus höher als die anderen, auch unfair
+	  wenn man nur zu zwei Spieler hat, ist die Burg in der Mitte nutzlos
+
+Kleines Ritterhandgemenge (Ritterliches Handgemenge.c4s)
+	* Ritter-Arena
+	- keine Deko, sieht "bland" aus. An Ritter-Arenen gibt es schönere...
+
+Heiliger Wald (Holy_Forest.c4s)
+	* Ritter-Arena
+	- langweilige Landschaft, nicht viel zu sehen dort
+
+Sky Fight (DWSkyFight.c4s)
+	+ die Zuschauertribünen mit Laolawellen sind unterhaltsam
+	- eigentlich sehr ähnlich zu Waggonkampf und Konsorten, nur mit weniger taktischen Möglichkeiten und allgemein weniger Action 
+
+Duelle (Duelle.c4s)
+	+ lustige Idee mit dem Beeinflussen des Duells durch Zuschauer
+	- aber letztlich sind die Beeinflussungsmöglickeiten sehr gering und machen sogar weniger aus als Meteoriten, dementsprechend auch recht langweilig für die "Zuschauer"
+	- sehr ähnlich wie Knights.c4f/Tournament.c4s oder auch (G)IceCorpse.c4s
+
+Rebellion (Rebellion.c4s)
+	+ klein
+	* asymetrische Burgenbelagerung, schwer natürlich das auszubalancieren
+	- ERROR: manchmal bekommt der erste Spieler die Flagge vom zweiten und der zweite bekommt garkeine!
+
+Lardos (Lardos.c4s)
+	+ schöne Idee mit der KI-Schlacht
+	+ klein
+	- wenig Taktikvielfalt: letztlich läuft es darauf hinaus, dass sich die Könige jeweils einschließen und Superflints produzieren, dann ungeachtet der KI-Armee die gegnerische Basis bombarieren
+	- die KI-Armee kann man nicht steuern, man hat garkeinen Einfluss darauf
+
+Flaggen für Geschenke (cOnquer_Flag.c4s)
+	+ kreativ(ere) Siegbedingung: Flaggenkontrolle
+	- keine Hindernisse auf Landschaft: einfachster Weg zu gewinnen ist, Kontor des Gegners im Kamikazeaktion zu sprengen (es gibt relaunches)
+	- langweilige Landschaft
+	- CCAN: nur +0.8
+
+Captainkampf (Captainkampf.c4s)
+	- SEHR ähnlich wie Cofut, ansonsten nichts besonderes was dieses Szenario davon abheben würde
+
+Der Aufstand (Aufstand.c4s) - aus Rebellion.c4f
+	- ziemlich einfach gestaltete Landschaft
+	+ sehr kurz (Gebäude nicht betretbar oder interagierbar) 
+	- ERRORs: zum Beispiel wenn der Ritter den Bogen benutzen möchte
+
+Th3 3 5c3n4r10z (Old.c4f)
+	- nothing special: kleine dynamische Karten als Ritter- oder Magus-Melee
+
+Ruinen der Finsternis (RuinsOfDarkness.c4s)
+	* Ritter-Arena 
+	- Landschaft etwas langweilig
+	- ohne Relaunches
+
+Eiseskälte (Eiseskaelte.c4f/SLEiseskÃ¤lte (Knight Version).c4s)
+	- sehr ähnlich wie Lawinenkampf
+
+Fantasy Dungeon (FantasyDungeon2.c4s)
+	* kleine Magus/Ritter-Arena
+	- nicht hübsch. Es gibt schönere die ansonsten sehr ähnlich sind
+
+Katakomben von Buchhaim (Katakomben.c4s)
+	* tolle Grundlage/Setting: Umsetzung der Deko ist ganz ok
+	+ Musik!
+	- spawnen die bücher nicht nach? Buchinventar scheint sehr beschränkt zu sein
+	- wirkt irgendwie unfertig - oder leer. Man erwartet irgendwie mehr
+
+Die Schlacht um die Ardos-Festung (Die_Schlacht_um_die_Ardos-Festung.c4s)
+	+ nette Idee mit den automatisch spawnenden Rittern auf beiden Seiten
+	- aber letztlich sind die Ritter irrelevant, denn beide Seiten können sie einfach aussperren. Es läuft also auf einen Katapultkampf hinaus
+
+Ritterplatz (Knight_place.c4s)
+	* sehr einfache Ritter-Turnier-Arena
+	- letztlich sehr ähnlich wie Tournament.c4s oder sowas
+
+Knight Turnéé (KnightTurnee1_6.c4s)
+	* Ritter-Melee in denen nur mit speziellen Speeren die unterschiedliche Wirkungen haben (Explosiver Speer, Zapspeer usw...) gekämpft wird
+	- langweilige Landkarte
+	- sonst eigentlich nichts spezielles
+
+SkyNight (SLSkyNight.c4s)
+	* Ritter-Arena auf mikropischen Himmelsinseln
+	- die Himmelsinseln sind so klein dass man eigentlich nur darauf stehen und sich gegenseitig mit Bogen beschießén kann, nicht so spannend
+
+===============================================
+            Aussortierte Kandidaten 
+	      (läuft nicht mit Clonk Rage)
+===============================================
+
+Castle Defense (CastleDefense_NET2.c4s)
+	+ interessantes Spielziel: Ein Team muss die Krone klauen, das andere verteidigen
+	+ kleine Karte
+	- recht wenig taktische Möglichkeiten
+	(Anzeige des Countdown-Timers funktioniert nicht in Clonk Rage)

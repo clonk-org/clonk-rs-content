@@ -1,0 +1,5 @@
+Standardweapon. Shoots projectiles in volleys.
+
+Ammunition(max.): 250
+Firemode 1: Normal
+Firemode 2: Scattershot

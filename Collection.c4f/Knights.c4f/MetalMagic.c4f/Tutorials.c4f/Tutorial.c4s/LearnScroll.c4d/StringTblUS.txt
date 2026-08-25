@@ -1,0 +1,10 @@
+MsgLearnedSkill=Skill %s learnt!
+MsgLearnedSpell=Spell %s learnt!
+MsgLearnedWonder=Wonder %s learnt!
+MsgLearnedPlan=Plan %s learnt!
+MsgNoSpell=I cannot decipher anything.
+MsgKnown=I learnt %s already.
+MsgIntro=Hint: Activate scrolls in order to learn the spells or plans written on them.
+MsgNoPaladin=Only a paladin can learn wonders!
+MsgWrongChurch=You are not in the right church for this wonder!
+MsgNoBaseSkill=You need the skill %s to learn %s.

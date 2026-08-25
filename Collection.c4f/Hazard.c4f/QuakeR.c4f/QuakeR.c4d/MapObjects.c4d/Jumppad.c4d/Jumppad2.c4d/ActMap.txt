@@ -1,0 +1,7 @@
+[Action]
+Name=Blink
+Procedure=NONE
+Length=25
+Delay=3
+Facet=0,0,8,20
+NextAction=Blink

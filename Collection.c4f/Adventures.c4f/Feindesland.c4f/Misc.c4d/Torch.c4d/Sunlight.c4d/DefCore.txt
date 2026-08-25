@@ -1,0 +1,9 @@
+[DefCore]
+id=SU9Z
+Name=Sunlight
+Version=4,9,1,4
+Category=1
+Picture=0,0,1,1
+Width=1
+Height=1
+TimerCall=Check4Clonk

@@ -1,0 +1,3 @@
+VillageVictory=We killed the king!
+CastleVictory=We have defeated those traitors!
+Draw=The game ended in a draw.

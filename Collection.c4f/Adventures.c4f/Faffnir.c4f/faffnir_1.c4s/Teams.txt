@@ -1,0 +1,17 @@
+[Teams]
+LastTeamID=2
+
+  [Team]
+  id=1
+  Name=Assasin
+  Color=1
+  IconSpec="ASAS"
+
+  [Team]
+  id=2
+  Name=Enemy
+  PlayerCount=1
+  Players=2
+  Color=8355711
+  IconSpec="KAND"
+  MaxPlayer=1

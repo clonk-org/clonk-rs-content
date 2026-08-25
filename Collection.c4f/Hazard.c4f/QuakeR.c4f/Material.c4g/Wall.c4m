@@ -1,0 +1,7 @@
+[Material]
+Name=Wall
+Color=64,64,64,64,64,64,64,64,64
+Shape=0
+Density=50
+Friction=100
+Placement=40

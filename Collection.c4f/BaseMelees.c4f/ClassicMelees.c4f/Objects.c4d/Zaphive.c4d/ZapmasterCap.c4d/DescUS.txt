@@ -1,0 +1,3 @@
+Protect from Zapstiches.
+But disables the Clonks movement and is very fragile while digging, falling and producing.
+Buckle and unbuckle by control digdouble.

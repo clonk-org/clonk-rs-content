@@ -1,0 +1,11 @@
+
+castle=Lorthemus' guard
+left=Invaders from left
+right=Invaders from right
+
+EmptyCastle=No one wanted to help Lorthemus. So, %s must play in the castle.
+
+melting=Ah... The iceblock starts melting!
+tlog1=Thanathos now belongs to %s.
+tlog2=The attacker's goal is now bringing Thanathos to the border of the map.
+free=I'm free! But... where am I???

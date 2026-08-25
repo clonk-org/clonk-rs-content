@@ -1,0 +1,387 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+--------------------------------------------------------
+
+Die neue Welt (DieNeueWelt.c4s)
+	+ Siedeladventure mit Western-Pack: Viele Dialoge und verschiedene Aufgaben
+	- Errors (die ganze Zeit)
+	- nur für 1 Spieler
+
+Empyria ((G)Empyrean.c4s)
+	+ Interessante Story und Spielmechaniken
+	+ hübsch gestaltete Landschaft
+	+ 1. Platz im Let's Rock Wettbewerb
+
+200 Meter unter dem Meer ((G)Deeep.c4s)
+	+ hübsch gestaltete und interessante Landschaft
+	+ interessante neue Regeln und Produktionsketten
+
+Clepler-38b (Clepler-38b.c4s)
+	+ eines der wenigen Siedelszenarien für Clonk Mars
+	+ Story und Stippel!
+
+
+Die Flut kommt III (Die_Flut_kommt_III.c4s)
+	+ man kann im Spiel das Spiel so konfigurieren wie man möchte (mit Standardspielzielen)
+	- langweiligere Landschaft geht nicht
+	+ aus irgendwelchen Gründen ist es super beliebt, sollte in so einer Sammlung nicht fehlen
+
+Wipfenfels (Wipfenfels.c4s)
+    + Interessanter Mix aus Ritter-Siedeln und Adventure
+	- 6. Platz im Siedlungsmissionen-Wettbewerb, CCAN: +1.5
+	- Originalversion ist etwas lang, daher die modifizierte Liga-Version genutzt
+
+Weltenadventure (OriginalAdventure.c4s)
+	+ Interessanter Mix aus Siedeln und Adventure
+	+ Mehrere Abschnitte
+
+Arktis 2 (m0Arctic2.c4s)
+	+ interessante Erweiterung zu Arktis, mit weiteren Geistern, also weiteren Aufgaben
+	+ ordentlich nochmal Schwierigkeit hoch wegen Stippelinvasion
+	+ schöner ausgefüttertes Mid/Endgame
+
+Xeron Siedelversion (m0XeronSettlement.c4s)
+	+ Interessant: sehr kleine sich erweiternde Landschaft
+	- garkeine Story und Aufgaben wie "bau dies, bau das"... aber warum denn?
+	- etwas grindy
+	* Landkarte sieht künstlich aus, aber nicht schlecht
+	- nicht schaffbar? man muss 5 Gebäude bauen, hat aber nur 4 Bausätze
+	- Errors
+
+Erbe des Vulkans ((G)Volc.c4s)
+	+ Liebevoll gestaltete Landschaft
+	+ bischen Story
+	- frickelige Landschaft die wohlmöglich dazu animieren soll, das Seilpack zu verwenden. Ich glaube die Rechnung geht nicht auf
+
+Der Schatz am Säuresee (TreasureOfTheAcidLake.c4s)
+	+ Interessanter Mix aus Adventure und Siedeln ohne Basis
+	- nur für 1 Spieler
+
+Die Rustuffschlucht
+	+ interessant: ohne Basis
+	- eher Richtung Rätselszenario / Herausforderung
+
+Wipfberge (Wipfberge.c4s)
+	+ liebevoll gestaltete Landschaft mit Western-Pack
+	- ansonsten recht gewöhnlich, keine Herausforderung
+	- sehr ähnlich zu Wipfberge.c4s
+
+Goldwaschen (GoldabbauWes.c4s)
+	+ liebevoll gestaltete Landschaft mit Western-Pack
+	- ansonsten recht gewöhnlich, keine Herausforderung
+	- sehr ähnlich zu GoldabbauWes.c4s
+
+Golden Canyon 2 (GoldenCanyon_2.c4s)
+	+ liebevoll gestaltete Landschaft mit Western-Pack
+	- etwas langwierig
+	- Grundkonzept ähnlich wie Western.c4f/GoldenCanyon.c4s
+	
+Mentorhall – Stadt der Kathedrale (M_Kathedral.c4s)
+	+ ein wenig Story und Adventure
+	- ohne Basis und mit dieser geringen Sicht eher frustrierend zu spielen
+
+Hörx's Rache (Q8Castle_1_1.c4s)
+	+ interessante Herausforderung
+	+ kleine Karte, kurze Runde
+	- wenig Wiederspielwert
+
+Svenitabbau (DM2_Svenite.c4s)
+	+ lustige Idee
+	+ unerwartet schwer/komplex, durch mögliche Meteoriten-Kettenreaktionen
+	- etwas fies ausbalanciert - vieles was einem helfen würde ist einfach nicht verfügbar
+
+Wettschmücken (Decorace.c4s)
+	+ Interessant: Siedel-Team-Rennen
+
+Ragnarök (Ragnaroek.c4s)
+	+ kurz, schöne Story / Spielziel
+	- 7. Platz im Siedlungsmissionen-Wettbewerb, CCAN: nur +1.1
+
+Kalte Berge (ColdMountains.c4s)
+	+ liebevoll gestaltete Landschaft
+	+ klein
+	- nichts besonderes, normales Goldmine-Spielziel
+
+Die Goldwipfhöhlen (Goldwipfcaves.c4s)
+	+ liebevoll gestaltete Landschaft
+	- nicht wirklich was besonderes
+	- nur für 1 Spieler
+
+Tropische Welten (TropicalWorlds.c4f)
+	+ hübsche ungewöhnliche Landschaften (bis evtl. auf die letzte)
+	- eher langweilige Spielziele
+
+Umgestülpt (InsideOut.c4s)
+	+ einzigartiges Spielziel und Athmosphäre: Zerstör ein schwebendes Dings was mit Flints usw. um sich schmeißt
+	- etwas langwierig zur von Anfang an bekannten Lösung (Blitzgeschütz) zu kommen
+	- die ständigen kleinen Explosionen sind nervig, insb. auf kleinem Bildschirm
+	- CCAN Niveau +1.0
+
+Hostile Worlds (HostileWorlds.c4f)
+	+ anspruchsvolle Karten mit jeweils (semi-)interessanten Herausforderungen
+	- einige ziemlich grindy (aber nicht unbedingt überraschend bei dem Namen)
+
+NC_81´s maps (NC_81__s_Selfmademaps.c4f)
+	+ die meisten sind liebevoll gestaltet
+	+ Qualität vergleichbar mit Originalpack
+	+ die meisten jeweils recht kompakt
+	- Ziele jeweils wenig besonders
+	(ich habe einfach nur die besten beibehalten, folgende gelöscht. Kommentare:)
+		- Ritter Battle, Himmels König: Sind Melees
+		- Korallenbucht: Abbau aller Korallen ist viel zu grindy
+		- Korallenbucht (Netzwerk): Immernoch viel zu grindy
+		- Wasserhöhlen Weltuntergang: Wasserhöhlen-Karte mit ein paar Objektpacks...
+
+Gefährliche Welten (HazardousWorlds.c4f)
+	+ Qualität vergleichbar mit Originalpack
+	- generische Spielziele
+	- alle eher schwierig / langwierig
+	+ dass sie schwer / langwierig sind, steht quasi im Etikett, man kann diese also nicht ausversehen spielen
+	(Kommentare zu einigen Szenarien:)
+		- Säureklippen: Recht grindy
+		- Arktische Tiefen: Kuppel kann man nur unterwasser bauen, aber man hat keine Aquaclonks??
+		- Ascheberge: ein wenig grindy
+		- Brennende Tiefen: super langwierig
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Reibachtal (ProfitValley.c4s)
+	- äh ich versteh das Szenario irgendwie nicht, wirkt wie ein Haufen zufällig zusammengewürfelter Spielinhalt
+	+ 2. Platz im Let's Rock-Wettbewerb, CCAN: +2.8
+	- letztlich eine Sandbox für eine alternative Wirtschaft
+
+Wurm Siedeln (Wurm_Siedeln.c4s)
+	+ Materialwürmer sind lustige Idee
+	- ...aber nix draus gemacht. Keine Möglichkeiten irgendwie auf die Würmer einzuwirken, keine Story oder irgendwas
+	- Standard Spielziel
+	- Standard-Himmelsinseln-Landschaft
+
+Knight Settlers (KnightSettlers.c4f)
+	* Siedel-full-conversion mod 
+	+ schöne Musik
+	--- unfertig. Wer weiß was daraus geworden wäre
+
+SpaceLaunch Levels (SpaceLaunch.c4f)
+	- wurde später nochmal zusammen mit einem sehr ähnlichen Pack (Cognition Alliance) zu einem neuen Pack namens Star Empires neu aufgelegt. Besser das angucken.
+
+Star Empires Levels (Demo) (StarEmpiresDemo.c4f) und
+Star Empires Levels (StarEmpires.c4f) und
+Star Empires Levels (Star_Empires_Return.c4f)
+	- alle Szenarien haben unnötig riesige und uninteressante oder gar generische Landschaften ohne Detail
+	- alle Szenarien sind open-ended, keine echten Spielziele
+	- keine Story o.Ä. reines siedeln auf Karten
+	- letztlich sind die Szenarien hauptsächlich showcases für das StarEmpires pack. Das Pack ist hübsch gemacht, ist aber im wesentlichen ein (bzw. zwei) Future Re-Skin des Originalpack mit wenig Neuem. ClonkMars läuft diesem Pack in der Kategorie Future-Siedeln aufjedenfall den Rang ab. Betreffend der herstellbaren Waffen wirken diese in Clonk Rage im Vergleich zu Hazard, EKE, CMC veraltet.
+
+Flussufer (Riverufer.c4s)
+	- letztlich nur eine Karte
+	- etwas groß
+	- Standard-Ziel (Goldmine), recht grindy
+	+ CCAN Niveau +2.1
+
+Wild West RP (Wild-West-RP-1.61_Handel.c4s)
+	- Kein Ziel
+	- riesige (recht uninteressante) Landschaft
+
+Reise zum Mittelpunkt der Erde (center_of_the_earth.c4s)
+	+ liebevoll gestaltete Landschaft
+	- viel zu groß
+
+Im Vulkan (Vulcano.c4s)
+	+ liebevoll gestaltete Landschaft
+	- gewöhnliches Spielziel, recht grindy zu erfüllen
+	- CCAN: nur +1.2
+
+Eisbach Tal ((G)IceStream.c4s)
+	+ Interessante Landschaft
+	- langweiliges Spielziel
+
+ClonkMars Extrawelten (ClonkMarsExtrawelten.c4f)
+	+ eines der wenigen Siedelszenarien für Clonk Mars
+	- aber letztlich nur normale dynamische KArten mit Clonk-Mars-Materialien
+
+Glittering Peaks (GlitteringPeaks.c4s)
+	+ interessante (statische) Karte
+	- grindy
+	- Lösung: Luftschiff bauen. Dann ist alles erreichbar... 🙄
+
+Burgenbau im Gebirge ((G)Burgenbau in dem Gebirge.c4s)
+	+ gute dynamische Landschaft, nicht zu groß (aber nichts besonderes)
+	- Spielziel: bau ne Burg. Sehr sandboxy, keine Herausfoderung
+
+Tachyon Tal (05_Tachyon_Tal_Twonky_edit_v1_1.c4s)
+	+ eines der wenigen Siedelszenarien für Clonk Mars
+	- uninteressante Landschaft
+	- Spielziel sehr grindy, quasi "baue alles ab"
+
+Molten Core (MoltenCore.c4s)
+	+ Erforschen von "Inseln" in der Lava ist (leicht) interessant
+	- jede Höhle erforscht sich gleich, zu repetitiv, zu groß
+
+Der Weg zum Roten Kristall (Der_Weg_zum_Roten_Kristall_1_3.c4s)
+	+ interessant: wie ein kooperativer Hindernisslauf
+	- vieel zu groß und daher lang, wird irgendwann langweilig
+
+Kranpack – Wipfe retten (CraneWipf.c4s)
+	- eher ein Demoszenario für das Kranpack: Zur Erreichung des Spielzieles ist das Kranpack überhaupt nicht sinnvoll
+
+Kran Core (CraneCore.c4s)
+	- eher ein Demoszenario für das Kranpack
+	- Spielziel Goldmine, aber es gibt kein/kaum Gold auf der Karte... 🙄
+
+Regen (Regen.c4s)
+	+ ein wenig Abwechslung im Erdreich, inklusive KI-Gegner
+	- eigentlich gleiche Idee (viel Wasser! Du kannst nicht an die Oberfläche!) wie Die Flut kommt III, nur das letzteres viel bekannter (und beliebter?) ist
+
+Höhenfanatik (HighFanatics.c4s)
+	+ hübsche Landschaft
+	- dauert etwas lang
+	- gewöhnliches Spielziel (Goldmine)
+	- nur für 1 Spieler
+
+Zerfallene Inseln (Zerfallende_Inseln.c4s)
+	+ hübsche Landschaft
+	- gewöhnliches Spielziel (2000 Siedlungspunkte, alles Gold und Erz abbauen)
+	- dauert lang (>3 Stunden), ist grinding.
+
+Hoch hinaus (HighExpedition.c4s)
+	- Lösung: Luftschiff ¯\_(ツ)_/¯
+	- geht ein Statuenteil über Bord, kann man nicht mehr gewinnen aber das Spiel merkt das nicht
+	- quasi die gleiche Karte vom leicht hübscheren Höhenfanatik (vom gleichem Autor)
+
+Die Säurewelt (Remake) (Die_Saeurewelt2.c4s)
+	- letztlich nur eine Karte, Standard-Ziele
+
+Sonnental (Sunvalley.c4s)
+	- yet another Himmelsinselnkarte mit generischem bau-alle-Kristalle-ab Ziel
+
+Neue Missionen (Neue_Missionen_0.c4f)
+	+ (Anfangs) zusammmenhängende Kampagne
+	- willkürliche und langweilige Spielziele
+	- langweilige Landschaften
+
+Lavalöcher (Lavaholes.c4s)
+	- Spielziele sehr grindy, erschwert durch dynamische Landschaft mit viel Lava
+	- sehr ähnlich wie Worlds.c4f/Lavacaves.c4s
+
+Himmels Tal ((G)Sky_Valley.c4s)
+	- eigentlich normale Himmelsinseln-Karte
+	- Ziel zu erfüllen dauert viel zu lang
+
+Stürmische Meere (Sea.c4s)
+	- Nichts besonderes: Wie Missions.c4f/Submine.c4s nur etwas größer und mit Statue-zusammenbauen Spielziel
+	- 8. Platz im Siedlungsmissionen-Wettbewerb, CCAN: +1.2
+
+Kraterhöhle (Kraterhoehle.c4s)
+	* Karte ist ok
+	- generisches Spielziel
+
+Kawah Ijen (Kawah_Ijen.c4s)
+	* Karte wo man in der Mitte Schaden nimmt
+	- Spielziel Goldmine
+
+Nachtsiedler (Nightsettler.c4s)
+	- Nichts besonderes: Kleine dynamische Karte mit Goldmine Spielziel
+	+ schöne Atmosphäre und Musik
+
+Die Flucht (Escape.c4s)
+	+ abwechslungsreiche Landschaft, mehrere Lösungen (oben per Brücke + Lehm oder unten mit U-Boot)
+	- nur eine Karte mit Standard-Ziel (bau das Gold ganz rechts ab)
+	- zu große Landschaft
+	- CCAN Niveau +0.7
+
+Die Säurewelt (Remake) (Die_Saeurewelt2.c4s)
+	- letztlich nur eine Karte, Standard-Ziele
+
+Die Clonkaberge II (Clonka2.c4s)
+	- generische Landschaft mit viel zu vielen Materialien im Erdreich (grindy)
+	- Spielziele dauern zu lange, insbesondere Goldmine
+	+ Neue Materialien und Hypter-Flints für maximale Explosionen!!
+
+Goldgrotte (Goldgrotte.c4s)
+	- Goldmine Ziel
+	- dauert lang, grindy
+	+ jede Goldader ist tatsächlich schwer zu erreichen und benötigt einen anderen Ansatz
+	- nicht so schöne Landschaft
+
+Mountain Peak (Mountainpeak.c4s)
+	+ schöne dynamische Karte
+	- Standardziel 2000 Siedlungspunkte
+	- Karte ist außer seiner pyramidigen Form relativ standard
+
+Auf nach Norden (ANN.c4s)
+	- offenbar total verbuggt
+	- Landschaft nicht sonderlich interessant, sehr eintönig
+	+ Interessante Modifikation des (Clonk Planet) Arktis-Packs
+	- (... kann aber mit dem renovierten Clonk Endeavour Arktis nicht mithalten)
+
+Das Tal (The_Valley.c4s)
+	- nur für 1 Spieler
+	+ hübsche kleine Landschaft
+	+ verwendet das Erweiterungspack mit Tauchanzug und so
+	- allerdings wird dieser überhaupt nicht genutzt (Taucheranzug kann nicht hergestellt werden...)
+	- die Lösung des Szenarios ist (daher), alles Wasser abzupumpen...
+
+Neuland 2 (Neuland_2.c4s)
+	* leicht aufgehübschtes Neuland (Frontier.c4s) aus dem Originalpack
+	- zu ähnlich wie Neuland, nichts besonderes
+	- sehr grindy, Spielziel ist, sehr sehr viele Gebäude zu bauen
+
+Pohata Land (Pohota-Land.c4s)
+	- wohlmöglich die grindigste Karte+Spielziel die ich je gesehen habe
+	+ zahlreiche Extraobjekte sorgen für Abwechslung (wirken aber eher zufällig reingeschmissen)
+
+===============================================
+            Aussortierte Kandidaten 
+			  wegen Schwierigkeit
+			  
+(wenn dann sollten sie in eine eigene Kategorie)
+===============================================
+
+Tal der Fossilien (FossilValley.c4s)
+	! sehr herausfordernd
+
+Sonnenschein (Sunshine.c4s)
+	+ Interessantes Spielziel, super Story
+	! extrem herausfordernd! Wer zufällig darauf stößt, wird keinen Spaß daran haben
+	- eher eine "Challenge" als (normales) Siedeln
+	- sehr lange Dauer
+	- hässliche Landschaft (aber ist eher by-design)
+	
+Die Statue (G5TheStatue.c4s)
+	! soll sehr schwierig sein (anspielen bestätigt das). Wer zufällig darauf stößt, wird keinen Spaß daran haben
+	+ interessante Effekte der Statuenteile die man zusammenfügen soll
+	- vermutlich lange Dauer durch Schwierigkeit
+	- uninspirierte Landschaft
+
+4 Elemente (4_Elements.c4s)
+	! soll sehr schwierig sein (anspielen bestätigt das). Wer zufällig darauf stößt, wird keinen Spaß daran haben
+	+ interessante Effekte der Elemente
+	- vermutlich lange Dauer durch Schwierigkeit
+	- uninspirierte Landschaft
+	- CCAN: nur +1.1
+	- Spielprinzip sehr ähnlich zu "Die Statue"
+
+
+===============================================
+            Aussortierte Kandidaten 
+			läuft nicht mit Clonk Rage
+===============================================
+
+Ruf der Wipfe (RufDerWipfe.c4f)
+	+ Epische Siedelkampagne
+	- alles noch gepixelte "oldgfx"-Grafik, ist aber zu GWE4-Zeiten erschienen, daher passen die Grafiken nicht so recht. Dummerweise zwar "oldgfx"-Grafik, aber alles PNGs, es kann also nicht in die Clonk Planet-GWE4(oldgfx)-Sammlung :-/
+	- ain't nobody got time for that: sehr komplex und lang
+	(läuft nicht korrekt mit Clonk Rage)
+
+Pandoras Strike (Pandoras Strike.c4f)
+	+ Noch epischere Siedelkampagnen (und kooperative Kampagne) plus Kampfarenen usw.
+	- alles gepixelte "oldgfx"-Grafik, ist aber erstmals zu GWE4-Zeiten erschienen, daher passen die Grafiken nicht so recht :-/
+	- läuft laut Autoren unter Clonk Rage, aber es kommen direkt ein paar Fehler (wie wichtig die sind weiß ich nicht)
+	- läuft nur wenn Pandoras Strike.c4f im Hauptverzeichnis liegt.. :-(
+
+Ritter unter Tage (Knights_underground.c4s)
+	+ zweiteiliges Spielziel: Goldabbau und hinterher an die Oberfläche gelangen
+	- etwas zu groß: zu viel Gold, zu weite Strecke nach oben -> grindy
+	(läuft nicht korrekt mit Clonk Rage)

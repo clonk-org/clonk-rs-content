@@ -1,0 +1,19 @@
+[PlayerInfoList]
+LastPlayerID=3
+
+  [Client]
+  ID=0
+  Flags=Initial
+
+    [Player]
+    Name="Kanderianer"
+    Filename="ScriptPlr-1.c4p"
+    Flags=Joined|AttributesFixed|NoScenarioInit|NoEliminationCheck
+    ID=1
+    Type=Script
+    Color=16777215
+    OriginalColor=16711680
+    SavgamePlayer=1
+    Team=7
+    GameNumber=0
+    GameJoinFrame=1

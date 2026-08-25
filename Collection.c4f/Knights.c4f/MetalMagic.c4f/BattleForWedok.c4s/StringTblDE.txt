@@ -1,0 +1,4 @@
+Relaunch=%s benötigt einen Relaunch.
+TLeft=Legion des Teiwaz (Links)
+TRight=Orden der Sawelô (Rechts)
+ScenDesc=Nimm das Heiligtum in der Mitte ein und versuche es so lange wie möglich zu halten! Gewonnen hat das Team, das als erstes insgesamt 10 min im Besitzt des Heiligtums war.

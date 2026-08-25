@@ -1,0 +1,6 @@
+Feuert Plasmaprojektile. Absolut tötlich auf mittlere und kurze Distanzen.
+Alternativ lassen sich die Projektile auch sammeln und schnell hintereinander abfeuern.
+
+Muniton(max.): 150
+Schussmodus 1: Normal
+Schussmodus 2: Aufladeschuss

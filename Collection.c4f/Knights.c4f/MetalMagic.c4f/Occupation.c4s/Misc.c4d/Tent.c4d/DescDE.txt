@@ -1,0 +1,3 @@
+Das Zelt dient als transportable Heimatbasis. 
+
+Ein leeres Zelt kann durch Anfassen und Doppelklick auf Graben eingepackt werden.

@@ -1,0 +1,60 @@
+/* Groﬂes Siedel Fest */
+
+overlay Streak1{ algo=sin; y=50; mat=Rock; tex=Smooth; turbulence=5000; loosebounds=1; zoomX=60; zoomY=70;
+	overlay{mat=Granite; tex=Rough; algo=rndchecker; a=6; y=0; turbulence=1500; loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Rock; tex=Smooth2; algo=bozo; a=2; y=0; turbulence=100; loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Sulphur;tex=Swirl; algo=rndchecker; a=6; y=18; turbulence=2000;loosebounds=1; zoomX=0; zoomY=0;};
+	overlay{mat=Coal; tex=Swirl; algo=rndchecker; a=6; y=0; turbulence=2000;loosebounds=1; zoomX=0; zoomY=0;};
+	overlay{mat=Sand; tex=Smooth; algo=rndchecker; a=3; y=10; x=5; wdt=90; turbulence=100;  zoomX=-20; zoomY=-20;};
+	overlay{mat=Earth; tex=Rough; algo=border; a=6; b=4; loosebounds=1;};
+	overlay{mat=Rock; tex=Rough; algo=rndchecker; a=4; y=0; turbulence=2000;loosebounds=1; zoomX=-15; zoomY=-15;};
+	overlay{mat=Ore; tex=Ridge; algo=rndchecker; a=5; y=0; turbulence=1000; loosebounds=1; zoomX=-30; zoomY=-20;};
+	};
+	
+overlay Streak2{ algo=sin; y=50; mat=Coal; tex=Smooth; turbulence=5000; loosebounds=1; zoomX=60; zoomY=70;
+	overlay{mat=Earth; tex=Rough; algo=rndchecker; a=6; y=0; turbulence=1500; loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Ore; tex=Smooth2; algo=bozo; a=2; y=0; turbulence=100; loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Sulphur;tex=Swirl; algo=rndchecker; a=2; y=0; turbulence=2000;loosebounds=1; zoomX=-40; zoomY=-40;};
+	overlay{mat=Tunnel; tex=Smooth; algo=rndchecker; a=3; y=10; x=5; wdt=90; turbulence=100;  zoomX=-20; zoomY=-20;};
+	overlay{mat=Earth; tex=Rough; algo=border; a=6; b=4; loosebounds=1;};
+	overlay{mat=Rock; tex=Rough; algo=rndchecker; a=6; y=0; turbulence=2000;loosebounds=1; zoomX=-15; zoomY=-15;};
+	};	
+
+overlay Streak3{ algo=sin; y=50; mat=Earth; tex=Smooth; turbulence=5000; loosebounds=1; zoomX=60; zoomY=70;
+	overlay{mat=Gold; tex=Rough; algo=rndchecker; a=6; y=0; turbulence=1500; loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Earth; tex=Smooth2; algo=bozo; a=2; y=0; turbulence=100; loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Sulphur;tex=Swirl; algo=rndchecker; a=6; y=0; turbulence=2000;loosebounds=1; zoomX=-40; zoomY=-40;};
+	overlay{mat=Coal; tex=Swirl; algo=rndchecker; a=6; y=0; turbulence=2000;loosebounds=1; zoomX=-40; zoomY=-40;};
+	overlay{mat=Tunnel; tex=Smooth; algo=rndchecker; a=3; y=10; x=5; wdt=90; turbulence=100;  zoomX=-20; zoomY=-20;};
+	overlay{ mat=Earth; tex=Rough; algo=border; a=3; b=2; loosebounds=1;};
+	overlay{mat=Rock; tex=Rough; algo=rndchecker; a=4; y=0; turbulence=2000;loosebounds=1; zoomX=-15; zoomY=-15;};
+	overlay{mat=Ore; tex=Ridge; algo=rndchecker; a=5; y=0; turbulence=1000; loosebounds=1; zoomX=-30; zoomY=-20;};
+	};	
+
+overlay Streak4{ algo=sin; y=50; mat=Earth; tex=Smooth; turbulence=5000; loosebounds=1; zoomX=60; zoomY=70;
+	overlay{mat=Tunnel; tex=Smooth; algo=rndchecker; a=3; y=10; x=5; wdt=90; turbulence=100;  zoomX=-20; zoomY=-20;};
+	overlay{ mat=Earth; tex=Rough; algo=border; a=3; b=2; loosebounds=1;};
+	overlay{mat=Gold; tex=Rough; algo=rndchecker; a=8; turbulence=500;loosebounds=1; zoomX=-5; zoomY=5;};
+	overlay{mat=Gold; tex=Rock; algo=rndchecker; a=8; turbulence=500;loosebounds=1; zoomX=5; zoomY=-5;};
+	};	
+
+overlay Streak5{ algo=sin; y=50; mat=Earth; tex=Smooth; turbulence=5000; loosebounds=1; zoomX=60; zoomY=70;
+	overlay{mat=Ore; tex=Smooth2; algo=bozo; a=2; y=0; turbulence=500; loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Coal; tex=Swirl; algo=rndchecker; a=2; y=0; turbulence=500;loosebounds=1; zoomX=-20; zoomY=-20;};
+	overlay{mat=Oil; tex=Liquid; algo=rndchecker; a=3; y=0; turbulence=100; loosebounds=1; zoomX=-20; zoomY=-20;
+	  overlay{mat=Earth; tex=Rough; algo=border; a=2; b=2; loosebounds=1;};};
+	};	
+
+map ClonkWorld {
+overlay { algo=solid; y=35; mat=Tunnel; tex=Liquid; sub=0;};
+overlay { algo=solid; y=40; mat=Water; tex=Liquid; sub=0;};
+overlay { algo=solid; y=65; mat=DuroLava; tex=Liquid; sub=0;};
+overlay { algo=solid; y=90; mat=Rock; tex=Rock; sub=0;};
+Streak1 { x=0; y=30; hgt=10; wdt=100; };
+Streak1 { x=0; y=40; hgt=10; wdt=100; };
+Streak2 { x=0; y=50; hgt=10; wdt=100; };
+Streak2 { x=0; y=60; hgt=10; wdt=100; };
+Streak3 { x=0; y=70; hgt=10; wdt=100; };
+Streak4 { x=0; y=80; hgt=10; wdt=100; };
+Streak5 { x=0; y=90; hgt=10; wdt=100; };
+};

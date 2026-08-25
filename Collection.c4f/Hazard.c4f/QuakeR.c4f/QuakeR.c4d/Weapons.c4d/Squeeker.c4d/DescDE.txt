@@ -1,0 +1,5 @@
+Wirft einen Squeeker der sich auf alles stürzt. Sie können sich auch eingraben und als lebende Minen fungieren.
+
+Muniton(max.): 20
+Schussmodus 1: Squeeker
+Schussmodus 2: Squeeker-Mine

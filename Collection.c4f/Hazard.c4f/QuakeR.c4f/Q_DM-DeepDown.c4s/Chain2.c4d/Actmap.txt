@@ -1,0 +1,14 @@
+[Action]
+Name=Swing
+Length=20
+Delay=2
+NextAction=Swingback
+Facet=0,0,50,200
+
+[Action]
+Name=Swingback
+Length=20
+Delay=2
+Reverse=1
+NextAction=Swing
+Facet=0,0,50,200

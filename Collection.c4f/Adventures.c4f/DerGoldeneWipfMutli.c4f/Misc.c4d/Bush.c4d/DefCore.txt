@@ -1,0 +1,11 @@
+[DefCore]
+id=KBSH
+Name=Bush
+Version=4,9,5
+Category=1
+Width=56
+Height=64
+Offset=-28,-32
+Picture=0,0,64,64
+StretchGrowth=1
+Rotate=1

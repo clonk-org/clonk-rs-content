@@ -1,0 +1,11 @@
+CtxConstructionDesc=Construction
+CtxHomeDesc=Back to base
+CtxRelease=Release
+CtrlMenuDesc=Menu
+
+CtxHideDesc=Camouflage
+CtxUnHideDesc=De-Camouflage
+CtxCrackLockDesc=Crack lock
+MsgEnemyToNear=Camouflage not possible.|Enemy too near.
+MsgNoArrow=No arrow
+CtrlInventoryDesc=Shift inventory

@@ -1,0 +1,5 @@
+Fires grenades.
+
+Ammunition(max.): 18
+Schussmodus 1: Grenade
+Schussmodus 2: Nailbomb

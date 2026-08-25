@@ -1,0 +1,2 @@
+DE:Quake-Manager
+US:Quake-Manager

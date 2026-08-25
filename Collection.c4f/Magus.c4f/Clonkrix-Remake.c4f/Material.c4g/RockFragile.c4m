@@ -1,0 +1,13 @@
+[Material]
+Name=RockFragile
+Color=50,50,50,50,50,50,50,50,50
+Shape=0
+Density=50
+Friction=80
+DigFree=0
+BlastFree=1
+MaxAirSpeed=100
+MaxSlide=1
+BlastShiftTo=MetallBackWall
+Placement=30
+TextureOverlay=Rough

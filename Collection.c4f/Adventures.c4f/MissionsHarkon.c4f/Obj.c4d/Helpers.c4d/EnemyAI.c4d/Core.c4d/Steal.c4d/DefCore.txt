@@ -1,0 +1,9 @@
+[DefCore]
+id=WNST
+Version=4,9,8
+Name=WarningSteal
+Category=C4D_Living
+Width=10
+Height=12
+Offset=-5,-28
+Picture=10,0,10,12

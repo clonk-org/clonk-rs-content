@@ -1,0 +1,4 @@
+TxtFillLevel=Rocket fuel tank
+TxtMoreFuel=More fuel
+TxtLessFuel=Less fuel
+TxtSetFuel=Filllevel

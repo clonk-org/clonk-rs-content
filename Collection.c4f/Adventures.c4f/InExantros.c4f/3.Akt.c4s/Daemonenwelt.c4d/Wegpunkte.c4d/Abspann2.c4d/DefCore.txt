@@ -1,0 +1,14 @@
+[DefCore]
+id=_AB2
+Name=Abspann2
+Category=16
+Width=1
+Height=1
+Offset=-1,-1
+Components=_ABS=1;
+Picture=0,0,1,1
+Vertices=0
+VertexFriction=0
+
+[Physical]
+Float=50

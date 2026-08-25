@@ -1,0 +1,25 @@
+-----------------Start---------------------+-------------|
+Hütte         5 Steine,  3 Holz,           |1.           |
+Kastell       6 Steine,  2 Holz,           |1.  6S,3H,0M |
+-------------------------------------------+-------------|
+Amboss                   1 Holz,  2 Metall |2.  6S,4H,2M | 
+Schloss      20 Steine,  8 Holz,  5 Metall |5. 32H       |
+Zauberturm   12 Steine,  6 Holz,  6 Metall |5.   14H,11M |
+-------------------------------------------+-------------|
+Windrad                  4 Holz,  1 Metall |3.  5S,4H,4M |
+Chemiewerk    5 Steine,           3 Metall |3.           |
+Hochofen      6 Steine,  3 Holz,           |2.           |
+-------------------------------------------+-------------|
+Gesammt      54 Steine, 27 Holz, 17 Metall |
+Bausätze 5x             10 Holz,  5 Metall |
+-------------------------------------------|
+
+Zu Start gibt es 6 Steine und 3 Holz. 
+Damit lässt sich entweder eine Hütte oder ein Kastell bauen. 
+Falls man die Hütte baut so ist später sicher, dass man die Materallien für das Kastell hat. 
+Nachdem man das Basisgebäude gebaut hat sollte man einen Amboss und einen Hochofen bauen, 
+welche zur Produktion von Metall und Bausätzen diehnen. 
+Hat man wieder genug Bausätze und Metall kann man anfangen ein Windrad und eine Chemiefabrik zu bauen, 
+um Sprengmaterial für die Stein-gebäude zu kriegen. 
+Nun muss man nurnoch die Gebäude bauen und alle Monstereier vernichten. 
+Wenn man sie verkauft sollte man auch die 100 Clunker schnell erreicht haben.

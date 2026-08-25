@@ -1,0 +1,13 @@
+[Action]
+Name=Green0
+Facet=0,0,42,50
+Delay=0
+Length=1
+NextAction=Hold
+
+[Action]
+Name=Green1
+Facet=42,0,42,50
+Delay=0
+Length=1
+NextAction=Hold

@@ -1,0 +1,16 @@
+[DefCore]
+id=CHA2
+Name=Chain1
+Version=4,9,5
+Category=C4D_Foreground|C4D_StaticBack
+MaxUserSelect=10
+Width=12
+Height=96	
+Offset=-6,-48
+Value=10
+Mass=10
+Components=_NEW=1;
+Picture=0,0,5,215
+Vertices=1
+VertexY=1
+VertexFriction=20

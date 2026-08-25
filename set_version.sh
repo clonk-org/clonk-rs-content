@@ -14,16 +14,25 @@ VERSION="$1"
 # These are the directories .gitattributes marks `binary` so that nothing
 # rewrites their bytes: they are exact copies of the packs as received.
 # Their Version.txt is part of what is redistributed unmodified -- ClonkMars is
-# "1.5 [Spirit]", Eke Reloaded is "1.7", Metal & Magic is "3.1b" -- and none of
-# them is terminated by a newline, so writing this project's version into them
-# would change both the string and the file's length.
+# "1.5 [Spirit]", Eke Reloaded is "1.7", Metal & Magic is "3.1b", the Ultimate
+# Clonk Compilation collection is "2.0", Golems is "4.95.5" and Modern Combat is
+# "R1.9" -- and none of them is terminated by a newline, so writing this
+# project's version into them would change both the string and the file's
+# length.
+#
+# Only packs with a Version.txt one level down need listing: the loop below
+# globs */Version.txt, so the added packs left as single packed files, and
+# Extra.c4g which ships none, are skipped without being named here.
 THIRD_PARTY_PACKS=(
 	ClonkMars.c4d
 	ClonkMars.c4f
+	Collection.c4f
 	EkeReloaded.c4d
 	EkeReloaded.c4f
+	Golems.c4f
 	MetalMagic.c4d
 	MetalMagicExtra.c4d
+	ModernCombat.c4f
 )
 
 is_third_party() {

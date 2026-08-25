@@ -1,0 +1,15 @@
+[Teams]
+LastTeamID=2
+TeamColors=true
+
+  [Team]
+  id=1
+  Name=Angreifer
+  Color=15990784
+  IconSpec="KTM1:5"
+
+  [Team]
+  id=2
+  Name=Verteidiger
+  Color=51200
+  IconSpec="KTM1:2"

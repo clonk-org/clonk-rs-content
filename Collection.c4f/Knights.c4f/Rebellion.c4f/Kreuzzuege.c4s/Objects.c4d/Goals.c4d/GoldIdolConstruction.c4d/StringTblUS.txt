@@ -1,0 +1,2 @@
+done=The gold idol is rebuilt and the village is rescued!
+notdone=You haven't yet built the gold idol. Be aware, you must build it in the village!

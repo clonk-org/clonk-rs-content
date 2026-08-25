@@ -1,0 +1,6 @@
+NothingToBuy=You cant buy anything
+Buy=Buy %s
+NotAviable=%s is not aviable!
+NotEnoughMoney=You have not enough money!
+TxtNobridgeallowedhere=No bridge allowed here
+TxtBuildmetalbridge=Build metal bridge

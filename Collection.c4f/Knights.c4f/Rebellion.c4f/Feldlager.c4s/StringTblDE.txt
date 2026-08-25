@@ -1,0 +1,2 @@
+
+NotAlone=Dieses Szenario kann nur zu zweit oder zu dritt gespielt werden

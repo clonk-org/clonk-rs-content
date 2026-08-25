@@ -1,0 +1,7 @@
+[Material]
+Name=Wall2
+Color=100,80,40
+Shape=0
+Density=50
+Friction=100
+Placement=40

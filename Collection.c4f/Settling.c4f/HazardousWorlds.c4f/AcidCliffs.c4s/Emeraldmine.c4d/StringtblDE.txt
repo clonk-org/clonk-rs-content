@@ -1,0 +1,3 @@
+MsgGoalFulfilled=Alles Smaragd ist abgebaut.
+MsgGoalUnfulfilled=Es müssen noch %d Einheiten festes Smaragd und %d Smaragde abgebaut werden.
+MsgGoalUnfulfilled2=Es müssen noch eine unbekannte Menge festem Smaragd und %d Smaragde abgebaut werden.

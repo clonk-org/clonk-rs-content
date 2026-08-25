@@ -1,0 +1,10 @@
+[Material]
+Name=FlyAshes
+Color=50,15,15,5,10,10,30,1,1
+Shape=2
+Density=50
+Friction=80
+Corrode=75
+Soil=1
+Placement=30
+TextureOverlay=Spots

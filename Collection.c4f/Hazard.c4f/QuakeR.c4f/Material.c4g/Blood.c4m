@@ -1,0 +1,12 @@
+[Material]
+Name=Blood
+#Color=180,0,0,160,0,0,200,0,0
+Color=220,0,0,220,0,0,220,0,0
+Density=25
+Instable=1
+MaxAirSpeed=75
+MaxSlide=10000
+WindDrift=0
+Corrode=100
+Extinguisher=1
+TextureOverlay=Liquidish

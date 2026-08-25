@@ -1,0 +1,10 @@
+[DefCore]
+id=GMSR
+Name=Gemstonerule
+Version=4,9,1
+Value=100
+Category=524289
+Width=1
+Height=1
+Picture=0,0,64,64
+MaxUserSelect=1

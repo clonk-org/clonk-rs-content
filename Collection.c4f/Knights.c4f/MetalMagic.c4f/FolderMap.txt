@@ -1,0 +1,214 @@
+[FolderMap]
+MinResX=640
+MinResY=480
+ScenInfoArea=94,85,235,440
+FullscreenBG=1
+
+	[Scenario]
+	File=GriffonBattle.c4s
+	OverlayImage=Highlight.png
+	Area=572,80,130,70
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=65
+	TitleOffY=25
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Quadromago.c4s
+	Area=320,150,50,50
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=38
+	TitleOffY=0
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=WarOfCKZ.c4s
+	Area=350,100,60,100
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=65
+	TitleOffY=90
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=GriffonRace.c4s
+	Area=420,140,100,60
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=65
+	TitleOffY=0
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=CoFuTMM.c4s
+	Area=550,150,130,90
+	OverlayImage=Highlight.png
+	Title=$CoFuT$
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=65
+	TitleOffY=0
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=GemScuffling.c4s
+	Area=640,160,100,60
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=50
+	TitleOffY=30
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Outpost.c4s
+	Area=330,260,50,50
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16764672
+	TitleOffX=30
+	TitleOffY=-10
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Relicthunters.c4s
+	Area=460,170,80,100
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16764672
+	TitleOffX=40
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=SwampOfDeath.c4s
+	OverlayImage=Highlight.png
+	Area=435,240,120,100
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=55
+	TitleOffY=30
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=SacredHills.c4s
+	OverlayImage=Highlight.png
+	Area=630,224,150,40
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=65280
+	TitleOffX=75
+	TitleOffY=20
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=BattleForWedok.c4s
+	Area=640,260,100,60
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=55
+	TitleOffY=40
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=CastleConquest.c4s
+	Area=380,300,160,80
+	OverlayImage=Highlight.png
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=80
+	TitleOffY=50
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Kamteiusvalley.c4s
+	OverlayImage=Highlight.png
+	Area=570,348,120,60
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=60
+	TitleOffY=-5
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Occupation.c4s
+	OverlayImage=Highlight.png
+	Area=590,408,120,60
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=60
+	TitleOffY=-5
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=FeudForTheBorderfortress.c4s
+	OverlayImage=Highlight.png
+	Area=480,470,100,60
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=60
+	TitleOffY=15
+	TitleAlign=1
+	TitleUseBookFont=0
+
+
+	[Scenario]
+	File=History.c4f
+	OverlayImage=Highlight.png
+	Area=620,488,120,20
+	Title=TITLE
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=60
+	TitleOffY=-10
+	TitleAlign=1
+	TitleUseBookFont=0

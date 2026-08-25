@@ -1,0 +1,44 @@
+[FolderMap]
+MinResX=640
+MinResY=480
+ScenInfoArea=510,85,235,440
+FullscreenBG=1
+
+	[Scenario]
+	File=Tutorial.c4s
+	OverlayImage=Highlight.png
+	Area=152,380,130,70
+	Title=$Paladin$
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=65
+	TitleOffY=25
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Tutorial2.c4s
+	Area=300,250,50,50
+	OverlayImage=Highlight.png
+	Title=$Mage$
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=38
+	TitleOffY=0
+	TitleAlign=1
+	TitleUseBookFont=0
+
+	[Scenario]
+	File=Tutorial3.c4s
+	Area=370,350,100,100
+	OverlayImage=Highlight.png
+	Title=$Assassin$
+	TitleFontSize=20
+	TitleColorInactive=
+	TitleColorActive=16711680
+	TitleOffX=50
+	TitleOffY=60
+	TitleAlign=1
+	TitleUseBookFont=0

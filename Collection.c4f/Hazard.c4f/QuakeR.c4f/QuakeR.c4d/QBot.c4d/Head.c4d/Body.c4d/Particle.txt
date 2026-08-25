@@ -1,0 +1,13 @@
+[Particle]
+Name=Sproing
+MaxCount=300
+InitFn=StdInit
+ExecFn=StdExec
+DrawFn=Std
+CollisionFn=BounceY
+Face=0,0,32,32,-16,-16
+Delay=0
+RByV=3
+GravityAcc=50
+VertexCount=1
+AlphaFade=1

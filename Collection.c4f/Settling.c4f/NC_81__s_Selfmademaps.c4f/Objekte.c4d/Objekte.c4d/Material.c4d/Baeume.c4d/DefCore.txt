@@ -1,0 +1,7 @@
+[DefCore]
+id=BM9Z
+Name=Bäume
+Version=4,9,1,4
+Category=65
+MaxUserSelect=1
+Picture=0,0,40,40

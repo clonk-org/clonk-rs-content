@@ -1,0 +1,4 @@
+Mill=Grind corn
+AlreadyMill=The Mill alredy Grinds!
+NotEnoughCorn=Not enough corn.|There must be three pieces!
+CreatetFlour=Createt Flour!

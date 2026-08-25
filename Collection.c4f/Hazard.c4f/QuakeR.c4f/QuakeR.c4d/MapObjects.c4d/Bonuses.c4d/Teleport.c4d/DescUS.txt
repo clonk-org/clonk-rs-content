@@ -1,0 +1,1 @@
+The clonk can Teleport to a random place on the map with the context-menu.

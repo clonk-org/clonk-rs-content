@@ -1,0 +1,1 @@
+FrayAttackWarnings=["<c ff0000>Warning!","<c ff0000>Located Enemys!","<c ff0000>Incoming Attack!!","<c ff0000>Prepare to defend.","<c ff0000>Closing Doors in 5...!","<c ff0000>Closing Doors in 4...!","<c ff0000>Closing Doors in 3...!","<c ff0000>Closing Doors in 2...!","<c ff0000>Closing Doors in 1...!","<c ff0000>Closing Doors.","<c ff0000>Incoming Attack!"]

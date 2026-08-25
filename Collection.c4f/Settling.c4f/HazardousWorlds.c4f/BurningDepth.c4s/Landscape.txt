@@ -1,0 +1,76 @@
+overlay mat { algo=rndchecker; zoomX=-80; zoomY=-80; loosebounds=1; turbulence=750; };
+overlay caves 
+{
+  algo=rndchecker; loosebounds=1; turbulence=200; mat=DuroLava;
+  tex=Smooth; zoomX=90; zoomY=0; a=1; y=20; hgt=90;
+  mat { y=69; hgt=1; mat = Earth; tex = Smooth; };
+  overlay { y=70; mat=DuroLava; tex=Liquid; y=40; hgt=99;
+      mat { mat = Granite; a=17; tex=Rock;
+      mat { mat = Granite; tex=Rough; a = 3; };
+      mat { mat = Granite; tex=Ridge; a = 3; };
+      mat { mat = Rock; tex=Ridge; a = 3; };
+    };
+  };
+};
+
+overlay Isle
+{ 
+  algo=sin; y=35; mat=Earth; tex=Smooth; turbulence=5000; loosebounds=1; zoomX=60; zoomY=70;
+  overlay{mat=Earth; tex=Rough; algo=rndchecker; a=6; y=0; turbulence=1500; loosebounds=1; zoomX=-20; zoomY=-20;};
+  overlay{mat=Earth; tex=Smooth2; algo=bozo; a=2; y=0; turbulence=100; loosebounds=1; zoomX=-20; zoomY=-20;};
+  overlay{mat=Sulphur;tex=Swirl; algo=rndchecker; a=3; turbulence=2000;loosebounds=1; zoomX=-40; zoomY=-40;};
+  overlay{mat=Coal; tex=Swirl; algo=rndchecker; a=2; turbulence=2000;loosebounds=1; zoomX=-40; zoomY=-40;};
+  overlay{mat=FlyAshes; tex=Smooth; algo=rndchecker; a=3; y=10; x=5; wdt=90; turbulence=100;  zoomX=-20; zoomY=-20;};
+  overlay{mat=Earth; tex=Rough; algo=border; a=3; b=2; loosebounds=1;};
+  overlay{mat=Granite; tex=Rough; algo=rndchecker; a=6; y=0; turbulence=2000;loosebounds=1; zoomX=-15; zoomY=-15;};
+  overlay{mat=Rock; tex=Rough; algo=rndchecker; a=4; y=0; turbulence=2000;loosebounds=1; zoomX=-15; zoomY=-15;};
+  overlay{mat=Ore; tex=Ridge; algo=rndchecker; a=5; y=16; turbulence=1000; loosebounds=1; zoomX=-30; zoomY=-20;};
+  overlay{mat=Gold; tex=Ridge; algo=rndchecker; a=5; y=0; turbulence=2000;loosebounds=1; zoomX=-25; zoomY=-25;};
+  overlay{mat=Earth; tex=Rough; algo=border; a=3; b=2; loosebounds=1;};
+  overlay{mat=Earth; tex=Rough; algo=border; a=3; b=2; loosebounds=1;};
+};
+
+map Lavaloecher
+{
+  overlay { mat=Earth; tex=Rough;
+    mat { mat=Earth; a=6; tex=Smooth; };
+    mat { mat=Earth; a=6; tex=Smooth2; };
+    mat { mat=Earth; a=6; tex=Ridge; };
+    mat { mat=Tunnel;a=1; tex=Rough; y=1; hgt=16;};
+    mat { mat=Tunnel;a=1; tex=Ridge; y=1; hgt=16;};
+    mat { mat=Rock; a=17; tex=Rock;
+      mat { mat=Granite; a=24; zoomX = -20; zoomY = -40; };
+        };
+    mat {
+        mat=Ore; tex=Ridge; a=26;
+        mat { mat=Ore; tex=Rough; a = 25; };
+        mat { mat=Ore; tex=Rock; a = 25; };
+        };
+    mat {
+        mat=Coal; tex=Swirl; a=28;
+        };
+    mat {
+        mat=Sulphur; tex=Swirl; a=28;
+        };
+    mat {
+        mat=FlyAshes; tex=Rough; a=16; zoomX = -70; zoomY = -70;
+        mat { mat=FlyAshes; tex=Smooth; a = 9; };
+        };
+    mat {
+        mat=Gold; tex=Rough; a=27;
+        mat { mat=Gold; tex=Flare; a = 28; };
+        mat { mat=Gold; tex=Structure3; a = 26; };
+        mat { mat=Gold; tex=Smooth3; a = 26; };
+        };
+    caves { zoomX=-20; zoomY=-20; };
+    caves { zoomX=90; zoomY=40; 
+      mat { mat=Sand; tex=Smooth; a=35; zoomX=-80; zoomY=-95; };
+    };
+    caves { zoomX=40; zoomY=40;};  
+  };
+  //overlay { algo=sin; y=70; turbulence=5000;};
+  Isle { x= 0; wdt=20; };
+  //Isle { x=50; wdt=12; };
+  Isle { x=80; wdt=20; };
+};
+

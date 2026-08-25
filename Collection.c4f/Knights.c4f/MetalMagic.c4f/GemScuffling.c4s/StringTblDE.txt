@@ -1,0 +1,6 @@
+Relaunch=%s muss relaunchend!
+TeamRight=Rechts Team
+TeamLeft=Linkes Team
+MsgLeftJoined=%s tritt dem linken Team bei!
+MsgRightJoined=%s tritt dem rechten Team bei!
+GemOverview=Edelsteinuebersicht

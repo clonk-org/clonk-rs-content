@@ -1,0 +1,4 @@
+Mill=Korn mahlen
+AlreadyMill=Die Mühle mahlt bereits!
+NotEnoughCorn=Nicht genügend Korn.|Es werden insgesamt 3 Korn benötigt!
+CreatetFlour=Mehl produziert!

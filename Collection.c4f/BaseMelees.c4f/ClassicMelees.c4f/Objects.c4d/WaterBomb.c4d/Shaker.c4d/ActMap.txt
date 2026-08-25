@@ -1,0 +1,5 @@
+[Action]
+Name=Shaking
+Delay=1
+NextAction=Shaking
+StartCall=Shake

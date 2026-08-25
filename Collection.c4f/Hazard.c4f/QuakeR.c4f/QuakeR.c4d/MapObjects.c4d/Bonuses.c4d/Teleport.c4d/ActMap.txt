@@ -1,0 +1,6 @@
+[Action]
+Name=Be
+Length=30
+Facet=0,0,20,20
+Delay=3
+NextAction=Be

@@ -1,0 +1,12 @@
+[DefCore]
+id=_CYH
+Name=CarryHelper
+Category=C4D_Living
+Width=16
+Height=20
+Offset=-8,-10
+Vertices=1
+VertexX=0
+VertexY=2
+Picture=0,1,15,15
+ColorByOwner=1

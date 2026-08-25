@@ -1,0 +1,17 @@
+[Action]
+Name=Travel
+Procedure=FLOAT
+NextAction=Travel
+FacetBase=1
+Length=1
+Delay=1
+StartCall=Traveling
+
+[Action]
+Name=Stuck
+Procedure=FLOAT
+FacetBase=1
+Length=1
+Delay=100
+EndCall=Remove
+StartCall=Stick

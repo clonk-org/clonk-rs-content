@@ -1,0 +1,18 @@
+[Material]
+Name=Acid
+//xColor=36,20,158, 36,20,150, 36,20,142
+Color=32,75,65, 25,70,57, 40,82,72
+Alpha=0,0,0,0,0,0
+ColorAnimation=1
+Density=25
+Instable=1
+MaxAirSpeed=25
+MaxSlide=10000
+WindDrift=30
+Corrode=100
+Extinguisher=1
+TempConvStrength=3
+BelowTempConvert=-10
+BelowTempConvertTo=Ice
+Placement=10
+TextureOverlay=Liquid

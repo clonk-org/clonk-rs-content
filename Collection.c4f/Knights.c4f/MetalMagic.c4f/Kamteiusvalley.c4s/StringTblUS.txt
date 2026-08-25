@@ -1,0 +1,10 @@
+TKing=Team King
+TPaladin=Team Paladin
+
+MageGo1=Ko away!
+MageGo2=Get off!
+MageGo3=Ih, go away!
+
+MageDmg1=Auts
+MageDmg2=Uh, open your eyes!
+MageDmg3=Ouw!

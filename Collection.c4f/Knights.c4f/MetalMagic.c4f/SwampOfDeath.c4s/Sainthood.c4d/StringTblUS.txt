@@ -1,0 +1,3 @@
+NotEnoughMoney=Not enought money!
+Buy=Buy
+Train=Train

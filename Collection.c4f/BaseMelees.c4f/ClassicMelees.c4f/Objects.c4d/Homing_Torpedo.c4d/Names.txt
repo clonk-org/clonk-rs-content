@@ -1,0 +1,2 @@
+DE:Zielsuchender Torpedo
+US:Homing Torpedo

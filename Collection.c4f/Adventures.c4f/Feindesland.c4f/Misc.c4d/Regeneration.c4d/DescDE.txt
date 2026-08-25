@@ -1,0 +1,4 @@
+Clonks erholen sich langsam von ihren Verwundungen. Ihre Lebens- und Zauberenergie steigt mit der 
+Zeit.
+
+Je öfter die Regel aktiviert ist, desto schneller regenerieren die Clonks.

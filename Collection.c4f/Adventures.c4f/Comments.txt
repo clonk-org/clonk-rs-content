@@ -1,0 +1,233 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+InExantros (InExantros.c4f)
+	+++ ist halt einfach episch, der spirituelle Nachfolger von DSA etc.
+	- schon älter verglichen mit den anderen (eher Clonk Endeavour Ära), und das merkt man schon
+	+ ich hörte u.a. Sven2 hat geholfen, es für CR nochmal ordentlich zu fixen usw
+
+Geschichte von Harkon (MissionsHarkon.c4f)
+	+++ ebenso episch wie InExantros, aber wirkt moderner
+
+Metall&Magie Adventure (Adventure.c4s)
+	+ richtig toll
+	+ multiplayer
+	- offenbar sehr viele bugs, nicht klar ob bis zum Ende spielbar
+
+Drachenfels (Drachenfels.c4s)
+	+ ist in Originalpack, muss gut sein
+	+ wohlmöglich das Szenario, dass das Schwert+Magie-Action-Adventure-Genre gestartat hat (minus InExantros)
+	+ multiplayer
+
+Goldrausch (Goldrush.c4s) - aus Westernpack
+	+ ist in Originalpack, muss gut sein (um ehrlich zu sein, nicht angespielt)
+
+Rokans Rückkehr (RokanComingBack.c4s)
+	+ 1. Platz im Fantasy-Gestaltungswettbewerb 2005
+	+ hübsche Landschaft und design
+	- singleplayer
+
+Wolkentempel (Cloudtemple3.3.c4s)
+	+ schön gemacht, Mix aus Puzzle- und Action-Adventure
+	- nur für ein Spieler
+
+Feindesland (Feindesland.c4f)
+	* lose zusammenhängende Kampagne aus kleineren Kämpfen-gegen-KI-Clonks Szenarien
+	+ ganz hübsch designt
+	+ Szenarien jeweils klein
+	- keine Story, reines Kämpfen
+	* die meisten Szenarien sind nicht zuende spielbar weil die Landschaft kaputt ist. Aber ich habe dafür einen Fix erstellt (v0.9)
+	- die sich (gegenseitig) heilenden Magier mit unendlich viel Zauberenergie sind extrem unfair
+
+Eke Reloaded (EkeReloaded.c4f)
+	(Kommentare zu einzelnen Szenarien:)
+		* AirbikeFight: kurzweilig, aber SEHR simpel, vergleichbar mit DM_Airbag.c4s (sic) für Hazard
+		- Equiem: extrem langweilige Landschaft
+		- GoldPlateau: wurde hier vergessen, die Eke-Sachen kaufbar zu machen??
+		- HarpoonRace: Skyrace mit Seilpack (bzw Harpune, die genauso funktioniert), gibt es schon
+		* MeltMe: Deathmatch mit Flammenwerfer und Assaultgun in der Arktis - kurzweilig, aber extrem eindimensional
+		+ MissileMatch: Deathmatch auf Himmelsinseln mit Zelt+Flagge und Jetpack
+		- OilWars: sehr langweilige Landschaft "Basis-Melee" (flache Ebene)
+		+ Rumble in the Jungle: Hazard-inspirierte Hold the Flag Arena
+		+ SnowBase: CMC-inspirierte Hold the Flag Arena, aber EKE ist halt in allen Aspekten schlechter als CMC
+		+ Arso-Morf: Remake des alten Arso-Morfs mit neuen Grafiken und natürlich neuem Eke-PAck
+		  Leider garnicht SO gut, durch das Hinzufügen des Nests und der extremen Vermehrung der Stippel wird es eher etwas unfair
+		  sonst ist kaum etwas verändert worden, deswegen wirkt es an sich in Clonk Rage schon etwas altbacken
+		* Invasaion: Stippeljagd mit ein bischen Story in langweiliger Landschaft
+		* SpeedHunting: Stippeljagd auf langweiliger Karte
+	- insgesamt nervt die nicht-vorhandene Musik, die Standard-Clonk-Musik wirkt sehr unpassend
+	- die meisten Szenarien wirken eher wie schnell zusammengestellte Sandboxes um das Objektpack zu präsentieren: simple Landschaften, paar Objekte platziert, fertig
+	* ich denke man kann Arso-Morf herausnehmen, der Rest eher nicht
+
+Stippel vs. SFT Reloaded (Stippel_vs_SFT_Reloaded.c4s)
+	* Spielziel: Stippeljagd
+	+ abwechslungsreiche (wenn auch keine besondere) Landschaft
+	+ alle Stippel-Gegner und alle Waffen vorhanden, man kann sich schön austoben
+
+Der Tempel der Verdammnis (TheTempleRemaster.c4s)
+	+ schöne Musikuntermalung
+	+ Mehrspieler
+	- lange Sektionen im Tempel wo nichts passiert
+	- Kämpfe gegen die "Mini-KI" ist wegen Cooldown und begrenzter Munition weniger spaßig als in den Serious Sam-Szenarien
+	+ mehrere Boss-Kämpfe
+	* viele Errors unter Clonk Rage. Remaster von mOwl behebt dies und ändert nichts wesentliches am Gameplay, daher nehmen wir mal seine Version
+
+Magiertest (Magiertest.c4s)
+	* vor allem am Anfang eher ein Puzzle-Szenario, später gibts mehr action
+	* Landschaft ist eher hässlich, aber soll wohl ein Labyrinth darstellen und durch FoW sieht man davon nicht so viel
+	- singleplayer only
+
+Faffnir 1 (faffnir_1.c4s)
+	+ Assasine hat interessante Fähigkeiten
+	+ KI-Gegner beschimpfen einen :-) (ist ein netter Touch)
+	+ abwechslungsreich (Kämpfen, Schleichen, Hindernislauf, Rätsel,...)
+	- nur Singleplayer
+
+Faffnir 2 (Faffnir_2.c4s)
+	+ Assasine hat noch eine Fähigkeit mehr als in Faffnir 1 (aber nur: hoch springen, und die braucht man nicht wirklich...)
+	* wie Faffnir 1 nur man mit weniger Liebe gemacht, alles etwas öder
+	- schweres Rätsel am Ende, etwas frustrierend, finde ich (weil man da dumm rumkraxeln muss)
+	- nur Singleplayer
+
+Der goldene Wipf - Multiclonks (DerGoldeneWipfMutli.c4f)
+	+ Charakterklassenauswahl
+	+ Multiplayer
+	- recht hässliche Landschaft
+	- keine Story, reines Kämpfen gegen KI-Clonks
+	- ziemlich lang, besonders dafür dass es alles das gleiche ist
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+Die Pyramide von Clucatan (Clucatan.c4s)
+	* eine Art Hindernis-Lauf. Wenig Story, aber lustig
+	* die Fallen sind recht schwer, aber man hat viele Versuche bevor man stirbt
+	+ Boss-Kampf
+	- Landschaft ziemlich eintönig und hässlich
+	- nur Einzelspieler
+	- recht eintönige Fallen (überwinden per Springen/im richtigen Moment gehen)
+
+Tiefsee-Adventure (Tiefsee-AdventureCE.c4s)
+	* Script-Adventure in der Tiefsee
+	+ Musik
+	+ recht kleine Karte, schön gemacht
+	- hat ein paar extrem unfaire Stellen bei denen man fast garantiert stirbt
+	- in Test kam man irgendwann nicht weiter (bei "huch was ist das denn"?) - so ist das mit Script-Adventures - steht man nicht korrekten Stelle,...
+
+Kings Messenger (KingMessenger.c4f)
+	- scheint unfertig zu sein - lauter Errors, halbfertig gemalte Landschaft 
+
+Stippeljagd mit Magie (Stippeljagd_mit_Magie.c4s)
++ Wie der Name schon sagt, interessante Kombination
++ lustigerweise scheinen Magus geeigneter als SFT gegen Stippelhöhlen, weil sie nicht nur geradeaus schießen können
+- gegen Stippel sind nur sehr wenig Zauber sinnvoll, eigentlich benutzt man dann immer den gleichen (z.B. magischer Bogen). Wenig Abwechslung
+- die Karte ist zu groß. Im Prinzip macht man 6mal das gleiche
+- die Stippel vermehren sich so extrem schnell, dass man kaum hinterherkommt. Die SFTs mögen da effektiver sein, mit Mages ist es jedenfalls eine einzige Rackerei
+
+Left 2 Die (Left2Die.c4f)
+	* Zombies töten mit SFTs
+	+ hübsche FolderMap
+	+ Zombies-töten mag doch jeder!
+	- eher lieblos gestaltete Landschaft; Hazard-Style aber weniger hübsch
+	- eher frustrierend: Gegner sind Nahkämpfer, extrem schnell und fallen erst nach mehreren Schüssen um, d.h. sie erreichen einen normalerweise im Nahkampf, auch wenn sie alleine sind. Sie tumblen einen nicht, aber bleiben halt einfach irgendwie da stehen wo man ist und fügen Schaden hinzu - das ist doof weil man ja nicht jemanden erschießen kann, der genau da steht wo man auch steht...
+	- man hat so wenig Munition, dass man vielleicht zwei Zombies umlegen kann, danach 🤷... cheesen?
+	- (wenn man Hazard, QuakeR, CMC,... gewohnt ist, sind SFTs recht frustrierend. Können nur geradeaus schießen, kompliziertes entpacken der Munition, FAllschaden, ...)
+	- Szenarien haben kaum Variation: keine Story, gleiche Gegner, sehr ähnlich aussehene Räume und Deko...
+
+Forschungsstation Final Edition 2018 (researchstation_final_edition2018.c4s)
+	* Forschungsstation aber mit SFT und Stippel
+	+ viele Einstellungsmöglichkeiten
+	+ fetzige Musik
+	- Landschaft ist halt zum größten Teil von Hazard Forschungsstation übernommen
+	- und für eine schnelle Stippeljagd-Runde ist die Landschaft zu groß
+	- benutzt EKE, nicht EKE reloaded
+
+Stippelbeseitigung (StippelElimination.c4s)
+	+ CCAN: +2,2 (13 Votes) - 2010
+	- eigentlich nur eine Landschaft mit Stippeln. Sehr ähnlich wie Stippel_vs_SFT_Reloaded.c4s
+	- etwas komisch dass die Stippel plötzlich aus dem Nichts auftauchen
+	- benutzt die alten Stippel!
+
+Eke - Nevada (Nevada.c4s)
+	+ hübsche Landschaft
+	* Spielziel: Stippeljagd
+	- eintönig
+	- das gleiche Problem wie immer bei EKE: drei Stippel um einen rum reichen um garnichts mehr machen zu können
+
+Stippelhöhlen (DWStippelCaves.c4s)
+	+ CCAN: +2,1 (33 Votes) - 2011
+	- sehr ähnlich wie Stippel_vs_SFT_Reloaded.c4s
+	+ Musik
+	+ einige Zusatzsachen
+	- Problem: SFTs können nur geradeausschießen, das macht eine Stippeljagd in vorwiegend vertikalen Höhlen sehr frustrierend
+
+Mission: Trevil XIII (MissionTrevil-XIII.c4s)
+	* CCAN: +1,4 (45 Votes) - 2011
+	+ mal ein anderes Spielziel in Bezug auf Stippel, Stippel sind (überwindbares) Hindernis
+	+ Musik
+	- sehr ähnlich wie Stippel_vs_SFT_Reloaded.c4s
+	- benutzt die alten Stippel!
+
+Dark Pyramid (Dark Pyramid.c4s)
+	+ hübsche Landschaft / Pyramide
+	+ Multiplayer
+	- wirkt für CR-Verhältnisse recht altbacken
+	- Rätsel nicht wirklich nachvollziehbar
+	- immer die gleichen Gegner sind langweilig
+	- verschiedene Fehler
+
+Der Schwur (Der_Schwur.c4s)
+	- SEHR kurz
+	- nur für 1 Spieler
+	- kann von Umfang und Spieltiefe lange nicht mit den anderen her mithalten
+
+Armalion II (Armalion2Redone.c4s)
+	+ umfangreiches RPG
+	- alte Grafik und wirkt auch alt, passt nicht zu Clonk Rage (in dem Genre gibt es schon InExantros)
+	  (ob es auch in Clonk Planet / GWE läuft?) Ist von 2001
+
+Tempeladventure (Tempeladventure.c4s)
+	* zusammen gegen KI-Gegner kämpfen
+	+ Multiplayer
+	- recht lieblos gestaltete Landschaft
+	- im gleichen Stil wie Feindesland und Der goldene Wipf, nur weniger gut und grindy
+
+Der 3 Wetterberg (Der_drei_wetter_berg.c4s)
+	- singleplayer
+	+ Musik
+	- recht hässliche Landschaft
+	- CCAN-Niveau: +1.7
+	* ähnlich wie Fast die Apokalypse, Das gelobte Land und The Avenger so ein klassisches (Script-)Adventure wie es zu Clonk 4 und Clonk Planet beliebt war. Mit Clonk Rage wirkt es aus der Zeit gefallen (gut, ist das Szen ist halt von 2004)
+
+Das Dorf (The Village.c4s) - aus Flintadventure.c4f
+	* wie die anderen oben und unten, reicht einfach nicht an das Clonk Rage Niveau heran
+	- CCAN-Niveau: +1.4
+
+Das gelobte Land (The_Holy_Land.c4s)
+	- man kann es mit zwei Spielern starten, aber es ist nur für einen Spieler
+	+ Musik
+	+ Endgegner!
+	- nicht so schöne Landschaft
+	* CCAN-Niveau: +1.9
+	- eher simpel, Gameplay besteht hauptsächlich daraus, sich mit Schwert neben die Ritter-Gegner zu stellen
+	* ähnlich wie 3 Wetterberg, Fast die Apokalypse und The Avenger so ein klassisches (Script-)Adventure wie es zu Clonk 4 und Clonk Planet beliebt war. Mit Clonk Rage wirkt es aus der Zeit gefallen (gut, ist das Szen ist halt von 2004)
+
+The Avenger (The_Avenger.c4s)
+	- singleplayer
+	+ Musik
+	- nicht so schöne Landschaft
+	- CCAN-Niveau: +1.4
+	* ähnlich wie 3 Wetterberg, Fast die Apokalypse und Das gelobte Land so ein klassisches (Script-)Adventure wie es zu Clonk 4 und Clonk Planet beliebt war. Mit Clonk Rage wirkt es aus der Zeit gefallen (gut, ist das Szen ist halt von 2003)
+
+Das verfluchte Dorf (Das_verfluchte_dorf.c4s)
+	- singleplayer
+	+ Musik
+	- keine schöne Landschaft
+	- sehr linear, sehr einfach
+	- CCAN-Niveau: +0.4
+
+Weihnachtsgeschichte (christmasstory.c4s)
+	- es besteht ausschließlich aus einer Aneinanderreihung von "go here, fetch this" quests, 0 Herausforderung. Eher ein "Film"
+
+Erendir (Erendir3_0.c4f)
+	--- unfertig / funktioniert nicht

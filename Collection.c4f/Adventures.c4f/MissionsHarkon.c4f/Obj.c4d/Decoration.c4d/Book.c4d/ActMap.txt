@@ -1,0 +1,17 @@
+[Action]
+Name=SitRead
+Procedure=NONE
+Directions=2
+Length=4
+Delay=10
+Facet=0,0,16,20,-4,-9
+NextAction=SitRead
+
+[Action]
+Name=SitRead2
+Procedure=NONE
+Directions=2
+Length=3
+Delay=4
+Facet=48,0,16,20,-4,-9
+NextAction=SitRead

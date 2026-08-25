@@ -1,0 +1,2 @@
+DE:Zufall
+US:Random

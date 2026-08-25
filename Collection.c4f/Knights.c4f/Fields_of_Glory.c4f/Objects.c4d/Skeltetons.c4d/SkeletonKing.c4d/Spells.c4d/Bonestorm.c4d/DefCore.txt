@@ -1,0 +1,7 @@
+[DefCore]
+id=_MBS
+Name=MagicBoneStorm
+Version=4,9,5,4
+Category=131073
+Value=32
+Picture=6,0,64,64

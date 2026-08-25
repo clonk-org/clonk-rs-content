@@ -1,0 +1,11 @@
+[Action]
+Name=WarnAction
+Procedure=ATTACH
+Directions=2
+FlipDir=1
+Length=2
+Delay=15
+Facet=0,0,14,9
+FacetBase=0
+NextAction=WarnAction
+StartCall=AdjustDir

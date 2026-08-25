@@ -1,0 +1,8 @@
+Inc=Relaunchs erhöhen
+Dec=Relaunchs vermindern
+nope=Nur der erste Spieler kann Einstellungen tätigen
+show=Relaunches auf %d
+
+IncF=Fraglimit erhöhen
+DecF=Fraglimit vermindern
+showF=Fraglimit auf %d

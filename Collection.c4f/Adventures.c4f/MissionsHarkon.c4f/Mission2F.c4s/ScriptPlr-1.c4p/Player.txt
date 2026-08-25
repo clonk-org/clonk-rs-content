@@ -1,0 +1,6 @@
+[Player]
+RankName=Rang
+
+[Preferences]
+Control=0
+AutoContextMenu=0

@@ -1,0 +1,2 @@
+DE:Team-HUD
+US:Team HUD

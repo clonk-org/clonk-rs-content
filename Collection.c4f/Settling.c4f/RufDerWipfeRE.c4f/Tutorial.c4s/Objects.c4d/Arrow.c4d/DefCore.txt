@@ -1,0 +1,7 @@
+[DefCore]
+id=_AR1
+Name=Arrow
+Category=16
+Width=32
+Height=32
+Offset=-16,-16

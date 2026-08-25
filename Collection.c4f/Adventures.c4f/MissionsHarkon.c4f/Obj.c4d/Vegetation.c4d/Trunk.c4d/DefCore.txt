@@ -1,0 +1,15 @@
+[DefCore]
+id=_TRK
+Name=Trunk
+Version=4,9,5
+Category=1
+Width=30
+Height=60
+Offset=-15,-30
+Value=10
+Mass=1
+Components=WOOD=1;
+Picture=0,0,20,40
+Rotate=1
+Chop=0
+

@@ -1,0 +1,13 @@
+[DefCore]
+id=_THD
+Name=Team-HUD
+Category=1
+Version=4,9,6
+Picture=0,0,36,34
+Offset=-18,-17
+Width=36
+Height=34
+Exclusive=1
+ColorByOwner=1
+Timer=1
+TimerCall=Update

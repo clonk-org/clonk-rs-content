@@ -1,0 +1,13 @@
+[Action]
+Name=IdleDay
+Procedure=NONE
+FacetBase=1
+NextAction=HOLD
+
+[Action]
+Name=IdleNight
+Procedure=NONE
+FacetBase=1
+Delay=150
+EndCall=Lightning
+NextAction=IdleNight

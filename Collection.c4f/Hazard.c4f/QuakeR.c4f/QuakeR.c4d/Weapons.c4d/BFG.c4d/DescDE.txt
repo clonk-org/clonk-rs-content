@@ -1,0 +1,5 @@
+Big. Fuckin'. Gun.
+
+Munition(max.): 5
+Schussmodus 1: Tödlich
+Schussmodus 2: N/A

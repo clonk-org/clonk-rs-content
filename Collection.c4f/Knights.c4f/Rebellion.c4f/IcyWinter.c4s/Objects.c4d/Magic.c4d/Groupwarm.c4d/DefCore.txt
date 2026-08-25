@@ -1,0 +1,8 @@
+[DefCore]
+id=_MGW
+Name=MagicGroupWarm
+Category=131072
+Picture=0,0,64,64
+Version=4,9,5,4
+Value=31
+Components=ISPH=3;IGOL=1;

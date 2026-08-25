@@ -1,0 +1,19 @@
+[PlayerInfoList]
+LastPlayerID=2
+
+  [Client]
+  ID=0
+  Flags=Initial
+
+    [Player]
+    Name="Enemy"
+    Filename="ScriptPlr-2.c4p"
+    Flags=Joined|Won|AttributesFixed|NoScenarioInit|NoEliminationCheck
+    ID=2
+    Type=Script
+    Color=16777215
+    OriginalColor=8355711
+    SavgamePlayer=2
+    Team=2
+    GameNumber=2
+    GameJoinFrame=95

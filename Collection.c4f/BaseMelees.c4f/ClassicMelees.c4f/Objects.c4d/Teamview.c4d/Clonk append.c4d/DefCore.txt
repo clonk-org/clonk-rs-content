@@ -1,0 +1,8 @@
+[DefCore]
+id=CLAP
+Version=4,9,8
+Name=ClonkAppendTo
+Category=1
+Width=1
+Height=1
+Picture=16,0,64,64

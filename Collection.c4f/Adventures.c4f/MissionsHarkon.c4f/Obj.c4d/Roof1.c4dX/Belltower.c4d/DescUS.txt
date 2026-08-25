@@ -1,0 +1,1 @@
+Chimes each hour and protects your tower from enemies, who try to infiltrate you through the staircase.

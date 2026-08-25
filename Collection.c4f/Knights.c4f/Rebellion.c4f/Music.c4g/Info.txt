@@ -1,0 +1,17 @@
+ Musikquellen  (die meisten Dateien wurden umbenannt)
+같같같같같같같
+
+Aus dem Original-Ritterpack:
+ - Morning Dawn.mid
+
+Aus "Siege of Avalon":
+ - Camelot.mid   
+ - Darkside.mid
+
+Aus "Stronghold 2":
+ - The Chant.ogg
+
+Aus "KnightShift":
+ - @Theft.ogg
+ - Rush.ogg
+ - Territory.ogg

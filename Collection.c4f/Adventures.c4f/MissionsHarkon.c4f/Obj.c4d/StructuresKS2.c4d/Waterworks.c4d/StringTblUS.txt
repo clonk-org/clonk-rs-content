@@ -1,0 +1,3 @@
+Clogged=The wheel is clogged!
+Water=Pump water
+AlreadyPump=The Work is|already pumping!

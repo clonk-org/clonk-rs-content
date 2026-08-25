@@ -1,0 +1,137 @@
+Enthält auch Kommentare über nicht in die Sammlung aufgenommenen Szenarien.
+
+--------------------------------------------------------
+
+Super Mega Ultra Extrem Wettlauf (Super_Mega_Ultra_Extrem_Wettlauf.c4s)
+	- hässlich, wirkt super-billig
+	+ macht einfach Spaß! Horus Panzer! :-D
+	+ Checkpoints und Teilziele sorgen dafür dass Spieler die irgendwo feststecken trotzdem noch weitermachen können
+
+Brickrace (Brickrace.c4s)
+	+ frei konfigurierbar: eigentlich viele verschiedene Rennen
+
+Rennen der magischen Clonks (Raceofthemagicianclonks.c4s)
+	+ liebevoll gestaltet, fast wie ein Adventure
+	+ viele Extras
+	+ mehrere mögliche Wege
+	- etwas lang und repetitiv
+	- keine Checkpoints. Sollten sich zusätzlich dazu die Spieler bekriegen, nimmt das nie ein Ende
+
+Wipf - o - drom (Wipf-o-drom.c4s)
+	+ hübsch gestaltet, schöne Hindernisse
+	+ kurz
+	- statische Landschaft, daher wenig Wiederspielwert
+
+Abwärts ....
+	* ein Klassiker... aber welche Version denn?
+	-> nehmen wir mal ExtremTeam2 weil Abwärts Olympia doch etwas groß ist
+
+Abwärts Falschrum! (AbwaertsFalschrum.c4s)
+	+ lustiges Konzept mit der Kanone. Funktioniert!
+
+Spiegel-Höhlenklettern (S2CaveraceMirror.c4s)
+	- wie Caverace...
+	+ aber in Teams!
+
+Grab die Tiefe! (DigDown.c4s)
+	+ lustiges Konzept mit der Powerschaufel. Funktioniert!
+	+ sehr kurz
+	+ auch einfach für Anfänger, weil, einfach graben!
+
+Seilrennen (RopeRace.c4s)
+	+ hier glänzt das Seilpack
+	- sehr ähnlich wie Skyrace.c4s
+
+[CE EM]Pink (tschudispecial.c4s)
+	+ Interessant: Siedel-Team-Rennen
+	- offenbar nicht im Netzwerk spielbar, desyncs?
+
+Wasser und Blut (Waterrace.c4s)
+	+ mal was anderes: Rennen mit Hydroclonks
+	+ interessante Waffen und Gegner
+	- etwas (zu) chaotisch, teilweise unfair; man fühlt sich eher als Gejagter hier
+
+Explode1000 (explode1000.c4s)
+	- sehr simpel, wenig echte Hindernisse
+	* Sniper-Statuen sind eine nette Idee, aber letztlich recht frustrierend, insbesondere die Brandbomben-Dinger
+	+ kurz
+	- recht unfair / zufällig durch dynamische Landschaft und zufällige Platzierung der Statuen
+
+Katapultrennen ((G)Catarace.c4s)
+	- sehr ähnlich wie Skyrace.c4s. Es gibt sehr viele leichte Variationen von Skyrace.c4s
+	+ lustiger Twist auf Skyrace
+	- man muss sich gut merken können wie man vor dem letzten Respawn genau katapultiert ist, es gibt keinen "gebauten" Pfad
+
+Todesrennen (RACE_Death.c4s)
+	+ interessantes Extra mit dem Gleiten
+	- selten sind die Aufwinde nützlich platziert und es ist sehr schwierig steuerbar wo man dann am Ende damit landet. Also meist doch wieder nur Lehmbrücken bauen...
+	- sehr ähnlich wie Skyrace.c4s. Es gibt sehr viele leichte Variationen von Skyrace.c4s
+
+===============================================
+            Aussortierte Kandidaten 
+===============================================
+
+BoomRace 1.81 (BoomRace18.c4s)
+	- CCAN: +1.2
+	+ interessante Extras (Amulette, Hammer)
+	- recht billig / hässlich
+	+ Explosionen!!
+	- da man beim Durchsprengen regelmäßig zwangsweise stirbt und neu anfängt, ist zum Gewinnen nur der allerletzte Abschnitt relevant
+
+Magma-Mountain (Magma-Mountain_EX.c4s)
+	+ liebevoll gestaltete Landschaft
+	+ interessante Extras (Golem-Barrieren)
+	- recht lang
+	- fast einzige Strategie zur Überwindung von Hindernissen: Lehmbrücken.
+	- keine Checkpoints. (Kombiniert mit unbekannten Hindernissen, also wenn man nicht weiß was die Golems machen, frustrierend)
+	- statische Landschaft -> wenig Wiederspielwert
+
+Rennen_durch_Materie (Rennen_durch_Materie.c4f)
+	* sehr chaotisches Rennen
+	- bisweilen sehr frustrierend, insbesondere wenn einfach Lava spawnt wo man gerade ist oder Lava/Säure vor dem Spawn erscheint
+	- kein rubber-band Effekt (den man sonst bei den meisten anderen Rennen durch Landschaft hat, was es spannender machen würde)
+	* bisweilen laggy weil viel Material im fluss ist, was wiederum für Action sorgt
+	* (schade: mit kleinen Tweaks, z.B. keine Lava und/oder Effekte die vor erscheinenden Chunks warnen, wäre der Frustfaktor behoben!)
+
+Aciderace 2.6 (Acidrace_2_6.c4s)
+	* klassischer Hindernislauf mit Magiern
+	- keine Checkpoints
+	- etwas lang / repititiv
+	- (künstlich aussehende Landschaft)
+	+ Musik
+	- "Rennen der magischen Clonks" ist ein bischen ähnlich, aber wesentlich besser
+
+Schützenrennen (ArcheryRace.c4s)
+	+ interessantes Konzept: Rennen mit Bogen + (verbuggtem) Seilpack
+	+ hübsch gestaltete (statische) Landschaft; interessante Hindernisse
+	- die Seile fühlen sich super-verbuggt an, ziemlich frustrierend
+	- keine Checkpoints und tausend Möglichkeiten zu sterben oder getötet zu werden -> super frustrierend, insbesondere in Kombinationen mit diesem Gummiband-Seilpack!!!
+	- Seilrennen mit reworktem Seilpack ist bereits im Pack
+
+Krötensprung Rennen (ToadjumpRace.c4s)
+	+ Extra: Krötensprung und einige Magus-Specials
+	- ansonsten ziemlich normales Himmelsklettern, wenig neues. In dem Sinne ähnlich wie Abwärts Falschrum!
+
+Torpedorennen (Torpedorace.c4s)
+	+ Spaßiges Konzept: Du bist ein Torpedo
+	- zu dichte Landschaft und zu viele Hindernisse: bis auf die letzten Minuten ist es nicht spannend und eine Plackerei, weil man sich den Weg erstmal freisprengen MUSS (und dann jeweils neu anfängt)
+	- dauert zu lange
+
+Das Westernrennen (Das_Westernrennen.c4s)
+	+ schöne (statische) Landschaft
+	- es entscheidet eigentlich der Zufall ob man an bestimmten Hindernissen (Tempel mit Kanonenbeschuss und Bandit mit Winchester) vorbeikommt oder nicht, eher frustrierend
+
+Tempel der Goldstatue (TempleOfTheGoldIdol.c4s)
+	- sehr schwer bzw. unfair und keine Checkpoints (man fängt immer ganz von vorne an)
+	- zieht sich. Am Anfang siehts ganz gut aus, zum Ende hin wirds immer langweiliger
+
+Ballonrace (M_Ballon.c4s)
+-- Kaputt: Mit dem Bausatz kann man einfach eine Statue bauen und gewinnt dadurch.
+- zu lang
+- frustrierend mit Mehreren weil jeder den Wind ständig wechselt
+- Niveau auf CCAN: 0.7
+
+Aylon Wettrennen 2 (Aylon_Wettrennen_2_1.c4s)
+	- hässlich
+	- wenig Variation in den Hindernissen
+	- auf eine unfaire Art und Weise (Flintregen-like) schwer

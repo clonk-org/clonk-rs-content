@@ -1,0 +1,16 @@
+[DefCore]
+id=_LBY
+Name=Library
+Version=4,9,5
+Category=1
+Width=20
+Height=40
+Offset=-10,-20
+Value=0
+Mass=1000
+Components=WOOD=4;ROCK=1;
+Picture=0,0,20,40
+
+[Physical]
+Energy=100000
+ 

@@ -1,0 +1,4 @@
+BuySeed=Baumsamen
+NotenoughWood=Kein Holzstück!
+ProduceShelves=Bretter schneiden
+NotenoughMoney=Nicht genug Geld!

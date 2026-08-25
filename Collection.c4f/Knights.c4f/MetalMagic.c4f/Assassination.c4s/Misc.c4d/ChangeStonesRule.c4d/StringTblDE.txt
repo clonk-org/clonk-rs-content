@@ -1,0 +1,4 @@
+NoMore=Du kannst keine Aenderungen mehr vornehmen!
+Inc=Steinzahl erhoehen
+Dec=Steinzahl verringern
+Stat=%d Steine sind zu stehlen|Die Zeit betraegt %.2d:%.2dmin.

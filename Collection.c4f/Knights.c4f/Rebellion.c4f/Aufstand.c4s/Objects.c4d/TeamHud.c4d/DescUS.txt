@@ -1,0 +1,1 @@
+Shows the energy of the clonk to the whole team.

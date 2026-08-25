@@ -1,0 +1,17 @@
+[Material]
+Name=Water2
+Color=7,35,100, 7,35,100, 7,35,100
+Density=5
+Instable=1
+MaxAirSpeed=75
+MaxSlide=5
+WindDrift=0
+Corrode=100
+Extinguisher=1
+PXSGfx=None
+PXSGfxRt=0,0,1,1,0,0
+
+[Reaction]
+Type=Convert
+TargetSpec=Extinguisher
+ConvertMat=Sky

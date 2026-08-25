@@ -1,0 +1,6 @@
+[Action]
+Name=AttachToClonk
+Procedure=ATTACH
+Length=1
+Facet=0,0,18,4
+NextAction=Hold

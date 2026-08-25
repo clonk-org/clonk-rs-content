@@ -1,0 +1,3 @@
+Eine kleine Farm zum bewirtschaften des Guts. 
+
+Über das Menü kann Samen gekauft und fertiges Getreide verarbeitet werden.

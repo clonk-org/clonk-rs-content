@@ -1,0 +1,13 @@
+[DefCore]
+id=QDLT
+Name=Statue
+Version=4,9,5
+Category=1
+MaxUserSelect=1
+Width=32
+Height=32
+Offset=-16,-16
+Value=500
+Mass=2000
+Components=ROCK=500;
+Picture=0,0,32,32

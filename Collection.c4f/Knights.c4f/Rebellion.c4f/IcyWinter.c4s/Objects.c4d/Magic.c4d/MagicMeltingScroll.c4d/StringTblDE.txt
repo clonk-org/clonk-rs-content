@@ -1,0 +1,1 @@
+MsgCastDelay=Abklingzeit noch|nicht abgelaufen!

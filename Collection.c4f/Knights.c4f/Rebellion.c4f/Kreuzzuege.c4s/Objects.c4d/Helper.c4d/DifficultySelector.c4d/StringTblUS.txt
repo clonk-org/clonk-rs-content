@@ -1,0 +1,7 @@
+Caption=Choose degree of difficulty
+Easy=Easy
+EasyDesc=Low severity.
+Normal=Normal
+NormalDesc=Medium severity.
+Hard=Hard
+HardDesc=High severity.

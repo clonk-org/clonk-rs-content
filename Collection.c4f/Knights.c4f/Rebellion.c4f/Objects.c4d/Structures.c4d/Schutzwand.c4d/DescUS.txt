@@ -1,0 +1,1 @@
+Protects the emplacement from arrows. You can turn it with control left/right.

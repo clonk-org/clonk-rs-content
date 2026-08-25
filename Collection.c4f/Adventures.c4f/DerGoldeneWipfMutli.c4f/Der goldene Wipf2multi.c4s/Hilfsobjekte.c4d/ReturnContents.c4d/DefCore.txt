@@ -1,0 +1,21 @@
+[DefCore]
+id=RCNT
+Name=Return Contents
+Version=4,9,5
+Category=12
+MaxUserSelect=10
+Width=6
+Height=6
+Offset=-3,-3
+Value=10
+Mass=10
+Picture=6,0,64,64
+Rebuy=1
+Timer=3
+TimerCall=Check
+BorderBound=1
+Pathfinder=1
+
+[Physical]
+Float=400
+ 

@@ -1,0 +1,17 @@
+[Teams]
+FreeForAll=0
+
+	[Team]
+	id=1
+	Name=$left$
+	IconSpec=Portrait:KNIG::1
+	
+	[Team]
+	id=2
+	Name=$right$
+	IconSpec=Portrait:KNIG::3
+	
+	[Team]
+	id=3
+	Name=$castle$
+	IconSpec=Portrait:MAGE::1

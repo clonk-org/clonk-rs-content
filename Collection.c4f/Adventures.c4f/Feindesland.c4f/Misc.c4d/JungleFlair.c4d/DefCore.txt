@@ -1,0 +1,9 @@
+[DefCore]
+id=JUNS
+Name=EnvironmentJungleSounds
+Value=1
+Version=4,9,5
+Category=65
+MaxUserSelect=5
+Picture=0,0,64,64
+ 

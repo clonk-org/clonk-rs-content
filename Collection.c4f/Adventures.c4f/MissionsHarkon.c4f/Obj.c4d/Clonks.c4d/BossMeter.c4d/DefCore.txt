@@ -1,0 +1,9 @@
+[DefCore]
+id=BOSS
+Version=4,9,8
+Name=Boss
+Category=41943041
+MaxUserSelect=10
+Width=10
+Height=10
+Offset=0,-5

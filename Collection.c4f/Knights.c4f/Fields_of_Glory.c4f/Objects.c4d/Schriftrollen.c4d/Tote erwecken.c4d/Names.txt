@@ -1,0 +1,2 @@
+DE:Schriftrolle: Gruppenheilung
+US:Scroll: Heal group

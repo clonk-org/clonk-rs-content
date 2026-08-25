@@ -1,0 +1,4 @@
+MostDamage=%s hat mit %d Schaden den Gegnern am meisten zugesetzt!
+MostTeamdamage=%s hat mit %d Schaden sein Team am meisten hintergangen!
+MostTeamkills=%s machte %d Teamkills!
+MostHeal=%s heilte sich mit %d geheilten Leben am meisten!

@@ -1,0 +1,2 @@
+DE:Quake-Waffe
+US:Quake-Weapon

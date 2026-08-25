@@ -1,0 +1,6 @@
+Relaunch=%s needs a relaunch!
+TeamRight=Right team
+TeamLeft=Left team
+MsgLeftJoined=%s joins the left team!
+MsgRightJoined=%s joins the right team!
+GemOverview=Gem overview

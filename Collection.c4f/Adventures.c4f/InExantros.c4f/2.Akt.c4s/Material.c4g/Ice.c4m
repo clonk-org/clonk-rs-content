@@ -1,0 +1,8 @@
+[Material]
+Name=Ice
+Color=0,110,190,0,124,252,0,150,250
+Shape=1
+Density=50
+Friction=15
+Placement=21
+TextureOverlay=Sponge

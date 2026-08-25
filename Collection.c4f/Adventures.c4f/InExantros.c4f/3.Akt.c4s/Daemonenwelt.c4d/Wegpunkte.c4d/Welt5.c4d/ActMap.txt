@@ -1,0 +1,8 @@
+[Action]
+Name=Check
+Procedure=NONE
+Length=1
+Delay=5
+Facet=0,0,1,1
+NextAction=Check
+EndCall=Timer

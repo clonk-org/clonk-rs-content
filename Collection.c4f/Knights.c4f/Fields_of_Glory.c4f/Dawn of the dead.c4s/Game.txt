@@ -1,0 +1,5 @@
+[Script]
+GlobalNamed=9;lgt_enlightment=A0,lgt_last_lgt_frame=A0,Canonballs=A0,pWeapon=A0,pAmmo=A0,relaunch=a[0;],kill=a[0;],iDeathCausedBy=A0,iPotions=a[4;I1380533840,I1095059536,I1312902480,I1330926416]
+
+[Effects]
+GlobalEffects=IntSchedule(5,1,0,100,0,NONE)[2;S3,i1],IntSchedule(4,1,0,100,0,NONE)[2;S3,i1],IntSchedule(3,1,0,100,0,NONE)[2;S3,i1],IntSchedule(2,1,0,100,0,NONE)[2;S3,i1],IntSchedule(1,1,0,100,0,NONE)[2;S3,i1]

@@ -1,0 +1,9 @@
+[Action]
+Name=Tick
+Procedure=NONE
+Directions=2
+FlipDir=1
+Length=12
+Delay=74
+Facet=0,0,21,40
+NextAction=Tick

@@ -1,0 +1,17 @@
+[Teams]
+LastTeamID=2
+TeamColors=true
+
+  [Team]
+  id=1
+  Name=$TeamLeft$
+  PlrStartIndex=1
+  Color=15990784
+  IconSpec="KTM1:1"
+
+  [Team]
+  id=2
+  Name=$TeamRight$
+  PlrStartIndex=2
+  Color=51200
+  IconSpec="KTM1:4"

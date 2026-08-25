@@ -1,0 +1,2 @@
+DE:Gruppenschaden
+US:Damage group
