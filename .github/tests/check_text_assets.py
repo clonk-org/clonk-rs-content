@@ -27,11 +27,13 @@ Usage: check_text_assets.py [<base-ref>]     (default: origin/main)
 Lives under .github/ so it does not ship in content.zip.
 """
 
+from __future__ import annotations
+
 import subprocess
 import sys
 
 # The text formats the engine reads out of group directories.
-EXTENSIONS = (".txt", ".c", ".c4m")
+EXTENSIONS = (".txt", ".rtf", ".c", ".c4m")
 
 # Only files inside a Clonk group are game content. This keeps the rule off
 # repository documentation such as `README.md` and
