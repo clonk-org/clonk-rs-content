@@ -1,2 +1,0 @@
-DE:Generator
-US:Generator

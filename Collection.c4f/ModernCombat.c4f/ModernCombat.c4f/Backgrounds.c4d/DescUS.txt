@@ -1,1 +1,0 @@
-Create additional depth effects and ambience.

@@ -1,3 +1,0 @@
-Open=Open
-Close=Close Lock
-Stop=Stop

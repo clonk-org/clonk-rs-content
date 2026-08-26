@@ -1,2 +1,0 @@
-TurnOff=Ausschalten
-TurnOn=Anschalten

@@ -28,6 +28,10 @@
 # text files on staging and move the bytes of a pack we do not own.
 /Collection.c4f/** binary
 
+# E.P.I.C. is distributed the same way: its scenario folder is exploded so the
+# sweep sees every .c4s, while its definition pack remains packed inside it.
+/E.P.I.C.c4f/** binary
+
 # Exploded into directories rather than left as single packed files: cargo xtask
 # scenario-sweep walks the filesystem, so a packed .c4f hides every scenario
 # inside it from the sweep. MissionsHarkon.c4f is exploded for a second reason —
@@ -38,31 +42,27 @@
 # Left packed, one file each. A packed group returns its stored header order,
 # which is host-stable and is what C++ C4MaterialMap::Load consumes, where an
 # unpacked directory would return unsorted readdir order.
-/BlacksCMC-Waffenmod.c4d binary
-/Clinfinity.c4d binary
-/ClonkPartyRes.c4d binary
-/ClonkPartyRes2.c4d binary
-/Clonkrix.c4d binary
-/EkeBot.c4d binary
-/Explorer.c4d binary
-/GIDL_Race.c4d binary
+/Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d binary
+/Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D binary
+/Collection.c4f/Fun.c4f/ClonkPartyRes.c4d binary
+/Collection.c4f/Fun.c4f/ClonkPartyRes2.c4d binary
+/Collection.c4f/Fun.c4f/GIDL_Race.c4d binary
+/Collection.c4f/Fun.c4f/Zombieland.c4d binary
+/Collection.c4f/Fun.c4f/Zombiesounds.c4d binary
+/Collection.c4f/Hazard.c4f/Jetbelt.c4d binary
+/Collection.c4f/Hazard.c4f/PhysGun.c4d binary
+/Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d binary
+/Collection.c4f/Magus.c4f/KdD_Magie_Pack.c4d binary
+/Collection.c4f/ModernCombat.c4f/BlacksCMC-Waffenmod.c4d binary
+/Collection.c4f/Puzzles.c4f/Explorer.c4d binary
+/Collection.c4f/Races.c4f/Clinfinity.c4d binary
+/Collection.c4f/Races.c4f/Ropepack.c4d binary
+/Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d binary
 /Golems.c4d binary
-/INEXSzenarioObjekte.c4d binary
-/InExantros.C4D binary
-/Jetbelt.c4d binary
-/KdD_Magie_Pack.c4d binary
-/KnightMelees.c4d binary
-/KnightSkirmishs.c4d binary
 /ModernCombat.c4d binary
-/PhysGun.c4d binary
-/Ropepack.c4d binary
 /RopepackRemake.c4d binary
-/RufDerWipfe.c4d binary
 /WesternBalancing.c4d binary
 /WesternBugfixes.c4d binary
-/ZombieWars.c4d binary
-/Zombieland.c4d binary
-/Zombiesounds.c4d binary
 
 # Repository infrastructure, not game content. Keep it at LF: the eol=crlf rule
 # above is there to preserve pack bytes, and it would otherwise reach the shell

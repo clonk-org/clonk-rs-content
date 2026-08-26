@@ -35,11 +35,15 @@ ship inside `Collection.c4f`.
 
 ## What was taken
 
-- `Clonk Rage/Collection/` — 249 files, the curated ~10%, as
-  `Collection.c4f/` with its eleven genre folders given the `.c4f` extension the
-  engine classifies scenario folders by.
-- 28 dependency packs from `Clonk Rage/` that this repository did not already
-  carry.
+- `Clonk Rage/Collection/` — the curated ~10%, as `Collection.c4f/` with its
+  eleven genre folders given the `.c4f` extension the engine classifies
+  scenario folders by. Scenarios already offered by another shipped pack were
+  removed after import; the retained copy is the repository's pre-existing,
+  generally newer version.
+- The dependency packs the retained scenarios need and this repository did not
+  already carry. A private definition is nested at the deepest common scenario
+  folder that uses it. Only definitions shared across separate folders remain
+  in the data root.
 
 ## What was deliberately left behind
 
@@ -72,6 +76,21 @@ ship inside `Collection.c4f`.
   loader art overlaid onto ClonkMars, Fantasy, GIDL_Race, Hazard, Knights,
   Metal & Magic and Western, all of which keep the music and loaders they
   already ship. No definition or scenario depended on it.
+- Four definition packs with no consumer in the curated collection:
+  `EkeBot.c4d`, `KnightMelees.c4d`, `KnightSkirmishs.c4d` and `ZombieWars.c4d`.
+  The compilation's own comments reject the associated scenario packs, so
+  retaining their definitions at the data root served no scenario.
+
+## Scenarios deduplicated after import
+
+The compilation was assembled as a stand-alone installation, while this
+repository already carried several of the same scenarios. The compilation's
+copies of ClonkMars, Hazard, Arso-Morf, Drachenfels, Goldrush and Queron 3.41
+were removed in favor of the existing copies. The second embedded
+`ModernCombat.c4f` was byte-identical to the top-level pack imported with the
+compilation and was removed as well. The untouched compilation directory was
+used to audit names, localized titles, group contents and version differences;
+same-title but materially different scenarios were retained.
 
 ## Shape on disk
 

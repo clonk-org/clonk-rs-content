@@ -1,2 +1,0 @@
-DE:CMC - <c ffff33>Skyfall</c>
-US:CMC - <c ffff33>Skyfall</c>

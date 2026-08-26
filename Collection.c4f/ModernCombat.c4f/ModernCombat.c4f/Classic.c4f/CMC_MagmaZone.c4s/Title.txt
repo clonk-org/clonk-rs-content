@@ -1,2 +1,0 @@
-DE:CMC - <c ffff33>Magma Zone</c>
-US:CMC - <c ffff33>Magma Zone</c>

@@ -1,0 +1,16 @@
+[DefCore]
+id=EW8Z
+Name=ClonkSpawner
+Version=4,9,5
+Category=1
+MaxUserSelect=10
+Value=10
+Mass=10
+Components=ROCK=1;
+Picture=0,0,64,64
+Vertices=1
+VertexY=1
+VertexFriction=20
+TimerCall=SpawnLoad
+Timer=1
+CrewMember=1

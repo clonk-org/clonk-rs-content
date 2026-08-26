@@ -1,0 +1,13 @@
+[Parameters]
+RandomSeed=1254923223
+StartupPlayerCount=1
+UseFairCrew=true
+FairCrewStrength=1000
+ControlRate=1
+
+  [Client]
+  ID=0
+  Activated=true
+  Name="warui"
+  CUID="17168180"
+  Nick="Tobias_Widlund"

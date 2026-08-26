@@ -1,0 +1,3 @@
+/*-- Neues Szenario --*/
+
+#strict

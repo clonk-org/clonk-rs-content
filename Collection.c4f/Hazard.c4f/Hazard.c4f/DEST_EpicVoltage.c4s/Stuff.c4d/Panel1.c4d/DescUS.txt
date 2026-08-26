@@ -1,1 +1,0 @@
-Used to manage all jobs in the command center. And works, really.

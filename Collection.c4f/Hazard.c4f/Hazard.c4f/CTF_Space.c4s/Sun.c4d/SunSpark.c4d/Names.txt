@@ -1,2 +1,0 @@
-DE:Sonnenpartikel
-US:Sun spark
