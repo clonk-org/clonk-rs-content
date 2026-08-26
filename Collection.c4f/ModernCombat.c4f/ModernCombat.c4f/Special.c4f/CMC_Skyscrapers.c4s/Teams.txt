@@ -1,3 +1,0 @@
-[Teams]
-AutoGenerateTeams=1
-TeamDistribution=Host

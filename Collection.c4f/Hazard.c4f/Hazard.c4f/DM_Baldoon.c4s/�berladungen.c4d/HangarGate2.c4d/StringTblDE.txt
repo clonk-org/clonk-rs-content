@@ -1,3 +1,0 @@
-Open=÷ffnen
-Close=Schleuse Schlieﬂen
-Stop=Stop

@@ -1,2 +1,0 @@
-DE:Drone
-US:Drone

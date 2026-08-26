@@ -1,0 +1,4 @@
+TeamLeft=Logem
+TeamRight=Urist
+TeamLeftJoin=%s tritt %s bei.
+TeamRightJoin=%s tritt %s bei.

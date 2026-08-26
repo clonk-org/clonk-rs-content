@@ -1,3 +1,0 @@
-MainComp=Hauptcomputer
-Rot=Predators
-Blau=Terminatoren

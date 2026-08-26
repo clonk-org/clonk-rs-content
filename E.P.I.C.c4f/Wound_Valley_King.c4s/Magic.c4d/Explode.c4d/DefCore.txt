@@ -1,0 +1,10 @@
+[DefCore]
+id=EV8Z
+Version=4,9,8
+Name=Explosion
+Category=C4D_Magic
+Width=1
+Height=1
+Value=110
+Components=IASH=3
+Picture=0,0,64,64

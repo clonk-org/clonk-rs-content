@@ -1,0 +1,2 @@
+SelfKill=%s dies.
+Kill=%s was killed by %s.

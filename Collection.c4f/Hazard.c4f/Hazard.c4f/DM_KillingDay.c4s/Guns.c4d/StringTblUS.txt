@@ -1,2 +1,0 @@
-TurnOn=Turn on guns
-TurnOff=Turn off guns

@@ -1,3 +1,0 @@
-MainComp=Main computer
-Rot=Predators
-Blau=Terminators

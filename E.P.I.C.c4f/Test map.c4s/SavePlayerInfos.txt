@@ -1,0 +1,13 @@
+[PlayerInfoList]
+LastPlayerID=2
+
+  [Client]
+  ID=0
+  Flags=Initial
+
+    [Player]
+    Name="Zagabar"
+    Flags=Joined
+    ID=1
+    Color=6718992
+    SavgamePlayer=1

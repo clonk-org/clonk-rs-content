@@ -1,2 +1,0 @@
-Left=Dockers
-Right=Deckhands
