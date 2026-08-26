@@ -10,7 +10,6 @@ TxtUsecommandselectright2=Use the key 'select right' to switch to the clonk on t
 TxtCollectthematerialyo=Collect the material you just flung up.$02_10_en.ogg
 TxtNowgrabtheothercatap=Now grab the other catapult with this clonk. (Press 'down'.)$02_11_en.ogg
 TxtTurnthecatapultaroun=Turn the catapult around to the left.$02_12_en.ogg
-TxtHitthrowtoloadthecat=Hit 'throw' to load the catapult.$02_13_en.ogg
 TxtFlingthematerialupto=Fling the material up to the cabin on the left hill. Don't forget to tension the catapult first.$02_14_en.ogg
 TxtUsingtheselectioncom=Using the selection keys, switch back to the clonk near the cabin.$02_15_en.ogg
 TxtWithadoublestopatthe=By pressing 'down' while standing on the construction site you can continue work on the elevator.$02_16_en.ogg

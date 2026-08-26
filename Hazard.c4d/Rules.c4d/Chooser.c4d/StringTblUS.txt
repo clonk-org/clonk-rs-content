@@ -33,7 +33,6 @@ Space=The space
 
 AlienMenu=Alien setup
 AlienInfo=Option to configure Aliens
-Finished=Finished
 
 AlienInfo2=%d hive(s)
 

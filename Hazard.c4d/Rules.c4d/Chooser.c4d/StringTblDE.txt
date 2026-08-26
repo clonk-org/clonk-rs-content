@@ -33,7 +33,6 @@ Space=Die unendliche Weite
 
 AlienMenu=Aliens einstellen
 AlienInfo=Diverse Einstellungen für Aliens
-Finished=Fertig
 
 AlienInfo2=%d Nest(er)
 

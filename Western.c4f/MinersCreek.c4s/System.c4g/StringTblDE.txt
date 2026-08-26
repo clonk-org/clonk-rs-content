@@ -17,4 +17,3 @@ NotEnoughMoney=Nicht genug Geld.
 TxtRecruitCaptain=Captain ausbilden
 OnlyOneCaptain=Er kann nur einen Captain geben.
 RecruitCaptain=Captain ausgebildet.
-NotEnoughMoney=Nicht genug Geld.

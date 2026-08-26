@@ -2,7 +2,6 @@ Grenade=Granate
 FragGrenade=Splittergranate
 Napalm=Napalmgranate
 EMP=EMP Granate
-Napalm=Napalmgranate
 Slime=Bioschleimgranate
 Laser=Lasergranate
 

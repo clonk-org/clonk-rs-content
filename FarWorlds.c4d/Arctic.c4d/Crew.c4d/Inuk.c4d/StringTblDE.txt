@@ -9,7 +9,6 @@ TxtCrafts=Herstellen: %s
 TxtConstructs=Errichten: %s
 TxtTakeoffanorak=Anorak ausziehen
 TxtMysticstate=Magiestatus
-TxtMalletrequired=Hammer benötigt!
 TxtConstructions=Konstruktion: %s
 TxtsisnoAngakok=%s ist kein Angakok
 TxtsisanAngakokmysticle=%s ist ein Angakok|Mystikstufe: %d

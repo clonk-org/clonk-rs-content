@@ -2,7 +2,6 @@ Grenade=Grenade
 FragGrenade=Frag grenade
 Napalm=Napalm grenade
 EMP=EMP grenade
-Napalm=Napalm grenade
 Slime=Slime grenade
 Laser=Laser grenade
 
