@@ -15,7 +15,7 @@ MsgModifiy=Modify
 MsgHide=Hide
 MsgStack=Stack
 
-MsgAnalysing=Spell: %s|Charges: %d|Trigger: %s|Aim: %s
+MsgAnalysing=Spell: %s|Charges: %d|Trigger: %s|Aim: %s|Owner: %d
 MsgAnalysingHidden=Hidden artefact!
 
 #ActivationMenu
@@ -31,11 +31,11 @@ MsgDrink=Drink
 MsgEnergy=Energy
 MsgDelay=Delay
 MsgNo=No
-MsgCombo=Combo objekt
+MsgCombo=Combo object
 
 #TargetMenu
 MsgTarTitle=Aim:
-MsgAlly=Allys
+MsgAlly=Allies
 MsgRandom=Random
 MsgObj=Object
 MsgTarEnemy=Enemy

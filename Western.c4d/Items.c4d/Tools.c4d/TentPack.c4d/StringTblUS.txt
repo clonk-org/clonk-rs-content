@@ -5,5 +5,6 @@ TxtConstructions=Construction: %s
 TxtFill=Fill tent pack
 TxtCantTake=Can't take.
 TxtCantFind=Can't find object.
+TxtNoObjectsFound=No objects found
 TxtBackMenu=Back to menu
-DescBackMenu=Turns you back to the build menu.
+DescBackMenu=Returns you to the build menu.

@@ -1,4 +1,5 @@
 FlameThrower=Flammenwerfer
+FlameBall=Flammenball
 SlimeThrower=Chemische Keule
 
 KSLMUpgradeDesc=Bringt eine Chemische Keule an

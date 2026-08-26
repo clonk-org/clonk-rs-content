@@ -1,4 +1,4 @@
-MsgScore=Info
+MsgScore=Scoreboard
 
 MsgBandits=Bandits
 MsgTown=Cowboys

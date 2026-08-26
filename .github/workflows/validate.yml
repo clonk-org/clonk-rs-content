@@ -90,8 +90,8 @@ jobs:
       # process on one machine. It cannot see the failure this repository
       # actually fears: the same tree producing a different digest in a later
       # run, on a different runner, after a dependency or compiler moved. That
-      # would make every install re-download 253 MB with nothing changed, and
-      # nothing would report it.
+      # would make every install re-download the entire archive with nothing
+      # changed, and nothing would report it.
       #
       # So: when a branch changes nothing outside .github/, its archive must
       # still hash to whatever the base commit already published.
@@ -155,6 +155,11 @@ jobs:
 
       - name: Third-party content stays scoped and deduplicated
         run: .github/tests/test_content_layout.sh
+
+      - name: Maintained content has complete English localization
+        run: |
+          python3 -m unittest discover -v -s .github/tests -p 'test_check_localizations.py'
+          python3 .github/tests/check_localizations.py
 
       # Compares changed assets against their previous version rather than
       # auditing the tree: seven in-group files are already UTF-8 and fifteen

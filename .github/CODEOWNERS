@@ -9,6 +9,7 @@
 # Packaging and CI. The packer is the single producer of content.zip's bytes,
 # and its exclusion list is mirrored in clonk-org/clonk-rs.
 /.github/                       @syb0rg
+/.gitattributes                 @syb0rg
 
 # Version identity, which the engine reads and the update channel keys on.
 /Version.txt                    @syb0rg

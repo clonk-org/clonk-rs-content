@@ -8,9 +8,9 @@
 //! a client re-downloads only when that digest changes — so two independent
 //! "deterministic zip" implementations would have to agree byte for byte
 //! forever. The day they drifted, the digest would move without the content
-//! moving and every install would re-fetch 225 MB. The engine repository
-//! therefore stopped building this archive and now references the one published
-//! here, beside the files it is made of.
+//! moving and every install would re-fetch the entire archive. The engine
+//! repository therefore stopped building this archive and now references the
+//! one published here, beside the files it is made of.
 //!
 //! # What determinism costs
 //!

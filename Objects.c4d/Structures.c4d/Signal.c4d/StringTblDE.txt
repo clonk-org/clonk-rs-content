@@ -4,7 +4,3 @@ TxtHaltandturnleft=Anhalten und nach links weiterfahren
 TxtHaltandturnright=Anhalten und nach rechts weiterfahren
 TxtLoadunload=Material ein/ausladen
 TxtDeconstruct=Signal abbauen
-TxtThrough=Durchfahren
-TxtHaltandgo=Anhalten/Weiter
-TxtLoadunload=Einladen/Ausladen
-TxtDeconstruct=Abbauen

@@ -124,7 +124,7 @@ private func DoChange(idID, iMode)
     var string2; var iMode2 = EffectVar(6, pObj, iEffect);
     if(!iMode2--) string2 = "$MsgAlly$"; if(!iMode2--) string2 = "$MsgObj$"; if(!iMode2--) string2 = "$MsgTarEnemy$";
     // Nachricht ausgeben
-    PlayerMessage(GetOwner(pClonk), "$MsgAnalysing$|Besitzer: %d", pClonk, GetName(0,EffectVar(0, pObj, iEffect)),
+    PlayerMessage(GetOwner(pClonk), "$MsgAnalysing$", pClonk, GetName(0,EffectVar(0, pObj, iEffect)),
 		  EffectVar(1, pObj, iEffect)+1,string1,string2, EffectVar(4, pObj, iEffect));
     // Effekte!
     CastParticles("MSpark", 20, 40, 0,0, 30, 45, GetPlrColorDw(GetOwner(pObj)));

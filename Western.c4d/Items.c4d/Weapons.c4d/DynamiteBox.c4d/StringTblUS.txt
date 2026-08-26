@@ -1,1 +1,3 @@
 TxtTakeDynamite=Take out dynamite
+
+Dynamitnehmen=Take out dynamite

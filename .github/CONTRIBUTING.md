@@ -12,9 +12,9 @@ packaging tool is concerned, so a file there ships to every player inside
 ## Every change costs a download
 
 `content.zip` is content-addressed. Clonk Rust records its SHA-256 in the update
-manifest and a client re-downloads only when the digest changes — the archive is
-around 253 MB. Any change to a tracked file that is not under `.github/` moves
-that digest.
+manifest and a client re-downloads only when the digest changes. Any change to a
+tracked file that is not under `.github/` moves that digest and makes every
+client fetch the entire archive again.
 
 So batch content changes rather than landing five one-line fixes separately, and
 expect the `Validate` job to tell you which files it saw as client-facing.
@@ -24,20 +24,23 @@ expect the `Validate` job to tell you which files it saw as client-facing.
 `.gitattributes` marks these `binary`, because they are exact copies of the
 packs as received:
 
-- `ClonkMars.c4d`, `ClonkMars.c4f`
-- `EkeReloaded.c4d`, `EkeReloaded.c4f`
-- `MetalMagic.c4d`, `MetalMagicExtra.c4d`
-- `Melees.c4f/Queron3.c4s`
+- whole directory trees: `ClonkMars.c4d`, `ClonkMars.c4f`, `Collection.c4f`,
+  `E.P.I.C.c4f`, `EkeReloaded.c4d`, `EkeReloaded.c4f`, `Golems.c4f`,
+  `Melees.c4f/Queron3.c4s`, `MetalMagic.c4d`, `MetalMagicExtra.c4d`, and
+  `ModernCombat.c4f`;
+- packed files: `Golems.c4d`, `ModernCombat.c4d`, `RopepackRemake.c4d`,
+  `WesternBalancing.c4d`, and `WesternBugfixes.c4d`.
 
 They are redistributed as exact copies. Any eol normalisation or reformatting
 changes their resource bytes and the group checksums a non-clonk-rs peer
 computes. Normalising Metal & Magic rewrote roughly half its bytes on the first
 attempt, which is why the `binary` rule is there.
 
-103 files inside the ClonkMars and Eke Reloaded packs are *packed* C4Groups
-rather than directories. **Do not unpack them for consistency with the rest of
-the tree** — and note `grep` cannot see inside them, so a search will
-under-report call sites.
+`.gitattributes` is the authoritative boundary; the list above is a readable
+summary that the localization audit verifies against it. Many entries inside
+these imports are *packed* C4Groups rather than directories. **Do not unpack
+them for consistency with the rest of the tree** — and note `grep` cannot see
+inside them, so a search will under-report call sites and translations.
 
 ## Line endings and encoding
 
@@ -49,6 +52,27 @@ under-report call sites.
   changed asset that arrives as UTF-8.
 - No new NUL bytes. Fifteen assets carry a stray trailing one already; that is a
   known backlog, not a licence to add more.
+
+## Localization
+
+Classic Clonk names English resources `US`. Maintained content follows these
+rules:
+
+- every nonempty `DescDE.txt`/`.rtf`, `RankDE.txt`, and `StringTblDE.txt` has a
+  nonempty English counterpart;
+- every nonempty German string-table key has an English value with the same
+  ordered `%` format directives and the same `{{ICON}}` tokens;
+- `Names.txt` and `Title.txt` use explicit `DE:`/`US:` lines, without duplicate
+  locale tags;
+- player-visible script text belongs in paired string tables, not as a
+  German-only literal; and
+- localization filenames use their canonical casing (`StringTbl`, `Desc`,
+  `Rank`, `Names`, and `Title`).
+
+`check_localizations.py` enforces the structural rules and catches a curated set
+of high-confidence German leftovers. It is not a substitute for reading new
+English prose for meaning and fluency. Byte-exact third-party packs are excluded
+from translation work because changing them would change their checksums.
 
 ## Extension casing is insignificant — leave it alone
 
@@ -89,8 +113,10 @@ update disagree about which files exist. A test fails if you change one.
 The `Validate` job runs on every pull request and is required to merge. Locally:
 
 ```sh
-cd .github/pack-content && cargo test --locked && cargo clippy --locked --all-targets -- -D warnings
-cd ../.. && .github/tests/test_set_version.sh
+cd .github/pack-content && cargo test --locked && cargo fmt --check && cargo clippy --locked --all-targets -- -D warnings
+cd ../.. && .github/tests/test_set_version.sh && .github/tests/test_shared_bases_scenarios.sh && .github/tests/test_content_layout.sh
+python3 -m unittest discover -v -s .github/tests -p 'test_check_localizations.py'
+python3 .github/tests/check_localizations.py
 python3 .github/tests/check_text_assets.py origin/main
 ```
 

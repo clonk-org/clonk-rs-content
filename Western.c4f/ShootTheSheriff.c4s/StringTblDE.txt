@@ -1,3 +1,5 @@
+MsgScore=Spielstand
+
 MsgRelaunch=%s benötigt einen Relaunch!
 
 MsgLost=%s wurde besiegt!

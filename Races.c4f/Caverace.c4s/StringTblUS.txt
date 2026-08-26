@@ -15,5 +15,5 @@ MsgDeath6=Another rejoin for %s
 MsgDeath7=Well done %s. You're dead.
 MsgDeath8=%s should become a stuntman.
 MsgDeath9=%s checks out the valleys.
-MsgDeath10=%s ist dead.
+MsgDeath10=%s is dead.
 MsgDeath11=%s deserves a memorial.

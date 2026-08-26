@@ -201,7 +201,7 @@ func Script68()
 func Script80()
 {
 	SetPlrShowControl(0,"0_2345678_0123456789___3______");
-	TutorialMessage("$TxtHitthrowtoloadthecat$");
+	TutorialMessage("$TxtHitthrowtoloadthecat2$");
 	wait(15);
 }
 

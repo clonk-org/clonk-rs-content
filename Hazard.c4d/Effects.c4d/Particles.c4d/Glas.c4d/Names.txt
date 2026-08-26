@@ -1,2 +1,2 @@
 DE:Glassplitter
-US:Glas
+US:Glass shard

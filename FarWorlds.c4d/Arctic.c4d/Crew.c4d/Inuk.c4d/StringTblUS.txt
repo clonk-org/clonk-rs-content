@@ -9,7 +9,6 @@ TxtCrafts=Craft: %s
 TxtConstructs=Construct: %s
 TxtTakeoffanorak=Take off anorak
 TxtMysticstate=Mystic state
-TxtMalletrequired=Mallet required.
 TxtConstructions=Construction: %s
 TxtsisnoAngakok=%s is no Angakok
 TxtsisanAngakokmysticle=%s is an Angakok|mystic level: %d
