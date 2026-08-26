@@ -4,7 +4,7 @@ name: Publish content
 # updates in place — from the repository the data actually lives in.
 #
 # The engine repository used to build this archive out of its `content/`
-# submodule and re-upload 225 MB on every daily release, even though the
+# submodule and re-upload the full archive on every daily release, even though the
 # content changes roughly four times per ninety days. It now references what is
 # published here instead.
 #

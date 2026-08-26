@@ -21,8 +21,8 @@ VERSION="$1"
 # length.
 #
 # Only packs with a Version.txt one level down need listing: the loop below
-# globs */Version.txt, so the added packs left as single packed files, and
-# Extra.c4g which ships none, are skipped without being named here.
+# globs */Version.txt, so approved imports left as single packed files or without
+# a top-level Version.txt are skipped without being named here.
 THIRD_PARTY_PACKS=(
 	ClonkMars.c4d
 	ClonkMars.c4f
@@ -64,4 +64,3 @@ done
 
 write_version Version.txt
 echo "Version.txt -> $VERSION"
-

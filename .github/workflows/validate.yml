@@ -90,8 +90,8 @@ jobs:
       # process on one machine. It cannot see the failure this repository
       # actually fears: the same tree producing a different digest in a later
       # run, on a different runner, after a dependency or compiler moved. That
-      # would make every install re-download 253 MB with nothing changed, and
-      # nothing would report it.
+      # would make every install re-download the entire archive with nothing
+      # changed, and nothing would report it.
       #
       # So: when a branch changes nothing outside .github/, its archive must
       # still hash to whatever the base commit already published.
