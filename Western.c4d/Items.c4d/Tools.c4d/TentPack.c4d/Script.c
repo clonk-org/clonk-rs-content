@@ -38,7 +38,7 @@ public func Activate(pClonk)
 protected func FillPacket(idType, pClonk)
 {
   CloseMenu(pClonk);
-  CreateMenu(idType, pClonk, this(), 0, "Keine Objekte gefunden");
+  CreateMenu(idType, pClonk, this(), 0, "$TxtNoObjectsFound$");
   AddMenuItem("$TxtBackMenu$",Format("Activate(Object(%d))",ObjectNumber(pClonk)),CXCN,pClonk,0,0,"$DescBackMenu$");
   AddMenuItem(GetName(0,WOOD),Format("FillIn(%i,Object(%d),%d)",WOOD,ObjectNumber(pClonk),0),WOOD,pClonk,ContentsCount(WOOD,this())+1,0,GetDesc(0,WOOD));
   AddMenuItem(GetName(0,LTHR),Format("FillIn(%i,Object(%d),%d)",LTHR,ObjectNumber(pClonk),0),LTHR,pClonk,ContentsCount(LTHR,this())+1,0,GetDesc(0,LTHR));

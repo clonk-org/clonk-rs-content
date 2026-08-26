@@ -1,4 +1,4 @@
-# Kombosystem
+# Combo system
 
 descChooseSpellClass=Magic class selection
 
@@ -14,7 +14,7 @@ MnuNoSpells=No spells known
 MnuCast=Cast
 MnuEmpty=Not selected
 MnuDelQuickspell=Delete quickspell
-MnuSetQuickspell=Belegen:
+MnuSetQuickspell=Assign:
 MnuSlotQuickspell=Quick spell
 
 # Context
@@ -24,7 +24,7 @@ CtxMagicDesc=Cast a spell
 CtxCombo=Change spell system
 CtrlTakeoffDesc=Take equipment off
 
-# Nachrichten
+# Messages
 
 MsgNoQuickSpells=No quick spells selected
 ChangedToCombo=Combination system|selected

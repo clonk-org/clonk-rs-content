@@ -1,8 +1,8 @@
-MsgRead=Read Sign
+MsgRead=Read sign
 MsgTravel=Travel
 
-TxtCoalstown=Coalstown - 25 Mmiles
-TxtFrontier=The frontier ends hier! Beware or the Indians!
+TxtCoalstown=Coalstown - 25 miles
+TxtFrontier=The frontier ends here! Beware of the Indians!
 TxtAshCity=To Ash City
 TxtIndian=To the Sunset Plains
 TxtCaves=To the mines

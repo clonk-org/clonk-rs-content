@@ -168,7 +168,7 @@ global func ActualizeScoreboard(fNoShow)
 {
   var szString = "";
   if(!fScoreboard) {
-    SetScoreboardData(SBRD_Caption, SBRD_Caption, "Spielstand", SBRD_Caption);
+    SetScoreboardData(SBRD_Caption, SBRD_Caption, "$Score$", SBRD_Caption);
     if(fTeamWolves)  szString = Format("%s{{SBWL}}", szString);
     if(fTeamTrapper) szString = Format("%s{{TRPR}}", szString);
     if(fTeamBears)   szString = Format("%s{{SBBR}}", szString);

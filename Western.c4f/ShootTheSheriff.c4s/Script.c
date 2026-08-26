@@ -44,7 +44,7 @@ protected func Initialize()
  AddEffect("Supply", FindObject(AMRY, 1440, 280, -1, -1), 1, 7500, 0, 0, GUNP, 5);     
 
  // Scoreboard erzeugen
- SetScoreboardData(SBRD_Caption, SBRD_Caption, "Spielstand",                    SBRD_Caption);
+ SetScoreboardData(SBRD_Caption, SBRD_Caption, "$MsgScore$",                    SBRD_Caption);
  SetScoreboardData(SBRD_Caption, ScoreboardCol(RELA),       "{{COWB}}",              ScoreboardCol(RELA));
  SetScoreboardData(SBRD_Caption, ScoreboardCol(KILL),       "{{REVR}}",              ScoreboardCol(KILL));  
  SetScoreboardData(ScoreboardCol(TEM1),       SBRD_Caption,       "Fortville", ScoreboardCol(TEM1));

@@ -15,7 +15,7 @@ MsgModifiy=Modifizieren
 MsgHide=Tarnen
 MsgStack=Stapeln
 
-MsgAnalysing=Zauber: %s|Ladungen: %d|Aktivieren: %s|Ziel: %s
+MsgAnalysing=Zauber: %s|Ladungen: %d|Aktivieren: %s|Ziel: %s|Besitzer: %d
 MsgAnalysingHidden=Getarntes Artefakt!
 
 #ActivationMenu

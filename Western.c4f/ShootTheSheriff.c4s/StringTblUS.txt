@@ -1,3 +1,5 @@
+MsgScore=Scoreboard
+
 MsgRelaunch=%s needs a relaunch!
 
 MsgLost=%s is defeated!

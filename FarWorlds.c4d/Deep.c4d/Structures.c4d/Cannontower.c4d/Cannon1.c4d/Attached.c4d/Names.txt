@@ -1,1 +1,2 @@
-Ein neues Objekt.
+DE:Montierter Torpedowerfer
+US:Mounted torpedo launcher

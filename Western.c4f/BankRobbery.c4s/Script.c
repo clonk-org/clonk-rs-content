@@ -57,7 +57,7 @@ protected func Initialize()
  AddEffect("NoDamage", FindObject(BAS9, 2291, 531, -1, -1), 1);
 
  // Scoreboard erzeugen
- SetScoreboardData(SBRD_Caption,	SBRD_Caption,		"Spielstand",		SBRD_Caption);
+ SetScoreboardData(SBRD_Caption,	SBRD_Caption,		"$MsgScore$",		SBRD_Caption);
  SetScoreboardData(SBRD_Caption,	ScoreboardCol(GOLD),	"{{WLTH}}",		ScoreboardCol(GOLD));
  SetScoreboardData(SBRD_Caption,	ScoreboardCol(RELA),	"{{BNDT}}{{COWB}}",	ScoreboardCol(RELA));
  SetScoreboardData(SBRD_Caption,	ScoreboardCol(KILL),	"{{REVR}}",		ScoreboardCol(KILL));  
