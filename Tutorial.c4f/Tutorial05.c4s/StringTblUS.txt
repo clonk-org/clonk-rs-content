@@ -5,6 +5,7 @@ TxtNowstopinfrontofthec=Now stand in front of the catapult and press the 'down' 
 TxtTurnthecatapulttothe=Turn the catapult to the right.$02_05_en.ogg
 TxtYoupushedthecatapult=You pushed the catapult too far to the right. Push it back to the left side of the valley.$02_06_en.ogg
 TxtHitthrowtoloadthecat=Press 'throw' to load the catapult with the collected building material.$02_07_en.ogg
+TxtHitthrowtoloadthecat2=Press 'throw' to load the catapult.$02_13_en.ogg
 TxtHitthrowagaintofiret=Hold 'down' until the catapult is fully tensioned. Then hit 'throw' again to fire.$02_08_en.ogg
 TxtUsecommandselectright2=Use the key 'select right' to switch to the clonk on the right hill.$02_09_en.ogg
 TxtCollectthematerialyo=Collect the material you just flung up.$02_10_en.ogg

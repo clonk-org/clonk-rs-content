@@ -5,6 +5,7 @@ TxtNowstopinfrontofthec=Bewege nun den Clonk vor das Katapult und drücke Taste '
 TxtTurnthecatapulttothe=Drehe das Katapult nach rechts.$02_05_de.ogg
 TxtYoupushedthecatapult=Du hast das Katapult leider zu weit nach rechts geschoben. Schiebe es zurück an den linken Rand des Tals.$02_06_de.ogg
 TxtHitthrowtoloadthecat=Drücke 'Werfen' um das Katapult mit dem Baumaterial zu laden.$02_07_de.ogg
+TxtHitthrowtoloadthecat2=Drücke 'Werfen' um das Katapult mit dem Baumaterial zu laden.$02_13_de.ogg
 TxtHitthrowagaintofiret=Drücke 'Runter' bis das Katapult bis zum Anschlag gespannt ist. Drücke dann erneut 'Werfen' um das Katapult abzufeuern.$02_08_de.ogg
 TxtUsecommandselectright2=Schalte mit der Taste 'Auswahl rechts' auf den Clonk auf dem rechten Hügel um.$02_09_de.ogg
 TxtCollectthematerialyo=Sammle mit diesem Clonk das hochgeschleuderte Baumaterial ein.$02_10_de.ogg
