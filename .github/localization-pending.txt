@@ -3,7 +3,7 @@
 # not consulted here. Remove a path when the linked issues are complete.
 ClonkMars.c4d	clonk-org/clonk-rs-content#78
 ClonkMars.c4f	clonk-org/clonk-rs-content#78
-Collection.c4f	clonk-org/clonk-rs-content#58 clonk-org/clonk-rs-content#68 clonk-org/clonk-rs-content#69 clonk-org/clonk-rs-content#70 clonk-org/clonk-rs-content#71 clonk-org/clonk-rs-content#72 clonk-org/clonk-rs-content#73 clonk-org/clonk-rs-content#74 clonk-org/clonk-rs-content#75 clonk-org/clonk-rs-content#76 clonk-org/clonk-rs-content#77
+Collection.c4f	clonk-org/clonk-rs-content#68 clonk-org/clonk-rs-content#69 clonk-org/clonk-rs-content#70 clonk-org/clonk-rs-content#71 clonk-org/clonk-rs-content#72 clonk-org/clonk-rs-content#73 clonk-org/clonk-rs-content#74 clonk-org/clonk-rs-content#75 clonk-org/clonk-rs-content#76 clonk-org/clonk-rs-content#77
 E.P.I.C.c4f	clonk-org/clonk-rs-content#78
 EkeReloaded.c4d	clonk-org/clonk-rs-content#74
 EkeReloaded.c4f	clonk-org/clonk-rs-content#74
