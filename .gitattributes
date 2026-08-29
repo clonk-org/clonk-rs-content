@@ -1,10 +1,9 @@
 * text=auto eol=crlf
 *.sh !eol
 
-# ClonkMars and Eke Reloaded are redistributed as exact copies of the packs as
-# received. Keep Git from rewriting their bytes: any eol normalization would
-# change resource bytes and the network checksums the engine computes over
-# these groups.
+# ClonkMars and Eke Reloaded retain their imported byte conventions even though
+# this repository maintains derivative working trees. Keep Git from rewriting
+# unchanged bytes: eol normalization would move resource and network checksums.
 /ClonkMars.c4d/** binary
 /ClonkMars.c4f/** binary
 /EkeReloaded.c4d/** binary
@@ -13,15 +12,15 @@
 # Same reasoning for the packs taken from CCAN.
 # These ship a mixture of CRLF and LF files; normalizing rewrote roughly half
 # of Metal & Magic's bytes on the first commit attempt, which would have
-# changed every group checksum away from the upstream pack a non-clonk-rs peer
-# is running. Keep them byte-exact.
+# changed every group checksum away from the imported baseline a non-clonk-rs
+# peer may be running. Preserve bytes unless a reviewed change intends otherwise.
 /MetalMagic.c4d/** binary
 /MetalMagicExtra.c4d/** binary
 /Melees.c4f/Queron3.c4s/** binary
 
 # The Ultimate Clonk Compilation v3.0 curation and the dependency packs it
-# needs. Same reasoning again: these are exact copies of packs as received from
-# their individual authors, so nothing may rewrite their bytes.
+# needs. Same reasoning again: preserve their imported byte conventions and do
+# not let checkout normalization rewrite unchanged files.
 #
 # Collection.c4f holds packed .c4s scenarios next to plain Folder.txt/Title.txt/
 # Desc*.rtf files. Without this rule the eol=crlf default would normalise those

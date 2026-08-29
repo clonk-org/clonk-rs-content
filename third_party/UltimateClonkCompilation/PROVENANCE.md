@@ -5,6 +5,10 @@ README. Kept under `third_party/`, which `NON_CONTENT_ROOT_ENTRIES` in
 `.github/pack-content/src/main.rs` excludes, so this record is auditable in the
 repository without shipping inside `content.zip`.
 
+The repository-wide derivative policy and project patch ledger are in
+[`../PROVENANCE.md`](../PROVENANCE.md). The archive hash below identifies the
+source compilation; it does not grant rights in the individual authors' works.
+
 | | |
 |---|---|
 | Author / compiler | Newton (`newton@westnordost.de`) |

@@ -19,10 +19,9 @@ client fetch the entire archive again.
 So batch content changes rather than landing five one-line fixes separately, and
 expect the `Validate` job to tell you which files it saw as client-facing.
 
-## Packs you must not touch casually
+## Third-party working trees are maintained derivatives
 
-`.gitattributes` marks these `binary`, because they are exact copies of the
-packs as received:
+`.gitattributes` marks these imports `binary`:
 
 - whole directory trees: `ClonkMars.c4d`, `ClonkMars.c4f`, `Collection.c4f`,
   `E.P.I.C.c4f`, `EkeReloaded.c4d`, `EkeReloaded.c4f`, `Golems.c4f`,
@@ -31,16 +30,36 @@ packs as received:
 - packed files: `Golems.c4d`, `ModernCombat.c4d`, `RopepackRemake.c4d`,
   `WesternBalancing.c4d`, and `WesternBugfixes.c4d`.
 
-They are redistributed as exact copies. Any eol normalisation or reformatting
-changes their resource bytes and the group checksums a non-clonk-rs peer
-computes. Normalising Metal & Magic rewrote roughly half its bytes on the first
-attempt, which is why the `binary` rule is there.
+The attribute controls Git's checkout and diff handling. It stops automatic eol
+normalisation from rewriting resource bytes and moving the group checksums a
+non-clonk-rs peer computes. Normalising Metal & Magic rewrote roughly half its
+bytes on the first attempt, which is why the rule is there. It does **not** mean
+the current working trees are unmodified upstream archives: project history
+already contains localization, script, asset, layout, and curation changes.
 
-`.gitattributes` is the authoritative boundary; the list above is a readable
-summary that the localization audit verifies against it. Many entries inside
-these imports are *packed* C4Groups rather than directories. **Do not unpack
-them for consistency with the rest of the tree** — and note `grep` cannot see
-inside them, so a search will under-report call sites and translations.
+Treat them as maintained derivatives with byte-safe checkout. Their source
+snapshots and project changes are recorded in
+[`third_party/PROVENANCE.md`](../third_party/PROVENANCE.md). An intentional
+change must:
+
+- preserve the upstream author, credit, copyright, and licence notices;
+- identify the source archive and hash, or say explicitly when only an imported
+  Git tree is available;
+- add a ledger entry naming the changed paths, purpose, pull request, and source
+  baseline; and
+- preserve the pack's encoding and script substitutions, with focused tests for
+  the behavior being changed.
+
+This repository policy does not create or expand permission to modify or
+redistribute a work. Public availability, prior redistribution, and an earlier
+project patch are not substitutes for licence terms or author permission. If a
+change's basis is not recorded, obtain an upstream replacement or leave the
+import unchanged and report the blocker.
+
+Many entries inside these imports are *packed* C4Groups rather than
+directories. **Do not unpack them for consistency with the rest of the tree** —
+and note `grep` cannot see inside them, so a search will under-report call sites
+and translations.
 
 ## Line endings and encoding
 
@@ -71,8 +90,10 @@ rules:
 
 `check_localizations.py` enforces the structural rules and catches a curated set
 of high-confidence German leftovers. It is not a substitute for reading new
-English prose for meaning and fluency. Byte-exact third-party packs are excluded
-from translation work because changing them would change their checksums.
+English prose for meaning and fluency. Imported working trees with known
+backlogs are temporarily listed in `.github/localization-pending.txt`, with
+qualified issue references. Remove each entry when its linked work is complete.
+The `binary` attribute alone never excludes a path from the audit.
 
 ## Extension casing is insignificant — leave it alone
 
@@ -90,9 +111,9 @@ one did:
 
 So `LightningShot.C4D` loads exactly like `LightningShot.c4d`, on Linux as much
 as anywhere else. Renaming all 130 would move the archive digest — a re-download
-for every install — churn paths inside packs that are meant to be byte-exact, and
-buy nothing. Case-only renames also need a two-step dance to register on
-macOS and Windows.
+for every install — churn imported paths for no behavior change, and buy
+nothing. Case-only renames also need a two-step dance to register on macOS and
+Windows.
 
 ## Versions
 
@@ -115,7 +136,7 @@ The `Validate` job runs on every pull request and is required to merge. Locally:
 ```sh
 cd .github/pack-content && cargo test --locked && cargo fmt --check && cargo clippy --locked --all-targets -- -D warnings
 cd ../.. && .github/tests/test_set_version.sh && .github/tests/test_shared_bases_scenarios.sh && .github/tests/test_content_layout.sh
-python3 -m unittest discover -v -s .github/tests -p 'test_check_localizations.py'
+python3 -m unittest discover -v -s .github/tests -p 'test_check_*.py'
 python3 .github/tests/check_localizations.py
 python3 .github/tests/check_text_assets.py origin/main
 ```
