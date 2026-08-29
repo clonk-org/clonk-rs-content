@@ -158,7 +158,7 @@ jobs:
 
       - name: Maintained content has complete English localization
         run: |
-          python3 -m unittest discover -v -s .github/tests -p 'test_check_localizations.py'
+          python3 -m unittest discover -v -s .github/tests -p 'test_check_*.py'
           python3 .github/tests/check_localizations.py
 
       # Compares changed assets against their previous version rather than

@@ -7,20 +7,13 @@ parses, the game still runs, every other check stays green, and the only symptom
 is a German umlaut rendering as two characters somewhere nobody looks.
 
 This compares each *changed* asset against its previous version rather than
-auditing the tree, for two reasons. Seven in-group files are already UTF-8, and
-converting them back is not obviously right — one of them lives inside
-`ClonkMars.c4d`, which is redistributed as an exact copy of the pack as
-received. And some carry a stray trailing NUL. Both are pre-existing backlogs; the
-point here is to stop the pile growing.
+auditing the tree. Seven in-group files are already UTF-8 and some carry a stray
+trailing NUL. Both are pre-existing backlogs; the point here is to stop the pile
+growing.
 
-Assets inside packs `.gitattributes` marks `binary` are skipped outright. Those
-are redistributed byte-for-byte, so whatever encoding their authors shipped is
-not drift and is not ours to correct — rewriting it would change the group
-checksums a non-clonk-rs peer computes, which is the very thing the `binary`
-marks exist to prevent. Until the Ultimate Clonk Compilation packs landed this
-was accidental rather than intended: every third-party pack arrived in the
-initial commit, so there was never a base revision to diff one against, and a
-brand-new file trips both rules below on `old is None` alone.
+The check includes imported working trees that `.gitattributes` marks `binary`.
+That attribute stops Git from transforming their bytes; it does not make an
+intentional project change invisible to encoding review.
 
 Usage: check_text_assets.py [<base-ref>]     (default: origin/main)
 
@@ -72,37 +65,6 @@ def git(*args: str) -> bytes:
     ).stdout
 
 
-def byte_exact(paths: list[str]) -> set[str]:
-    """Of `paths`, those `.gitattributes` marks `binary`.
-
-    Those packs are redistributed as exact copies of what their authors shipped,
-    which is the whole reason for the `binary` marks: nothing may rewrite their
-    bytes, because the group checksums a non-clonk-rs peer computes are taken
-    over them. Whatever encoding or stray NUL a fifteen-year-old third-party
-    pack arrived with is therefore not drift and not ours to correct — this
-    check exists to catch an editor silently re-encoding an asset *we* maintain.
-
-    Asked of git rather than kept as a second list here: `.gitattributes` is
-    already the declaration of what is byte-exact, and a copy would drift from
-    it without anything noticing.
-    """
-    if not paths:
-        return set()
-    raw = subprocess.run(
-        ["git", "check-attr", "-z", "binary", "--stdin"],
-        input="\0".join(paths).encode("utf-8"),
-        stdout=subprocess.PIPE,
-        check=True,
-    ).stdout
-    # `-z` output is a flat NUL-separated stream of (path, attribute, value).
-    fields = raw.split(b"\0")
-    return {
-        fields[index].decode("utf-8")
-        for index in range(0, len(fields) - 2, 3)
-        if fields[index + 2] == b"set"
-    }
-
-
 def previous_version(ref: str, path: str) -> bytes | None:
     result = subprocess.run(
         ["git", "show", f"{ref}:{path}"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL
@@ -127,16 +89,12 @@ def main() -> int:
     base = sys.argv[1] if len(sys.argv) > 1 else "origin/main"
 
     changed = [path for path in changed_paths(base) if is_game_text_asset(path)]
-    exact = byte_exact(changed)
-    assets = [path for path in changed if path not in exact]
-    if exact:
-        print(f"skipping {len(exact)} asset(s) in byte-exact third-party packs")
-    if not assets:
+    if not changed:
         print("no game text assets changed")
         return 0
 
     problems = []
-    for path in assets:
+    for path in changed:
         new = previous_version("HEAD", path)
         if new is None:
             continue  # deleted
@@ -167,7 +125,7 @@ def main() -> int:
         print(f"\n{len(problems)} text-asset problem(s)", file=sys.stderr)
         return 1
 
-    print(f"ok {len(assets)} changed game text asset(s), no encoding drift")
+    print(f"ok {len(changed)} changed game text asset(s), no encoding drift")
     return 0
 
 

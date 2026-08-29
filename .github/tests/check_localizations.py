@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Check that maintained game text has complete English localization.
 
-Third-party packs marked ``binary`` in ``.gitattributes`` are byte-exact
-imports. Changing their text would change the checksums seen by classic-engine
-peers, so this audit reports maintained content only.
+``binary`` in ``.gitattributes`` controls checkout bytes. It does not decide
+which content this audit maintains. Temporary exclusions live in the separate,
+issue-linked ``.github/localization-pending.txt`` file.
 """
 
 from __future__ import annotations
@@ -16,6 +16,8 @@ import sys
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+LOCALIZATION_PENDING = REPO_ROOT / ".github/localization-pending.txt"
+CONTENT_ISSUE = re.compile(r"clonk-org/clonk-rs-content#[0-9]+")
 
 # Classic Clonk calls English ``US`` in localized asset names.
 LOCALIZED_FILE_PAIRS = {
@@ -41,10 +43,10 @@ CANONICAL_LOCALIZED_NAMES = {
     )
 }
 
-# These paths mirror the byte-exact third-party imports in ``.gitattributes``.
-# Keeping the approved boundary here prevents a new ``binary`` attribute from
-# silently hiding maintained content from this audit.
-BYTE_EXACT_DIRECTORIES = tuple(
+# These paths are allowed to use ``binary`` checkout handling in
+# ``.gitattributes``. Keeping the boundary here prevents that attribute from
+# spreading silently into maintained base content.
+BINARY_IMPORT_DIRECTORIES = tuple(
     Path(path)
     for path in (
         "ClonkMars.c4d",
@@ -60,7 +62,7 @@ BYTE_EXACT_DIRECTORIES = tuple(
         "ModernCombat.c4f",
     )
 )
-BYTE_EXACT_FILES = {
+BINARY_IMPORT_FILES = {
     Path(path)
     for path in (
         "Golems.c4d",
@@ -140,7 +142,7 @@ def repository_files() -> list[Path]:
     return sorted(path for path in paths if (REPO_ROOT / path).is_file())
 
 
-def attributed_byte_exact(paths: list[Path]) -> set[Path]:
+def attributed_binary(paths: list[Path]) -> set[Path]:
     if not paths:
         return set()
 
@@ -159,48 +161,91 @@ def attributed_byte_exact(paths: list[Path]) -> set[Path]:
     }
 
 
-def approved_byte_exact(path: Path) -> bool:
-    return path in BYTE_EXACT_FILES or any(
+def approved_binary_import(path: Path) -> bool:
+    return path in BINARY_IMPORT_FILES or any(
         path == directory or directory in path.parents
-        for directory in BYTE_EXACT_DIRECTORIES
+        for directory in BINARY_IMPORT_DIRECTORIES
     )
 
 
-def byte_exact_problems(paths: list[Path], attributed: set[Path]) -> list[str]:
-    approved = {path for path in paths if approved_byte_exact(path)}
+def binary_attribute_problems(paths: list[Path], attributed: set[Path]) -> list[str]:
+    approved = {path for path in paths if approved_binary_import(path)}
     problems = [
         f"{path}: unapproved binary attribute would hide maintained content"
         for path in sorted(attributed - approved)
     ]
     problems.extend(
-        f"{path}: approved byte-exact import is missing its binary attribute"
+        f"{path}: approved binary import is missing its binary attribute"
         for path in sorted(approved - attributed)
     )
     return problems
+
+
+def localization_pending(paths: list[Path]) -> tuple[set[Path], list[str]]:
+    if not LOCALIZATION_PENDING.is_file():
+        return set(), []
+
+    roots = []
+    problems = []
+    for line_number, line in enumerate(
+        LOCALIZATION_PENDING.read_text(encoding="utf-8").splitlines(), 1
+    ):
+        if not line or line.startswith("#"):
+            continue
+        fields = line.split("\t")
+        if len(fields) != 2 or not fields[0] or not fields[1]:
+            problems.append(
+                f"{LOCALIZATION_PENDING.relative_to(REPO_ROOT)}:{line_number}: "
+                "expected path<TAB>qualified-issue"
+            )
+            continue
+
+        root = Path(fields[0])
+        references = fields[1].split()
+        if not references or any(CONTENT_ISSUE.fullmatch(ref) is None for ref in references):
+            problems.append(
+                f"{LOCALIZATION_PENDING.relative_to(REPO_ROOT)}:{line_number}: "
+                "use qualified clonk-org/clonk-rs-content#N references"
+            )
+            continue
+        if root.is_absolute() or ".." in root.parts or not is_group_content(root):
+            problems.append(
+                f"{LOCALIZATION_PENDING.relative_to(REPO_ROOT)}:{line_number}: "
+                f"{root} must be a relative Clonk group path"
+            )
+            continue
+        roots.append(root)
+
+    pending = {
+        path
+        for path in paths
+        if any(path == root or root in path.parents for root in roots)
+    }
+    return pending, problems
 
 
 def is_group_content(path: Path) -> bool:
     return any(part.casefold().endswith(GROUP_SUFFIXES) for part in path.parts)
 
 
-def canonical_filename_problems(paths: list[Path], exact: set[Path]) -> list[str]:
+def canonical_filename_problems(paths: list[Path], excluded: set[Path]) -> list[str]:
     problems = []
     for path in paths:
         canonical = CANONICAL_LOCALIZED_NAMES.get(path.name.casefold())
-        if path in exact or not is_group_content(path) or canonical is None:
+        if path in excluded or not is_group_content(path) or canonical is None:
             continue
         if path.name != canonical:
             problems.append(f"{path}: use canonical localization name {canonical}")
     return problems
 
 
-def missing_english_files(paths: list[Path], exact: set[Path]) -> list[str]:
+def missing_english_files(paths: list[Path], excluded: set[Path]) -> list[str]:
     available = {path.as_posix().casefold() for path in paths}
     problems = []
 
     for path in paths:
         english_name = LOCALIZED_FILE_PAIRS.get(path.name.casefold())
-        if path in exact or not is_group_content(path) or english_name is None:
+        if path in excluded or not is_group_content(path) or english_name is None:
             continue
 
         english_path = path.with_name(english_name)
@@ -250,13 +295,13 @@ def substitution_tokens(value: str) -> tuple[list[str], Counter[str]]:
     )
 
 
-def string_table_problems(paths: list[Path], exact: set[Path]) -> list[str]:
+def string_table_problems(paths: list[Path], excluded: set[Path]) -> list[str]:
     by_name = {path.as_posix().casefold(): path for path in paths}
     problems = []
     maintained_tables = [
         path
         for path in paths
-        if path not in exact
+        if path not in excluded
         and is_group_content(path)
         and path.name.casefold() in ("stringtblde.txt", "stringtblus.txt")
     ]
@@ -293,12 +338,12 @@ def string_table_problems(paths: list[Path], exact: set[Path]) -> list[str]:
     return problems
 
 
-def localized_metadata_problems(paths: list[Path], exact: set[Path]) -> list[str]:
+def localized_metadata_problems(paths: list[Path], excluded: set[Path]) -> list[str]:
     problems = []
 
     for path in paths:
         if (
-            path in exact
+            path in excluded
             or not is_group_content(path)
             or path.name.casefold() not in ("names.txt", "title.txt")
         ):
@@ -354,11 +399,11 @@ def english_values(path: Path) -> list[str]:
     return []
 
 
-def german_residue_problems(paths: list[Path], exact: set[Path]) -> list[str]:
+def german_residue_problems(paths: list[Path], excluded: set[Path]) -> list[str]:
     problems = []
 
     for path in paths:
-        if path in exact or not is_group_content(path):
+        if path in excluded or not is_group_content(path):
             continue
         words = {
             word.casefold()
@@ -472,11 +517,11 @@ def quoted_strings(text: str):
         index = end
 
 
-def hardcoded_player_text_problems(paths: list[Path], exact: set[Path]) -> list[str]:
+def hardcoded_player_text_problems(paths: list[Path], excluded: set[Path]) -> list[str]:
     problems = []
 
     for path in paths:
-        if path in exact or not is_group_content(path) or path.suffix.casefold() != ".c":
+        if path in excluded or not is_group_content(path) or path.suffix.casefold() != ".c":
             continue
 
         text = (REPO_ROOT / path).read_bytes().decode("latin-1")
@@ -497,9 +542,9 @@ def hardcoded_player_text_problems(paths: list[Path], exact: set[Path]) -> list[
     return problems
 
 
-def localization_source_count(paths: list[Path], exact: set[Path]) -> int:
+def localization_source_count(paths: list[Path], excluded: set[Path]) -> int:
     return sum(
-        path not in exact
+        path not in excluded
         and is_group_content(path)
         and path.name.casefold()
         in {*LOCALIZED_FILE_PAIRS, "names.txt", "title.txt"}
@@ -518,16 +563,18 @@ def has_localization_sources(paths: list[Path]) -> bool:
 
 def main() -> int:
     paths = repository_files()
-    exact = attributed_byte_exact(paths)
-    source_count = localization_source_count(paths, exact)
+    binary = attributed_binary(paths)
+    pending, pending_problems = localization_pending(paths)
+    source_count = localization_source_count(paths, pending)
     problems = (
-        byte_exact_problems(paths, exact)
-        + canonical_filename_problems(paths, exact)
-        + missing_english_files(paths, exact)
-        + string_table_problems(paths, exact)
-        + localized_metadata_problems(paths, exact)
-        + german_residue_problems(paths, exact)
-        + hardcoded_player_text_problems(paths, exact)
+        binary_attribute_problems(paths, binary)
+        + pending_problems
+        + canonical_filename_problems(paths, pending)
+        + missing_english_files(paths, pending)
+        + string_table_problems(paths, pending)
+        + localized_metadata_problems(paths, pending)
+        + german_residue_problems(paths, pending)
+        + hardcoded_player_text_problems(paths, pending)
     )
     if not has_localization_sources(paths):
         problems.append("no localization sources found")

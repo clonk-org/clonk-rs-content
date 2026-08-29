@@ -90,13 +90,49 @@ class LocalizationCheckerTests(unittest.TestCase):
 
         self.assert_checker_fails(result, "DescUS.txt", "missing English counterpart")
 
-    def test_missing_description_in_approved_binary_root_is_skipped(self) -> None:
+    def test_pending_import_missing_description_is_skipped(self) -> None:
         self.write(".gitattributes", "/ClonkMars.c4d/** binary\n")
+        self.write(
+            ".github/localization-pending.txt",
+            "ClonkMars.c4d\tclonk-org/clonk-rs-content#78\n",
+        )
         self.write("ClonkMars.c4d/Object.c4d/DescDE.txt", "Beschreibung")
 
         result = self.run_checker()
 
         self.assert_checker_passes(result)
+
+    def test_binary_import_without_pending_entry_is_audited(self) -> None:
+        self.write(".gitattributes", "/ClonkMars.c4d/** binary\n")
+        self.write("ClonkMars.c4d/Object.c4d/DescDE.txt", "Beschreibung")
+
+        result = self.run_checker()
+
+        self.assert_checker_fails(result, "DescUS.txt", "missing English counterpart")
+
+    def test_pending_scope_without_binary_attribute_is_skipped(self) -> None:
+        self.write(
+            ".github/localization-pending.txt",
+            "Maintained.c4d\tclonk-org/clonk-rs-content#78\n",
+        )
+        self.write("Maintained.c4d/Object.c4d/DescDE.txt", "Beschreibung")
+
+        result = self.run_checker()
+
+        self.assert_checker_passes(result)
+
+    def test_pending_entry_requires_qualified_issue(self) -> None:
+        self.write(
+            ".github/localization-pending.txt",
+            "Maintained.c4d\t#78\n",
+        )
+        self.write("Maintained.c4d/Object.c4d/DescUS.txt", "Description")
+
+        result = self.run_checker()
+
+        self.assert_checker_fails(
+            result, "localization-pending.txt", "use qualified", "#N"
+        )
 
     def test_approved_binary_root_must_retain_its_attribute(self) -> None:
         self.write("ClonkMars.c4d/Object.c4d/DescDE.txt", "Beschreibung")

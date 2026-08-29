@@ -11,9 +11,9 @@ VERSION="$1"
 
 # Packs that carry their own upstream version rather than the LegacyClonk one.
 #
-# These are the directories .gitattributes marks `binary` so that nothing
-# rewrites their bytes: they are exact copies of the packs as received.
-# Their Version.txt is part of what is redistributed unmodified -- ClonkMars is
+# These are imported directories .gitattributes marks `binary` so Git does not
+# rewrite their byte conventions. Their upstream Version.txt remains unchanged
+# by project release bumps -- ClonkMars is
 # "1.5 [Spirit]", Eke Reloaded is "1.7", Metal & Magic is "3.1b", the Ultimate
 # Clonk Compilation collection is "2.0", Golems is "4.95.5" and Modern Combat is
 # "R1.9" -- and none of them is terminated by a newline, so writing this

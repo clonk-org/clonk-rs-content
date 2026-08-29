@@ -36,6 +36,10 @@ the maintainers' archived copy. The payload credits Zagabar, Wertilq,
 Elwebbaro and its other contributors; its source hashes and complete credits are
 recorded in `third_party/EPIC/`.
 
+The imported working-tree classifications, known rights evidence, and project
+patch history are recorded in `third_party/PROVENANCE.md`. That record does not
+create or expand permission to redistribute or modify a work.
+
 The compilation's engine binaries, its bundled retail packs, and its Clonk 4 and
 Clonk Planet trees are **not** here: this repository already carries the base
 packs from `legacyclonk/content`, and replacing them would move every group

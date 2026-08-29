@@ -22,9 +22,9 @@ pass() {
 }
 
 # The packs the LegacyClonk version describes carry a CRLF-terminated
-# Version.txt. The third-party packs carry their own version string with no
-# trailing newline at all, and .gitattributes marks their directories `binary`
-# so that nothing rewrites their bytes.
+# Version.txt. The third-party working trees retain their source version string
+# with no trailing newline at all, and .gitattributes marks their directories
+# `binary` so Git does not normalize those bytes.
 build_fixture() {
 	local root="$1"
 	local base third_party
