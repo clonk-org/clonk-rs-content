@@ -10,7 +10,7 @@ Clonkparty 2 (Clonkparty2.c4s)
 	+ viele lustige Minispiele in schneller Folge
 	+ hübsch gestaltet
 
-Clonk Party Remake 8.3 (ClonkPartyRemake8.c4s)
+Clonk Party Remake 8.3 (ClonkPartyRemake8-clonk-rs-localized.c4s)
 	+ viele lustige Minispiele in schneller Folge
 	- die ganzen Sounds gehen einem sehr schnell auf die Nerven. (Sounds rausgenommen)
 
