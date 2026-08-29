@@ -8,7 +8,7 @@ E.P.I.C.c4f	clonk-org/clonk-rs-content#78
 EkeReloaded.c4d	clonk-org/clonk-rs-content#74
 EkeReloaded.c4f	clonk-org/clonk-rs-content#74
 Golems.c4f	clonk-org/clonk-rs-content#68
-Melees.c4f/Queron3.c4s	clonk-org/clonk-rs-content#68
+Melees.c4f/Queron3.c4s	clonk-org/clonk-rs-content#68 clonk-org/clonk-rs-content#72
 MetalMagic.c4d	clonk-org/clonk-rs-content#72
 MetalMagicExtra.c4d	clonk-org/clonk-rs-content#72
 ModernCombat.c4f	clonk-org/clonk-rs-content#73
