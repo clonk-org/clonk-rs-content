@@ -6,7 +6,7 @@
 set -u
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 failures=0
 
 fail() {
@@ -32,12 +32,12 @@ expect_absent() {
 	fi
 }
 
-# Read from .github/packs.toml, where each nested definition is recorded next
+# Read from packs.toml, where each nested definition is recorded next
 # to the pack that carries it.
 nested_definitions=()
 while IFS= read -r path; do
 	nested_definitions+=("$path")
-done < <("${PYTHON:-python3}" "$REPO_ROOT/.github/packs.py" nested-definitions)
+done < <("${PYTHON:-python3}" "$REPO_ROOT/tools/packs.py" nested-definitions)
 if [ "${#nested_definitions[@]}" -eq 0 ]; then
 	echo "  FAIL: packs.toml lists no nested definitions" >&2
 	exit 1

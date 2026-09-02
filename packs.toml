@@ -5,7 +5,7 @@
 # The policies below used to live in five places at once — the `binary` rules
 # in .gitattributes, the skip list in set_version.sh, localization-pending.txt,
 # the layout test and the README — and drifted between them. They are read from
-# here by .github/packs.py, and `packs.py check` compares this file against the
+# here by tools/packs.py, and `packs.py check` compares this file against the
 # tracked tree and .gitattributes in the Validate job.
 #
 # Fields on a [packs."<path>"] table:

@@ -7,8 +7,11 @@
 # moment a second contributor appears or reviews are required.
 
 # Packaging and CI. The packer is the single producer of content.zip's bytes,
-# and its exclusion list is mirrored in clonk-org/clonk-rs.
+# and packs.toml decides what it contains — the engine repository's installer
+# reads the same file.
 /.github/                       @syb0rg
+/tools/                         @syb0rg
+/packs.toml                     @syb0rg
 /.gitattributes                 @syb0rg
 
 # Version identity, which the engine reads and the update channel keys on.

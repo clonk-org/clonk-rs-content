@@ -17,7 +17,7 @@
 //! Every axis that could vary between runs or runners is pinned rather than
 //! inherited from the environment:
 //!
-//! * **Membership** — the data-root entries `.github/packs.toml` lists, read
+//! * **Membership** — the data-root entries `packs.toml` lists, read
 //!   from the Git index rather than the working tree, so an untracked scratch
 //!   file cannot enter the archive and neither can a tracked one that nobody
 //!   described. There is no deny list to keep in step with the engine
@@ -50,10 +50,10 @@ const ARCHIVE_NAME: &str = "content.zip";
 
 /// Where the manifest lives, relative to the repository root.
 ///
-/// Under `.github/` for the same reason as everything else that is not game
-/// data: until the packer reads this file, the root is the data root and a
-/// file there ships.
-const MANIFEST_PATH: &str = ".github/packs.toml";
+/// The engine repository's installer reads the same file from the same place
+/// (`content/packs.toml` from its point of view), so the two producers of a
+/// player's data root agree on membership by construction.
+const MANIFEST_PATH: &str = "packs.toml";
 
 fn main() -> Result<()> {
     let mut arguments = std::env::args().skip(1);
@@ -360,7 +360,7 @@ bytes = "preserve"
         }
         for path in [
             ".github/workflows/release.yml",
-            ".github/pack-content/src/main.rs",
+            "tools/pack-content/src/main.rs",
             ".gitignore",
             ".gitattributes",
             "Makefile",

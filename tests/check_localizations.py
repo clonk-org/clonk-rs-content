@@ -4,7 +4,7 @@
 ``binary`` in ``.gitattributes`` controls checkout bytes. It does not decide
 which content this audit maintains. Which imports may carry that attribute, and
 which are temporarily excluded behind a linked issue, is recorded per pack in
-``.github/packs.toml``.
+``packs.toml``.
 """
 
 from __future__ import annotations
@@ -16,8 +16,8 @@ import subprocess
 import sys
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / ".github"))
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "tools"))
 from packs import Manifest  # noqa: E402
 
 MANIFEST = Manifest.load(REPO_ROOT)

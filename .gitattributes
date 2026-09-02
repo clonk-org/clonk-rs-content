@@ -65,9 +65,13 @@
 
 # Repository infrastructure, not game content. Keep it at LF: the eol=crlf rule
 # above is there to preserve pack bytes, and it would otherwise reach the shell
-# scripts embedded in the workflows and the test scripts beside them.
+# scripts embedded in the workflows, the checks under tests/ and the packer.
 #
-# Written as the whole directory rather than file by file, because the previous
+# Written as whole directories rather than file by file, because the previous
 # form named publish-content.yml specifically and a second workflow added later
 # silently fell back to CRLF.
 /.github/** text eol=lf
+/tools/** text eol=lf
+/tests/** text eol=lf
+/packs.toml text eol=lf
+/CONTRIBUTING.md text eol=lf

@@ -12,7 +12,7 @@ import unittest
 
 
 CHECKER_SOURCE = Path(__file__).with_name("check_localizations.py")
-PACKS_SOURCE = Path(__file__).resolve().parents[1] / "packs.py"
+PACKS_SOURCE = Path(__file__).resolve().parents[1] / "tools/packs.py"
 
 
 class LocalizationCheckerTests(unittest.TestCase):
@@ -33,10 +33,11 @@ class LocalizationCheckerTests(unittest.TestCase):
             stderr=subprocess.PIPE,
         )
 
-        checker = self.repository / ".github/tests/check_localizations.py"
+        checker = self.repository / "tests/check_localizations.py"
         checker.parent.mkdir(parents=True)
         shutil.copyfile(CHECKER_SOURCE, checker)
-        shutil.copyfile(PACKS_SOURCE, self.repository / ".github/packs.py")
+        (self.repository / "tools").mkdir()
+        shutil.copyfile(PACKS_SOURCE, self.repository / "tools/packs.py")
         self.checker = checker
         self.write_manifest()
 
@@ -50,7 +51,7 @@ class LocalizationCheckerTests(unittest.TestCase):
 
     def write_manifest(self, *entries: str) -> None:
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             "\n".join(["[origins.import]", 'terms = "test"', "[packs]", *entries, ""]),
         )
 

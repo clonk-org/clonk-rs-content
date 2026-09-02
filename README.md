@@ -7,7 +7,7 @@ scenario pack the game should offer must live here.
 
 ## Origin
 
-Each entry of this tree is described once in `.github/packs.toml`: where it
+Each entry of this tree is described once in `packs.toml`: where it
 came from, whether its bytes may be normalised, and which localization work is
 still open against it. The tooling reads that file; this section is the prose.
 

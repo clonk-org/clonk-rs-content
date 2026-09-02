@@ -38,7 +38,7 @@ class TextAssetCheckerTests(unittest.TestCase):
             check=True,
         )
 
-        checker = self.repository / ".github/tests/check_text_assets.py"
+        checker = self.repository / "tests/check_text_assets.py"
         checker.parent.mkdir(parents=True)
         shutil.copyfile(CHECKER_SOURCE, checker)
         self.checker = checker

@@ -1,5 +1,5 @@
 packed
-/.github/pack-content/target
+/tools/pack-content/target
 
 # Output of the packaging tool, which the validation workflow builds and which
 # is easy to leave behind after running the same commands by hand.
