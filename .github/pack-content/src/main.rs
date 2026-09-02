@@ -17,8 +17,11 @@
 //! Every axis that could vary between runs or runners is pinned rather than
 //! inherited from the environment:
 //!
-//! * **Membership** — the Git index, not the working tree, so an untracked
-//!   scratch file cannot enter the archive.
+//! * **Membership** — the data-root entries `.github/packs.toml` lists, read
+//!   from the Git index rather than the working tree, so an untracked scratch
+//!   file cannot enter the archive and neither can a tracked one that nobody
+//!   described. There is no deny list to keep in step with the engine
+//!   repository: its installer copies the same manifest's entries.
 //! * **Order** — entries sorted by their name inside the zip, not by directory
 //!   iteration order.
 //! * **Timestamps** — the 1980 zip epoch. `FileOptions::default()` reads the
@@ -45,36 +48,12 @@ use zip::{CompressionMethod, ZipWriter};
 /// predictable.
 const ARCHIVE_NAME: &str = "content.zip";
 
-/// Repository entries that are infrastructure rather than game data.
+/// Where the manifest lives, relative to the repository root.
 ///
-/// This list is mirrored by `is_runtime_package_path` in the engine
-/// repository's packaging tool, which applies it when it copies this submodule
-/// into an installer. The two must agree, or a file would ship in the installer
-/// and never reach a client that updates in place — or the reverse.
-///
-/// `the_exclusion_list_matches_the_engine_repositorys_copy` pins these entries
-/// so that changing them here fails rather than diverging silently.
-const NON_CONTENT_ENTRIES: [&str; 6] = [
-    ".git",
-    ".github",
-    ".gitignore",
-    ".gitattributes",
-    ".editorconfig",
-    ".DS_Store",
-];
-
-/// Repository files that are infrastructure, matched **only at the root**.
-///
-/// These are ordinary names a game pack could legitimately contain, so they
-/// cannot join `NON_CONTENT_ENTRIES` — that list matches every path segment, and
-/// a definition shipping its own `README.md` would silently vanish from the
-/// archive and from installers. Anchoring them here keeps the deny rule to the
-/// one directory where these names mean packaging infrastructure.
-///
-/// `Version.txt` is deliberately absent: the engine reads the root one, and 28
-/// more live inside packs.
-const NON_CONTENT_ROOT_ENTRIES: [&str; 4] =
-    ["Makefile", "README.md", "set_version.sh", "third_party"];
+/// Under `.github/` for the same reason as everything else that is not game
+/// data: until the packer reads this file, the root is the data root and a
+/// file there ships.
+const MANIFEST_PATH: &str = ".github/packs.toml";
 
 fn main() -> Result<()> {
     let mut arguments = std::env::args().skip(1);
@@ -88,7 +67,13 @@ fn main() -> Result<()> {
 
     let root = repository_root()?;
     refuse_a_dirty_worktree(&root)?;
-    let files = content_files(&root)?;
+    let manifest = root.join(MANIFEST_PATH);
+    let roots = data_root_entries(
+        &std::fs::read_to_string(&manifest)
+            .with_context(|| format!("failed to read {}", manifest.display()))?,
+    )
+    .with_context(|| format!("{} does not describe the data root", manifest.display()))?;
+    let files = content_files(&root, &roots)?;
     if files.is_empty() {
         bail!(
             "no content files are tracked in {}; refusing to publish an empty archive",
@@ -147,12 +132,41 @@ fn refuse_a_dirty_worktree(root: &Path) -> Result<()> {
     }
 }
 
+/// The data-root entries the manifest describes, sorted.
+///
+/// A key that reaches inside a pack (`Melees.c4f/Queron3.c4s`) records policy
+/// for a nested tree the enclosing entry already ships, so it is not a root.
+fn data_root_entries(manifest: &str) -> Result<Vec<String>> {
+    let document: toml::Table = manifest.parse().context("packs.toml is not valid TOML")?;
+    let mut roots: Vec<String> = document
+        .get("packs")
+        .and_then(toml::Value::as_table)
+        .map(|packs| {
+            packs
+                .keys()
+                .filter(|key| !key.contains('/'))
+                .cloned()
+                .collect()
+        })
+        .unwrap_or_default();
+    if roots.is_empty() {
+        bail!("packs.toml lists no packs; refusing to publish an empty archive");
+    }
+    roots.sort();
+    Ok(roots)
+}
+
 /// Every tracked file that is game data, as repository-relative zip names.
 ///
 /// Symlinks are dropped rather than followed: a client extracts this archive
 /// into its own data directory, and a link is either a duplicate of a file that
 /// is already in here or a path escape.
-fn content_files(root: &Path) -> Result<Vec<String>> {
+///
+/// Every listed entry must contribute at least one file: a manifest entry with
+/// nothing tracked under it is a typo or a deletion the manifest has not caught
+/// up with, and either would otherwise publish an archive silently missing a
+/// pack.
+fn content_files(root: &Path, roots: &[String]) -> Result<Vec<String>> {
     let output = Command::new("git")
         .arg("-C")
         .arg(root)
@@ -179,32 +193,48 @@ fn content_files(root: &Path) -> Result<Vec<String>> {
 
     // Deliberately left in index order: `write_deterministic_zip` imposes the
     // archive's own, so there is exactly one place that decides it.
-    Ok(tracked
+    let files: Vec<String> = tracked
         .into_iter()
-        .filter(|path| is_content_path(path))
+        .filter(|path| is_content_path(path, roots))
         .filter(|path| {
             std::fs::symlink_metadata(root.join(path))
                 .map(|metadata| metadata.is_file())
                 .unwrap_or(false)
         })
-        .collect())
+        .collect();
+
+    let empty: Vec<&String> = roots
+        .iter()
+        .filter(|entry| {
+            !files
+                .iter()
+                .any(|path| root_entry_of(path) == entry.as_str())
+        })
+        .collect();
+    if !empty.is_empty() {
+        bail!(
+            "packs.toml lists {} but no tracked file lies under {}",
+            empty
+                .iter()
+                .map(|entry| format!("`{entry}`"))
+                .collect::<Vec<_>>()
+                .join(", "),
+            if empty.len() == 1 { "it" } else { "them" }
+        );
+    }
+    Ok(files)
 }
 
-/// Whether a repository-relative path is game data a client should receive.
-fn is_content_path(path: &str) -> bool {
-    if path.is_empty() {
-        return false;
-    }
-    let mut segments = path.split('/');
-    let Some(root) = segments.next() else {
-        return false;
-    };
-    if NON_CONTENT_ROOT_ENTRIES.contains(&root) {
-        return false;
-    }
-    std::iter::once(root)
-        .chain(segments)
-        .all(|segment| !segment.is_empty() && !NON_CONTENT_ENTRIES.contains(&segment))
+/// Whether a repository-relative path is game data a client should receive:
+/// whether its data-root entry is one the manifest lists.
+fn is_content_path(path: &str, roots: &[String]) -> bool {
+    roots
+        .binary_search_by(|entry| entry.as_str().cmp(root_entry_of(path)))
+        .is_ok()
+}
+
+fn root_entry_of(path: &str) -> &str {
+    path.split('/').next().unwrap_or_default()
 }
 
 /// Writes a byte-reproducible zip of `files`, read from `root`.
@@ -273,87 +303,96 @@ mod tests {
     use super::*;
     use std::io::Read;
 
-    /// Pins the exclusion list itself, not just its effect.
-    ///
-    /// `NON_CONTENT_ENTRIES` is mirrored by `is_runtime_package_path` in the
-    /// engine repository (`xtask/src/main.rs`), which applies it when copying
-    /// this submodule into an installer. Nothing can check the other repository
-    /// from here, so this fails on any edit instead: the two must be changed
-    /// together, and a diff that touches only one side is the bug this catches.
-    ///
-    /// If this test fails because the list genuinely changed, update
-    /// `is_runtime_package_path` in `clonk-org/clonk-rs` in the same breath.
-    /// A file excluded on one side and not the other ships in the installer and
-    /// never reaches a client that updates in place, or the reverse.
+    const MANIFEST: &str = r#"
+[origins.legacyclonk]
+terms = "CC BY-NC"
+
+[packs."Version.txt"]
+origin = "clonk-rs"
+
+[packs."Objects.c4d"]
+origin = "legacyclonk"
+
+[packs."Melees.c4f"]
+origin = "legacyclonk"
+
+[packs."Melees.c4f/Queron3.c4s"]
+origin = "ccan"
+bytes = "preserve"
+
+[packs."Golems.c4d"]
+origin = "ucc"
+bytes = "preserve"
+"#;
+
+    /// The manifest's root entries are the whole answer to "what ships": an
+    /// entry that reaches inside a pack describes policy, not membership.
     #[test]
-    fn the_exclusion_list_matches_the_engine_repositorys_copy() {
+    fn the_manifest_names_the_data_root_entries() {
+        let roots = data_root_entries(MANIFEST).expect("parse manifest");
         assert_eq!(
-            NON_CONTENT_ENTRIES,
-            [
-                ".git",
-                ".github",
-                ".gitignore",
-                ".gitattributes",
-                ".editorconfig",
-                ".DS_Store",
-            ],
-            "NON_CONTENT_ENTRIES changed; update is_runtime_package_path in \
-             clonk-org/clonk-rs (xtask/src/main.rs) to match"
-        );
-        assert_eq!(
-            NON_CONTENT_ROOT_ENTRIES,
-            ["Makefile", "README.md", "set_version.sh", "third_party"],
-            "NON_CONTENT_ROOT_ENTRIES changed; update is_runtime_package_path in \
-             clonk-org/clonk-rs (xtask/src/main.rs) to match"
+            roots,
+            ["Golems.c4d", "Melees.c4f", "Objects.c4d", "Version.txt"]
         );
     }
 
-    /// The root-anchored entries must not reach into packs.
-    ///
-    /// This is the whole reason they are a separate list: `NON_CONTENT_ENTRIES`
-    /// matches every segment, so putting `README.md` there would delete a
-    /// definition's own readme from the archive without a word.
     #[test]
-    fn root_infrastructure_names_are_still_content_inside_a_pack() {
+    fn a_manifest_without_packs_is_refused() {
+        let error = data_root_entries("[origins.x]\nterms = \"t\"\n").unwrap_err();
+        assert!(error.to_string().contains("no packs"), "{error}");
+    }
+
+    /// Only what the manifest lists ships, so infrastructure at the root needs
+    /// no deny list — and cannot be forgotten on one.
+    #[test]
+    fn only_listed_root_entries_are_content() {
+        let roots = data_root_entries(MANIFEST).expect("parse manifest");
         for path in [
-            "Objects.c4d/README.md",
-            "Worlds.c4f/Gold.c4s/Makefile",
-            "Knights.c4d/Crew.c4d/set_version.sh",
-            "Hazard.c4f/third_party/notes.txt",
+            "Objects.c4d/Clonk.c4d/DefCore.txt",
+            "Melees.c4f/Queron3.c4s/Scenario.txt",
+            "Golems.c4d",
+            "Version.txt",
         ] {
             assert!(
-                is_content_path(path),
-                "{path:?} is game data; only the repository root carries infrastructure"
+                is_content_path(path, &roots),
+                "{path:?} must ship to clients"
             );
         }
-    }
-
-    #[test]
-    fn repository_infrastructure_is_not_content() {
         for path in [
             ".github/workflows/release.yml",
             ".github/pack-content/src/main.rs",
             ".gitignore",
             ".gitattributes",
-            "Objects.c4d/.DS_Store",
             "Makefile",
             "README.md",
+            "CONTRIBUTING.md",
+            "packs.toml",
             "set_version.sh",
             "third_party/Hazard/readme.txt",
+            "Stray.c4d/DefCore.txt",
+            "Objects.c4d.bak",
             "",
         ] {
-            assert!(!is_content_path(path), "{path:?} must not ship to clients");
+            assert!(
+                !is_content_path(path, &roots),
+                "{path:?} must not ship to clients"
+            );
         }
     }
 
+    /// Infrastructure names inside a pack are game data: the rule is about
+    /// the root entry, never about a file's own name.
     #[test]
-    fn game_data_is_content() {
+    fn infrastructure_names_inside_a_pack_are_still_content() {
+        let roots = data_root_entries(MANIFEST).expect("parse manifest");
         for path in [
-            "Objects.c4d/Clonk.c4d/DefCore.txt",
-            "Worlds.c4f/Gold.c4s/Scenario.txt",
-            "Version.txt",
+            "Objects.c4d/README.md",
+            "Objects.c4d/.gitignore",
+            "Melees.c4f/Gold.c4s/Makefile",
+            "Objects.c4d/Crew.c4d/set_version.sh",
+            "Melees.c4f/third_party/notes.txt",
         ] {
-            assert!(is_content_path(path), "{path:?} must ship to clients");
+            assert!(is_content_path(path, &roots), "{path:?} is game data");
         }
     }
 
