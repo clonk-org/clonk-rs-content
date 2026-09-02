@@ -104,10 +104,16 @@ do
 	expect_present "$path"
 done
 
+# Only inside the listed packs: the repository also holds tooling whose build
+# output legitimately contains empty directories.
 echo "deduplication leaves no empty content directories:"
 while IFS= read -r path; do
 	fail "empty directory: ${path#"$REPO_ROOT/"}"
-done < <(find "$REPO_ROOT" -type d -empty -not -path "$REPO_ROOT/.git*")
+done < <(
+	"${PYTHON:-python3}" "$REPO_ROOT/tools/packs.py" roots | while IFS= read -r root; do
+		[ -d "$REPO_ROOT/$root" ] && find "$REPO_ROOT/$root" -type d -empty
+	done
+)
 
 if [ "$failures" -ne 0 ]; then
 	echo "$failures content layout check(s) failed" >&2
