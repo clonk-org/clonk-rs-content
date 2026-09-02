@@ -16,3 +16,6 @@ packed
 *.rej
 *.bak
 *.swp
+
+# Python bytecode from the test scripts.
+__pycache__/

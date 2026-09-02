@@ -2,8 +2,9 @@
 """Check that maintained game text has complete English localization.
 
 ``binary`` in ``.gitattributes`` controls checkout bytes. It does not decide
-which content this audit maintains. Temporary exclusions live in the separate,
-issue-linked ``.github/localization-pending.txt`` file.
+which content this audit maintains. Which imports may carry that attribute, and
+which are temporarily excluded behind a linked issue, is recorded per pack in
+``.github/packs.toml``.
 """
 
 from __future__ import annotations
@@ -16,8 +17,10 @@ import sys
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-LOCALIZATION_PENDING = REPO_ROOT / ".github/localization-pending.txt"
-CONTENT_ISSUE = re.compile(r"clonk-org/clonk-rs-content#[0-9]+")
+sys.path.insert(0, str(REPO_ROOT / ".github"))
+from packs import Manifest  # noqa: E402
+
+MANIFEST = Manifest.load(REPO_ROOT)
 
 # Classic Clonk calls English ``US`` in localized asset names.
 LOCALIZED_FILE_PAIRS = {
@@ -43,35 +46,11 @@ CANONICAL_LOCALIZED_NAMES = {
     )
 }
 
-# These paths are allowed to use ``binary`` checkout handling in
-# ``.gitattributes``. Keeping the boundary here prevents that attribute from
-# spreading silently into maintained base content.
-BINARY_IMPORT_DIRECTORIES = tuple(
-    Path(path)
-    for path in (
-        "ClonkMars.c4d",
-        "ClonkMars.c4f",
-        "Collection.c4f",
-        "E.P.I.C.c4f",
-        "EkeReloaded.c4d",
-        "EkeReloaded.c4f",
-        "Golems.c4f",
-        "Melees.c4f/Queron3.c4s",
-        "MetalMagic.c4d",
-        "MetalMagicExtra.c4d",
-        "ModernCombat.c4f",
-    )
-)
-BINARY_IMPORT_FILES = {
-    Path(path)
-    for path in (
-        "Golems.c4d",
-        "ModernCombat.c4d",
-        "RopepackRemake.c4d",
-        "WesternBalancing.c4d",
-        "WesternBugfixes.c4d",
-    )
-}
+# The imports allowed to use ``binary`` checkout handling in ``.gitattributes``:
+# every entry packs.toml marks ``bytes = "preserve"``. Keeping the boundary in
+# the manifest prevents that attribute from spreading silently into maintained
+# base content.
+BINARY_IMPORTS = tuple(Path(path) for path in MANIFEST.preserved_roots())
 GROUP_SUFFIXES = (".c4d", ".c4f", ".c4g", ".c4s")
 
 # Keep the complete directive: width, flags, precision and conversion case all
@@ -162,10 +141,7 @@ def attributed_binary(paths: list[Path]) -> set[Path]:
 
 
 def approved_binary_import(path: Path) -> bool:
-    return path in BINARY_IMPORT_FILES or any(
-        path == directory or directory in path.parents
-        for directory in BINARY_IMPORT_DIRECTORIES
-    )
+    return any(path == root or root in path.parents for root in BINARY_IMPORTS)
 
 
 def binary_attribute_problems(paths: list[Path], attributed: set[Path]) -> list[str]:
@@ -182,46 +158,13 @@ def binary_attribute_problems(paths: list[Path], attributed: set[Path]) -> list[
 
 
 def localization_pending(paths: list[Path]) -> tuple[set[Path], list[str]]:
-    if not LOCALIZATION_PENDING.is_file():
-        return set(), []
-
-    roots = []
-    problems = []
-    for line_number, line in enumerate(
-        LOCALIZATION_PENDING.read_text(encoding="utf-8").splitlines(), 1
-    ):
-        if not line or line.startswith("#"):
-            continue
-        fields = line.split("\t")
-        if len(fields) != 2 or not fields[0] or not fields[1]:
-            problems.append(
-                f"{LOCALIZATION_PENDING.relative_to(REPO_ROOT)}:{line_number}: "
-                "expected path<TAB>qualified-issue"
-            )
-            continue
-
-        root = Path(fields[0])
-        references = fields[1].split()
-        if not references or any(CONTENT_ISSUE.fullmatch(ref) is None for ref in references):
-            problems.append(
-                f"{LOCALIZATION_PENDING.relative_to(REPO_ROOT)}:{line_number}: "
-                "use qualified clonk-org/clonk-rs-content#N references"
-            )
-            continue
-        if root.is_absolute() or ".." in root.parts or not is_group_content(root):
-            problems.append(
-                f"{LOCALIZATION_PENDING.relative_to(REPO_ROOT)}:{line_number}: "
-                f"{root} must be a relative Clonk group path"
-            )
-            continue
-        roots.append(root)
-
+    roots = [Path(root) for root in MANIFEST.localization_pending()]
     pending = {
         path
         for path in paths
         if any(path == root or root in path.parents for root in roots)
     }
-    return pending, problems
+    return pending, list(MANIFEST.problems)
 
 
 def is_group_content(path: Path) -> bool:

@@ -1,0 +1,260 @@
+# Every entry of the data root, described once.
+#
+# The repository root is the engine's data root (`General.ExePath` in classic
+# terms), so each entry listed here is a directory or file a player receives.
+# The policies below used to live in five places at once — the `binary` rules
+# in .gitattributes, the skip list in set_version.sh, localization-pending.txt,
+# the layout test and the README — and drifted between them. They are read from
+# here by .github/packs.py, and `packs.py check` compares this file against the
+# tracked tree and .gitattributes in the Validate job.
+#
+# Fields on a [packs."<path>"] table:
+#
+#   origin            which [origins.<name>] table the entry comes from; every
+#                     entry must name one, so nothing ships without a recorded
+#                     source and terms
+#   bytes             "normalize" (default): Git applies the CRLF checkout rule
+#                     "preserve": .gitattributes marks the entry binary so the
+#                     imported bytes — and the group checksums a non-clonk-rs
+#                     peer computes — never move; set_version.sh leaves its
+#                     Version.txt alone
+#   upstream_version  the exact bytes of a preserved pack's Version.txt, for
+#                     the record and for the check
+#   localization      issues tracking a known English-localization backlog;
+#                     while any is listed, check_localizations.py skips the
+#                     entry. Remove them as the linked work completes.
+#   nested_definitions
+#                     packed definition groups that live beside the scenarios
+#                     that use them instead of at the data root; the layout
+#                     test pins each one present there and absent from the root
+#
+# A path may reach inside a pack (`Melees.c4f/Queron3.c4s`) when a nested tree
+# has its own origin and policy.
+
+[origins.clonk-rs]
+description = "This repository's own files."
+
+[origins.legacyclonk]
+source = "https://github.com/legacyclonk/content"
+terms = "Creative Commons Attribution-NonCommercial, the grant those packs are published under; not the MIT licence that covers the engine source."
+
+[origins.clonkmars]
+source = "Classic third-party pack, ClonkMars 1.5 [Spirit]."
+terms = "Included under separate, explicitly granted permission; not the CC BY-NC grant."
+
+[origins.eke]
+source = "Classic third-party pack, Eke Reloaded 1.7."
+terms = "Included under separate, explicitly granted permission; not the CC BY-NC grant."
+
+[origins.ccan]
+source = "CCAN, the Clonk community archive."
+terms = "Not the CC BY-NC grant. Establish the position for yourself before redistributing."
+
+[origins.ucc]
+source = "Newton's Ultimate Clonk Compilation v3.0, CCAN entry 6383, published 2025-03-14."
+sha256 = "f6fce16b6bb4c9e150ba239876568a84187ab0c3e2ad45619d11fdb5e08214c3"
+terms = "Its readme is explicit that the works remain the property of their individual authors; not the CC BY-NC grant."
+ledger = "third_party/UltimateClonkCompilation"
+
+[origins.epic]
+source = "The maintainers' archived copy of E.P.I.C."
+terms = "The payload credits Zagabar, Wertilq, Elwebbaro and its other contributors; see the ledger for hashes and complete credits."
+ledger = "third_party/EPIC"
+
+# ── This repository ──────────────────────────────────────────────────────────
+
+[packs."Version.txt"]
+origin = "clonk-rs"
+
+# ── LegacyClonk base packs ───────────────────────────────────────────────────
+
+[packs."Objects.c4d"]
+origin = "legacyclonk"
+
+[packs."Material.c4g"]
+origin = "legacyclonk"
+
+[packs."Music.c4g"]
+origin = "legacyclonk"
+
+[packs."Sound.c4g"]
+origin = "legacyclonk"
+
+[packs."Worlds.c4f"]
+origin = "legacyclonk"
+
+[packs."Missions.c4f"]
+origin = "legacyclonk"
+
+[packs."Melees.c4f"]
+origin = "legacyclonk"
+
+[packs."Races.c4f"]
+origin = "legacyclonk"
+
+[packs."Tutorial.c4f"]
+origin = "legacyclonk"
+
+[packs."Fantasy.c4d"]
+origin = "legacyclonk"
+
+[packs."Fantasy.c4f"]
+origin = "legacyclonk"
+
+[packs."FarWorlds.c4d"]
+origin = "legacyclonk"
+
+[packs."FarWorlds.c4f"]
+origin = "legacyclonk"
+
+[packs."Hazard.c4d"]
+origin = "legacyclonk"
+
+[packs."Hazard.c4f"]
+origin = "legacyclonk"
+
+[packs."Knights.c4d"]
+origin = "legacyclonk"
+
+[packs."Knights.c4f"]
+origin = "legacyclonk"
+
+[packs."Western.c4d"]
+origin = "legacyclonk"
+
+[packs."Western.c4f"]
+origin = "legacyclonk"
+
+# ── Classic third-party packs with granted permission ────────────────────────
+
+[packs."ClonkMars.c4d"]
+origin = "clonkmars"
+bytes = "preserve"
+upstream_version = "1.5 [Spirit]"
+localization = ["clonk-org/clonk-rs-content#78"]
+
+[packs."ClonkMars.c4f"]
+origin = "clonkmars"
+bytes = "preserve"
+upstream_version = "1.5 [Spirit]"
+localization = ["clonk-org/clonk-rs-content#78"]
+
+[packs."EkeReloaded.c4d"]
+origin = "eke"
+bytes = "preserve"
+upstream_version = "1.7"
+localization = ["clonk-org/clonk-rs-content#74"]
+
+[packs."EkeReloaded.c4f"]
+origin = "eke"
+bytes = "preserve"
+upstream_version = "1.7"
+localization = ["clonk-org/clonk-rs-content#74"]
+
+# ── CCAN ─────────────────────────────────────────────────────────────────────
+
+[packs."MetalMagic.c4d"]
+origin = "ccan"
+bytes = "preserve"
+upstream_version = "3.1b"
+localization = ["clonk-org/clonk-rs-content#72"]
+
+[packs."MetalMagicExtra.c4d"]
+origin = "ccan"
+bytes = "preserve"
+localization = ["clonk-org/clonk-rs-content#72"]
+
+# Queron 3 sits inside a base pack; the rest of Melees.c4f is legacyclonk's.
+[packs."Melees.c4f/Queron3.c4s"]
+origin = "ccan"
+bytes = "preserve"
+# Its Version.txt is the pack's whole changelog, "3.41" on the first line, so
+# there is no single version string to record here.
+localization = ["clonk-org/clonk-rs-content#68", "clonk-org/clonk-rs-content#72"]
+
+# ── Ultimate Clonk Compilation ───────────────────────────────────────────────
+
+[packs."Collection.c4f"]
+origin = "ucc"
+bytes = "preserve"
+upstream_version = "2.0"
+localization = [
+    "clonk-org/clonk-rs-content#68",
+    "clonk-org/clonk-rs-content#69",
+    "clonk-org/clonk-rs-content#70",
+    "clonk-org/clonk-rs-content#71",
+    "clonk-org/clonk-rs-content#72",
+    "clonk-org/clonk-rs-content#73",
+    "clonk-org/clonk-rs-content#74",
+    "clonk-org/clonk-rs-content#75",
+    "clonk-org/clonk-rs-content#76",
+    "clonk-org/clonk-rs-content#77",
+]
+# Scenario-private definitions stay beside their consumers. Left packed, one
+# file each: a packed group returns its stored header order, which is
+# host-stable and is what C++ C4MaterialMap::Load consumes, where an unpacked
+# directory would return unsorted readdir order.
+nested_definitions = [
+    "Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d",
+    "Adventures.c4f/InExantros.c4f/InExantros.C4D",
+    "Fun.c4f/ClonkPartyRes.c4d",
+    "Fun.c4f/ClonkPartyRes2.c4d",
+    "Fun.c4f/GIDL_Race.c4d",
+    "Fun.c4f/Zombieland.c4d",
+    "Fun.c4f/Zombiesounds.c4d",
+    "Hazard.c4f/Jetbelt.c4d",
+    "Hazard.c4f/PhysGun.c4d",
+    "Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d",
+    "Magus.c4f/KdD_Magie_Pack.c4d",
+    "ModernCombat.c4f/BlacksCMC-Waffenmod.c4d",
+    "Puzzles.c4f/Explorer.c4d",
+    "Races.c4f/Clinfinity.c4d",
+    "Races.c4f/Ropepack.c4d",
+    "Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
+]
+
+# Exploded into directories rather than left as single packed files: cargo
+# xtask scenario-sweep walks the filesystem, so a packed .c4f hides every
+# scenario inside it from the sweep.
+[packs."Golems.c4f"]
+origin = "ucc"
+bytes = "preserve"
+upstream_version = "4.95.5"
+localization = ["clonk-org/clonk-rs-content#68"]
+
+[packs."ModernCombat.c4f"]
+origin = "ucc"
+bytes = "preserve"
+upstream_version = "R1.9"
+localization = ["clonk-org/clonk-rs-content#73"]
+
+# Definitions shared by separate scenario families, so they occupy the data
+# root. Left packed, one file each.
+[packs."Golems.c4d"]
+origin = "ucc"
+bytes = "preserve"
+
+[packs."ModernCombat.c4d"]
+origin = "ucc"
+bytes = "preserve"
+
+[packs."RopepackRemake.c4d"]
+origin = "ucc"
+bytes = "preserve"
+
+[packs."WesternBalancing.c4d"]
+origin = "ucc"
+bytes = "preserve"
+
+[packs."WesternBugfixes.c4d"]
+origin = "ucc"
+bytes = "preserve"
+
+# ── E.P.I.C. ─────────────────────────────────────────────────────────────────
+
+# One self-contained scenario pack: the folder is exploded so the sweep sees
+# every .c4s, while its E.P.I.C.c4d definition pack remains packed inside it.
+[packs."E.P.I.C.c4f"]
+origin = "epic"
+bytes = "preserve"
+localization = ["clonk-org/clonk-rs-content#78"]
