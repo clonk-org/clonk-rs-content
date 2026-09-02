@@ -131,13 +131,18 @@ skips the third-party packs, which carry their own upstream versions
 (`1.5 [Spirit]`, `1.7`, `3.1b`) and must keep them: every entry `packs.toml`
 marks `bytes = "preserve"`.
 
-## The exclusion list is mirrored
+## What ships is what the manifest lists
 
-`NON_CONTENT_ENTRIES` in `.github/pack-content/src/main.rs` decides what stays
-out of `content.zip`. The same list exists as `is_runtime_package_path` in
-`clonk-org/clonk-rs` (`xtask/src/main.rs`), which applies it when building
-installers. **Change both or neither** — otherwise an install and an in-place
-update disagree about which files exist. A test fails if you change one.
+`.github/pack-content` builds `content.zip` from the data-root entries in
+`.github/packs.toml` and nothing else. There is no deny list: a file at the
+root that is not a listed pack does not ship, whatever it is called, and a pack
+that is not listed fails `packs.py check` before it can be forgotten.
+
+The engine repository's installer (`xtask package` in `clonk-org/clonk-rs`)
+copies the same entries from the same manifest, so the two cannot disagree
+about which files exist. Until that change lands there, its copy still uses
+the old deny list, which produces the same set for the current tree — so do
+not add a root entry that is neither a pack nor on that list before it does.
 
 ## Running the checks
 
