@@ -52,6 +52,6 @@ commit, affected scope, source baseline, exact purpose, and preserved notices.
 If it comes from a newer upstream artifact, also update the source ledger with
 the artifact filename, source URL or reference, version, SHA-256 and hash scope.
 
-`.github/localization-pending.txt` is temporary audit debt, not a rights or
+The `localization` lists in `packs.toml` are temporary audit debt, not a rights or
 modification allowlist. Removing a row makes that scope subject to the complete
 localization audit regardless of its `binary` attribute.

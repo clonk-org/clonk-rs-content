@@ -11,7 +11,7 @@ VERSION="$1"
 
 # Packs that carry their own upstream version rather than the LegacyClonk one.
 #
-# These are the data-root entries .github/packs.toml marks `bytes = "preserve"`
+# These are the data-root entries packs.toml marks `bytes = "preserve"`
 # and .gitattributes therefore marks `binary`, so Git never rewrites their byte
 # conventions. Their upstream Version.txt remains unchanged by project release
 # bumps -- ClonkMars is "1.5 [Spirit]", Eke Reloaded is "1.7", Metal & Magic
@@ -25,7 +25,7 @@ VERSION="$1"
 # restamped. The loop below globs */Version.txt, so preserved entries nested
 # deeper or left as single packed files come back from the query harmlessly.
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-own_version_packs="$("${PYTHON:-python3}" "$SCRIPT_DIR/.github/packs.py" own-version)"
+own_version_packs="$("${PYTHON:-python3}" "$SCRIPT_DIR/tools/packs.py" own-version)"
 if [ -z "$own_version_packs" ]; then
 	echo "packs.toml lists no preserved packs; refusing to stamp anything" >&2
 	exit 1

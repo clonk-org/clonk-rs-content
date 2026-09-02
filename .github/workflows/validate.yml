@@ -40,12 +40,12 @@ jobs:
           persist-credentials: false
 
       # Run from the crate directory rather than with --manifest-path, so rustup
-      # finds .github/pack-content/rust-toolchain.toml by walking up from here.
+      # finds tools/pack-content/rust-toolchain.toml by walking up from here.
       #
       # `--locked` for the same reason the publishing job uses it: the archive's
       # bytes depend on the zip and deflate implementations the lockfile pins.
       - name: Build the packaging tool
-        working-directory: .github/pack-content
+        working-directory: tools/pack-content
         run: cargo build --release --locked
 
       # The packer's own tests. They cover what the archive's digest depends on
@@ -53,11 +53,11 @@ jobs:
       # paths are game data. `cargo build` does not compile #[cfg(test)] code, so
       # before this step they had never run.
       - name: Test the packaging tool
-        working-directory: .github/pack-content
+        working-directory: tools/pack-content
         run: cargo test --locked
 
       - name: Lint the packaging tool
-        working-directory: .github/pack-content
+        working-directory: tools/pack-content
         run: |
           cargo fmt --check
           cargo clippy --locked --all-targets -- -D warnings
@@ -66,7 +66,7 @@ jobs:
       # catches a change that only exists as an uncommitted artifact.
       - name: Build content.zip and prove it is reproducible
         run: |
-          packer=.github/pack-content/target/release/pack-content
+          packer=tools/pack-content/target/release/pack-content
           "$packer" first.zip
           "$packer" content.zip
           if ! cmp -s first.zip content.zip; then
@@ -93,12 +93,14 @@ jobs:
       # would make every install re-download the entire archive with nothing
       # changed, and nothing would report it.
       #
-      # So: when a branch changes nothing outside .github/, its archive must
-      # still hash to whatever the base commit already published.
+      # So: when a branch changes nothing the archive is built from, its archive
+      # must still hash to whatever the base commit already published.
       #
-      # `.github/` is a deliberately conservative test rather than a reading of
-      # is_content_path. .gitignore and .gitattributes are outside it on purpose
-      # — an eol rule changes checked-out bytes, and therefore the archive.
+      # What the archive is built from, and therefore what legitimately moves
+      # the digest: a file under a listed pack, `packs.toml` itself (it decides
+      # membership), `.gitattributes` (an eol rule changes checked-out bytes),
+      # and the packer. Everything else — workflows, tests, docs, the manifest
+      # reader — is outside the archive by construction.
       - name: A branch that changes no content must not move the digest
         env:
           GH_TOKEN: ${{ github.token }}
@@ -116,15 +118,15 @@ jobs:
             exit 0
           fi
 
-          # Two kinds of change legitimately move the digest: a file a client
-          # receives, and the packer itself, which decides what goes in. The
-          # packer never ships, so a path test alone would call a membership
-          # change "no content changed" and fail an honest pull request.
-          outside=$(grep -v '^\.github/' <<<"$changed" || true)
-          packer=$(grep '^\.github/pack-content/' <<<"$changed" || true)
-          if [[ -n "$outside" || -n "$packer" ]]; then
-            echo "this branch changes what the archive contains:"
-            printf '%s\n' "$outside" "$packer" | grep -v '^$' | sed 's/^/  /'
+          roots=$(mktemp)
+          python3 tools/packs.py roots >"$roots"
+          moving=$(awk -F/ '
+            NR == FNR { roots[$0] = 1; next }
+            ($1 in roots) || $0 == "packs.toml" || $0 == ".gitattributes" || $0 ~ /^tools\/pack-content\// { print }
+          ' "$roots" - <<<"$changed")
+          if [[ -n "$moving" ]]; then
+            echo "this branch changes what the archive is built from:"
+            sed 's/^/  /' <<<"$moving"
             echo "a different digest is expected; skipping the comparison"
             exit 0
           fi
@@ -148,24 +150,24 @@ jobs:
           echo "ok digest unchanged from the base commit: $got"
 
       - name: set_version.sh leaves the third-party packs alone
-        run: .github/tests/test_set_version.sh
+        run: tests/test_set_version.sh
 
       - name: Shared Bases stays opt-in per scenario
-        run: .github/tests/test_shared_bases_scenarios.sh
+        run: tests/test_shared_bases_scenarios.sh
 
       - name: Third-party content stays scoped and deduplicated
-        run: .github/tests/test_content_layout.sh
+        run: tests/test_content_layout.sh
 
       # The manifest is what the other checks read their lists from, so it is
       # checked against the tracked tree and .gitattributes first: an entry that
       # exists in one place and not the other is the drift it exists to stop.
       - name: Every data-root entry is described in packs.toml
-        run: python3 .github/packs.py check
+        run: python3 tools/packs.py check
 
       - name: Maintained content has complete English localization
         run: |
-          python3 -m unittest discover -v -s .github/tests -p 'test_check_*.py'
-          python3 .github/tests/check_localizations.py
+          python3 -m unittest discover -v -s tests -p 'test_check_*.py'
+          python3 tests/check_localizations.py
 
       # Compares changed assets against their previous version rather than
       # auditing the tree: seven in-group files are already UTF-8 and fifteen
@@ -180,4 +182,4 @@ jobs:
             exit 0
           fi
           git fetch --depth=1 origin "$BASE_SHA"
-          python3 .github/tests/check_text_assets.py "$BASE_SHA"
+          python3 tests/check_text_assets.py "$BASE_SHA"

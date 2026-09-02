@@ -2,7 +2,7 @@
 
 Source of `Collection.c4f` and the dependency packs listed in the repository
 README. Kept under `third_party/`, which `NON_CONTENT_ROOT_ENTRIES` in
-`.github/pack-content/src/main.rs` excludes, so this record is auditable in the
+`tools/pack-content/src/main.rs` excludes, so this record is auditable in the
 repository without shipping inside `content.zip`.
 
 The repository-wide derivative policy and project patch ledger are in

@@ -28,7 +28,7 @@ import sys
 import tomllib
 
 
-MANIFEST = Path(".github/packs.toml")
+MANIFEST = Path("packs.toml")
 CONTENT_ISSUE = re.compile(r"clonk-org/clonk-rs-content#[0-9]+")
 BYTE_POLICIES = ("normalize", "preserve")
 GROUP_SUFFIXES = (".c4d", ".c4f", ".c4g", ".c4s")

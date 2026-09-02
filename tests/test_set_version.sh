@@ -1,13 +1,11 @@
 #!/bin/bash
 # Tests set_version.sh against a fixture tree.
 #
-# Lives under .github/ so it does not ship in content.zip: the packaging tool
-# excludes that directory by path segment.
 
 set -u
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 SET_VERSION="$REPO_ROOT/set_version.sh"
 
 failures=0

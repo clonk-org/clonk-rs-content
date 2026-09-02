@@ -9,7 +9,7 @@ import sys
 import tempfile
 import unittest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 import packs  # noqa: E402
 
@@ -60,7 +60,7 @@ class PackManifestTests(unittest.TestCase):
 
     def base_manifest(self) -> None:
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',
@@ -85,7 +85,7 @@ class PackManifestTests(unittest.TestCase):
 
     def test_a_listed_entry_must_exist(self) -> None:
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',
@@ -100,7 +100,7 @@ class PackManifestTests(unittest.TestCase):
 
     def test_an_origin_must_be_declared(self) -> None:
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',
@@ -114,7 +114,7 @@ class PackManifestTests(unittest.TestCase):
     def test_a_preserved_entry_needs_its_binary_attribute(self) -> None:
         self.write("Import.c4d/Version.txt", "1.0")
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',
@@ -144,7 +144,7 @@ class PackManifestTests(unittest.TestCase):
         self.write("Import.c4d/Version.txt", "1.0")
         self.write(".gitattributes", "/Import.c4d/** binary\n")
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',
@@ -161,7 +161,7 @@ class PackManifestTests(unittest.TestCase):
 
     def test_localization_issues_must_be_qualified(self) -> None:
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',
@@ -181,7 +181,7 @@ class PackManifestTests(unittest.TestCase):
             "/Import.c4f/** binary\n/Res.c4d binary\n",
         )
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',
@@ -210,7 +210,7 @@ class PackManifestTests(unittest.TestCase):
             "/Base.c4f/Queron.c4s/** binary\n",
         )
         self.write(
-            ".github/packs.toml",
+            "packs.toml",
             manifest(
                 '[packs."Version.txt"]',
                 'origin = "clonk-rs"',

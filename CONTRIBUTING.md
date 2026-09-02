@@ -5,26 +5,26 @@ consumed as its `content/` submodule. Most of it is twenty-year-old Clonk
 content, and several of the rules below exist because breaking them is silent —
 every check stays green and the damage shows up in someone's install.
 
-Kept in `.github/` deliberately: the repository root is game data as far as the
-packaging tool is concerned, so a file there ships to every player inside
-`content.zip`.
+The packaging tool ships only the entries `packs.toml` lists, so the tooling
+under `tools/`, the checks under `tests/` and this file live at the root like
+any repository's, beside the packs.
 
 ## Every change costs a download
 
 `content.zip` is content-addressed. Clonk Rust records its SHA-256 in the update
 manifest and a client re-downloads only when the digest changes. Any change to a
-tracked file that is not under `.github/` moves that digest and makes every
-client fetch the entire archive again.
+file under a listed pack — or to `packs.toml`, `.gitattributes` or the packer —
+moves that digest and makes every client fetch the entire archive again.
 
 So batch content changes rather than landing five one-line fixes separately, and
 expect the `Validate` job to tell you which files it saw as client-facing.
 
 ## Every pack is described once
 
-`.github/packs.toml` lists every entry of the data root with its origin, its
+`packs.toml` lists every entry of the data root with its origin, its
 byte policy, its localization status and the private definitions nested inside
 it. `set_version.sh`, the localization audit and the layout test read their
-lists from it, and `python3 .github/packs.py check` fails when it disagrees
+lists from it, and `python3 tools/packs.py check` fails when it disagrees
 with the tracked tree or with `.gitattributes`.
 
 So adding a pack means adding an entry there, naming an `[origins.<name>]`
@@ -100,7 +100,7 @@ rules:
 of high-confidence German leftovers. It is not a substitute for reading new
 English prose for meaning and fluency. Imported working trees with known
 backlogs carry a `localization` list of qualified issue references in
-`.github/packs.toml`. Remove each reference when its linked work is complete;
+`packs.toml`. Remove each reference when its linked work is complete;
 an entry with none left is audited. The `binary` attribute alone never excludes
 a path from the audit.
 
@@ -133,8 +133,8 @@ marks `bytes = "preserve"`.
 
 ## What ships is what the manifest lists
 
-`.github/pack-content` builds `content.zip` from the data-root entries in
-`.github/packs.toml` and nothing else. There is no deny list: a file at the
+`tools/pack-content` builds `content.zip` from the data-root entries in
+`packs.toml` and nothing else. There is no deny list: a file at the
 root that is not a listed pack does not ship, whatever it is called, and a pack
 that is not listed fails `packs.py check` before it can be forgotten.
 
@@ -149,19 +149,19 @@ not add a root entry that is neither a pack nor on that list before it does.
 The `Validate` job runs on every pull request and is required to merge. Locally:
 
 ```sh
-cd .github/pack-content && cargo test --locked && cargo fmt --check && cargo clippy --locked --all-targets -- -D warnings
-cd ../.. && .github/tests/test_set_version.sh && .github/tests/test_shared_bases_scenarios.sh && .github/tests/test_content_layout.sh
-python3 .github/packs.py check
-python3 -m unittest discover -v -s .github/tests -p 'test_check_*.py'
-python3 .github/tests/check_localizations.py
-python3 .github/tests/check_text_assets.py origin/main
+cd tools/pack-content && cargo test --locked && cargo fmt --check && cargo clippy --locked --all-targets -- -D warnings
+cd ../.. && tests/test_set_version.sh && tests/test_shared_bases_scenarios.sh && tests/test_content_layout.sh
+python3 tools/packs.py check
+python3 -m unittest discover -v -s tests -p 'test_check_*.py'
+python3 tests/check_localizations.py
+python3 tests/check_text_assets.py origin/main
 ```
 
 To build the archive the way CI does — note it refuses a dirty worktree:
 
 ```sh
-cargo build --release --locked --manifest-path .github/pack-content/Cargo.toml
-./.github/pack-content/target/release/pack-content content.zip
+cargo build --release --locked --manifest-path tools/pack-content/Cargo.toml
+./tools/pack-content/target/release/pack-content content.zip
 ```
 
 ## Commits and pull requests
