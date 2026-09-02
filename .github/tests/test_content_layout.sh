@@ -32,24 +32,16 @@ expect_absent() {
 	fi
 }
 
-nested_definitions=(
-	Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d
-	Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D
-	Collection.c4f/Fun.c4f/ClonkPartyRes.c4d
-	Collection.c4f/Fun.c4f/ClonkPartyRes2.c4d
-	Collection.c4f/Fun.c4f/GIDL_Race.c4d
-	Collection.c4f/Fun.c4f/Zombieland.c4d
-	Collection.c4f/Fun.c4f/Zombiesounds.c4d
-	Collection.c4f/Hazard.c4f/Jetbelt.c4d
-	Collection.c4f/Hazard.c4f/PhysGun.c4d
-	Collection.c4f/Magus.c4f/KdD_Magie_Pack.c4d
-	Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d
-	Collection.c4f/ModernCombat.c4f/BlacksCMC-Waffenmod.c4d
-	Collection.c4f/Puzzles.c4f/Explorer.c4d
-	Collection.c4f/Races.c4f/Clinfinity.c4d
-	Collection.c4f/Races.c4f/Ropepack.c4d
-	Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d
-)
+# Read from .github/packs.toml, where each nested definition is recorded next
+# to the pack that carries it.
+nested_definitions=()
+while IFS= read -r path; do
+	nested_definitions+=("$path")
+done < <("${PYTHON:-python3}" "$REPO_ROOT/.github/packs.py" nested-definitions)
+if [ "${#nested_definitions[@]}" -eq 0 ]; then
+	echo "  FAIL: packs.toml lists no nested definitions" >&2
+	exit 1
+fi
 
 echo "scenario-private definitions are nested beside their consumers:"
 for path in "${nested_definitions[@]}"; do

@@ -12,6 +12,7 @@ import unittest
 
 
 CHECKER_SOURCE = Path(__file__).with_name("check_localizations.py")
+PACKS_SOURCE = Path(__file__).resolve().parents[1] / "packs.py"
 
 
 class LocalizationCheckerTests(unittest.TestCase):
@@ -35,7 +36,9 @@ class LocalizationCheckerTests(unittest.TestCase):
         checker = self.repository / ".github/tests/check_localizations.py"
         checker.parent.mkdir(parents=True)
         shutil.copyfile(CHECKER_SOURCE, checker)
+        shutil.copyfile(PACKS_SOURCE, self.repository / ".github/packs.py")
         self.checker = checker
+        self.write_manifest()
 
     def write(self, relative_path: str, contents: bytes | str) -> None:
         path = self.repository / relative_path
@@ -44,6 +47,12 @@ class LocalizationCheckerTests(unittest.TestCase):
             path.write_bytes(contents)
         else:
             path.write_text(contents, encoding="utf-8")
+
+    def write_manifest(self, *entries: str) -> None:
+        self.write(
+            ".github/packs.toml",
+            "\n".join(["[origins.import]", 'terms = "test"', "[packs]", *entries, ""]),
+        )
 
     def run_checker(self, *, outside_repository: bool = False):
         working_directory = (
@@ -92,9 +101,11 @@ class LocalizationCheckerTests(unittest.TestCase):
 
     def test_pending_import_missing_description_is_skipped(self) -> None:
         self.write(".gitattributes", "/ClonkMars.c4d/** binary\n")
-        self.write(
-            ".github/localization-pending.txt",
-            "ClonkMars.c4d\tclonk-org/clonk-rs-content#78\n",
+        self.write_manifest(
+            '[packs."ClonkMars.c4d"]',
+            'origin = "import"',
+            'bytes = "preserve"',
+            'localization = ["clonk-org/clonk-rs-content#78"]',
         )
         self.write("ClonkMars.c4d/Object.c4d/DescDE.txt", "Beschreibung")
 
@@ -104,6 +115,11 @@ class LocalizationCheckerTests(unittest.TestCase):
 
     def test_binary_import_without_pending_entry_is_audited(self) -> None:
         self.write(".gitattributes", "/ClonkMars.c4d/** binary\n")
+        self.write_manifest(
+            '[packs."ClonkMars.c4d"]',
+            'origin = "import"',
+            'bytes = "preserve"',
+        )
         self.write("ClonkMars.c4d/Object.c4d/DescDE.txt", "Beschreibung")
 
         result = self.run_checker()
@@ -111,9 +127,10 @@ class LocalizationCheckerTests(unittest.TestCase):
         self.assert_checker_fails(result, "DescUS.txt", "missing English counterpart")
 
     def test_pending_scope_without_binary_attribute_is_skipped(self) -> None:
-        self.write(
-            ".github/localization-pending.txt",
-            "Maintained.c4d\tclonk-org/clonk-rs-content#78\n",
+        self.write_manifest(
+            '[packs."Maintained.c4d"]',
+            'origin = "import"',
+            'localization = ["clonk-org/clonk-rs-content#78"]',
         )
         self.write("Maintained.c4d/Object.c4d/DescDE.txt", "Beschreibung")
 
@@ -122,19 +139,23 @@ class LocalizationCheckerTests(unittest.TestCase):
         self.assert_checker_passes(result)
 
     def test_pending_entry_requires_qualified_issue(self) -> None:
-        self.write(
-            ".github/localization-pending.txt",
-            "Maintained.c4d\t#78\n",
+        self.write_manifest(
+            '[packs."Maintained.c4d"]',
+            'origin = "import"',
+            'localization = ["#78"]',
         )
         self.write("Maintained.c4d/Object.c4d/DescUS.txt", "Description")
 
         result = self.run_checker()
 
-        self.assert_checker_fails(
-            result, "localization-pending.txt", "use qualified", "#N"
-        )
+        self.assert_checker_fails(result, "Maintained.c4d", "qualified", "#N")
 
     def test_approved_binary_root_must_retain_its_attribute(self) -> None:
+        self.write_manifest(
+            '[packs."ClonkMars.c4d"]',
+            'origin = "import"',
+            'bytes = "preserve"',
+        )
         self.write("ClonkMars.c4d/Object.c4d/DescDE.txt", "Beschreibung")
         self.write("ClonkMars.c4d/Object.c4d/DescUS.txt", "Description")
 
