@@ -7,6 +7,10 @@ scenario pack the game should offer must live here.
 
 ## Origin
 
+Each entry of this tree is described once in `.github/packs.toml`: where it
+came from, whether its bytes may be normalised, and which localization work is
+still open against it. The tooling reads that file; this section is the prose.
+
 The base packs — `Objects.c4d`, `Worlds.c4f`, `Fantasy.*`, `FarWorlds.*`,
 `Hazard.*`, `Knights.*`, `Western.*`, `Material.c4g`, `Music.c4g`, `Sound.c4g`,
 `Melees.c4f`, `Missions.c4f`, `Races.c4f`, `Tutorial.c4f` — originate from

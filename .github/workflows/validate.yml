@@ -156,6 +156,12 @@ jobs:
       - name: Third-party content stays scoped and deduplicated
         run: .github/tests/test_content_layout.sh
 
+      # The manifest is what the other checks read their lists from, so it is
+      # checked against the tracked tree and .gitattributes first: an entry that
+      # exists in one place and not the other is the drift it exists to stop.
+      - name: Every data-root entry is described in packs.toml
+        run: python3 .github/packs.py check
+
       - name: Maintained content has complete English localization
         run: |
           python3 -m unittest discover -v -s .github/tests -p 'test_check_*.py'

@@ -19,16 +19,24 @@ client fetch the entire archive again.
 So batch content changes rather than landing five one-line fixes separately, and
 expect the `Validate` job to tell you which files it saw as client-facing.
 
+## Every pack is described once
+
+`.github/packs.toml` lists every entry of the data root with its origin, its
+byte policy, its localization status and the private definitions nested inside
+it. `set_version.sh`, the localization audit and the layout test read their
+lists from it, and `python3 .github/packs.py check` fails when it disagrees
+with the tracked tree or with `.gitattributes`.
+
+So adding a pack means adding an entry there, naming an `[origins.<name>]`
+table that records where it came from and on what terms. An import whose bytes
+must not move gets `bytes = "preserve"`, a matching `binary` rule in
+`.gitattributes`, its `upstream_version`, and a ledger under `third_party/`.
+
 ## Third-party working trees are maintained derivatives
 
-`.gitattributes` marks these imports `binary`:
-
-- whole directory trees: `ClonkMars.c4d`, `ClonkMars.c4f`, `Collection.c4f`,
-  `E.P.I.C.c4f`, `EkeReloaded.c4d`, `EkeReloaded.c4f`, `Golems.c4f`,
-  `Melees.c4f/Queron3.c4s`, `MetalMagic.c4d`, `MetalMagicExtra.c4d`, and
-  `ModernCombat.c4f`;
-- packed files: `Golems.c4d`, `ModernCombat.c4d`, `RopepackRemake.c4d`,
-  `WesternBalancing.c4d`, and `WesternBugfixes.c4d`.
+`.gitattributes` marks every import `packs.toml` preserves `binary`: eleven
+directory trees, from `ClonkMars.c4d` to `ModernCombat.c4f`, and the five
+packed dependency files at the data root.
 
 The attribute controls Git's checkout and diff handling. It stops automatic eol
 normalisation from rewriting resource bytes and moving the group checksums a
@@ -91,9 +99,10 @@ rules:
 `check_localizations.py` enforces the structural rules and catches a curated set
 of high-confidence German leftovers. It is not a substitute for reading new
 English prose for meaning and fluency. Imported working trees with known
-backlogs are temporarily listed in `.github/localization-pending.txt`, with
-qualified issue references. Remove each entry when its linked work is complete.
-The `binary` attribute alone never excludes a path from the audit.
+backlogs carry a `localization` list of qualified issue references in
+`.github/packs.toml`. Remove each reference when its linked work is complete;
+an entry with none left is audited. The `binary` attribute alone never excludes
+a path from the audit.
 
 ## Extension casing is insignificant — leave it alone
 
@@ -119,7 +128,8 @@ Windows.
 
 Run `./set_version.sh <VERSION>` rather than editing `Version.txt` by hand. It
 skips the third-party packs, which carry their own upstream versions
-(`1.5 [Spirit]`, `1.7`, `3.1b`) and must keep them.
+(`1.5 [Spirit]`, `1.7`, `3.1b`) and must keep them: every entry `packs.toml`
+marks `bytes = "preserve"`.
 
 ## The exclusion list is mirrored
 
@@ -136,6 +146,7 @@ The `Validate` job runs on every pull request and is required to merge. Locally:
 ```sh
 cd .github/pack-content && cargo test --locked && cargo fmt --check && cargo clippy --locked --all-targets -- -D warnings
 cd ../.. && .github/tests/test_set_version.sh && .github/tests/test_shared_bases_scenarios.sh && .github/tests/test_content_layout.sh
+python3 .github/packs.py check
 python3 -m unittest discover -v -s .github/tests -p 'test_check_*.py'
 python3 .github/tests/check_localizations.py
 python3 .github/tests/check_text_assets.py origin/main
