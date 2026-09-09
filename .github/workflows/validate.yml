@@ -62,6 +62,11 @@ jobs:
           cargo fmt --check
           cargo clippy --locked --all-targets -- -D warnings
 
+      - name: Rights inventory matches the resource bytes and package policy
+        run: |
+          python3 tools/packs.py check
+          python3 tools/rights_inventory.py check
+
       # The packer refuses a worktree that differs from the index, so this also
       # catches a change that only exists as an uncommitted artifact.
       - name: Build content.zip and prove it is reproducible
@@ -99,8 +104,8 @@ jobs:
       # What the archive is built from, and therefore what legitimately moves
       # the digest: a file under a listed pack, `packs.toml` itself (it decides
       # membership), `.gitattributes` (an eol rule changes checked-out bytes),
-      # and the packer. Everything else — workflows, tests, docs, the manifest
-      # reader — is outside the archive by construction.
+      # the packer, and the notices/evidence selected by the distribution policy.
+      # Changes to other documentation do not affect the archive.
       - name: A branch that changes no content must not move the digest
         env:
           GH_TOKEN: ${{ github.token }}
@@ -119,7 +124,7 @@ jobs:
           fi
 
           roots=$(mktemp)
-          python3 tools/packs.py roots >"$roots"
+          python3 tools/packs.py archive-input-roots >"$roots"
           moving=$(awk -F/ '
             NR == FNR { roots[$0] = 1; next }
             ($1 in roots) || $0 == "packs.toml" || $0 == ".gitattributes" || $0 ~ /^tools\/pack-content\// { print }

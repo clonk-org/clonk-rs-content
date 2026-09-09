@@ -75,3 +75,6 @@
 /tests/** text eol=lf
 /packs.toml text eol=lf
 /CONTRIBUTING.md text eol=lf
+
+# Independently recorded rights scope within the preserved UCC tree.
+/Collection.c4f/Fun.c4f/ClonkPartyRemake8-clonk-rs-localized.c4s binary

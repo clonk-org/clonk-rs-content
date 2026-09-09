@@ -8,21 +8,23 @@ scenario pack the game should offer must live here.
 ## Origin
 
 Each entry of this tree is described once in `packs.toml`: where it
-came from, whether its bytes may be normalised, and which localization work is
-still open against it. The tooling reads that file; this section is the prose.
+came from, its rights decision, whether its bytes may be normalised, and which
+localization work is still open against it. The tooling reads that file; this section is the prose.
 
 The base packs — `Objects.c4d`, `Worlds.c4f`, `Fantasy.*`, `FarWorlds.*`,
 `Hazard.*`, `Knights.*`, `Western.*`, `Material.c4g`, `Music.c4g`, `Sound.c4g`,
 `Melees.c4f`, `Missions.c4f`, `Races.c4f`, `Tutorial.c4f` — originate from
 [legacyclonk/content](https://github.com/legacyclonk/content) and are covered by
 the Creative Commons Attribution-NonCommercial grant those packs are published
-under, not by the MIT licence that covers the engine source.
+under: CC BY-NC 4.0 except Hazard, which uses 3.0. The engine has its own MIT
+licence.
 
-`ClonkMars.*` and `EkeReloaded.*` are classic third-party packs included under
-separate, explicitly granted permission, and `MetalMagic.c4d`,
-`MetalMagicExtra.c4d` and `Melees.c4f/Queron3.c4s` come from CCAN. Their terms
-are **not** the CC BY-NC grant above. Establish the position for yourself
-before redistributing any of them.
+`ClonkMars.*` and `EkeReloaded.*` have historical exact-copy redistribution
+records. `MetalMagic.c4d`, `MetalMagicExtra.c4d` and
+`Melees.c4f/Queron3.c4s` come from CCAN. Modification of these current trees is
+included under the maintainer assumption in [the rights inventory](third_party/RIGHTS.md).
+That decision preserves their recorded terms and does not turn archive
+availability into a verified modification grant.
 
 `Collection.c4f`, the private definition packs nested beside its scenarios,
 and the dependencies shared across scenario folders — `Golems.*`,
@@ -48,6 +50,20 @@ The compilation's engine binaries, its bundled retail packs, and its Clonk 4 and
 Clonk Planet trees are **not** here: this repository already carries the base
 packs from `legacyclonk/content`, and replacing them would move every group
 checksum a non-clonk-rs peer computes.
+
+## Local maintenance and packaging
+
+[The rights inventory](third_party/RIGHTS.md) records the one-time review and
+how to refresh it after content changes. All current imports remain selected
+for local maintenance. `licensed` identifies a recorded grant; `assumed`
+identifies the maintainer's decision where the available record is incomplete.
+No per-change author-contact step is required by this local policy.
+
+The package tool reads these decisions from `packs.toml`, applies narrower
+scopes first, and includes [CONTENT-NOTICES.md](CONTENT-NOTICES.md) and each
+selected scope's evidence. It refuses missing dependencies and a nested
+exclusion that would otherwise remain inside a shipped packed archive.
+`excluded` is available for future scope decisions; no current pack is removed.
 
 ## Usage
 

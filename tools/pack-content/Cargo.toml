@@ -10,7 +10,7 @@ tempfile = "3"
 [dependencies]
 anyhow = "1"
 ring = "0.17"
-# Reads packs.toml, whose root entries are the only thing that ships.
+# Reads packs.toml: selected scopes, dependency checks and required notices.
 toml = "1"
 # Pinned to the exact version and feature set the clonk-rs packaging tool used
 # when it still built this archive. The archive is content-addressed, so a zip

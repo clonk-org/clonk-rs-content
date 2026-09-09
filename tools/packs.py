@@ -33,7 +33,17 @@ CONTENT_ISSUE = re.compile(r"clonk-org/clonk-rs-content#[0-9]+")
 BYTE_POLICIES = ("normalize", "preserve")
 GROUP_SUFFIXES = (".c4d", ".c4f", ".c4g", ".c4s")
 PACK_FIELDS = frozenset(
-    {"origin", "bytes", "upstream_version", "localization", "nested_definitions"}
+    {
+        "origin",
+        "bytes",
+        "upstream_version",
+        "localization",
+        "nested_definitions",
+        "rights",
+        "license",
+        "reason",
+        "evidence",
+    }
 )
 
 
@@ -75,15 +85,18 @@ class Manifest:
             return cls({}, (), (f"{MANIFEST}: {error}",))
         origins = document.get("origins", {})
         packs, problems = _read_packs(document.get("packs", {}), origins)
-        unknown = sorted(set(document) - {"origins", "packs"})
+        unknown = sorted(set(document) - {"origins", "packs", "distribution"})
         problems.extend(f"{MANIFEST}: unknown table [{key}]" for key in unknown)
+        problems.extend(_distribution_problems(root, document))
         return cls(origins, tuple(packs), tuple(problems))
 
     def root_entries(self) -> list[str]:
         return [pack.path for pack in self.packs if pack.is_root_entry]
 
     def own_version_packs(self) -> list[str]:
-        return [pack.path for pack in self.packs if pack.is_root_entry and pack.preserved]
+        return [
+            pack.path for pack in self.packs if pack.is_root_entry and pack.preserved
+        ]
 
     def preserved_roots(self) -> list[str]:
         return [pack.path for pack in self.packs if pack.preserved]
@@ -92,14 +105,73 @@ class Manifest:
         return [
             path
             for pack in self.packs
-            for path in ([pack.path] if pack.preserved else []) + pack.nested_definition_paths()
+            for path in ([pack.path] if pack.preserved else [])
+            + pack.nested_definition_paths()
         ]
 
     def nested_definitions(self) -> list[str]:
         return [path for pack in self.packs for path in pack.nested_definition_paths()]
 
     def localization_pending(self) -> dict[str, tuple[str, ...]]:
-        return {pack.path: pack.localization for pack in self.packs if pack.localization}
+        return {
+            pack.path: pack.localization for pack in self.packs if pack.localization
+        }
+
+
+def _safe_path(path) -> bool:
+    return (
+        isinstance(path, str)
+        and bool(path)
+        and not any(char in path for char in "\\:\0")
+        and all(part not in ("", ".", "..") for part in path.split("/"))
+    )
+
+
+def _distribution_problems(root: Path, document: dict) -> list[str]:
+    scopes = document.get("packs", {})
+    if "distribution" not in document and not any(
+        "rights" in fields for fields in scopes.values()
+    ):
+        return []  # Historical manifests remain readable by version/localization tools.
+    policy = document.get("distribution", {})
+    problems = []
+    if not isinstance(policy, dict) or policy.get("version") != 1:
+        return ["distribution: missing or unsupported policy version"]
+    unknown = set(policy) - {"version", "notice", "dependencies"}
+    if unknown:
+        problems.append(f"distribution: unknown fields {sorted(unknown)}")
+    notice = policy.get("notice")
+    if not _safe_path(notice) or not (root / notice).is_file():
+        problems.append("distribution: notice must be a present relative file")
+    for path, fields in scopes.items():
+        rights = fields.get("rights")
+        if rights not in ("licensed", "assumed", "excluded"):
+            problems.append(f"distribution: {path}: missing or unknown rights decision")
+        key = "license" if rights == "licensed" else "reason"
+        value = fields.get(key)
+        if not isinstance(value, str) or not value.strip():
+            problems.append(f"distribution: {path}: missing {key}")
+        evidence = fields.get("evidence", [])
+        if not isinstance(evidence, list) or (rights != "excluded" and not evidence):
+            problems.append(f"distribution: {path}: needs evidence files")
+        elif any(
+            not _safe_path(item) or not (root / item).is_file() for item in evidence
+        ):
+            problems.append(
+                f"distribution: {path}: evidence must name present relative files"
+            )
+    dependencies = policy.get("dependencies", {})
+    if not isinstance(dependencies, dict):
+        problems.append("distribution: dependencies must be a table")
+    else:
+        for path, required in dependencies.items():
+            if (
+                not _safe_path(path)
+                or not isinstance(required, list)
+                or any(not _safe_path(item) for item in required)
+            ):
+                problems.append(f"distribution: unsafe dependency paths for {path}")
+    return problems
 
 
 def _read_packs(table: dict, origins: dict) -> tuple[list[Pack], list[str]]:
@@ -141,7 +213,9 @@ def _path_problems(path: str, fields: dict, origins: dict) -> list[str]:
         not _is_relative_group_path(str(nested)) or nested == ""
         for nested in fields.get("nested_definitions", ())
     ):
-        problems.append(f"{path}: nested_definitions must be relative Clonk group paths")
+        problems.append(
+            f"{path}: nested_definitions must be relative Clonk group paths"
+        )
     return problems
 
 
@@ -226,7 +300,9 @@ def _binary_attribute_problems(root: Path, manifest: Manifest) -> list[str]:
 
 
 def _version_problems(root: Path, manifest: Manifest) -> list[str]:
-    project_version = (root / "Version.txt").read_bytes() if (root / "Version.txt").is_file() else b""
+    project_version = (
+        (root / "Version.txt").read_bytes() if (root / "Version.txt").is_file() else b""
+    )
     problems = []
     for pack in manifest.packs:
         version_file = root / pack.path / "Version.txt"
@@ -234,7 +310,9 @@ def _version_problems(root: Path, manifest: Manifest) -> list[str]:
             continue
         actual = version_file.read_bytes()
         if not pack.preserved and pack.is_root_entry and actual != project_version:
-            problems.append(f"{pack.path}/Version.txt: does not carry the project version")
+            problems.append(
+                f"{pack.path}/Version.txt: does not carry the project version"
+            )
         if pack.preserved and pack.upstream_version is not None:
             if actual != pack.upstream_version.encode("latin-1"):
                 problems.append(
@@ -269,7 +347,9 @@ def main(argv: list[str] | None = None) -> int:
         default=Path(__file__).resolve().parents[1],
         help="repository root (default: the checkout this script lives in)",
     )
-    parser.add_argument("query", choices=[*QUERIES, "pending", "check"])
+    parser.add_argument(
+        "query", choices=[*QUERIES, "pending", "check", "archive-input-roots"]
+    )
     arguments = parser.parse_args(argv)
 
     if arguments.query == "check":
@@ -279,7 +359,9 @@ def main(argv: list[str] | None = None) -> int:
         if problems:
             print(f"\n{len(problems)} pack manifest problem(s)", file=sys.stderr)
             return 1
-        print(f"ok {len(Manifest.load(arguments.root).packs)} packs described by {MANIFEST}")
+        print(
+            f"ok {len(Manifest.load(arguments.root).packs)} packs described by {MANIFEST}"
+        )
         return 0
 
     manifest = Manifest.load(arguments.root)
@@ -290,6 +372,18 @@ def main(argv: list[str] | None = None) -> int:
     if arguments.query == "pending":
         for path, references in manifest.localization_pending().items():
             print(f"{path}\t{' '.join(references)}")
+        return 0
+    if arguments.query == "archive-input-roots":
+        document = tomllib.loads(
+            (arguments.root / MANIFEST).read_text(encoding="utf-8")
+        )
+        paths = manifest.root_entries()
+        notice = document.get("distribution", {}).get("notice")
+        if notice:
+            paths.append(notice)
+        for fields in document["packs"].values():
+            paths.extend(fields.get("evidence", []))
+        print("\n".join(sorted({path.split("/", 1)[0] for path in paths})))
         return 0
     for path in QUERIES[arguments.query](manifest):
         print(path)
