@@ -1,9 +1,9 @@
 # Maintenance decisions and local rights inventory
 
 This records the maintainer's September 9, 2026 decision for
-clonk-org/clonk-rs-content#94. This work is local only. No permission requests,
-messages, pull requests, releases, or changes to published artifacts are part
-of this work. Existing repository copies and release archives remain unchanged.
+clonk-org/clonk-rs-content#94. The inventory was prepared locally without
+contacting rights holders or requesting additional permission. These changes
+are submitted for review; existing release archives remain unchanged.
 
 ## What the statuses mean
 
