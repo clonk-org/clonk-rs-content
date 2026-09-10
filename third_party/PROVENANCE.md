@@ -17,6 +17,10 @@ commit, or prior project redistribution does not by itself grant permission to
 redistribute or modify a work. Unknown terms remain unknown. This ledger
 records evidence; it does not create or expand rights.
 
+The local maintenance decisions are recorded separately in
+[RIGHTS.md](RIGHTS.md) and `packs.toml`. Assumed permission does not replace
+the evidence classifications below.
+
 ## Source and rights ledger
 
 `unknown` means the repository does not retain enough evidence to make the

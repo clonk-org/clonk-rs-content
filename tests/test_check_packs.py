@@ -30,6 +30,38 @@ def manifest(*entries: str) -> str:
 
 
 class PackManifestTests(unittest.TestCase):
+    def test_distribution_metadata_cannot_be_partial_or_silently_ignored(self) -> None:
+        self.base_manifest()
+        original = (self.root / "packs.toml").read_text()
+        for extra in [
+            '\nrights = "assumed"\n',
+            '\n[distribution]\nversion = 2\nnotice = "NOTICE"\n',
+            '\n[distribution]\nversion = 1\nnotice = "../NOTICE"\n',
+        ]:
+            self.write("packs.toml", original + extra)
+            self.assert_problem("distribution")
+
+    def test_explicit_distribution_decisions_are_separate_from_byte_policy(
+        self,
+    ) -> None:
+        self.base_manifest()
+        text = (self.root / "packs.toml").read_text()
+        text = text.replace(
+            'origin = "clonk-rs"',
+            'origin = "clonk-rs"\nrights = "licensed"\nlicense = "MIT"\nevidence = ["LICENSE"]',
+        )
+        text = text.replace(
+            'origin = "legacyclonk"',
+            'origin = "legacyclonk"\nrights = "assumed"\nreason = "maintainer decision"\nevidence = ["LICENSE"]',
+        )
+        self.write("LICENSE", "licence record")
+        self.write("CONTENT-NOTICES.md", "notices")
+        self.write(
+            "packs.toml",
+            text + '\n[distribution]\nversion = 1\nnotice = "CONTENT-NOTICES.md"\n',
+        )
+        self.assertEqual(self.problems(), [])
+
     def setUp(self) -> None:
         temporary_directory = tempfile.TemporaryDirectory()
         self.addCleanup(temporary_directory.cleanup)
@@ -240,7 +272,9 @@ class PackManifestTests(unittest.TestCase):
             loaded.preserved_paths(),
             ["Base.c4f/Queron.c4s", "Import.c4f", "Import.c4f/Fun.c4f/Res.c4d"],
         )
-        self.assertEqual(loaded.preserved_roots(), ["Base.c4f/Queron.c4s", "Import.c4f"])
+        self.assertEqual(
+            loaded.preserved_roots(), ["Base.c4f/Queron.c4s", "Import.c4f"]
+        )
         self.assertEqual(loaded.nested_definitions(), ["Import.c4f/Fun.c4f/Res.c4d"])
         self.assertEqual(
             loaded.localization_pending(),

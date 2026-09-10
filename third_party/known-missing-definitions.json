@@ -1,0 +1,58 @@
+{
+  "issue": "clonk-org/clonk-rs-content#80",
+  "reason": "Existing source references absent from the imported snapshot; retained without substituting definitions.",
+  "references": [
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/Adventure.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1A.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1B.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1C.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1D.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1E.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2A.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2B.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2C.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2D.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2E.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2F.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    },
+    {
+      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2G.c4s",
+      "reference": "MetalMagic.c4f/Misc.c4d"
+    }
+  ]
+}

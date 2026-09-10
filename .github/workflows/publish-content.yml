@@ -53,6 +53,11 @@ jobs:
       - name: Build the packaging tool
         run: cargo build --release --locked --manifest-path tools/pack-content/Cargo.toml
 
+      - name: Rights inventory matches the resource bytes and package policy
+        run: |
+          python3 tools/packs.py check
+          python3 tools/rights_inventory.py check
+
       # Twice, comparing the results. The packer pins the clock, the umask,
       # entry order and the compression method, but an assertion is worth more
       # than the intent: a digest that moved without the content moving would

@@ -10,6 +10,11 @@
 #
 # Fields on a [packs."<path>"] table:
 #
+#   rights            licensed, assumed, or excluded; independent of byte policy
+#   license           recorded licence for licensed scopes
+#   reason            maintainer decision for assumed/excluded scopes
+#   evidence          notice/decision files that must ship with included scopes
+#
 #   origin            which [origins.<name>] table the entry comes from; every
 #                     entry must name one, so nothing ships without a recorded
 #                     source and terms
@@ -31,6 +36,10 @@
 # A path may reach inside a pack (`Melees.c4f/Queron3.c4s`) when a nested tree
 # has its own origin and policy.
 
+[distribution]
+version = 1
+notice = "CONTENT-NOTICES.md"
+
 [origins.clonk-rs]
 description = "This repository's own files."
 
@@ -40,15 +49,15 @@ terms = "Creative Commons Attribution-NonCommercial, the grant those packs are p
 
 [origins.clonkmars]
 source = "Classic third-party pack, ClonkMars 1.5 [Spirit]."
-terms = "Included under separate, explicitly granted permission; not the CC BY-NC grant."
+terms = "Historical permission covers exact-copy redistribution. Current modification permission is a maintainer assumption; see third_party/RIGHTS.md."
 
 [origins.eke]
 source = "Classic third-party pack, Eke Reloaded 1.7."
-terms = "Included under separate, explicitly granted permission; not the CC BY-NC grant."
+terms = "Historical permission covers exact-copy redistribution. Current modification permission is a maintainer assumption; see third_party/RIGHTS.md."
 
 [origins.ccan]
 source = "CCAN, the Clonk community archive."
-terms = "Not the CC BY-NC grant. Establish the position for yourself before redistributing."
+terms = "Not the CC BY-NC grant. Local maintenance follows the explicit assumption in third_party/RIGHTS.md."
 
 [origins.ucc]
 source = "Newton's Ultimate Clonk Compilation v3.0, CCAN entry 6383, published 2025-03-14."
@@ -64,88 +73,160 @@ ledger = "third_party/EPIC"
 # ── This repository ──────────────────────────────────────────────────────────
 
 [packs."Version.txt"]
+rights = "licensed"
+license = "MIT"
+evidence = ["LICENSE", "packs.toml", "third_party/rights-inventory.json", "third_party/known-missing-definitions.json"]
 origin = "clonk-rs"
 
 # ── LegacyClonk base packs ───────────────────────────────────────────────────
 
 [packs."Objects.c4d"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Objects.c4d/COPYING"]
 origin = "legacyclonk"
 
 [packs."Material.c4g"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Material.c4g/COPYING"]
 origin = "legacyclonk"
 
 [packs."Music.c4g"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Music.c4g/COPYING"]
 origin = "legacyclonk"
 
 [packs."Sound.c4g"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Sound.c4g/COPYING"]
 origin = "legacyclonk"
 
 [packs."Worlds.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Worlds.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Missions.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Missions.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Melees.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Melees.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Races.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Races.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Tutorial.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Tutorial.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Fantasy.c4d"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Fantasy.c4d/COPYING"]
 origin = "legacyclonk"
 
 [packs."Fantasy.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Fantasy.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."FarWorlds.c4d"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["FarWorlds.c4d/COPYING"]
 origin = "legacyclonk"
 
 [packs."FarWorlds.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["FarWorlds.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Hazard.c4d"]
+rights = "licensed"
+license = "CC-BY-NC-3.0"
+evidence = ["Hazard.c4d/COPYING"]
 origin = "legacyclonk"
 
 [packs."Hazard.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-3.0"
+evidence = ["Hazard.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Knights.c4d"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Knights.c4d/COPYING"]
 origin = "legacyclonk"
 
 [packs."Knights.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Knights.c4f/COPYING"]
 origin = "legacyclonk"
 
 [packs."Western.c4d"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Western.c4d/COPYING"]
 origin = "legacyclonk"
 
 [packs."Western.c4f"]
+rights = "licensed"
+license = "CC-BY-NC-4.0"
+evidence = ["Western.c4f/COPYING"]
 origin = "legacyclonk"
 
-# ── Classic third-party packs with granted permission ────────────────────────
+# ── Classic third-party packs with historical exact-copy permission ────────────────────────
 
 [packs."ClonkMars.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "clonkmars"
 bytes = "preserve"
 upstream_version = "1.5 [Spirit]"
 localization = ["clonk-org/clonk-rs-content#78"]
 
 [packs."ClonkMars.c4f"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "clonkmars"
 bytes = "preserve"
 upstream_version = "1.5 [Spirit]"
 localization = ["clonk-org/clonk-rs-content#78"]
 
 [packs."EkeReloaded.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "eke"
 bytes = "preserve"
 upstream_version = "1.7"
 localization = ["clonk-org/clonk-rs-content#74"]
 
 [packs."EkeReloaded.c4f"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "eke"
 bytes = "preserve"
 upstream_version = "1.7"
@@ -154,18 +235,27 @@ localization = ["clonk-org/clonk-rs-content#74"]
 # ── CCAN ─────────────────────────────────────────────────────────────────────
 
 [packs."MetalMagic.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "ccan"
 bytes = "preserve"
 upstream_version = "3.1b"
 localization = ["clonk-org/clonk-rs-content#72"]
 
 [packs."MetalMagicExtra.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "ccan"
 bytes = "preserve"
 localization = ["clonk-org/clonk-rs-content#72"]
 
 # Queron 3 sits inside a base pack; the rest of Melees.c4f is legacyclonk's.
 [packs."Melees.c4f/Queron3.c4s"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "ccan"
 bytes = "preserve"
 # Its Version.txt is the pack's whole changelog, "3.41" on the first line, so
@@ -175,6 +265,9 @@ localization = ["clonk-org/clonk-rs-content#68", "clonk-org/clonk-rs-content#72"
 # ── Ultimate Clonk Compilation ───────────────────────────────────────────────
 
 [packs."Collection.c4f"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 upstream_version = "2.0"
@@ -217,12 +310,18 @@ nested_definitions = [
 # xtask scenario-sweep walks the filesystem, so a packed .c4f hides every
 # scenario inside it from the sweep.
 [packs."Golems.c4f"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 upstream_version = "4.95.5"
 localization = ["clonk-org/clonk-rs-content#68"]
 
 [packs."ModernCombat.c4f"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 upstream_version = "R1.9"
@@ -231,22 +330,37 @@ localization = ["clonk-org/clonk-rs-content#73"]
 # Definitions shared by separate scenario families, so they occupy the data
 # root. Left packed, one file each.
 [packs."Golems.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 
 [packs."ModernCombat.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 
 [packs."RopepackRemake.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 
 [packs."WesternBalancing.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 
 [packs."WesternBugfixes.c4d"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/UltimateClonkCompilation/PROVENANCE.md", "third_party/UltimateClonkCompilation/Readme.txt", "third_party/UltimateClonkCompilation/Authors.txt"]
 origin = "ucc"
 bytes = "preserve"
 
@@ -255,6 +369,414 @@ bytes = "preserve"
 # One self-contained scenario pack: the folder is exploded so the sweep sees
 # every .c4s, while its E.P.I.C.c4d definition pack remains packed inside it.
 [packs."E.P.I.C.c4f"]
+rights = "assumed"
+reason = "Maintainer assumes modification permission for local maintenance; recorded terms remain unchanged."
+evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/EPIC/PROVENANCE.md"]
 origin = "epic"
 bytes = "preserve"
 localization = ["clonk-org/clonk-rs-content#78"]
+
+[origins.clonk-party-remake]
+source = "https://ccan.de/cgi-bin/ccan/ccan-view.pl?a=view&i=6111"
+terms = "Scenario-specific copy/modify grant; keep naming and change history. Dependencies retain separate decisions."
+
+[packs."Collection.c4f/Fun.c4f/ClonkPartyRemake8-clonk-rs-localized.c4s"]
+origin = "clonk-party-remake"
+bytes = "preserve"
+rights = "licensed"
+license = "LicenseRef-Clonk-Party-Remake-grant"
+evidence = ["third_party/PROVENANCE.md", "third_party/RIGHTS.md"]
+
+# BEGIN INVENTORY DEPENDENCIES
+[distribution.dependencies]
+"ClonkMars.c4f/01_Fossae.c4s" = ["ClonkMars.c4d", "Objects.c4d"]
+"ClonkMars.c4f/03_Chaos.c4s" = ["ClonkMars.c4d", "Objects.c4d"]
+"ClonkMars.c4f/04_Kasei.c4s" = ["ClonkMars.c4d", "Objects.c4d"]
+"ClonkMars.c4f/06_Chasma.c4s" = ["ClonkMars.c4d", "Objects.c4d"]
+"ClonkMars.c4f/07_Abyss.c4s" = ["ClonkMars.c4d", "Objects.c4d"]
+"ClonkMars.c4f/08_Phobos.c4s" = ["ClonkMars.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Adventure.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Cloudtemple3.3.c4s" = ["Fantasy.c4d", "Fantasy.c4f/Drachenfels.c4s/Block.c4d", "Fantasy.c4f/Drachenfels.c4s/Gate.c4d", "Fantasy.c4f/Drachenfels.c4s/Switch.c4d", "Fantasy.c4f/Drachenfels.c4s/WallScript.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/DerGoldeneWipfMutli.c4f/Der goldene Wipf1multi.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/DerGoldeneWipfMutli.c4f/Der goldene Wipf2multi.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Faffnir.c4f/Faffnir_2.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Faffnir.c4f/faffnir_1.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Feindesland.c4f/DerMagischeWald.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Feindesland.c4f/Kasernensturm.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Feindesland.c4f/KerkerFlucht.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Feindesland.c4f/Magiergilde.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/InExantros.c4f/1.Akt.c4s" = ["Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d", "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D", "Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/InExantros.c4f/2.Akt.c4s" = ["Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d", "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D", "Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/InExantros.c4f/3.Akt.c4s" = ["Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d", "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D", "Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Magiertest.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1A.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1B.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1C.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1D.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1E.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2A.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2B.c4s" = ["Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d", "Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2C.c4s" = ["Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d", "Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2D.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2E.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2F.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2G.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/RokanComingBack.c4s" = ["Fantasy.c4d", "Golems.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Adventures.c4f/Stippel_vs_SFT_Reloaded.c4s" = ["EkeReloaded.c4d"]
+"Collection.c4f/Adventures.c4f/TheTempleRemaster.c4s" = ["Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/(G)VolcanicMelee.c4s" = ["Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/BoR.c4s" = ["FarWorlds.c4d/Deep.c4d", "Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Acid_Bridge.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/BurningSkies.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/CivilHighs.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/ColdSkies.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/GrantLowMelee.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/GrantSkyMelee.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/RocketMelee.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Suny Isles.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/TheReef.c4s" = ["Collection.c4f/BaseMelees.c4f/ClassicMelees.c4f/Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/Druckwellenkampf.c4s" = ["FarWorlds.c4d/Deep.c4d/Items.c4d", "Knights.c4d", "MetalMagic.c4d/Items.c4d/Material.c4d", "MetalMagic.c4d/Items.c4d/Weapons.c4d/BulletMunition.c4d", "MetalMagic.c4d/Items.c4d/Weapons.c4d/TwoHandSword.c4d"]
+"Collection.c4f/BaseMelees.c4f/EKE_vs_Western_-_Die_Reise.c4s" = ["EkeReloaded.c4d", "Objects.c4d", "Western.c4d"]
+"Collection.c4f/BaseMelees.c4f/GreenRock.c4s" = ["Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/Inselspringen.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/Skyfigth.c4s" = ["Knights.c4d"]
+"Collection.c4f/BaseMelees.c4f/TreasureHunters.c4s" = ["Objects.c4d", "Western.c4d", "Western.c4f/Misc.c4d", "WesternBalancing.c4d", "WesternBugfixes.c4d"]
+"Collection.c4f/BaseMelees.c4f/Wasser.c4s" = ["FarWorlds.c4d/Deep.c4d", "FarWorlds.c4d/Jungle.c4d/Animals.c4d/Piranha.c4d", "Objects.c4d"]
+"Collection.c4f/BaseMelees.c4f/base_fight.c4s" = ["Fantasy.c4d", "Knights.c4d"]
+"Collection.c4f/BaseMelees.c4f/\u00baSkylies.c4s" = ["Fantasy.c4d", "Objects.c4d", "RopepackRemake.c4d"]
+"Collection.c4f/Fun.c4f/Ballerburg.c4s" = ["Objects.c4d"]
+"Collection.c4f/Fun.c4f/BlobbySoccer.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/BlobbyVolley.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/ClonkPartyRemake8-clonk-rs-localized.c4s" = ["Collection.c4f/Fun.c4f/ClonkPartyRes.c4d", "Collection.c4f/Fun.c4f/ClonkPartyRes2.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/Clonk_Knight_Party.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/Clonkparty2.c4s" = ["Fantasy.c4d", "FarWorlds.c4d", "Knights.c4d"]
+"Collection.c4f/Fun.c4f/FlintRainer2.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/FlintWall.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/GIDL_Race.c4s" = ["Collection.c4f/Fun.c4f/GIDL_Race.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/GTC-Knight.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/Minesweeper.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/MonsterArena.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/SLS2CrownHiding.c4s" = ["FarWorlds.c4d", "Knights.c4d", "Objects.c4d", "Objects.c4d/Items.c4d/Equipment.c4d/Conkit.c4d"]
+"Collection.c4f/Fun.c4f/WarStars1_1.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Fun.c4f/Warofthegods_0.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d"]
+"Collection.c4f/Fun.c4f/ZombieCastle.c4s" = ["Collection.c4f/Fun.c4f/Zombieland.c4d", "Collection.c4f/Fun.c4f/Zombiesounds.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/AS_HotPot.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/BR_Deathball.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/BR_Skyline.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/DM_Airbag.c4s" = ["Collection.c4f/Hazard.c4f/Jetbelt.c4d", "Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/DM_Temple.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/DM_Tundra.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/LMS_CrateFight.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/PDM_SteamPower.c4s" = ["Collection.c4f/Hazard.c4f/PhysGun.c4d", "Hazard.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q4_Map 1.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q4_Map 2.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q4_Map 3.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q4_Map 4 Chinatown.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q_CtF-OpenSky.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q_DM-BloodySun.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q_DM-DeepDown.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q_DM-Fray.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q_DM-FrostBite.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q_DM-Medieval.c4s" = ["Hazard.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Hazard.c4f/QuakeR.c4f/Q_DM-Renegade.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/(G)IceCorpse.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Arenafight137.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Avalanche_Tournament.c4s" = ["Knights.c4d", "MetalMagic.c4d/Structures.c4d/Barack.c4d"]
+"Collection.c4f/Knights.c4f/Castle_Neferkare_Chendu.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/DynDungeon.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Dynmelee1_2.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/ElevatorFight_Tournament.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/Classic.c4s" = ["Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/Objects.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/Dawn of the dead.c4s" = ["Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/Objects.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/Super Undead.c4s" = ["Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/Objects.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/XHF.c4s" = ["Collection.c4f/Knights.c4f/Fields_of_Glory.c4f/Objects.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/FishandWipf.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/HellFight.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Assassination.c4s" = ["Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d", "Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/BattleForWedok.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/CastleConquest.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/CoFuTMM.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/FeudForTheBorderfortress.c4s" = ["Collection.c4f/Knights.c4f/MetalMagic.c4f/FeudForTheBorderfortress.c4s/Objects.c4d", "Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/GemScuffling.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/GriffonBattle.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/GriffonRace.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Kamteiusvalley.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Occupation.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d", "Worlds.c4f/Desert.c4s"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Outpost.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Quadromago.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Relicthunters.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/SacredHills.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/StreamOfLava.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/SwampOfDeath.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial2.c4s" = ["Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s", "Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial3.c4s" = ["Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s", "Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/MetalMagic.c4f/WarOfCKZ.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Rebellion.c4f/Aufstand.c4s" = ["Collection.c4f/Knights.c4f/Rebellion.c4f/Aufstand.c4s/Objects.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/Rebellion.c4f/Bridge.c4s" = ["Collection.c4f/Knights.c4f/Rebellion.c4f/Bridge.c4s/Objects.c4d", "Fantasy.c4d/Vegetation.c4d/Mushroom.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/Rebellion.c4f/Feldlager.c4s" = ["Collection.c4f/Knights.c4f/Rebellion.c4f/Objects.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/Rebellion.c4f/IcyWinter.c4s" = ["Collection.c4f/Knights.c4f/Rebellion.c4f/IcyWinter.c4s/Objects.c4d", "Fantasy.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/Rebellion.c4f/Kreuzzuege.c4s" = ["Collection.c4f/Knights.c4f/Rebellion.c4f/Kreuzzuege.c4s/Objects.c4d", "Fantasy.c4d", "Knights.c4d"]
+"Collection.c4f/Knights.c4f/S2Stylands.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/WagonFight_s2mod.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/War_in_Sesostris.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Z4Adept.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Z4Keepers.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d", "Objects.c4d"]
+"Collection.c4f/Knights.c4f/Zufallsarena.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/Argon_Tournament.c4s" = ["Fantasy.c4d/Crew.c4d/Mage.c4d", "Fantasy.c4d/Items.c4d/Potions.c4d", "Fantasy.c4d/Magic.c4d/Fireball.c4d", "Knights.c4d"]
+"Collection.c4f/Magus.c4f/CastCavern.c4s" = ["Fantasy.c4d"]
+"Collection.c4f/Magus.c4f/Checkerfield.c4s" = ["Collection.c4f/Magus.c4f/KdD_Magie_Pack.c4d", "Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/BloodyFight.c4s" = ["Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/BrokenSky.c4s" = ["Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Factory.c4s" = ["Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Stage.c4s" = ["Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/Etagenkampf[s2edit].c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/IcePalace.c4s" = ["Fantasy.c4d", "Knights.c4d/Furniture.c4d/Castle.c4d/Torch.c4d", "Knights.c4d/Furniture.c4d/Kitchen.c4d/CampFire.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/SkyBridge.c4s" = ["Fantasy.c4d"]
+"Collection.c4f/Magus.c4f/Turnier_der_Zauberer.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/Z4Balance.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Magus.c4f/bridges2.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Melees.c4f/EkeWagonFight.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"Collection.c4f/Melees.c4f/Flag.c4s" = ["Objects.c4d"]
+"Collection.c4f/Melees.c4f/Icechasm.c4s" = ["FarWorlds.c4d/Arctic.c4d", "Objects.c4d"]
+"Collection.c4f/Melees.c4f/JungleFlurry.c4s" = ["FarWorlds.c4d", "Objects.c4d"]
+"Collection.c4f/Melees.c4f/KdK_Extreme.c4s" = ["Objects.c4d"]
+"Collection.c4f/Melees.c4f/MagmaMelee.c4s" = ["FarWorlds.c4d/Jungle.c4d", "Objects.c4d"]
+"Collection.c4f/Melees.c4f/Melow.c4s" = ["Objects.c4d"]
+"Collection.c4f/Melees.c4f/Mole.c4s" = ["Objects.c4d"]
+"Collection.c4f/Melees.c4f/PalisadeFightAtillery.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Melees.c4f/PalisadeFightIndi.c4s" = ["Knights.c4d", "Objects.c4d", "Western.c4d"]
+"Collection.c4f/Melees.c4f/SillyVally.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Melees.c4f/TemplePushing.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d", "Western.c4d/Magic.c4d/Flint.c4d", "Western.c4d/Magic.c4d/Plague.c4d", "Worlds.c4f/Desert.c4s/Lenseflare.c4d", "Worlds.c4f/Desert.c4s/Sonne.c4d", "Worlds.c4f/FoggyCliffs.c4s/Fog.c4d"]
+"Collection.c4f/Melees.c4f/Z4BattleOfGenerations.c4s" = ["Fantasy.c4d", "FarWorlds.c4d/Jungle.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d", "Western.c4d"]
+"Collection.c4f/Melees.c4f/bColors.c4s" = ["Objects.c4d"]
+"Collection.c4f/ModernCombat.c4f/CMC_CodeDeath.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"Collection.c4f/ModernCombat.c4f/CMC_Fortress.c4s" = ["Collection.c4f/ModernCombat.c4f/BlacksCMC-Waffenmod.c4d", "Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"Collection.c4f/ModernCombat.c4f/CMC_IndustrialDocks.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"Collection.c4f/ModernCombat.c4f/CMC_Train.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/1_S2Curious.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/2_MountVikto.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d", "MetalMagic.c4d/Crew.c4d/Skeleton.c4d", "Objects.c4d", "Western.c4d"]
+"Collection.c4f/Puzzles.c4f/4_TowerOfMagic.c4s" = ["Fantasy.c4d", "Knights.c4d", "MetalMagic.c4d"]
+"Collection.c4f/Puzzles.c4f/Das_Clonk_Quiz_3_Meister_des_Quiz.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/Grabrauber_League.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/KshuntanRavine.c4s" = ["FarWorlds.c4d/Jungle.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/Mirror_of_Dreams.c4s" = ["Collection.c4f/Puzzles.c4f/Explorer.c4d", "FarWorlds.c4d/Jungle.c4d"]
+"Collection.c4f/Puzzles.c4f/S2Christmas2014.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/S2Jungle_1.c4s" = ["FarWorlds.c4d/Arctic.c4d/Crew.c4d/Inuk.c4d", "FarWorlds.c4d/Jungle.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/S2Tower.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/TempleEscape_League.c4s" = ["Fantasy.c4d", "FarWorlds.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/TempleProfanation.c4s" = ["Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/_D_Tempelflucht.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Puzzles.c4f/_D_Tempelwahn.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Collection.c4f/Races.c4f/(G)Catarace.c4s" = ["Objects.c4d"]
+"Collection.c4f/Races.c4f/AbwaertsExtremTeam2.c4s" = ["Collection.c4f/Races.c4f/Ropepack.c4d"]
+"Collection.c4f/Races.c4f/AbwaertsFalschrum.c4s" = ["Collection.c4f/Races.c4f/Ropepack.c4d"]
+"Collection.c4f/Races.c4f/Brickrace.c4s" = ["Objects.c4d"]
+"Collection.c4f/Races.c4f/RACE_Death.c4s" = ["Collection.c4f/Races.c4f/Clinfinity.c4d", "Objects.c4d"]
+"Collection.c4f/Races.c4f/Raceofthemagicianclonks.c4s" = ["Fantasy.c4d", "Knights.c4d"]
+"Collection.c4f/Races.c4f/RopeRace.c4s" = ["Objects.c4d", "RopepackRemake.c4d"]
+"Collection.c4f/Races.c4f/S2CaveraceMirror.c4s" = ["Objects.c4d"]
+"Collection.c4f/Races.c4f/SLDigDown.c4s" = ["Objects.c4d"]
+"Collection.c4f/Races.c4f/Waterrace.c4s" = ["FarWorlds.c4d/Deep.c4d"]
+"Collection.c4f/Races.c4f/Wipf-o-drom.c4s" = ["Objects.c4d"]
+"Collection.c4f/Races.c4f/explode1000.c4s" = ["Knights.c4d/Items.c4d/Foodstuff.c4d/Bread.c4d", "Knights.c4d/Items.c4d/Foodstuff.c4d/Cookie.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/(G)Deeep.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/(G)Empyrean.c4s" = ["Objects.c4d", "RopepackRemake.c4d"]
+"Collection.c4f/Settling.c4f/(G)Volc.c4s" = ["Objects.c4d", "RopepackRemake.c4d"]
+"Collection.c4f/Settling.c4f/Clepler-38b.c4s" = ["ClonkMars.c4d", "EkeReloaded.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/DM2_Svenite.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/Decorace.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/DieNeueWelt.c4s" = ["Objects.c4d", "Western.c4d"]
+"Collection.c4f/Settling.c4f/Die_Flut_kommt_III.c4s" = ["FarWorlds.c4d/Deep.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/GoldabbauWes.c4s" = ["Objects.c4d", "Western.c4d"]
+"Collection.c4f/Settling.c4f/GoldenCanyon_2.c4s" = ["Objects.c4d", "Western.c4d", "Western.c4f/Misc.c4d", "WesternBalancing.c4d", "WesternBugfixes.c4d"]
+"Collection.c4f/Settling.c4f/HazardousWorlds.c4f/BurningDepth.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/HostileWorlds.c4f/CrumblingIslands.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/HostileWorlds.c4f/DarkshireMarsh.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/HostileWorlds.c4f/FadingSands.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/HostileWorlds.c4f/StonegaleCrags.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/InsideOut.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/M_Kathedral.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/NC_81__s_Selfmademaps.c4f/Sandw\ufffdste.c4s" = ["Objects.c4d", "Western.c4d"]
+"Collection.c4f/Settling.c4f/NC_81__s_Selfmademaps.c4f/Statue der Magie.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/OriginalAdventure.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/Q8Castle_1_1.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/Ragnaroek.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Dynamic.c4f/Canyons.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Dynamic.c4f/DeepInTheDark.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Dynamic.c4f/Flatland.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Dynamic.c4f/IslesInTheSky.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Dynamic.c4f/Lavarifts.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Dynamic.c4f/Mountains.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Dynamic.c4f/SeaCliffs.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Kampagne.c4f/1Intro.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Kampagne.c4f/2Teudoburger.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Kampagne.c4f/3Frangreich.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Kampagne.c4f/4Schweids.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Kampagne.c4f/5Arallsee.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Kampagne.c4f/6Sybirien.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Kampagne.c4f/7Armagedeon.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Missions.c4f/Ghostmine.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Missions.c4f/Hunger.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Others.c4f/ModernBattle.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Others.c4f/Narshe.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Static.c4f/Fernwalden.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Static.c4f/Hohenluften.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Static.c4f/Oberweihomer.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Tutorial.c4s" = ["Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d", "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Tutorial.c4s/Objects.c4d"]
+"Collection.c4f/Settling.c4f/Rustuff-Chasm.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/Tholus.c4s" = ["Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/TropicalWorlds.c4f/CoralSkys.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/TropicalWorlds.c4f/ShallowWater.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/TropicalWorlds.c4f/TropicalSeas.c4s" = ["Objects.c4d"]
+"Collection.c4f/Settling.c4f/Wipfberge.c4s" = ["Objects.c4d", "Western.c4d"]
+"Collection.c4f/Settling.c4f/Wipfenfels.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Collection.c4f/Settling.c4f/m0Arctic2.c4s" = ["EkeReloaded.c4d/Creatures.c4d", "EkeReloaded.c4d/Sound.c4d", "FarWorlds.c4d/Arctic.c4d", "Objects.c4d"]
+"E.P.I.C.c4f/Death_Canyon.c4s" = ["E.P.I.C.c4f/E.P.I.C.c4d", "Objects.c4d"]
+"E.P.I.C.c4f/Hills_of_gore.c4s" = ["E.P.I.C.c4f/E.P.I.C.c4d", "Objects.c4d"]
+"E.P.I.C.c4f/Minor_Wound_Battle.c4s" = ["E.P.I.C.c4f/E.P.I.C.c4d", "Objects.c4d"]
+"E.P.I.C.c4f/Test map.c4s" = ["E.P.I.C.c4f/E.P.I.C.c4d", "Objects.c4d"]
+"E.P.I.C.c4f/Wound_Valley_King.c4s" = ["E.P.I.C.c4f/E.P.I.C.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/AirbikeFight.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/Equiem.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/GoldPlateau.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/HarpoonRace.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/MeltMe.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/MissileMatch.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/OilWars.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/RumbleInTheJungle.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/InterplanetaryCivilwar.c4f/SnowBase.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/TheStippelAge.c4f/Arso-Morf.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/TheStippelAge.c4f/Invasion.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"EkeReloaded.c4f/TheStippelAge.c4f/SpeedHunting.c4s" = ["EkeReloaded.c4d", "Objects.c4d"]
+"Fantasy.c4f/Alchemy.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Fantasy.c4f/Crystalvalley.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Fantasy.c4f/Drachenfels.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Fantasy.c4f/SkiesOfFire.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"FarWorlds.c4f/Arctic.c4s" = ["FarWorlds.c4d/Arctic.c4d", "Objects.c4d"]
+"FarWorlds.c4f/Deep.c4s" = ["FarWorlds.c4d/Deep.c4d", "Objects.c4d"]
+"FarWorlds.c4f/Jungle.c4s" = ["FarWorlds.c4d/Jungle.c4d", "Objects.c4d"]
+"Golems.c4f/FrostyHills.c4s" = ["Golems.c4d", "Objects.c4d"]
+"Golems.c4f/Golemcaves.c4s" = ["Golems.c4d", "Objects.c4d"]
+"Golems.c4f/IceBridges.c4s" = ["Golems.c4d", "Objects.c4d"]
+"Hazard.c4f/AH_Predator.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/AS_Research.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/BR_Docks.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/BR_Industrial.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/CTF_DeepSea.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/CTF_Face.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/CTF_Space.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/DEST_EpicVoltage.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/DM_Baldoon.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/DM_Factory.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/DM_KillingDay.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/DOM_TransmitTower.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Hazard.c4f/Tutorial.c4s" = ["Hazard.c4d", "Objects.c4d"]
+"Knights.c4f/Camp.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d"]
+"Knights.c4f/CoFuT.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d"]
+"Knights.c4f/Dunkelfels.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d"]
+"Knights.c4f/Hammerfest.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d"]
+"Knights.c4f/Kingdoms.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d"]
+"Knights.c4f/Paxhill.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d"]
+"Knights.c4f/Regicide.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d"]
+"Knights.c4f/Tournament.c4s" = ["Knights.c4d", "Knights.c4f/Objects.c4d", "Worlds.c4f/Desert.c4s"]
+"Melees.c4f/Canyon.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/Castle.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/Clepal.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/CliffFight.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/Greed.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/Massif.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/MinorMelee.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/Mountaincombat.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/Queron3.c4s" = ["Fantasy.c4d", "Knights.c4d", "Melees.c4f/Objects.c4d", "MetalMagic.c4d", "MetalMagicExtra.c4d"]
+"Melees.c4f/SharkLake.c4s" = ["Melees.c4f/Objects.c4d"]
+"Melees.c4f/Theft.c4s" = ["Melees.c4f/Objects.c4d"]
+"Missions.c4f/Frontier.c4s" = ["Objects.c4d"]
+"Missions.c4f/Funnel.c4s" = ["Objects.c4d"]
+"Missions.c4f/High.c4s" = ["Objects.c4d"]
+"Missions.c4f/LastWill.c4s" = ["Objects.c4d"]
+"Missions.c4f/Low.c4s" = ["Objects.c4d"]
+"Missions.c4f/Pearls.c4s" = ["Objects.c4d"]
+"Missions.c4f/Rattle.c4s" = ["Objects.c4d"]
+"Missions.c4f/Regeneration.c4s" = ["Objects.c4d"]
+"Missions.c4f/Rocks.c4s" = ["Objects.c4d"]
+"Missions.c4f/SevenKeys.c4s" = ["Objects.c4d"]
+"Missions.c4f/SkyVillage.c4s" = ["Objects.c4d"]
+"Missions.c4f/Submine.c4s" = ["Objects.c4d"]
+"Missions.c4f/Treasure.c4s" = ["Objects.c4d"]
+"ModernCombat.c4f/CMC_AtlanticCrisis.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_BabelTower.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_Base1337.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_BaseJumping.c4s" = ["Fantasy.c4d/Structures.c4d/MagicWorkshop.c4d/Burned.c4d", "Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_BlackThunder.c4s" = ["Hazard.c4d", "Knights.c4d/Camp.c4d/Banner.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_Breakthrough.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_ColdCash.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_InfinityIsland.c4s" = ["FarWorlds.c4d/Jungle.c4d/Animals.c4d/Piranha.c4d", "FarWorlds.c4d/Jungle.c4d/Vegetation.c4d/Vine.c4d", "Hazard.c4d", "Missions.c4f/Pearls.c4s/Wreck.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_Interception.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_IslandStrike.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_MankelOverpass.c4s" = ["Hazard.c4d", "Knights.c4d/Camp.c4d/Banner.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_MorayTowers.c4s" = ["Hazard.c4d", "Knights.c4d/Camp.c4d/Banner.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_Oasis.c4s" = ["FarWorlds.c4d/Jungle.c4d/Vegetation.c4d/Vine.c4d", "Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_OperationCaveOffensive.c4s" = ["FarWorlds.c4d/Jungle.c4d/Vegetation.c4d/Vine.c4d", "Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_PortArcford.c4s" = ["FarWorlds.c4d/Arctic.c4d/Environment.c4d/PolarLights.c4d", "Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_TwinPeaks.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/CMC_Wavebreaker.c4s" = ["FarWorlds.c4d/Arctic.c4d/Environment.c4d/PolarLights.c4d", "FarWorlds.c4d/Jungle.c4d/Animals.c4d/Piranha.c4d", "FarWorlds.c4d/Jungle.c4d/Vegetation.c4d/Vine.c4d", "Hazard.c4d", "Knights.c4d/Camp.c4d/Banner.c4d", "Knights.c4d/Furniture.c4d/Castle.c4d", "Missions.c4f/Pearls.c4s/Wreck.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_BridgeOnslaught.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_BroadcastStation.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_CoastalResort.c4s" = ["FarWorlds.c4d/Jungle.c4d/Animals.c4d/Piranha.c4d", "Hazard.c4d", "Missions.c4f/Pearls.c4s/Wreck.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_Dust.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_EndlessOutpost.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_Firewood.c4s" = ["FarWorlds.c4d/Jungle.c4d/Animals.c4d/Piranha.c4d", "FarWorlds.c4d/Jungle.c4d/Vegetation.c4d/Vine.c4d", "Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_FusionReactor.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_GroundZero.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_MacrossFrontier.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_MagmaZone.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_OperationMetro.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_ResearchFacility.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_SiegeOfControl.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Classic.c4f/CMC_Yuki.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Special.c4f/CMC_Skyfall.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"ModernCombat.c4f/Special.c4f/CMC_Skyscrapers.c4s" = ["Hazard.c4d", "ModernCombat.c4d", "Objects.c4d"]
+"Races.c4f/Caverace.c4s" = ["Objects.c4d"]
+"Races.c4f/GlowingPeak.c4s" = ["Fantasy.c4d", "Knights.c4d", "Objects.c4d"]
+"Races.c4f/Goldrace.c4s" = ["Objects.c4d"]
+"Races.c4f/MonsterRescue.c4s" = ["Fantasy.c4d", "Objects.c4d"]
+"Races.c4f/Skyrace.c4s" = ["Objects.c4d"]
+"Races.c4f/Tritonpath.c4s" = ["Fantasy.c4d", "FarWorlds.c4d/Deep.c4d", "Knights.c4d", "Objects.c4d"]
+"Races.c4f/Wipfrace.c4s" = ["Objects.c4d"]
+"Tutorial.c4f/Tutorial01.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial02.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial03.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial04.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial05.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial06.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial07.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial08.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Tutorial.c4f/Tutorial09.c4s" = ["Tutorial.c4f/Objects.c4d", "Worlds.c4f/ArcticOcean.c4s"]
+"Tutorial.c4f/Tutorial10.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"Western.c4f/BankRobbery.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/CaptureTheFlag.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/DeadMansValley.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/FallingStarsPeak.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/GoldenCanyon.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/Goldrush.c4s" = ["Objects.c4d", "Western.c4d", "Western.c4f/Misc.c4d"]
+"Western.c4f/LastHope.c4s" = ["Objects.c4d", "Western.c4d", "Western.c4f/Misc.c4d"]
+"Western.c4f/MilestoneWoods.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/MinersCreek.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/RedrockBay.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/ShootTheSheriff.c4s" = ["Objects.c4d", "Western.c4d"]
+"Western.c4f/TotemHunt.c4s" = ["Objects.c4d", "Western.c4d", "Western.c4f/Misc.c4d"]
+"Worlds.c4f/ArcticOcean.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Ashlands.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Chasm.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Desert.c4s" = ["Objects.c4d"]
+"Worlds.c4f/FoggyCliffs.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Goldmine.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Lavacaves.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Mountains.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Outset.c4s" = ["Objects.c4d"]
+"Worlds.c4f/SkyAtoll.c4s" = ["Objects.c4d"]
+"Worlds.c4f/SkyIslands.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Tropical.c4s" = ["Objects.c4d"]
+"Worlds.c4f/Watercaves.c4s" = ["Objects.c4d"]
+# END INVENTORY DEPENDENCIES
