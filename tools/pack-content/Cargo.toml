@@ -16,7 +16,7 @@ toml = "1"
 # when it still built this archive. The archive is content-addressed, so a zip
 # implementation that encodes the same files differently would change the digest
 # and make every client re-download the entire archive for nothing.
-zip = { version = "0.6", default-features = false, features = ["deflate"] }
+zip = { version = "8.6", default-features = false, features = ["deflate"] }
 
 [[bin]]
 name = "pack-content"
