@@ -1,0 +1,11 @@
+OverloadMaterials
+OverloadTextures
+1=Tunnel-Smooth
+2=Earth-Smooth
+3=Granite-Rough
+4=Rock-Rough
+5=Water-Liquid
+6=Brick-Rough
+7=Gold-Rough
+8=Ore-Rough
+9=Coal-Swirl

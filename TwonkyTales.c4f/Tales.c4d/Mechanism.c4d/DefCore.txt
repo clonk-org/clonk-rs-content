@@ -1,0 +1,12 @@
+[DefCore]
+id=TTMN
+Version=4,9,10,0
+Name=Mechanism
+Category=C4D_Structure
+Width=24
+Height=30
+Offset=-12,-15
+Picture=0,0,24,30
+Grab=1
+HorizontalFix=1
+Mass=100

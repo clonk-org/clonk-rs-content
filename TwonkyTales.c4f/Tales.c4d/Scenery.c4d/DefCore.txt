@@ -1,0 +1,9 @@
+[DefCore]
+id=TTDC
+Version=4,9,10,0
+Name=Scenery
+Category=C4D_StaticBack
+Width=160
+Height=120
+Offset=-80,-120
+Picture=0,0,160,120

@@ -1,0 +1,17 @@
+[DefCore]
+id=TTAR
+Version=4,9,10,0
+Name=Remembering arrow
+Category=C4D_Object
+Width=8
+Height=7
+Offset=-4,-3
+Vertices=2
+VertexY=-3,3
+VertexFriction=80,80
+Mass=50
+Value=20
+Picture=0,8,64,64
+Collectible=1
+Rotate=1
+Float=1

@@ -1,0 +1,21 @@
+The Twonky Tales
+
+Original campaign story, level layouts, localized dialogue, mechanisms and
+small graphics authored for clonk-rs in 2026. These original contributions
+use the project MIT licence, supplied in the distribution LICENSE file.
+
+The name Twonky and the legendary bow/arrows are drawn from the existing
+Dragon Rock scenario in Fantasy.c4f. Ordinary knights, bows, arrow behavior,
+materials, textures and sounds are supplied at runtime by the LegacyClonk
+Objects.c4d, Knights.c4d and material/sound packs. Their existing authorship
+and terms remain in force; see the content repository's provenance records.
+The remembering-arrow definition includes ARRW; the goal includes GOAL.
+
+Mara, Orren, Nell, Iven, Pip, Sella, Bram and Veyr, their history, the returning
+bow mechanism and this prelude to Dragon Rock are newly authored fiction.
+No scripts, dialogue, film footage or graphics were imported from Twonky5.
+
+Research: CCAN archive entry 245 and the clonkspot CR-Filmprojekt discussion
+establish a separate community film tradition, not shared story continuity.
+https://cc-archive.lwrl.de/download.php?act=getinfo&dl=245
+https://forum.clonkspot.org/t/cr-filmprojekt/898
