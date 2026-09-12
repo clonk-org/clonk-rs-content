@@ -1,0 +1,10 @@
+[DefCore]
+id=TTGT
+Version=4,9,10,0
+Name=Counterweight shutter
+Category=C4D_StaticBack|C4D_Structure
+Width=16
+Height=96
+Offset=-8,-48
+Picture=0,0,16,96
+SolidMask=0,96,16,96,0,0

@@ -387,6 +387,12 @@ rights = "licensed"
 license = "LicenseRef-Clonk-Party-Remake-grant"
 evidence = ["third_party/PROVENANCE.md", "third_party/RIGHTS.md"]
 
+[packs."TwonkyTales.c4f"]
+rights = "licensed"
+license = "MIT"
+evidence = ["LICENSE", "TwonkyTales.c4f/Credits.txt"]
+origin = "clonk-rs"
+
 # BEGIN INVENTORY DEPENDENCIES
 [distribution.dependencies]
 "ClonkMars.c4f/01_Fossae.c4s" = ["ClonkMars.c4d", "Objects.c4d"]
@@ -754,6 +760,12 @@ evidence = ["third_party/PROVENANCE.md", "third_party/RIGHTS.md"]
 "Tutorial.c4f/Tutorial08.c4s" = ["Tutorial.c4f/Objects.c4d"]
 "Tutorial.c4f/Tutorial09.c4s" = ["Tutorial.c4f/Objects.c4d", "Worlds.c4f/ArcticOcean.c4s"]
 "Tutorial.c4f/Tutorial10.c4s" = ["Tutorial.c4f/Objects.c4d"]
+"TwonkyTales.c4f/01FineShot.c4s" = ["Knights.c4d", "Objects.c4d", "TwonkyTales.c4f/Tales.c4d"]
+"TwonkyTales.c4f/02MillBelow.c4s" = ["Knights.c4d", "Objects.c4d", "TwonkyTales.c4f/Tales.c4d"]
+"TwonkyTales.c4f/03KingsAccount.c4s" = ["Knights.c4d", "Objects.c4d", "TwonkyTales.c4f/Tales.c4d"]
+"TwonkyTales.c4f/04HerosWelcome.c4s" = ["Knights.c4d", "Objects.c4d", "TwonkyTales.c4f/Tales.c4d"]
+"TwonkyTales.c4f/05RoadBack.c4s" = ["Knights.c4d", "Objects.c4d", "TwonkyTales.c4f/Tales.c4d"]
+"TwonkyTales.c4f/06BowForTomorrow.c4s" = ["Knights.c4d", "Objects.c4d", "TwonkyTales.c4f/Tales.c4d"]
 "Western.c4f/BankRobbery.c4s" = ["Objects.c4d", "Western.c4d"]
 "Western.c4f/CaptureTheFlag.c4s" = ["Objects.c4d", "Western.c4d"]
 "Western.c4f/DeadMansValley.c4s" = ["Objects.c4d", "Western.c4d"]

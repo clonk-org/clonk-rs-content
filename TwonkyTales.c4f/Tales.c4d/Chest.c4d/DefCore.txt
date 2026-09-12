@@ -1,0 +1,21 @@
+[DefCore]
+id=TTCT
+Version=4,9,10,0
+Name=Workshop chest
+Category=C4D_Vehicle
+Width=24
+Height=20
+Offset=-12,-10
+Vertices=4
+VertexX=-10,10,-10,10
+VertexY=-8,-8,9,9
+VertexCNAT=5,6,9,10
+VertexFriction=100,100,100,100
+Mass=18
+Picture=0,0,24,20
+Collection=-10,-10,20,20
+CollectionLimit=30
+Grab=1
+GrabPutGet=C4D_GrabGet|C4D_GrabPut
+ContainBlast=1
+ClosedContainer=1

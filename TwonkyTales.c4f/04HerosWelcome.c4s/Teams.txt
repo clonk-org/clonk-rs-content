@@ -1,0 +1,12 @@
+[Teams]
+Active=1
+Custom=0
+AllowHostilityChange=0
+AutoGenerateTeams=0
+TeamDistribution=0
+
+[Team]
+id=1
+Name=$TeamName$
+Color=11896645
+MaxPlayer=4

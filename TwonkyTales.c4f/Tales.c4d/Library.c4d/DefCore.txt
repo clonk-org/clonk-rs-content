@@ -1,0 +1,7 @@
+[DefCore]
+id=TTSC
+Version=4,9,10,0
+Name=Twonky Tales library
+Category=C4D_StaticBack
+Width=1
+Height=1

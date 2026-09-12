@@ -2,7 +2,7 @@
   "schema": 1,
   "baseline_content_commit": "9a01c8f55f0fbdccfa2dcf3a67e3cfcfcac7c009",
   "reader_baseline_engine_commit": "e3d35afcff3411d9c7d8152686ebec87faafd9c7",
-  "reader_sha256": "696454098f1fcecd25d9991f91634df687b55e3e0a0dd98d8be6a9a7f5192e05",
+  "reader_sha256": "65f2bbbc7ebb1f8462d99aab2aa400574b7dbcac13d6e91d1df7ed505c98ed90",
   "scopes": {
     "Version.txt": {
       "rights": "licensed",
@@ -455,6 +455,18 @@
       "file_count": 1,
       "bytes": 2113647,
       "sha256": "8f6e20abac1c02c4c021c08f4ab61441e758675de5176352c849edb62f5ae5ad"
+    },
+    "TwonkyTales.c4f": {
+      "rights": "licensed",
+      "license": "MIT",
+      "evidence": [
+        "LICENSE",
+        "TwonkyTales.c4f/Credits.txt"
+      ],
+      "origin": "clonk-rs",
+      "file_count": 142,
+      "bytes": 554536,
+      "sha256": "c2af29775974667afe189dc501d36441ccbece97145f7216f2ec2800fbd8efed"
     }
   },
   "groups": [
@@ -12095,6 +12107,34 @@
     "Tutorial.c4f/Tutorial10.c4s/Material.c4g",
     "Tutorial.c4f/Tutorial10.c4s/ScriptGoal.c4d",
     "Tutorial.c4f/Tutorial10.c4s/Sound.c4d",
+    "TwonkyTales.c4f",
+    "TwonkyTales.c4f/01FineShot.c4s",
+    "TwonkyTales.c4f/01FineShot.c4s/Material.c4g",
+    "TwonkyTales.c4f/01FineShot.c4s/System.c4g",
+    "TwonkyTales.c4f/02MillBelow.c4s",
+    "TwonkyTales.c4f/02MillBelow.c4s/Material.c4g",
+    "TwonkyTales.c4f/02MillBelow.c4s/System.c4g",
+    "TwonkyTales.c4f/03KingsAccount.c4s",
+    "TwonkyTales.c4f/03KingsAccount.c4s/Material.c4g",
+    "TwonkyTales.c4f/03KingsAccount.c4s/System.c4g",
+    "TwonkyTales.c4f/04HerosWelcome.c4s",
+    "TwonkyTales.c4f/04HerosWelcome.c4s/Material.c4g",
+    "TwonkyTales.c4f/04HerosWelcome.c4s/System.c4g",
+    "TwonkyTales.c4f/05RoadBack.c4s",
+    "TwonkyTales.c4f/05RoadBack.c4s/Material.c4g",
+    "TwonkyTales.c4f/05RoadBack.c4s/System.c4g",
+    "TwonkyTales.c4f/06BowForTomorrow.c4s",
+    "TwonkyTales.c4f/06BowForTomorrow.c4s/Material.c4g",
+    "TwonkyTales.c4f/06BowForTomorrow.c4s/System.c4g",
+    "TwonkyTales.c4f/Material.c4g",
+    "TwonkyTales.c4f/Tales.c4d",
+    "TwonkyTales.c4f/Tales.c4d/Arrow.c4d",
+    "TwonkyTales.c4f/Tales.c4d/Chest.c4d",
+    "TwonkyTales.c4f/Tales.c4d/Gate.c4d",
+    "TwonkyTales.c4f/Tales.c4d/Goal.c4d",
+    "TwonkyTales.c4f/Tales.c4d/Library.c4d",
+    "TwonkyTales.c4f/Tales.c4d/Mechanism.c4d",
+    "TwonkyTales.c4f/Tales.c4d/Scenery.c4d",
     "Western.c4d",
     "Western.c4d/Alchemy.c4d",
     "Western.c4d/Alchemy.c4d/Blood.c4d",
@@ -14421,6 +14461,10 @@
     {
       "path": "Tutorial.c4f/COPYING",
       "decoded_text_sha256": "752fbee9435836921e201c3a6e7e2c219f8b12c8886412a065035b893385a211"
+    },
+    {
+      "path": "TwonkyTales.c4f/Credits.txt",
+      "decoded_text_sha256": "d34dcd6931fa6962ea7b5ddbf9d7c1178ef5dd2ca9d30b0bdb8664ab1b24142e"
     },
     {
       "path": "Western.c4d/COPYING",
@@ -18997,6 +19041,90 @@
         "resolved": "Tutorial.c4f/Objects.c4d"
       }
     ],
+    "TwonkyTales.c4f/01FineShot.c4s": [
+      {
+        "reference": "Objects.c4d",
+        "resolved": "Objects.c4d"
+      },
+      {
+        "reference": "Knights.c4d",
+        "resolved": "Knights.c4d"
+      },
+      {
+        "reference": "TwonkyTales.c4f/Tales.c4d",
+        "resolved": "TwonkyTales.c4f/Tales.c4d"
+      }
+    ],
+    "TwonkyTales.c4f/02MillBelow.c4s": [
+      {
+        "reference": "Objects.c4d",
+        "resolved": "Objects.c4d"
+      },
+      {
+        "reference": "Knights.c4d",
+        "resolved": "Knights.c4d"
+      },
+      {
+        "reference": "TwonkyTales.c4f/Tales.c4d",
+        "resolved": "TwonkyTales.c4f/Tales.c4d"
+      }
+    ],
+    "TwonkyTales.c4f/03KingsAccount.c4s": [
+      {
+        "reference": "Objects.c4d",
+        "resolved": "Objects.c4d"
+      },
+      {
+        "reference": "Knights.c4d",
+        "resolved": "Knights.c4d"
+      },
+      {
+        "reference": "TwonkyTales.c4f/Tales.c4d",
+        "resolved": "TwonkyTales.c4f/Tales.c4d"
+      }
+    ],
+    "TwonkyTales.c4f/04HerosWelcome.c4s": [
+      {
+        "reference": "Objects.c4d",
+        "resolved": "Objects.c4d"
+      },
+      {
+        "reference": "Knights.c4d",
+        "resolved": "Knights.c4d"
+      },
+      {
+        "reference": "TwonkyTales.c4f/Tales.c4d",
+        "resolved": "TwonkyTales.c4f/Tales.c4d"
+      }
+    ],
+    "TwonkyTales.c4f/05RoadBack.c4s": [
+      {
+        "reference": "Objects.c4d",
+        "resolved": "Objects.c4d"
+      },
+      {
+        "reference": "Knights.c4d",
+        "resolved": "Knights.c4d"
+      },
+      {
+        "reference": "TwonkyTales.c4f/Tales.c4d",
+        "resolved": "TwonkyTales.c4f/Tales.c4d"
+      }
+    ],
+    "TwonkyTales.c4f/06BowForTomorrow.c4s": [
+      {
+        "reference": "Objects.c4d",
+        "resolved": "Objects.c4d"
+      },
+      {
+        "reference": "Knights.c4d",
+        "resolved": "Knights.c4d"
+      },
+      {
+        "reference": "TwonkyTales.c4f/Tales.c4d",
+        "resolved": "TwonkyTales.c4f/Tales.c4d"
+      }
+    ],
     "Western.c4f/BankRobbery.c4s": [
       {
         "reference": "Objects.c4d",
@@ -20848,6 +20976,36 @@
     ],
     "Tutorial.c4f/Tutorial10.c4s": [
       "Tutorial.c4f/Objects.c4d"
+    ],
+    "TwonkyTales.c4f/01FineShot.c4s": [
+      "Knights.c4d",
+      "Objects.c4d",
+      "TwonkyTales.c4f/Tales.c4d"
+    ],
+    "TwonkyTales.c4f/02MillBelow.c4s": [
+      "Knights.c4d",
+      "Objects.c4d",
+      "TwonkyTales.c4f/Tales.c4d"
+    ],
+    "TwonkyTales.c4f/03KingsAccount.c4s": [
+      "Knights.c4d",
+      "Objects.c4d",
+      "TwonkyTales.c4f/Tales.c4d"
+    ],
+    "TwonkyTales.c4f/04HerosWelcome.c4s": [
+      "Knights.c4d",
+      "Objects.c4d",
+      "TwonkyTales.c4f/Tales.c4d"
+    ],
+    "TwonkyTales.c4f/05RoadBack.c4s": [
+      "Knights.c4d",
+      "Objects.c4d",
+      "TwonkyTales.c4f/Tales.c4d"
+    ],
+    "TwonkyTales.c4f/06BowForTomorrow.c4s": [
+      "Knights.c4d",
+      "Objects.c4d",
+      "TwonkyTales.c4f/Tales.c4d"
     ],
     "Western.c4f/BankRobbery.c4s": [
       "Objects.c4d",
