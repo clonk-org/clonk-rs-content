@@ -2,7 +2,7 @@
   "schema": 1,
   "baseline_content_commit": "9a01c8f55f0fbdccfa2dcf3a67e3cfcfcac7c009",
   "reader_baseline_engine_commit": "e3d35afcff3411d9c7d8152686ebec87faafd9c7",
-  "reader_sha256": "65f2bbbc7ebb1f8462d99aab2aa400574b7dbcac13d6e91d1df7ed505c98ed90",
+  "reader_sha256": "f9e29c2c9d10ead566faad1fc3a1e0080b78262e813b490ca83b8c787422c32a",
   "scopes": {
     "Version.txt": {
       "rights": "licensed",
@@ -465,8 +465,8 @@
       ],
       "origin": "clonk-rs",
       "file_count": 142,
-      "bytes": 554536,
-      "sha256": "c2af29775974667afe189dc501d36441ccbece97145f7216f2ec2800fbd8efed"
+      "bytes": 554981,
+      "sha256": "c7147b53139894f22c87b29eb8ec6ae9520f743b3ae9ecd9ee03b70447d0fd96"
     }
   },
   "groups": [
@@ -14464,7 +14464,7 @@
     },
     {
       "path": "TwonkyTales.c4f/Credits.txt",
-      "decoded_text_sha256": "d34dcd6931fa6962ea7b5ddbf9d7c1178ef5dd2ca9d30b0bdb8664ab1b24142e"
+      "decoded_text_sha256": "c8c4a67c5f6ec20ff9d79964ac066e08d61ad62b9d68b7bc0b1017f0e610e6a5"
     },
     {
       "path": "Western.c4d/COPYING",

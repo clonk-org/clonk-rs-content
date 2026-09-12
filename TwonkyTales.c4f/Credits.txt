@@ -1,7 +1,8 @@
 The Twonky Tales
 
 Original campaign story, level layouts, localized dialogue, mechanisms and
-small graphics authored for clonk-rs in 2026.
+small graphics authored for clonk-rs in 2026. These original contributions
+use the project MIT licence, supplied in the distribution LICENSE file.
 
 The name Twonky and the legendary bow/arrows are drawn from the existing
 Dragon Rock scenario in Fantasy.c4f. Ordinary knights, bows, arrow behavior,

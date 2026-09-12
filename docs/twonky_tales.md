@@ -10,7 +10,9 @@ runtime dependencies are credited inside the campaign.
 
 Open **The Twonky Tales** in the scenario browser. Only **A Very Fine Shot** is
 initially accessible. Winning a chapter grants the access token for the next;
-completed chapters remain replayable. Unlocks use the same native mission-access
+completed chapters remain replayable. The last discovery stays open until all
+players dismiss their pages; the ending then gets its own acknowledgement.
+Unlocks use the same native mission-access
 store as the challenges. Saves within a chapter retain its object references,
 arrow histories, mechanisms, damage, materials and followers.
 
@@ -28,7 +30,9 @@ Grab a mechanism and press **Up** to inspect or **Throw** to operate. The contex
 menu offers both actions. Read the goal for the chapter journal. Talk to named
 non-player characters through their context menu; eligible survivors follow the
 last player to speak to them. Workshop chests support ordinary grab/put/get
-controls and can be pushed. Repair and forging recipes can draw from the actor's
+controls and can be pushed. Overhead mechanisms can be inspected from the
+gallery floor; operating a hand control still requires being beside it.
+Repair and forging recipes can draw from the actor's
 inventory or a workshop chest within 45 pixels.
 
 Failure has local, lasting costs: health, rubble, flooded chambers, seized cargo,
@@ -122,7 +126,8 @@ native scripts and physics. They exercise every chapter ending, real outbound
 and returning shots, solo and cooperative anchor operation, native mission
 unlocks, material repair and seizure, NPC escorts, disconnect drops, explicit
 defeat, and serialized state during a return. Normal controls also walk to and
-operate the village intake and lead the final escort down the drain stairs.
+operate the village intake and old spillway, preserve carried items while
+reading a new page, and lead the final escort down the drain stairs.
 Fixture positioning and inventory transfers isolate other mechanism contracts;
 these are not complete input-only playthroughs.
 Use the spoiler route above for multiplayer difficulty and pacing playtests.

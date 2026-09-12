@@ -20,7 +20,7 @@ func TTBuild()
   TTGate("prison", 1100, 602);
   TTGate("road", 1320, 792);
   TTChest("supplies", 380, 188, 9, 12);
-  TTChest("ballast", 340, 638, 0, 0);
+  TTChest("ballast", 620, 638, 0, 0);
   TTChest("legacy", 1210, 818, 0, 0);
   TTPerson("maker", "Orren", 470, 638);
   TTPerson("factor", "Veyr", 1410, 638);
@@ -76,7 +76,7 @@ func TTUse(string key, object actor)
     if (!TTState(14) || !TTAtHaven("captive",1170,818)) return TTSay("$CacheTooSoon$", actor);
     if (Contained(TTGetBow()) != chest || ContentsCount(TTAR, chest) < 3)
       return TTSay("$CacheNeedsBow$", actor);
-    TTSet(15, true); TTOpen("road", true); return TTSay("$CacheComplete$", actor);
+    TTSet(15, true); TTOpen("road", true); Sound("Bow"); return TTSay("$CacheComplete$", actor);
   }
   return TTInspect(key, actor);
 }

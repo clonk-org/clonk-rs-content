@@ -12,7 +12,7 @@ func TTBuild()
   TTNode("relief", 1260, 418, "$Relief$");
   TTNode("pump", 910, 418, "$Pump$");
   TTNode("chain", 1080, 355, "$Chain$");
-  TTNode("old", 310, 638, "$Old$");
+  TTNode("old", 310, 668, "$Old$");
   TTNode("bell", 200, 188, "$Bell$");
   TTNode("forge", 550, 188, "$Forge$");
   TTGate("school", 1120, 382);
@@ -43,7 +43,7 @@ func TTUse(string key, object actor)
   if (key == "relief") return TTCycle(key, 2, 4);
   if (key == "old")
   {
-    TTSet(8, true); TTOpen("spillway", true);
+    TTSet(8, true); TTOpen("spillway", true); Sound("Bow");
     return TTSay("$OldOpens$", actor);
   }
   if (key == "forge") return TTForge(actor);

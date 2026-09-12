@@ -6,6 +6,7 @@ static tt_clock, tt_read, tt_start_x, tt_start_y, tt_goal, tt_failed;
 func Initialize()
 {
   tt_host = -1;
+  tt_bow = 0;
   tt_state = CreateArray(64);
   tt_nodes = [];
   tt_people = [];
@@ -203,7 +204,7 @@ func TTSay(string text, object actor)
 func TTInspect(string key, object actor)
 {
   var node = TTObject(key);
-  if (!actor || !node || ObjectDistance(node, actor) > 45) return false;
+  if (!actor || !node || ObjectDistance(node, actor) > 100) return false;
   return TTSay(TTClue(key), actor);
 }
 
@@ -275,7 +276,8 @@ func TTTick()
       }
   }
   TTUpdate();
-  if (TTCanFinish())
+  // Evidence pages carry clues for later chapters; never replace an unread page.
+  if (TTCanFinish() && TTMenusClosed())
   {
     tt_finished = true;
     for (var i = 0; i < GetPlayerCount(); ++i) MessageWindow(Format("%s|$FinishPrompt$", TTEnding()), GetPlayerByIndex(i), TTGL);
