@@ -43,7 +43,7 @@ public func Wiegethname(para)
 public func InitializePlayer(iPlayer)
 {
   SetPosition(40,250,GetCrew(iPlayer));
-  Golden(iPlayer);
+  StartGoldenAge(iPlayer);
   return true;
 }
   
