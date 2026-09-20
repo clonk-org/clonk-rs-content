@@ -24,7 +24,7 @@
 //!   repository: its installer copies the same manifest's entries.
 //! * **Order** — entries sorted by their name inside the zip, not by directory
 //!   iteration order.
-//! * **Timestamps** — the 1980 zip epoch. `FileOptions::default()` reads the
+//! * **Timestamps** — the 1980 zip epoch. `SimpleFileOptions::default()` reads the
 //!   wall clock when the `zip` crate's `time` feature is enabled, which feature
 //!   unification could turn on at any time.
 //! * **Modes** — a fixed 0o644. Nothing in the content tree is an executable,
@@ -40,7 +40,7 @@
 use anyhow::{bail, Context, Result};
 use std::path::{Path, PathBuf};
 use std::process::Command;
-use zip::write::FileOptions;
+use zip::write::SimpleFileOptions;
 use zip::{CompressionMethod, ZipWriter};
 
 mod distribution;
@@ -195,10 +195,10 @@ fn write_deterministic_zip(archive_path: &Path, root: &Path, files: &[String]) -
         .with_context(|| format!("unable to create archive {}", archive_path.display()))?;
     let mut zip = ZipWriter::new(std::io::BufWriter::new(file));
 
-    // `FileOptions::default()` reads the wall clock when `zip`'s `time` feature
+    // `SimpleFileOptions::default()` reads the wall clock when `zip`'s `time` feature
     // is enabled, which any dependency could turn on through feature
     // unification.
-    let options = FileOptions::default()
+    let options = SimpleFileOptions::default()
         .compression_method(CompressionMethod::Deflated)
         .last_modified_time(zip::DateTime::default())
         // Nothing in the content tree is executable, so this is a constant
@@ -340,7 +340,15 @@ mod tests {
             .expect("read archive");
         for index in 0..zip.len() {
             let entry = zip.by_index(index).expect("entry");
-            assert_eq!(entry.last_modified().year(), 1980, "{}", entry.name());
+            // `last_modified` became an `Option` in zip 8: an entry with no
+            // timestamp would read as absent rather than as a wrong year, so
+            // assert the stamp is present as well as that it is the epoch.
+            assert_eq!(
+                entry.last_modified().map(|stamp| stamp.year()),
+                Some(1980),
+                "{}",
+                entry.name()
+            );
             // The reader ORs the file-type bits back in, so only the
             // permission bits are ours to assert.
             assert_eq!(
