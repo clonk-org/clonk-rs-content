@@ -12,11 +12,14 @@ anyhow = "1"
 ring = "0.17"
 # Reads packs.toml: selected scopes, dependency checks and required notices.
 toml = "1"
-# Pinned to the exact version and feature set the clonk-rs packaging tool used
-# when it still built this archive. The archive is content-addressed, so a zip
-# implementation that encodes the same files differently would change the digest
-# and make every client re-download the entire archive for nothing.
-zip = { version = "0.6", default-features = false, features = ["deflate"] }
+# The archive is content-addressed and these bytes are what encode it, so this
+# pin is part of the content: moving it moves the digest and every install
+# re-downloads the archive once. No feature set makes that free — zip 8 stamps
+# version-made-by 20 where 0.6.6 stamped 46, and its `deflate` is flate2 over
+# zlib-rs rather than miniz_oxide — so treat a bump here the way
+# .github/dependabot.yml says to, as a content change whose digest was measured
+# before it merged.
+zip = { version = "8.6", default-features = false, features = ["deflate"] }
 
 [[bin]]
 name = "pack-content"
