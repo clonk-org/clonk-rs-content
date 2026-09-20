@@ -59,9 +59,14 @@ protected func ControlRight(object pClonk)
   SetCommand(pClonk,"Get",this(),0,0,0,1);
 }
 
+public func CanBeCollectedBy(object pClonk)
+{
+  return(!FindContents(SAC1,pClonk));
+}
+
 public func ControlDigDouble(object pClonk)
 {
-  [$TxtCollect$|Image=CXIV]
+  [$TxtCollect$|Image=CXIV|Condition=CanBeCollectedBy]
   if(FindContents(SAC1,pClonk)) return(0);
   if(!pClonk->~RejectCollect(GetID(),this())) Enter(pClonk);
   return(1);
