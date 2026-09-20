@@ -26,9 +26,16 @@ protected func ContainedUp()
   Message("$TxtClan$", this(), GetPlayerName(GetOwner()), GetClanCount(), count, szMsg);
 }
 
+public func CanJoinClan(pClonk)
+{
+  if(GetOwner() == NO_OWNER) return(0);
+  if(Hostile(GetOwner(pClonk), GetOwner())) return(0);
+  return(GetClan(pClonk)!=GetClan());
+}
+
 protected func ContextJoinClan(pClonk)
 {
-  [$CtrlJoinClan$|Image=MTIP]
+  [$CtrlJoinClan$|Image=MTIP|Condition=CanJoinClan]
   pClonk->ContainedCall("ContainedDig", this());
 }
 
