@@ -6,7 +6,8 @@
 public func IsFulfilled()
 {
   // Mine versorgt?
-  if(var pObj=GameCall("UBRLTarget"))
+  var pObj=GameCall("UBRLTarget");
+  if(pObj)
     if(!EnergyCheck(100, pObj))
       return(0);
   // fertig?

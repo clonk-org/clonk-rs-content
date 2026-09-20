@@ -5,7 +5,7 @@
 
 func Departure (object pContainer) 
 {
-FindObject(RTVW)->ScheduleCall(0,"AddView",1);
+if(FindObject(RTVW)) FindObject(RTVW)->ScheduleCall(0,"AddView",1);
  return(_inherited(...));
 }
 
