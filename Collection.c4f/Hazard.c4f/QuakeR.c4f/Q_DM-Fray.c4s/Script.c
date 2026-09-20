@@ -212,7 +212,7 @@ protected func InitializePlayer(int iPlr, int iX, int iY, object pBase, int iTea
     RelaunchPlayer(iPlr, pCrew, 0, iTeam);
 }
 
-public func RelaunchPlayer(int iPlr, object pCrew, object pKiller, int iTeam)
+public func RelaunchPlayer(int iPlr, object pCrew, pKiller, int iTeam)
 {
   // Kein ordentlicher Spieler?
   if(GetOwner(pCrew) == NO_OWNER || iPlr == NO_OWNER)
