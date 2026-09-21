@@ -2,7 +2,7 @@
   "schema": 1,
   "baseline_content_commit": "9a01c8f55f0fbdccfa2dcf3a67e3cfcfcac7c009",
   "reader_baseline_engine_commit": "e3d35afcff3411d9c7d8152686ebec87faafd9c7",
-  "reader_sha256": "1dcdedbc2f15b831758f5fb53950f76316a3f89e551305d97ef2c69487ee5b22",
+  "reader_sha256": "174050780e3ca29e0cd2ec35dcc17d8317a200892c5190836da323c63c93127b",
   "scopes": {
     "Version.txt": {
       "rights": "licensed",
@@ -323,8 +323,8 @@
       ],
       "origin": "ucc",
       "file_count": 11936,
-      "bytes": 607908333,
-      "sha256": "408748e4eabd0b7d6d024eabe198dcbefb1ddb0254f4c115f94f0aebde20238d"
+      "bytes": 607861756,
+      "sha256": "7ddb5ab1c77a3388236c2729c922925072d970c3212c01c4ca5aa53cd5d424bc"
     },
     "Golems.c4f": {
       "rights": "assumed",

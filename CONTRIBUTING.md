@@ -69,6 +69,14 @@ directories. **Do not unpack them for consistency with the rest of the tree** �
 and note `grep` cannot see inside them, so a search will under-report call sites
 and translations.
 
+To change something inside one, use `tools/group_entry.py`. It edits the raw
+group image in place — one entry's bytes or name, its size and CRC, and the size
+and CRC of each enclosing child entry — instead of rebuilding the file, which
+restamps its times, and it refuses when its CRC model does not reproduce the
+stored values along the path. `cat` reads an entry out, and `compare` lists
+every difference between the original and the edited file; put that list in the
+pull request.
+
 ## Line endings and encoding
 
 - Content is checked out CRLF (`* text=auto eol=crlf`). Everything under
