@@ -115,8 +115,8 @@ protected func Script1()
   CreateKnight( 959, 339, iPlr=GetNextPlayer(Position_Right,iPlr));
   CreateKnight(1108, 319, iPlr=GetNextPlayer(Position_Right,iPlr));
   // Falls mehr Spieler im Team sind, wollen die natürlich auch Clonks
-  if(GetTeamPlayerCount(Position_Left) > 4)
-    for(var i=4; i<GetTeamPlayerCount(Position_Left); i++)
+  if(GetTeamPlayerCount(Position_Right) > 4)
+    for(var i=4; i<GetTeamPlayerCount(Position_Right); i++)
     {
       var m = i%4;
            if(m == 0)
