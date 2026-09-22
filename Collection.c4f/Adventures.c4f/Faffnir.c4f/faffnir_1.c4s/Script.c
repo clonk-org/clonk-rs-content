@@ -36,7 +36,7 @@ protected func InitializePlayer(int iPlr)
     RemoveAll(BOTP);
     RemoveAll(CRBW);
     RemoveAll(HOOK);
-    RemoveAll(KNPF);
+    RemoveAll(KNFP);
    if(Global(9) < 5) {
     MakeCrewMember(CreateObject(ASAS, 60, 360), iPlr);
     SetPlrViewRange(150, GetCrew(iPlr));
