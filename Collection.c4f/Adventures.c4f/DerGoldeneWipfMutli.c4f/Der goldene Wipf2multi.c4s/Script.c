@@ -11,7 +11,7 @@ public func RelaunchPlayer(iPlr)
   var clnk;
   MakeCrewMember(clnk=CreateObject(ZWPF,GetX(FindObject(PLCE)),GetY(FindObject(PLCE)),iPlr),iPlr);
   SelectCrew(iPlr, clnk, 1);
-  DoEnergy(100000,obj);
+  DoEnergy(100000,clnk);
   return(1);
 }
 

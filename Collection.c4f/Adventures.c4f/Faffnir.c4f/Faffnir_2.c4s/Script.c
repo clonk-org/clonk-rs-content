@@ -54,7 +54,7 @@ protected func InitializePlayer(int iPlr)
     RemoveAll(BOTP);
     RemoveAll(CRBW);
     RemoveAll(HOOK);
-    RemoveAll(KNPF);
+    RemoveAll(KNFP);
    if(Global(9) < 5) {
     if(!GetEffect("NeuerRelaunch")) MakeCrewMember(CreateObject(ASAS, 1910, 733), 1);
       else MakeCrewMember(CreateObject(ASAS, 727,761), 1);
