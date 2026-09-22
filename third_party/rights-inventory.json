@@ -323,8 +323,8 @@
       ],
       "origin": "ucc",
       "file_count": 11936,
-      "bytes": 607824765,
-      "sha256": "808919b44bbe1420c7ab0e8489c7907a1e3366297a1b7212078b0caf36619603"
+      "bytes": 607431350,
+      "sha256": "a1ad383a395365d9ec1f20c8dce2cb7a0035ade25776a3b1c5df6243ba522704"
     },
     "Golems.c4f": {
       "rights": "assumed",
@@ -14562,8 +14562,8 @@
         "resolved": "MetalMagic.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       },
       {
         "reference": "MetalMagicExtra.c4d",
@@ -14856,8 +14856,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1B.c4s": [
@@ -14882,8 +14882,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1C.c4s": [
@@ -14908,8 +14908,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1D.c4s": [
@@ -14934,8 +14934,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1E.c4s": [
@@ -14960,8 +14960,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2A.c4s": [
@@ -14986,8 +14986,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2B.c4s": [
@@ -15012,8 +15012,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       },
       {
         "reference": "MissionsHarkon.c4f/Obj.c4d",
@@ -15042,8 +15042,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       },
       {
         "reference": "MissionsHarkon.c4f/Obj.c4d",
@@ -15072,8 +15072,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2E.c4s": [
@@ -15098,8 +15098,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2F.c4s": [
@@ -15124,8 +15124,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2G.c4s": [
@@ -15150,8 +15150,8 @@
         "resolved": "MetalMagicExtra.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
-        "resolved": null
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
+        "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
     "Collection.c4f/Adventures.c4f/RokanComingBack.c4s": [
@@ -19362,6 +19362,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/Adventure.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19454,6 +19455,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1A.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19461,6 +19463,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1B.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19468,6 +19471,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1C.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19475,6 +19479,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1D.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19482,6 +19487,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1E.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19489,6 +19495,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2A.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19497,6 +19504,7 @@
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2B.c4s": [
       "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d",
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19505,6 +19513,7 @@
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2C.c4s": [
       "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d",
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19512,6 +19521,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2D.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19519,6 +19529,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2E.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19526,6 +19537,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2F.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -19533,6 +19545,7 @@
       "Objects.c4d"
     ],
     "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2G.c4s": [
+      "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
       "Fantasy.c4d",
       "Knights.c4d",
       "MetalMagic.c4d",
@@ -21098,58 +21111,5 @@
       "Objects.c4d"
     ]
   },
-  "unresolved": [
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/Adventure.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1A.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1B.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1C.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1D.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission1E.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2A.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2B.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2C.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2D.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2E.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2F.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    },
-    {
-      "scenario": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Mission2G.c4s",
-      "reference": "MetalMagic.c4f/Misc.c4d"
-    }
-  ]
+  "unresolved": []
 }
