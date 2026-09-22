@@ -375,10 +375,10 @@ func Script420()
   return(1);
 }
 
-func Script410()
+func Script430()
 {
   if(GetCrewCount()<3)
-    return goto(418);
+    return goto(428);
   Sound("Applause");
   Message("");
   goto(980);
