@@ -6,8 +6,8 @@ public func RelaunchPlayer(iPlr)
 {
   if(!GetPlayerName(iPlr)) return(0);
   Global(iPlr)--;
-  if(Global(iPlr)==0){ Log("Du hast versagt."); EliminatePlayer(iPlr); return(0);}
-  Log("%s hat einen Relaunch verbraucht! Er hat %d Relaunchs übrig!",GetPlayerName(iPlr),Global(iPlr));
+  if(Global(iPlr)==0){ Log("$MsgFailed$"); EliminatePlayer(iPlr); return(0);}
+  Log("$MsgRelaunchUsed$",GetPlayerName(iPlr),Global(iPlr));
   var clnk;
   MakeCrewMember(clnk=CreateObject(ZWPF,GetX(FindObject(PLCE)),GetY(FindObject(PLCE)),iPlr),iPlr);
   SelectCrew(iPlr, clnk, 1);
@@ -110,14 +110,14 @@ SetPosition(GetX(FindObject(PLCE)),GetY(FindObject(PLCE)),GetCrew(iPlr));
 
 func Script1()
 {
-Message("<c ff4000>Bringt den goldenen Wipf sicher zum Turm zurück!");
+Message("$MsgBringWipfBack$");
 }
 
 
 func Script18()
 {
 if(!FindObject(WIPF)) {
-Message("@Der Wipf ist tot! Du hast versagt");
+Message("$MsgWipfDead$");
 for(var i=0; i < GetPlayerCount(); i++)
 EliminatePlayer(GetPlayerByIndex(i));
 SetPlrViewRange(0,GetCrew(i));
@@ -225,7 +225,7 @@ SetObjectStatus(1,GetCrew(u));
 {
 
 if(!FindObject(WIPF)) {
-Message("@Der Wipf ist tot! Du hast versagt");
+Message("$MsgWipfDead$");
 for(var i=0; i < GetPlayerCount(); i++)
 EliminatePlayer(GetPlayerByIndex(i));
 SetPlrViewRange(0,GetCrew(i));
@@ -313,7 +313,7 @@ func Script30()
 {
 
 if(!FindObject(WIPF)) {
-Message("@Der Wipf ist tot! Du hast versagt");
+Message("$MsgWipfDead$");
 for(var i=0; i < GetPlayerCount(); i++)
 EliminatePlayer(GetPlayerByIndex(i));
 SetPlrViewRange(0,GetCrew(i));
@@ -404,7 +404,7 @@ func Script37()
 {
 
 if(!FindObject(WIPF)) {
-Message("@Der Wipf ist tot! Du hast versagt");
+Message("$MsgWipfDead$");
 for(var i=0; i < GetPlayerCount(); i++)
 EliminatePlayer(GetPlayerByIndex(i));
 SetPlrViewRange(0,GetCrew(i));
@@ -479,7 +479,7 @@ SetSkyAdjust(RGB(250,250,250));
 func Script40()
 {
 if(!FindObject(WIPF)) {
-Message("@Der Wipf ist tot! Du hast versagt");
+Message("$MsgWipfDead$");
 for(var i=0; i < GetPlayerCount(); i++)
 EliminatePlayer(GetPlayerByIndex(i));
 SetPlrViewRange(0,GetCrew(i));
@@ -498,12 +498,12 @@ goto(39);
 
 func Script41()
 {
-Message("@<c %x>Sven2: Hurra! Du hast uns den Wipf wieder gebracht!",FindObject(CLNK),GetColorDw(FindObject(CLNK)));
+Message("$MsgSvenHooray$",FindObject(CLNK),GetColorDw(FindObject(CLNK)));
 }
 
 func Script52()
 {
-Message("@<c %x>Sven2: Nun können wir die GWE weiter entwickeln!",FindObject(CLNK),GetColorDw(FindObject(CLNK)));
+Message("$MsgSvenDevelop$",FindObject(CLNK),GetColorDw(FindObject(CLNK)));
 }
 
 func Script56()
@@ -588,7 +588,7 @@ SetDir(0,Global(52));
 
 func Script71()
 {
-Message("@<c %x>Sven2: So, endlich herscht wieder Frieden im Clonkreich",Global(50),GetColorDw(Global(50)));
+Message("$MsgSvenPeace$",Global(50),GetColorDw(Global(50)));
 }
 
 func Script80()
@@ -604,7 +604,7 @@ Message("@<c %x>boni: Wtf?!",Global(51),GetColorDw(Global(51)));
 
 func Script85()
 {
-Message("@<c %x>Sven2: Wir können nun ungestört an unserer Engine weiterarbeiten :)",Global(50),GetColorDw(Global(50)));
+Message("$MsgSvenWork$",Global(50),GetColorDw(Global(50)));
 }
 
 
@@ -619,30 +619,30 @@ SetCommand(Global(52),"MoveTo",Global(52),10);
 
 func Script95()
 {
-Message("@<c %x>boni: HILFE! Das kitzelt!",Global(51),GetColorDw(Global(51)));
+Message("$MsgBoniTickles$",Global(51),GetColorDw(Global(51)));
 SetCommand(Global(51),"MoveTo",Global(51),-15);
 }
 
 func Script99()
 {
-Message("@<c %x>Sven2: Solang wir boni zur Unterhaltung haben kann nichts schief gehen...!",Global(50),GetColorDw(Global(50)));
+Message("$MsgSvenBoni$",Global(50),GetColorDw(Global(50)));
 Message("@<c %x>Clonk: Yay!",Global(52),GetColorDw(Global(52)));
 }
 
 func Script105()
 {
 SetCommand(Global(51),"MoveTo",Global(51),-30,-100);
-Message("@<c %x>boni: Omg! blaue Particle naiiin!",Global(51),GetColorDw(Global(51)));
+Message("$MsgBoniParticles$",Global(51),GetColorDw(Global(51)));
 SetCommand(Global(52),"MoveTo",Global(52),-40);
 Message("<c %x>",Global(52),GetColorDw(Global(52)));
 }
 
 func Script115()
 {
-Message("@<c %x>Sven2: Öhm wo ist boni überhaupt?!",Global(50),GetColorDw(Global(50)));
+Message("$MsgSvenWhereBoni$",Global(50),GetColorDw(Global(50)));
 SetCommand(Global(50),"MoveTo",Global(50),20);
 SetCommand(Global(52),"MoveTo",Global(52),10);
-Message("@<c %x>Clonk: kA?!",Global(52),GetColorDw(Global(52)));
+Message("$MsgClonkNoIdea$",Global(52),GetColorDw(Global(52)));
 }
 
 func Script127()
@@ -654,13 +654,13 @@ Message("@<c %x>",Global(52),GetColorDw(Global(52)));
 
 func Script133()
 {
-Message("@<c %x>Sven2: Holt die Paladine zurück!",Global(50),GetColorDw(Global(50)));
+Message("$MsgSvenPaladins$",Global(50),GetColorDw(Global(50)));
 SetCommand(Global(50),"MoveTo",Global(50),-30);
 }
 
 func Script135()
 {
-Message("@<c %x>Clonk: KE!",Global(52),GetColorDw(Global(52)));
+Message("$MsgClonkOkay$",Global(52),GetColorDw(Global(52)));
 SetCommand(Global(52),"Enter",FindObject(CPKT));
 }
 

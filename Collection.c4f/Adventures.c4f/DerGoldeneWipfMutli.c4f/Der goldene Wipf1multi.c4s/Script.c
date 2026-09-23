@@ -6,8 +6,8 @@ public func RelaunchPlayer(iPlr)
 {
   if(!GetPlayerName(iPlr)) return(0);
   Global(iPlr)--;
-  if(Global(iPlr)==0){ Log("Du hast versagt."); EliminatePlayer(iPlr); return(0);}
-  Log("%s hat einen Relaunch verbraucht! Er hat %d Relaunchs übrig!",GetPlayerName(iPlr),Global(iPlr));
+  if(Global(iPlr)==0){ Log("$MsgFailed$"); EliminatePlayer(iPlr); return(0);}
+  Log("$MsgRelaunchUsed$",GetPlayerName(iPlr),Global(iPlr));
   var clnk;
   MakeCrewMember(clnk=CreateObject(ZWPF,GetX(FindObject(PLCE)),GetY(FindObject(PLCE)),iPlr),iPlr);
   SelectCrew(iPlr, clnk, 1);
@@ -93,17 +93,17 @@ SetPosition(GetX(FindObject(PLCE)),GetY(FindObject(PLCE)),GetCrew(iPlr));
 
 func Script4()
 {
-Message("@<c ff4000>Man hat deinen goldenen Wipf geklaut!");
+Message("$MsgWipfStolen$");
 }
 
 func Script10()
 {
-Message("<c ff4000>Töte die Wachen am Eingang und dringe in das Reich des bösen ein!");
+Message("$MsgKillGuards$");
 }
 
 func Script15()
 {
-Message("<c ff4000>loslos!");
+Message("$MsgGoGo$");
 }
 
 func Script18()
@@ -227,7 +227,7 @@ goto(28);
 
 func Script33()
 {
-Message("<c ff4000>Glückwunsch du hast den Wipf!");
+Message("$MsgGotWipf$");
 }
 
 func Script36()

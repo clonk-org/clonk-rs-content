@@ -1,0 +1,15 @@
+MsgFailed=You have failed.
+MsgRelaunchUsed=%s has used up a relaunch! %d relaunches left!
+MsgBringWipfBack=<c ff4000>Bring the golden wipf safely back to the tower!
+MsgWipfDead=@The wipf is dead! You have failed
+MsgSvenHooray=@<c %x>Sven2: Hooray! You brought the wipf back to us!
+MsgSvenDevelop=@<c %x>Sven2: Now we can keep developing the GWE!
+MsgSvenPeace=@<c %x>Sven2: So, at last there is peace in the clonk realm again
+MsgSvenWork=@<c %x>Sven2: Now we can get back to work on our engine in peace :)
+MsgBoniTickles=@<c %x>boni: HELP! That tickles!
+MsgSvenBoni=@<c %x>Sven2: As long as we have boni to entertain us, nothing can go wrong...!
+MsgBoniParticles=@<c %x>boni: Omg! Blue particles, noooo!
+MsgSvenWhereBoni=@<c %x>Sven2: Um, where is boni anyway?!
+MsgClonkNoIdea=@<c %x>Clonk: No idea?!
+MsgSvenPaladins=@<c %x>Sven2: Bring the paladins back!
+MsgClonkOkay=@<c %x>Clonk: K!
