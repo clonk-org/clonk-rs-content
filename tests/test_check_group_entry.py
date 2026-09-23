@@ -200,6 +200,119 @@ class GroupEntryTests(unittest.TestCase):
                 with self.assertRaisesRegex(group_entry.GroupEntryError, message):
                     group_entry.edit_entry(nested(), parts, change)
 
+    def test_an_added_file_is_what_a_fresh_build_appends(self) -> None:
+        edited = group_entry.add_entry(
+            nested(), ["Helper.c4d", "Rule.c4d", "DescUS.txt"], b"A rule.\r\n"
+        )
+
+        rebuilt = image(
+            [
+                ("Scenario.txt", b"[Head]\r\n"),
+                (
+                    "Helper.c4d",
+                    [
+                        ("Names.txt", b"DE:Helfer\r\n"),
+                        (
+                            "Rule.c4d",
+                            [
+                                ("DefCore.txt", b"id=RULE\r\n"),
+                                ("Script.c", b"a();\r\nb();\r\n"),
+                                ("DescUS.txt", b"A rule.\r\n"),
+                            ],
+                        ),
+                        ("After.txt", b"after"),
+                    ],
+                ),
+                ("Title.txt", b"US:Title\r\n"),
+            ]
+        )
+        self.assertEqual(edited, rebuilt)
+        self.assertEqual(
+            group_entry.read_entry(edited, ["Helper.c4d", "Rule.c4d", "DescUS.txt"]),
+            b"A rule.\r\n",
+        )
+
+    def test_a_file_is_added_to_the_top_group_too(self) -> None:
+        edited = group_entry.add_entry(nested(), ["StringTblUS.txt"], b"Key=Value\r\n")
+
+        self.assertEqual(group_entry.read_entry(edited, ["StringTblUS.txt"]), b"Key=Value\r\n")
+        self.assertEqual(group_entry.read_entry(edited, ["Helper.c4d", "After.txt"]), b"after")
+        self.assertEqual(
+            group_entry.compare(nested(), edited, "g"),
+            ["g: group header differs", "g: entry StringTblUS.txt added"],
+        )
+
+    def test_an_added_file_reports_every_group_on_its_path(self) -> None:
+        edited = group_entry.add_entry(
+            nested(), ["Helper.c4d", "Rule.c4d", "DescUS.txt"], b"A rule.\r\n"
+        )
+
+        self.assertEqual(
+            group_entry.compare(nested(), edited, "g"),
+            [
+                "g/Helper.c4d: record differs in ['size', 'crc']",
+                "g/Helper.c4d/Rule.c4d: record differs in ['size', 'crc']",
+                "g/Helper.c4d/Rule.c4d: group header differs",
+                "g/Helper.c4d/Rule.c4d: entry DescUS.txt added",
+            ],
+        )
+
+    def test_an_added_file_keeps_the_crc_convention_of_its_group(self) -> None:
+        edited = group_entry.add_entry(
+            nested(crc_state=0), ["Helper.c4d", "Rule.c4d", "DescUS.txt"], b"A rule.\r\n"
+        )
+
+        rule = self.child(self.child(edited, "Helper.c4d"), "Rule.c4d")
+        added = group_entry.records(rule)[0][-1]
+        self.assertEqual((added["name"], added["crc_state"], added["crc"]), (b"DescUS.txt", 0, 0))
+
+    def child(self, group: bytes, name: str) -> bytes:
+        """The image of the child group `name` inside `group`."""
+        entries, start = group_entry.records(group)
+        entry = next(entry for entry in entries if entry["name"] == name.encode("latin-1"))
+        return group[start + entry["offset"] : start + entry["offset"] + entry["size"]]
+
+    def test_an_addition_that_is_not_exactly_one_new_file_is_refused(self) -> None:
+        for parts, message in [
+            (["Helper.c4d", "Rule.c4d", "SCRIPT.C"], "already an entry"),
+            (["Title.txt", "Inner.txt"], "is not a child group"),
+            (["Missing.c4d", "Inner.txt"], "0 entries"),
+            (["Helper.c4d", ""], "unusable entry name"),
+        ]:
+            with self.subTest(message=message):
+                with self.assertRaisesRegex(group_entry.GroupEntryError, message):
+                    group_entry.add_entry(nested(), parts, b"data")
+
+    def test_the_add_command_writes_the_new_entry_into_the_packed_file(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "Pack.c4s"
+            path.write_bytes(group_entry.pack(nested(), MEMBER_HEADER))
+            data = Path(directory) / "DescUS.txt"
+            data.write_bytes(b"A rule.\r\n")
+
+            output = io.StringIO()
+            with contextlib.redirect_stdout(output), contextlib.redirect_stderr(output):
+                self.assertEqual(
+                    group_entry.main(
+                        ["add", str(path), "Helper.c4d/Rule.c4d/DescUS.txt", str(data)]
+                    ),
+                    0,
+                )
+                self.assertEqual(
+                    group_entry.main(
+                        ["add", str(path), "Helper.c4d/Rule.c4d/DescUS.txt", str(data)]
+                    ),
+                    1,
+                )
+            self.assertEqual(path.read_bytes()[:10], MEMBER_HEADER)
+            self.assertEqual(
+                group_entry.read_entry(
+                    group_entry.unpack(path.read_bytes()), ["Helper.c4d", "Rule.c4d", "DescUS.txt"]
+                ),
+                b"A rule.\r\n",
+            )
+            self.assertIn("is already an entry", output.getvalue())
+
     def test_the_command_rewrites_a_packed_file_and_keeps_its_member_header(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "Pack.c4s"

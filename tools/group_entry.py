@@ -28,8 +28,15 @@ not reproduce, then writes the new CRC in the record's own state. State 0
 records carry no CRC (older writers; the engine calculates it on demand) and
 are left as they are. A child group in state 1, or any other state, is refused.
 
+`add` appends a new file entry to a group: its record after the group's last
+record and its data after the group's last data, so every existing entry keeps
+its offset. The new record takes the newest time of the entries beside it and
+their CRC state, 2 or 0; beside mixed or legacy states it is refused, as is a
+name that is already an entry.
+
   group_entry.py replace <group> <Child.c4d/.../Entry> <old-bytes-file> <new-bytes-file>
   group_entry.py rename  <group> <Child.c4d/.../Entry> <NewName>
+  group_entry.py add     <group> <Child.c4d/.../NewEntry> <data-file>
   group_entry.py cat     <group> <Child.c4d/.../Entry> <output-file>
   group_entry.py compare <original-group> <edited-group>
 """
@@ -119,8 +126,9 @@ def contents_crc(entries: list[dict]) -> int:
     return crc
 
 
-def edit_entry(image: bytes, parts: list[str], change: Change) -> bytes:
-    """Apply `change(name, data) -> (name, data)` to the entry at `parts`."""
+def edit_entry(image: bytes, parts: list[str], change: Change, *, group: bool = False) -> bytes:
+    """Apply `change(name, data) -> (name, data)` to the entry at `parts`: a
+    file, or with `group` the image of a child group."""
     entries, data_start = records(image)
     wanted = parts[0].encode("latin-1").lower()
     matches = [entry for entry in entries if entry["name"].lower() == wanted]
@@ -135,7 +143,7 @@ def edit_entry(image: bytes, parts: list[str], change: Change) -> bytes:
     end = begin + target["size"]
     data = image[begin:end]
 
-    if len(parts) == 1:
+    if len(parts) == 1 and not group:
         if target["child"]:
             raise GroupEntryError(f"{parts[0]!r} is a child group")
         if checked and file_crc(data, target["name"]) != target["crc"]:
@@ -160,8 +168,11 @@ def edit_entry(image: bytes, parts: list[str], change: Change) -> bytes:
             raise GroupEntryError(f"{parts[0]!r}: a legacy CRC on a child group")
         if checked and contents_crc(records(data)[0]) != target["crc"]:
             raise GroupEntryError("child CRC model does not hold")
-        name = target["name"]
-        replaced = edit_entry(data, parts[1:], change)
+        if len(parts) == 1:
+            name, replaced = change(target["name"], data)
+        else:
+            name = target["name"]
+            replaced = edit_entry(data, parts[1:], change, group=group)
         crc = contents_crc(records(replaced)[0]) if checked else target["crc"]
 
     delta = len(replaced) - len(data)
@@ -199,15 +210,57 @@ def read_entry(image: bytes, parts: list[str]) -> bytes:
     return captured[0]
 
 
+def appended(image: bytes, name: str, data: bytes) -> bytes:
+    """`image` with a new file entry after its last record and after all of its
+    data, so every existing entry keeps its offset. The record takes the newest
+    time and the CRC convention of the entries beside it."""
+    entries, data_start = records(image)
+    encoded = name.encode("latin-1")
+    if len(encoded) >= NAME or b"\0" in encoded or not encoded:
+        raise GroupEntryError(f"unusable entry name {encoded!r}")
+    if any(entry["name"].lower() == encoded.lower() for entry in entries):
+        raise GroupEntryError(f"{encoded!r} is already an entry")
+    states = {entry["crc_state"] for entry in entries} or {2}
+    if len(states) != 1 or not states <= {0, 2}:
+        raise GroupEntryError(f"cannot follow the CRC states {sorted(states)} beside {encoded!r}")
+    state = states.pop()
+
+    record = bytearray(RECORD)
+    record[: len(encoded)] = encoded
+    struct.pack_into("<4i", record, 264, 0, len(data), 0, len(image) - data_start)
+    times = (struct.unpack_from("<I", image, entry["start"] + 280)[0] for entry in entries)
+    struct.pack_into("<I", record, 280, max(times, default=0))
+    record[284] = state
+    struct.pack_into("<I", record, 285, file_crc(data, encoded) if state == 2 else 0)
+    header = bytearray(unscramble(image[:HEADER]))
+    struct.pack_into("<i", header, 36, len(entries) + 1)
+    return unscramble(bytes(header)) + image[HEADER:data_start] + bytes(record) + image[data_start:] + data
+
+
+def add_entry(image: bytes, parts: list[str], data: bytes) -> bytes:
+    """Add a file entry: `parts` names the child groups down to it, then the
+    new entry's name."""
+    if len(parts) == 1:
+        return appended(image, parts[0], data)
+    return edit_entry(
+        image,
+        parts[:-1],
+        lambda name, group: (name, appended(group, parts[-1], data)),
+        group=True,
+    )
+
+
 def compare(first: bytes, second: bytes, where: str) -> list[str]:
-    """Every difference between two images, entry by entry, by position."""
+    """Every difference between two images, entry by entry, by position. Entries
+    appended after all of the first image's entries are reported as added."""
     report = []
     if first[:HEADER] != second[:HEADER]:
         report.append(f"{where}: group header differs")
-    left, right = records(first)[0], records(second)[0]
+    (left, first_start), (right, second_start) = records(first), records(second)
     if len(left) != len(right):
-        return report + [f"{where}: {len(left)} entries became {len(right)}"]
-    first_start = HEADER + len(left) * RECORD
+        prefix = [entry["name"] for entry in right[: len(left)]]
+        if len(right) < len(left) or prefix != [entry["name"] for entry in left]:
+            return report + [f"{where}: {len(left)} entries became {len(right)}"]
     for a, b in zip(left, right):
         path = f"{where}/{b['name'].decode('latin-1')}"
         if a["name"] != b["name"]:
@@ -230,12 +283,13 @@ def compare(first: bytes, second: bytes, where: str) -> list[str]:
                 f"{path}: record differs in {fields}{' and OTHER BYTES' if other else ''}"
             )
         data_a = first[first_start + a["offset"] : first_start + a["offset"] + a["size"]]
-        data_b = second[first_start + b["offset"] : first_start + b["offset"] + b["size"]]
+        data_b = second[second_start + b["offset"] : second_start + b["offset"] + b["size"]]
         if data_a != data_b:
             if a["child"]:
                 report.extend(compare(data_a, data_b, path))
             else:
                 report.append(f"{path}: data differs, {len(data_a)} -> {len(data_b)} bytes")
+    report.extend(f"{where}: entry {e['name'].decode('latin-1')} added" for e in right[len(left) :])
     return report
 
 
@@ -260,6 +314,9 @@ def main(argv: list[str]) -> int:
             print(rewrite(Path(args[0]), editing(args[1], replacing(old, new))))
         elif command == "rename" and len(args) == 3:
             print(rewrite(Path(args[0]), editing(args[1], renaming(args[2]))))
+        elif command == "add" and len(args) == 3:
+            data = Path(args[2]).read_bytes()
+            print(rewrite(Path(args[0]), lambda image: add_entry(image, args[1].split("/"), data)))
         elif command == "cat" and len(args) == 3:
             data = read_entry(unpack(Path(args[0]).read_bytes()), args[1].split("/"))
             Path(args[2]).write_bytes(data)
