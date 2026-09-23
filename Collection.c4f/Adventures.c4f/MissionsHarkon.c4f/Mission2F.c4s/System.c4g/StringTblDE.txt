@@ -1,0 +1,2 @@
+Cave01=Level beenden
+Cave02=Abbrechen

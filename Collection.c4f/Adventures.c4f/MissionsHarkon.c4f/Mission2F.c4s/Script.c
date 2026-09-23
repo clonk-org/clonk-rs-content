@@ -63,7 +63,7 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 
 func Nothing() { return; }
 
-public func MsgSignpost1()  { return "Die Höhle erkunden"; }
+public func MsgSignpost1()  { return "$Goal01$"; }
 
 public func IsFullfilled() { return 1; }
 public func FullfillText() { return ""; }
@@ -72,7 +72,7 @@ func AI_EncounterENMY()
 {
   DisableAI();
 	for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
-		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("Du wurdest entdeckt!");
+		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("$Goal02$");
 }
 
 func AI_HomeReached(pTarget)
@@ -91,7 +91,7 @@ global func DisableAI()
 public func GoalText()
 {
 	if(g_StoryIndex == 0)
-		return "Lass den Boten das Tor öffnen und töte ihm bevor er in die Höhle geht.";
+		return "$Goal03$";
 }
 
 global func LogRobbers()

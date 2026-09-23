@@ -1,0 +1,2 @@
+Blimp01=Level beenden
+Blimp02=Abbrechen

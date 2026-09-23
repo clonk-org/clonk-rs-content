@@ -1,0 +1,6 @@
+Goal01=Machine room, entry only with the count's permission. Whoever breaks anything gets a beating!
+Goal02=Fukat's high-security cell! Do not leave crystals lying nearby! Push the food under the gate!
+Goal03=Out of the dungeon.
+Goal04=You still have to free Marc!
+Goal05=Find Marc's dungeon cell and free Marc.
+Goal06=Return to the signpost to tell Juncus about Marc's execution.

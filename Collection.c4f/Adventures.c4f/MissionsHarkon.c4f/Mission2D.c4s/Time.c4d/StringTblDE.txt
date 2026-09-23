@@ -1,0 +1,10 @@
+Story01=Buch Harkon, Kapitel 2
+Story02=Harkon hat nun Marc erstmal vor dem Strick bewahrt, doch er ist noch immer nicht in Sicherheit. In der Zwischenzeit ist aber auch in Kanderien die Zeit nicht stehen geblieben.
+Story03=Die Schlachten laufen zur Zeit sehr gut, doch ich mache mir immer noch Sorgen wegen des Jungen...
+Story04=Herr, ich habe unseren besten Späher ausgeschickt, alles über den Jungen heraus zu finden.
+Story05=Ich hoffe nur, dass wir noch nicht zu spät dran sind. Wenn jemand das Geheimnis herausfindet, dann kann das verheerende Folgen haben!
+Story06=Nun geh und berichte mir, sobald du Neuigkeiten über die Sache hast. Und wie gesagt, strengste Geheimhaltung!
+Story07=Jetzt habe ich Marc bis in den Wald geschleppt. Am anderen Ende des Waldes steht mein Luftschiff zur Flucht.
+Story08=Ich sollte mich beeilen, denn sie werden mich bestimmt verfolgen, um Marc zurück zu bekommen. Eventuell brauche ich auch noch ein Katapult, um Marc den Berg zum Luftschiff hoch zu bekommen. [Katapult anfassen, wärend Marc getragen wird]
+Story09=Er ist hier irgendwo in den Wald gerannt mit der Leiche. Wir müssen die Leiche unbedingt finden, sonst wird Fenring bestimmt sehr wütend auf uns. Und schaut euch gut um, dass ihr auch einen getarnten Assassinen findet, da muss noch einer da sein!
+Story10=Args, das war Rettung in letzter Sekunde!

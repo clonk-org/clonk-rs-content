@@ -1,0 +1,15 @@
+Story01=Book of Harkon, Chapter 2
+Story02=After barely escaping Fenring's guards with Marc, Harkon now brings Marc back to Rockfort.
+Story03=There comes Harkon back with the blimp!
+Story04=Welcome back, Marc, I was very worried.
+Story05=Yes, phew, that was really close, they almost caught us as we escaped.
+Story06=Marc, tell us what happened, how could Fenring capture you?
+Story07=It was a trap. Fenring was already expecting me, there was nothing I could do.
+Story08=Very disturbing. We absolutely must find out more.
+Story09=Marc, get some rest first. Harkon, you must go straight back to Fenring's castle and try to find out more. We absolutely must get to the count.
+Story10=What? I've flown here all night and now I'm supposed to set off again? What is this? Can't Fred or Malvin do it?
+Story11=You two had better not tell anyone here that it was a trap for now, because maybe we have a spy among us who tipped him off. Just act as if it was your fault, Harkon!
+Story12=You'd best do what he said. But from what I overheard from Fenring's guards, Fenring has long since withdrawn to a secret hideout in the mountains. His mage keeps the entrance hidden with a powerful spell.
+Story13=Ok, then I guess I'll fly back again and deal with this mage...
+Story14=Now I have to infiltrate Fenring's castle once more and take out his court mage, whose spell protects Fenring's hideout.
+Story15=There, the mage is dying. Now to get away from here, fast.

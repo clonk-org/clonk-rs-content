@@ -1,0 +1,6 @@
+Goal01=Hier geht es zum Kerker. Betreten für Unbefugte verboten.
+Goal02=Schlafraum. Absolute Nachtruhe um 22.00! Kein Alkohol auf den Zimmern.
+Goal03=Links Königliches Gemach. Rechts Thronsaal. Bei Eintritt dem Graf huldigen.
+Goal04=Weg von der Burg.
+Goal05=Maron ist noch am Leben!
+Goal06=Töte Maron und kehre zurück zum Wegweiser.

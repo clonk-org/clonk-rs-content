@@ -1,0 +1,6 @@
+Goal01=Maschienenraum, betreten nur mit Gräflicher Genehmigung. Wer was kaputt macht wird verprügelt!
+Goal02=Hochsicherheitszelle von Fukat! Keine Kristalle in der Nähe liegen lassen! Das Essen unter dem Tor durchschieben!
+Goal03=Raus aus dem Kerker.
+Goal04=Du musst noch Marc befreien!
+Goal05=Finde Marcs Kerkerzelle und befreie Marc.
+Goal06=Kehre zurück zum Wegweiser um Juncus von Marcs Hinrichtung zu berichten.

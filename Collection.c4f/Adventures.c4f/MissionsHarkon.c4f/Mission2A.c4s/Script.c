@@ -34,9 +34,9 @@ func DoStartSzen()
 
   AI_SetDifficulty(1);
 
-  AssignWScriptText(LOCK, [ROCK, ["Hier geht es zum Kerker. Betreten für Unbefugte verboten."]]);
-  AssignWScriptText(BED1, [BED1, ["Schlafraum. Absolute Nachtruhe um 22.00! Kein Alkohol auf den Zimmern."]]);
-  AssignWScriptText(KING, [CRWN, ["Links Königliches Gemach. Rechts Thronsaal. Bei Eintritt dem Graf huldigen."]]);
+  AssignWScriptText(LOCK, [ROCK, ["$Goal01$"]]);
+  AssignWScriptText(BED1, [BED1, ["$Goal02$"]]);
+  AssignWScriptText(KING, [CRWN, ["$Goal03$"]]);
 	
   for (var pObj in FindObjects(Find_Func("IsTree")))
   {
@@ -95,16 +95,16 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 	return 1;
 }
 
-public func MsgSignpost1()  { return "Weg von der Burg."; }
+public func MsgSignpost1()  { return "$Goal04$"; }
 
 public func IsFullfilled() { return GetID(FindObject2(Find_ID(_FBO))->Contained()) == BGST; }
-public func FullfillText() { return "Du musst das Buch mitbringen!"; }
+public func FullfillText() { return "$Goal05$"; }
 
 func AI_EncounterENMY()
 {
   DisableAI();
 	for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
-		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("Du wurdest entdeckt!");
+		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("$Goal06$");
 }
 
 // KI ausschalten
@@ -118,5 +118,5 @@ global func DisableAI()
 public func GoalText()
 {
 	if(g_StoryIndex == 0)
-		return "Brich in die Burg ein und stiel das rote Buch. Kehre damit zum Wegweiser zurück.";
+		return "$Goal07$";
 }

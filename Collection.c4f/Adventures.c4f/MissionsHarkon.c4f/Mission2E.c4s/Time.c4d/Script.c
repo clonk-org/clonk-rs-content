@@ -56,7 +56,7 @@ func DoStart()
   g_pCamera->SetPlrViewRange(200);
 	FilmFadeDark();
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 2", "1"], "Nachdem Harkon mit Marc nur knapp von Fenrings Wachen fliehen konnte, bringt er nun Marc zurück nach Rockfort.", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -75,7 +75,7 @@ func Text0()
 func Text1()
 {
   // Auftrag
-  DialogMessage(pGuard, "Da kommt Harkon mit dem Luftschiff zurück!", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(pGuard, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
 	PosCam(pBlimp);
 }
 
@@ -90,44 +90,44 @@ func Text2()
 	}
 	AddCommand(pClonk, "MoveTo", 0, 638, 250);
 	AddCommand(pMarc,  "MoveTo", 0, 582, 250);
-	DialogMessage(pMage, "Willkommen zurück Marc, ich hatte mir schon große Sorgen gemacht.", "Text3", 0, 0, "Dialog3.ogg");
+	DialogMessage(pMage, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 }
 
 func Text3()
 {
-  DialogMessage(pClonk, "Ja puh, das war echt knapp, fast hätten sie uns auf der Flucht noch erwischt.", "Text4", 0, 0, "Dialog4.ogg");
+  DialogMessage(pClonk, "$Story05$", "Text4", 0, 0, "Dialog4.ogg");
 }
 
 func Text4()
 {
-  DialogMessage(pMage, "Marc, erzähl doch mal was passiert ist, warum konnte Fenring dich festnehmen?", "Text5", 0, 0, "Dialog5.ogg");
+  DialogMessage(pMage, "$Story06$", "Text5", 0, 0, "Dialog5.ogg");
 }
 
 func Text5()
 {
-  DialogMessage(pMarc, "Es war eine Falle. Fenring hatte mich schon erwartet, ich konnte nichts machen.", "Text6", 0, 0, "Dialog6.ogg");
+  DialogMessage(pMarc, "$Story07$", "Text6", 0, 0, "Dialog6.ogg");
 	pClonk->SetDir(0);
 }
 
 func Text6()
 {
-  DialogMessage(pMage, "Sehr beunruhigend. Wir müssen unbedingt mehr herausfinden.", "Text7", 0, 0, "Dialog7.ogg");
+  DialogMessage(pMage, "$Story08$", "Text7", 0, 0, "Dialog7.ogg");
 	pClonk->SetDir(1);
 }
 
 func Text7()
 {
-  DialogMessage(pMage, "Marc, ruh dich erstmal aus. Harkon, du musst sofort nochmal zurück zur Burg von Fenring und versuchen mehr herauszufinden. Wir müssen unbedingt an den Grafen rankommen.", "Text8", 0, 0, "Dialog8.ogg");
+  DialogMessage(pMage, "$Story09$", "Text8", 0, 0, "Dialog8.ogg");
 }
 
 func Text8()
 {
-  DialogMessage(pClonk, "Was? Ich bin die ganze Nacht durch hergeflogen und soll jetzt schon wieder aufbrechen? Was soll das? Kann das nicht Fred oder Malvin machen?", "Text9", 0, 0, "Dialog9.ogg");
+  DialogMessage(pClonk, "$Story10$", "Text9", 0, 0, "Dialog9.ogg");
 }
 
 func Text9()
 {
-  DialogMessage(pMage, "Ihr beide erzählt am besten erstmal keinem hier davon, dass es eine Falle war, denn vielleicht haben wir einen Spion unter uns, der ihn vorher informiert hat. Tut einfach so, als wäre es dein Fehler gewesen, Harkon!", "Text10", 0, 0, "Dialog10.ogg");
+  DialogMessage(pMage, "$Story11$", "Text10", 0, 0, "Dialog10.ogg");
 }
 
 func Text10()
@@ -140,13 +140,13 @@ func Text10()
 
 func Text11()
 {
-  DialogMessage(pMarc, "Tu am besten was er gesagt hat. Aber nach dem was ich von Fenrings Wachen belauschen konnte, hat sich Fenring längst in ein geheimes Versteck in den Bergen abgesetzt. Sein Magier hält den Zugang dazu mit einem starken Zauber verborgen.", "Text12", 0, 0, "Dialog11.ogg");
+  DialogMessage(pMarc, "$Story12$", "Text12", 0, 0, "Dialog11.ogg");
 	pClonk->SetDir(0);
 }
 
 func Text12()
 {
-  DialogMessage(pClonk, "Ok, dann fliege ich wohl mal wieder zurück und knöpfe mir diesen Magier vor...", "Text13", 0, 0, "Dialog12.ogg");
+  DialogMessage(pClonk, "$Story13$", "Text13", 0, 0, "Dialog12.ogg");
 }
 
 func Text13()
@@ -189,7 +189,7 @@ func DoStart2()
 func TextB1()
 {
   // Auftrag
-  DialogMessage(pClonk, "Nun muss ich wohl nochmal Fenrings Burg infiltrieren und seinen Hofmagier ausschalten, der mit seinem Zauber das Versteck von Fenring schützt.", "EndIntro", 0, 0, "Dialog13.ogg");
+  DialogMessage(pClonk, "$Story14$", "EndIntro", 0, 0, "Dialog13.ogg");
 }
 
 func EndIntro()
@@ -208,7 +208,7 @@ func DoStartSzen()
 func ScriptFinishedCondition() { return GameCall("IsFullfilled"); }
 
 func ScriptFinished() {
-  DialogMessage(pClonk, "So, der Magier liegt im Sterben. Jetzt aber schnell weg von hier.", "Nothing", 0, 0, "Dialog14.ogg");
+  DialogMessage(pClonk, "$Story15$", "Nothing", 0, 0, "Dialog14.ogg");
 }
 
 func Nothing() {}

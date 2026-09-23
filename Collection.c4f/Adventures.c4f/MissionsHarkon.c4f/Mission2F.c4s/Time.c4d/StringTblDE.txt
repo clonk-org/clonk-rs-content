@@ -1,0 +1,16 @@
+Story01=Buch Harkon, Kapitel 2
+Story02=Just nachdem Harkon die Burg verlassen hat, kommt David an, um bei Fenring nach dem Rechten zu sehen.
+Story03=Ich möchte zu Fenring, lasst mich eintreten.
+Story04=Bei Sawelô, ihr seid natürlich gerne gesehen großer Anführer des Ordens. Fenring ist leider zur Zeit nicht da, aber ihr könnt mit seinem Hofmagier Maron sprechen. Er vertritt die Geschäfte wärend Fenrings Abwesenheit.
+Story05=Maron, was ist los?
+Story06=Wache, kommt schnell her, Maron ist verletzt.
+Story07=Oh nein, Meister Maron, was ist passiert?
+Story08=*röchel* ... warnt Fenring, der Zauber ist gebrochen... Heiltrank... *röchel*
+Story09=Ich werde sofort für ein Heilwunder beten. Anscheinend haben hier die Rebellen gewütet und versucht Maron zu töten.
+Story10=Ja, deswegen hat sich Fenring schon in sein Versteck zurückgezogen. Man wollte ihn auch schon hier in der Burg beklauen. Ich muss aber nun schnellstens einen Boten losschicken, um ihn zu warnen.
+Story11=Hmm, ich muss wohl die ganze Gegend durchsuchen, ob nicht irgendwo das Versteck von Fenring ist...
+Story12=Ok, am Ende dieses Waldes ist der Berg mit Fenrings Versteck. Ich hoffe nur mal, es hausen hier nicht zu viele Räuber...
+Story13=Hey, der Bote kann mich doch zu dem Versteck führen. Ich muss nur dafür sorgen, dass ihn die Räuber nicht töten.
+Story14=Wobei wenn er mir das Versteck geöffnet hat, sollte ich ihn schnell töten, bevor er hinein geht und Fenring warnt. Vielleicht gibt es ja eine Abkürzung.
+Story15=Der Bote ist gestorben!
+Story16=Der Bote ist geflohen!

@@ -11,21 +11,21 @@ func ActGetDialog(idID, iIndex, pTalker1, pTalker2)
 		if(!1)
 		{
 			if(iIndex == 0)
-				return ActDialog("Ich habe eine Leiche gesehen! Ein Angreifer hat sich eingeschlichen!.", pTalker1, pTalker2);
+				return ActDialog("$Found01$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Ok, durchsucht die Burg, irgndwo muss der Meuchler sein.", pTalker2, pTalker1);
+				return ActDialog("$Found02$", pTalker2, pTalker1);
 			if(iIndex == 2)
-				return ActDialog("Keine Panik, wir werden ihn schon finden!", pTalker2, pTalker1);
+				return ActDialog("$Found03$", pTalker2, pTalker1);
 			pTalker2->ScheduleCall(pTalker2, "SetActivity", 1, 1, PTRL);
 		}
 		else
 		{
 			if(iIndex == 0)
-				return ActDialog("Eine Leiche wurde gefunden! Ein Meuchler muss da sein.", pTalker1, pTalker2);
+				return ActDialog("$Found04$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Das weis ich schon. Wir sind ja schon auf der Suche nach ihm..", pTalker2, pTalker1);
+				return ActDialog("$Found05$", pTalker2, pTalker1);
 			if(iIndex == 2)
-				return ActDialog("Bleib ruhig und wachsam, wir werden ihn schon finden.", pTalker2, pTalker1);
+				return ActDialog("$Found06$", pTalker2, pTalker1);
 		}
 /*		Object(2799)->SetActivity([FOLW, pTalker2]);
 		Object(2785)->SetActivity([FOLW, pTalker2]);
@@ -93,7 +93,7 @@ func ExecActivityItem(pItem, aExtra) // 1 for keep 0 for finish
 					iActItemState->~Eat(this);
 				else if(iActItemState->~IsDrink())
 					iActItemState->~Drink(this);
-				var aMessages = ["hmm", "mjam", "njm"];
+				var aMessages = ["hmm", "$Found07$", "$Found08$"];
 				MessageEx(aMessages[Random(GetLength(aMessages))], this);				
 				AddEffect("IntWait", this, 1, 35*4);
 				iActItemState = 0;

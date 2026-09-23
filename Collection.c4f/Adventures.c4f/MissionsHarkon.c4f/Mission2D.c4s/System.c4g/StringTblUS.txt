@@ -1,0 +1,2 @@
+Blimp01=End level
+Blimp02=Cancel

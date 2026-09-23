@@ -1,0 +1,4 @@
+Goal01=Juncus gave me this rescue potion, which supposedly lets you survive a hanging.|Maybe I should overpower the hangman and pass myself off as him in his clothes. Then I would be the closest to Marc at the execution...
+Goal02=Away from the village.
+Goal03=Marc still has to be rescued!
+Goal04=Save Marc from the gallows. To do so, overpower the hangman and put on his hood.

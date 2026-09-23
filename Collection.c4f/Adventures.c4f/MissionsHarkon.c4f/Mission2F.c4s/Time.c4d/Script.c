@@ -48,7 +48,7 @@ func DoStart()
   g_pCamera->SetPlrViewRange(200);
 	FilmFadeDark();
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 2", "1"], "Just nachdem Harkon die Burg verlassen hat, kommt David an, um bei Fenring nach dem Rechten zu sehen.", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -60,12 +60,12 @@ func Text0()
 
 func Text1()
 {
-  DialogMessage(pDavid, "Ich möchte zu Fenring, lasst mich eintreten.", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(pDavid, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
 }
 
 func Text2()
 {
-  DialogMessage(pGuard, "Bei Sawelô, ihr seid natürlich gerne gesehen großer Anführer des Ordens. Fenring ist leider zur Zeit nicht da, aber ihr könnt mit seinem Hofmagier Maron sprechen. Er vertritt die Geschäfte wärend Fenrings Abwesenheit.", "Text3", 0, 0, "Dialog3.ogg");
+  DialogMessage(pGuard, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 	Object(1650)->ControlLeft(pGuard);
 }
 
@@ -78,12 +78,12 @@ func Text3()
 
 func Text4()
 {	
-  DialogMessage(pDavid, "Maron, was ist los?", "Text5", 0, 0, "Dialog4.ogg");
+  DialogMessage(pDavid, "$Story05$", "Text5", 0, 0, "Dialog4.ogg");
 }
 
 func Text5()
 {	
-  DialogMessage(pDavid, "Wache, kommt schnell her, Maron ist verletzt.", "Text6", 0, 0, "Dialog5.ogg");
+  DialogMessage(pDavid, "$Story06$", "Text6", 0, 0, "Dialog5.ogg");
 	pDavid->SetDir(0);
 }
 
@@ -92,7 +92,7 @@ func Text6()
 	SetCommand(pGuard, "Call", this, 0, 0, 0, "Text7");
 	AddCommand(pGuard, "MoveTo", 0, pMage->GetX(), pMage->GetY());
 	SetDirToPermanent(pGuard, pDavid);
-  DialogMessage(pGuard, "Oh nein, Meister Maron, was ist passiert?", "Text7", 0, 0, "Dialog6.ogg");
+  DialogMessage(pGuard, "$Story07$", "Text7", 0, 0, "Dialog6.ogg");
 }
 
 local pMove;
@@ -104,19 +104,19 @@ func Text7()
 		pMove = 1;
 		return;
 	}
-	DialogMessage(pMage, "*röchel* ... warnt Fenring, der Zauber ist gebrochen... Heiltrank... *röchel*", "Text8", 0, 0, "Dialog7.ogg");
+	DialogMessage(pMage, "$Story08$", "Text8", 0, 0, "Dialog7.ogg");
 }
 
 func Text8()
 {
-	DialogMessage(pDavid, "Ich werde sofort für ein Heilwunder beten. Anscheinend haben hier die Rebellen gewütet und versucht Maron zu töten.", "Text9", 0, 0, "Dialog8.ogg");
+	DialogMessage(pDavid, "$Story09$", "Text9", 0, 0, "Dialog8.ogg");
 	pDavid->SetAction("Pray");
 	SetDirToPermanent(pMage, pDavid);
 }
 
 func Text9()
 {
-	DialogMessage(pGuard, "Ja, deswegen hat sich Fenring schon in sein Versteck zurückgezogen. Man wollte ihn auch schon hier in der Burg beklauen. Ich muss aber nun schnellstens einen Boten losschicken, um ihn zu warnen.", "Text10", 0, 0, "Dialog9.ogg");
+	DialogMessage(pGuard, "$Story10$", "Text10", 0, 0, "Dialog9.ogg");
 	pGuard->SetDir(0);
 }
 
@@ -158,25 +158,25 @@ func DoStart2()
 
 func TextB1()
 {
-	DialogMessage(pClonk, "Hmm, ich muss wohl die ganze Gegend durchsuchen, ob nicht irgendwo das Versteck von Fenring ist...", "TextB2", 0, 0, "Dialog10.ogg");
+	DialogMessage(pClonk, "$Story11$", "TextB2", 0, 0, "Dialog10.ogg");
 }
 
 func TextB2()
 {
 	pMessenger = CreateObject(KKGT, 32, 503+10, 10);
   pMessenger->SetPortrait("Armored1", 0, KNIG);
-	DialogMessage(pMessenger, "Ok, am Ende dieses Waldes ist der Berg mit Fenrings Versteck. Ich hoffe nur mal, es hausen hier nicht zu viele Räuber...", "TextB3", 0, 0, "Dialog11.ogg");
+	DialogMessage(pMessenger, "$Story12$", "TextB3", 0, 0, "Dialog11.ogg");
 }
 
 func TextB3()
 {
   // Auftrag
-  DialogMessage(pClonk, "Hey, der Bote kann mich doch zu dem Versteck führen. Ich muss nur dafür sorgen, dass ihn die Räuber nicht töten.", "TextB4", 0, 0, "Dialog12.ogg");
+  DialogMessage(pClonk, "$Story13$", "TextB4", 0, 0, "Dialog12.ogg");
 }
 
 func TextB4()
 {
-	DialogMessage(pClonk, "Wobei wenn er mir das Versteck geöffnet hat, sollte ich ihn schnell töten, bevor er hinein geht und Fenring warnt. Vielleicht gibt es ja eine Abkürzung.", "EndIntro", 0, 0, "Dialog13.ogg");
+	DialogMessage(pClonk, "$Story14$", "EndIntro", 0, 0, "Dialog13.ogg");
 }
 
 func EndIntro()
@@ -239,7 +239,7 @@ func MessengerDead()
 {
 	if(iStory > 1) return;
 	for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
-		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("Der Bote ist gestorben!");
+		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("$Story15$");
 }
 
 func AI_HomeReached(pTarget)
@@ -273,7 +273,7 @@ func AI_HomeReached(pTarget)
 		}*/
 		if(!fInside)
 			for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
-				GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("Der Bote ist geflohen!");// und du bist ausgesperrt!");
+				GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("$Story16$");// und du bist ausgesperrt!");
 //		Log("Reached2");
 		pMessenger->RemoveObject();
 		iStory = 3;

@@ -52,7 +52,7 @@ func DoStart()
 	FilmFadeDark();
 	PosCam(pKing, 0, 1);
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 2", "1"], "Während Harkon versucht Marc noch zu retten, findet auf der Burg des Königs eine wichtige Besprechung statt.", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -65,26 +65,26 @@ func Text0()
 func Text1()
 {
   // Auftrag
-  DialogMessage(pKing, "David Heerführer des Orden der Sawelô| und Merthen Anführer der Legion des Teiwaz| die Zeiten stehen schlecht.", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(pKing, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
 }
 
 func Text2()
 {
   // Auftrag
-  DialogMessage(pKing, "Die Kanderiander schlagen unser Heer immer wieder zurück und wir haben Probleme mit den Nachschublieferungen.", "Text3", 0, 0, "Dialog3.ogg");
+  DialogMessage(pKing, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 }
 
 func Text3()
 {
   // Auftrag
-  DialogMessage(pDavid, "Sollte sich nicht Fenring um die Lieferung der Verpflegung kümmern? In seinen Ländereien leben die meisten Bauern.", "Text4", 0, 0, "Dialog4.ogg");
+  DialogMessage(pDavid, "$Story05$", "Text4", 0, 0, "Dialog4.ogg");
 	PosCam(pDavid);
 }
 
 func Text4()
 {
   // Auftrag
-  DialogMessage(pMerthen, "Wir müssen die Rebellion niederschlagen und jeden töten, auf den der Verdacht fällt diese zu unterstützen!", "Text5", 0, 0, "Dialog5.ogg");
+  DialogMessage(pMerthen, "$Story06$", "Text5", 0, 0, "Dialog5.ogg");
 	PosCam(pMerthen);
 	pMerthen->JumpUp();
 }
@@ -92,7 +92,7 @@ func Text4()
 func Text5()
 {
   // Auftrag
-  DialogMessage(pDavid, "Glaubst du etwa das Fenring mit der Rebellion verstrickt ist? Wir sollten unsere Kapazitäten nicht verschwenden um die eigenen Leute abzuschlachten.", "Text6", 0, 0, "Dialog6.ogg");
+  DialogMessage(pDavid, "$Story07$", "Text6", 0, 0, "Dialog6.ogg");
 	PosCam(pDavid);
 	pDavid->SetDir(1);
 }
@@ -100,7 +100,7 @@ func Text5()
 func Text6()
 {
   // Auftrag
-  DialogMessage(pMerthen, "Bist du nicht am Ende ein Verräter und dienst den Rebellen?", "Text7", 0, 0, "Dialog7.ogg");
+  DialogMessage(pMerthen, "$Story08$", "Text7", 0, 0, "Dialog7.ogg");
 	PosCam(pMerthen);
 	pMerthen->UseTwoHandSword();
 	fEvaded = 0;
@@ -126,7 +126,7 @@ func Text7()
 		return;
 	}
   // Auftrag
-  DialogMessage(pKing, "Ihr benehmt euch wie Kinder! So werden wir den Krieg niemals gewinnen. David, du siehst nach, was bei Fenring los ist und Merthen, du schaust an die Front, ob dort was falsch läuft mit der Versorgung.", "Text8", 0, 0, "Dialog8.ogg");
+  DialogMessage(pKing, "$Story09$", "Text8", 0, 0, "Dialog8.ogg");
 	pKing->SetAction("Magic");
 	PosCam(pKing);
 }
@@ -181,33 +181,33 @@ func EndIntroA()
 func TextB1()
 {
 	pGuard1->SetDir(0);
-	DialogMessage(pGuard1, "Also, wenn ein Alarm kommt, soll der Meuchler hier sofort getötet werden, lautet der Auftrag von Fenring.", "TextB2", 0, 0, "Dialog9.ogg");
+	DialogMessage(pGuard1, "$Story10$", "TextB2", 0, 0, "Dialog9.ogg");
 }
 
 func TextB2()
 {
-	DialogMessage(pGuard2, "Jap. Damit wir kein Risiko eingehen und er nicht mit dem Leben davon kommt, falls ihn jemand retten will.", "TextB3", 0, 0, "Dialog10.ogg");
+	DialogMessage(pGuard2, "$Story11$", "TextB3", 0, 0, "Dialog10.ogg");
 }
 
 func TextB3()
 {
-	DialogMessage(pGuard1, "Nagut, jetzt müssen wir nur noch auf den Henker warten, bis wir losgehen können.", "TextB4", 0, 0, "Dialog11.ogg");
+	DialogMessage(pGuard1, "$Story12$", "TextB4", 0, 0, "Dialog11.ogg");
 }
 
 func TextB4()
 {
-	DialogMessage(pClonk, "Hmm, das könnte recht schwierig werden, Marc da raus zu holen. Juncus hat mir diesen Rettungstrank gegeben, mit dem man angeblich das Erhängen überleben soll.", "TextB5", 0, 0, "Dialog12.ogg");
+	DialogMessage(pClonk, "$Story13$", "TextB5", 0, 0, "Dialog12.ogg");
 }
 
 func TextB5()
 {
 	pGuard1->SetDir(1);
-	DialogMessage(pClonk, "Die Muskeln versteifen sich und werden so hart, dass sie die Wucht der Schlinge abfangen. So dass man keinen Genickbruch erleidet. Müsste ich nur noch an ihn ran kommen und ihm den Trank verabreichen können.", "TextB6", 0, 0, "Dialog13.ogg");
+	DialogMessage(pClonk, "$Story14$", "TextB6", 0, 0, "Dialog13.ogg");
 }
 
 func TextB6()
 {
-	DialogMessage(pClonk, "Vielleicht sollte ich den Henker überwältigen und mich mit seinen Sachen als er ausgeben. Dann wäre ich bei der Hinrichtung als nähester bei Marc...", "EndIntro", 0, 0, "Dialog14.ogg");
+	DialogMessage(pClonk, "$Story15$", "EndIntro", 0, 0, "Dialog14.ogg");
 }
 
 func EndIntro()
@@ -228,20 +228,20 @@ func Encounter(pEncounter, fDead)
 	if(fDead)
 	{
 		if(pEncounter == pGuard1)
-			DialogMessage(pEncounter, "Verdammt, eine Leiche! Es muss ein Meuchler da sein. Stich das Opfer lieber schnell ab.", "Encounter3", 0, 0, "Dialog15.ogg");
+			DialogMessage(pEncounter, "$Story16$", "Encounter3", 0, 0, "Dialog15.ogg");
 		else
-			DialogMessage(pEncounter, "Alarm, ich habe eine Leiche gefunden!", "Encounter2", 0, 0, "Dialog16.ogg");
+			DialogMessage(pEncounter, "$Story17$", "Encounter2", 0, 0, "Dialog16.ogg");
 	}
 	else if(pEncounter == pGuard1)
-		DialogMessage(pEncounter, "Hey, hier ist ein Meuchelmörder, stich schnell unser Opfer ab!", "Encounter3", 0, 0, "Dialog17.ogg");
+		DialogMessage(pEncounter, "$Story18$", "Encounter3", 0, 0, "Dialog17.ogg");
 	else
-		DialogMessage(pEncounter, "Alarm, hier ist ein Meuchelmörder!", "Encounter2", 0, 0, "Dialog18.ogg");
+		DialogMessage(pEncounter, "$Story19$", "Encounter2", 0, 0, "Dialog18.ogg");
 }
 
 func Encounter2()
 {
 	pGuard1->SetDir(0);
-	DialogMessage(pGuard1, "Dann stich schnell unser Opfer ab!", "Encounter3", 0, 0, "Dialog19.ogg");
+	DialogMessage(pGuard1, "$Story20$", "Encounter3", 0, 0, "Dialog19.ogg");
 }
 
 func Encounter3()
@@ -251,7 +251,7 @@ func Encounter3()
 	pGuard2->SetAction("SwordStrike");
 	Schedule("pMarc->Kill()", 4*4);
 	for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
-		GetCrew(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("Marc ist gestorben.");
+		GetCrew(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("$Story21$");
 }
 
 func DoStartSzen()
@@ -366,7 +366,7 @@ func CityGuardDead(pGuard)
 		SetPosition(GetX(pClonk), GetY(pClonk), Object(2281));
     Object(2281)->Enter(pClonk);
 		pClonk->StopClonkEx();
-		DialogMessage(pClonk, "Ah, der hatte den Schlüssel dabei!", 0, 0, 0, "Dialog20.ogg");
+		DialogMessage(pClonk, "$Story22$", 0, 0, 0, "Dialog20.ogg");
   }
 }
 
@@ -384,7 +384,7 @@ func NearHangman()
 func HangmanSeen()
 {
         pClonk->StopClonkEx();
-        DialogMessage(pClonk, "Hmm Mist, der Henker hat abgeschlossen. Bestimmt hat aber eine der Wachen einen Zweitschlüssel.", "Nothing", 0, 0, "Dialog21.ogg");
+        DialogMessage(pClonk, "$Story23$", "Nothing", 0, 0, "Dialog21.ogg");
 }
 
 func Nothing() {}
@@ -399,7 +399,7 @@ func HangmanDisguisedArrived()
         StartFilm();
         PosCam(pClonk, 0, 1);
         pClonk->StopClonkEx();
-        DialogMessage(pGuard1, "Da bist du ja endlich, Henkersmann. Wurde aber auch langsam Zeit. Lass uns losgehen.", "TextC1", 0, 0, "Dialog22.ogg");
+        DialogMessage(pGuard1, "$Story24$", "TextC1", 0, 0, "Dialog22.ogg");
 }
 
 func TextC1()
@@ -460,7 +460,7 @@ func HangmanNear()
         aCrowd = [//Object(2276), Object(2277), Object(2145), Object(2144),
         Object(2278), Object(2143), Object(2279), Object(2142),
                                                 Object(2278), Object(2143), Object(2279), Object(2142)];
-        MessageEx("Da kommen sie!", aCrowd[1]);
+        MessageEx("$Story25$", aCrowd[1]);
         aCrowd[1]->JumpUp();
         for(var pObj in aCrowd)
         {
@@ -472,39 +472,39 @@ func HangmanNear()
 
 func TextC2()
 {
-        MessageEx("Endlich kommen sie!", aCrowd[3]);
+        MessageEx("$Story26$", aCrowd[3]);
         aCrowd[3]->JumpUp();
         SetNext("TextC3", 2);
 }
 
 func TextC3()
 {
-        MessageEx("Wir wollen ihn hängen sehen!", aCrowd[6]);
+        MessageEx("$Story27$", aCrowd[6]);
         aCrowd[6]->JumpUp();
         SetNext("TextC4", 2);
 }
 
 func TextC4()
 {
-        MessageEx("Der dreckige Rebell soll sterben!", aCrowd[2]);
+        MessageEx("$Story28$", aCrowd[2]);
         aCrowd[2]->JumpUp();
         SetNext("TextC5", 2);
 }
 
 func TextC5()
 {
-        DialogMessage(pClonk, "Schweigt, niederes Volk!", "TextC6", 0, 0, "Dialog23.ogg");
+        DialogMessage(pClonk, "$Story29$", "TextC6", 0, 0, "Dialog23.ogg");
 }
 
 func TextC6()
 {
-        DialogMessage(pClonk, "Ich werde jetzt die Schlinge anlegen.", "TextC7", 0, 0, "Dialog24.ogg");
+        DialogMessage(pClonk, "$Story30$", "TextC7", 0, 0, "Dialog24.ogg");
         pGallow->MakeReady(pMarc);
 }
 
 func TextC7()
 {
-        DialogMessage(pClonk, "<i>flüsternd</i> Marc, trink das hier.", "TextC8", 0, 0, "Dialog25.ogg");
+        DialogMessage(pClonk, "$Story31$", "TextC8", 0, 0, "Dialog25.ogg");
         var pPoition = FindObject(_SPN);
         pPoition->Exit();
         pPoition->RemoveObject();
@@ -512,17 +512,17 @@ func TextC7()
 
 func TextC8()
 {
-        DialogMessage(pMarc, "Sawelô sei gepriesen!", "TextC9", 0, 0, "Dialog26.ogg");
+        DialogMessage(pMarc, "$Story32$", "TextC9", 0, 0, "Dialog26.ogg");
 }
 
 func TextC9()
 {
-        DialogMessage(pGuard1, "Werden wir im letzten Moment dann doch noch religiös, Meuchler?", "TextC10", 0, 0, "Dialog27.ogg");
+        DialogMessage(pGuard1, "$Story33$", "TextC10", 0, 0, "Dialog27.ogg");
 }
 
 func TextC10()
 {
-        DialogMessage(pClonk, "Genug Gerede. Jetzt wird er gehängt.", "TextC11", 0, 0, "Dialog28.ogg");
+        DialogMessage(pClonk, "$Story34$", "TextC11", 0, 0, "Dialog28.ogg");
 }
 
 func TextC11()
@@ -533,7 +533,7 @@ func TextC11()
 
 func TextC12()
 {
-        DialogMessage(pGuard2, "So, das war's. Dann geht nach Hause Leute.", "TextC13", 0, 0, "Dialog29.ogg");
+        DialogMessage(pGuard2, "$Story35$", "TextC13", 0, 0, "Dialog29.ogg");
         var pChapel = Object(2650);
         for(var pObj in aCrowd)
         {
@@ -546,7 +546,7 @@ func TextC12()
 func TextC13()
 {
         var pChapel = Object(2650);
-        DialogMessage(pGuard1, "Wir sollen dann auch mal gehen. Hier gibt es nichts mehr zu tun.", "TextC14", 0, 0, "Dialog30.ogg");
+        DialogMessage(pGuard1, "$Story36$", "TextC14", 0, 0, "Dialog30.ogg");
         pGuard2->SetMacroCommand("MoveTo", 0, 10, 10);
         pGuard1->SetMacroCommand("MoveTo", 0, 10, 10);
         PosCam(pClonk);
@@ -554,7 +554,7 @@ func TextC13()
 
 func TextC14()
 {
-        DialogMessage(pClonk, "Oh, Sawelô sei wahrlich gepriesen, das ging ja nochmal gut aus. Jetzt muss ich nur noch bis zur Nacht warten und dann Marc hier wegschaffen.", "TextCend", 0, 0, "Dialog31.ogg");
+        DialogMessage(pClonk, "$Story37$", "TextCend", 0, 0, "Dialog31.ogg");
 }
 
 func TextCend()
@@ -566,7 +566,7 @@ func TextCend()
 func End()
 {
         GainMissionAccess(g_mission_access);
-        SetNextMission(g_next_mission, "&Nächste Mission", "Die nächste Mission starten.");
+        SetNextMission(g_next_mission, "$Story38$", "$Story39$");
         GameOver();
 }
 

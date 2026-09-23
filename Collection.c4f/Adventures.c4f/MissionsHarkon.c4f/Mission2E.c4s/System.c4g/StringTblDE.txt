@@ -1,0 +1,14 @@
+Corpse01=Ich habe eine Leiche gesehen! Ein Angreifer hat sich eingeschlichen!.
+Corpse02=Ok, durchsucht die Burg, irgndwo muss der Meuchler sein.
+Corpse03=Keine Panik, wir werden ihn schon finden!
+Corpse04=Eine Leiche wurde gefunden! Ein Meuchler muss da sein.
+Corpse05=Das weis ich schon. Wir sind ja schon auf der Suche nach ihm..
+Corpse06=Bleib ruhig und wachsam, wir werden ihn schon finden.
+Found01=Ich habe eine Leiche gesehen! Ein Angreifer hat sich eingeschlichen!.
+Found02=Ok, durchsucht die Burg, irgndwo muss der Meuchler sein.
+Found03=Keine Panik, wir werden ihn schon finden!
+Found04=Eine Leiche wurde gefunden! Ein Meuchler muss da sein.
+Found05=Das weis ich schon. Wir sind ja schon auf der Suche nach ihm..
+Found06=Bleib ruhig und wachsam, wir werden ihn schon finden.
+Found07=mjam
+Found08=njm

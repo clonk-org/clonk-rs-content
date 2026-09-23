@@ -1,0 +1,4 @@
+Goal01=Escape by blimp.
+Goal02=Marc must be with you!
+Goal03=You have been spotted!
+Goal04=Bring the unconscious Marc to the blimp.

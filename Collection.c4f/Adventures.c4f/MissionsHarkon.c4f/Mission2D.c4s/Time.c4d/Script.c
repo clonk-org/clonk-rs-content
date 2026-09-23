@@ -43,7 +43,7 @@ func DoStart()
   g_pCamera->SetPlrViewRange(200);
 	FilmFadeDark();
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 2", "1"], "Harkon hat nun Marc erstmal vor dem Strick bewahrt, doch er ist noch immer nicht in Sicherheit. In der Zwischenzeit ist aber auch in Kanderien die Zeit nicht stehen geblieben.", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -56,27 +56,27 @@ func Text0()
 func Text1()
 {
   // Auftrag
-  DialogMessage(pKaftlak, "Die Schlachten laufen zur Zeit sehr gut, doch ich mache mir immer noch Sorgen wegen des Jungen...", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(pKaftlak, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
 }
 
 func Text2()
 {
   // Auftrag
-  DialogMessage(pWerimitn, "Herr, ich habe unseren besten Späher ausgeschickt, alles über den Jungen heraus zu finden.", "Text3", 0, 0, "Dialog3.ogg");
+  DialogMessage(pWerimitn, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 	SetCommand(pWerimitn, "MoveTo", 0, 1072, 223);
 }
 
 func Text3()
 {
   // Auftrag
-  DialogMessage(pKaftlak, "Ich hoffe nur, dass wir noch nicht zu spät dran sind. Wenn jemand das Geheimnis herausfindet, dann kann das verheerende Folgen haben!", "Text4", 0, 0, "Dialog4.ogg");
+  DialogMessage(pKaftlak, "$Story05$", "Text4", 0, 0, "Dialog4.ogg");
 	pKaftlak->SetDir(1);
 }
 
 func Text4()
 {
   // Auftrag
-  DialogMessage(pKaftlak, "Nun geh und berichte mir, sobald du Neuigkeiten über die Sache hast. Und wie gesagt, strengste Geheimhaltung!", "Text5", 0, 0, "Dialog5.ogg");
+  DialogMessage(pKaftlak, "$Story06$", "Text5", 0, 0, "Dialog5.ogg");
 }
 
 func Text5()
@@ -125,12 +125,12 @@ func DoStart2()
 
 func TextB1()
 {
-	DialogMessage(pClonk, "Jetzt habe ich Marc bis in den Wald geschleppt. Am anderen Ende des Waldes steht mein Luftschiff zur Flucht.", "TextB2", 0, 0, "Dialog6.ogg");
+	DialogMessage(pClonk, "$Story07$", "TextB2", 0, 0, "Dialog6.ogg");
 }
 
 func TextB2()
 {
-	DialogMessage(pClonk, "Ich sollte mich beeilen, denn sie werden mich bestimmt verfolgen, um Marc zurück zu bekommen. Eventuell brauche ich auch noch ein Katapult, um Marc den Berg zum Luftschiff hoch zu bekommen. [Katapult anfassen, wärend Marc getragen wird]", "EndIntro", 0, 0, "Dialog7.ogg");
+	DialogMessage(pClonk, "$Story08$", "EndIntro", 0, 0, "Dialog7.ogg");
 }
 
 func EndIntro()
@@ -186,7 +186,7 @@ func Script1()
 	}
 
 	pGuard3->SetDir(0);
-	DialogMessage(pGuard3, "Er ist hier irgendwo in den Wald gerannt mit der Leiche. Wir müssen die Leiche unbedingt finden, sonst wird Fenring bestimmt sehr wütend auf uns. Und schaut euch gut um, dass ihr auch einen getarnten Assassinen findet, da muss noch einer da sein!", "Script2", 0, 0, "Dialog8.ogg");
+	DialogMessage(pGuard3, "$Story09$", "Script2", 0, 0, "Dialog8.ogg");
 }
 
 func Script2()
@@ -256,7 +256,7 @@ public func SignpostReached()
 	pClonk->SetAction("Push", pBlimp);
   pBlimp->DigFreeRect(pBlimp->GetX()-34,pBlimp->GetY()-30,68,60);
   SetCommand(pBlimp, "MoveTo", 0, 981, 30);
-	DialogMessage(pClonk, "Args, das war Rettung in letzter Sekunde!", "Out1", 0, 0, "Dialog9.ogg");
+	DialogMessage(pClonk, "$Story10$", "Out1", 0, 0, "Dialog9.ogg");
 	PosCam(pClonk->GetX(), pClonk->GetY(), 1);
 	return 1;
 }

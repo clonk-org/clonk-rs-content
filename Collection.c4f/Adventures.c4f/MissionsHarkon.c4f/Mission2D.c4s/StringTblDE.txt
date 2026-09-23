@@ -1,0 +1,4 @@
+Goal01=Mit dem Luftschiff fliehen.
+Goal02=Marc muss bei dir sein!
+Goal03=Du wurdest entdeckt!
+Goal04=Bringe den bewustlosen Marc zum Luftschiff.

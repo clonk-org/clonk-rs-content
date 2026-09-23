@@ -72,7 +72,7 @@ func DoStart()
   g_pCamera->SetPlrViewRange(200);
 	FilmFadeDark();
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 2", "1"], "Harkon lebt nun schon seit einiger Zeit auf Burg Rockfort und hat sich mehr oder weniger mit seinem Schicksal arangiert.", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -84,17 +84,17 @@ func Text0()
 func Text1()
 {
   // Auftrag
-  DialogMessage(pCra, "Wir müssen unbedingt etwas gegen Fenring unternehmen. Er unterstützt und stärkt die Rebellen immer weiter.", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(pCra, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
 }
 
 func Text2()
 {
-	DialogMessage(pMage, "Ja, wir müssten ihn aufhalten. Wobei, vielleicht kommen wir über ihn auch an andere Rebellen ran.", "Text3", 0, 0, "Dialog3.ogg");
+	DialogMessage(pMage, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 }
 
 func Text3()
 {
-  DialogMessage(pCra, "Du meinst er hat vielleicht Aufzeichungen über andere Unterstützer der Rebellen? Das wäre großartig.", "Text4", 0, 0, "Dialog4.ogg");
+  DialogMessage(pCra, "$Story05$", "Text4", 0, 0, "Dialog4.ogg");
 }
 
 func Text4()
@@ -105,14 +105,14 @@ func Text4()
 
 func Text5()
 {
-	DialogMessage(pFred, "Hey Harkon, kannst du mir vielleicht den Kelch da drüben rüberreichen?", "Text6", 0, 0, "Dialog5.ogg");
+	DialogMessage(pFred, "$Story06$", "Text6", 0, 0, "Dialog5.ogg");
 }
 
 func Text6()
 {
 	SetDirTo(pClonk, pMalvin);
 	pClonk->SetMacroCommand("MoveTo", pClonk->FindObject(GBLT, 0, 0, -1, -1));
-	DialogMessage(pClonk, "Ja Fred, du bekommst deinen Kelch..", "Text7", 0, 0, "Dialog6.ogg");
+	DialogMessage(pClonk, "$Story07$", "Text7", 0, 0, "Dialog6.ogg");
 }
 
 func Text7()
@@ -128,18 +128,18 @@ func Text7()
 
 func Text11()
 {
-	DialogMessage(pMage, "So, Finger weg vom Wein. Es wartet ein wichtiger Auftrag!", "Text13", 0, 0, "Dialog7.ogg");
+	DialogMessage(pMage, "$Story08$", "Text13", 0, 0, "Dialog7.ogg");
 }
 
 func Text13()
 {
-	DialogMessage(pFred, "Oh ja ein Auftrag, den mach ich!", "Text14", 0, 0, "Dialog8.ogg");
+	DialogMessage(pFred, "$Story09$", "Text14", 0, 0, "Dialog8.ogg");
 	pFred->JumpUp();
 }
 
 func Text14()
 {
-	DialogMessage(pMage, "Nein! Harkon, DU wirst den Auftrag ausführen, komm mit.", "Text15", 0, 0, "Dialog9.ogg");
+	DialogMessage(pMage, "$Story10$", "Text15", 0, 0, "Dialog9.ogg");
 	pMage->SetAction("AimMagic");
 	pMage->SetPhase(5);
 }
@@ -147,7 +147,7 @@ func Text14()
 func Text15()
 {
 	pMage->SetAction("Walk");
-	DialogMessage(pFred, "Ach nein, immer bekommt er den Vorzug! Ich hasse es.", "Text16", 0, 0, "Dialog10.ogg");
+	DialogMessage(pFred, "$Story11$", "Text16", 0, 0, "Dialog10.ogg");
 	Object(1319)->ControlLeft(pMage);
 	RemoveDirToPermanent(pClonk);
 	pMage->SetMacroCommand("MoveTo", Object(1427));
@@ -212,23 +212,23 @@ local pFenringMage;
 
 func TextB1()
 {
-	DialogMessage(pFenring, "So Maron, ich hoffe es ist alles vorbereitet?", "TextB2", 0, 0, "Dialog11.ogg");
+	DialogMessage(pFenring, "$Story12$", "TextB2", 0, 0, "Dialog11.ogg");
 }
 
 func TextB2()
 {
-	DialogMessage(pFenringMage, "Ja Graf, es ist so wie sie es angeordnet haben. Wir sind bereit.", "TextB3", 0, 0, "Dialog12.ogg");
+	DialogMessage(pFenringMage, "$Story13$", "TextB3", 0, 0, "Dialog12.ogg");
 	pFenringMage->SetAction("Magic");
 }
 
 func TextB3()
 {
-	DialogMessage(pFenring, "Gut, dann werde ich mich auf den Weg machen, fangen wir an.", "TextB3b", 0, 0, "Dialog13.ogg");
+	DialogMessage(pFenring, "$Story14$", "TextB3b", 0, 0, "Dialog13.ogg");
 }
 
 func TextB3b()
 {
-  DialogMessage(pFenring, "Ach ja und kümmere dich mal um den Strom, der Notstromdynamo reicht hinten und vorne nicht für die Burg.", "TextB4", 0, 0, "Dialog14.ogg");
+  DialogMessage(pFenring, "$Story15$", "TextB4", 0, 0, "Dialog14.ogg");
 }
 
 func TextB4()
@@ -243,18 +243,18 @@ func TextB5()
 {
 	pFenring->RemoveObject();
 	pFenringMage->RemoveObject();
-	DialogMessage(pMarc, "So Harkon. Bisher habe ich ja nur Fred und Malvin ausgebildet, aber heute werden wir einen Auftrag zusammen ausführen.", "TextB6", 0, 0, "Dialog15.ogg");
+	DialogMessage(pMarc, "$Story16$", "TextB6", 0, 0, "Dialog15.ogg");
 	pClonk->SetPlrViewRange(40);
 }
 
 func TextB6()
 {
-	DialogMessage(pMarc, "Cra meint, Graf Fenring besitzt das rote Buch der Rebellen. Dort sollen alle Aufzeichnungen über die Rebellen drin sein. Deswegen ist es sehr wichtig das Buch zu bekommen, um gegen die Rebellen vorgehen zu können.", "TextB7", 0, 0, "Dialog16.ogg");
+	DialogMessage(pMarc, "$Story17$", "TextB7", 0, 0, "Dialog16.ogg");
 }
 
 func TextB7()
 {
-	DialogMessage(pMarc, "Fenrings Burg hat zwei Bibliotheken. Ich werde mir die obere vorknöpfen, du kümmerst dich bitte um die im Keller. Wir treffen uns dann wieder hier am Wegweiser.", "EndIntro2", 0, 0, "Dialog17.ogg");
+	DialogMessage(pMarc, "$Story18$", "EndIntro2", 0, 0, "Dialog17.ogg");
 }
 
 func EndIntro2()
@@ -409,7 +409,7 @@ func BibSeq1(pNewClonk)
 
 func BibSeq2()
 {
-	DialogMessage(pMarc, "Hier muss nun irgendwo das besagte rote Buch liegen...", "BibSeq3", 0, 0, "Dialog18.ogg");
+	DialogMessage(pMarc, "$Story19$", "BibSeq3", 0, 0, "Dialog18.ogg");
 }
 
 local pGuard1;
@@ -454,14 +454,14 @@ func BibSeq3()
 
 func BibSeq4()
 {
-	DialogMessage(pFenringMage, "Waffe runter, Meuchler! Die Show ist aus!", "BibSeq5", 0, 0, "Dialog19.ogg");
+	DialogMessage(pFenringMage, "$Story20$", "BibSeq5", 0, 0, "Dialog19.ogg");
 	pFenringMage->SetAction("AimMagic");
 	pFenringMage->SetPhase(5);
 }
 
 func BibSeq5()
 {	
-	DialogMessage(pMarc, "Args, Maron. Bei Teiwaz, das wirst du noch bereuen!", "BibSeq5b", 0, 0, "Dialog20.ogg");
+	DialogMessage(pMarc, "$Story21$", "BibSeq5b", 0, 0, "Dialog20.ogg");
 	pMarc->SetDir(0);
 	pMarc->CreateObject(CRBW);
 	pMarc->SetAction("HandsUp");
@@ -469,7 +469,7 @@ func BibSeq5()
 
 func BibSeq5b()
 { 
-  DialogMessage(pFenringMage, "Bewacht alle Ausgänge! Vielleicht ist ja noch ein Komplize unterwegs.", "BibSeq6", 0, 0, "Dialog21.ogg");
+  DialogMessage(pFenringMage, "$Story22$", "BibSeq6", 0, 0, "Dialog21.ogg");
 }
 
 
@@ -477,7 +477,7 @@ func BibSeq5b()
 func BibSeq6()
 {
 	PosCam(pClonk, 0, 1);
-	DialogMessage(pClonk, "Hmm, irgendwas muss los sein...", "BibSeq7", 0, 0, "Dialog22.ogg");
+	DialogMessage(pClonk, "$Story23$", "BibSeq7", 0, 0, "Dialog22.ogg");
 }
 
 func BibSeq7()
@@ -491,7 +491,7 @@ func BibSeq7()
 
 public func SignpostReached()
 {
-	DialogMessage(pClonk, "So jetzt habe ich das Buch, nur wo ist Marc hin? Ich hoffe, es ist nichts passiert.", "OutEnd", "Ende", 0, "Dialog23.ogg");
+	DialogMessage(pClonk, "$Story24$", "OutEnd", "$Story25$", 0, "Dialog23.ogg");
 	return 1;
 }
 

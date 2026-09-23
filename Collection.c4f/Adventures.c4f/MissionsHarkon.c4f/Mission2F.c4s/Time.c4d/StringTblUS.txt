@@ -1,0 +1,16 @@
+Story01=Book of Harkon, Chapter 2
+Story02=Just after Harkon has left the castle, David arrives to see how things stand at Fenring's.
+Story03=I wish to see Fenring, let me in.
+Story04=By Sawelô, you are of course most welcome, great leader of the Order. Unfortunately Fenring is not here at the moment, but you can speak with his court mage Maron. He runs affairs during Fenring's absence.
+Story05=Maron, what's wrong?
+Story06=Guards, come quickly, Maron is hurt.
+Story07=Oh no, Master Maron, what happened?
+Story08=*gasp* ... warn Fenring, the spell is broken... healing potion... *gasp*
+Story09=I will pray for a healing miracle at once. It seems the rebels have been rampaging here and tried to kill Maron.
+Story10=Yes, that is why Fenring has already withdrawn to his hideout. Someone already tried to rob him here in the castle, too. But now I must send a messenger at once to warn him.
+Story11=Hmm, I guess I have to search the whole area to see if Fenring's hideout is somewhere around...
+Story12=Ok, at the end of this forest is the mountain with Fenring's hideout. I just hope there aren't too many robbers living here...
+Story13=Hey, the messenger can lead me to the hideout. I just have to make sure the robbers don't kill him.
+Story14=Though once he has opened the hideout for me, I should kill him quickly, before he goes in and warns Fenring. Maybe there is a shortcut.
+Story15=The messenger has died!
+Story16=The messenger has escaped!

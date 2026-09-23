@@ -71,16 +71,16 @@ static g_pBlimp;
 
 func Nothing() { return; }
 
-public func MsgSignpost1()  { return "Mit dem Luftschiff fliehen."; }
+public func MsgSignpost1()  { return "$Goal01$"; }
 
 public func IsFullfilled() { return ( ObjectDistance(FindObject2(Find_ID(BLMP)), FindObject2(Find_ID(ASAS), Find_Owner(11))) < 50 ); }
-public func FullfillText() { return "Marc muss bei dir sein!"; }
+public func FullfillText() { return "$Goal02$"; }
 
 func AI_EncounterENMY()
 {
   DisableAI();
 	for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
-		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("Du wurdest entdeckt!");
+		GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("$Goal03$");
 }
 
 // KI ausschalten
@@ -94,5 +94,5 @@ global func DisableAI()
 public func GoalText()
 {
 	if(g_StoryIndex == 0)
-		return "Bringe den bewustlosen Marc zum Luftschiff.";
+		return "$Goal04$";
 }

@@ -15,7 +15,7 @@ func DoStartSzen()
   for(var cnt=0;cnt<10;cnt++) PlaceInMaterial(LOAM,Material("Earth"),0);
 
   PlaceSunLight();
-  AssignWScriptText(SKUL, [SKUL, ["Kerkerraum des Todes mit gaaanz vielen tödlichen und bösen Stacheln."]]);
+  AssignWScriptText(SKUL, [SKUL, ["$Goal01$"]]);
 
   AI_SetDifficulty(1);
   return;
@@ -47,9 +47,9 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
   return 1;
 }
 
-public func MsgSignpost1()  { return "Höhle verlassen"; }
+public func MsgSignpost1()  { return "$Goal02$"; }
 
 public func IsFullfilled() { return false; }
-public func FullfillText() { return "Fenring lebt noch"; }
+public func FullfillText() { return "$Goal03$"; }
 
-public func GoalText() { return "Fenring muss noch besiegt werden"; }
+public func GoalText() { return "$Goal04$"; }

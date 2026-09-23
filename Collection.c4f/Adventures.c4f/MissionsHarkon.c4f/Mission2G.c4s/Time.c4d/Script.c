@@ -38,7 +38,7 @@ func DoStart()
 func Text1()
 {
   // Auftrag
-  DialogMessage(pClonk, "Hierher hat sich also Fenring zur¸ckgezogen. Ich muss mich wohl durchschlagen, ihn finden und dann besiegen.", "EndIntro", 0, 0, "Dialog1.ogg");
+  DialogMessage(pClonk, "$Story01$", "EndIntro", 0, 0, "Dialog1.ogg");
 }
 
 func EndIntro()
@@ -113,17 +113,17 @@ func ScriptFight2()
   
 func ScriptFight2b()
 {
-  DialogMessage(pFenring, "So, du bist also doch letztendlich zu mir durchgedrungen, elender Meuchler...", "ScriptFight3", 0, 0, "Dialog2.ogg");
+  DialogMessage(pFenring, "$Story02$", "ScriptFight3", 0, 0, "Dialog2.ogg");
 }
 
 func ScriptFight3()
 {
-  DialogMessage(pClonk, "Bei Teiwaz, Mist, das war wohl nicht gerade sehr unauff‰llig.", "ScriptFight4", 0, 0, "Dialog3.ogg");
+  DialogMessage(pClonk, "$Story03$", "ScriptFight4", 0, 0, "Dialog3.ogg");
 }
 
 func ScriptFight4()
 {
-  DialogMessage(pFenring, "Oh ja, diesen Fehler wirst du nur einmal machen, Abschaum.", "ScriptFight5", 0, 0, "Dialog4.ogg");
+  DialogMessage(pFenring, "$Story04$", "ScriptFight5", 0, 0, "Dialog4.ogg");
 }
 
 func ScriptFight5()
@@ -144,7 +144,7 @@ func ScriptFightDead()
   StopFilm();
   pClonk->SetAction("Dead");
   for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
-    GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("Fenring hat Harkon getˆtet.");
+    GetCursor(GetPlayerByIndex(i, C4PT_User))->OpenRelauchMenu("$Story05$");
 }
 
 func ScriptFight6()
@@ -163,7 +163,7 @@ func ScriptFight6()
 
 func ScriptFight7()
 {
-  DialogMessage(pFenring, "Verdammt, wo ist der Mistkerl hin? Ich bin geblendet.", "ScriptFight8", 0, 0, "Dialog5.ogg");
+  DialogMessage(pFenring, "$Story06$", "ScriptFight8", 0, 0, "Dialog5.ogg");
 }
 
 func ScriptFight8()
@@ -180,12 +180,12 @@ func ScriptFightWin()
   StartFilm();
   PosCam(pFenring, 0, 1);
   g_pCamera->SetPlrViewRange(40);
-  DialogMessage(pFenring, "Args, ich kann nicht mehr. Du hast mich besiegt...", "ScriptFightWin2", 0, 0, "Dialog6.ogg");
+  DialogMessage(pFenring, "$Story07$", "ScriptFightWin2", 0, 0, "Dialog6.ogg");
 }
 
 func ScriptFightWin2()
 {
-  DialogMessage(pClonk, "Ich werde dich vor den groﬂen Cra bringen. Er wird entscheiden, was mit einem Verr‰ter wie dir passiert!", "ScriptFightWin3", 0, 0, "Dialog7.ogg");
+  DialogMessage(pClonk, "$Story08$", "ScriptFightWin3", 0, 0, "Dialog7.ogg");
 }
 
 func ScriptFightWin3()

@@ -1,0 +1,8 @@
+Story01=Hierher hat sich also Fenring zurückgezogen. Ich muss mich wohl durchschlagen, ihn finden und dann besiegen.
+Story02=So, du bist also doch letztendlich zu mir durchgedrungen, elender Meuchler...
+Story03=Bei Teiwaz, Mist, das war wohl nicht gerade sehr unauffällig.
+Story04=Oh ja, diesen Fehler wirst du nur einmal machen, Abschaum.
+Story05=Fenring hat Harkon getötet.
+Story06=Verdammt, wo ist der Mistkerl hin? Ich bin geblendet.
+Story07=Args, ich kann nicht mehr. Du hast mich besiegt...
+Story08=Ich werde dich vor den großen Cra bringen. Er wird entscheiden, was mit einem Verräter wie dir passiert!

@@ -1,0 +1,15 @@
+Story01=Buch Harkon, Kapitel 2
+Story02=Nachdem Harkon mit Marc nur knapp von Fenrings Wachen fliehen konnte, bringt er nun Marc zurück nach Rockfort.
+Story03=Da kommt Harkon mit dem Luftschiff zurück!
+Story04=Willkommen zurück Marc, ich hatte mir schon große Sorgen gemacht.
+Story05=Ja puh, das war echt knapp, fast hätten sie uns auf der Flucht noch erwischt.
+Story06=Marc, erzähl doch mal was passiert ist, warum konnte Fenring dich festnehmen?
+Story07=Es war eine Falle. Fenring hatte mich schon erwartet, ich konnte nichts machen.
+Story08=Sehr beunruhigend. Wir müssen unbedingt mehr herausfinden.
+Story09=Marc, ruh dich erstmal aus. Harkon, du musst sofort nochmal zurück zur Burg von Fenring und versuchen mehr herauszufinden. Wir müssen unbedingt an den Grafen rankommen.
+Story10=Was? Ich bin die ganze Nacht durch hergeflogen und soll jetzt schon wieder aufbrechen? Was soll das? Kann das nicht Fred oder Malvin machen?
+Story11=Ihr beide erzählt am besten erstmal keinem hier davon, dass es eine Falle war, denn vielleicht haben wir einen Spion unter uns, der ihn vorher informiert hat. Tut einfach so, als wäre es dein Fehler gewesen, Harkon!
+Story12=Tu am besten was er gesagt hat. Aber nach dem was ich von Fenrings Wachen belauschen konnte, hat sich Fenring längst in ein geheimes Versteck in den Bergen abgesetzt. Sein Magier hält den Zugang dazu mit einem starken Zauber verborgen.
+Story13=Ok, dann fliege ich wohl mal wieder zurück und knöpfe mir diesen Magier vor...
+Story14=Nun muss ich wohl nochmal Fenrings Burg infiltrieren und seinen Hofmagier ausschalten, der mit seinem Zauber das Versteck von Fenring schützt.
+Story15=So, der Magier liegt im Sterben. Jetzt aber schnell weg von hier.
