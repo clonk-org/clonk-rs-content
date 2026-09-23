@@ -56,17 +56,17 @@ public func IsFulfilled()
 public func IsFulfilledforPlr(iPlr) 
 {
   if(iPlr==-1) return();
-  var iFactor = 1;
+  var iFactor = 1, iAccount;
   if(FindObject2(Find_ID(TACC)) && !GameCall("TACC_BlockTeamExchange", TACC_TypeScore))
-    iFactor = FindObjectOwner(ACNT, iPlr)->GetAlliancePlayerCount(1);
+    if(iAccount = FindObjectOwner(ACNT, iPlr)) iFactor = iAccount->GetAlliancePlayerCount(1);
   return (GetPlrValueGain(iPlr) >= ApplyFactor(TargetScore, iFactor));
 }
 
 protected func Activate(iPlayer)
 {
-  var iFactor = 1;
+  var iFactor = 1, iAccount;
   if(FindObject2(Find_ID(TACC)) && !GameCall("TACC_BlockTeamExchange", TACC_TypeScore))
-    iFactor = FindObjectOwner(ACNT, iPlayer)->GetAlliancePlayerCount(1);
+    if(iAccount = FindObjectOwner(ACNT, iPlayer)) iFactor = iAccount->GetAlliancePlayerCount(1);
   if (IsFulfilled()) 
     return(MessageWindow(Format("$MsgGoalFulfilled$", ApplyFactor(TargetScore, iFactor)), iPlayer));
   MessageWindow(Format("$MsgGoalUnfulfilled$", GetPlrValueGain(iPlayer), ApplyFactor(TargetScore, iFactor)), iPlayer);
@@ -75,9 +75,9 @@ protected func Activate(iPlayer)
 
 public func GetTargetScore(iPlayer)
 {
-  var iFactor = 1;
+  var iFactor = 1, iAccount;
   if(FindObject2(Find_ID(TACC)) && !GameCall("TACC_BlockTeamExchange", TACC_TypeScore))
-    iFactor = FindObjectOwner(ACNT, iPlayer)->GetAlliancePlayerCount(1);
+    if(iAccount = FindObjectOwner(ACNT, iPlayer)) iFactor = iAccount->GetAlliancePlayerCount(1);
   var SendScore = ApplyFactor(TargetScore, iFactor);
   return(SendScore);
 }

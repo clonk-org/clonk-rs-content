@@ -383,6 +383,7 @@ func Initialize() {
 //Alle Türengraphiken umstellen
   while(SetVar(0,FindObject(FT__,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"Bild");
   return(1);
+}
 
 RelaunchPlayer: //wenn man stirbt verliert man 50 erfahrung
   var q=60+(gGrad*6);
