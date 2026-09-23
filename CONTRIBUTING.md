@@ -73,9 +73,10 @@ To change something inside one, use `tools/group_entry.py`. It edits the raw
 group image in place — one entry's bytes or name, its size and CRC, and the size
 and CRC of each enclosing child entry — instead of rebuilding the file, which
 restamps its times, and it refuses when its CRC model does not reproduce the
-stored values along the path. `cat` reads an entry out, and `compare` lists
-every difference between the original and the edited file; put that list in the
-pull request.
+stored values along the path. `add` appends a new entry, such as a missing
+`DescUS.txt`, without moving any existing one. `cat` reads an entry out, and
+`compare` lists every difference between the original and the edited file; put
+that list in the pull request.
 
 ## Line endings and encoding
 
