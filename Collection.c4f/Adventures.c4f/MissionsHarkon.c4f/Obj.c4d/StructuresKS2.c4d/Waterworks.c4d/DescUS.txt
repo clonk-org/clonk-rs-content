@@ -1,1 +1,3 @@
-A new object definition.
+Here a pump raises water from the ground and fills it into buckets.
+
+Sometimes the mechanism clogs, and then the algae have to be removed.

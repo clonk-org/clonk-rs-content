@@ -95,7 +95,7 @@ global func DialogMessage(pSpeaker, Text, Next, ButtonText, fNoCam, szSound)
 		if(szSound) DialogSound(szSound, g_pCamera);
 	}
 	
-	if(!ButtonText) ButtonText = "Weiter";
+	if(!ButtonText) ButtonText = "$Camera01$";
 	
 	if(g_pCamera)
 	{

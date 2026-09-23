@@ -1,0 +1,3 @@
+Goal01=Explore the cave
+Goal02=You have been spotted!
+Goal03=Let the messenger open the gate and kill him before he goes into the cave.

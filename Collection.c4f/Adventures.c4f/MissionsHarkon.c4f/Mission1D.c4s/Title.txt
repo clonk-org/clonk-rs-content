@@ -1,2 +1,2 @@
 DE:Training Enterhaken
-US:Training Hook
+US:Training: Grappling Hook

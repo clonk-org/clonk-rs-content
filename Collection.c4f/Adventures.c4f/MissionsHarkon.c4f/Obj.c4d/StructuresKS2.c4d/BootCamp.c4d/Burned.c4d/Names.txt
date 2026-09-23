@@ -1,2 +1,2 @@
 DE:Verbranntes Rekrutierungslager
-US:Burned Boot Camp
+US:Burned recruiting camp

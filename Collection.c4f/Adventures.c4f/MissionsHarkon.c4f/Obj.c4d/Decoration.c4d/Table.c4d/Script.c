@@ -90,7 +90,7 @@ protected func RejectCollect(idObj, pObj)
 				pGarbage = Local(i);
 		if(!pGarbage)
 		{
-			Message( "Voll!",this);
+			Message( "$Cards01$",this);
 			return 1;
 		}
 		pGarbage->RemoveObject();
@@ -225,7 +225,7 @@ func CancelActivity(pClonk)
 {
 	var index = GetIndexOf(pClonk, aClonks);
 	if(index < 0) return; // nicht mehr in der Liste
-//	pClonk->MessageEx("Ich muss weg Leute.", pClonk);
+//	pClonk->MessageEx("$Cards08$", pClonk);
 	if(index > 0)
 		return DeleteArrayItem(index, aClonks);
 	DeleteArrayItem(index, aClonks);
@@ -324,7 +324,7 @@ func Timer()
 			var pShelve = aBookshelves[Random(GetLength(aBookshelves))];
 			pClonk->Exit();
 			pClonk->ExecMoveTo(pShelve->GetX(), pShelve->GetY());
-			TalkMessage("nächstes Buch", pClonk);
+			TalkMessage("$Cards02$", pClonk);
 		}
 		else if(pClonk->GetAction() == "SitRead")
 		{
@@ -374,7 +374,7 @@ func Timer()
           {
             var iDesiredValue = GetDesiredColor(index);
             iLastCard = 10+13*iDesiredValue;
-            sNextText = [pClonk, Format("Ich wünsche mir <c %x>%s</c>",RGB(255,255,255), aMessages2[iLastCard/13])];
+            sNextText = [pClonk, Format("$Cards03$",RGB(255,255,255), aMessages2[iLastCard/13])];
           }
           if(GetLength(aCards[index])==1)
             sMessage = Format("%s|Mau!", sMessage);
@@ -382,13 +382,13 @@ func Timer()
           {
             sMessage = Format("%s|Mau Mau!", sMessage);
             RestartGame();
-            sNextText = [pClonk, "Ich hab gewonnen!", Format("Du schuldest mir jetzt %d Bier!", Random(5)), "Neues Spiel."];
+            sNextText = [pClonk, "$Cards04$", Format("$Cards05$", Random(5)), "$Cards06$"];
           }
           TalkMessage(sMessage, pClonk);
           }
         else
         {
-          TalkMessage("Ich muss ziehen.", pClonk); 
+          TalkMessage("$Cards07$", pClonk); 
           DrawCard(index);
         }
       }
@@ -474,7 +474,7 @@ func CancelActivity(pClonk)
 {
 	var index = GetIndexOf(pClonk, aClonks);
 	if(index < 0) return; // nicht mehr in der Liste
-	pClonk->MessageEx("Ich muss weg Leute.", pClonk);
+	pClonk->MessageEx("$Cards08$", pClonk);
 	if(index > 0)
 		return DeleteArrayItem(index, aClonks);
 	DeleteArrayItem(index, aClonks);

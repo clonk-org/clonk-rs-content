@@ -1,7 +1,9 @@
-RecBow=recruit Archer
-RecLanc=recruit Lancebearer
-RecSwor=recruit Swordman
+RecBow=Recruit archers
+RecLanc=Recruit lancers
+RecSwor=Recruit swordsmen
 Ascend=To the roof
-AlreadyIs=%s is already %s
+AlreadyIs=%s is already a %s
 TxtNoKnight=%s is no Clonk!
-NeedMoney=%d Honor needed!
+NeedMoney=%d honor is needed!
+Recruit=Train
+TxtNoClonk=%s is not a clonk!

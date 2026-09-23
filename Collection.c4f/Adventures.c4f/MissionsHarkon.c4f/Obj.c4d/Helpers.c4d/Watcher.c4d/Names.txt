@@ -1,2 +1,2 @@
-DE:WÃ¤chter
+DE:Wächter
 US:Guardian

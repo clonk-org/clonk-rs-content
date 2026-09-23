@@ -1,1 +1,4 @@
 CtrlRead=Lesen
+Grave01=Hier ruht in Frieden %s
+Grave02=Das Grab ist leer.
+Grave03=Abbrechen

@@ -1,0 +1,3 @@
+Goal01=Die Höhle erkunden
+Goal02=Du wurdest entdeckt!
+Goal03=Lass den Boten das Tor öffnen und töte ihm bevor er in die Höhle geht.

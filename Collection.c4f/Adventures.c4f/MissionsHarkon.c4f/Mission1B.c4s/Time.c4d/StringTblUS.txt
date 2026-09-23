@@ -1,0 +1,15 @@
+Story01=Book of Harkon, Chapter 1
+Story02=Harkon accompanies Juncus from his remote home valley to hidden Rockfort Castle, which will be his home from now on...
+Story03=This will be your room at Rockfort Castle. The castle stands under the protection of the Council of Cla-Kra-Zoth and is the headquarters of Cra's secret society.
+Story04=A secret band? What does it do, and what does it have to do with me? And who murdered my father?
+Story05=I don't know yet who attacked your father. But you will be trained here and fight at our side. Tomorrow you start with your first lesson, in which you learn to sneak up on people, which will be very important for you.
+Story06=I don't understand any of this. It's all still a bit too much for me.
+Story07=These are the rooms of your fellow students, Fred and Malvin. You will get along well with them, since they only started recently too. I'm sure they will back you up and help you.
+Story08=But they are asleep right now, they had a tiring day. You should rest too, for your first lesson tomorrow.
+Story09=Good morning, Harkon. Here is your first lesson. You are to sneak into the camp. [Activate Camouflage in the context menu]
+Story10=There you must stun all the clonks with the club [double-dig behind the victim]. When you are done, just come back to the signpost.
+Story11=Hmm, all right, then I guess I have no choice but to give it a try.
+Story12=There, everyone is stunned. Now I just have to get back to the signpost [Grab+Up]
+Story13=Phew, what this Juncus asks of me is not easy at all. I wonder what all this means and what it has to do with the raid.
+Story14=Very good, Harkon, that wasn't bad at all for a start. Next you have to learn to handle sharp weapons. But we'll only start on that tomorrow.
+Story15=End

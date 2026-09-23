@@ -1,0 +1,2 @@
+Cave01=End level
+Cave02=Cancel

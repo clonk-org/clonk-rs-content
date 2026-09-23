@@ -1,3 +1,3 @@
-Grows green.
+Grows and turns green.
 
-If it don't grows on eath, it dies.
+When it no longer grows on earth, it dies.

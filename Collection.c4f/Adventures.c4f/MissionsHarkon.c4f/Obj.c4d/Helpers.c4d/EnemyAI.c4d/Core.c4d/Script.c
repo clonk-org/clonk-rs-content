@@ -571,56 +571,56 @@ func TextSound(szString)
 
 private func GetStringCoin()
 {
-  var aStrings = ["Oh eine Münze!", "Hier liegt ja Geld rum", "Da hat jemand Gold verloren", "So ein Glück, Geld!"];
+  var aStrings = ["$Guard01$", "$Guard02$", "$Guard03$", "$Guard04$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_Coin%d.ogg", rand+1));
   return aStrings[rand];
 }
 private func GetStringHurt()
 {
-  var aStrings = ["Bist du verletzt?", "%s was ist los mit dir?", "Ist dir übel?", "%s, du bist so still?!", "Hast du Probleme?"];
+  var aStrings = ["$Guard05$", "$Guard06$", "$Guard07$", "$Guard08$", "$Guard09$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_Hurt%d.ogg", rand+1));
   return aStrings[rand];
 }
 private func GetStringDead()
 {
-  var aStrings = ["Oh nein! %s ist tot!", "Verflucht, %s wurde ermordet!", "Diese Schweine, sie haben %s getötet!", "Es muss ein Mörder unter uns sein!"];
+  var aStrings = ["$Guard10$", "$Guard11$", "$Guard12$", "$Guard13$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_Dead%d.ogg", rand+1));
   return aStrings[rand];
 }
 private func GetStringWakeUp()
 {
-  var aStrings = ["Wach auf!", "Steh auf du Schlafmütze", "Wieder an die Arbeit Faulpelz", "Aus den Federn mit dir!"];
+  var aStrings = ["$Guard14$", "$Guard15$", "$Guard16$", "$Guard17$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_WakeUp%d.ogg", rand+1));
   return aStrings[rand];
 }
 private func GetStringMouse()
 {
-  var aStrings = ["Muss wohl eine Maus gewesen sein.", "Komisch, ich dachte wirklich, da wäre was gewesen.", "Hmm, da ist ja garnichts.", "Hallo?|Ist da wer?"];
+  var aStrings = ["$Guard18$", "$Guard19$", "$Guard20$", "$Guard21$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_Mouse%d.ogg", rand+1));
   return aStrings[rand];
 }
 private func GetStringSwitch()
 {
-  var aStrings = ["Oh, der Schalter war aber anders!", "Hat die Maus den Schalter umgelegt?", "Warum steht der Schalter anders da?", "So war das aber nicht hier."];
+  var aStrings = ["$Guard22$", "$Guard23$", "$Guard24$", "$Guard25$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_Switch%d.ogg", rand+1));
   return aStrings[rand];
 }
 private func GetStringSeenMurder()
 {
-  var aStrings = ["Da ist der Mörder!", "Dort ist der Assassine!", "Der war es!", "Dort ist er!"];
+  var aStrings = ["$Guard26$", "$Guard27$", "$Guard28$", "$Guard29$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_SeenMurder%d.ogg", rand+1));
   return aStrings[rand];
 }
 private func GetStringAttacker()
 {
-  var aStrings = ["Alarm! Ein Angreifer.", "Ein Meuchler hat sich reingeschlichen! Alarm!", "Achtung, da ist ein Feind!", "Ich habe einen Gegner entdeckt."];
+  var aStrings = ["$Guard30$", "$Guard31$", "$Guard32$", "$Guard33$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_Attacker%d.ogg", rand+1));
   return aStrings[rand];
@@ -1875,7 +1875,7 @@ public func AI_LookForFriend(pFriend)
   if(ai_pTarget) return;
 	if(ai_iNoSpecial) return 0;
   // Oh, da fällt jemand um!
-  MessageEx("Hey, was ist da los %s?", this, GetName(pFriend));
+  MessageEx("$Guard34$", this, GetName(pFriend));
 	TextSound("AI_Hey1.ogg");
 	if(GetEffect("SleepNSpell", pFriend))
 		SetActivity([WAKE, pFriend]);
@@ -1887,7 +1887,7 @@ public func AI_LookForFriend(pFriend)
 
 private func GetStringAlarm()
 {
-  var aStrings = ["War da was?", "Da hab ich doch was gehört.", "Ich höre Geräusche.", "Da muss ich mal nachschauen."];
+  var aStrings = ["$Guard35$", "$Guard36$", "$Guard37$", "$Guard38$"];
 	var rand = Random(GetLength(aStrings));
 	TextSound(Format("AI_Alarm%d.ogg", rand+1));
   return aStrings[rand];

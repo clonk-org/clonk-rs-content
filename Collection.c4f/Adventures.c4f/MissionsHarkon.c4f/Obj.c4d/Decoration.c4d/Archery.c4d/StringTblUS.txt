@@ -1,0 +1,7 @@
+Archery01=I have to go, folks.
+Archery02=I have to go to bed now.
+Archery03=I have to get to work now.
+Archery04=Hey, bull's-eye, %s!
+Archery05=Well, %s, you almost hit it!
+Archery06=Maybe it'll go better next time, %s
+Archery07=Well, that was way off, %s!

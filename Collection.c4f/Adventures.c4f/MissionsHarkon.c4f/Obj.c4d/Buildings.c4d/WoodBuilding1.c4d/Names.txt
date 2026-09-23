@@ -1,2 +1,2 @@
-﻿DE:Bürgerhaus
-US:Cityhouse
+DE:B�rgerhaus
+US:Town house

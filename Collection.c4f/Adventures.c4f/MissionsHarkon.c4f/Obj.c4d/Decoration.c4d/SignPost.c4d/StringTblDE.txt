@@ -3,3 +3,7 @@ CtrlRead=Lesen
 MageNotToPirates=Hier will ich nicht lang - zum Rat geht es nach Osten
 KnightNotToPirates=Hier will ich nicht lange - nach Telotiosus muss ich nach Westen den Tunnel unter der Burg nehmen
 ClonkNotToPirates=Ich sollte mich erst ausbilen lassen, bevor ich mich zu weit weg wage.
+Sign01=Level beenden
+Sign02=Abbrechen
+Sign03=&Nächste Mission
+Sign04=Die nächste Mission starten.

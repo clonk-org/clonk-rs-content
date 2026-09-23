@@ -1,1 +1,1 @@
-Foodstuff also refills life energy.
+Must be cooked before it can be eaten.

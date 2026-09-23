@@ -26,9 +26,9 @@ func DoStartSzen()
 	
   AI_SetDifficulty(1);
 
-  AssignWScriptText(LOCK, [ROCK, ["Hier geht es zum Kerker. Betreten für Unbefugte verboten."]]);
-  AssignWScriptText(BED1, [BED1, ["Schlafraum. Absolute Nachtruhe um 22.00! Kein Alkohol auf den Zimmern."]]);
-  AssignWScriptText(KING, [CRWN, ["Links Königliches Gemach. Rechts Thronsaal. Bei Eintritt dem Graf huldigen."]]);
+  AssignWScriptText(LOCK, [ROCK, ["$Goal01$"]]);
+  AssignWScriptText(BED1, [BED1, ["$Goal02$"]]);
+  AssignWScriptText(KING, [CRWN, ["$Goal03$"]]);
 
 	Object(1930)->MakeFenringMage();
 	
@@ -71,13 +71,13 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 
 func Nothing() { return; }
 
-public func MsgSignpost1()  { return "Weg von der Burg."; }
+public func MsgSignpost1()  { return "$Goal04$"; }
 
 public func IsFullfilled() { return !(Object(1930)->GetAlive()); }
-public func FullfillText() { return "Maron ist noch am Leben!"; }
+public func FullfillText() { return "$Goal05$"; }
 
 public func GoalText()
 {
 	if(g_StoryIndex == 0)
-		return "Töte Maron und kehre zurück zum Wegweiser.";
+		return "$Goal06$";
 }

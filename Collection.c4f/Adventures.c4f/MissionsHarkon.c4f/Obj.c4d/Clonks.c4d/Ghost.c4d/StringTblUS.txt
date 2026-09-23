@@ -1,0 +1,14 @@
+Ghost01=Ghost %s
+Ghost02=%s||<i>The ghost of %s has been freed</i>
+Ghost03=<i>The ghost of %s has been freed</i>
+Ghost04=%s and %s
+Ghost05=Found %d of %d ghosts in chapter %d.
+Ghost06=So far the ghosts of %s have been freed.
+Ghost07=O's soul was filled with dread,|his future looked bleak and red.|  he longed to go away|  and on this earth no longer stay,|for his body had long been dead.
+Ghost08=Marog once lived in this vale below,|he cared not if the wind would blow,|  his house he'd always protect,|  but in the end, to no effect,|he succumbed to defeat's bitter woe.
+Ghost09=Maroga was his wife and Olrog's mother,|she baked and roasted and churned the butter,|  no work did she ever shun,|  so why is her life now done?|She died, and the zaps made her their supper.
+Ghost10=Posipex caught many a fish, it's true,|and sang by the river the whole day through,|  his rod held tight in his hand,|  he pulled this one onto the land.|Then, gulp, the fish swallowed him too.
+Ghost11=A monster made of solid stone|caught Mortum's little soul alone,|  he never could escape again,|  and no one saw him since then,|is this the end, forever unknown?
+Ghost12=On a train through space and time he'd ride,|so Ralum saw the world so wide,|  but the train has stopped for good.|  Eight years ago, or seven, it stood.|And still no end to the grief inside.
+Ghost13=Fruor was a snake, and very mean.|But locked away, he was long unseen,|  no one brought him a bite to eat,|  nor any care, nor any treat,|till even his soul grew scared and lean.
+Ghost14=Malolch was a little rogue, it's true,|who loved to play pranks, as rascals do,|  nothing sacred would he spare,|  but today he went too far, beware,|and swiftly felt the dagger go through.

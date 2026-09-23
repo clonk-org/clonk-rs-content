@@ -1,0 +1,6 @@
+TxtProduce=Stir
+TxtCancelproduction=Cancel production
+TxtNoPlans=No construction plans available
+TxtProduceMenu=Produce: %s
+TxtNeedMaterial=%s still needs:
+TxtNeedMaterialComponent=%dx %s

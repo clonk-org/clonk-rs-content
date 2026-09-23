@@ -1,2 +1,2 @@
 DE:Dornen
-US:Thornes
+US:Thorns

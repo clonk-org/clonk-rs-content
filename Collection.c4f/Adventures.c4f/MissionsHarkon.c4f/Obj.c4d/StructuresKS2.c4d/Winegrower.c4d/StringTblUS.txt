@@ -1,4 +1,4 @@
-BuyG=Buy Grain
+BuyG=Buy seeds
 NowGrow=The seeds are now placed and growing.
-AlreadyProduce=There are already some plants!
-Finish=New Winevats!
+AlreadyProduce=Plants are already growing!
+Finish=Wine barrels ready for collection!

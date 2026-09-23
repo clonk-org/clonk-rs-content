@@ -1,0 +1,4 @@
+Goal01=Dungeon room of death with sooo many deadly and nasty spikes.
+Goal02=Leave the cave
+Goal03=Fenring is still alive
+Goal04=Fenring still has to be defeated

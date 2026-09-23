@@ -51,7 +51,7 @@ func DoStart()
   g_pCamera->SetPlrViewRange(200);
 	FilmFadeDark();
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 2", "1"], "Harkon hat zwar das Buch gefunden, aber da Marc am Treffpunkt nicht aufgetaucht ist, muss er nun alleine zurück nach Rockfort gehen.", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -64,7 +64,7 @@ func Text0()
 func Text1()
 {
   // Auftrag
-  DialogMessage(pClonk, "Macht mir auf, ich komme von meiner Mission zurück!", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(pClonk, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
 }
 
 func Text2()
@@ -73,14 +73,14 @@ func Text2()
 	pMage->SetCommand(pMage, "MoveTo", 0, 285, 630);
 	pMage->AddCommand(pMage, "Wait", 0, 0, 0, 0, 0, 25);
 	pMage->AddCommand(pMage, "MoveTo", 0, 315, 630);
-	DialogMessage(pMage, "Hast du das rote Buch? Warum kommst du alleine?", "Text3", 0, 0, "Dialog3.ogg");
+	DialogMessage(pMage, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 	PosCam(pMage);
 }
 
 func Text3()
 {
   // Auftrag
-  DialogMessage(pClonk, "Das Buch habe ich zwar, aber Marc ist nicht beim Treffpunkt erschienen!", "Text4", 0, 0, "Dialog4.ogg");
+  DialogMessage(pClonk, "$Story05$", "Text4", 0, 0, "Dialog4.ogg");
 	PosCam(pClonk);
 	pClonk->JumpUp();
 }
@@ -88,14 +88,14 @@ func Text3()
 func Text4()
 {
   // Auftrag
-  DialogMessage(pMage, "Hmm, das ist sehr beunruhigend. Er muss gefangen genommen worden sein...", "Text5", 0, 0, "Dialog5.ogg");
+  DialogMessage(pMage, "$Story06$", "Text5", 0, 0, "Dialog5.ogg");
 	PosCam(pMage);
 }
 
 func Text5()
 {
   // Auftrag
-  DialogMessage(pMage, "Gehen wir los, ich kenne einen geheimen Eingang zu Fenrings Kerkerkomplex.", "Text6", 0, 0, "Dialog6.ogg");
+  DialogMessage(pMage, "$Story07$", "Text6", 0, 0, "Dialog6.ogg");
 }
 
 func Text6()
@@ -111,20 +111,20 @@ func Text6()
 func Text7()
 {
   // Auftrag
-  DialogMessage(pFred, "Hey, hast du schon gehört, dass Harkon versagt hat bei seiner Mission?", "Text8", 0, 0, "Dialog7.ogg");
+  DialogMessage(pFred, "$Story08$", "Text8", 0, 0, "Dialog7.ogg");
 }
 
 func Text8()
 {
   // Auftrag
-  DialogMessage(pMalvin, "Nein, Marc wurde bestimmt einfach in die Falle gelockt, Harkon hat sein Bestes gegeben.", "Text9", 0, 0, "Dialog8.ogg");
+  DialogMessage(pMalvin, "$Story09$", "Text9", 0, 0, "Dialog8.ogg");
 	PosCam(pMalvin);
 }
 
 func Text9()
 {
   // Auftrag
-  DialogMessage(pFred, "Ach, Juncus holt ihn da sicher wieder raus. Aber Harkon hat seine Lektion erteilt bekommen dafür dass er sich immer so vordrängt!", "Text10", 0, 0, "Dialog9.ogg");
+  DialogMessage(pFred, "$Story10$", "Text10", 0, 0, "Dialog9.ogg");
 	pFred->JumpUp();
 	PosCam(pFred);
 }
@@ -164,17 +164,17 @@ func EndIntro()
 
 func TextB1()
 {
-	DialogMessage(pGuard1, "Weißt du, warum der Aufzug nicht mehr geht? Wir kommen hier unten nicht mehr raus!", "TextB2", 0, 0, "Dialog10.ogg");
+	DialogMessage(pGuard1, "$Story11$", "TextB2", 0, 0, "Dialog10.ogg");
 }
 
 func TextB2()
 {
-	DialogMessage(pGuard2, "Hmm, wir müssten mal in den Maschinenraum schauen. Vielleicht fehlt Brennmaterial?", "TextB3", 0, 0, "Dialog11.ogg");
+	DialogMessage(pGuard2, "$Story12$", "TextB3", 0, 0, "Dialog11.ogg");
 }
 
 func TextB3()
 {
-	DialogMessage(pGuard1, "So ein Mist. Der ist nämlich abgesperrt...", "TextB4", 0, 0, "Dialog12.ogg");
+	DialogMessage(pGuard1, "$Story13$", "TextB4", 0, 0, "Dialog12.ogg");
 }
 
 local pCook;
@@ -183,7 +183,7 @@ local pScroll;
 func TextB4()
 {
 	SetCommand(pClonk, "MoveTo", 0, 827, 560);
-	DialogMessage(pClonk, "Hier ist also der geheime Zugang zum Kerkerkomplex. Dann werde ich mal schauen, ob ich Marc da irgendwo finde.", "EndIntro2", 0, 0, "Dialog13.ogg");
+	DialogMessage(pClonk, "$Story14$", "EndIntro2", 0, 0, "Dialog13.ogg");
 }
 
 func ScriptCook()
@@ -193,7 +193,7 @@ func ScriptCook()
 	pCook->JumpUp();
 	StopClonkEx(pClonk);
   
-	DialogMessage(pCook, "Hilfe, tu mir nichts! Ich wurde nur eingesperrt, weil ich das Essen versalzen hatte! Und ich verrate auch niemandem, dass der Schlüssel im Backofen ist!", "Nothing", 0, 0, "Dialog14.ogg");
+	DialogMessage(pCook, "$Story15$", "Nothing", 0, 0, "Dialog14.ogg");
 }
 
 local pFinder;
@@ -204,14 +204,14 @@ func ScriptScroll(pClonk)
 	pScroll = Object(2100);
 	pFinder = pClonk;
 	SetCommand(pFinder, "MoveTo", 0, GetX(pScroll), GetY(pScroll));
-	DialogMessage(pFinder, "Eine Nachricht in Marcs leerer Zelle? Was hat das zu bedeuten?", "ScriptScroll2", 0, 0, "Dialog15.ogg");
+	DialogMessage(pFinder, "$Story16$", "ScriptScroll2", 0, 0, "Dialog15.ogg");
 }
 
 func ScriptScroll2()
 {
 	g_ScrollFound = 1;
 	g_StoryIndex = 1;
-	DialogMessage(pFinder, "Oh nein! Sie haben ihn abgeholt und bringen ihn zur Hinrichtung! Ich muss schnell hier raus und das Juncus berichten. Also zurück zum Wegweiser am Anfang.", "Nothing", 0, 0, "Dialog16.ogg");
+	DialogMessage(pFinder, "$Story17$", "Nothing", 0, 0, "Dialog16.ogg");
 	pScroll->RemoveObject();
 }
 
@@ -242,7 +242,7 @@ func DoStartSzen()
 public func SignpostReached()
 {
   var pClonk = GetCursor(GetPlayerByIndex(0, C4PT_User));
-	DialogMessage(pClonk, "Puh ich hoffe Juncus kann mir helfen Marc jetzt noch zu befreien...", "OutEnd", "Ende", 0, "Dialog17.ogg");
+	DialogMessage(pClonk, "$Story18$", "OutEnd", "$Story19$", 0, "Dialog17.ogg");
 	return 1;
 }
 

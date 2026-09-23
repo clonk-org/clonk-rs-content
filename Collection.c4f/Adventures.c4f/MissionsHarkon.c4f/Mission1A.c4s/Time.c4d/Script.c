@@ -103,7 +103,7 @@ func DoStart()
 
 	FilmFadeDark();
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 1", "1"], "Es ist die Zeit des großen Kanderianischen Krieges. In einem weit abgelegenen Tal wohnt Harkon bei seinem Vater Olrog. Doch das sorglose Leben dort wird sich bald ändern...", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -115,18 +115,18 @@ func Text0()
 
 func Text1()
 {
-  DialogMessage(father, "Harkon mein Sohn, heute ist dein 18. Geburtstag. Ich muss dir heute eine wichtige Sache sagen.", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(father, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
   return 1;
 }
 
 func Text2(idID, pClonk)
 {
-  DialogMessage(father, "Auch wenn unser bescheidenes Tal wenig abwirft, bist du zu weit mehr bestimmt.", "Text3", 0, 0, "Dialog3.ogg");
+  DialogMessage(father, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 }
 
 func Text3(idID, pClonk)
 {
-  DialogMessage(father, "Ich werde dir heute Abend alles bei Einbruch der Dunkelheit erklären. Aber vorher nutze den Tag um etwas Holz hacken zu gehen, unser Vorrat ist erschöpft.", "EndIntro", "Starten", 0, "Dialog4.ogg");
+  DialogMessage(father, "$Story05$", "EndIntro", "$Story06$", 0, "Dialog4.ogg");
 }
 
 func Nothing() { return; }
@@ -212,7 +212,7 @@ func Script30()
 
 	StopClonkEx(pClonk);
 	DoPlayMusic("Final Count.ogg");
-	DialogMessage(pClonk, "Was ist geschehen? Da hinten steigt Rauch auf! Ich muss sofort zurück!", "Script30b", 0, 0, "Dialog5.ogg");
+	DialogMessage(pClonk, "$Story07$", "Script30b", 0, 0, "Dialog5.ogg");
 	
 	// Alle Clonks müssen links sein:
 	for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
@@ -252,7 +252,7 @@ func EnemySeen()
 {
 	StopClonkEx(pClonk);
 	SetCommand(pClonk, "MoveTo", 0, 868, 283);
-	DialogMessage(pClonk, "Oh nein, da sind ja Räuber! Ich muss sie irgendwie austricksen. Vielleicht kann ich mir am Sägebock aus Holz eine Falle basteln. Für den Notfall hatte Vater auch irgendwo noch zwei Brote versteckt.", "EnemySeenb", 0, 0, "Dialog6.ogg");
+	DialogMessage(pClonk, "$Story08$", "EnemySeenb", 0, 0, "Dialog6.ogg");
 	for(var i = 0; i < GetPlayerCount(); i++)
 	  SetPlrKnowledge(GetPlayerByIndex(i), BRTR);
 	g_StoryIndex = 2;
@@ -260,12 +260,12 @@ func EnemySeen()
 
 func EnemySeenb()
 {
-	DialogMessage([_SAV, "Hinweis"], "<i>Bevor es brenzlig wird kann man im Kontextmenü das Schnellspeichern verwenden.</i>", "EnemySeenC", 0, 0, "Dialog7.ogg");
+	DialogMessage([_SAV, "$Story09$"], "$Story10$", "EnemySeenC", 0, 0, "Dialog7.ogg");
 }
 
 func EnemySeenC()
 {
-	DialogMessage([BRTR, "Hinweis"], "<i>Die Falle kann am Sägebock gebaut werden. Wie ein Brückensegment wird sie über ein Loch geschoben und bricht durch, wenn Gegner drüber laufen.|Tipp: man kann auch Flints oder Zapnester drauflegen.</i>", "Script40", 0, 0, "Dialog8.ogg");
+	DialogMessage([BRTR, "$Story09$"], "$Story11$", "Script40", 0, 0, "Dialog8.ogg");
 }
 
 func Script40()
@@ -288,27 +288,27 @@ func Script50()
 
 	StopClonkEx(pClonk);
 	DoPlayMusic("Epic Unease.ogg");
-	DialogMessage(pClonk, "Vater, Vater, was ist mit dir? Lebst du noch?", "Text4a", 0, 0, "Dialog9.ogg");
+	DialogMessage(pClonk, "$Story12$", "Text4a", 0, 0, "Dialog9.ogg");
 	SetCommand(pClonk, "MoveTo", Object(876));
 }
 
 func Text4a()
 {
 	StopClonkEx(pClonk);
-	DialogMessage(father, "...mein Sohn... ich muss dir sagen...aaargh", "Text4b", 0, 0, "Dialog10.ogg");
+	DialogMessage(father, "$Story13$", "Text4b", 0, 0, "Dialog10.ogg");
 	pClonk->SetPosition(Object(876)->GetX(), Object(876)->GetY());
 }
 
 func Text4b()
 {
 	StopClonkEx(pClonk);
-	DialogMessage(pClonk, "Diese widerlichen Mistkerle, sie haben meinen Vater ermordet! Wie soll es denn jetzt nun weitergehen? Und was wollte er mir eigentlich noch so wichtiges sagen?", "Text4c", 0, 0, "Dialog11.ogg");
+	DialogMessage(pClonk, "$Story14$", "Text4c", 0, 0, "Dialog11.ogg");
 }
 
 func Text4c()
 {
 	StopClonkEx(pClonk);
-	DialogMessage(pClonk, "Ich schwöre bei Sawelô, ich werde dich rächen Vater! Ich finde die Schweine, die den Überfall befohlen haben!", "Text5", 0, 0, "Dialog12.ogg");
+	DialogMessage(pClonk, "$Story15$", "Text5", 0, 0, "Dialog12.ogg");
 }
 
 local pMage;
@@ -322,18 +322,18 @@ func Text5()
 
 	SetDirTo(pMage, pClonk);
 	SetDirTo(pClonk, pMage);
-	DialogMessage(pMage, "Was geht hier vor? Wurdet ihr überfallen?", "Text6", 0, 0, "Dialog13.ogg");
+	DialogMessage(pMage, "$Story16$", "Text6", 0, 0, "Dialog13.ogg");
 }
 
 func Text6()
 {
 	StopClonkEx(pClonk);
-	DialogMessage(pClonk, "Diese Räuber haben unseren Hof überfallen und meinen Vater getötet. Ich konnte meinen Vater allerdings rächen und diese verlogenen Mistkerle besiegen! Doch was soll jetzt aus mir werden?", "Text7", 0, 0, "Dialog14.ogg");
+	DialogMessage(pClonk, "$Story17$", "Text7", 0, 0, "Dialog14.ogg");
 }
 
 func Text7()
 {
-	DialogMessage(pMage, "Oh wie tragisch. Das tut mir Leid. Komm mit mir, ich gewähre dir Obdach und wir können vielleicht rausfinden, wer hinter diesem Überfall gesteckt hat.", "Text8", "Ende", 0, "Dialog15.ogg");
+	DialogMessage(pMage, "$Story18$", "Text8", "$Story19$", 0, "Dialog15.ogg");
 }
 
 func Text8()

@@ -1,0 +1,4 @@
+Goal01=Kerkerraum des Todes mit gaaanz vielen tödlichen und bösen Stacheln.
+Goal02=Höhle verlassen
+Goal03=Fenring lebt noch
+Goal04=Fenring muss noch besiegt werden

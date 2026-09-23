@@ -1,3 +1,7 @@
 MsgLoadingSect=Landschaft wird geladen...
 MsgLoadingFail=Fehler beim Laden der Sektion.
 TeamEnemy=Gegner
+Goal01=Geh nach Westen und hacke im kleinen Wald Holz.
+Goal02=Gehe zurück zur Hütte deines Vaters um nachzusehen, was los ist.
+Goal03=Besiege alle Räuber.
+Goal04=Ende.

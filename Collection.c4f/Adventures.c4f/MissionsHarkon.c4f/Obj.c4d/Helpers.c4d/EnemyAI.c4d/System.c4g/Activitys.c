@@ -29,11 +29,11 @@ func ActGetDialog(idID, iIndex, pTalker1, pTalker2)
 	if(idID == _CIN)
 	{
 		if(iIndex == 0)
-			return ActDialog("Hey, das war mein Geld!", pTalker1, pTalker2);
+			return ActDialog("$Chat01$", pTalker1, pTalker2);
 		if(iIndex == 1)
-			return ActDialog("Pech gehabt, ich war eher dran!", pTalker2, pTalker1);
+			return ActDialog("$Chat02$", pTalker2, pTalker1);
 		if(iIndex == 2)
-			return ActDialog("Pass auf, das nächste Mal wenn ich was finde bekomme ich es!", pTalker1, pTalker2);
+			return ActDialog("$Chat03$", pTalker1, pTalker2);
 		return 0;
 	}
 	if(idID == SWAP)
@@ -42,41 +42,41 @@ func ActGetDialog(idID, iIndex, pTalker1, pTalker2)
 		if(iDialogRandom == 1)
 		{
 			if(iIndex == 0)
-				return ActDialog("Ich bin deine Ablösung, du kannst gehen.", pTalker1, pTalker2);
+				return ActDialog("$Chat04$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Ah danke! Ich habe schon ewig gewartet.", pTalker2, pTalker1);
+				return ActDialog("$Chat05$", pTalker2, pTalker1);
 			if(iIndex == 2)
-				return ActDialog("Kein Problem, dann ruh dich mal aus.", pTalker1, pTalker2);
+				return ActDialog("$Chat06$", pTalker1, pTalker2);
 		}
 		if(iDialogRandom == 2)
 		{
 			if(iIndex == 0)
-				return ActDialog("Hey, Ablösung ist da.", pTalker1, pTalker2);
+				return ActDialog("$Chat07$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Wurde aber auch Zeit. Ich bin weg.", pTalker2, pTalker1);
+				return ActDialog("$Chat08$", pTalker2, pTalker1);
 		}
 		if(iDialogRandom == 3)
 		{
 			if(iIndex == 0)
-				return ActDialog("Du bist also meine Ablösung.", pTalker2, pTalker1);
+				return ActDialog("$Chat09$", pTalker2, pTalker1);
 			if(iIndex == 1)
-				return ActDialog("Ja, ich passe jetzt hier auf.", pTalker1, pTalker2);
+				return ActDialog("$Chat10$", pTalker1, pTalker2);
 			if(iIndex == 2)
-				return ActDialog("Dann sei wachsam!", pTalker2, pTalker1);
+				return ActDialog("$Chat11$", pTalker2, pTalker1);
 		}
 		if(iDialogRandom == 4)
 		{
 			if(iIndex == 0)
-				return ActDialog("Ich bin jetzt dran!", pTalker1, pTalker2);
+				return ActDialog("$Chat12$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Nicht so stürmisch. Ich gehe jetz schon.", pTalker2, pTalker1);
+				return ActDialog("$Chat13$", pTalker2, pTalker1);
 		}
 		if(iDialogRandom == 5)
 		{
 			if(iIndex == 0)
-				return ActDialog("Du hast jetzt Feierabend.", pTalker1, pTalker2);
+				return ActDialog("$Chat14$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Ah sehr schön.", pTalker2, pTalker1);
+				return ActDialog("$Chat15$", pTalker2, pTalker1);
 		}
 		return 0;
 	}
@@ -86,41 +86,41 @@ func ActGetDialog(idID, iIndex, pTalker1, pTalker2)
 		if(iDialogRandom == 1)
 		{
 			if(iIndex == 0)
-				return ActDialog("Oh %s, wie konnte das nur geschehen?", pTalker1, pTalker2);
+				return ActDialog("$Chat16$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Möge Sawelô sich deiner Seele annehmen", pTalker1, pTalker2);
+				return ActDialog("$Chat17$", pTalker1, pTalker2);
 			if(iIndex == 2)
-				return ActDialog("Auf Wiedersehen im Paradis", pTalker1, pTalker2);
+				return ActDialog("$Chat18$", pTalker1, pTalker2);
 		}
 		if(iDialogRandom == 2)
 		{
 			if(iIndex == 0)
-				return ActDialog("%s, wir werden dich Rächen!", pTalker1, pTalker2);
+				return ActDialog("$Chat19$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Wer immer für deinen Tod verantwortlich ist, der muss sterben!", pTalker1, pTalker2);
+				return ActDialog("$Chat20$", pTalker1, pTalker2);
 		}
 		if(iDialogRandom == 3)
 		{
 			if(iIndex == 0)
-				return ActDialog("%s ich vermisse dich.", pTalker1, pTalker2);
+				return ActDialog("$Chat21$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Du warst mir immer ein guter Freund und Helfer.", pTalker1, pTalker2);
+				return ActDialog("$Chat22$", pTalker1, pTalker2);
 			if(iIndex == 2)
-				return ActDialog("Ruhe in Frieden.", pTalker1, pTalker2);
+				return ActDialog("$Chat23$", pTalker1, pTalker2);
 		}
 		if(iDialogRandom == 4)
 		{
 			if(iIndex == 0)
-				return ActDialog("Eine Schande, dass jemand wie du, %s, so früh von uns gehen musste.", pTalker1, pTalker2);
+				return ActDialog("$Chat24$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Dein Mörder wird dafür bezahlen, das schwöre ich dir!", pTalker1, pTalker2);
+				return ActDialog("$Chat25$", pTalker1, pTalker2);
 		}
 		if(iDialogRandom == 5)
 		{
 			if(iIndex == 0)
-				return ActDialog("Ich finde keine Worte deinen Tod zu betrauern.", pTalker1, pTalker2);
+				return ActDialog("$Chat26$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Was werde ich nur ohne dich machen?", pTalker1, pTalker2);
+				return ActDialog("$Chat27$", pTalker1, pTalker2);
 		}
 		return 0;
 	}

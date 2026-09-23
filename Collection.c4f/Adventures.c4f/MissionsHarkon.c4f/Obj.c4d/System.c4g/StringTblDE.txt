@@ -1,0 +1,16 @@
+Respawn01=Starten
+Respawn02=Du bist gestorben.
+Respawn03=Laden
+Respawn04=Neustarten
+Respawn05=Willst du wirklich neustarten?
+Respawn06=Ja
+Respawn07=Nein
+Corpse01=Ich habe eine Leiche gesehen! Ein Angreifer hat sich eingeschlichen!.
+Corpse02=Ok, durchsucht die Burg, irgndwo muss der Meuchler sein.
+Corpse03=Keine Panik, wir werden ihn schon finden!
+Corpse04=Eine Leiche wurde gefunden! Ein Meuchler muss da sein.
+Corpse05=Das weis ich schon. Wir sind ja schon auf der Suche nach ihm..
+Corpse06=Bleib ruhig und wachsam, wir werden ihn schon finden.
+CtxRestart=Neu starten
+CtxLoad=Laden
+CtxSave=Speichern

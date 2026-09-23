@@ -1,3 +1,6 @@
 TxtUpgrade=Upgrade Grange
 TxtStage1=Stage Two
 TxtNotEnoughMaterials=Needs 5 Wood.
+Upgrade=Upgrade
+Stage1=Stage two
+NotEnoughMaterials=A total of 5 wood is needed!

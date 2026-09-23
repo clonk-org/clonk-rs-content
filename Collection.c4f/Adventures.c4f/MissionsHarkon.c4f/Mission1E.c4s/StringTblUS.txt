@@ -1,0 +1,4 @@
+Goal01=So, young assassin. This is your first real mission.|Your target is a remote outpost of Count Fenring, where some gold reserves are stored. Steal all the gold and then come back alive to the signpost.
+Goal02=Away from the castle.
+Goal03=You haven't stolen all the gold yet!
+Goal04=Steal all the gold from the outpost. %d pieces of gold are still missing.

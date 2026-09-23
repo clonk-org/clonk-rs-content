@@ -1,1 +1,1 @@
-Double click 'dig' to lock segments in place.
+Push it carefully up to an edge. Double-click 'dig' to anchor it. It breaks when enemies stand on it.

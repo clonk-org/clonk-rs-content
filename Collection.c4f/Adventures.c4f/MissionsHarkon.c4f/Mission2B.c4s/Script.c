@@ -21,8 +21,8 @@ func DoStartSzen()
 	
   AI_SetDifficulty(1);
 
-  AssignWScriptText(COAL, [POWR, ["Maschienenraum, betreten nur mit Gräflicher Genehmigung. Wer was kaputt macht wird verprügelt!"]]);
-  AssignWScriptText(CRYS, [CRYS, ["Hochsicherheitszelle von Fukat! Keine Kristalle in der Nähe liegen lassen! Das Essen unter dem Tor durchschieben!"]]);
+  AssignWScriptText(COAL, [POWR, ["$Goal01$"]]);
+  AssignWScriptText(CRYS, [CRYS, ["$Goal02$"]]);
 	
   return;
 }
@@ -49,15 +49,15 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 	return 1;
 }
 
-public func MsgSignpost1()  { return "Raus aus dem Kerker."; }
+public func MsgSignpost1()  { return "$Goal03$"; }
 
 public func IsFullfilled() { return g_ScrollFound; }
-public func FullfillText() { return "Du musst noch Marc befreien!"; }
+public func FullfillText() { return "$Goal04$"; }
 
 public func GoalText()
 {
 	if(g_StoryIndex == 0)
-		return "Finde Marcs Kerkerzelle und befreie Marc.";
+		return "$Goal05$";
 	if(g_StoryIndex == 1)
-		return "Kehre zurück zum Wegweiser um Juncus von Marcs Hinrichtung zu berichten.";
+		return "$Goal06$";
 }

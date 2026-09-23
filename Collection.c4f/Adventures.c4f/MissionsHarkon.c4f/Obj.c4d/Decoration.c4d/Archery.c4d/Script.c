@@ -46,7 +46,7 @@ func CancelActivity(pClonk)
 {
 	var index = GetIndexOf(pClonk, aClonks);
 	if(index < 0) return; // nicht mehr in der Liste
-	pClonk->MessageEx("Ich muss weg Leute.", pClonk);
+	pClonk->MessageEx("$Archery01$", pClonk);
 	if(index > 0)
 		return DeleteArrayItem(index, aClonks);
 	DeleteArrayItem(index, aClonks);
@@ -117,9 +117,9 @@ func Timer()
 		else
 		{
 			if(pClonk->GetLifeState() == 2)
-				pClonk->MessageEx("Ich muss jetzt ins Bett.", pClonk);
+				pClonk->MessageEx("$Archery02$", pClonk);
 			else
-				pClonk->MessageEx("Ich muss jetzt an die Arbeit.", pClonk);
+				pClonk->MessageEx("$Archery03$", pClonk);
 			pClonk->FinishActivity();
 		}
 		if(iFinishTime <= GetTime())
@@ -142,12 +142,12 @@ func CommentShot(pClonk, pTalker)
 {
 	if(Abs(iYOffset) < 2)
 	{
-		MessageEx(Format("Hey voll ins schwarze %s!", GetName(pClonk)), pTalker);
+		MessageEx(Format("$Archery04$", GetName(pClonk)), pTalker);
 		pTalker->JumpUp();
 	}
-	else if(Abs(iYOffset) < 5) MessageEx(Format("Naja %s fast hättest du getroffen!", GetName(pClonk)), pTalker);
-	else if(Abs(iYOffset) < 9) MessageEx(Format("Vielleicht wird es das nächste mal besser %s", GetName(pClonk)), pTalker);
-	else MessageEx(Format("Das war ja wohl mal voll danneben %s!", GetName(pClonk)), pTalker);
+	else if(Abs(iYOffset) < 5) MessageEx(Format("$Archery05$", GetName(pClonk)), pTalker);
+	else if(Abs(iYOffset) < 9) MessageEx(Format("$Archery06$", GetName(pClonk)), pTalker);
+	else MessageEx(Format("$Archery07$", GetName(pClonk)), pTalker);
 }
 
 /* Kann von Pfeilen getroffen werden */

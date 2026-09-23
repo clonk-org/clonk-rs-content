@@ -1,0 +1,7 @@
+MsgLoadingSect=Loading landscape...
+MsgLoadingFail=Error while loading the section.
+TeamEnemy=Enemies
+Goal01=Go west and chop wood in the little forest.
+Goal02=Go back to your father's hut to see what is going on.
+Goal03=Defeat all the robbers.
+Goal04=The end.

@@ -39,13 +39,13 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 
   // Auftrag
 	if(g_fIntroSkiped)
-		GoalMessageJuncus(pClonk, "So junger Meuchelmörder. Die ist dein erster richtiger Auftrag.|Ziel ist ein abgelegner Außenposten von Graf Fenring, wo einige Goldvorräte gelagert werden. Stehle alles Gold und komme dann lebend zum Wegweiser zurück.");
+		GoalMessageJuncus(pClonk, "$Goal01$");
 	return 1;
 }
 
-public func MsgSignpost1()  { return "Weg von der Burg."; }
+public func MsgSignpost1()  { return "$Goal02$"; }
 
 public func IsFullfilled() { return !FindObject2(Find_ID(GOLD)); }
-public func FullfillText() { return "Du hast noch nicht alles Gold gestohlen!"; }
+public func FullfillText() { return "$Goal03$"; }
 
-public func GoalText() { return Format("Stehle alles Gold aus dem Außenposten. %d Goldstücke fehlen noch.", ObjectCount2(Find_ID(GOLD))); }
+public func GoalText() { return Format("$Goal04$", ObjectCount2(Find_ID(GOLD))); }

@@ -1,0 +1,5 @@
+Goal01=Deine zweite Trainingsmission beschäftigt sich mit der Armbrust. Bei der Armbrust ist es immer sehr wichtig, dass man mit dem Bolzen sparsam ist, denn sie sind oft nur sehr begrenzt vorhanden und können nach einem Treffer nicht wieder verwendet werden.
+Goal02=Zur Übung musst du nun hier die schwarzen Todeskrähen abschießen. Die normalen Vögel sind jedoch nicht dein Ziel!
+Goal03=Canyon verlassen.
+Goal04=Es leben noch ein paar Todeskrähen!
+Goal05=Erschieße alle schwarzen Todeskrähen. %d fehlen noch.

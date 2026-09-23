@@ -1,0 +1,8 @@
+Cards01=Voll!
+Cards02=nächstes Buch
+Cards03=Ich wünsche mir <c %x>%s</c>
+Cards04=Ich hab gewonnen!
+Cards05=Du schuldest mir jetzt %d Bier!
+Cards06=Neues Spiel.
+Cards07=Ich muss ziehen.
+Cards08=Ich muss weg Leute.

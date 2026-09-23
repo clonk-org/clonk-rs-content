@@ -1,0 +1,14 @@
+Ghost01=Geist %s
+Ghost02=%s||<i>Der Geist von %s wurde befreit</i>
+Ghost03=<i>Der Geist von %s wurde befreit</i>
+Ghost04=%s und %s
+Ghost05=%d von %d Geistern im %d. Kapitel gefunden.
+Ghost06=Die Geister von %s wurden bisher befreit.
+Ghost07=Os Seele, die litt große Not,|für seine Zukunft sah er rot.|  er wollte endlich gehen|  und nicht mehr auf dieser Erde stehen,|denn sein Körper war schon lange tot.
+Ghost08=Marog lebte einst in diesem Tal,|ob Sonn ob Wind, war ihm egal,|  sein Haus das hat er stets beschützt,|  am End hats ihm dann doch nix genützt,|den er erlag der Niederlage Qual.
+Ghost09=Maroga war seine Frau und Olrogs Mutter,|buk Kuchen, kochte Braten, stampfte Butter|  keine Arbeit die hat sie gescheut,|  Doch warum lebt sie nicht auch heut?|Sie starb, den Zaps wurde sie ein Futter.
+Ghost10=Posipex ist so manch ein Fang gelungen,|hat oft am Fluss ein Lied gesungen,|  die Angelrute fest in seiner Hand,|  zog er auch diesen Fisch an Land.|Da hat der Fisch ihn schwups verschlungen.
+Ghost11=Ein Monster ganz aus festem Stein,|das fing Mortums kleine Seele ein,|  nie konnte er von dort wieder gehen,|  niemand hat ihn je dannach gesehen,|Sollte dass dann nun das Ende sein?
+Ghost12=In einem Zug reist er durch Raum und Zeit,|so besucht Ralum die Welt so weit,|  Doch der Zug ist stehen geblieben.|  Vor acht Jahren, oder sieben.|Und Ralum doch kein End von seinem Leid.
+Ghost13=Fruor war eine sehr gemeine Schlange.|Doch hat man ihn eingesperrt sehr lange,|  nie brachte man ihm eine Speise,|  oder kümmerte sich auf andere Weise,|so wurd selbst seiner Seele bange.
+Ghost14=Ja er war ein kleiner Strolch|spielte gerne Streicher, der Malolch|  nichts ist ihm heilig geblieben|  doch heut hat er es übertrieben|und spürte dann schnell den Dolch.

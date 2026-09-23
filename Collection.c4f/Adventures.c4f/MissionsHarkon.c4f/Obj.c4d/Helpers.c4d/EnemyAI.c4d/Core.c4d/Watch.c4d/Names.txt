@@ -1,2 +1,2 @@
 DE:Warnung
-US:warning
+US:Warning

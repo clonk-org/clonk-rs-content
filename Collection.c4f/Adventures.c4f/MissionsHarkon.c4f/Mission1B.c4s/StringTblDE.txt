@@ -1,0 +1,7 @@
+Goal01=Deine erste Trainingsmission. Du lernst hier das Schleichen und den Umgang mit der Keule. Versuche alle Clonks in unserem Trainingslager mit der Keule zu betäuben (Doppelgraben hinter dem Opfer).
+Goal02=Dabei darfst du allerdings nicht gesehen werden! Kehre dann zum Wegweiser zurück.
+Goal03=Weg von der Burg.
+Goal04=Es sind noch Clonks im Lager bei Bewusstsein!
+Goal05=Betäube alle Clonks im Lager ohne gesehen zu werden. Es sind noch %d übrig.
+Goal06=Du wurdest entdeckt!
+Goal07=%s wurdest entdeckt!

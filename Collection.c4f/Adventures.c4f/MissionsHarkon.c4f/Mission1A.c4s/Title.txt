@@ -1,2 +1,2 @@
 DE:Prolog
-US:Prologe
+US:Prologue

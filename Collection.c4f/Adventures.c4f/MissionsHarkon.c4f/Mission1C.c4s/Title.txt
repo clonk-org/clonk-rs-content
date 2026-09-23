@@ -1,2 +1,2 @@
 DE:Training Armbrust
-US:Training Crossbow
+US:Training: Crossbow

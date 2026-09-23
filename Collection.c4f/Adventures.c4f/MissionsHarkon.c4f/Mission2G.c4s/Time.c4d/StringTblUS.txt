@@ -1,0 +1,8 @@
+Story01=So this is where Fenring has withdrawn to. I guess I have to fight my way through, find him and then defeat him.
+Story02=So, you have made it through to me after all, wretched assassin...
+Story03=By Teiwaz, damn, that wasn't exactly very inconspicuous.
+Story04=Oh yes, you will make that mistake only once, scum.
+Story05=Fenring has killed Harkon.
+Story06=Damn, where did the bastard go? I'm blinded.
+Story07=Argh, I can't go on. You have defeated me...
+Story08=I will bring you before the great Cra. He will decide what happens to a traitor like you!

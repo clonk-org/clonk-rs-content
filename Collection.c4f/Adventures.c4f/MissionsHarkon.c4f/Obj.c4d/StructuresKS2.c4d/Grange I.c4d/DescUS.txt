@@ -1,3 +1,5 @@
-A somewhat sturdier home base with solid basement.
+This is the knight clonk's cozy grange.
 
-You can upgrade it with five wood.
+With some effort, it can be upgraded.
+
+It also serves as a home base.

@@ -41,7 +41,7 @@ func DoStart()
 
 	FilmFadeDark();
 
-	DialogMessage([BO69, "Buch Harkon, Kapitel 1", "1"], "Wärend Harkon auf Burg Rockfort ausgebildet wird, erreicht ein Bote eine Festung mitten in der Wüste südlich von Meduvien...", "Text0", 0, 0, "Dialog1.ogg");
+	DialogMessage([BO69, "$Story01$", "1"], "$Story02$", "Text0", 0, 0, "Dialog1.ogg");
 }
 
 func Text0()
@@ -55,46 +55,46 @@ func Text0()
 func Text1()
 {
   // Auftrag
-  DialogMessage(pMessenger, "Meister Kaftlak... schlechte Nachrichten... aus Meduvien.", "Text2", 0, 0, "Dialog2.ogg");
+  DialogMessage(pMessenger, "$Story03$", "Text2", 0, 0, "Dialog2.ogg");
 }
 
 func Text2()
 {
-	DialogMessage(pKaftlak, "Schlechte Neuigkeiten? Worum geht es denn?", "Text3", 0, 0, "Dialog3.ogg");
+	DialogMessage(pKaftlak, "$Story04$", "Text3", 0, 0, "Dialog3.ogg");
 	SetCommand(pKaftlak, "MoveTo", 0, 536, 506);
 }
 
 func Text3()
 {
-	DialogMessage(pMessenger, "Es geht.. um Olrog...", "Text4", 0, 0, "Dialog4.ogg");
+	DialogMessage(pMessenger, "$Story05$", "Text4", 0, 0, "Dialog4.ogg");
 	SetCommand(pMessenger, "MoveTo", 0, 614, 508);
 }
 
 func Text4()
 {
-	DialogMessage(pKaftlak, "Erzähle endlich was passiert ist!", "Text5", 0, 0, "Dialog5.ogg");
+	DialogMessage(pKaftlak, "$Story06$", "Text5", 0, 0, "Dialog5.ogg");
 }
 
 func Text5()
 {
-	DialogMessage(pMessenger, "Olrog ist ermordet worden!", "Text6", 0, 0, "Dialog6.ogg");
+	DialogMessage(pMessenger, "$Story07$", "Text6", 0, 0, "Dialog6.ogg");
 	pMessenger->JumpUp();
 }
 
 func Text6()
 {
-	DialogMessage(pKaftlak, "Oh nein... hat der Junge es erfahren? Was ist mit unseren Männern?", "Text7", 0, 0, "Dialog7.ogg");
+	DialogMessage(pKaftlak, "$Story08$", "Text7", 0, 0, "Dialog7.ogg");
 }
 
 func Text7()
 {
-	DialogMessage(pMessenger, "Keiner hat überlebt. Als ich dort ankam waren nur noch Leichen zu finden.", "Text8", 0, 0, "Dialog8.ogg");
+	DialogMessage(pMessenger, "$Story09$", "Text8", 0, 0, "Dialog8.ogg");
 	pMessenger->JumpUp();
 }
 
 func Text8()
 {
-	DialogMessage(pKaftlak, "Äußerst beunruhigend. Wir müssen unbedingt in Erfahrung bringen, was passiert ist, wo der Junge ist und was er weiß.", "End", "Ende", 0, "Dialog9.ogg");
+	DialogMessage(pKaftlak, "$Story10$", "End", "$Story11$", 0, "Dialog9.ogg");
 }
 
 func Nothing() { return; }
@@ -134,19 +134,19 @@ func EndIntro()
 
 func In1()
 {
-	DialogMessage(pMage, "So Harkon. Wie schon erwähnt wird jetzt scharf geschossen. Heute erlernst du den Umgang mit der Armbrust. Dazu musst du Jagd auf die Todeskrähen machen.", "In2", 0, 0, "Dialog10.ogg");
+	DialogMessage(pMage, "$Story12$", "In2", 0, 0, "Dialog10.ogg");
 }
 
 func In2()
 {
-	DialogMessage(pMage, "Doch geh sparsam mit den Bolzen um. Bolzen sind meist rar und können nach einem Treffer nicht wieder verwendet werden. Du hast für die zehn Krähen auch nur zehn Bolzen.", "In3", 0, 0, "Dialog11.ogg");
+	DialogMessage(pMage, "$Story13$", "In3", 0, 0, "Dialog11.ogg");
 }
 
 func In3()
 {
 	pMage->PoffClonk();
 	pMage->RemoveObject();
-	DialogMessage(pClonk, "Ok, dann werde ich mir die Biester mal vorknöpfen. Und dannach soll ich bestimmt wieder hier am Wegweiser antanzen...", "InEnd", "Start", 0, "Dialog12.ogg");
+	DialogMessage(pClonk, "$Story14$", "InEnd", "Start", 0, "Dialog12.ogg");
 }
 
 func InEnd()
@@ -167,12 +167,12 @@ func DoStartSzen()
 func ScriptFinishedCondition() { return GameCall("IsFullfilled"); }
 
 func ScriptFinished() {
-	DialogMessage(pClonk, "Puh, das waren dann wohl alle dieser gemeinen Biester. Dann mal zurück zum Wegweiser.", "Nothing", 0, 0, "Dialog13.ogg");
+	DialogMessage(pClonk, "$Story15$", "Nothing", 0, 0, "Dialog13.ogg");
 }
 
 public func SignpostReached()
 {
-	DialogMessage(pClonk, "So, endlich fertig mit den grässlichen Vögeln.", "Out1", 0, 0, "Dialog14.ogg");
+	DialogMessage(pClonk, "$Story16$", "Out1", 0, 0, "Dialog14.ogg");
 	return 1;
 }
 
@@ -183,17 +183,17 @@ func Out1()
 	pMage->SetDir(1);
 	pMage->PoffClonk();
 	DoPlayMusic("Epic Unease.ogg");
-	DialogMessage(pMage, "Na, war doch nicht so schlimm, oder haben dich die Vögel gepiesakt?", "Out2", 0, 0, "Dialog15.ogg");
+	DialogMessage(pMage, "$Story17$", "Out2", 0, 0, "Dialog15.ogg");
 }
 
 func Out2()
 {
-	DialogMessage(pClonk, "Pah, als Magier hat man leicht reden, aber wenn man das erste mal so ein Ding in der Hand hält und Tiere töten muss ist das nicht so einfach.", "Out3", 0, 0, "Dialog16.ogg");
+	DialogMessage(pClonk, "$Story18$", "Out3", 0, 0, "Dialog16.ogg");
 }
 
 func Out3()
 {
-	DialogMessage(pMage, "Ach ja, bei deinen Räubern hattest du auch keine Probleme die zu töten. Morgen zeige ich dir dann wozu die Armbrust noch gut sein kann, also freu dich.", "OutEnd", "Ende", 0, "Dialog17.ogg");
+	DialogMessage(pMage, "$Story19$", "OutEnd", "$Story11$", 0, "Dialog17.ogg");
 }
 
 func OutEnd()

@@ -32,13 +32,13 @@ protected func ControlUp(object pPlayer)
 	if(pGhost && GetID(pGhost)==GHST)
 		return pGhost->Activate();
   // Spieler vorbereiten (Action halten, weil Push)
-	var sText = Format("Hier ruht in Frieden %s", GetName(pTarget));
-	if(!pTarget) sText = "Das Grab ist leer.";
+	var sText = Format("$Grave01$", GetName(pTarget));
+	if(!pTarget) sText = "$Grave02$";
   var szPortrait = Format("Portrait:%i::%x::%s", GetID(), GetColorDw(), "1");
   CreateMenu(GetID(),pPlayer,this,0,Format("<c %x>%s:</c>", GetColorDw(), GetName()),0,C4MN_Style_Dialog);
   AddMenuItem(szPortrait,0,NONE,pPlayer,0,0,0,5);
   AddMenuItem(sText,0,NONE,pPlayer);
-  AddMenuItem("Abbrechen", "Stop", MCMX, pPlayer, 0, pPlayer);
+  AddMenuItem("$Grave03$", "Stop", MCMX, pPlayer, 0, pPlayer);
   return 1;
   }
   

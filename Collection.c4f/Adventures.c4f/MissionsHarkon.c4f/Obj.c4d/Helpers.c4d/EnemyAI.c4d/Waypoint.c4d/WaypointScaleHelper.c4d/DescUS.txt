@@ -1,1 +1,1 @@
-Waypoint
+Waypoints for route finding.

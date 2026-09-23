@@ -1,0 +1,4 @@
+Goal01=Juncus hat mir diesen Rettungstrank gegeben, mit dem man angeblich das Erhängen überleben soll.|Vielleicht sollte ich den Henker überwältigen und mich mit seinen Sachen als er ausgeben. Dann wäre ich bei der Hinrichtung als nähster bei Marc...
+Goal02=Weg vom Dorf.
+Goal03=Marc muss noch gerettet werden!
+Goal04=Rette Marc vor dem Galgen. Überwältige dazu den Henker und zieh dir seine Haube an.

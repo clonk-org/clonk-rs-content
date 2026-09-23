@@ -1,0 +1,10 @@
+Story01=Book of Harkon, Chapter 2
+Story02=Harkon has saved Marc from the rope for now, but he is still not safe. Meanwhile, time has not stood still in Kanderia either.
+Story03=The battles are going very well at the moment, but I am still worried about the boy...
+Story04=My lord, I have sent out our best scout to find out everything about the boy.
+Story05=I only hope we are not too late yet. If anyone finds out the secret, the consequences could be devastating!
+Story06=Now go, and report to me as soon as you have news on the matter. And as I said, strictest secrecy!
+Story07=Now I've dragged Marc as far as the forest. At the other end of the forest my blimp stands ready for the escape.
+Story08=I should hurry, because they will surely pursue me to get Marc back. I may also need a catapult to get Marc up the mountain to the blimp. [Grab the catapult while carrying Marc]
+Story09=He ran into the forest somewhere around here with the body. We absolutely must find the body, or Fenring will surely be very angry with us. And look around carefully so you find a camouflaged assassin too, there must be one more about!
+Story10=Argh, that was a rescue at the last second!

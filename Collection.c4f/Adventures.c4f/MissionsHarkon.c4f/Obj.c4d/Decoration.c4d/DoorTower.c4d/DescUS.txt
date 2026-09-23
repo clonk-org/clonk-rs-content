@@ -1,1 +1,1 @@
-A lockable door with two locks.
+A door that can be locked from both sides.

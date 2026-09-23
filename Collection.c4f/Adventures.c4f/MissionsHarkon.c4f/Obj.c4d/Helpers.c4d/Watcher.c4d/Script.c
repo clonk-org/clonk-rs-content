@@ -39,7 +39,7 @@ func Timer()
 		if(iTimer > 100) pTarget = 0;
 		else if(!PathFree(GetX(), GetY(), pTarget->GetX(), pTarget->GetY()) && !pTarget->Contained()) pTarget = 0;
 		if(!pTarget) return;
-		Message("Töte niemanden an diesem heiligen Ort!", this);
+		Message("$Watcher01$", this);
 		DrawLightning(GetX(),GetY(),pTarget->GetX(), pTarget->GetY());
 		Punch(pTarget, 5);
 	}

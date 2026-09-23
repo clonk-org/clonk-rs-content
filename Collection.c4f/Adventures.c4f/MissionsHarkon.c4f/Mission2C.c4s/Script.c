@@ -46,7 +46,7 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 	if(GetPlayerByIndex(C4PT_User) == player) DoWealth(player, 10);
   
   if(g_fIntroSkiped)
-    GoalMessageJuncus(pClonk, "Juncus hat mir diesen Rettungstrank gegeben, mit dem man angeblich das Erhängen überleben soll.|Vielleicht sollte ich den Henker überwältigen und mich mit seinen Sachen als er ausgeben. Dann wäre ich bei der Hinrichtung als nähster bei Marc...");
+    GoalMessageJuncus(pClonk, "$Goal01$");
 
   for(var pObj in FindObjects(Find_Or(Find_ID(CAVE),Find_ID(B_1D))))
     pObj->SetCategory(1);
@@ -87,10 +87,10 @@ global func LogPatrolPoints()
   }
 }
 
-public func MsgSignpost1()  { return "Weg vom Dorf."; }
+public func MsgSignpost1()  { return "$Goal02$"; }
 
 public func IsFullfilled() { return 0; }
-public func FullfillText() { return "Marc muss noch gerettet werden!"; }
+public func FullfillText() { return "$Goal03$"; }
 
 func AI_EncounterENMY(pEncounter, pEnemy, fDead)
 {
@@ -109,5 +109,5 @@ global func DisableAI()
 public func GoalText()
 {
 	if(g_StoryIndex == 0)
-		return "Rette Marc vor dem Galgen. Überwältige dazu den Henker und zieh dir seine Haube an.";
+		return "$Goal04$";
 }

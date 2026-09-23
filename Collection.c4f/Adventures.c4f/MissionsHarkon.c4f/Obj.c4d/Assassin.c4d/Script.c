@@ -762,14 +762,14 @@ private func FindDoor()
 
 public func ContextThrowCoin()
 {
-  [Muenze werfen|Image=_CIN|Condition=HasMoney]
+  [$CtxThrowCoin$|Image=_CIN|Condition=HasMoney]
   if(GetAction() == "Walk" && GetWealth(GetOwner()))
 	{
 		CreateContents(_CIN);
 		AddCommand(this, "Throw");
 		DoWealth(GetOwner(), -1);
 		Sound("Uncash");
-		if(!GetWealth(GetOwner())) MessageEx("Das war meine letzte!", this);
+		if(!GetWealth(GetOwner())) MessageEx("$Harkon01$", this);
 	}
 }
 
@@ -777,7 +777,7 @@ func HasMoney() { return GetWealth(GetOwner()); }
 
 public func ContextCarryCorps()
 {
-  [Clonk tragen|Image=CXIV|Condition=FindCorps]
+  [$CtxCarryClonk$|Image=CXIV|Condition=FindCorps]
   var obj = FindCorps();
   if(GetAction() == "Walk" && obj)
 	{
@@ -798,7 +798,7 @@ func PickUpCorps(obj)
 
 public func ContextPutDownCorps()
 {
-  [Clonk ablegen|Image=CXIV|Condition=IsCarryingCorps]
+  [$CtxDropClonk$|Image=CXIV|Condition=IsCarryingCorps]
   SetAction("CarryPutDown");
   Object(EffectVar(2, this, GetEffect("CarryControlCorps", this)))->SetAction("BeingPutDown", this);
 }
@@ -1033,11 +1033,11 @@ func FindHangman() { if(!IsDisguised()) return FindObject2(Find_ID(_GLM), Find_N
 
 public func ContextUseHangmanDisguise()
 {
-	[Henkershaube nehmen|Image=_GLM|Condition=FindHangman]
-	if(GetPlayerByIndex(0, C4PT_User) != GetOwner()) MessageEx("Das überlasse ich lieber Harkon.", this);
+	[$CtxHangmanHood$|Image=_GLM|Condition=FindHangman]
+	if(GetPlayerByIndex(0, C4PT_User) != GetOwner()) MessageEx("$Harkon02$", this);
 	else
 	{
-		DialogMessage(this, "Gut, damit sollten sie mich für den Henker halten. Ich darf mich aber trotzdem nicht auffällig verhalten. Nichts werfen oder sonstwie Leute angreifen..");
+		DialogMessage(this, "$Harkon03$");
 		SetDisguised(1);
 	}
 }
@@ -1053,7 +1053,7 @@ func FindSteal() { if(GetAction() != "Walk") return 0;
 
 public func ContextSteal()
 {
-  [Stehlen|Image=MBAG|Condition=FindSteal]
+  [$CtxSteal$|Image=MBAG|Condition=FindSteal]
   var pEnemy = FindSteal();
 	if(!pEnemy) return 0;
   pEnemy->DoSteal(this);

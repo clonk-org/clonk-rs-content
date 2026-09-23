@@ -1,2 +1,9 @@
 CtrlRead=Read
 
+MageNotToPirates=I don't want to go this way - the council is to the east
+KnightNotToPirates=I don't want to go this way - to get to Telotiosus, I have to go west through the tunnel under the castle
+ClonkNotToPirates=I should get some training first before I venture too far.
+Sign01=End level
+Sign02=Cancel
+Sign03=&Next mission
+Sign04=Start the next mission.

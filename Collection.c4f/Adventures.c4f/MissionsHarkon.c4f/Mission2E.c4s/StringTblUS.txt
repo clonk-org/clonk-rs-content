@@ -1,0 +1,6 @@
+Goal01=This way to the dungeon. No entry for unauthorized persons.
+Goal02=Dormitory. Absolute silence from 22:00! No alcohol in the rooms.
+Goal03=Left: royal chambers. Right: throne room. Pay homage to the count on entering.
+Goal04=Away from the castle.
+Goal05=Maron is still alive!
+Goal06=Kill Maron and return to the signpost.

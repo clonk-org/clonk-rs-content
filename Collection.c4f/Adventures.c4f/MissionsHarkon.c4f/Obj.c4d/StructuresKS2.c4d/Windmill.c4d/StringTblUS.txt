@@ -1,4 +1,4 @@
 Mill=Grind corn
-AlreadyMill=The Mill alredy Grinds!
-NotEnoughCorn=Not enough corn.|There must be three pieces!
-CreatetFlour=Createt Flour!
+AlreadyMill=The mill is already grinding!
+NotEnoughCorn=Not enough grain.|A total of 3 grain is needed!
+CreatetFlour=Flour produced!
