@@ -239,13 +239,17 @@ def compare(first: bytes, second: bytes, where: str) -> list[str]:
     return report
 
 
-def rewrite(path: Path, inner: str, change: Change) -> str:
+def rewrite(path: Path, transform: Callable[[bytes], bytes]) -> str:
     raw = path.read_bytes()
     image = unpack(raw)
-    edited = edit_entry(image, inner.split("/"), change)
+    edited = transform(image)
     packed = pack(edited, raw[:10])
     path.write_bytes(packed)
     return f"{path}: image {len(image)} -> {len(edited)} bytes, file {len(raw)} -> {len(packed)} bytes"
+
+
+def editing(inner: str, change: Change) -> Callable[[bytes], bytes]:
+    return lambda image: edit_entry(image, inner.split("/"), change)
 
 
 def main(argv: list[str]) -> int:
@@ -253,9 +257,9 @@ def main(argv: list[str]) -> int:
         command, *args = argv
         if command == "replace" and len(args) == 4:
             old, new = Path(args[2]).read_bytes(), Path(args[3]).read_bytes()
-            print(rewrite(Path(args[0]), args[1], replacing(old, new)))
+            print(rewrite(Path(args[0]), editing(args[1], replacing(old, new))))
         elif command == "rename" and len(args) == 3:
-            print(rewrite(Path(args[0]), args[1], renaming(args[2])))
+            print(rewrite(Path(args[0]), editing(args[1], renaming(args[2]))))
         elif command == "cat" and len(args) == 3:
             data = read_entry(unpack(Path(args[0]).read_bytes()), args[1].split("/"))
             Path(args[2]).write_bytes(data)
