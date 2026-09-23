@@ -321,6 +321,33 @@ class GroupEntryTests(unittest.TestCase):
         with self.assertRaisesRegex(group_entry.GroupEntryError, "child CRC model"):
             group_entry.edit_entry(bytes(broken), ["Old.c4d", "Script.c"], group_entry.renaming("S.c"))
 
+    def legacy_child(self, script: bytes) -> bytes:
+        """A group whose child record carries C4GECS_Old over entries that do
+        too, as an older writer left them. C4Group::CalcCRC32 folds a child
+        group whose record is not current (C4Group.cpp:2444-2467), so neither
+        engine reads the CRC such a record stores; this one matches no model."""
+        entries = [("DefCore.txt", b"id=OLDY\r\n"), ("Script.c", script)]
+        child = bytearray(image(entries, crc_state=0))
+        for record, (_name, data) in zip(group_entry.records(bytes(child))[0], entries):
+            child[record["start"] + 284] = 1
+            struct.pack_into("<I", child, record["start"] + 285, zlib.crc32(data))
+        outer = bytearray(image([("Title.txt", b"US:Title\r\n"), ("Old.c4d", [])]))
+        # Swap the empty placeholder child for the prepared one.
+        placeholder = group_entry.records(bytes(outer))[0][1]
+        start = group_entry.records(bytes(outer))[1]
+        body = bytearray(bytes(outer[: start + placeholder["offset"]]) + bytes(child))
+        struct.pack_into("<i", body, placeholder["start"] + 268, len(child))
+        body[placeholder["start"] + 284] = 1
+        struct.pack_into("<I", body, placeholder["start"] + 285, 0x0BADC0DE)
+        return bytes(body)
+
+    def test_a_legacy_child_group_is_edited_through_and_keeps_its_stored_crc(self) -> None:
+        edited = group_entry.edit_entry(
+            self.legacy_child(b"a();\r\n"), ["Old.c4d", "Script.c"], group_entry.replacing(b"a();", b"b();")
+        )
+
+        self.assertEqual(edited, self.legacy_child(b"b();\r\n"))
+
     def test_a_file_added_beside_older_entries_carries_a_current_crc(self) -> None:
         edited = group_entry.add_entry(self.mixed(b"a();\r\n"), ["Old.c4d", "DescUS.txt"], b"Old.\r\n")
 

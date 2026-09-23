@@ -28,9 +28,12 @@ on demand when it folds a child group, as C4Group::CalcCRC32 does
 data-only CRC of a state-1 record extended by the name, 0 for an empty file.
 
 Before it changes anything the editor proves that model against the stored
-value of every state-2 or state-1 record on the path and refuses if one does
-not reproduce, then writes the new CRC in the record's own state. State 0
-records are left as they are. A child group in state 1, or any other state, is
+value of every state-2 record and state-1 file record on the path and refuses
+if one does not reproduce, then writes the new CRC in the record's own state.
+State 0 records are left as they are, and so is a child group in state 1:
+CalcCRC32 folds a child group whose record is not current
+(C4Group.cpp:2444-2467), so neither engine reads the value it stores, and
+older writers left values there that follow no one model. Any other state is
 refused.
 
 `add` appends a new file entry to a group: its record after the group's last
@@ -195,8 +198,6 @@ def edit_entry(image: bytes, parts: list[str], change: Change, *, group: bool = 
     else:
         if not target["child"]:
             raise GroupEntryError(f"{parts[0]!r} is not a child group")
-        if legacy:
-            raise GroupEntryError(f"{parts[0]!r}: a legacy CRC on a child group")
         if checked and image_crc(data) != target["crc"]:
             raise GroupEntryError("child CRC model does not hold")
         if len(parts) == 1:
