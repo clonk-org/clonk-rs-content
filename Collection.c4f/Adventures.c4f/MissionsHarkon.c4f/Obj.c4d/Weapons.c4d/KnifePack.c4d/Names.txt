@@ -1,2 +1,2 @@
 DE:Wurfmesser
-US:Throwing knifes
+US:Throwing knives

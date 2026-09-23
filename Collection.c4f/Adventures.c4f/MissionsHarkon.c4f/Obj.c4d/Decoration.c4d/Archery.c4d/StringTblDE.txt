@@ -1,0 +1,7 @@
+Archery01=Ich muss weg Leute.
+Archery02=Ich muss jetzt ins Bett.
+Archery03=Ich muss jetzt an die Arbeit.
+Archery04=Hey voll ins schwarze %s!
+Archery05=Naja %s fast hättest du getroffen!
+Archery06=Vielleicht wird es das nächste mal besser %s
+Archery07=Das war ja wohl mal voll danneben %s!

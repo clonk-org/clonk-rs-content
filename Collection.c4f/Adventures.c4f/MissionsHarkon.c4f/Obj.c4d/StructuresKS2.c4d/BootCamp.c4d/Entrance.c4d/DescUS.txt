@@ -1,1 +1,1 @@
-Allows descent from a platform.
+Allows descent from a platform into the staircase.

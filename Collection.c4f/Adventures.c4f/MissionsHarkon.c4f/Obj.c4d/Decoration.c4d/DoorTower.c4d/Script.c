@@ -47,7 +47,7 @@ protected func DoOpen(pClonk, fKi)
 						SetAction("DoorClosed");
 					}
 			if(GetAction() == "DoorLocked")
-				Message("Tür ist abgesperrt!", pClonk);
+				Message("$Door01$", pClonk);
 		}
 	}
   if(GetAction() == "DoorClosed")

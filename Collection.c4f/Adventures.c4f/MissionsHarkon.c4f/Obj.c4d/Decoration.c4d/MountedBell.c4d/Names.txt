@@ -1,2 +1,2 @@
 DE:Zielscheibe
-US:Archery
+US:Target

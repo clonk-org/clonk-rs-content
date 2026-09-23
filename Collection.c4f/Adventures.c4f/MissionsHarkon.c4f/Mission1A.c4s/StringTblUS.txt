@@ -1,0 +1,3 @@
+MsgLoadingSect=Loading landscape...
+MsgLoadingFail=Error while loading the section.
+TeamEnemy=Enemies

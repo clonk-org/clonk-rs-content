@@ -17,13 +17,13 @@ protected func ActivateEntrance(pClonk)
   {
     FinishCommand(pClonk, 1);
     //AddCommand(pClonk, "Jump");
-    return(Message("Du stinkst!",this()));
+    return(Message("$Mirror01$",this()));
   }
   if(!(GetEffect("LovePotion",pClonk)))
   {
     FinishCommand(pClonk, 1);
     //AddCommand(pClonk, "Jump");
-    return(Message("Du riechst wie ein Aquaclonk!",this()));
+    return(Message("$Mirror02$",this()));
   }
   Enter(this, pClonk);
 }

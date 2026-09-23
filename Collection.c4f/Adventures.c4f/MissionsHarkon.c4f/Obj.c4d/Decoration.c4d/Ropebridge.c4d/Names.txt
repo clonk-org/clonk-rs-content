@@ -1,2 +1,2 @@
 DE:Hängebrücke
-US:Rope-Bridge
+US:Rope bridge

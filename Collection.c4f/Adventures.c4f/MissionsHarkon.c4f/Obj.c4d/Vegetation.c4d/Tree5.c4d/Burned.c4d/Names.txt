@@ -1,2 +1,2 @@
 DE:Toter Baum
-US:Burned tree
+US:Dead tree

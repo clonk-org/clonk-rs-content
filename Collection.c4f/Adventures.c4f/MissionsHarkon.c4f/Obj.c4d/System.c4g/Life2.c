@@ -11,21 +11,21 @@ func ActGetDialog(idID, iIndex, pTalker1, pTalker2)
 		if(!1)
 		{
 			if(iIndex == 0)
-				return ActDialog("Ich habe eine Leiche gesehen! Ein Angreifer hat sich eingeschlichen!.", pTalker1, pTalker2);
+				return ActDialog("$Corpse01$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Ok, durchsucht die Burg, irgndwo muss der Meuchler sein.", pTalker2, pTalker1);
+				return ActDialog("$Corpse02$", pTalker2, pTalker1);
 			if(iIndex == 2)
-				return ActDialog("Keine Panik, wir werden ihn schon finden!", pTalker2, pTalker1);
+				return ActDialog("$Corpse03$", pTalker2, pTalker1);
 			pTalker2->ScheduleCall(pTalker2, "SetActivity", 1, 1, PTRL);
 		}
 		else
 		{
 			if(iIndex == 0)
-				return ActDialog("Eine Leiche wurde gefunden! Ein Meuchler muss da sein.", pTalker1, pTalker2);
+				return ActDialog("$Corpse04$", pTalker1, pTalker2);
 			if(iIndex == 1)
-				return ActDialog("Das weis ich schon. Wir sind ja schon auf der Suche nach ihm..", pTalker2, pTalker1);
+				return ActDialog("$Corpse05$", pTalker2, pTalker1);
 			if(iIndex == 2)
-				return ActDialog("Bleib ruhig und wachsam, wir werden ihn schon finden.", pTalker2, pTalker1);
+				return ActDialog("$Corpse06$", pTalker2, pTalker1);
 		}
 /*		Object(2799)->SetActivity([FOLW, pTalker2]);
 		Object(2785)->SetActivity([FOLW, pTalker2]);

@@ -1,2 +1,2 @@
-DE:WÃ¤scheleine
-US:Cloth line
+DE:Wäscheleine
+US:Clothesline

@@ -47,7 +47,7 @@ func Activate(szNewName)
 	SetAction("Fly");
 	SetPosition(GetX(), GetY());
 	Sound("GhostFree.ogg", this);
-	DialogMessage([GetID(), Format("Geist %s", GetMyName()), "1", RGB(200,200,255)], Format("%s||<i>Der Geist von %s wurde befreit</i>", GetMyName(1), GetMyName()), "Nothing");
+	DialogMessage([GetID(), Format("$Ghost01$", GetMyName()), "1", RGB(200,200,255)], Format("$Ghost02$", GetMyName(1), GetMyName()), "Nothing");
 	Sound(Format("%d_%s.ogg", idName, GetMyName()), GetCursor(GetPlayerByIndex(0, C4PT_User)));
 	if(!g_foundGhosts) g_foundGhosts = [];
 	g_foundGhosts[GetLength(g_foundGhosts)] = idName;
@@ -78,7 +78,7 @@ func GetEvaluationText()
 			var iPlr = GetPlayerByIndex(iPlrIndex, C4PT_User);
 			SetPlrExtraData(iPlr, Format("Harkon_G%d", idName), 1);
 		}
-		var szMessage = Format("<i>Der Geist von %s wurde befreit</i>", GetGhostName(idName));
+		var szMessage = Format("$Ghost03$", GetGhostName(idName));
 		AddEvaluationData(szMessage);
 		Log(szMessage);
 	}
@@ -100,12 +100,12 @@ func GetEvaluationText()
 	for(var i = 1; i < GetLength(aFoundGhosts); i++)
 	{
 		if(i == GetLength(aFoundGhosts)-1)
-			szGhosts = Format("%s und %s", szGhosts, aFoundGhosts[i]);
+			szGhosts = Format("$Ghost04$", szGhosts, aFoundGhosts[i]);
 		else
 			szGhosts = Format("%s, %s", szGhosts, aFoundGhosts[i]);
 	}
-	var szMessage1 = Format("%d von %d Geistern im %d. Kapitel gefunden.", iCount, GetLength(aGhosts), g_chapter);
-	var szMessage2 = Format("Die Geister von %s wurden bisher befreit.", szGhosts);
+	var szMessage1 = Format("$Ghost05$", iCount, GetLength(aGhosts), g_chapter);
+	var szMessage2 = Format("$Ghost06$", szGhosts);
 	AddEvaluationData(szMessage1);
 	AddEvaluationData(szMessage2);
 	Log(szMessage1);
@@ -130,41 +130,41 @@ func GetGhostName(idName, fDesc)
 	if(idName == 271)
 	{
 		if(!fDesc) return "Os";
-		return "Os Seele, die litt große Not,|für seine Zukunft sah er rot.|  er wollte endlich gehen|  und nicht mehr auf dieser Erde stehen,|denn sein Körper war schon lange tot.";
+		return "$Ghost07$";
 	}
 	if(idName == 111)
 	{
 		if(!fDesc) return "Marog";
-		return "Marog lebte einst in diesem Tal,|ob Sonn ob Wind, war ihm egal,|  sein Haus das hat er stets beschützt,|  am End hats ihm dann doch nix genützt,|den er erlag der Niederlage Qual.";
+		return "$Ghost08$";
 	}
 	if(idName == 112)
 	{
 		if(!fDesc) return "Maroga";
-		return "Maroga war seine Frau und Olrogs Mutter,|buk Kuchen, kochte Braten, stampfte Butter|  keine Arbeit die hat sie gescheut,|  Doch warum lebt sie nicht auch heut?|Sie starb, den Zaps wurde sie ein Futter.";
+		return "$Ghost09$";
 	}
 	if(idName == 121)
 	{
 		if(!fDesc) return "Posipex";
-		return "Posipex ist so manch ein Fang gelungen,|hat oft am Fluss ein Lied gesungen,|  die Angelrute fest in seiner Hand,|  zog er auch diesen Fisch an Land.|Da hat der Fisch ihn schwups verschlungen.";
+		return "$Ghost10$";
 	}
 	if(idName == 131)
 	{
 		if(!fDesc) return "Mortum";
-		return "Ein Monster ganz aus festem Stein,|das fing Mortums kleine Seele ein,|  nie konnte er von dort wieder gehen,|  niemand hat ihn je dannach gesehen,|Sollte dass dann nun das Ende sein?";
+		return "$Ghost11$";
 	}
 	if(idName == 141)
 	{
 		if(!fDesc) return "Ralum";
-		return "In einem Zug reist er durch Raum und Zeit,|so besucht Ralum die Welt so weit,|  Doch der Zug ist stehen geblieben.|  Vor acht Jahren, oder sieben.|Und Ralum doch kein End von seinem Leid.";
+		return "$Ghost12$";
 	}
 	if(idName == 151)
 	{
 		if(!fDesc) return "Fruor";
-		return "Fruor war eine sehr gemeine Schlange.|Doch hat man ihn eingesperrt sehr lange,|  nie brachte man ihm eine Speise,|  oder kümmerte sich auf andere Weise,|so wurd selbst seiner Seele bange.";
+		return "$Ghost13$";
 	}
 	if(idName == 152)
 	{
 		if(!fDesc) return "Malolch";
-		return "Ja er war ein kleiner Strolch|spielte gerne Streicher, der Malolch|  nichts ist ihm heilig geblieben|  doch heut hat er es übertrieben|und spürte dann schnell den Dolch.";
+		return "$Ghost14$";
 	}
 }

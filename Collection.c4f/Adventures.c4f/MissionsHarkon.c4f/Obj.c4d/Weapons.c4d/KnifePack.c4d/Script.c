@@ -84,7 +84,7 @@ func FindCandleHolder()
 
 public func ContextCutDown(pClonk)
 {
-	[Abschneiden|Image=_CHO|Condition=FindCandleHolder]
+	[$CtxCutDown$|Image=_CHO|Condition=FindCandleHolder]
   var pObj = FindCandleHolder();
 	if(pObj) pObj->CutDown();
   return 1;

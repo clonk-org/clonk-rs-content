@@ -14,7 +14,7 @@ global func GoalMessageJuncus(pClonk, szText, szText2)
   AddMenuItem(szText,0,NONE,pClonk);
 	if(szText2)
 		AddMenuItem(szText2,0,NONE,pClonk);
-  AddMenuItem("Starten", "Nothing", LMM2, pClonk, 0, 0, 0, 2, 4);
+  AddMenuItem("$Respawn01$", "Nothing", LMM2, pClonk, 0, 0, 0, 2, 4);
 }
 
 global func Nothing() { return; }
@@ -195,7 +195,7 @@ global func StartSzen()
 
 public func ContextReset(pCaller)
 {
-  [Neu starten|Image=_SAV:2]
+  [$CtxRestart$|Image=_SAV:2]
   ResetGame();
   return 1;
 }
@@ -204,14 +204,14 @@ func Saved() { return g_GameSaved; }
 
 public func ContextLoad(pCaller)
 {
-  [Laden|Image=_SAV:1|Condition=Saved]
+  [$CtxLoad$|Image=_SAV:1|Condition=Saved]
   ReloadGame();
   return 1;
 }
 
 public func ContextSave(pCaller) 
 {
-  [Speichern|Image=_SAV]
+  [$CtxSave$|Image=_SAV]
   SaveGame();
   return 1;
 }
@@ -277,7 +277,7 @@ protected func FxIntRelaunchStop(object pTarget, int iEffectNumber, int iReason,
     // Spawnkoordinaten übernehmen
     for(var i = 0; i < 8; i++)
       pTarget->Local(10+i) = Local(10+i, pOld);
-    ScheduleCall(pTarget, "OpenRelauchMenu", 1, 1, "Du bist gestorben.");
+    ScheduleCall(pTarget, "OpenRelauchMenu", 1, 1, "$Respawn02$");
   }
   else
   {
@@ -290,7 +290,7 @@ protected func FxIntRelaunchStop(object pTarget, int iEffectNumber, int iReason,
     SetAction("Dead", pTarget);
     DeathAnnounce ();
     Sound("Die");
-    pTarget->OpenRelauchMenu("Du bist gestorben.");
+    pTarget->OpenRelauchMenu("$Respawn02$");
 		Schedule("SetAlive(0)",1);
   }
 //  pTarget->~UnHide();
@@ -321,11 +321,11 @@ public func OpenRelauchMenu(szMessage)
 		AddMenuItem(text,0,NONE,pTarget);
 	if(g_GameSaved)
   {
-		AddMenuItem("Laden", "ReloadGame()", LMM2, pTarget, 0, 0, 0, 2, 4);
-    AddMenuItem("Neustarten", "OpenRelauchMenu2()", LMM2, pTarget, 0, 0, 0, 2, 4);
+		AddMenuItem("$Respawn03$", "ReloadGame()", LMM2, pTarget, 0, 0, 0, 2, 4);
+    AddMenuItem("$Respawn04$", "OpenRelauchMenu2()", LMM2, pTarget, 0, 0, 0, 2, 4);
   }
   else
-    AddMenuItem("Neustarten", "ResetGame()", LMM2, pTarget, 0, 0, 0, 2, 4);
+    AddMenuItem("$Respawn04$", "ResetGame()", LMM2, pTarget, 0, 0, 0, 2, 4);
 //  AddMenuItem("Beenden", "StopGame", MCMX, pTarget);
 	if(szMessage)
 		AddEffect("KeepMenuOpen", this, 1, 1, this);
@@ -350,9 +350,9 @@ public func OpenRelauchMenu2(szMessage)
   AddMenuItem(szPortrait,0,NONE,pTarget,0,0,0,5);
 //  for(var text in aRespawnMsg)
 //    AddMenuItem(text,0,NONE,pTarget);
-  AddMenuItem("Willst du wirklich neustarten?",0,NONE,pTarget);
-  AddMenuItem("Ja", "ResetGame()", LMM2, pTarget, 0, 0, 0, 2, 4);
-  AddMenuItem("Nein", "OpenRelauchMenu()", LMM2, pTarget, 0, 0, 0, 2, 4);
+  AddMenuItem("$Respawn05$",0,NONE,pTarget);
+  AddMenuItem("$Respawn06$", "ResetGame()", LMM2, pTarget, 0, 0, 0, 2, 4);
+  AddMenuItem("$Respawn07$", "OpenRelauchMenu()", LMM2, pTarget, 0, 0, 0, 2, 4);
   SelectMenuItem(3);
 //  AddMenuItem("Beenden", "StopGame", MCMX, pTarget);
   if(szMessage)

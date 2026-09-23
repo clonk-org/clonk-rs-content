@@ -1,6 +1,9 @@
-Coal=Mining Coal
-Ore=Mining Ore
-ProducedCoal=Coalpiece produced!
-ProducedOre=Orepiece produced
-Producesth.=Choose Material
-Work=Mining
+Coal=Mine coal
+Ore=Mine iron ore
+ProducedCoal=Piece of coal mined!
+ProducedOre=Piece of iron ore mined!
+Producesth.=Choose material
+Work=Mining menu
+Rock=Mine rock
+ProducedRock=Piece of rock mined!
+Full=The building is full!

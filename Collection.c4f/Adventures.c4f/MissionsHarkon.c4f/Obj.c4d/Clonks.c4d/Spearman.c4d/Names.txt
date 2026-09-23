@@ -1,2 +1,2 @@
 DE:Speerträger
-US:Speerman
+US:Spearman

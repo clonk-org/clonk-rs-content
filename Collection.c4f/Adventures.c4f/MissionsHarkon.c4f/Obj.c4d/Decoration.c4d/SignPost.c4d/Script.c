@@ -29,8 +29,8 @@ protected func ControlUp(object pPlayer)
   CreateMenu(GetID(),pPlayer,this,0,Format("<c %x>%s:</c>", GetColorDw(), GetName()),0,C4MN_Style_Dialog);
   AddMenuItem(szPortrait,0,NONE,pPlayer,0,0,0,5);
   AddMenuItem(sText,0,NONE,pPlayer);
-  AddMenuItem("Level beenden", "DoTravel", LMM2, pPlayer, 0, pPlayer, 0, 2, 4);
-  AddMenuItem("Abbrechen", "Stop", MCMX, pPlayer, 0, pPlayer);
+  AddMenuItem("$Sign01$", "DoTravel", LMM2, pPlayer, 0, pPlayer, 0, 2, 4);
+  AddMenuItem("$Sign02$", "Stop", MCMX, pPlayer, 0, pPlayer);
   return 1;
   }
 
@@ -44,7 +44,7 @@ public func DoTravel(idID, pPlayer)
     CreateMenu(GetID(),pPlayer,this,0,Format("<c %x>%s:</c>", GetColorDw(), GetName()),0,C4MN_Style_Dialog);
     AddMenuItem(szPortrait,0,NONE,pPlayer,0,0,0,5);
     AddMenuItem(GameCall("FullfillText"),0,NONE,pPlayer);
-    AddMenuItem("Abbrechen", "Stop", MCMX, pPlayer);
+    AddMenuItem("$Sign02$", "Stop", MCMX, pPlayer);
     return;
   }
   GameCall("SignpostReached");
@@ -60,7 +60,7 @@ global func FinishMission()
 	if(g_mission_access)
 	  GainMissionAccess(g_mission_access);
 	if(g_next_mission)
-		SetNextMission(g_next_mission, "&Nächste Mission", "Die nächste Mission starten.");
+		SetNextMission(g_next_mission, "$Sign03$", "$Sign04$");
 	GHST->GetEvaluationText();
   GameOver();
 }

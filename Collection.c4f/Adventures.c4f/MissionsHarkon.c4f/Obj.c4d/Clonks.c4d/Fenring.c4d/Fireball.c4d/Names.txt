@@ -1,2 +1,2 @@
 DE:Feuerstein
-US:Flintstone
+US:Flint

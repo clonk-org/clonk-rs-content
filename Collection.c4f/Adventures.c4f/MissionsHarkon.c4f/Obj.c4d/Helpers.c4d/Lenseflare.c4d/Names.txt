@@ -1,2 +1,2 @@
 DE:Blendenflecke
-US:Lense Flare
+US:Lens flare

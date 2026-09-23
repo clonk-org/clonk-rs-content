@@ -1,2 +1,2 @@
 DE:Training Schleichen
-US:Training Club
+US:Training: Sneaking

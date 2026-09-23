@@ -1,2 +1,5 @@
 CtrlRead=Read
 
+Grave01=Here rests %s in peace
+Grave02=The grave is empty.
+Grave03=Cancel

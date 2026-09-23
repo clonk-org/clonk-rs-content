@@ -1,2 +1,2 @@
 DE:Förderturm
-US:Winding Tower
+US:Winding tower

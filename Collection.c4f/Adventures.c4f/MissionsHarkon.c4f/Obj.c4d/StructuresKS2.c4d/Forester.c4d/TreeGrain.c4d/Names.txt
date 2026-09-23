@@ -1,2 +1,2 @@
 DE:Baumsamen
-US:Treegrain
+US:Tree seed

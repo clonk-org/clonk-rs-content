@@ -1,1 +1,2 @@
 Stab=Stab
+CtxCutDown=Cut down

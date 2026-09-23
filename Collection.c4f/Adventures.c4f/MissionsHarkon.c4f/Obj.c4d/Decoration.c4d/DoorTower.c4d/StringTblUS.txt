@@ -1,0 +1,1 @@
+Door01=The door is locked!

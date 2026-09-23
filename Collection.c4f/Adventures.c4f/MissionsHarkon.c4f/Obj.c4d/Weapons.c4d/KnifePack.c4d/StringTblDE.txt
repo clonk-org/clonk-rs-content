@@ -1,1 +1,2 @@
 Stab=Erstechen
+CtxCutDown=Abschneiden
