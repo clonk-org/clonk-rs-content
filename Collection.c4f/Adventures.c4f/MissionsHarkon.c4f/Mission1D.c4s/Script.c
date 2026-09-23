@@ -43,7 +43,7 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 	
 	// Auftrag
 	if(g_fIntroSkiped)
-		GoalMessageJuncus(pClonk, "Nun kommen wir zur dritten Mission. Hier musst du deinen Enterhaken einsetzen um an den Wegweiser am anderen Ende der Schlucht zu kommen. Dabei darf dich allerdings keiner der Clonks sehen!");
+		GoalMessageJuncus(pClonk, "$Goal01$");
   return 1;
 }
 
@@ -54,9 +54,9 @@ func AI_EncounterENMY(pEnemy, pTarget)
 	{
 		var pObj = GetCursor(GetPlayerByIndex(i, C4PT_User));
 		if(pTarget == pObj)
-			pObj->OpenRelauchMenu("Du wurdest entdeckt!");
+			pObj->OpenRelauchMenu("$Goal02$");
 		else
-			pObj->OpenRelauchMenu(Format("%s wurdest entdeckt!", GetName(pTarget)));
+			pObj->OpenRelauchMenu(Format("$Goal03$", GetName(pTarget)));
 	}
 }
 
@@ -68,9 +68,9 @@ global func DisableAI()
     obj->AI_Disable();
 }
 
-public func MsgSignpost1()  { return "Ende der Schlucht."; }
+public func MsgSignpost1()  { return "$Goal04$"; }
 
 public func IsFullfilled() { return 1; }
 public func FullfillText() { return ""; }
 
-public func GoalText() { return "Du musst den Wegweiser ganz oben links erreichen."; }
+public func GoalText() { return "$Goal05$"; }

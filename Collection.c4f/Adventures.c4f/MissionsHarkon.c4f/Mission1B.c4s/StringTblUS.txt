@@ -1,0 +1,7 @@
+Goal01=Your first training mission. Here you learn to sneak and to handle the club. Try to stun all the clonks in our training camp with the club (double-dig behind the victim).
+Goal02=But you must not be seen while doing it! Then return to the signpost.
+Goal03=Away from the castle.
+Goal04=There are still clonks conscious in the camp!
+Goal05=Stun all the clonks in the camp without being seen. %d are left.
+Goal06=You have been spotted!
+Goal07=%s has been spotted!

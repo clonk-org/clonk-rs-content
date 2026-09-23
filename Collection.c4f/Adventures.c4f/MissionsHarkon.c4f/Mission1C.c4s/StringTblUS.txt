@@ -1,0 +1,5 @@
+Goal01=Your second training mission is about the crossbow. With the crossbow it is always very important to be sparing with your bolts, because they are often in very short supply and cannot be reused after a hit.
+Goal02=For practice, you must now shoot down the black death crows here. The normal birds, however, are not your target!
+Goal03=Leave the canyon.
+Goal04=A few death crows are still alive!
+Goal05=Shoot all the black death crows. %d are still left.

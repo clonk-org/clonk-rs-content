@@ -41,11 +41,11 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 public func GoalText()
 {
 	if(g_StoryIndex == 0)
-		return "Geh nach Westen und hacke im kleinen Wald Holz.";
+		return "$Goal01$";
 	if(g_StoryIndex == 1)
-		return "Gehe zurück zur Hütte deines Vaters um nachzusehen, was los ist.";
+		return "$Goal02$";
 	if(g_StoryIndex == 2)
-		return "Besiege alle Räuber.";
+		return "$Goal03$";
 	if(g_StoryIndex == -1)
-		return "Ende.";
+		return "$Goal04$";
 }

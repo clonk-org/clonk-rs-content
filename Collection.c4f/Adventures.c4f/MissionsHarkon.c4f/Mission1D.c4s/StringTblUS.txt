@@ -1,0 +1,5 @@
+Goal01=Now we come to the third mission. Here you have to use your grappling hook to reach the signpost at the other end of the gorge. But none of the clonks may see you while doing it!
+Goal02=You have been spotted!
+Goal03=%s has been spotted!
+Goal04=End of the gorge.
+Goal05=You must reach the signpost at the very top left.

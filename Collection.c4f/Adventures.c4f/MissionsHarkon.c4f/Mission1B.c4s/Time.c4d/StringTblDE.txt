@@ -1,0 +1,15 @@
+Story01=Buch Harkon, Kapitel 1
+Story02=Harkon begleitet Juncus von seinem abgelegenen Heimattal zur versteckten Burg Rockfort, die fortan sein Zuhause sein wird...
+Story03=Das hier wird dein Zimmer auf der Burg Rockfort sein. Sie steht im Schutze des Rates von Cla-Kra-Zoth und das Hauptquartier von Cras Geheimbund.
+Story04=Geheimtruppe? Was macht die und was habe ich damit zu tun? Und wer waren die Mörder meines Vaters?
+Story05=Wer deinen Vater überfallen hat weiß ich noch nicht. Aber du wirst hier ausgebildet werden und an unserer Seite kämpfen. Gleich morgen geht es los mit deiner ersten Lektion, in der du lernst dich anzuschleichen, was sehr wichtig für dich sein wird.
+Story06=Ich verstehe das alles nicht. Das ist irgendwie noch zu viel für mich.
+Story07=Hier sind die Zimmer deiner Mitschüler Fred und Malvin. Du wirst dich mit ihnen gut verstehen, da sie auch erst vor kurzem angefangen haben. Sie geben dir bestimmt Rückhalt und helfen dir.
+Story08=Aber sie schlafen gerade, sie hatten einen anstrengenden Tag. Du solltest dich auch ausruhen für deine erste Lektion morgen.
+Story09=Guten Morgen Harkon. Hier ist deine erste Lektion. Du sollst dich in das Lager schleichen. [Tarnen im Kontextmenü aktivieren]
+Story10=Dort musst du dann alle Clonks mit der Keule betäuben [Doppelgraben hinter dem Opfer]. Wenn du fertig bist, komm einfach zum Wegweiser zurück.
+Story11=Hmm na gut, dann bleibt mir wohl nichts anderes übrig, als das mal zu versuchen.
+Story12=So, alle sind betäubt. Jetzt muss ich nur noch zurück zum Wegweiser [Anfassen+Oben]
+Story13=Puh, das ist garnicht so einfach, was dieser Juncus da von mir verlangt. Ich frage mich, was das alles zu bedeuten hat und was das mit dem Überfall zu tun hat.
+Story14=Sehr gut Harkon, das war für den Anfang garnicht mal so schlecht. Als nächstes muss du dann lernen mit scharfen Waffen umzugehen. Aber damit fangen wir erst morgen an.
+Story15=Ende

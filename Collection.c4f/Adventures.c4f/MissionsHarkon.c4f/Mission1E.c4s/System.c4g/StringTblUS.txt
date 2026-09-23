@@ -1,0 +1,6 @@
+Corpse01=I've seen a corpse! An intruder has sneaked in!.
+Corpse02=Ok, search the castle, the assassin must be somewhere.
+Corpse03=Don't panic, we'll find him!
+Corpse04=A corpse has been found! There must be an assassin about.
+Corpse05=I know that already. We're already looking for him..
+Corpse06=Stay calm and alert, we'll find him.

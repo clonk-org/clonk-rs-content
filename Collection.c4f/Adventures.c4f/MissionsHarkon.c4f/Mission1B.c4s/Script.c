@@ -52,18 +52,18 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 
 	// Auftrag
 	if(g_fIntroSkiped)
-		GoalMessageJuncus(pClonk, "Deine erste Trainingsmission. Du lernst hier das Schleichen und den Umgang mit der Keule. Versuche alle Clonks in unserem Trainingslager mit der Keule zu betäuben (Doppelgraben hinter dem Opfer).", "Dabei darfst du allerdings nicht gesehen werden! Kehre dann zum Wegweiser zurück.");
+		GoalMessageJuncus(pClonk, "$Goal01$", "$Goal02$");
   return 1;
 }
 
 func Nothing() { return; }
 
-public func MsgSignpost1()  { return "Weg von der Burg."; }
+public func MsgSignpost1()  { return "$Goal03$"; }
 
 public func IsFullfilled() { return !FindObject2(Find_Owner(10), Find_OCF(OCF_CrewMember), Find_Not(Find_Action("Dead"))); }
-public func FullfillText() { return "Es sind noch Clonks im Lager bei Bewusstsein!"; }
+public func FullfillText() { return "$Goal04$"; }
 
-public func GoalText() { return Format("Betäube alle Clonks im Lager ohne gesehen zu werden. Es sind noch %d übrig.", ObjectCount2(Find_Owner(10), Find_OCF(OCF_CrewMember), Find_Not(Find_Action("Dead")))); }
+public func GoalText() { return Format("$Goal05$", ObjectCount2(Find_Owner(10), Find_OCF(OCF_CrewMember), Find_Not(Find_Action("Dead")))); }
 
 func AI_EncounterENMY(pEnemy, pTarget)
 {
@@ -72,9 +72,9 @@ func AI_EncounterENMY(pEnemy, pTarget)
 	{
 		var pObj = GetCursor(GetPlayerByIndex(i, C4PT_User));
 		if(pTarget == pObj)
-			pObj->OpenRelauchMenu("Du wurdest entdeckt!");
+			pObj->OpenRelauchMenu("$Goal06$");
 		else
-			pObj->OpenRelauchMenu(Format("%s wurdest entdeckt!", GetName(pTarget)));
+			pObj->OpenRelauchMenu(Format("$Goal07$", GetName(pTarget)));
 	}
 }
 

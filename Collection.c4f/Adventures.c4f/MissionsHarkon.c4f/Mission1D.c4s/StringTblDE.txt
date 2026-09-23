@@ -1,0 +1,5 @@
+Goal01=Nun kommen wir zur dritten Mission. Hier musst du deinen Enterhaken einsetzen um an den Wegweiser am anderen Ende der Schlucht zu kommen. Dabei darf dich allerdings keiner der Clonks sehen!
+Goal02=Du wurdest entdeckt!
+Goal03=%s wurdest entdeckt!
+Goal04=Ende der Schlucht.
+Goal05=Du musst den Wegweiser ganz oben links erreichen.

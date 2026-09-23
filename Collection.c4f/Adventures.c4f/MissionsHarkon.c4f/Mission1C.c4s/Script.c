@@ -41,13 +41,13 @@ protected func PlayerStart(int player, int tx, int ty, object pBase, int iTeam)
 
   // Auftrag
 	if(g_fIntroSkiped)
-		GoalMessageJuncus(pClonk, "Deine zweite Trainingsmission beschäftigt sich mit der Armbrust. Bei der Armbrust ist es immer sehr wichtig, dass man mit dem Bolzen sparsam ist, denn sie sind oft nur sehr begrenzt vorhanden und können nach einem Treffer nicht wieder verwendet werden.", "Zur Übung musst du nun hier die schwarzen Todeskrähen abschießen. Die normalen Vögel sind jedoch nicht dein Ziel!");
+		GoalMessageJuncus(pClonk, "$Goal01$", "$Goal02$");
   return 1;
 }
 
-public func MsgSignpost1()  { return "Canyon verlassen."; }
+public func MsgSignpost1()  { return "$Goal03$"; }
 
 public func IsFullfilled() { return !FindObject2(Find_ID(BBRD)); }
-public func FullfillText() { return "Es leben noch ein paar Todeskrähen!"; }
+public func FullfillText() { return "$Goal04$"; }
 
-public func GoalText() { return Format("Erschieße alle schwarzen Todeskrähen. %d fehlen noch.", ObjectCount2(Find_ID(BBRD))); }
+public func GoalText() { return Format("$Goal05$", ObjectCount2(Find_ID(BBRD))); }
