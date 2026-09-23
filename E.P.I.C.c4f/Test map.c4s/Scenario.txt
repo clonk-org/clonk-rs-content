@@ -9,7 +9,7 @@ Origin=EPIC.c4d\Test map.c4s
 
 [Definitions]
 Definition1=Objects.c4d
-Definition2=E.P.I.C.c4d
+Definition2=E.P.I.C.c4f\E.P.I.C.c4d
 
 [Game]
 StructNeedEnergy=0

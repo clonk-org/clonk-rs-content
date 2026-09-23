@@ -5,7 +5,7 @@ MaxPlayer=8
 
 [Definitions]
 Definition1=Objects.c4d
-Definition2=Clonkrix.c4d
+Definition2=Collection.c4f\Magus.c4f\Clonkrix-Remake.c4f\Clonkrix.c4d
 
 [Game]
 StructNeedEnergy=0

@@ -323,8 +323,8 @@
       ],
       "origin": "ucc",
       "file_count": 11936,
-      "bytes": 607318405,
-      "sha256": "1e84a8503f549ce5831a8e26d70f403de97e43e861b38afb4416ead6208d9f6e"
+      "bytes": 607199486,
+      "sha256": "2182fb6cfcca81e54f195ab575315b5166f0b929cd6e12c9d8ee777002bb9343"
     },
     "Golems.c4f": {
       "rights": "assumed",
@@ -441,8 +441,8 @@
       ],
       "origin": "epic",
       "file_count": 137,
-      "bytes": 6012393,
-      "sha256": "169538b9494a065dfc1f9a1c7349f85ee0dc4ab99cc39f67ca007adc481c09ca"
+      "bytes": 6012453,
+      "sha256": "728066cda0e88ab17726fdcceea5b55c1fa43b567a5e81ae9e90f5d4a757eb8e"
     },
     "Collection.c4f/Fun.c4f/ClonkPartyRemake8-clonk-rs-localized.c4s": {
       "origin": "clonk-party-remake",
@@ -453,8 +453,8 @@
         "third_party/RIGHTS.md"
       ],
       "file_count": 1,
-      "bytes": 2113647,
-      "sha256": "8f6e20abac1c02c4c021c08f4ab61441e758675de5176352c849edb62f5ae5ad"
+      "bytes": 2113664,
+      "sha256": "32aadd2552feb445e6c5b1e669ef0ee100c7c6149cbd83c40960e6f085c6f67e"
     },
     "TwonkyTales.c4f": {
       "rights": "licensed",
@@ -14766,11 +14766,11 @@
         "resolved": "Fantasy.c4d"
       },
       {
-        "reference": "InExantros.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D",
         "resolved": "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D"
       },
       {
-        "reference": "INEXSzenarioObjekte.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d",
         "resolved": "Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d"
       }
     ],
@@ -14788,11 +14788,11 @@
         "resolved": "Fantasy.c4d"
       },
       {
-        "reference": "InExantros.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D",
         "resolved": "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D"
       },
       {
-        "reference": "INEXSzenarioObjekte.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d",
         "resolved": "Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d"
       }
     ],
@@ -14810,11 +14810,11 @@
         "resolved": "Fantasy.c4d"
       },
       {
-        "reference": "InExantros.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D",
         "resolved": "Collection.c4f/Adventures.c4f/InExantros.c4f/InExantros.C4D"
       },
       {
-        "reference": "INEXSzenarioObjekte.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d",
         "resolved": "Collection.c4f/Adventures.c4f/InExantros.c4f/INEXSzenarioObjekte.c4d"
       }
     ],
@@ -15016,7 +15016,7 @@
         "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       },
       {
-        "reference": "MissionsHarkon.c4f/Obj.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d",
         "resolved": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d"
       }
     ],
@@ -15046,7 +15046,7 @@
         "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       },
       {
-        "reference": "MissionsHarkon.c4f/Obj.c4d",
+        "reference": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d",
         "resolved": "Collection.c4f/Adventures.c4f/MissionsHarkon.c4f/Obj.c4d"
       }
     ],
@@ -15427,11 +15427,11 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "ClonkPartyRes.c4d",
+        "reference": "Collection.c4f/Fun.c4f/ClonkPartyRes.c4d",
         "resolved": "Collection.c4f/Fun.c4f/ClonkPartyRes.c4d"
       },
       {
-        "reference": "ClonkPartyRes2.c4d",
+        "reference": "Collection.c4f/Fun.c4f/ClonkPartyRes2.c4d",
         "resolved": "Collection.c4f/Fun.c4f/ClonkPartyRes2.c4d"
       }
     ],
@@ -15495,7 +15495,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "GIDL_Race.c4d",
+        "reference": "Collection.c4f/Fun.c4f/GIDL_Race.c4d",
         "resolved": "Collection.c4f/Fun.c4f/GIDL_Race.c4d"
       }
     ],
@@ -15594,11 +15594,11 @@
         "resolved": "Knights.c4d"
       },
       {
-        "reference": "Zombieland.c4d",
+        "reference": "Collection.c4f/Fun.c4f/Zombieland.c4d",
         "resolved": "Collection.c4f/Fun.c4f/Zombieland.c4d"
       },
       {
-        "reference": "Zombiesounds.c4d",
+        "reference": "Collection.c4f/Fun.c4f/Zombiesounds.c4d",
         "resolved": "Collection.c4f/Fun.c4f/Zombiesounds.c4d"
       }
     ],
@@ -15642,7 +15642,7 @@
         "resolved": "Hazard.c4d"
       },
       {
-        "reference": "Jetbelt.c4d",
+        "reference": "Collection.c4f/Hazard.c4f/Jetbelt.c4d",
         "resolved": "Collection.c4f/Hazard.c4f/Jetbelt.c4d"
       }
     ],
@@ -15686,7 +15686,7 @@
         "resolved": "Hazard.c4d"
       },
       {
-        "reference": "PhysGun.c4d",
+        "reference": "Collection.c4f/Hazard.c4f/PhysGun.c4d",
         "resolved": "Collection.c4f/Hazard.c4f/PhysGun.c4d"
       }
     ],
@@ -15976,7 +15976,7 @@
         "resolved": "MetalMagic.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Misc.c4d",
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d",
         "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Misc.c4d"
       }
     ],
@@ -16302,7 +16302,7 @@
         "resolved": "MetalMagic.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s",
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s",
         "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s"
       }
     ],
@@ -16324,7 +16324,7 @@
         "resolved": "MetalMagic.c4d"
       },
       {
-        "reference": "MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s",
+        "reference": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s",
         "resolved": "Collection.c4f/Knights.c4f/MetalMagic.c4f/Tutorials.c4f/Tutorial.c4s"
       }
     ],
@@ -16534,7 +16534,7 @@
         "resolved": "Fantasy.c4d"
       },
       {
-        "reference": "KdD_Magie_Pack.c4d",
+        "reference": "Collection.c4f/Magus.c4f/KdD_Magie_Pack.c4d",
         "resolved": "Collection.c4f/Magus.c4f/KdD_Magie_Pack.c4d"
       }
     ],
@@ -16544,7 +16544,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "Clonkrix.c4d",
+        "reference": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d",
         "resolved": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d"
       }
     ],
@@ -16554,7 +16554,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "Clonkrix.c4d",
+        "reference": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d",
         "resolved": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d"
       }
     ],
@@ -16564,7 +16564,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "Clonkrix.c4d",
+        "reference": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d",
         "resolved": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d"
       }
     ],
@@ -16574,7 +16574,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "Clonkrix.c4d",
+        "reference": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d",
         "resolved": "Collection.c4f/Magus.c4f/Clonkrix-Remake.c4f/Clonkrix.c4d"
       }
     ],
@@ -16855,7 +16855,7 @@
         "resolved": "ModernCombat.c4d"
       },
       {
-        "reference": "BlacksCMC-Waffenmod.c4d",
+        "reference": "Collection.c4f/ModernCombat.c4f/BlacksCMC-Waffenmod.c4d",
         "resolved": "Collection.c4f/ModernCombat.c4f/BlacksCMC-Waffenmod.c4d"
       }
     ],
@@ -16993,7 +16993,7 @@
         "resolved": "FarWorlds.c4d/Jungle.c4d"
       },
       {
-        "reference": "Explorer.c4d",
+        "reference": "Collection.c4f/Puzzles.c4f/Explorer.c4d",
         "resolved": "Collection.c4f/Puzzles.c4f/Explorer.c4d"
       }
     ],
@@ -17095,7 +17095,7 @@
         "resolved": "Collection.c4f/Races.c4f/AbwaertsExtremTeam2.c4s/Objects.c4d"
       },
       {
-        "reference": "Ropepack.c4d",
+        "reference": "Collection.c4f/Races.c4f/Ropepack.c4d",
         "resolved": "Collection.c4f/Races.c4f/Ropepack.c4d"
       }
     ],
@@ -17105,7 +17105,7 @@
         "resolved": "Collection.c4f/Races.c4f/AbwaertsFalschrum.c4s/Objects.c4d"
       },
       {
-        "reference": "Ropepack.c4d",
+        "reference": "Collection.c4f/Races.c4f/Ropepack.c4d",
         "resolved": "Collection.c4f/Races.c4f/Ropepack.c4d"
       }
     ],
@@ -17121,7 +17121,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "Clinfinity.c4d",
+        "reference": "Collection.c4f/Races.c4f/Clinfinity.c4d",
         "resolved": "Collection.c4f/Races.c4f/Clinfinity.c4d"
       }
     ],
@@ -17413,7 +17413,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17423,7 +17423,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17433,7 +17433,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17443,7 +17443,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17453,7 +17453,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17463,7 +17463,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17473,7 +17473,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17483,23 +17483,23 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d/RdW.c4d/Living.c4d/Angel.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Living.c4d/Angel.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Living.c4d/Angel.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d/RdW.c4d/Items.c4d/Tools.c4d/Torch.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Items.c4d/Tools.c4d/Torch.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Items.c4d/Tools.c4d/Torch.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d/System.c4g",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/System.c4g",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/System.c4g"
       },
       {
-        "reference": "RufDerWipfe.c4d/RdW.c4d/Effekte.c4d/Particles.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Effekte.c4d/Particles.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Effekte.c4d/Particles.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d/RdW.c4d/Effekte.c4d/Lightfield2.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Effekte.c4d/Lightfield2.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d/RdW.c4d/Effekte.c4d/Lightfield2.c4d"
       }
     ],
@@ -17509,7 +17509,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17519,7 +17519,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17529,7 +17529,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17539,7 +17539,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17549,7 +17549,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17559,7 +17559,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17569,7 +17569,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17579,7 +17579,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17589,7 +17589,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17599,7 +17599,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17609,7 +17609,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17619,7 +17619,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17629,7 +17629,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17639,7 +17639,7 @@
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/Tutorial.c4s/Objects.c4d"
       },
       {
-        "reference": "RufDerWipfe.c4d",
+        "reference": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d",
         "resolved": "Collection.c4f/Settling.c4f/RufDerWipfeRE.c4f/RufDerWipfe.c4d"
       }
     ],
@@ -17727,7 +17727,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "E.P.I.C.c4d",
+        "reference": "E.P.I.C.c4f/E.P.I.C.c4d",
         "resolved": "E.P.I.C.c4f/E.P.I.C.c4d"
       }
     ],
@@ -17737,7 +17737,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "E.P.I.C.c4d",
+        "reference": "E.P.I.C.c4f/E.P.I.C.c4d",
         "resolved": "E.P.I.C.c4f/E.P.I.C.c4d"
       }
     ],
@@ -17747,7 +17747,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "E.P.I.C.c4d",
+        "reference": "E.P.I.C.c4f/E.P.I.C.c4d",
         "resolved": "E.P.I.C.c4f/E.P.I.C.c4d"
       }
     ],
@@ -17757,7 +17757,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "E.P.I.C.c4d",
+        "reference": "E.P.I.C.c4f/E.P.I.C.c4d",
         "resolved": "E.P.I.C.c4f/E.P.I.C.c4d"
       }
     ],
@@ -17767,7 +17767,7 @@
         "resolved": "Objects.c4d"
       },
       {
-        "reference": "E.P.I.C.c4d",
+        "reference": "E.P.I.C.c4f/E.P.I.C.c4d",
         "resolved": "E.P.I.C.c4f/E.P.I.C.c4d"
       }
     ],
