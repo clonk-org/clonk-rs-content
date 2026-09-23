@@ -10,7 +10,8 @@ Definition1=Objects.c4d
 Definition2=Knights.c4d
 Definition3=Fantasy.c4d
 Definition4=MetalMagic.c4d
-Definition5=Collection.c4f\Knights.c4f\MetalMagic.c4f\Tutorials.c4f\Tutorial.c4s
+Definition5=MetalMagicExtra.c4d
+Definition6=Collection.c4f\Knights.c4f\MetalMagic.c4f\Tutorials.c4f\Tutorial.c4s
 
 [Game]
 StructNeedEnergy=0
