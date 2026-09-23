@@ -1,0 +1,1 @@
+Makes gravity shoot up abruptly for a short time.

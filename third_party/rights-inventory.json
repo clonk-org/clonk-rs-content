@@ -322,9 +322,9 @@
         "third_party/UltimateClonkCompilation/Authors.txt"
       ],
       "origin": "ucc",
-      "file_count": 11954,
-      "bytes": 607089905,
-      "sha256": "390c1d4c39f5e6ddb7efc0aad6a87e51c6a235f9cff12cad8272006804659691"
+      "file_count": 11987,
+      "bytes": 607095433,
+      "sha256": "cf839d2a56de839d86a69245080106f0718d14d50e073863ebcf8e35c92a821b"
     },
     "Golems.c4f": {
       "rights": "assumed",

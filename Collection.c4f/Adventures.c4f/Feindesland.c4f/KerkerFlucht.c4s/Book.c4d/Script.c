@@ -2,7 +2,7 @@
 
 protected func Activate()
 {
-Message("Durch diese Gefängnisspläne können viele Soldaten befreit werden... :D");
+Message("$MsgPrisonPlans$");
 GainMissionAccess("KerkerFlucht");
 GameOver();
 return(1);

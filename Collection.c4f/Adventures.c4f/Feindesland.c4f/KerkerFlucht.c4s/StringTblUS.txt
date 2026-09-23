@@ -1,0 +1,13 @@
+MnuOptionsDigToClose=Choose game options. Dig to close.
+MnuEasy=7 tries - Easy
+MnuMedium=4 tries - Medium
+MnuHard=1 try - Hard
+MsgEasy=The difficulty is now set to easy.
+MsgMedium=The difficulty is now set to medium.
+MsgHard=The difficulty is now set to hard.
+MsgRelaunchesLeft=%s has %d relaunch(es) left.
+MnuOptions=Choose game options.
+MnuRemoveWaterfalls=Remove waterfalls
+MnuAddExtinguisher=Add extinguisher
+MnuClose=Close
+TeamSpies=Spies

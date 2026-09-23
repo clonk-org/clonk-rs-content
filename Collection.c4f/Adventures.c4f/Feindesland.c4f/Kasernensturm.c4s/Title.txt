@@ -1,2 +1,2 @@
 DE:Kasernensturm
-US:Kasernensturm
+US:Storming the Barracks
