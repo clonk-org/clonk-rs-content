@@ -202,7 +202,7 @@ func Initialize() {
   CreateObject(ELEV,57,504,-1);
   CreateObject(ELEV,1367,912,-1);
   CreateObject(ELEV,4467,537,-1);
-  CreateObject(ELEV,5587,9728,-1);
+  CreateObject(ELEV,5587,928,-1);
 
 //Die Stadt Hingen
   ObjectCall(CreateObject(LOT_,1790,520,-1),"NoHome"); //Der Priester
