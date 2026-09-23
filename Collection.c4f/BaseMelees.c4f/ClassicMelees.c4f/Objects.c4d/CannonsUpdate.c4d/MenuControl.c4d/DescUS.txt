@@ -1,0 +1,1 @@
+Helper object that watches menus. It reports every change of selection to the object that created the menu.
