@@ -22,17 +22,22 @@ at 276, time at 280, CRC state at 284 and CRC at 285. State 2 is a current CRC:
 
 State 1 is an older CRC of a file's data alone, without its name (C4GECS_Old).
 
+State 0 records carry no CRC (older writers). The engine calculates their CRC
+on demand when it folds a child group, as C4Group::CalcCRC32 does
+(C4Group.cpp:2444-2516): the data's CRC extended by the name, the stored
+data-only CRC of a state-1 record extended by the name, 0 for an empty file.
+
 Before it changes anything the editor proves that model against the stored
 value of every state-2 or state-1 record on the path and refuses if one does
 not reproduce, then writes the new CRC in the record's own state. State 0
-records carry no CRC (older writers; the engine calculates it on demand) and
-are left as they are. A child group in state 1, or any other state, is refused.
+records are left as they are. A child group in state 1, or any other state, is
+refused.
 
 `add` appends a new file entry to a group: its record after the group's last
 record and its data after the group's last data, so every existing entry keeps
-its offset. The new record takes the newest time of the entries beside it and
-their CRC state, 2 or 0; beside mixed or legacy states it is refused, as is a
-name that is already an entry.
+its offset. The new record takes the newest time of the entries beside it. It
+carries no CRC when none of them does and a current one otherwise. A name that
+is already an entry is refused.
 
   group_entry.py replace <group> <Child.c4d/.../Entry> <old-bytes-file> <new-bytes-file>
   group_entry.py rename  <group> <Child.c4d/.../Entry> <NewName>
@@ -117,6 +122,32 @@ def legacy_file_crc(data: bytes) -> int:
     return zlib.crc32(data) & 0xFFFFFFFF if data else 0
 
 
+def entry_crc(image: bytes, data_start: int, entry: dict) -> int:
+    """The CRC C4Group::CalcCRC32 gives an entry (C4Group.cpp:2444-2516): a
+    current CRC as stored, a child group's folded contents, 0 for an empty
+    file, and otherwise the data's CRC (stored when state 1) extended by the
+    name."""
+    if entry["crc_state"] == 2:
+        return entry["crc"]
+    data = image[data_start + entry["offset"] : data_start + entry["offset"] + entry["size"]]
+    if entry["child"]:
+        return image_crc(data)
+    if not entry["size"]:
+        return 0
+    if entry["crc_state"] == 1:
+        return zlib.crc32(entry["name"], entry["crc"]) & 0xFFFFFFFF
+    return file_crc(data, entry["name"])
+
+
+def image_crc(image: bytes) -> int:
+    """C4Group::EntryCRC32 (C4Group.cpp:2181-2194): the XOR of every entry's CRC."""
+    entries, data_start = records(image)
+    crc = 0
+    for entry in entries:
+        crc ^= entry_crc(image, data_start, entry)
+    return crc
+
+
 def contents_crc(entries: list[dict]) -> int:
     crc = 0
     for entry in entries:
@@ -166,14 +197,14 @@ def edit_entry(image: bytes, parts: list[str], change: Change, *, group: bool = 
             raise GroupEntryError(f"{parts[0]!r} is not a child group")
         if legacy:
             raise GroupEntryError(f"{parts[0]!r}: a legacy CRC on a child group")
-        if checked and contents_crc(records(data)[0]) != target["crc"]:
+        if checked and image_crc(data) != target["crc"]:
             raise GroupEntryError("child CRC model does not hold")
         if len(parts) == 1:
             name, replaced = change(target["name"], data)
         else:
             name = target["name"]
             replaced = edit_entry(data, parts[1:], change, group=group)
-        crc = contents_crc(records(replaced)[0]) if checked else target["crc"]
+        crc = image_crc(replaced) if checked else target["crc"]
 
     delta = len(replaced) - len(data)
     out = bytearray(image[:begin] + replaced + image[end:])
@@ -213,17 +244,15 @@ def read_entry(image: bytes, parts: list[str]) -> bytes:
 def appended(image: bytes, name: str, data: bytes) -> bytes:
     """`image` with a new file entry after its last record and after all of its
     data, so every existing entry keeps its offset. The record takes the newest
-    time and the CRC convention of the entries beside it."""
+    time of the entries beside it. It carries no CRC when none of them does,
+    and a current one otherwise."""
     entries, data_start = records(image)
     encoded = name.encode("latin-1")
     if len(encoded) >= NAME or b"\0" in encoded or not encoded:
         raise GroupEntryError(f"unusable entry name {encoded!r}")
     if any(entry["name"].lower() == encoded.lower() for entry in entries):
         raise GroupEntryError(f"{encoded!r} is already an entry")
-    states = {entry["crc_state"] for entry in entries} or {2}
-    if len(states) != 1 or not states <= {0, 2}:
-        raise GroupEntryError(f"cannot follow the CRC states {sorted(states)} beside {encoded!r}")
-    state = states.pop()
+    state = 0 if entries and all(entry["crc_state"] == 0 for entry in entries) else 2
 
     record = bytearray(RECORD)
     record[: len(encoded)] = encoded

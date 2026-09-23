@@ -1,0 +1,1 @@
+MsgBack=@<c %x>Argh! Ich komme wieder!

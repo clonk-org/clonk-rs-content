@@ -1,1 +1,1 @@
-Decoraton for menus.
+Decoration for menus.

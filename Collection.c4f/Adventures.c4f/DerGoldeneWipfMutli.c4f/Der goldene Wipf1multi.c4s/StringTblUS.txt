@@ -1,0 +1,6 @@
+MsgFailed=You have failed.
+MsgRelaunchUsed=%s has used up a relaunch! %d relaunches left!
+MsgWipfStolen=@<c ff4000>Someone has stolen your golden wipf!
+MsgKillGuards=<c ff4000>Kill the guards at the entrance and break into the realm of evil!
+MsgGoGo=<c ff4000>Go, go!
+MsgGotWipf=<c ff4000>Congratulations, you have the wipf!

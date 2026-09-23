@@ -1,0 +1,14 @@
+MsgTriesLeft=Noch %d Versuche!
+MsgArtifactUseful=Mein {{MSKU}}-Artefakt wird mir auf der Suche nach neuen Schätzen bestimmt hilfreich sein.
+MsgUseArtifact=(Artefakt über das Kontextmenü verwenden)
+MsgGuardAssassin=Ein Attentäter!
+MsgGuardIntruder=Ein Eindringling!
+MsgGuardWho=Wer ist da?
+MsgGuardFriendOrFoe=Freund oder Feind?
+MsgGuardDie=Muss ich jetzt sterben?
+MsgGuardGetLost=Verzieh dich!
+MsgGuardRun=Ich würde mich jetz ganz schnell in Sicherheit bringen!
+MsgGuardHello=Hallo?!?!
+MsgGuardAbyss=Ab in den Schlund mit dir!
+MsgGuardDieYou=Stirb!
+MsgGuardKilled=Ich habe schon 54 Assasinen getötet!!

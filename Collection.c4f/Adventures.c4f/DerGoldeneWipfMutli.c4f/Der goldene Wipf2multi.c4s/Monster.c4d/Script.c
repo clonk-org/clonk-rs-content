@@ -202,7 +202,7 @@ func Death()
 {
 //:C
 Local(0)=1;
-Message("@<c %x>Argh! Ich komme wieder!",this(),RGB(100,0,250));
+Message("$MsgBack$",this(),RGB(100,0,250));
 ScheduleCall(this(),"Particle1",1,0);
 ScheduleCall(this(),"Up",150,0);
 }

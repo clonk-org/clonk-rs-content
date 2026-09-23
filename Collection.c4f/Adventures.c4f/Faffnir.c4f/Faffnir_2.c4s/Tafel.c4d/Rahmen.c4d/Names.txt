@@ -1,2 +1,2 @@
 DE:Rahmen
-US:Rahmen
+US:Frame

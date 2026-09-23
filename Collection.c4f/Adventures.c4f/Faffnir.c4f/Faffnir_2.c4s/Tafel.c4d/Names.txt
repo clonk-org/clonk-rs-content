@@ -1,2 +1,2 @@
 DE:Tafel
-US:Tafel
+US:Board
