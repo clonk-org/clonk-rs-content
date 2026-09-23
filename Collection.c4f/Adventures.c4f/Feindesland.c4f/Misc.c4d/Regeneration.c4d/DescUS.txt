@@ -1,1 +1,3 @@
-Clonks regenerate energy and mana.
+Clonks slowly recover from their wounds. Their energy and magic energy rise over time.
+
+The more often the rule is activated, the faster the clonks regenerate.

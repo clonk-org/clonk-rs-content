@@ -1,2 +1,2 @@
 DE:Feindesland
-US:Feindesland
+US:Enemy Territory

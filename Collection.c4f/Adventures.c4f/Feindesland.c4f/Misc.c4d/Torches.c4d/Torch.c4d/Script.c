@@ -6,13 +6,13 @@ public Activate:
   var gbaeude, obj;
   //Nich im Himmel (außer an Gebäuden)
   if(GetMaterial()!=Material("Tunnel") && !(gbaeude=FindObject(0,1,0,0,0,OCF_Exclusive())))
-      return(Sound("CommandFailure1.wav"),Message("Anbringen hier nicht möglich",this()));
+      return(Sound("CommandFailure1.wav"),Message("$MsgCannotAttach$",this()));
   //Nich im Entrancebereich von Gebäuden
   if(GetOCF(gbaeude)&OCF_Entrance()) if(InEntrance(gbaeude))
-      return(Sound("CommandFailure1.wav"),Message("Anbringen hier nicht möglich",this()));
+      return(Sound("CommandFailure1.wav"),Message("$MsgCannotAttach$",this()));
   //Nich in Flüssigkeiten
   if(InLiquid(Par()))
-      return(Sound("CommandFailure1.wav"),Message("Anbringen hier nicht möglich",this()));
+      return(Sound("CommandFailure1.wav"),Message("$MsgCannotAttach$",this()));
   Sound("Connect");
   ObjectSetAction(obj=CreateObject(TORC,0,12,GetOwner()),"Burning",gbaeude);
   SetDir(Random(2)); if(gbaeude) SetDir(GetX(obj)>GetX(gbaeude),obj);

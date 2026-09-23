@@ -1,0 +1,3 @@
+The more often this object is activated, the more the map is shrouded in darkness.
+Torches attached to tunnels or buildings light up some places a little, and bases always have a view radius.
+The view radius of torches and clonks varies with whether it is day or night and whether the clonk is outdoors or in a tunnel.

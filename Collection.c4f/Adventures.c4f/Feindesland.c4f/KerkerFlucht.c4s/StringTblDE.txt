@@ -1,0 +1,13 @@
+MnuOptionsDigToClose=Spieloptionen wählen. Mit Graben schließen.
+MnuEasy=7 Versuche - Leicht
+MnuMedium=4 Versuche - Mittel
+MnuHard=1 Versuch - Schwer
+MsgEasy=Der Schwierigkeitsgrad ist jetzt auf leicht.
+MsgMedium=Der Schwierigkeitsgrad ist jetzt auf mittel.
+MsgHard=Der Schwierigkeitsgrad ist jetzt auf schwer.
+MsgRelaunchesLeft=%s hat noch %d Relaunch/es übrig.
+MnuOptions=Spieloptionen wählen.
+MnuRemoveWaterfalls=Wasserfälle entfernen
+MnuAddExtinguisher=Löscher einfügen
+MnuClose=Schließen
+TeamSpies=Spione

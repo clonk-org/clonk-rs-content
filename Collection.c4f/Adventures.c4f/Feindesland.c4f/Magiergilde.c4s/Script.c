@@ -22,10 +22,10 @@ for(var chest in FindObjects(Find_ID(_CST)))
 
 protected func InitializePlayer(plr)
 {
-  CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "Spieloptionen wählen. Mit Graben schließen.");
-	AddMenuItem("5 Versuche - Leicht", "leicht", WIPF, GetHiRank(0));
-	AddMenuItem("3 Versuche - Mittel", "mittel", SNKE, GetHiRank(0));
-	AddMenuItem("1 Versuch - Schwer", "schwer", MONS, GetHiRank(0));
+  CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "$MnuOptionsDigToClose$");
+	AddMenuItem("$MnuEasy$", "leicht", WIPF, GetHiRank(0));
+	AddMenuItem("$MnuMedium$", "mittel", SNKE, GetHiRank(0));
+	AddMenuItem("$MnuHard$", "schwer", MONS, GetHiRank(0));
 
 	var pClonk = GetCrew(plr, 0);
 	CreateContents(EFLN, GetCrew(plr));
@@ -73,7 +73,7 @@ global func leicht()
 			Global(index)++;
 			index++;
 		}
-		Log("Der Schwierigkeitsgrad ist jetzt auf leicht.");	
+		Log("$MsgEasy$");	
 		return(menu());
 }
 
@@ -90,13 +90,13 @@ global func mittel()
 			index++;
 		}
 	}
-	Log("Der Schwierigkeitsgrad ist jetzt auf mittel.");
+	Log("$MsgMedium$");
 	return(menu());
 }
 
 global func schwer()
 {
-	Log("Der Schwierigkeitsgrad ist jetzt auf schwer.");
+	Log("$MsgHard$");
 	return(menu());
 }
 
@@ -135,7 +135,7 @@ if(GetPlayerTeam(plr) == 1)
   		DoEnergy(100, bote);
     	SelectCrew(plr, bote);
    		Global(plr)--;
-   		Log("%s hat noch %d Relaunch/es übrig.", GetPlayerName(plr), Global(plr));
+   		Log("$MsgRelaunchesLeft$", GetPlayerName(plr), Global(plr));
   		return(1);
 	 }
 	 return(1);
@@ -145,16 +145,16 @@ if(GetPlayerTeam(plr) == 1)
 
 global func menu()
 {
-	CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "Spieloptionen wählen.");
-	AddMenuItem("Wasserfälle entfernen", "wtf", WATR, GetHiRank(0));
-	AddMenuItem("Schließen", "sto", EXTG, GetCursor(0));
+	CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "$MnuOptions$");
+	AddMenuItem("$MnuRemoveWaterfalls$", "wtf", WATR, GetHiRank(0));
+	AddMenuItem("$MnuClose$", "sto", EXTG, GetCursor(0));
 	return(1);
 }
 
 global func menue()
 {
-	CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "Spieloptionen wählen.");
-	AddMenuItem("Löscher einfügen", "loesch", EXTG, GetHiRank(0));
-	AddMenuItem("Schließen", "stoe", _BOK, GetHiRank(0));
+	CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "$MnuOptions$");
+	AddMenuItem("$MnuAddExtinguisher$", "loesch", EXTG, GetHiRank(0));
+	AddMenuItem("$MnuClose$", "stoe", _BOK, GetHiRank(0));
 	return(1);
 }

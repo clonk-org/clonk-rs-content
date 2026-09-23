@@ -1,1 +1,2 @@
 DE:Spinnenweben
+US:Spider webs

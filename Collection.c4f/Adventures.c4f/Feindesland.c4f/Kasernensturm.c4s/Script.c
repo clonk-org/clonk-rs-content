@@ -22,10 +22,10 @@ for(var chest in FindObjects(Find_ID(_CST)))
 
 protected func InitializePlayer(plr)
 {
-  CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "Spieloptionen wählen. Mit Graben schließen.");
-	AddMenuItem("7 Versuche - Leicht", "leicht", WIPF, GetHiRank(0));
-	AddMenuItem("4 Versuche - Mittel", "mittel", SNKE, GetHiRank(0));
-	AddMenuItem("0 Versuche - Schwer", "schwer", MONS, GetHiRank(0));
+  CreateMenu(KNIG, GetHiRank(0), GetHiRank(0), 0, "$MnuOptionsDigToClose$");
+	AddMenuItem("$MnuEasy$", "leicht", WIPF, GetHiRank(0));
+	AddMenuItem("$MnuMedium$", "mittel", SNKE, GetHiRank(0));
+	AddMenuItem("$MnuHard$", "schwer", MONS, GetHiRank(0));
 
 	var pClonk = GetCrew(plr, 0);
 	SetPosition(80, 380, GetCrew(plr));
@@ -77,7 +77,7 @@ global func leicht()
 			Global(index)++;
 			index++;
 		}
-		Log("Der Schwierigkeitsgrad ist jetzt auf leicht.");	
+		Log("$MsgEasy$");	
 		return(1);
 }
 
@@ -95,13 +95,13 @@ global func mittel()
 			index++;
 		}
 	}
-	Log("Der Schwierigkeitsgrad ist jetzt auf mittel.");
+	Log("$MsgMedium$");
 	return(1);
 }
 
 global func schwer()
 {
-	Log("Der Schwierigkeitsgrad ist jetzt auf schwer.");
+	Log("$MsgHard$");
 	return(1);
 }
 
@@ -117,7 +117,7 @@ if(GetPlayerTeam(plr) == 1)
   		DoEnergy(100, bote);
     	SelectCrew(plr, bote);
    		Global(plr)--;
-   		Log("%s hat noch %d Relaunch/es übrig.", GetPlayerName(plr), Global(plr));
+   		Log("$MsgRelaunchesLeft$", GetPlayerName(plr), Global(plr));
   		return(1);
 	 }
 	 return(1);

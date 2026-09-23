@@ -4,6 +4,6 @@ AllowTeamSwitch=0
 
 	[Team]
 	id=1
-	Name=Spione
+	Name=$TeamSpies$
 	IconSpec=LMM1:4
 	PlrStartIndex=1

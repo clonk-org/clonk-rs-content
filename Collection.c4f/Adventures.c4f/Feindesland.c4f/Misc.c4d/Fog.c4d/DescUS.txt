@@ -1,0 +1,2 @@
+This environment object creates fog ;)
+The fog covers everything, so in some especially foggy areas the view can be so poor that you cannot even see yourself.

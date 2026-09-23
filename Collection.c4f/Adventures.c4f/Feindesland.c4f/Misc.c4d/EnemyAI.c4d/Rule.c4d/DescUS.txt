@@ -1,1 +1,1 @@
-Ownlerless Clonks are controlled by a rudimentary melee AI.
+Ownerless clonks are controlled by a rudimentary combat AI.

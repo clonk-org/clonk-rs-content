@@ -2,7 +2,7 @@
 
 protected func Activate()
 {
-Message("Argh!? Wir müssen ihn aufhalten! Auf zu Hörx! Lasst uns diesen Tyrann stürzen!");
+Message("$MsgStopHim$");
 RemoveObject();
 return(1);
 }
