@@ -12,8 +12,8 @@ GainMissionAccess=Damonwelt
 Definition1=Objects.c4d
 Definition2=Knights.c4d
 Definition3=FANTASY.c4d
-Definition4=InExantros.c4d
-Definition5=INEXSzenarioObjekte.c4d
+Definition4=Collection.c4f\Adventures.c4f\InExantros.c4f\InExantros.C4D
+Definition5=Collection.c4f\Adventures.c4f\InExantros.c4f\INEXSzenarioObjekte.c4d
 
 [Game]
 EnableSurrender=0

@@ -10,6 +10,7 @@ import struct
 import sys
 import tempfile
 import unittest
+import zlib
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
@@ -153,6 +154,34 @@ class GroupEntryTests(unittest.TestCase):
 
         with self.assertRaisesRegex(group_entry.GroupEntryError, "file CRC model"):
             group_entry.edit_entry(bytes(broken), ["Scenario.txt"], group_entry.renaming("S.txt"))
+
+    def legacy_group(self, data: bytes, crc: int) -> bytes:
+        """A one-file group whose record carries C4GECS_Old: the data's CRC without its name."""
+        legacy = bytearray(image([("Scenario.txt", data)], crc_state=0))
+        first_record = group_entry.HEADER
+        legacy[first_record + 284] = 1
+        struct.pack_into("<I", legacy, first_record + 285, crc)
+        return bytes(legacy)
+
+    def test_a_legacy_crc_is_rewritten_over_the_new_data_alone(self) -> None:
+        # C4GECS_Old keeps the CRC of the data alone. C4Group::CalcCRC32 folds
+        # the name in when it upgrades the record (C4Group.cpp:2444-2516).
+        before, after = b"Definition2=Explorer.c4d\r\n", b"Definition2=Puzzles.c4f\\Explorer.c4d\r\n"
+        legacy = self.legacy_group(before, zlib.crc32(before))
+
+        edited = group_entry.edit_entry(
+            legacy, ["Scenario.txt"], group_entry.replacing(b"=Explorer", b"=Puzzles.c4f\\Explorer")
+        )
+
+        record = group_entry.records(edited)[0][0]
+        self.assertEqual(record["crc_state"], 1)
+        self.assertEqual(record["crc"], zlib.crc32(after))
+
+    def test_a_legacy_crc_the_model_cannot_reproduce_stops_the_edit(self) -> None:
+        legacy = self.legacy_group(b"Definition2=Explorer.c4d\r\n", 0xDEADBEEF)
+
+        with self.assertRaisesRegex(group_entry.GroupEntryError, "legacy file CRC model"):
+            group_entry.edit_entry(legacy, ["Scenario.txt"], group_entry.renaming("S.txt"))
 
     def test_an_edit_that_is_not_exactly_one_thing_is_refused(self) -> None:
         for parts, change, message in [

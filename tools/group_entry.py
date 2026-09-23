@@ -20,10 +20,13 @@ at 276, time at 280, CRC state at 284 and CRC at 285. State 2 is a current CRC:
   file entry   crc32(crc32(0, data), name), or 0 for an empty file
   child group  XOR of the child's own entry CRCs
 
+State 1 is an older CRC of a file's data alone, without its name (C4GECS_Old).
+
 Before it changes anything the editor proves that model against the stored
-value of every state-2 record on the path and refuses if one does not
-reproduce. State 0 records carry no CRC (older writers; the engine calculates
-it on demand) and are left as they are. Any other state is refused.
+value of every state-2 or state-1 record on the path and refuses if one does
+not reproduce, then writes the new CRC in the record's own state. State 0
+records carry no CRC (older writers; the engine calculates it on demand) and
+are left as they are. A child group in state 1, or any other state, is refused.
 
   group_entry.py replace <group> <Child.c4d/.../Entry> <old-bytes-file> <new-bytes-file>
   group_entry.py rename  <group> <Child.c4d/.../Entry> <NewName>
@@ -101,6 +104,12 @@ def file_crc(data: bytes, name: bytes) -> int:
     return zlib.crc32(name, zlib.crc32(data)) & 0xFFFFFFFF if data else 0
 
 
+def legacy_file_crc(data: bytes) -> int:
+    """C4GECS_Old: the data's CRC alone, which C4Group::CalcCRC32 extends by the
+    name only when it upgrades the record (C4Group.cpp:2444-2516)."""
+    return zlib.crc32(data) & 0xFFFFFFFF if data else 0
+
+
 def contents_crc(entries: list[dict]) -> int:
     crc = 0
     for entry in entries:
@@ -118,9 +127,10 @@ def edit_entry(image: bytes, parts: list[str], change: Change) -> bytes:
     if len(matches) != 1:
         raise GroupEntryError(f"{parts[0]!r}: {len(matches)} entries")
     target = matches[0]
-    if target["crc_state"] not in (0, 2):
+    if target["crc_state"] not in (0, 1, 2):
         raise GroupEntryError(f"{parts[0]!r}: CRC state {target['crc_state']}")
     checked = target["crc_state"] == 2
+    legacy = target["crc_state"] == 1
     begin = data_start + target["offset"]
     end = begin + target["size"]
     data = image[begin:end]
@@ -130,15 +140,24 @@ def edit_entry(image: bytes, parts: list[str], change: Change) -> bytes:
             raise GroupEntryError(f"{parts[0]!r} is a child group")
         if checked and file_crc(data, target["name"]) != target["crc"]:
             raise GroupEntryError("file CRC model does not hold")
+        if legacy and legacy_file_crc(data) != target["crc"]:
+            raise GroupEntryError("legacy file CRC model does not hold")
         name, replaced = change(target["name"], data)
         if len(name) >= NAME or b"\0" in name or not name:
             raise GroupEntryError(f"unusable entry name {name!r}")
         if any(e is not target and e["name"].lower() == name.lower() for e in entries):
             raise GroupEntryError(f"{name!r} is already an entry")
-        crc = file_crc(replaced, name) if checked else target["crc"]
+        if checked:
+            crc = file_crc(replaced, name)
+        elif legacy:
+            crc = legacy_file_crc(replaced)
+        else:
+            crc = target["crc"]
     else:
         if not target["child"]:
             raise GroupEntryError(f"{parts[0]!r} is not a child group")
+        if legacy:
+            raise GroupEntryError(f"{parts[0]!r}: a legacy CRC on a child group")
         if checked and contents_crc(records(data)[0]) != target["crc"]:
             raise GroupEntryError("child CRC model does not hold")
         name = target["name"]
