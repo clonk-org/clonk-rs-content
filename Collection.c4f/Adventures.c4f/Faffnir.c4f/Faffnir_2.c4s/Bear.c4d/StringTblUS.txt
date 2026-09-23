@@ -1,2 +1,2 @@
 TxtMovement=Move
-TxtLeave=Retransform
+TxtLeave=Change back

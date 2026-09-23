@@ -1,0 +1,14 @@
+MsgTriesLeft=%d tries left!
+MsgArtifactUseful=My {{MSKU}} artifact will surely come in handy in my search for new treasures.
+MsgUseArtifact=(Use the artifact from the context menu)
+MsgGuardAssassin=An assassin!
+MsgGuardIntruder=An intruder!
+MsgGuardWho=Who goes there?
+MsgGuardFriendOrFoe=Friend or foe?
+MsgGuardDie=Do I have to die now?
+MsgGuardGetLost=Get lost!
+MsgGuardRun=If I were you, I'd run for cover right now!
+MsgGuardHello=Hello?!?!
+MsgGuardAbyss=Into the abyss with you!
+MsgGuardDieYou=Die!
+MsgGuardKilled=I've already killed 54 assassins!!

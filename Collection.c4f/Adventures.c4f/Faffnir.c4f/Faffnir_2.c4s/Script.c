@@ -66,20 +66,20 @@ protected func InitializePlayer(int iPlr)
     CreateContents(CRBW, GetCrew(1));
     CreateContents(HOOK, GetCrew(1));
     CreateContents(KNFP, GetCrew(1));
-    Log("Noch %d Versuche!", 5 -Global(9)); } }
+    Log("$MsgTriesLeft$", 5 -Global(9)); } }
       return(1); }
       
  public  func Script3() {
- CustomMessage("Mein {{MSKU}}-Artefakt wird mir auf der Suche nach neuen Schätzen bestimmt hilfreich sein.", 0, NO_OWNER, 100,100,0,DECO,"Portrait:ASAS::00ff00::1");
+ CustomMessage("$MsgArtifactUseful$", 0, NO_OWNER, 100,100,0,DECO,"Portrait:ASAS::00ff00::1");
   return(1); }
   
  public  func Script33() {
-  CustomMessage("(Artefakt über das Kontextmenü verwenden)", 0, NO_OWNER, 100,100,0,DECO,"Portrait:ASAS::00ff00::1");
+  CustomMessage("$MsgUseArtifact$", 0, NO_OWNER, 100,100,0,DECO,"Portrait:ASAS::00ff00::1");
   return(1); }
   
   
  public func Script40() {
- var NichtGeheim = ["Ein Attentäter!", "Ein Eindringling!", "Wer ist da?", "Freund oder Feind?", "Muss ich jetzt sterben?", "Verzieh dich!", "Ich würde mich jetz ganz schnell in Sicherheit bringen!", "Hallo?!?!", "Ab in den Schlund mit dir!", "Stirb!", "Ich habe schon 54 Assasinen getötet!!", "MUAHhAhAH"];
+ var NichtGeheim = ["$MsgGuardAssassin$", "$MsgGuardIntruder$", "$MsgGuardWho$", "$MsgGuardFriendOrFoe$", "$MsgGuardDie$", "$MsgGuardGetLost$", "$MsgGuardRun$", "$MsgGuardHello$", "$MsgGuardAbyss$", "$MsgGuardDieYou$", "$MsgGuardKilled$", "MUAHhAhAH"];
  for(var NichtGeheimeClonks in FindObjects(Find_ID(KAND), Find_Not(Find_InRect(180, 600, 500, 190))))
  if(FindObject2(Find_ID(ASAS),Find_Distance(190,GetX(NichtGeheimeClonks),GetY(NichtGeheimeClonks))) && GetAlive(NichtGeheimeClonks) && !GetEffect("Nixsag", NichtGeheimeClonks) && !GetEffect("Hide", FindObject(ASAS)) && PathFree(GetX(NichtGeheimeClonks), GetY(NichtGeheimeClonks), GetX(FindObject(ASAS)), GetY(FindObject(ASAS))))
    { Message(NichtGeheim[Random(11)],NichtGeheimeClonks); AddEffect("Nixsag", NichtGeheimeClonks,5,0); }
