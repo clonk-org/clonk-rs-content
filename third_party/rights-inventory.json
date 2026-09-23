@@ -383,8 +383,8 @@
       ],
       "origin": "ucc",
       "file_count": 1,
-      "bytes": 39901054,
-      "sha256": "d3cfc889341848a555a913b80bfcd2b51f1e7ff87ff09973b7a594fcb71fcdaa"
+      "bytes": 38784965,
+      "sha256": "d86941462a4d8a954136e8895d0b74b5edf217da56739778e9f66ec9b07261a3"
     },
     "RopepackRemake.c4d": {
       "rights": "assumed",
@@ -398,8 +398,8 @@
       ],
       "origin": "ucc",
       "file_count": 1,
-      "bytes": 238247,
-      "sha256": "0ec4de41076cad4c985c73db68d34be6825eef8bf55f272f1a6c7055f5e4e6dd"
+      "bytes": 232304,
+      "sha256": "108245460b5d77f018d46fec69f9c73edeb0278955815e47de049bd1c3fb35e1"
     },
     "WesternBalancing.c4d": {
       "rights": "assumed",
@@ -413,8 +413,8 @@
       ],
       "origin": "ucc",
       "file_count": 1,
-      "bytes": 1310688,
-      "sha256": "2fd2eb312d1ba564a0c35bc89290c90535364782292ef0155a69903a40ee43c6"
+      "bytes": 1304134,
+      "sha256": "64a1b6a602866e1a6409b4de7557b3132b0b2bbaad2929516c932bd5117294d1"
     },
     "WesternBugfixes.c4d": {
       "rights": "assumed",
@@ -428,8 +428,8 @@
       ],
       "origin": "ucc",
       "file_count": 1,
-      "bytes": 4678599,
-      "sha256": "4354c1b11ce9273e50f98f5209471bda4101de319c99e8ff50ef33fc37497361"
+      "bytes": 4653642,
+      "sha256": "c63f6e573a2ea898c3c70832a6a21900d5f9c28e6555853d3cc11a56901d4f97"
     },
     "E.P.I.C.c4f": {
       "rights": "assumed",
