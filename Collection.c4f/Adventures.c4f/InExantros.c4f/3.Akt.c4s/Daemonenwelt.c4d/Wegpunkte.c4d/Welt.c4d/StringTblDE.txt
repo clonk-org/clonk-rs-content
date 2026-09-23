@@ -1,0 +1,2 @@
+World01=Ihr habt %d ingesamt Leben (Relaunches) 
+World02=<%s>|Üble Kraturen und Dämonen, ihr werdet all euer Ende finden.

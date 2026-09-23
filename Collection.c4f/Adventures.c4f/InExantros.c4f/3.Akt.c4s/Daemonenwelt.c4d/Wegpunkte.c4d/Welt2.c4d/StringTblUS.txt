@@ -1,0 +1,1 @@
+World01=<%s>|Come on, you demonic bastards!

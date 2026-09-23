@@ -1,2 +1,2 @@
 DE:Schattenwald
-US:Shadowwood
+US:Shadow Forest

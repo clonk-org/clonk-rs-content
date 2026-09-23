@@ -1,0 +1,1 @@
+World01=<%s>|Was ist das schon wieder| für ein Teufelswerkzeug?!

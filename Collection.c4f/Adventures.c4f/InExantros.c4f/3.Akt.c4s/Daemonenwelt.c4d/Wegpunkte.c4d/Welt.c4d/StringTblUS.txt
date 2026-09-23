@@ -1,0 +1,2 @@
+World01=You have %d lives (relaunches) in total 
+World02=<%s>|Foul creatures and demons, you will all meet your end.

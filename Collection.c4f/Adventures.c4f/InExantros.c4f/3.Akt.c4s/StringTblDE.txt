@@ -1,0 +1,11 @@
+Act3_01=@Bitte NET2-Version aktualisieren. Mindestens Version %d benötigt!
+Act3_02=%s ist gestorben und ihr habt keinen Relaunch mehr
+Act3_03=%s ist gestorben und ihr habt noch %d Relaunches
+Act3_04=%s ist gestorben und ihr habt noch 1 Relaunch
+Act3_05=Ich habe die Dämonenwelt betreten, nun gilt es die letzte Bastion zu erklimmen. Ich werde den dunklen Wanderer töten und all dem Übel hier ein Ende bereiten.||Vor mir stehen noch die 3 Pforten die ich zu öffnen habe.
+Act3_06=<c ff0000> Neuer Tagebucheintrag </c>
+Act3_07=Es ist wahr: Die Zwerge haben vor langer Zeit einen Kristall gefunden. Er zog alles Böse an, deswegen wurde er verbannt. Der Wanderer öffnete ein Portal in diese Welt, vodurch eine Verbindung zum Böse entstand und es angezogen wurde.||Jetzt will der Wanderer dem Kristall die Macht entziehen.||Er muss wohl das verschwundene Buch haben, da er alle Geheimnisse des Kristalls kennt.||Fragt sich nur wer der Wanderer ist und wieso er so besessen ist?!
+Act3_08=Die erste Pforte ist geöffnet, scheint wohl ein Kinderspiel zu sein.||Dunkler Wanderer nehm dich in acht, ich muss nur noch 2 öffnen!
+Act3_09=Die 2. Pforte steht nun ebenfalls offen.||Nur noch die letzte Pforte.
+Act3_10=Die letzte Pforte ist geöffnet. Jetzt hängt das Schicksal vieler Bewohner von Exantros in meinen Händen.||Das Ende steht bevor!
+Act3_11=<c 00ff00> DAS SPIEL IST VORBEI! </c>

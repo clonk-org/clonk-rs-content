@@ -49,7 +49,7 @@ func Initialize() {
   var min_net2_version = 225;
   if (C4X_Ver1==4 && C4X_Ver2==9 && C4X_Ver3==6 && C4X_Ver4==0 && C4X_VerBuild < min_net2_version)
     {
-    Message("@Bitte NET2-Version aktualisieren. Mindestens Version %d benötigt!", 0, min_net2_version);
+    Message("$Act3_01$", 0, min_net2_version);
     RemoveAll();
     return(GameOver());
     }
@@ -125,9 +125,9 @@ RelaunchPlayer: //wenn man stirbt verliert man 50 erfahrung
 //relaunch weniger
   --gleben;
   if(gleben<0)  ObjectCall(Par(0),"GoOut"); //Raus schmeißen!
-  if(gleben==0)  return(Log("%s ist gestorben und ihr habt keinen Relaunch mehr",GetPlayerName(GetOwner(Par())) ));
-  if(gleben>1)  return(Log("%s ist gestorben und ihr habt noch %d Relaunches",GetPlayerName(GetOwner(Par())),gleben));
-  Log("%s ist gestorben und ihr habt noch 1 Relaunch",GetPlayerName(GetOwner(Par())) );
+  if(gleben==0)  return(Log("$Act3_02$",GetPlayerName(GetOwner(Par())) ));
+  if(gleben>1)  return(Log("$Act3_03$",GetPlayerName(GetOwner(Par())),gleben));
+  Log("$Act3_04$",GetPlayerName(GetOwner(Par())) );
   return(1);
 
 InitializePlayer:
@@ -155,9 +155,9 @@ InitializePlayer:
   return(1);
 
 Teil1:
-  gTagebuch="Ich habe die Dämonenwelt betreten, nun gilt es die letzte Bastion zu erklimmen. Ich werde den dunklen Wanderer töten und all dem Übel hier ein Ende bereiten.||Vor mir stehen noch die 3 Pforten die ich zu öffnen habe.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
-  gbigquest="Es ist wahr: Die Zwerge haben vor langer Zeit einen Kristall gefunden. Er zog alles Böse an, deswegen wurde er verbannt. Der Wanderer öffnete ein Portal in diese Welt, vodurch eine Verbindung zum Böse entstand und es angezogen wurde.||Jetzt will der Wanderer dem Kristall die Macht entziehen.||Er muss wohl das verschwundene Buch haben, da er alle Geheimnisse des Kristalls kennt.||Fragt sich nur wer der Wanderer ist und wieso er so besessen ist?!";
+  gTagebuch="$Act3_05$";
+  Message("$Act3_06$");
+  gbigquest="$Act3_07$";
 
 //Die 5. Pforten
 
@@ -174,8 +174,8 @@ Teil2:
   gystart=280;
 
   Win();
-  gTagebuch="Die erste Pforte ist geöffnet, scheint wohl ein Kinderspiel zu sein.||Dunkler Wanderer nehm dich in acht, ich muss nur noch 2 öffnen!";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act3_08$";
+  Message("$Act3_06$");
 //Pforte öffnen
   ObjectCall(pforte1,"Open");
 //Wegpunkte
@@ -206,8 +206,8 @@ Teil3:
 
   ObjectCall(CreateObject(LI__,2150,200,-1),"Licht",350);
 
-  gTagebuch="Die 2. Pforte steht nun ebenfalls offen.||Nur noch die letzte Pforte.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act3_09$";
+  Message("$Act3_06$");
   return(1);
 
 Teil4:
@@ -223,8 +223,8 @@ Teil4:
   ObjectCall(pforte3,"Open");
 
   Win();
-  gTagebuch="Die letzte Pforte ist geöffnet. Jetzt hängt das Schicksal vieler Bewohner von Exantros in meinen Händen.||Das Ende steht bevor!";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act3_10$";
+  Message("$Act3_06$");
 
 //Das letzte Kapitel
 
@@ -253,7 +253,7 @@ DasEnde:
 
 Saving:
   Sound("Win");
-  Message("<c 00ff00> DAS SPIEL IST VORBEI! </c>");
+  Message("$Act3_11$");
   while(SetVar(0,FindObject(KNIG,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"Speicher"); //Alle Spieler abspeichern
   GameOver();
 //  while(SetVar(0,FindObject(KNIG,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"GoOut"); //Alle Spieler raus schmeißen

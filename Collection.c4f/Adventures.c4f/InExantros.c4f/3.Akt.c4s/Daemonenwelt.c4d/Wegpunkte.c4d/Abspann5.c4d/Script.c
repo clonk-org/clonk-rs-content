@@ -9,5 +9,5 @@ Initialize:
 Text:
   if(GreaterThan(GetActTime(),5000))  RemoveObject();
   SetComDir(COMD_Down());
-  Message("@Ich danke  all meinen Betatestern:|Sven2(Sven Eberhardt),|Dominik1(Dominik Oman),|BlackTempler(Mike Komaromi),|Knufflwipf(Florian Graier),|Goldständer(Lukas Klier),|LoneS(Johannes Henriksson),|JimiRaynor(Kevin Porebski),|Killerwipf(Oliver Sebert)",this());
+  Message("$Credits01$",this());
   return(1);

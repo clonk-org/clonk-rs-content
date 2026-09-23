@@ -1,0 +1,1 @@
+World01=<%s>|What kind of devil's tool| is this now?!

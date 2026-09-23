@@ -12,7 +12,7 @@ Los:
   i=pgegner;
   while(i>0)  if(--i)  if(!Local(30+i)) { SetLocal(30+i,CreateObject(W_00,2700+Random(700),500,-1)); }
 
-  Message("<c ff0000> <Dunkle Gestalt>| Hahaha,| wie wärs mit einer| feuerigen Ladung Lava.| Hahaha</c>");
+  Message("$Figure01$");
   Sound("Boss_02",1);
   return(1);
 

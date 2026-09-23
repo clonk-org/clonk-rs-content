@@ -1,0 +1,11 @@
+Act3_01=@Please update NET2. At least version %d is needed!
+Act3_02=%s has died, and you have no relaunches left
+Act3_03=%s has died, and you have %d relaunches left
+Act3_04=%s has died, and you have 1 relaunch left
+Act3_05=I have entered the demon world, now I must climb the last bastion. I will kill the dark wanderer and put an end to all the evil here.||Ahead of me are the 3 gates I have to open.
+Act3_06=<c ff0000> New diary entry </c>
+Act3_07=It is true: long ago the dwarves found a crystal. It attracted all evil, so it was banished. The wanderer opened a portal into that world, which created a link to the evil and drew it here.||Now the wanderer wants to draw the power out of the crystal.||He must have the missing book, since he knows all the crystal's secrets.||The only question is who the wanderer is and why he is so obsessed?!
+Act3_08=The first gate is open, seems to be child's play.||Dark wanderer, beware, I only have 2 more to open!
+Act3_09=The 2nd gate is open now too.||Only the last gate left.
+Act3_10=The last gate is open. Now the fate of many people of Exantros lies in my hands.||The end is near!
+Act3_11=<c 00ff00> THE GAME IS OVER! </c>

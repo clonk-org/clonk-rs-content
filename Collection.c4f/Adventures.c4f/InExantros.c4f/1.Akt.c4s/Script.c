@@ -46,7 +46,7 @@ func Initialize() {
   var min_net2_version = 225;
   if (C4X_Ver1==4 && C4X_Ver2==9 && C4X_Ver3==6 && C4X_Ver4==0 && C4X_VerBuild < min_net2_version)
     {
-    Message("@Bitte NET2-Version aktualisieren. Mindestens Version %d benötigt!", 0, min_net2_version);
+    Message("$Act1_01$", 0, min_net2_version);
     RemoveAll();
     return(GameOver());
     }
@@ -154,23 +154,23 @@ func Initialize() {
 //Wegweiser
   SetVar(0,CreateObject(_WG1,2300,530,-1));
   ObjectCall(Var(0),"Bild",2);
-  LocalN("ptext",Var(0))="Willkommen in Hingen.||Westlich von Hingen liegt der Hingsee.||Folgt man dem Pfad über die Hängebrücke durch das Gebirge, so gelangt man nach Flunheim.";
+  LocalN("ptext",Var(0))="$Act1_02$";
 
   SetVar(0,CreateObject(_WG1,4390,890,-1));
   ObjectCall(Var(0),"Bild",4);
-  LocalN("ptext",Var(0))="Folgt man dem Pfad dem Wasserfall hoch, so gelangt man nach Flunheim.||Der Tunnel zu euer Linken führt nach Hingen.";
+  LocalN("ptext",Var(0))="$Act1_03$";
 
   SetVar(0,CreateObject(_WG1,4870,410,-1));
   ObjectCall(Var(0),"Bild",5);
-  LocalN("ptext",Var(0))="Flunheim:||Willkommen Reisender, in unserer Taverne >Wipfgrog< findet ihr eine warme Unterkunft.||Im Westen hinter dem Eisberg liegt Hingen.||Nach Osten gelangt man in den Schattenwald zur Wichtelburg.";
+  LocalN("ptext",Var(0))="$Act1_04$";
 
   SetVar(0,CreateObject(_WG1,2560,1150,-1));
   ObjectCall(Var(0),"Bild",3);
-  LocalN("ptext",Var(0))="Die Kanalisation:||Gebaut vom Ingenieur Zwerg Udoakor.||Das Sichellabyrinth:||Das Sichellabyrinth wurde ebenfalls von ihm errichtet. Hier wird jedes Jahr die berühmte Slayer-Ehrenprüfung veranstaltet. Die jenigen die durchkommen und sich als würdig erweisen, werden in den Rang der Elite-Slayer-Zwerge aufgenommen.||Gezeichnet: Zwergen Hauptmann Oberkum";
+  LocalN("ptext",Var(0))="$Act1_05$";
 
   SetVar(0,CreateObject(_WG1,1330,940,-1));
   ObjectCall(Var(0),"Bild",3);
-  LocalN("ptext",Var(0))="Das Sichellabyrinth:||Hier wird jedes Jahr die berühmte Slayer-Ehrenprüfung veranstaltet. Die jenigen die durchkommen und sich als würdig erweisen, werden in den Rang der Elite-Slayer-Zwerge aufgenommen.||Gezeichnet: Zwergen Hauptmann Oberkum|||Hinzugefügt: Diese Ruinen sind aus Vorsichtsmaßnahmen geschlossen! Gezeichnet: Bürgermeister Marvin";
+  LocalN("ptext",Var(0))="$Act1_06$";
 
 //Manaquellen
   CreateObject(_MQU,500,830,-1);
@@ -345,7 +345,7 @@ func Initialize() {
   CreateObject(MM__,1880,860,-1); //MegaMonolith
   ObjectCall(CreateObject(MN__,4190,1080,-1),"Rune",S_03,"Flunheim"); //Flunheim
   ObjectCall(CreateObject(MN__,3380,1060,-1),"Rune",S_25,"Schlucht"); //Schlucht
-  ObjectCall(CreateObject(MN__,4360,300,-1),"Rune",S_09,"Kloster Ziokar"); //Kloster Ziokar
+  ObjectCall(CreateObject(MN__,4360,300,-1),"Rune",S_09,"$Act1_07$"); //Kloster Ziokar
   ObjectCall(CreateObject(MN__,1040,1270,-1),"Rune",S_21,"Sichellabyrinth"); //Fallengrotte
 
 //Falltore
@@ -390,8 +390,8 @@ RelaunchPlayer: //wenn man stirbt verliert man 50 erfahrung
   while(wt>0) { DoMagicEnergy(+1,Par(0)); --wt; }
 
   SetVar(0,LocalN("pExp",Par(0)) );
-  if(Var(0)<q)  Log("%s ist gestorben und verliert %d Erfahrungspunkte",GetPlayerName(GetOwner(Par()) ),Var(0));
-  if(Var(0)>q-1)  Log("%s ist gestorben und verliert %d Erfahrungspunkte",GetPlayerName(GetOwner(Par()) ),q);
+  if(Var(0)<q)  Log("$Act1_08$",GetPlayerName(GetOwner(Par()) ),Var(0));
+  if(Var(0)>q-1)  Log("$Act1_08$",GetPlayerName(GetOwner(Par()) ),q);
   LocalN("pExp",Par(0))=LocalN("pExp",Par(0))-q;
   if(LocalN("pExp",Par(0))<0)  LocalN("pExp",Par(0))=0;
   return(1);
@@ -441,7 +441,7 @@ Script1: //einblenden
 
 Teil1:
 //Den Dorfältesten suchen
-  Log("Kapitel 1: Die suche nach dem Dorfältesten");
+  Log("$Act1_09$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -457,7 +457,7 @@ Teil1:
 
 Teil2:
 //Kapitel beendet
-  Log("Ihr habt den Dorfältesten befreit");
+  Log("$Act1_10$");
   gAuftrag=2;
   SetVar(0,FindObject(_SH4));
 	SetVar(1,CreateContents(_DAE,Var(0)));
@@ -491,7 +491,7 @@ Teil2:
 
 Teil3:
 //Die Suche nach dem Teleporter
-  Log("Kapitel 2: Der Monolith");
+  Log("$Act1_11$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -511,15 +511,15 @@ Teil3:
   ObjectCall(Var(1),"SetSpell",MFBL);
 
   CreateObject(_BQ_,0,0,-1); //BigQuestion
-  gbigquest="Irgendetwas stimmt in dieser Gegend nicht, aber ich werde der Sache auf den Grund gehen.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gbigquest="$Act1_12$";
+  Message("$Act1_13$");
 
   CreateObject(EX_1,1840,840,-1);
   return(1);
 
 Teil4:
 //Kapitel beendet
-  Log("Ihr habt den Monolithen und den Monostone gefunden.");
+  Log("$Act1_14$");
   gAuftrag=4;
   CreateObject(H_09,4190,1080,-1);
 //Neue Verkaufsgegenstände
@@ -543,7 +543,7 @@ Teil4:
 
 Teil5:
 //Der Weg von Flunheim
-  Log("Kapitel 3: Der Weg von Flunheim");
+  Log("$Act1_15$");
 
 
   var i=-1, iPlr;
@@ -560,7 +560,7 @@ Teil5:
 
 Teil6:
 //Kapitel beendet
-  Log("Der Magier ist besiegt und nun können die Paladine die Stadt Hingen anlegen!");
+  Log("$Act1_16$");
   if(FindObject(SLBS))  RemoveObject(FindObject(SLBS));
   if(FindObject(SLBT))  RemoveObject(FindObject(SLBT));
   CreateObject(SIF_,1415,604,-1);
@@ -576,13 +576,13 @@ Teil6:
   CreateContents(RECK,ghandel2);
   gAuftrag=6;
 //Eintrag
-  gbigquest="Hier in diesem Landstrich wimmelt es wohl in letzter Zeit nur so von Räubern. Sie scheinen wie benommen und verzaubert zu sein. Und jetzt treibt auch noch ein Magier hier sein Unwesen.||Ich will der Sache auf den Grund gehen.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gbigquest="$Act1_17$";
+  Message("$Act1_13$");
   return(1);
 
 Teil7:
 //Der große Angriff
-  Log("Kapitel 4: Der große Angriff");
+  Log("$Act1_18$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -627,7 +627,7 @@ Teil8:
 
 Teil9:
 //Die Sonnenfinsternis
-  Log("Kapitel 5: Die schwarze Sonne");
+  Log("$Act1_19$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -638,8 +638,8 @@ Teil9:
 
   gAuftrag=9;
 //Eintrag
-  gbigquest="Etwas absolut Merkwürdiges geht hier vor. Die Sonne ist auf einmal verdunkelt, als käme ein Schatten übers Land...||Dieses merkwürdige Rästel scheint größer zu sein als ich dachte.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>||<c 00ff00> Auftrag erfüllt! </c>");
+  gbigquest="$Act1_20$";
+  Message("$Act1_21$");
 
   RemoveObject(FindObject(_Q5_));
 
@@ -651,7 +651,7 @@ Teil9:
 
 Teil10:
 //Kloster erreicht
-  Log("Ihr habt den Weg zum Kloster gefunden");
+  Log("$Act1_22$");
   gAuftrag=10;
 //Neue Verkaufsgegenstände
   CreateContents(_LKU,ghandel);
@@ -664,7 +664,7 @@ Teil10:
 
 Teil11:
 //Die 3 Prüfungen
-  Log("Kapitel 6: Die 3 Prüfungen");
+  Log("$Act1_23$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -680,7 +680,7 @@ Teil11:
 
 Teil12:
 //Bestanden
-  Log("Ihr habt die 3 Prüfungen, und den Schrein erleuchtet");
+  Log("$Act1_24$");
   gAuftrag=12;
   gtest=0;
 //Neue Verkaufsgegenstände
@@ -689,7 +689,7 @@ Teil12:
 
 Teil13:
 //Das Orakel
-  Log("Kapitel 7: Das Orakel");
+  Log("$Act1_25$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -701,13 +701,13 @@ Teil13:
   CreateObject(H_26,0,0,-1);
   gAuftrag=13;
 //Tagebuch
-  gbigquest="Alle Bewohner scheinen ratlos zu sein, selbst der Dorfälteste weiß kein Rat. Die Antwort auf das ganze Geschehen muss jetzt wohl das Orakel beantworten. Ich habe viele Geschichten über viele Orakels gehört, und dass man sich erst als würdig erweisen muss, bevor man seine Antworten bekommt.||Ich will nun die Antwort finden!";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gbigquest="$Act1_26$";
+  Message("$Act1_13$");
   return(1);
 
 Teil14:
 //Das Orakel besiegt und die Antworten bekommen
-  Log("Ihr habt die Antwort des Orakels bekommen");
+  Log("$Act1_27$");
   CreateObject(H_30,3550,60,-1);
   CreateObject(H_31,0,0,-1);
   gAuftrag=14;
@@ -720,7 +720,7 @@ Teil14:
 
 Teil15:
 //Die Bibliothek
-  Log("Kapitel 8: Die geheime Bibliothek");
+  Log("$Act1_28$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -730,16 +730,16 @@ Teil15:
   }
   gAuftrag=15;
 //Tagebuch
-  gbigquest="Das Orakel gab mir zu verstehen, dass ein Wanderer ein Portal in eine Dämonenwelt öffnete, um die Kraft eines Kristalls zu holen. Er sollte das Böse gerufen haben. Nun ist er im Schattenwald und der Weg dorthin sei versperrt...||Das klingt für mich sehr verwirrend, ich brauche wohl noch mehr andere Informationen.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gbigquest="$Act1_29$";
+  Message("$Act1_13$");
   return(1);
 
 Teil16:
 //Barriere gesprengt
-  Log("Ihr habt die Barriere gesprengt");
+  Log("$Act1_30$");
 
-  gTagebuch="Ich habe die Barriere gesprengt, nun sollte ich in den Schattenwald wandern und dort den Urspung des Bösen finden.||Wandern:|Alle Spieler müssen nun im Regel-Menü zustimmen, dass sie bereit sind. Wenn alle bereit sind, und einer der Gruppe die Karte rechts verlässt, wird der nächste Akt freigeschaltet.||ACHTUNG:|Alles was nicht eingesammelt ist, wird liegen gelassen. (Ihr kommt nicht wieder hierher zurück!)";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act1_31$";
+  Message("$Act1_13$");
 
   CreateObject(_WA_,0,0,-1);
   CreateObject(H_41,5990,350,-1);
@@ -750,7 +750,7 @@ Teil16:
 Saving:
   GainMissionAccess("Schattenwald");
   Sound("Win");
-  Message("<c 00ff00> DU HAST DEN 2.AKT FREIGESPIELT </c>");
+  Message("$Act1_32$");
   while(SetVar(0,FindObject(KNIG,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"Speicher"); //Alle Spieler abspeichern
   GameOver(); //Spiel vorbei!
 //  while(SetVar(0,FindObject(KNIG,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"GoOut"); //Alle Spieler raus schmeißen
@@ -771,8 +771,8 @@ Quake:
 Sonne:
   Sound("Horror1");
   gnacht=1;
-  gTagebuch="Die Sonne ist verdunkelt, ich befürchte ziemlich Schlimmes. Ich sollte sofort den Dorfältesten fragen was hier vor sich geht.||Der Auftrag von Klodwig hat keine Bedeutung mehr.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act1_33$";
+  Message("$Act1_13$");
   while(SetVar(0,FindObject(LI__,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"LichtOut");
   return(1);
 
@@ -788,8 +788,8 @@ Sonne2:
 
   Sound("Gong");
   gnacht=0;
-  gTagebuch="Die Sonne leuchtet wieder, jetzt trauen sich die Untoten wohl nicht mehr ans Tageslicht. Wenigstens ist es jetzt ein bisschen sicherer.||Ich sollte trotzdem den Dorfältesten aufsuchen und fragen was eigentlich der Grund des ganzen >merkwürdigen< Geschehens ist.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act1_34$";
+  Message("$Act1_13$");
   while(SetVar(0,FindObject(LI__,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"LichtOn");
   return(1);
 

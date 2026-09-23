@@ -9,5 +9,5 @@ Initialize:
 Text:
   if(GreaterThan(GetActTime(),5000))  RemoveObject();
   SetComDir(COMD_Down());
-  Message("Dies ist mein 2. veröffentlichte Spiel, ich hoffe es hat euch gefallen.",this());
+  Message("$Credits01$",this());
   return(1);
