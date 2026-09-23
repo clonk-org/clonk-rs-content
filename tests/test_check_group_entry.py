@@ -283,6 +283,57 @@ class GroupEntryTests(unittest.TestCase):
                 with self.assertRaisesRegex(group_entry.GroupEntryError, message):
                     group_entry.add_entry(nested(), parts, b"data")
 
+    def mixed(self, script: bytes) -> bytes:
+        """A group whose child carries a current CRC over entries that carry
+        none (state 0) or only their data's (state 1), as older writers left
+        them; the child's CRC is what C4Group::CalcCRC32 folds for them."""
+        entries = [("DefCore.txt", b"id=OLDY\r\n"), ("Script.c", script), ("Names.txt", b"DE:Alt\r\n")]
+        child = bytearray(image(entries, crc_state=0))
+        names = group_entry.records(bytes(child))[0]
+        # Names.txt keeps the older data-only CRC.
+        child[names[2]["start"] + 284] = 1
+        struct.pack_into("<I", child, names[2]["start"] + 285, zlib.crc32(b"DE:Alt\r\n"))
+        folded = 0
+        for name, data in entries:
+            folded ^= group_entry.file_crc(data, name.encode("latin-1"))
+        outer = bytearray(image([("Title.txt", b"US:Title\r\n"), ("Old.c4d", [])]))
+        # Swap the empty placeholder child for the prepared one.
+        records, start = group_entry.records(bytes(outer))
+        placeholder = records[1]
+        body = bytes(outer[: start + placeholder["offset"]]) + bytes(child)
+        body = bytearray(body)
+        struct.pack_into("<i", body, placeholder["start"] + 268, len(child))
+        struct.pack_into("<I", body, placeholder["start"] + 285, folded)
+        return bytes(body)
+
+    def test_a_child_folds_the_crcs_its_older_entries_do_not_carry(self) -> None:
+        edited = group_entry.edit_entry(
+            self.mixed(b"a();\r\n"), ["Old.c4d", "Script.c"], group_entry.replacing(b"a();", b"b();")
+        )
+
+        self.assertEqual(edited, self.mixed(b"b();\r\n"))
+
+    def test_a_child_whose_folded_crc_does_not_reproduce_is_still_refused(self) -> None:
+        broken = bytearray(self.mixed(b"a();\r\n"))
+        child = group_entry.records(bytes(broken))[0][1]
+        struct.pack_into("<I", broken, child["start"] + 285, 0xDEADBEEF)
+
+        with self.assertRaisesRegex(group_entry.GroupEntryError, "child CRC model"):
+            group_entry.edit_entry(bytes(broken), ["Old.c4d", "Script.c"], group_entry.renaming("S.c"))
+
+    def test_a_file_added_beside_older_entries_carries_a_current_crc(self) -> None:
+        edited = group_entry.add_entry(self.mixed(b"a();\r\n"), ["Old.c4d", "DescUS.txt"], b"Old.\r\n")
+
+        added = group_entry.records(self.child(edited, "Old.c4d"))[0][-1]
+        self.assertEqual(
+            (added["name"], added["crc_state"], added["crc"]),
+            (b"DescUS.txt", 2, group_entry.file_crc(b"Old.\r\n", b"DescUS.txt")),
+        )
+        self.assertEqual(
+            group_entry.records(edited)[0][1]["crc"],
+            group_entry.image_crc(self.child(edited, "Old.c4d")),
+        )
+
     def test_the_add_command_writes_the_new_entry_into_the_packed_file(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "Pack.c4s"
