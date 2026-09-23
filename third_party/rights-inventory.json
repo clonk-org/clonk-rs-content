@@ -323,8 +323,8 @@
       ],
       "origin": "ucc",
       "file_count": 11987,
-      "bytes": 607086898,
-      "sha256": "6e45954c5d578ce39524d7035f2f468eecbcef84635d4b473098f6aad51003df"
+      "bytes": 607001449,
+      "sha256": "3243bc7178d62082b111c845b3917a7f566cd2e9599b3a1e0578fefb78ec23c8"
     },
     "Golems.c4f": {
       "rights": "assumed",
