@@ -1,0 +1,5 @@
+Wanderer01=Letzter Endgegner: Der dunkle Wanderer
+Wanderer02=<c ff0000> <Dunkle Gestalt>| Wer stört mich da?||Ihr fordert euer| Schicksal heraus!|Stirbt!</c>
+Wanderer03=<c ff0000> <Dunkle Gestalt>| Ich habe bereits einen Teil der| Macht des Kritalls und ihr| werdet mir nicht hindern| alle Macht zu nehmen.</c>
+Wanderer04=<c ff0000> <Dunkle Gestalt>| Und wenn ich mich verwandle, dann habt ihr wohl nicht mehr zu lachen. HäHäHä</c>
+Wanderer05=Ihr habt den Tümpelwächter bezwungen!

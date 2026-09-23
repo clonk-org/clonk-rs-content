@@ -23,7 +23,7 @@ Erstellen:
   ObjectCall(pboss,"Lade",plicht,this());
 //Weiter machen
   SetAction("Idle");
-  Log("Letzter Endgegner: Der dunkle Wanderer");
+  Log("$Wanderer01$");
   return(1);
 
 Tot:
@@ -55,7 +55,7 @@ Next2:
 
 Start:
   if(plage==0)  {
-  Message("<c ff0000> <Dunkle Gestalt>| Wer stört mich da?||Ihr fordert euer| Schicksal heraus!|Stirbt!</c>",pboss);
+  Message("$Wanderer02$",pboss);
   Sound("Boss_01",1); 
   SoundLevel("EndKampf",99);
   CreateObject(G__E,0,0,-1);
@@ -73,7 +73,7 @@ Start2:
   ObjectCall(pboss,"Gegner1",0,5);
   ObjectCall(pboss,"Lade",plicht,this());
 //Weiter
-  Message("<c ff0000> <Dunkle Gestalt>| Ich habe bereits einen Teil der| Macht des Kritalls und ihr| werdet mir nicht hindern| alle Macht zu nehmen.</c>",pboss);
+  Message("$Wanderer03$",pboss);
   SetAction("New2");
   return(1);
 
@@ -87,14 +87,14 @@ Start3:
   ObjectCall(pboss,"Gegner1",0,5);
   ObjectCall(pboss,"Lade",plicht,this());
 //Weiter
-  Message("<c ff0000> <Dunkle Gestalt>| Und wenn ich mich verwandle, dann habt ihr wohl nicht mehr zu lachen. HäHäHä</c>",pboss);
+  Message("$Wanderer04$",pboss);
   SetAction("New2");
   return(1);
 
 Ende:
   Music("Braveheart");
   GameCall("Win");
-  Log("Ihr habt den Tümpelwächter bezwungen!");
+  Log("$Wanderer05$");
   SetPosition(1920,1190,this());
   SetLocal(1,1,FindObject(FT__,-50,-80,100,160));
 //  CreateObject(H_09,0,0,-1);

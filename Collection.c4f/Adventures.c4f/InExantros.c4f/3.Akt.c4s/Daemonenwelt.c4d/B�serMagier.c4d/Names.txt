@@ -1,2 +1,2 @@
 DE:Endgegner
-US:Bigboss
+US:Final boss

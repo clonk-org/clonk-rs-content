@@ -1,0 +1,1 @@
+Credits01=Thanks to Randrian(Richard Gerum) for letting me use his combat system pack as a template, and thanks to Sven2 for the lovely FolderMap!

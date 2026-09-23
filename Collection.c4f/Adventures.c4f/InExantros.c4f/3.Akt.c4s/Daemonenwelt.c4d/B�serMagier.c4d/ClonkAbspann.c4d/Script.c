@@ -11,47 +11,47 @@ Initialize:
   return(1);
 
 Teil1:
-  Message("<c 00d8e5> <Punzel>|Ich bin frei.| Frei aber am Ende| meiner Kräfte.</c>",this());
+  Message("$Punzel01$",this());
   Sound("QI_01",1);
   return(1);
 
 Teil2:
-  Message("<c 00d8e5> <Punzel>|Vor vielen Jahren| habe ich das Haus| meines verstorbener| Großvater geerbt.</c>",this());
+  Message("$Punzel02$",this());
   Sound("QI_02",1);
   return(1);
 
 Teil3:
-  Message("<c 00d8e5> <Punzel>|Dort hab ich ein Buch gefunden,| doch dieses Buch war von| einem Dämon besessen, welcher| die Kontrolle über mich nahm</c>",this());
+  Message("$Punzel03$",this());
   Sound("QI_03",1);
   return(1);
 
 Teil4:
-  Message("<c 00d8e5> <Punzel>|Er lies mich verfaulen,| wie eine Leiche...| was hat er nur mit mir gemacht!</c>",this());
+  Message("$Punzel04$",this());
   Sound("QI_04",1);
   return(1);
 
 Teil5:
-  Message("<c 00d8e5> <Punzel>|Aber ihr habt ihn aus| mir vertrieben. Doch ihr| konntet mich nicht retten,| seht mich doch nur mal an.</c>",this());
+  Message("$Punzel05$",this());
   Sound("QI_05",1);
   return(1);
 
 Teil6:
-  Message("<c 00d8e5> <Punzel>|Es ist an der Zeit, dass| ich ein letztes mal das| Buch zu mir nehme und| das Letzte Kapitel aufschlage.</c>",this());
+  Message("$Punzel06$",this());
   Sound("QI_06",1);
   return(1);
 
 Teil7:
-  Message("<c 00d8e5> <Punzel>|Das letzte Kapitel zum Ende.| Ich werde mit dem| Kristall untergehen.</c>",this());
+  Message("$Punzel07$",this());
   Sound("QI_07",1);
   return(1);
 
 Teil8:
-  Message("<c 00d8e5> <Punzel>|Es ist meine letzte Pflicht.| Sagt der Welt, dass ich| trotzalledem ein Held war.</c>",this());
+  Message("$Punzel08$",this());
   Sound("QI_08",1);
   return(1);
 
 Teil9:
-  Message("<c 00d8e5> <Punzel>|Ich bin bereit.</c>",this());
+  Message("$Punzel09$",this());
   Sound("QI_09",1);
   SetLocal(8,1);
   return(1);

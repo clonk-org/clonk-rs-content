@@ -9,5 +9,5 @@ Initialize:
 Text:
   if(GreaterThan(GetActTime(),5000))  RemoveObject();
   SetComDir(COMD_Down());
-  Message("@Der Sieg ist Euer!",this());
+  Message("$Credits01$",this());
   return(1);

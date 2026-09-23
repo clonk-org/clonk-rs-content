@@ -1,0 +1,9 @@
+Punzel01=<c 00d8e5> <Punzel>|I am free.| Free, but at the end| of my strength.</c>
+Punzel02=<c 00d8e5> <Punzel>|Many years ago| I inherited the house| of my late| grandfather.</c>
+Punzel03=<c 00d8e5> <Punzel>|There I found a book,| but this book was possessed| by a demon, who| took control of me</c>
+Punzel04=<c 00d8e5> <Punzel>|He let me rot| like a corpse...| what has he done to me!</c>
+Punzel05=<c 00d8e5> <Punzel>|But you have driven him out| of me. Yet you| could not save me,| just look at me.</c>
+Punzel06=<c 00d8e5> <Punzel>|It is time for| me to take up the| book one last time and| open the last chapter.</c>
+Punzel07=<c 00d8e5> <Punzel>|The last chapter, to the end.| I will perish with the| crystal.</c>
+Punzel08=<c 00d8e5> <Punzel>|It is my last duty.| Tell the world that| despite everything I was a hero.</c>
+Punzel09=<c 00d8e5> <Punzel>|I am ready.</c>

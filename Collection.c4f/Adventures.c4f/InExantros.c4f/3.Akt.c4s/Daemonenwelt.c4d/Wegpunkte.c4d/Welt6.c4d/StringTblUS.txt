@@ -1,0 +1,1 @@
+World01=<%s>|Light triumphs over darkness,| and so it will be this time too!

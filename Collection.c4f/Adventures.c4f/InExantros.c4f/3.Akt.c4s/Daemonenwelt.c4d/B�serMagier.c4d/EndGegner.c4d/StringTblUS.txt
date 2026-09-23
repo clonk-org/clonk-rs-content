@@ -1,0 +1,5 @@
+Wanderer01=Final boss: The dark wanderer
+Wanderer02=<c ff0000> <Dark figure>| Who disturbs me there?||You are tempting| fate!|Die!</c>
+Wanderer03=<c ff0000> <Dark figure>| I already have part of the| crystal's power, and you| will not stop me| from taking all of it.</c>
+Wanderer04=<c ff0000> <Dark figure>| And when I transform, you won't be laughing anymore. HeHeHe</c>
+Wanderer05=You have defeated the Pond Guardian!

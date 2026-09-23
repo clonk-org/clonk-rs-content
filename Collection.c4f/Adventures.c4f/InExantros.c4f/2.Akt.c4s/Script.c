@@ -45,7 +45,7 @@ func Initialize() {
   var min_net2_version = 225;
   if (C4X_Ver1==4 && C4X_Ver2==9 && C4X_Ver3==6 && C4X_Ver4==0 && C4X_VerBuild < min_net2_version)
     {
-    Message("@Bitte NET2-Version aktualisieren. Mindestens Version %d benötigt!", 0, min_net2_version);
+    Message("$Act2_01$", 0, min_net2_version);
     RemoveAll();
     return(GameOver());
     }
@@ -82,26 +82,26 @@ func Initialize() {
 
   SetVar(0,CreateObject(_WG1,190,470,-1));
   ObjectCall(Var(0),"Bild",4);
-  LocalN("ptext",Var(0))= "Der Schattenwald:||Im Westen liegt das Hochland, wo der Reisende nach Flunheim gelangt.||Folgt man dem Pfad nach Osten so gelangt man zur Wichtelburg. Folge dem Weg durchs Tor und halte dich stets oben. Nachdem du die Brücke passiert hast geht es nur noch durch den Wald.";
+  LocalN("ptext",Var(0))= "$Act2_02$";
 
   SetVar(0,CreateObject(_WG1,1270,320,-1));
   ObjectCall(Var(0),"Bild",5);
-  LocalN("ptext",Var(0))= "Weg oben:||Hier gelangt man zur Wichtelburg.||Weg unten:||Dieser Pfad für in das Unterholz vom Schattenwald. Dort unten befindet sich ebenfalls auch das alte Zwergenreich. Reisende und Forscher die die Ruinen besichtigen wollen, betreten es aufgrund der Einsturtzgefahr, auf eigene Gefahr!";
+  LocalN("ptext",Var(0))= "$Act2_03$";
 
   SetVar(0,CreateObject(_WG1,3200,340,-1));
-  LocalN("ptext",Var(0))= "Willkommen Reisender in der Wichtelburg:||Hier regiert Graf Alfons II. Er ist Landeigentümer vom Schattenwald. Die Burg wurde von seinem Vater Graf Alfons I erbaut.||Regeln:||Diebstahl wird mit der Hand bezahlt, also Halunkenpack, seid gewarnt!";
+  LocalN("ptext",Var(0))= "$Act2_04$";
 
 //extra mit der brücke
   SetVar(0,CreateObject(_WG1,3200,340,-1));
-  LocalN("ptext",Var(0))= "Der Mondschien in einigen Zyklen der Zeit zeigt einem den Weg, welcher einen Schatz in sich birgt.";
+  LocalN("ptext",Var(0))= "$Act2_05$";
 
 
   SetVar(0,CreateObject(_WG1,1930,1070,-1));
   ObjectCall(Var(0),"Bild",5);
-  LocalN("ptext",Var(0))= "Unterholz:||Der kleine Pfad durch das Tor links führt zum alten Zwergenreich.||Lange bevor wir Clonks hierher kamen, lebten in diesen Landstrichen die Zwerge. Heute sind sie alle auf mysteriöse Weise in diesen Landstrich ausgestorben.||Viele alte Runinen und Mauerwerke sowie Tunnel sind die Überreste dieser alten Kultur.";
+  LocalN("ptext",Var(0))= "$Act2_06$";
 
   SetVar(0,CreateObject(_WG1,960,1130,-1));
-  LocalN("ptext",Var(0))= "Hier endet der Pfad:||Viele die die 3 Kronen der 3 Zwergenkönige suchen glauben hinter dieser gewaltigen Wand fündig zu werden. Doch Niemand konnte sie bis jetzt durchdringen.||Gezeichnet: Dr.Prof. Sucher";
+  LocalN("ptext",Var(0))= "$Act2_07$";
 
 //Soundquellen
   ObjectCall(CreateObject(SOU_,410,200,-1),"Tag");
@@ -125,17 +125,17 @@ func Initialize() {
 
 //Zwergenfriedhof
   SetVar(0,CreateObject(_ID9,1130,1320,-1));
-  LocalN("ptext",Var(0))="Grohom der Harte:||Er soll in Frieden ruhen und niemehr gestört werden.||Rutschi-Putschi";
+  LocalN("ptext",Var(0))="$Act2_08$";
   CreateContents(_ZKR,Var(0));
 
   SetVar(0,CreateObject(_ID9,450,1160,-1));
-  LocalN("ptext",Var(0))="Zwingli der Große:||Sein Gold fließe sein Wille geschehe.||Möge er in der Ewigkeit ruhen.";
+  LocalN("ptext",Var(0))="$Act2_09$";
   CreateContents(_ZKR,Var(0));
   ObjectCall(Var(0),"Bild1");
 
   SetVar(0,CreateObject(_ID9,170,1160,-1));
 //  CreateContents(_ZKR,Var(0));
-  LocalN("ptext",Var(0))="Wickim von Hammer:||Glorreiche Jahre hatten wir Zwerge mit ihm, möge er nun ruhen.";
+  LocalN("ptext",Var(0))="$Act2_10$";
 //FogOfWar (Lichter)
   ObjectCall(CreateObject(LI__,3650,130,-1),"Licht",320);
   ObjectCall(CreateObject(LI__,4240,130,-1),"Licht",320);
@@ -168,19 +168,19 @@ func Initialize() {
 
 
   SetVar(0,CreateObject(_ID9,1950,960,-1));
-  LocalN("ptext",Var(0))="Memento dem Schützen.";
+  LocalN("ptext",Var(0))="$Act2_11$";
 	CreateContents(BOW3,Var(0));
   ObjectCall(Var(0),"Bild1");
 
 
   SetVar(0,CreateObject(_ID9,2950,1240,-1));
 	CreateContents(_RAX,Var(0));
-  LocalN("ptext",Var(0))="Die Axt ist der beste Freund des Zwerges.";
+  LocalN("ptext",Var(0))="$Act2_12$";
   ObjectCall(Var(0),"Bild1");
 
 
   SetVar(0,CreateObject(_ID9,1190,1050,-1));
-  LocalN("ptext",Var(0))="Schutz gebührt den Helden.";
+  LocalN("ptext",Var(0))="$Act2_13$";
 	CreateContents(_TSH,Var(0));
   ObjectCall(Var(0),"Bild1");
 
@@ -399,8 +399,8 @@ RelaunchPlayer: //wenn man stirbt verliert man 50 erfahrung
   SetPosition(gxstart+Random(10),gystart,Par(0));
 
   SetVar(0,LocalN("pExp",Par(0)) );
-  if(Var(0)<q)  Log("%s ist gestorben und verliert %d Erfahrungspunkte",GetPlayerName(GetOwner(Par()) ),Var(0));
-  if(Var(0)>q-1)  Log("%s ist gestorben und verliert %d Erfahrungspunkte",GetPlayerName(GetOwner(Par()) ),q);
+  if(Var(0)<q)  Log("$Act2_14$",GetPlayerName(GetOwner(Par()) ),Var(0));
+  if(Var(0)>q-1)  Log("$Act2_14$",GetPlayerName(GetOwner(Par()) ),q);
   LocalN("pExp",Par(0))=LocalN("pExp",Par(0))-q;
   if(LocalN("pExp",Par(0))<0)  LocalN("pExp",Par(0))=0;
   return(1);
@@ -431,7 +431,7 @@ InitializePlayer:
 
 Teil17:
 //Der Schattenwald
-  Log("Kapitel 9: Der Schattenwald");
+  Log("$Act2_15$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -443,17 +443,17 @@ Teil17:
   gAuftrag=17;
   CreateObject(H_35,350,490,-1);
 
-  gTagebuch="Als erstes muss ich nach Wichtelburg gelangen. Dort sollte ich mir Auskunft über die Lage hier holen.||Ich wurde vor meiner Ankunft hierher gewarnt, dass es hier sehr Gefährlich sein kann!";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act2_16$";
+  Message("$Act2_17$");
 
 //Tagebuch
-  gbigquest="Das Orakel gab mir zu verstehen, dass ein Wanderer ein Portal in eine Dämonenwelt öffnete um die Kraft eines Kristalls zu holen. Er sollte das Böse gerufen haben. Nun ist er im Schattenwald und der Weg dorthin sei versperrt...||Das klingt für mich sehr verwirrend, ich brauche wohl noch mehr andere Informationen.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gbigquest="$Act2_18$";
+  Message("$Act2_17$");
   return(1);
 
 Teil18:
 //Den Schattenwald durchquert
-  Log("Ihr habt den Weg nach Wichtelburg gefunden.");
+  Log("$Act2_19$");
   gAuftrag=18;
 //Warppoint
   gxout=3450;
@@ -465,7 +465,7 @@ Teil18:
 
 Teil19:
 //Die dunkle Armee
-  Log("Kapitel 10: Die dunkle Armee");
+  Log("$Act2_20$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -480,18 +480,18 @@ Teil19:
 //Punkte
   ginvasion=200;
 
-  gTagebuch="Heute Nach sollte die dunkle Armee die Wichtelburg angreifen.|| Ich sollte zusehen dass ich dann hier bin um die Burg zu beschützen.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
-  gbigquest="Es Scheint Krieg zwischen Gut und Böse hier ausgebrochen zu sein.||Es wird wohl immer mehr und immer schlimmeres Böses hierher gerufen.||Ich muss heraus finden warum es hierher gerufen wurde. Ambesten ich muss den Wanderer finden.";
+  gTagebuch="$Act2_21$";
+  Message("$Act2_17$");
+  gbigquest="$Act2_22$";
   return(1);
 
 Teil20:
 //Die dunkle Armee besiegt
-  Log("Wichtelburg hat den Angriff der dunklen Armee standgehalten");
+  Log("$Act2_23$");
   gAuftrag=20;
   Sound("DarkArmyBack");
-  gTagebuch="Wichtelburg hat den Angriff der dunklen Armee standgehalten, jedoch hat sie großen Schaden davon getragen.||Mir wurde versichert, dass je weniger die Burg verstört wurde, desto mehr Geld würde ich für meine Hilfe bekommen. Ich wollte mir die Belohnung von Graf Alfons abholen.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act2_24$";
+  Message("$Act2_17$");
   SetVar(1,CreateObject(_DAE,3760,100,-1));
 	CreateContents(AL__,Var(1));
   CreateObject(H_44,0,0,-1);
@@ -499,7 +499,7 @@ Teil20:
 
 Teil21:
 //Das Zwergenreich
-  Log("Kapitel 11: Das Zwergenreich");
+  Log("$Act2_25$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -515,7 +515,7 @@ Teil21:
 
 Teil22:
 //Die Zwergenkrohnen
-  Log("Kapitel 12: Die Drei Zwergenkrohnen");
+  Log("$Act2_26$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -524,10 +524,10 @@ Teil22:
   ObjectCall(CreateObject(KM__),"Kapitel",12,FindObjectOwner(KNIG,iPlr) );
   }
 
-  gTagebuch="Um in In die Hallen zu kommen, wo der Schatz der Zwerge gehortet wurde, muss ich die drei Kronen der Zwergenkönige finden.||Vielleicht sollte ich den Dorfältesten um Rat fragen.";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act2_27$";
+  Message("$Act2_17$");
 
-  gbigquest="Es ist wahr: Die Zwerge haben vor langer Zeit einen Kristall gefunden. Er zog alles Böse an, deswegen wurde er verbannt. Der Wanderer öffnete ein Portal in diese Welt, wodurch eine Verbindung zum Böse entstand und es angezogen wurde.||Jetzt will der Wanderer dem Kristall die Macht entziehen.||Er muss wohl das verschwundene Buch haben, da er alle Geheimnisse des Kristalls kennt.||Fragt sich nur wer der Wanderer ist und wieso er so besessen ist?!";
+  gbigquest="$Act2_28$";
 
   CreateObject(H_55,0,0,-1);
   gAuftrag=22;
@@ -536,7 +536,7 @@ Teil22:
 
 Teil23:
 //Der Drachenhort
-  Log("Kapitel 13: Das Portal");
+  Log("$Act2_29$");
 
   var i=-1, iPlr;
   while (++i < GetPlayerCount())
@@ -545,8 +545,8 @@ Teil23:
   ObjectCall(CreateObject(KM__),"Kapitel",13,FindObjectOwner(KNIG,iPlr) );
   }
 
-  gTagebuch="Ich habe den Weg in die Schatzkammer der Zwerge gefunden. Hoffentlich ist dort der Wanderer, ansonsten irre ich noch ewig hier rum!";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act2_30$";
+  Message("$Act2_17$");
   gAuftrag=23;
 
   SetVar(0,CreateObject(WA__,3320,1430,-1));
@@ -565,10 +565,10 @@ Teil23:
 
 Teil24:
 //Der Drache ist tot.
-  Log("Ihr habt den Geisterdrachen besiegt.");
+  Log("$Act2_31$");
 
-  gTagebuch="Ich habe den Geisterdrachen besiegt!||Rechts vom Schatz hat sich ein Wurmloch geöffnet, wo das wohl hin führt.|Hoffentlich war das die richtige Spur!";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
+  gTagebuch="$Act2_32$";
+  Message("$Act2_17$");
   CreateObject(H_41,4170,1400,-1);
   CreateObject(POR_,4180,1340,-1);
   CreateObject(POF_,4080,1500,-1);
@@ -582,9 +582,9 @@ Teil24:
   return(1);
 
 Teil25: //Der letzte Teil vom 2.Akt
-  gTagebuch="Das Portal in die Dämonenwelt wurde geöffnet. Jetzt ist unsere einzige Change, dass ich selbst durch das Portal gehe und den Wanderer daran hindere dem Kristall seine Macht zu entziehen.||Wandern:|Alle Spieler müssen nun im Regel-Menü zustimmen, dass sie bereit sind. Wenn alle bereit sind, und einer der Gruppe durch das Protal geht, wird der nächste Akt freigeschaltet.||ACHTUNG:|Alles was nicht eingesammelt ist, wird liegen gelassen. (Ihr kommt nicht wieder hierher zurück!)";
-  Message("<c ff0000> Neuer Tagebucheintrag </c>");
-  gbigquest="Der Wanderer hat das Portal beschwört. Doch es ist noch nicht zu spät. Ich werde ihn in die Welt folgen und ihn hindern, wenn es sein muss töten.";
+  gTagebuch="$Act2_33$";
+  Message("$Act2_17$");
+  gbigquest="$Act2_34$";
 
 //Truhe
   SetVar(0,CreateObject(_CST,3810,1430,-1));
@@ -610,7 +610,7 @@ Teil25: //Der letzte Teil vom 2.Akt
 Saving:
   GainMissionAccess("Damonwelt");
   Sound("Win");
-  Message("<c 00ff00> DU HAST DEN 3.AKT FREIGESPIELT </c>");
+  Message("$Act2_35$");
   while(SetVar(0,FindObject(KNIG,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"Speicher"); //Alle Spieler abspeichern
   GameOver();
 //  while(SetVar(0,FindObject(KNIG,0,0,0,0,0,0,0,0,Var(0))))  ObjectCall(Var(0),"GoOut"); //Alle Spieler raus schmeißen
