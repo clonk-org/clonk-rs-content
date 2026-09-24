@@ -1,2 +1,0 @@
-Operate=Operate
-Inspect=Inspect

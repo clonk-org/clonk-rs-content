@@ -1,2 +1,0 @@
-Recall=Pfeile zurueckrufen
-Talk=Reden / folgen

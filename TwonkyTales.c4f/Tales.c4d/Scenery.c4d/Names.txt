@@ -1,2 +1,0 @@
-US:Scenery
-DE:Kulisse
