@@ -62,7 +62,7 @@ protected func DoOpen(pClonk, fKi)
 
 protected func ControlLeft(pClonk)
 {
-  [Tür schließen|Image=GATL]
+  [$DescDoorClose$|Image=GATL]
 	if(GetDir() == 1)
 		DoOpen(pClonk);
 	else
@@ -73,7 +73,7 @@ func IsOpen() { return GetAction() == "DoorOpen" || GetAction() == "OpenDoor"; }
  
 protected func ControlRight(pClonk)
 {
-  [Tür öffnen|Image=GATR]
+  [$DescDoorOpen$|Image=GATR]
 	if(GetDir() == 1)
 		DoClose(pClonk);
 	else
@@ -86,7 +86,7 @@ func IsClosed() { return GetAction() == "DoorClosed" || GetAction() == "CloseDoo
  
 public func ContextDoorClose(object pClonk)
 {
-  [Tür schließen|Image=GATL|Condition=IsOpen]
+  [$DescDoorClose$|Image=GATL|Condition=IsOpen]
   SetCommand(pClonk, "Grab", this());
   AppendCommand(pClonk, "Call", this(), 0,0,0,0, "DoClose");  
   return(1); 
@@ -94,7 +94,7 @@ public func ContextDoorClose(object pClonk)
  
 public func ContextDoorOpen(object pClonk)
 {
-  [Tür öffnen|Image=GATR|Condition=IsClosed]
+  [$DescDoorOpen$|Image=GATR|Condition=IsClosed]
   SetCommand(pClonk, "Grab", this());
   AppendCommand(pClonk, "Call", this(), 0,0,0,0, "DoOpen");
   return(1); 

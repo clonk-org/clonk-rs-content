@@ -21,7 +21,7 @@ public func ControlReset(object pClonk)
 
 protected func ControlLeft(object pClonk)
   {
-  [DescSwitch]
+  [$DescSwitch$]
   if(fSpecial) return;	  
   if (GetPhase()==0) return;
 
@@ -55,7 +55,7 @@ protected func ControlLeft(object pClonk)
 
 protected func ControlRight(object pClonk)
   {
-  [DescSwitch]
+  [$DescSwitch$]
   if (GetPhase()==1) return;
 
   if(GetPlayerType(GetOwner(pClonk))==C4PT_User)

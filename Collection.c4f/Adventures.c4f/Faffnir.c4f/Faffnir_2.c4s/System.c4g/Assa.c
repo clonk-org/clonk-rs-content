@@ -7,7 +7,7 @@
 public func ContextArtefakt()
 {
   
-  [Artefakt|Image=MSKU|Condition=NoArtefakt]
+  [$DescArtifact$|Image=MSKU|Condition=NoArtefakt]
   SetPhysical("Breath", 90000,2);
   SetPhysical("Walk", 99000,2);
   SetPhysical("Jump", 62000,2);

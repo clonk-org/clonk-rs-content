@@ -1,1 +1,3 @@
 Door01=Tür ist abgesperrt!
+DescDoorClose=Tür schließen
+DescDoorOpen=Tür öffnen

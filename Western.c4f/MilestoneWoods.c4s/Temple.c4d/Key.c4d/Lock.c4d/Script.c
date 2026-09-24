@@ -29,7 +29,7 @@ public func ControlDig()
   
 public func ControlThrow(pClonk)
 {
-  [Insert/remove key]
+  [$DescInsertKey$]
   if(Contents())
   {
     Exit(Contents());
