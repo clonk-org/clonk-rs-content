@@ -1,1 +1,1 @@
-Used to catch fish. Requires bait, which can be produced from meat or feathers. Start fishing by double click 'dig' next to the ice shelf border.
+Used to catch fish. It needs bait, of course, which can be made from meat or feathers. Double-click 'Dig' near the water's edge to fish.

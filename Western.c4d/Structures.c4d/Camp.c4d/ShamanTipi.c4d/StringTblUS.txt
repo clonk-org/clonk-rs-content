@@ -1,4 +1,4 @@
-TxtNoAmulets=No Amulets available
+TxtNoAmulets=No amulets available
 TxtMystic=Display mystic points
 TxtProduction=Produce
 ContextProduction=Production
@@ -9,4 +9,4 @@ TxtCancel=Cancel
 TxtOnlyOneChief=There can be only one chief.
 TxtNotEnoughMoney=Not enough money!
 TxtChiefRecruited=Chief trained.
-DescChief=The chief is the keeper of his clan.||Because of his experience he can cast specific spells and grind any bones, without the use of an amulet.||Even this he obtaines more magical energy by grinding bones which he has even more.
+DescChief=The chief is the head of his tribe.||Thanks to his experience, he can cast certain spells and grind bones without an amulet.||He is also gifted in magic: grinding bones gives him more magic energy, and he can hold more of it.

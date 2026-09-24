@@ -1,2 +1,2 @@
 DE:Begrenzte Tränke
-US:Counted potions
+US:Limited potions

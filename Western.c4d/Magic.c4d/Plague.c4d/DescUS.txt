@@ -1,1 +1,1 @@
-Poisons all nearby clonks.
+Poisons the clonks standing nearby. Beware, the plague is contagious. But it can be washed off in water.

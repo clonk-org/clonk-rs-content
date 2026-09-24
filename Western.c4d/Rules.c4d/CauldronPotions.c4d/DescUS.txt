@@ -1,1 +1,1 @@
-You can take only some potions from the cauldron, after that he's cleaning him.
+Only a limited number of potions can be taken from the cauldron; after that it cleans itself.

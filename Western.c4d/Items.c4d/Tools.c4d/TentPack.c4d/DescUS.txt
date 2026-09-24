@@ -1,1 +1,3 @@
-Set up by double click 'dig'.
+Set up the tent by double-clicking 'Dig'.
+
+There is also a menu for putting building material into the tent pack. To take it out again, select the material and click 'Dig'. Building a tent uses all the building material in the pack. If there is too much material in it, the rest comes back out, but sometimes the material in the tent pack is not enough to build a whole tent.

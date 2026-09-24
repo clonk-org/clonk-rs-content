@@ -1,1 +1,1 @@
-Summons a few zaps, which fly close to the magician and attack all approaching enemys for a while.
+Summons a few zaps that fly around the caster for a while and attack every approaching enemy.

@@ -1,7 +1,7 @@
 FoodAmount=Food Amount
 TxtHeal=Heal
-DescHeal=Heals the clonk, if there's enougth food in the storage.
+DescHeal=Fully heals the clonk if there is enough food in the storage.
 TxtEat=Eat
-DescEat=Feeds the clonk.
+DescEat=Feeds the clonk until it is completely full.
 Menu=Menu
 TxtMenu=Food menu

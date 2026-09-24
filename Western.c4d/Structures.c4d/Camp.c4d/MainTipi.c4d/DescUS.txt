@@ -1,1 +1,3 @@
-The tepee serves as couvert and protection for the indians.
+The chief tepee is the center of the tribe. Without it, the tribe does not grow. 'Up' shows the tribe's current population.
+
+With 'Dig', a friendly player can join the tribe. The players then share their buildings and construction plans.
