@@ -254,7 +254,6 @@ origin = "ccan"
 bytes = "preserve"
 # Its Version.txt is the pack's whole changelog, "3.41" on the first line, so
 # there is no single version string to record here.
-localization = ["clonk-org/clonk-rs-content#68"]
 
 # ── Ultimate Clonk Compilation ───────────────────────────────────────────────
 
@@ -265,7 +264,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/U
 origin = "ucc"
 bytes = "preserve"
 upstream_version = "2.0"
-localization = ["clonk-org/clonk-rs-content#68"]
 # Scenario-private definitions stay beside their consumers. Left packed, one
 # file each: a packed group returns its stored header order, which is
 # host-stable and is what C++ C4MaterialMap::Load consumes, where an unpacked
@@ -299,7 +297,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/U
 origin = "ucc"
 bytes = "preserve"
 upstream_version = "4.95.5"
-localization = ["clonk-org/clonk-rs-content#68"]
 
 [packs."ModernCombat.c4f"]
 rights = "assumed"
