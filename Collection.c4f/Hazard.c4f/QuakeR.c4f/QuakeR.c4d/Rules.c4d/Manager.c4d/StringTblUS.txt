@@ -51,3 +51,4 @@ More=More
 Less=Less
 FragsSet=Score set
 Points=Points
+League=League
