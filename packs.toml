@@ -241,7 +241,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "ccan"
 bytes = "preserve"
 upstream_version = "3.1b"
-localization = ["clonk-org/clonk-rs-content#72"]
 
 [packs."MetalMagicExtra.c4d"]
 rights = "assumed"
@@ -249,7 +248,6 @@ reason = "Maintainer assumes modification permission for local maintenance; reco
 evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "ccan"
 bytes = "preserve"
-localization = ["clonk-org/clonk-rs-content#72"]
 
 # Queron 3 sits inside a base pack; the rest of Melees.c4f is legacyclonk's.
 [packs."Melees.c4f/Queron3.c4s"]
@@ -260,7 +258,7 @@ origin = "ccan"
 bytes = "preserve"
 # Its Version.txt is the pack's whole changelog, "3.41" on the first line, so
 # there is no single version string to record here.
-localization = ["clonk-org/clonk-rs-content#68", "clonk-org/clonk-rs-content#72"]
+localization = ["clonk-org/clonk-rs-content#68"]
 
 # ── Ultimate Clonk Compilation ───────────────────────────────────────────────
 
@@ -273,7 +271,6 @@ bytes = "preserve"
 upstream_version = "2.0"
 localization = [
     "clonk-org/clonk-rs-content#68",
-    "clonk-org/clonk-rs-content#72",
     "clonk-org/clonk-rs-content#73",
     "clonk-org/clonk-rs-content#74",
     "clonk-org/clonk-rs-content#75",
