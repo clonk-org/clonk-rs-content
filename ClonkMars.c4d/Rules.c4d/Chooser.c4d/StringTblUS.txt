@@ -20,7 +20,7 @@ OneAIMore=One bot more
 OneAILess=One bot less
 NewTeam=New Team
 FairTeams=Fair Teams
-FairTeamsInfo=Fair match
+FairTeamsInfo=Fill up all teams so that every team has the same number of Clonks
 OnlyDeleteLastTeam=The last team has to be removed first!
 
 #never mind
@@ -28,4 +28,4 @@ Emptiness=The emptiness
 YourBrain=Your brain
 Nothing=Nothing
 Freezer=The freezer
-Space=The space
+Space=Infinite space

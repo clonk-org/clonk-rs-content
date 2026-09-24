@@ -1,2 +1,2 @@
 DE:Menüsystem
-US:menu system 
+US:Menu system

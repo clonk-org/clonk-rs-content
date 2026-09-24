@@ -1,9 +1,7 @@
-Stores/Saves energy and emits it when necessary. Needs
-one crystal for energy storage. Full energy cells can 
-accessorily charge the battery.
+Stores energy and releases it when needed. Needs a crystal to store energy. Full energy cells can be fed back into the accumulator.
 
 Controls:
 
-Jump --> Retrieving amount of energy
-Threw --> decharge full energy cell to battery (if it is in the inventory)
-Grab -->Recharging the energy cell (if it is in the inventory)
+Jump  --> query the amount of energy
+Throw --> discharge a full energy cell (if in the inventory)
+Dig   --> charge an empty energy cell (if in the inventory)

@@ -1,1 +1,3 @@
-For transport crew on the planet.
+For transporting living beings and material to the surface of Mars. Handle with care, though!
+
+Grab and jump to launch. Double dig fires the braking boosters (if a Clonk is on board).

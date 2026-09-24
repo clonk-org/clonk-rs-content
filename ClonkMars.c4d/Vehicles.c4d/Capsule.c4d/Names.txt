@@ -1,2 +1,2 @@
 DE:Nachschubsonde
-US:Supportcapsule
+US:Supply capsule

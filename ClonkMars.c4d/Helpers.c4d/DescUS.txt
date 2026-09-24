@@ -1,1 +1,1 @@
-Some usefully Helpers.
+Useful helper functions.

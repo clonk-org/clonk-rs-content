@@ -1,5 +1,5 @@
 CtxLinePickupDesc=Line pickup
-TxtNoDoubleKit=%s is not fixed at the other end.
+TxtNoDoubleKit=%s is already being laid|at the other end.
 TxtDisconnect=%s disconnected|from %s.
 TxtLinePickupCaption=Line pickup
 TxtPickupLineTo=pick up %s to %s
