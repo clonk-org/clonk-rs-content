@@ -1,0 +1,2 @@
+MsgDamaged=The environment is badly damaged
+MsgMissing=%d percent still to go!

@@ -27,19 +27,19 @@ func Script4()
 
 func Script10()
 {
-  Message("Moin %s!|Das ist ein Clonk...| ... aber er unterscheidet sich von den Clonks den du vielleicht kennt. Er ist... anders.",0,GetTaggedPlayerName());
+  Message("$Tut01$",0,GetTaggedPlayerName());
   return(1);
 }
 
 func Script30()
 {
-  Message("Denn er muss essen und schlafen, kann krank werden, regeneriert sich usw.");
+  Message("$Tut02$");
   return(1);
 }
 
 func Script50()
 {
-  Message("In der oberen linken Ecke seht du wie viel Hunger er verspürt, wie müde er ist, und so weiter.");
+  Message("$Tut03$");
   SetArrow(100,250,true,true);
   return(1);
 }
@@ -48,7 +48,7 @@ func Script80()
 {
   CreateContents(BANN,GetHiRank());
   SetArrow(64,-64,true);
-  Message("Was der Clonk da im Inventar hat ist das Banner.|Wenn du es aktiviert bekommst du die Grundlage für eine Siedlung:|Eine Kneipe und eine Hütte deren Position selbst bestimmt werden kann");
+  Message("$Tut04$");
   return(1);
 }
 
@@ -56,8 +56,8 @@ func Script100()
 {
   RemoveArrow();
   Sound("Ding");
-  g_pGoal->SetMessages("", "Aktiviere das Banner und platziere deine Gebäude");
-  Message("@Benutzt nun das Banner.");
+  g_pGoal->SetMessages("", "$Tut05$");
+  Message("$Tut06$");
   return(1);
 }
 
@@ -67,7 +67,7 @@ func Script105()
     return goto(120);
   if(!ObjectCount2(Find_ID(HCKT)))
     return goto(102);
-  Message("@Nun befindet sich im Inventar des Clonks 2x kostenlos Bauen. Eine Hütte und eine Kneipe... platziere sie.");
+  Message("$Tut07$");
 }
 
 func Script120()
@@ -86,16 +86,16 @@ func Script125()
 
 func Script140()
 {
-  Message("Dein Clonk hat Hunger bekommen...");
+  Message("$Tut08$");
   GetHiRank()->CheckFood(-1300);
   return(1);
 }
 
 func Script150()
 {
-  Message("@Gehe in die Kneipe und kauf ihm ein Brot.");
+  Message("$Tut09$");
   Sound("Ding");
-  g_pGoal->SetMessages("", "Gehe in die Kneipe und kaufe deinem hungrigen Clonk Brot und lassen sie den Clonk das Brot essen");
+  g_pGoal->SetMessages("", "$Tut10$");
   var pBar=FindObject(_I1A);
   SetArrow(GetX(pBar),GetY(pBar)-40,false);
   SetPlrShowCommand(0,3);
@@ -114,7 +114,7 @@ func Script156()
 {
   if(Contained(GetHiRank()))
     return goto(155);
-  Message("@Gehe aus der Kneipe...");
+  Message("$Tut11$");
 }
 
 func Script158()
@@ -122,7 +122,7 @@ func Script158()
   if(Contained(GetHiRank()))
     return goto(155);
   RemoveArrow();
-  Message("@Esse das Brot mit doppelt <c ffff00>%s</c>",0,GetPlrControlName(0, CON_Dig));
+  Message("$Tut12$",0,GetPlrControlName(0, CON_Dig));
   SetPlrShowCommand(0,128+6);
 }
 
@@ -138,7 +138,7 @@ func Script165()
 
 func Script170()
 {
-  Message("@Warte mal kurz...");
+  Message("$Tut13$");
   dayspeed=40;
 }
 
@@ -148,21 +148,21 @@ func Script175()
    return goto(173);
   dayspeed=0;
   if(GetSystemTime(4)>21||GetSystemTime(4)<7)
-    Message("Es ist nun Nacht( draußen auch!): die ideale Zeit zum schlafen");
+    Message("$Tut14$");
   else
-    Message("Es ist nun Nacht( nur im Spiel... draußen nicht): die ideale Zeit zum schlafen");
+    Message("$Tut15$");
 }
 
 func Script185()
 {
-  Message("Und gerade jetzt ist der Clonk müde!");
+  Message("$Tut16$");
   GetHiRank()->CheckSleep(-800);
 }
 
 func Script195()
 {
-  Message("Gehe mit ihm in die Hütte. (Du hast übrigens noch einen 2. Clonk in der Hütte)");
-  g_pGoal->SetMessages("", "Gehe mit deinem müden Clonk in die Hütte und leg ihn schlafen");
+  Message("$Tut17$");
+  g_pGoal->SetMessages("", "$Tut18$");
   var pHut=FindObject(_A1A);
   SetArrow(GetX(pHut),GetY(pHut)-40,false);
 }
@@ -172,7 +172,7 @@ func Script198()
   if(GetID(Contained(GetHiRank()))!=_A1A)
     return goto(197);
   SetPlrShowCommand(0,3);
-  Message("@Legen sie den Clonk per <c ffff00>%s</c> schlafen.",0,GetPlrControlName(0, CON_Up));
+  Message("$Tut19$",0,GetPlrControlName(0, CON_Up));
   return(1);
 }
 
@@ -184,7 +184,7 @@ func Script200()
     return goto(199);
   SetPlrShowCommand(0,0);
   RemoveArrow();
-  Message("@Warten sie jetzt einfach eine Weile bis sich der Clonk fertig ausgeruht hat.");
+  Message("$Tut20$");
   return(1);
 }
 
@@ -192,19 +192,19 @@ func Script202()
 {
   if(GetHiRank()->CheckSleep()<85)
     return goto(201);
-  Message("Der Clonk hat nun genug geschlafen...");
+  Message("$Tut21$");
   return(1);
 }
 
 func Script210()
 {
-  Message("Er hört sofort mit dem schlafen auf wenn er die Hütte verlässt.");
+  Message("$Tut22$");
   return(1);
 }
 
 func Script220()
 {
-  Message("@Verlassen sie die Hütte");
+  Message("$Tut23$");
   return(1);
 }
 
@@ -214,21 +214,21 @@ func Script222()
     return goto(221);
   Sound("Applause");
   Message("");
-  Message("Aber hier ist es so dunkel... :/",GetHiRank());
+  Message("$Tut24$",GetHiRank());
   return(1);
 }
 
 func Script230()
 {
-  Message("Dagegen kann man was tun.");
+  Message("$Tut25$");
   return(1);
 }
 
 func Script240()
 {
   Sound("Ding");
-  Message("@Gehe in die Kneipe ,kaufe 2 Fackeln und platziere sie so das eine vernünftige Beleuchtung entsteht.|(Platzieren per Aktivieren)");
-  g_pGoal->SetMessages("", "Kaufe 2 Fackeln und schaffe damit für eine Beleuchtung");
+  Message("$Tut26$");
+  g_pGoal->SetMessages("", "$Tut27$");
   return(1);
 }
 
@@ -244,15 +244,15 @@ func Script250()
 
 func Script260()
 {
-  Message("Doch es fehlt noch eine ganz wichtige Sache damit due Siedlung gedeihen kann:| eine Forschungshütte|, denn ohne Forschung können sie weder neue Gebäude bauen noch alte aufrüsten");
+  Message("$Tut28$");
   return(1);
 }
 
 func Script270()
 {
   Sound("Ding");
-  Message("@Gehe in die Kneipe, kaufe dort einen Bausatz und baue eine Forschungshütte");
-  g_pGoal->SetMessages("", "Baue eine Forschungshütte");
+  Message("$Tut29$");
+  g_pGoal->SetMessages("", "$Tut30$");
   ____->Researched();
   return(1);
 }
@@ -261,7 +261,7 @@ func Script275()
 {
   if(!ObjectCount2(Find_ID(_B1A)))
     return goto(273);
-  Message("@Die Forschungshütte benötigt 2x einfaches Holz ({{WOOD}}) um aufgebaut zu werden...| Um Geld zu sparen sollte um an das Holz zu kommen ein Baum gefällt werden...| Sobald dieser gefällt ist fängt der Clonk an den Baum zu zerkleinern... dabei entsteht genügend Holz für die Forschungshütte.");
+  Message("$Tut31$");
 }
 
 func Script277()
@@ -282,15 +282,15 @@ func Script280()
 
 func Script290()
 {
-  Message("Doch die Forschungshütte forscht nicht von alleine...");
+  Message("$Tut32$");
   return(1);
 }
 
 func Script300()
 {
   Sound("Ding");
-  Message("@Schicke einen deiner Clonks hinein und erforsche Architektur.");
-  g_pGoal->SetMessages("", "Erforsche Architektur");
+  Message("$Tut33$");
+  g_pGoal->SetMessages("", "$Tut34$");
   return(1);
 }
 
@@ -299,7 +299,7 @@ func Script310()
   var pLab=FindObject(_B1A);
   if(ActIdle(pLab))
     return goto(305);
-  Message("Wie lange das forschen dauert hängt von den Fähigkeiten des Clonks ab.|Die Fähigkeiten des Clonks lassen sich übers Kontextmenü ansehen.|Wenn ein Clonk lange Zeit eine Aktivität ausführt erhöht sich der Bonus minimal.");
+  Message("$Tut35$");
   return(1);
 }
 
@@ -307,21 +307,21 @@ func Script320()
 {
   if(!GetPlrKnowledge(0,SCAC))
     return goto(315);
-  Message("Architektur wurde nun zu Ende erforscht. Dies ermöglicht euch das du das Labor, die Hütte und Dörfer aufrüsten könnt.");
+  Message("$Tut36$");
   return(1);
 }
 
 func Script330()
 {
-  Message("Auf doppelt-<c ffff00>%s</c> lässt sich ein Aufrüstmenü öffnen.",0,GetPlrControlName(0, CON_Dig));
+  Message("$Tut37$",0,GetPlrControlName(0, CON_Dig));
   return(1);
 }
 
 func Script340()
 {
   Sound("Ding");
-  Message("@Baue die Forschungshütte zum Forschungsbau aus");
-  g_pGoal->SetMessages("Die Lernrunde ist hiermit beendet|Alles wichtige für Ruf der Wipfe ist nun gelernt| du könnt ja noch weiterspielen wenn du wollt... oder mit der Kampange starten... oder ne Runde mit euren Freunden spielen... oder... oder...| Aber auf jeden Fall: viel Spaß :D", "Baue die Forschungshütte zum Forschungsbau aus");
+  Message("$Tut38$");
+  g_pGoal->SetMessages("$Tut39$", "$Tut40$");
   return(1);
 }
 
@@ -336,26 +336,26 @@ func Script350()
 
 func Script360()
 {
-  Message("Jetzt ist noch die Frage offen wie man an neue Clonks kommt.");
+  Message("$Tut41$");
   return(1);
 }
 
 func Script380()
 {
-  Message("Da gibt es 2 Möglichkeiten:|1. Hütte bauen und dort einen Clonk anheuern (nur möglich wenn genügend Schlafplatz vorhanden ist)|2. Clonks in Kneipen anheuern");
+  Message("$Tut42$");
   return(1);
 }
 
 func Script390()
 {
-  Message("@Du brauchst erstmal mehr Platz zum schlafen...");
+  Message("$Tut43$");
   return(1);
 }
 
 func Script400()
 {
   Sound("Ding");
-  Message("@Baue deine Hütte aus");
+  Message("$Tut44$");
   return(1);
 }
 
@@ -370,7 +370,7 @@ func Script410()
 
 func Script420()
 {
-  Message("@Schicke nun einen deiner Clonks hinein, öffne das Kontextmenü und heuer einen neuen Clonk an.");
+  Message("$Tut45$");
   Sound("Ding");
   return(1);
 }
@@ -397,7 +397,7 @@ func Script1000()
 {
   Sound("Applause");
   Sound("Ding");
-  Message("<c ffff00>H<c ffff11>e<c ffff22>r<c ffff33>z<c ffff44>l<c ffff55>ichen Glückwu</c>n</c>s</c>c</c>h</c>!</c>|Die Lernrunde ist hiermit beendet.|Alles wichtige für Ruf der Wipfe ist nun gelernt| du könnt ja noch weiterspielen wenn du wollt... oder mit der Kampange starten... oder ne Runde mit euren Freunden spielen... oder... oder...| Aber auf jeden Fall: viel Spaß :D");
+  Message("$Tut46$");
   return(1);
 }
 

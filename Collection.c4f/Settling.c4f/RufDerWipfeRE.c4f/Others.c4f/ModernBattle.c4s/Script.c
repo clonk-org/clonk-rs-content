@@ -128,7 +128,7 @@ global func RelaunchPlr(iPlr,fSilent)
   var pSoldier,fMTC,iX;
   aRelaunches[iPlr]--;
   if(aRelaunches[iPlr]<=0)
-    return Log("%s hat alle seine Tickets verbraucht.",GetTaggedPlayerName(iPlr));
+    return Log("$MsgNoTickets$",GetTaggedPlayerName(iPlr));
   if(aRelaunches[iPlr]==aMagiTecRel[iPlr])
     fMTC=true;
   iX=BoundBy((GetPlayerTeam(iPlr)-1)*LandscapeWidth()+RandomX(-150,150),0,LandscapeWidth());
@@ -147,7 +147,7 @@ global func RelaunchPlr(iPlr,fSilent)
     CreateContents(ROCK,pSoldier,3);
     CreateContents(STGR,pSoldier,1);
     if(!fSilent)
-      Log("%s rückt mit einem MagiTek an und hat noch <c ffff00>%d</c> Tickets.",GetTaggedPlayerName(iPlr),aRelaunches[iPlr]-1);
+      Log("$MsgMagiTec$",GetTaggedPlayerName(iPlr),aRelaunches[iPlr]-1);
   }
   // Soldaten-Ausrüstung
   else
@@ -157,7 +157,7 @@ global func RelaunchPlr(iPlr,fSilent)
     CreateContents(SFLN,pSoldier);
     CreateContents(STGR,pSoldier);
     if(!fSilent)
-      Log("%s schickt einen neuen Soldaten und hat noch <c ffff00>%d</c> Tickets.",GetTaggedPlayerName(iPlr),aRelaunches[iPlr]-1);
+      Log("$MsgSoldier$",GetTaggedPlayerName(iPlr),aRelaunches[iPlr]-1);
   }
 }
 

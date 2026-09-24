@@ -1,0 +1,4 @@
+TxtPose1=Mine
+TxtPose2=Yodel Railway
+TxtPose3=Wipfenstein Line
+TxtUnDef=Undefined silly thing

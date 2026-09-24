@@ -37,9 +37,9 @@ protected func Initialize()
 
 func LocalPlaceName(para)
 {
-  if(para==1) return("Plätscherbach");
-  if(para==2) return("Burg Wipfenstein");
-  return("Komisches Unbekanntes Ding");
+  if(para==1) return("$TxtPose1$");
+  if(para==2) return("$TxtPose2$");
+  return("$TxtUnDef$");
 }
 
 func OnClonkDeath(pClonk)

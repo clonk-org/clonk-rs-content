@@ -1,0 +1,4 @@
+TxtWindData=Winddaten werden eingelesen
+TxtPose1=Zentralgehügele
+TxtPose2=Küste
+TxtUnDef=Komisches Unbekanntes Ding

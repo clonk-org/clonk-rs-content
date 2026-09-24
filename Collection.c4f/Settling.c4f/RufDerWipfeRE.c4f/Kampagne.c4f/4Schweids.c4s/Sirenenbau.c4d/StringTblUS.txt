@@ -1,0 +1,3 @@
+MsgSirensWork=The sirens are working
+MsgPeaksLeft=%d snowy peaks still have no siren
+MsgSirensOff=Not all of the sirens are switched on yet

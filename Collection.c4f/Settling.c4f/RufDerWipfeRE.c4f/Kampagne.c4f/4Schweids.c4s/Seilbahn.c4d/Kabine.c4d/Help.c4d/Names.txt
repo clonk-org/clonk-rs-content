@@ -1,0 +1,2 @@
+DE:Seilbahnhilfsobjekt
+US:Cable car helper object

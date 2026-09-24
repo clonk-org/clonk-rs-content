@@ -1,0 +1,3 @@
+TxtPose1=Babbling Brook
+TxtPose2=Wipfenstein Castle
+TxtUnDef=Undefined silly thing

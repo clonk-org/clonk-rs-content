@@ -1,1 +1,1 @@
-RecievingBlocked=Obstacle inhibiting|Reception!
+RecievingBlocked=Obstacle blocks|reception!

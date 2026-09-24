@@ -1,0 +1,5 @@
+MsgNoTickets=%s has used up all of their tickets.
+MsgMagiTec=%s moves in with a Magi-Tec and has <c ffff00>%d</c> tickets left.
+MsgSoldier=%s sends in a new soldier and has <c ffff00>%d</c> tickets left.
+TeamWest=Westerners
+TeamEast=Easterners

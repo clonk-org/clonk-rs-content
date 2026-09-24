@@ -21,8 +21,8 @@ private GibFreiSpitzen:
   return(siren);
 
 protected Activate: // int iPlayer
-  if (IsFulfilled()) return(MessageWindow("Die Sirenen arbeiten",Par()));
+  if (IsFulfilled()) return(MessageWindow("$MsgSirensWork$",Par()));
   var spitzen=GibFreiSpitzen();
-  if( spitzen) MessageWindow(Format("%d Schneespitzen haben noch keine Sirene",spitzen),Par(0));
-  if(!spitzen) MessageWindow("Die Sirenen sind noch nicht alle aktiviert",Par(0));
+  if( spitzen) MessageWindow(Format("$MsgPeaksLeft$",spitzen),Par(0));
+  if(!spitzen) MessageWindow("$MsgSirensOff$",Par(0));
   return(1);

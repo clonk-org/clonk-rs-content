@@ -1,0 +1,2 @@
+DE:Festungsfenster
+US:Fortress window

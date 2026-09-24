@@ -7,7 +7,7 @@ protected func Initialize()
   MoreFlair(1);
   var pGoal=FindObject2(Find_ID(SCRG));
   if(!pGoal) pGoal=CreateObject(SCRG,0,0,-1);
-  pGoal->SetMessages("Die Rakete wurde gebaut! Auf zu den Sternen!", "Die Rakete muss noch gebaut werden...");
+  pGoal->SetMessages("$MsgRocketBuilt$", "$MsgRocketTodo$");
   return(1);
 }
 
@@ -35,27 +35,27 @@ public func Script10()
 
 public func Script60()
 {
-  ColorMessage("Seid gegrüsst!",g_pAngle);
+  ColorMessage("$DlgGreeting$",g_pAngle);
 }
 
 public func Script80()
 {
-  ColorMessage("Ich wollte euch nur nochmal daran errinern das die Abrissarbeiten für diesen Planeten bald beginnen.",g_pAngle);
+  ColorMessage("$DlgReminder$",g_pAngle);
 }
 
 public func Script100()
 {
-  ColorMessage("Ihr solltet so schnell wie möglich von hier verschwinden...",g_pAngle);
+  ColorMessage("$DlgLeave$",g_pAngle);
 }
 
 public func Script120()
 {
-  ColorMessage("...falls euch eurer Leben lieb ist.",g_pAngle);
+  ColorMessage("$DlgLives$",g_pAngle);
 }
 
 public func Script140()
 {
-  ColorMessage("Tschüss.",g_pAngle);
+  ColorMessage("$DlgBye$",g_pAngle);
   g_pAngle->Done();
   CreateObject(CLK_,0,0,-1)->Set(4200-GetDifficulty()*450,0,0,"RdW");
   ScriptGo(false);
@@ -85,24 +85,24 @@ global func FxIntPlanetDestructionTimer()
 {
   var i=Random(8);
   {
-    Message("<c ff0000>Warnung:</c>|!!!{{METO}}-Sturm aktiviert!!!");
+    Message("$MsgMeteorStorm$");
     Schedule("Schedule(\"CreateObject(METO,Random(LandscapeWidth())),0,-1)->SetXDir(RandomX(3,-3),3,30)\",20,5);",500);
   }
   if(!i--)
   {
-    Message("<c ff0000>Warnung:</c>|!!!{{FXL1}}-Kanone gestartet!!!");
+    Message("$MsgLightningCannon$");
     Schedule("Schedule(\"LaunchLightning(Random(LandscapeWidth()),0,RandomX(-5,5),20,20,20)\",10,40);",500);
   }
   if(!i--)
   {
-    Message("<c ff0000>Warnung:</c>|!!!{{FXV1}}-Feld aktiviert!!!");
+    Message("$MsgVolcanoField$");
     Schedule("Schedule(\"LaunchVolcano(Random(LandscapeWidth()))\",30,10);",500);
   }
 }
 
 func LocalPlaceName(para)
 {
-  return("Komisches Unbekanntes Ding");
+  return("$TxtUnDef$");
 }
 
 func Outro()

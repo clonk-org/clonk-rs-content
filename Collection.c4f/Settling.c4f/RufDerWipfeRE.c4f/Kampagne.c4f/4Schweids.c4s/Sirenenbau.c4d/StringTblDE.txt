@@ -1,0 +1,3 @@
+MsgSirensWork=Die Sirenen arbeiten
+MsgPeaksLeft=%d Schneespitzen haben noch keine Sirene
+MsgSirensOff=Die Sirenen sind noch nicht alle aktiviert

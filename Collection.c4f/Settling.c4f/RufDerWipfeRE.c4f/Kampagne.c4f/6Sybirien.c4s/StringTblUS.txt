@@ -1,0 +1,5 @@
+TxtWindData=Reading wind data
+TxtPose1=Ice Caves
+TxtPose2=Boot Heights
+TxtPose3=Sky Islands
+TxtUnDef=Undefined silly thing

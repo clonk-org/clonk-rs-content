@@ -1,0 +1,4 @@
+TxtWindData=Reading wind data
+TxtPose1=Central Hills
+TxtPose2=Coast
+TxtUnDef=Undefined silly thing

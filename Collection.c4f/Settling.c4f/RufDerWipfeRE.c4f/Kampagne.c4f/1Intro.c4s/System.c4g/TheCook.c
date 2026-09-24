@@ -12,22 +12,22 @@ func FxIntCookDialogTimer(pTarget)
   if(g_CookDialog_State<20)
     g_CookDialog_State++;
   if(g_CookDialog_State==2)
-    return ColorMessage("Chefchens Lieblingsessen :D",this,0);
+    return ColorMessage("$Cook01$",this,0);
   if(g_CookDialog_State==4)
-    return ColorMessage("Mammutsuppe mit Kräuterdressing...",this,0);
+    return ColorMessage("$Cook02$",this,0);
   if(g_CookDialog_State==7)
   {
     SetCommand(pTarget,"MoveTo",0,680,630);
-    return ColorMessage("!WAS! hast du mit der Suppe getan!!!!111einself",this,0);
+    return ColorMessage("$Cook03$",this,0);
   }
   if(g_CookDialog_State==9)
     return SetCommand(pTarget,"MoveTo",0,520,610);
   if(g_CookDialog_State==10)
-    return ColorMessage("Wach auf Faulpelz!!1 >:/",this,0);
+    return ColorMessage("$Cook04$",this,0);
   if(g_CookDialog_State==12)
   {
     SetCommand(pTarget,"MoveTo",0,680,630);
-    return ColorMessage("Du Idiot hast Würgwurz in die Suppe getan *grrr* >:/|Ich möchte dich heute hier nicht mehr sehen...",this,0);
+    return ColorMessage("$Cook05$",this,0);
   }
   if(g_CookDialog_State==13)
   {
@@ -87,14 +87,14 @@ func FxIntCookDialog2Timer(pTarget)
   if(g_fDonotspeak)
     return 0;
   if(g_CookDialog_State==1)
-    return ColorMessage("Was kochen wir da eigentlich? O_o",this,0);
+    return ColorMessage("$Cook06$",this,0);
   if(g_CookDialog_State==3)
-    return ColorMessage("Und was ist sein Lieblingsessen? /:",this,0);
+    return ColorMessage("$Cook07$",this,0);
   if(g_CookDialog_State==5)
   {
     AddEffect("IntMakeGreen",pTarget,10,1,pTarget);
     SetCommand(pTarget,"MoveTo",0,550,610);
-    return ColorMessage("<c ffffff>Das st<c eeffee>i<c ddffdd>n<c ccffcc>kk<c bbffbb>t<c aaffaa> aa<c 99ff99>bbb<c 88ff88>e<c 77ff77>rrr <c 66ff66>a<c 55ff55>r <c 44ff44>d<c 33ff33>o<c 22ff22>l<c 11ff11>l<c 00ff00>e... *würg*</c></c></c></c></c></c></c></c></c></c></c></c></c></c></c></c>",this,0);
+    return ColorMessage("$Cook08$",this,0);
   }
   if(g_CookDialog_State==11)
   {
@@ -106,21 +106,21 @@ func FxIntCookDialog2Timer(pTarget)
   if(g_CookDialog_State==13)
   {
     SetCommand(pTarget,"MoveTo",0,730,630);
-    return ColorMessage("upps...",this,0);
+    return ColorMessage("$Cook09$",this,0);
   }
   if(g_CookDialog_State==14)
   {
     SetCommand(pTarget,"MoveTo",0,900,640);
-    return ColorMessage("ähh... ok... :./",this,0);
+    return ColorMessage("$Cook10$",this,0);
   }
   if(g_CookDialog_State==21)
   {
-    return ColorMessage("*seufz*",this,5);
+    return ColorMessage("$Cook11$",this,5);
   }
   if(g_CookDialog_State==22)
   {
     if(!Random(4))
-      return ColorMessage(".oO(boah was für tolle Kristalle :D)",this,5);
+      return ColorMessage("$Cook12$",this,5);
   }
   return(1);
 }

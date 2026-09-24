@@ -55,13 +55,13 @@ protected func InitializePlayer(int iPlr, int iX, int iY, object pBase, int iTea
 func LocalPlaceName(para)
 {
   if(para==1) return("Narshe"); 
-  if(para==2) return("Imperialer Vorposten");
-  return("Komisches Unbekanntes Ding");
+  if(para==2) return("$TxtPose2$");
+  return("$TxtUnDef$");
 }
 
 func Windstrom()
 {
-  Log("Winddaten werden eingelesen");
+  Log("$TxtWindData$");
   WINDAUFLOESUNG=WindAufloesung();
   globalwestwinde=DoWhatIWWant();
   globalostwinde=DoWhatIWEant();

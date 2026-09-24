@@ -7,6 +7,6 @@ Initialize:
 WatchExplorer:
   if(!FindObject(0,0,-50,100,100,OCF_CrewMember())) return(0); 
   Sound("Trumpet");  
-  Message("Artefakt gefunden!|Raketen können nun erforscht werden");
+  Message("$MsgFound$");
   SetAction("IsDiscovered");
   return(1);

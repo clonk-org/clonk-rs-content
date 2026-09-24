@@ -1,0 +1,4 @@
+TxtPose1=Verlassene Mine
+TxtPose2=Untere Stollen
+TxtPose3=Felsenberg
+TxtUnDef=Komisches Unbekanntes Ding

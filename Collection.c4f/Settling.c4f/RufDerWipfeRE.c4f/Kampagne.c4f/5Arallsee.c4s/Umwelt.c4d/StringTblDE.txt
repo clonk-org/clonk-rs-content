@@ -1,0 +1,2 @@
+MsgDamaged=Die Umwelt ist schwer geschädigt
+MsgMissing=Es fehlen noch %d Prozent!

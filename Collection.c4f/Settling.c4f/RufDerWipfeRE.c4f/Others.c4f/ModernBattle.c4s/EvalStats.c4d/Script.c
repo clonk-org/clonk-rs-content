@@ -32,7 +32,7 @@ protected func Activate(iByPlayer)
   return 1;
 }
 
-public func OnGameOver() { DoEvaluateStats(); Log("Yipii!"); }
+public func OnGameOver() { DoEvaluateStats(); Log("$MsgYippee$"); }
 
 public func GetTaggedPlayerNameByID(iPlrID)
 {

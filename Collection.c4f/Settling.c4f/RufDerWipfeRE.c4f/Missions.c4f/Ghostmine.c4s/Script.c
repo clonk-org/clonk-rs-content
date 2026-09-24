@@ -46,10 +46,10 @@ public func PlaceZombie()
 
 func LocalPlaceName(para)
 {
-  if(para==1) return("Verlassene Mine"); 
-  if(para==2) return("Untere Stollen");
-  if(para==3) return("Felsenberg");
-  return("Komisches Unbekanntes Ding");
+  if(para==1) return("$TxtPose1$"); 
+  if(para==2) return("$TxtPose2$");
+  if(para==3) return("$TxtPose3$");
+  return("$TxtUnDef$");
 }
 
 public func IsCampaignMission()

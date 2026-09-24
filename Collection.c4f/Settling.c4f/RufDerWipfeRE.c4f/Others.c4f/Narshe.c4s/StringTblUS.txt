@@ -1,0 +1,3 @@
+TxtPose2=Imperial Outpost
+TxtUnDef=Undefined silly thing
+TxtWindData=Reading wind data

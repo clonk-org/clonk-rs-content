@@ -1,1 +1,2 @@
 DE:Elektrizitätspläne
+US:Electricity plans
