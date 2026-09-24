@@ -1,0 +1,8 @@
+MsgLoadingSect=Loading landscape...
+MsgLoadingFail=Error loading the section.
+TeamEnemy=Enemies
+
+BtnRepeatRound=&Repeat round
+BtnRepeatRoundDesc=Try again.
+BtnNextRound=&Next round
+BtnNextRoundDesc=Go on to the next round.
