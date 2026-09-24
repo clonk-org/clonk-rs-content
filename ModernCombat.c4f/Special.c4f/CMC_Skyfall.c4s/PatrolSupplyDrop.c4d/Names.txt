@@ -1,2 +1,2 @@
-DE:Patrol Supply Drop
-US:Benzinversorgungsabwurf
+DE:Benzinversorgungsabwurf
+US:Patrol Supply Drop
