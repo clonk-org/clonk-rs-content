@@ -1,2 +1,2 @@
-TurnOff=Turn On
-TurnOn=Turn Off
+TurnOff=Turn off
+TurnOn=Turn on
