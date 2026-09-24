@@ -1,0 +1,2 @@
+DE:Bahnhof
+US:Train station

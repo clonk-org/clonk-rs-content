@@ -1,0 +1,4 @@
+TxtPose1=Bergwerk
+TxtPose2=Jodelübahn
+TxtPose3=Wipfenstein-Leitung
+TxtUnDef=Komisches Unbekanntes Ding

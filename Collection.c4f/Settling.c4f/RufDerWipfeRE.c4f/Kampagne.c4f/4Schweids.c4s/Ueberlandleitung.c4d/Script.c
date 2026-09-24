@@ -16,6 +16,6 @@ public func IsFulfilled()
 
 protected func Activate(iPlr)
 {
-  if (IsFulfilled()) return(MessageWindow("Die Mine ist versorgt",iPlr));
-  return(MessageWindow("Die Mine braucht noch Strom",iPlr));
+  if (IsFulfilled()) return(MessageWindow("$MsgMinePowered$",iPlr));
+  return(MessageWindow("$MsgMineNeedsPower$",iPlr));
 }

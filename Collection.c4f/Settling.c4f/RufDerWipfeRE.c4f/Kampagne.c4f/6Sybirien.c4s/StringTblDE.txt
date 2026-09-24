@@ -1,0 +1,5 @@
+TxtWindData=Winddaten werden eingelesen
+TxtPose1=Eishöhlen
+TxtPose2=Stiefelhöhe
+TxtPose3=Himmelsinseln
+TxtUnDef=Komisches Unbekanntes Ding

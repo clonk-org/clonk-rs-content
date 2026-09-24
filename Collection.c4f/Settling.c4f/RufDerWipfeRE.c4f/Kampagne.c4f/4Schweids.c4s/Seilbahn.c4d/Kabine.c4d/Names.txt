@@ -1,0 +1,2 @@
+DE:Kabine
+US:Cable car cabin

@@ -1,0 +1,4 @@
+TxtPose1=Abandoned Mine
+TxtPose2=Lower Tunnels
+TxtPose3=Rock Mountain
+TxtUnDef=Undefined silly thing

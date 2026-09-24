@@ -1,0 +1,2 @@
+CapUp=Go up
+CapDown=Go down

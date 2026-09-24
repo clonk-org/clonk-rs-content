@@ -1,0 +1,3 @@
+TxtPose1=Plätscherbach
+TxtPose2=Burg Wipfenstein
+TxtUnDef=Komisches Unbekanntes Ding

@@ -4,7 +4,7 @@ Custom=1
 
 	[Team]
 	id=1
-	Name=Westländer
+	Name=$TeamWest$
 	PlrStartIndex=1
 	Color=10116667
 	IconSpec=Portrait:CLN2:Soldier2
@@ -12,7 +12,7 @@ Custom=1
 
 	[Team]
 	id=2
-	Name=Ostländer
+	Name=$TeamEast$
 	PlrStartIndex=2
 	Color=16711680
 	IconSpec=Portrait:CLN2:Soldier1

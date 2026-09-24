@@ -12,7 +12,7 @@ protected func Initialize()
 
 func Windstrom()
 {
-  Log("Winddaten werden eingelesen");
+  Log("$TxtWindData$");
   WINDAUFLOESUNG=WindAufloesung();
   globalwestwinde=DoWhatIWWant();
   globalostwinde=DoWhatIWEant();
@@ -23,6 +23,6 @@ func Windstrom()
 public func LocalPlaceName()
 {
   var para=Par(0);
-  if(para==1) return("Wüste"); 
-  return("Komisches Unbekanntes Ding");
+  if(para==1) return("$TxtPose1$"); 
+  return("$TxtUnDef$");
 }

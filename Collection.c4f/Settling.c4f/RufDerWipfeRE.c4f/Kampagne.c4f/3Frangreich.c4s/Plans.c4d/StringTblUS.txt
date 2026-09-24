@@ -1,0 +1,3 @@
+CtrlActivateDesc=View plans
+TxtViewplans=View plans
+MsgPlans=Ahh... interesting... I can do something with this|(Electricity can now be researched)

@@ -1,1 +1,2 @@
 DE:Armagedeon
+US:Armagedeon

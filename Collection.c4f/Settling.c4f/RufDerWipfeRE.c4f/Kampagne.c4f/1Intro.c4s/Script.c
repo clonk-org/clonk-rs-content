@@ -12,14 +12,29 @@ func Initialize()
   g_pBoss=CreateObject(CCLK,680,290);
   g_pBoss->SetColorDw(RGB(255,0,0));
   g_pBoss->SetName("Boss");
+  LocalizeNames();
   ScriptGo(1);
+  return(1);
+}
+
+// Objects.txt names these in German, and the engine reads it without a
+// string table: they get the names of the player's language here
+func LocalizeNames()
+{
+  for(var pObj in FindObjects(Find_Or(Find_ID(CCLK),Find_ID(FISH),Find_ID(GIDL))))
+  {
+    if(GetName(pObj) eq "Koch") SetName("$NameCook$",pObj);
+    if(GetName(pObj) eq "Küchenhilfe") SetName("$NameKitchenHand$",pObj);
+    if(GetName(pObj) eq "Hodur|der grossartige Vorzeitmagier") SetName("$NameHodur$",pObj);
+    if(GetName(pObj) eq "Kristallstatue") SetName("$NameStatue$",pObj);
+  }
   return(1);
 }
 
 func InitializePlayer(iPlr)
 {
   SetFoW(1,iPlr);
-  ColorMessage("Ich glaub ich sollte mal zum Boss, um ne Auszeit bitten...",GetCursor(iPlr));
+  ColorMessage("$Dlg01$",GetCursor(iPlr));
   SetCommand(g_pPlayer,"MoveTo",0,610,320);
   return(1);
 }
@@ -43,7 +58,7 @@ func Script32()
 {
   SetCrewEnabled(false,g_pPlayer);
   Sound("Ding");
-  ColorMessage("ähh... Boss?",g_pPlayer);
+  ColorMessage("$Dlg02$",g_pPlayer);
   SetCommand(g_pPlayer,"MoveTo",0,630,300);
   g_pPlayer->SetPhysical("Walk",g_pPlayer->GetPhysical("Walk")/2,PHYS_Temporary);
   LookTo(g_pBoss,g_pPlayer);
@@ -52,13 +67,13 @@ func Script32()
 func Script44()
 {
   LookTo(g_pPlayer,g_pBoss);
-  ColorMessage("*grummel* Ja?",g_pBoss);
+  ColorMessage("$Dlg03$",g_pBoss);
   g_pPlayer->SetPhysical("Walk",g_pPlayer->GetPhysical("Walk")/2,PHYS_Temporary);
 }
 
 func Script64()
 {
-  ColorMessage("äm.. ähh... was ich fragen wollte...",g_pPlayer);
+  ColorMessage("$Dlg04$",g_pPlayer);
   // Geschwindigkeit reseten
   g_pPlayer->SetPhysical("Walk",g_pPlayer->GetPhysical("Walk"),1);
   SetCommand(g_pPlayer,"None");
@@ -66,12 +81,12 @@ func Script64()
 
 func Script80()
 {
-  ColorMessage("...was?",g_pBoss);
+  ColorMessage("$Dlg05$",g_pBoss);
 }
 
 func Script96()
 {
-  ColorMessage("äm.. könnt ich vielleicht für einige Tage raus hier, die Nachbarstämme besu...",g_pPlayer);
+  ColorMessage("$Dlg06$",g_pPlayer);
 }
 
 func Script112()
@@ -97,7 +112,7 @@ func Script112()
 
 func Script120()
 {
-  ColorMessage("Seid gegrüsst...|wir sind hier um etwas zu verkünden",g_aAngles[0]);
+  ColorMessage("$Dlg07$",g_aAngles[0]);
 }
 
 func Script128()
@@ -108,99 +123,99 @@ func Script128()
 
 func Script144()
 {
-  ColorMessage("Also höret...",g_aAngles[0]);
-  ColorMessage("Hört!",g_aAngles[1]);
+  ColorMessage("$Dlg08$",g_aAngles[0]);
+  ColorMessage("$Dlg09$",g_aAngles[1]);
 }
 
 func Script160()
 {
-  ColorMessage("Dieser Planet muss der neuen Hyperspacebahn weichen!",g_aAngles[0]);
-  ColorMessage("Weicht!",g_aAngles[1]);
+  ColorMessage("$Dlg10$",g_aAngles[0]);
+  ColorMessage("$Dlg11$",g_aAngles[1]);
 }
 
 func Script176()
 {
-  ColorMessage("Ihr solltet von diesem Planeten fliehen ...",g_aAngles[0]);
-  ColorMessage("Flieht",g_aAngles[1]);
+  ColorMessage("$Dlg12$",g_aAngles[0]);
+  ColorMessage("$Dlg13$",g_aAngles[1]);
 }
 
 func Script192()
 {
-  ColorMessage("... bevor die Abrissarbeiten in einem Jahr gestartet werden.",g_aAngles[0]);
-  ColorMessage("1 Jahr!",g_aAngles[1]);
+  ColorMessage("$Dlg14$",g_aAngles[0]);
+  ColorMessage("$Dlg15$",g_aAngles[1]);
 }
 
 func Script208()
 {
-  ColorMessage("Was?!?¿ nur ein Jahr Zeit?",g_pBoss);
+  ColorMessage("$Dlg16$",g_pBoss);
   ColorMessage("!",g_pPlayer);
 }
 
 func Script224()
 {
-  ColorMessage("Ein intergalaktisches Jahr...",g_aAngles[0]);
-  ColorMessage("1 Jahr!",g_aAngles[1]);
+  ColorMessage("$Dlg17$",g_aAngles[0]);
+  ColorMessage("$Dlg15$",g_aAngles[1]);
 }
 
 func Script240()
 {
-  ColorMessage("O_o Und das heisst?",g_pBoss);
+  ColorMessage("$Dlg18$",g_pBoss);
   ColorMessage("?",g_pPlayer);
 }
 
 func Script256()
 {
-  ColorMessage("... das entspricht 932,4 Erdjahren.",g_aAngles[0]);
-  ColorMessage("932,4 Erdenjahre!",g_aAngles[1]);
+  ColorMessage("$Dlg19$",g_aAngles[0]);
+  ColorMessage("$Dlg20$",g_aAngles[1]);
 }
 
 func Script280()
 {
-  ColorMessage("Noch Fragen?",g_aAngles[0]);
+  ColorMessage("$Dlg21$",g_aAngles[0]);
 }
 
 func Script295()
 {
-  ColorMessage("Wie sollen wir hier wegkommen?¿ O_o",g_pBoss);
+  ColorMessage("$Dlg22$",g_pBoss);
 }
 
 func Script296()
 {
-  ColorMessage("Wie sollen wir hier wegkommen?¿ o_O",g_pBoss);
+  ColorMessage("$Dlg23$",g_pBoss);
 }
 
 func Script297()
 {
-  ColorMessage("Wie sollen wir hier wegkommen?¿ O_o",g_pBoss);
+  ColorMessage("$Dlg22$",g_pBoss);
 }
 
 func Script298()
 {
-  ColorMessage("Wie sollen wir hier wegkommen?¿ o_O",g_pBoss);
+  ColorMessage("$Dlg23$",g_pBoss);
 }
 
 func Script299()
 {
-  ColorMessage("Wie sollen wir hier wegkommen?¿ O_o",g_pBoss);
+  ColorMessage("$Dlg22$",g_pBoss);
 }
 
 func Script303()
 {
-  ColorMessage("Wie sollen wir hier wegkommen?¿ o_O",g_pBoss);
+  ColorMessage("$Dlg23$",g_pBoss);
 }
 
 func Script306()
 {
   Message("",g_pBoss);
-  ColorMessage("Baut einfach ein Raumschiff...",g_aAngles[0]);
-  ColorMessage("Baut!",g_aAngles[1]);
+  ColorMessage("$Dlg24$",g_aAngles[0]);
+  ColorMessage("$Dlg25$",g_aAngles[1]);
   for(var angle in g_aAngles)
     SetCommand(angle,"MoveTo",0,970+RandomX(-50,50),0);
 }
 
 func Script320()
 {
-  ColorMessage("HALT!! Bleibt! Wie baut man ein Raum... *seufz*",g_pBoss);
+  ColorMessage("$Dlg26$",g_pBoss);
   SetGamma(RGB(255,255,255), RGB(127,127,127), RGB(64,64,64),7);
   Schedule("SetGamma(RGB(127,127,127), RGB(127,127,127), RGB(127,127,127),7)",2);
   Schedule("SetGamma(RGB(16,16,16), RGB(127,127,127), RGB(235,235,235),7)",3);
@@ -219,33 +234,33 @@ func Script336()
 func Script360()
 {
   ColorMessage("",g_pBoss);
-  ColorMessage("Und was machen wir jetzt? Boss? :/",g_pPlayer);
+  ColorMessage("$Dlg27$",g_pPlayer);
 }
 
 func Script380()
 {
-  ColorMessage("Abwarten... Uns geht das ja sowieso nichts an... ist ja erst in 1000 Jahren. :)",g_pBoss);
+  ColorMessage("$Dlg28$",g_pBoss);
 }
 
 func Script400()
 {
-  ColorMessage("ähm ja... worum ich fragen wollte:",g_pPlayer);
+  ColorMessage("$Dlg29$",g_pPlayer);
 }
 
 func Script420()
 {
-  ColorMessage("Dürfte ich für ein paar Tage ausziehen und die Nachbarstämme besuchen?",g_pPlayer);
+  ColorMessage("$Dlg30$",g_pPlayer);
 }
 
 
 func Script440()
 {
-  ColorMessage("NEIN! >:P",g_pBoss);
+  ColorMessage("$Dlg31$",g_pBoss);
 }
 
 func Script450()
 {
-  ColorMessage("MIST!",g_pPlayer);
+  ColorMessage("$Dlg32$",g_pPlayer);
 }
 
 func Script500()

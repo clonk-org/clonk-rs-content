@@ -1,1 +1,3 @@
-Whem the game is over some states are shown in the evaluation dialog.
+At the end of the game, a few statistics are shown in the evaluation dialog.
+
+/stolen from M&M

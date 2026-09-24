@@ -1,0 +1,2 @@
+DE:Seilbahnstation
+US:Cable car station

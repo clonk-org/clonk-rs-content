@@ -1,0 +1,4 @@
+TxtWindData=Winddaten werden eingelesen
+TxtPose1=Himmelsinseln
+TxtPose2=Klotzberg
+TxtUnDef=Komisches Unbekanntes Ding

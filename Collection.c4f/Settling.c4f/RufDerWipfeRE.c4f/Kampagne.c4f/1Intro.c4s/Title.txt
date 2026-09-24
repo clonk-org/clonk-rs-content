@@ -1,1 +1,2 @@
 DE:Die Verkündung
+US:The Announcement

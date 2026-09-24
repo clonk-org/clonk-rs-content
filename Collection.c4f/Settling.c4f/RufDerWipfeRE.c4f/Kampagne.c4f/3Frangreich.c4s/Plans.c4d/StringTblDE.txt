@@ -1,1 +1,3 @@
 CtrlActivateDesc=Pläne ansehen
+TxtViewplans=Pläne ansehen
+MsgPlans=Ahh... interresant... damit lässt sich was anfangen|(Erforschung von Elektrizität nun möglich)

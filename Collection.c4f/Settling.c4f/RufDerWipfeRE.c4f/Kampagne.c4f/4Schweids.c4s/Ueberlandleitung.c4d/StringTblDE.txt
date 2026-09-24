@@ -1,0 +1,2 @@
+MsgMinePowered=Die Mine ist versorgt
+MsgMineNeedsPower=Die Mine braucht noch Strom

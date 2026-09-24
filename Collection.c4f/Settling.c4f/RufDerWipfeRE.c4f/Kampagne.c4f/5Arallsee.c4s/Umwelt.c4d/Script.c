@@ -14,5 +14,5 @@ private Fehl:
   
 
 protected Activate: // int iPlayer
-  if (IsFulfilled()) return(MessageWindow("Die Umwelt ist schwer geschädigt",Par()));
-  return(MessageWindow(Format("Es fehlen noch %d Prozent!",Fehl()),Par(0)));
+  if (IsFulfilled()) return(MessageWindow("$MsgDamaged$",Par()));
+  return(MessageWindow(Format("$MsgMissing$",Fehl()),Par(0)));

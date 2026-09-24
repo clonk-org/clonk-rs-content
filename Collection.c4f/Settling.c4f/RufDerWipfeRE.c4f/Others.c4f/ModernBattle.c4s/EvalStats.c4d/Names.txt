@@ -1,2 +1,2 @@
 DE:Auswertungsstatus
-US:Evaluationstate
+US:Evaluation status

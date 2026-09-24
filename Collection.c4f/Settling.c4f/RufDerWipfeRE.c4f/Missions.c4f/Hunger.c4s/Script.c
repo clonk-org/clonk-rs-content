@@ -27,20 +27,20 @@ func Script300()
     iRand=Random(4);
     if(!iRand--)
     {
-      Log("Der Goldwipf meint das ihr das Gold nicht verdient habt und verwandelt alle eure Goldklumpen in Steine");
+      Log("$MsgGoldToRock$");
       for(var pObj in FindObjects(Find_ID(GOLD)))
         pObj->ChangeDef(ROCK);
       return 1;
     }
     if(!iRand--)
     {
-      Log("Die Schattenschlange ist der Grund warum ihr Nachts nicht schlafen könnt! Sie hat einen Geist zu euch geschickt!");
+      Log("$MsgGhost$");
       PlaceAnimal(_Z3A);
       return 1;
     }
     if(!iRand--)
     {
-      Log("Das Magmamonster schickt euch neue Spielkameraden. Die Feuermonster haben jedenfalls ihren Spaß...");
+      Log("$MsgFireMonsters$");
       CreateObject(FMEG,Random(LandscapeWidth()),0,-1);
       if(Random(3))
         CreateObject(FMEG,Random(LandscapeWidth()),0,-1);
@@ -51,7 +51,7 @@ func Script300()
       iRand=Random(3);
       if(!iRand--)
       {
-        Log("Der Goldwipf mag euch garnicht und sorgt für unstillbaren Hunger...");
+        Log("$MsgHunger$");
         for(var pObj in FindObjects(Find_ID(CLN2)))
         {
           ScheduleCall(pObj,"CheckFood",RandomX(5,6),RandomX(100,200),-1);
@@ -60,14 +60,14 @@ func Script300()
       }
       if(!iRand--)
       {
-        Log("Die Schattenschlange hasst euch und lässt ein paar eurer Clonks irre werden!");
+        Log("$MsgMadness$");
         for(var pObj in FindObjects(Find_ID(CLN2)))
           if(!Random(2))
             pObj->CheckPsyche(RandomX(-1500,-1));
       }
       if(!iRand--)
       {
-        Log("Ihr habt das Magmamonster erzürnt! Vor Wut wirft er nun mit Felsbrocken um sich...");
+        Log("$MsgBoulders$");
         CreateObject(METO,Random(LandscapeWidth()),0,-1);
         return 1;
       }

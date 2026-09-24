@@ -15,7 +15,7 @@ public func Activate(pByObject)
   pUnfold->Activate();
   SetPlrView(GetOwner(pByObject), pUnfold);
   if(!g_bViewedPlans)
-    Message("Ahh... interresant... damit lässt sich was anfangen|(Erforschung von Elektrizität nun möglich)",pByObject);
+    Message("$MsgPlans$",pByObject);
   // Pläne setzen
   g_bViewedPlans=true;
   return(1);

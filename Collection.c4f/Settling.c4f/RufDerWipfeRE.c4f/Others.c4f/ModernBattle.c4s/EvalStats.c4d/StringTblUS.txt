@@ -1,4 +1,5 @@
-MostDamage=%s dealt with %d the most damage to the opponents!
+MostDamage=%s hurt the opponents the most, with %d damage!
 MostTeamdamage=%s played the traitor and dealt %d damage to his own team!
 MostTeamkills=%s did %d teamkills!
-MostHeal=%s healt the most with %d healed lives!
+MostHeal=%s healed the most, with %d hit points healed!
+MsgYippee=Yippee!

@@ -1,0 +1,2 @@
+DE:Raumschiff
+US:Spaceship

@@ -36,10 +36,10 @@ func UBRLTarget()
 
 func LocalPlaceName(para)
 {
-  if(para==1) return("Bergwerk"); 
-  if(para==2) return("Jodelübahn");
-  if(para==3) return("Wipfenstein-Leitung");
-  return("Komisches Unbekanntes Ding");
+  if(para==1) return("$TxtPose1$"); 
+  if(para==2) return("$TxtPose2$");
+  if(para==3) return("$TxtPose3$");
+  return("$TxtUnDef$");
 }
 
 // hier intern weil es ja 2 Spielziele sind

@@ -10,12 +10,12 @@ Travel:
   return(SetAction("Ready",halter));
 
 ContainedRight:
-  [Nach oben fahren]
+  [$CapUp$]
   ObjectCall(halter,"DriveUp");
   return(1);
 
 ContainedLeft:
-  [Nach unten fahren]
+  [$CapDown$]
   ObjectCall(halter,"DriveDown");
   return(1);
 

@@ -1,4 +1,4 @@
-TxtPose1=Cave of the deliverance
-TxtPose2=Cuspidmountain
+TxtPose1=Cave of the Announcement
+TxtPose2=Cuspid Mountain
 TxtPose3=Clothic village
 TxtUnDef=Undefined silly thing

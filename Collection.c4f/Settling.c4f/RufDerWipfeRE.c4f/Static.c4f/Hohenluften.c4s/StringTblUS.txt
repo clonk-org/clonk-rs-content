@@ -1,0 +1,5 @@
+TxtWindData=Reading wind data
+TxtPose1=Thunder Cliff
+TxtPose2=Gorge
+TxtPose3=Wasteland
+TxtUnDef=Undefined silly thing

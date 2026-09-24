@@ -1,0 +1,11 @@
+MsgRocketBuilt=Die Rakete wurde gebaut! Auf zu den Sternen!
+MsgRocketTodo=Die Rakete muss noch gebaut werden...
+DlgGreeting=Seid gegrüsst!
+DlgReminder=Ich wollte euch nur nochmal daran errinern das die Abrissarbeiten für diesen Planeten bald beginnen.
+DlgLeave=Ihr solltet so schnell wie möglich von hier verschwinden...
+DlgLives=...falls euch eurer Leben lieb ist.
+DlgBye=Tschüss.
+MsgMeteorStorm=<c ff0000>Warnung:</c>|!!!{{METO}}-Sturm aktiviert!!!
+MsgLightningCannon=<c ff0000>Warnung:</c>|!!!{{FXL1}}-Kanone gestartet!!!
+MsgVolcanoField=<c ff0000>Warnung:</c>|!!!{{FXV1}}-Feld aktiviert!!!
+TxtUnDef=Komisches Unbekanntes Ding
