@@ -224,8 +224,8 @@
       ],
       "origin": "legacyclonk",
       "file_count": 1303,
-      "bytes": 11227889,
-      "sha256": "44728277da71b7e31a8b530704cfeb1debb061b088abf4da74e2a7d2bf83d1d4"
+      "bytes": 11228063,
+      "sha256": "5c86653270ecc23d68f0e0ea742164d11ec5f76a00be5bb2750ad1cfe0b9a851"
     },
     "ClonkMars.c4d": {
       "rights": "assumed",
@@ -322,9 +322,9 @@
         "third_party/UltimateClonkCompilation/Authors.txt"
       ],
       "origin": "ucc",
-      "file_count": 12172,
-      "bytes": 605539839,
-      "sha256": "1daee0ed0e9d6d205801f58e2216bd7fee9772b7b1306d4dd2490141429753fa"
+      "file_count": 12174,
+      "bytes": 605540271,
+      "sha256": "06de0039637b2a56bae7f595b6183992fcf238e6bf5473bc1aeb6a538e95d31e"
     },
     "Golems.c4f": {
       "rights": "assumed",
