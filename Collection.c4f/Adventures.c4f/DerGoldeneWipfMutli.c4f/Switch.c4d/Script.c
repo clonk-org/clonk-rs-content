@@ -10,7 +10,7 @@ protected func Initialize()
 
 protected func ControlLeft(object pClonk)
   {
-  [DescSwitch]
+  [$DescSwitch$]
   if (!GetPhase()) return();
   Sound("Click"); SetPhase();
   // Angeschlossene Objekte benachrichtigen
@@ -25,7 +25,7 @@ protected func ControlLeft(object pClonk)
 
 protected func ControlRight(object pClonk)
   {
-  [DescSwitch]
+  [$DescSwitch$]
   if (GetPhase()) return();
   Sound("Click"); SetPhase(1);
   // Angeschlossene Objekte benachrichtigen

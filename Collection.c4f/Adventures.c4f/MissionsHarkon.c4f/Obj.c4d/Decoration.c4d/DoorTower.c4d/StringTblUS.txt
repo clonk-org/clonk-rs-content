@@ -1,1 +1,3 @@
 Door01=The door is locked!
+DescDoorClose=Close door
+DescDoorOpen=Open door

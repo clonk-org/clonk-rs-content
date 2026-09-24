@@ -43,7 +43,7 @@ public func IsSwitch() { return true; }
   
 public func ControlThrow(pClonk)
 {
-  [Schlüssel reinstecken/rausnehmen]
+  [$DescInsertKey$]
   if(Contents())
   {
     Exit(Contents());
