@@ -13,7 +13,7 @@ protected func Initialize()
 
 protected func ControlLeft(object pClonk)
   {
-  [DescSwitch]
+  [$DescSwitch$]
   if(fSpecial) return;	  
   if (GetPhase()==0) return;
   Sound("Click"); SetPhase();
@@ -40,7 +40,7 @@ protected func ControlLeft(object pClonk)
 
 protected func ControlRight(object pClonk)
   {
-  [DescSwitch]
+  [$DescSwitch$]
   if (GetPhase()==1) return;
   Sound("Click"); SetPhase(1);
   // Angeschlossene Objekte benachrichtigen

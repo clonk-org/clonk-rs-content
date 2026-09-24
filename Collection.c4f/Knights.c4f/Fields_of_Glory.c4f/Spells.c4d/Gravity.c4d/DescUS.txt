@@ -1,1 +1,1 @@
-Lets float objects around the clonk.
+Makes objects float around the clonk, which also lets you ward off projectiles.

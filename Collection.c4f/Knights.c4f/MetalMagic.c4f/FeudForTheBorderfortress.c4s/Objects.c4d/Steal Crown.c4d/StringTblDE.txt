@@ -1,0 +1,1 @@
+Crown01=Das Verteidigerteam muss noch %d Minuten und %d Sekunden aushalten.

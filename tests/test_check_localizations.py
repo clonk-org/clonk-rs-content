@@ -304,6 +304,17 @@ class LocalizationCheckerTests(unittest.TestCase):
 
         self.assert_checker_fails(result, "Names.txt", "malformed")
 
+    def test_scenario_crew_name_list_is_not_localized_metadata(self) -> None:
+        # A scenario's Names.txt is the crew name list C4Game loads with
+        # C4CFN_Names (C4Game.cpp:3307-3308), one name per line, untagged.
+        self.write("Maintained.c4d/DescDE.txt", "Beschreibung")
+        self.write("Maintained.c4d/DescUS.txt", "Description")
+        self.write("Maintained.c4f/Arena.c4s/Names.txt", "Jemand\nNiemand\n")
+
+        result = self.run_checker()
+
+        self.assert_checker_passes(result)
+
     def test_localization_asset_names_use_canonical_case(self) -> None:
         self.write("Maintained.c4d/StringtblDE.txt", "Greeting=Hallo\n")
         self.write("Maintained.c4d/StringTblUS.txt", "Greeting=Hello\n")

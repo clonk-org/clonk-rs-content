@@ -7,3 +7,4 @@ TxtAttachOrDetach=An-/Abkuppeln
 
 MsgGun=Geschütz
 MsgNotFree=Besetzt!
+DescGetOut=Ausstieg

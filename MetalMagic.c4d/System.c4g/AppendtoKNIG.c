@@ -103,8 +103,8 @@ public func ContextArm(pClonk)
 
 public func ContextOrder(pClonk)
 {
-  [Befehle|Image=KMIA]
-  CreateMenu(KMIA, pClonk, pClonk, 0, "Befehle", 0, 1);
+  [$DescCommands$|Image=KMIA]
+  CreateMenu(KMIA, pClonk, pClonk, 0, "$MnuCommands$", 0, 1);
   if(IsNotFullyArmed()) AddMenuItem("%s", Format("ContextArm(Object(%d))", pClonk), KMIA, pClonk);
   AddMenuItem("%s", Format("ContextGuard(Object(%d))", pClonk), MI_G, pClonk);
   AddMenuItem("%s", Format("ContextDefend(Object(%d))", pClonk), MI_D, pClonk);

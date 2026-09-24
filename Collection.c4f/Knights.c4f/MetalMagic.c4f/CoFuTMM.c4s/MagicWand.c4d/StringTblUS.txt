@@ -1,0 +1,4 @@
+Wand01=No spells available
+Wand02=Cast: %s
+Wand03=Not enough|magic energy!
+DescCast=Cast

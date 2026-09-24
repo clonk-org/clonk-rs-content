@@ -1,2 +1,2 @@
 TimeTo=%d seconds until the join.
-NoSainthood=Your team has no sainthood at the moment.
+NoSainthood=Your team has no sanctuary at the moment.

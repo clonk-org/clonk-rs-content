@@ -281,6 +281,12 @@ def string_table_problems(paths: list[Path], excluded: set[Path]) -> list[str]:
     return problems
 
 
+def is_crew_name_list(path: Path) -> bool:
+    """A scenario's Names.txt, which C4Game loads as its crew name list
+    (C4CFN_Names, C4Game.cpp:3307-3308) rather than as localized names."""
+    return path.name.casefold() == "names.txt" and path.parent.name.casefold().endswith(".c4s")
+
+
 def localized_metadata_problems(paths: list[Path], excluded: set[Path]) -> list[str]:
     problems = []
 
@@ -289,6 +295,7 @@ def localized_metadata_problems(paths: list[Path], excluded: set[Path]) -> list[
             path in excluded
             or not is_group_content(path)
             or path.name.casefold() not in ("names.txt", "title.txt")
+            or is_crew_name_list(path)
         ):
             continue
 

@@ -12,10 +12,10 @@ protected func Open()
   {
     g_ChestFound ++;
     if(g_ChestFound < GetChestCount())
-      Message("Geheime Truhe gefunden!|Schon %d von %d gefunden.",this,g_ChestFound, GetChestCount());
+      Message("$Chest01$",this,g_ChestFound, GetChestCount());
     else
     {
-      Message("Geheime Truhe gefunden!|Du hast alle %d Geheimtruhen gefunden!",this,g_ChestFound);
+      Message("$Chest02$",this,g_ChestFound);
       Sound("Applause");
     }
     Local() = 1;

@@ -25,7 +25,7 @@ func RejectCollect(idObj, pObj)
 
 func ContextHelp()
 {
-  [Aufgabe|Image=CXIN]
+  [$DescTask$|Image=CXIN]
   CreateMenu(CXIN, this, this, 0, szHelpName, 0, 3);
   AddMenuItem(szHelpingText, 0, NONE, this);
 }

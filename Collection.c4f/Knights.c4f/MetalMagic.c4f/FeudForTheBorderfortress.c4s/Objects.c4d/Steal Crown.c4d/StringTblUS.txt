@@ -1,0 +1,1 @@
+Crown01=The defending team has to hold out for another %d minutes and %d seconds.

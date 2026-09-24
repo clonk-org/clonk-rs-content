@@ -1,2 +1,2 @@
 DE:Seilende
-US:Ropeend
+US:Rope end

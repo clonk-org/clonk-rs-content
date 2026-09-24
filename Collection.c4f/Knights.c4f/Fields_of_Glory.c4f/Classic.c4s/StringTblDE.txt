@@ -2,3 +2,5 @@ TeamLeft=Team Zap
 TeamRight=Team Monster
 TeamLeftJoin=%s tritt %s bei.
 TeamRightJoin=%s tritt %s bei.
+Death01=%s starb ehrenvoll durch %s. Noch <c ff0000>%d</c> Relaunchs
+Death02=%s starb ehrenvoll durch sich selbst. Noch <c ff0000>%d</c> Relaunchs

@@ -284,8 +284,8 @@
       ],
       "origin": "ccan",
       "file_count": 1212,
-      "bytes": 14250174,
-      "sha256": "abc042557b9a4f5ed9aea600b35a358ef7392f58eafe682723b0e0eddeaa3825"
+      "bytes": 14249631,
+      "sha256": "f920ee7233e83f0900be5b1d4f083fa420dbd52abe73d0964fcfceb9ca99a514"
     },
     "MetalMagicExtra.c4d": {
       "rights": "assumed",
@@ -296,8 +296,8 @@
       ],
       "origin": "ccan",
       "file_count": 576,
-      "bytes": 7393241,
-      "sha256": "3b8ac492b2dd0a6265429eb2b627ca1bc5afed102b0ee9074fa311e31d20a3ce"
+      "bytes": 7393317,
+      "sha256": "e1642b4ea90ff6f431261a5814f31afb2cc003fd057dcf4584a4dcdfd2afaece"
     },
     "Melees.c4f/Queron3.c4s": {
       "rights": "assumed",
@@ -308,8 +308,8 @@
       ],
       "origin": "ccan",
       "file_count": 587,
-      "bytes": 15153866,
-      "sha256": "4fcc91118467eff4998818539e23f5b2efce04ff3888f4436eb5ef12bcedd779"
+      "bytes": 15153932,
+      "sha256": "7978495dc5ee676b41305a09c18e8c03f0609e01f568a92471c2eb1adadcc1dd"
     },
     "Collection.c4f": {
       "rights": "assumed",
@@ -322,9 +322,9 @@
         "third_party/UltimateClonkCompilation/Authors.txt"
       ],
       "origin": "ucc",
-      "file_count": 12152,
-      "bytes": 605755483,
-      "sha256": "8f6b8e1e39a52f57f3e4c7627bf50df90c48f208bb5437affc98511535f946bb"
+      "file_count": 12172,
+      "bytes": 605539838,
+      "sha256": "f0df8705152f94b9191b6fb8e76911755b2495fb9a13796e408c8fd3872f8c69"
     },
     "Golems.c4f": {
       "rights": "assumed",

@@ -1,2 +1,2 @@
 DE:Frosthauch
-US:Frostbreeze
+US:Frost breath

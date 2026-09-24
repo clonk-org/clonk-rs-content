@@ -1,2 +1,2 @@
 DE:Feuerkluster
-US:Firecluster
+US:Fire cluster

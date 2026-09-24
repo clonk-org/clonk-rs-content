@@ -1,3 +1,5 @@
 MsgJoinShadow=%s is an attacker!
 MsgJoinMantis=%s defends the crown!
 MsgRelaunchCountdown=%d min %d|until relaunch...
+DescLeft=Left
+DescRight=Right

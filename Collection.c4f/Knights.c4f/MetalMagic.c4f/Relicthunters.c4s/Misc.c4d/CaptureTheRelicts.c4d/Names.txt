@@ -1,2 +1,2 @@
 DE:Reliktjagd
-US:Relicthunt
+US:Relic hunt

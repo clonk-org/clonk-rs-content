@@ -1,2 +1,2 @@
 DE:Objektschleuder
-US:Objectcatapult
+US:Object catapult

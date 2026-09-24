@@ -7,3 +7,4 @@ TxtAttachOrDetach=Couple/Decouple
 
 MsgGun=Gun
 MsgNotFree=Not free!
+DescGetOut=Get out

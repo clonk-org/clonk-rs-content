@@ -44,7 +44,7 @@ protected func DigCastlesFree()
 global func NewTask(szMsg, szHelp)
 {
   Sound("Ding");
-  Message(Format("<c %x>Aufgabe:</c> %s", RGB(250), szMsg), 0);
+  Message(Format("$Task01$", RGB(250), szMsg), 0);
   szHelpName = szMsg;
   szHelpingText = szHelp;
 }

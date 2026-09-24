@@ -5,3 +5,5 @@ MsgNoPlace=%s cannot move to this position!
 CtxGriffonCall=Call griffon
 CtxSaurianCall=Call saurian
 CtrlActivateDesc=Use bow
+DescCommands=Commands
+MnuCommands=Commands

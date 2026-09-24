@@ -1,2 +1,2 @@
 DE:Enterhaken
-US:Hook
+US:Grappling hook

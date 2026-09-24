@@ -37,7 +37,7 @@ protected func DigCastlesFree()
 global func NewTask(szMsg, szHelp)
 {
   Sound("Ding");
-  Message(Format("<c %x>Aufgabe:</c> %s", RGB(250), szMsg), 0);
+  Message(Format("$Mage01$", RGB(250), szMsg), 0);
   szHelpName = szMsg;
   szHelpingText = szHelp;
 }
@@ -109,7 +109,7 @@ protected func InitializePlayer(int player, int tx, int ty, object pBase, int iT
 func Script21()
 {
   // Angekommen, wer da?
-  ShoutMsg("Ist jemand zu Hause? Ich bin ein Magier und wollte...", pClonk);
+  ShoutMsg("$Mage02$", pClonk);
 }
 
 func Script22()
@@ -119,7 +119,7 @@ func Script22()
   SetName("Myxus", pMage);
   SetDir(0, pMage);
   PlacementEffects(pMage->GetX(), pMage->GetY());
-  ShoutMsg("Was wollt ihr in meinem Reich, einfacher Magier?", pMage);
+  ShoutMsg("$Mage03$", pMage);
 }
 
 func PlacementEffects(x, y, color1, color2) 
@@ -134,65 +134,65 @@ func PlacementEffects(x, y, color1, color2)
 
 func Script23()
 {
-  ShoutMsg("Ich will alles über die Kampfmagier des Rates lernen.", pClonk);
+  ShoutMsg("$Mage04$", pClonk);
 }
 
 func Script24()
 {
-  ShoutMsg("Ah ihr seid wissbegierig. Dann seid ihr bei mir genau richtig. Ich weiß alles über den Rat von Cra Kla Zoth.", pMage);
+  ShoutMsg("$Mage05$", pMage);
 }
 
 func Script25()
 {
-  ShoutMsg("Also. Der Rat wurde 118 als Zusammenschluss der weisesten Magier des Landes gegründet um dem schon seit Jahren tobenden Glaubenskieg zwischen dem Orden der Sawelô und der Legion des Teiwaz Einhalt zu bieten.", pMage);
+  ShoutMsg("$Mage06$", pMage);
 }
 
 func Script26()
 {
-  ShoutMsg(["Die drei großen Gründer hießen Cra Kla und Zoth. Deswegen bekommen die Vorsitzenden des Rates seither diese Namen als Titel.", "Nur sehr ungebildete Laien glauben die drei würden schon seit über Hundert Jahren den Rat leiten."], pMage);
+  ShoutMsg(["$Mage07$", "$Mage08$"], pMage);
 }
 
 func Script27()
 {
-  ShoutMsg("Die Macht des Rates gründet sich auf den Stab von Cra Kla Zoth. Ein magischer Stab, in dem alle 4 Elemente vereinigt sind.", pMage);  
+  ShoutMsg("$Mage09$", pMage);  
 }
 
 func Script28()
 {
-  ShoutMsg(["Soweit zur Theorie. Jetzt kannst du dich als Magus ausbilden lassen. Gehe dazu in das Magiezimmer und bilde dich dort aus.", "Du findest es im Obergeschoss bei der Magusstatue. Stelle dich zwischen Schreibpult und Fackel und drücke nach oben. Dann wird dir die Statue den Zugang öffnen."], pMage);
+  ShoutMsg(["$Mage10$", "$Mage11$"], pMage);
 }
 
 func Script30()
 {
   if(!FindObject2(Find_ID(MAGE), Find_PlayerType(C4PT_User))) return goto(29);
-  ShoutMsg(["So, das hast du ja schon geschafft. Nun brauchst du einen Stab.","Er ermöglicht es spezielle Stabzauber zu wirken.", "Außerdem spendet er noch Mana solange die Regel Zauberenergienachschub {{STES}} aktiviert ist."], pMage);
+  ShoutMsg(["$Mage12$","$Mage13$", "$Mage14$"], pMage);
   CreateObject(STES, 10, 10, -1);
 }
 
 func Script31()
 {
-  ShoutMsg(["Die Stäbe haben jeweils immer zwei Angriffszauber {{_CSB:3}} {{_CSB:8}}, einen Nahkampfzauber {{_CSB:5}}, eine Aura {{_CSB:4}}, einen Verteidigungszauber {{_CSB:7}} sowei einen Spezialzauber {{_CSB:6}}.", "Die Tastenangaben sind die Tasten für das Kombomenü. Beim festen Kombomenü ist Vorne Rechts und Zurück Links.", "Im Schnellzaubermenü haben die Zauber auch eine festgelegte Reihenfolge: Aura, Verteidiung, Angriff, Spezial, Nahkampf und darunter in der Mitte der zweite Angriffszauber."], pMage);
+  ShoutMsg(["$Mage15$", "$Mage16$", "$Mage17$"], pMage);
   CreateObject(STES, 10, 10, -1);
 }
 
 func Script32()
 {
-  ShoutMsg(["Diese sind im normalen Zaubermenü ganz oben, bzw. im Schnellzaubermenü unter den normalen Schnellzaubern.", "Im Kombomenü bilden die Stabzauber einen ersten Komboring. Mit einem weiteren Klick auf {{_CSB:11}} öffnet sich das normale Kombomenü mit den Nicht-Stabzaubern."], pMage);
+  ShoutMsg(["$Mage18$", "$Mage19$"], pMage);
 }
 
 func Script33()
 {
-  ShoutMsg(["Wenn die Regel 'Stäbe für Magi' {{FSTF}} aktiviert ist, dann bekommst du automatisch als Magus einen Stab.","Ansonsten kannst du dir den Stab im Magiezimmer bauen und dann auf Doppelgraben eine Elementarvariante auswählen."], pMage);
+  ShoutMsg(["$Mage20$","$Mage21$"], pMage);
 }
 
 func Script34()
 {
-  ShoutMsg(["Heute bekommst du die Stäbe aber in dem Übungsparcours, den ich schon vorbereitet habe.","Dazu musst du einfach zu den Zaubersteinen gehen.", "Der erste ist der weiße Stein unter der Burg.", "P.S. die Zauber müssen immer in der gleichen Reihenfolge eingesetzt werden, in der ich sie dir erkläre."], pMage);
+  ShoutMsg(["$Mage22$","$Mage23$", "$Mage24$", "$Mage25$"], pMage);
 }
 
 func Script35()
 {
-  ShoutMsg("Aha gut. Danke für deine Hilfe. Ich werde nun versuchen den Parcours zu meistern.", pClonk);
+  ShoutMsg("$Mage26$", pClonk);
 }
 
 func Script36()
@@ -202,18 +202,18 @@ func Script36()
 
 func StaffSMARActivated()
 {
-  ShoutMsg(["Ihr habt nun den Luftstab. Dieser ermöglicht es folgende Zauber zu wirken:","{{CHCL}} Farbwechsel: Damit kann man sich mit der Spielerfarbe, Name oder Typ eines anderen Clonks tarnen, um so den Gegner zu täuschen.", "{{MDFL}} Zurückwerfen: Damit kann man sich gut vor Wurfobjekten schützen, die dann auf den Gegner zurückfliegen."], pMage);
+  ShoutMsg(["$Mage27$","$Mage28$", "$Mage29$"], pMage);
   goto(100);
 }
 
 func Script101()
 {
-  ShoutMsg(["{{AIPA}} Pfeilabwehr: Diese Aura schützt alle im Umkreis vor Pfeiltreffern.", "{{MLGT}} Magischer Blitz: Ein starker Blitz wird beschworen. Dieser ist besonders effektiv gegen Eiskrähen."], pMage);
+  ShoutMsg(["$Mage30$", "$Mage31$"], pMage);
 }
 
 func Script102()
 {
-  ShoutMsg(["{{PRFT}} Druckfaust: Im Nahkampf werden Gegner zurückgeschleudert. Allerdings macht der Clonk dann keinen Schaden mehr im Nahkampf.", "{{AFST}} Luftklaue: Ein starker Angriffszauber, der mehrere Gegner schädigen kann und durch Wände gehen kann."], pMage);
+  ShoutMsg(["$Mage32$", "$Mage33$"], pMage);
 }
 
 func Script103()
@@ -223,18 +223,18 @@ func Script103()
 
 func StaffSMERActivated()
 {
-  ShoutMsg(["Als nächstes kommt der Erdstab dran:","{{MSSH}} Steinschild: Schützt den Clonk vor Schaden.", "{{FGOB}} Objektschleuder: Wirft das erste Inventarobjekt des Clonks. Je Leichter dieses ist, desto weiter fliegt es."], pMage);
+  ShoutMsg(["$Mage34$","$Mage35$", "$Mage36$"], pMage);
   goto(200);
 }
 
 func Script201()
 {
-  ShoutMsg(["{{AUEQ}} Erdbebenaura: Als Objekte im Umkreis werden durchgeschüttelt und fliegen durch die Luft. Erneutes Zaubern deaktiviert die Aura.", "{{SHFT}} Schattenfaust: Der Clonk schlägt im Nahkampf viel schneller zu."], pMage);
+  ShoutMsg(["$Mage37$", "$Mage38$"], pMage);
 }
 
 func Script202()
 {
-  ShoutMsg(["{{MARK}} Steinschlag: Schleudert einige Steine. Diese machen zwar wenig Schaden, können Gegner aber gut wegschleudern.", "{{MPXC}} Platzwechsel: Der Clonk kann mit einem verbündeten Clonk den Platz wechseln. Ist dieser nicht in direkter Sichtweite ist die Reichweite stark eingeschränkt. Trotzdem muss der Clonk jedoch erreichbar sein."], pMage);
+  ShoutMsg(["$Mage39$", "$Mage40$"], pMage);
 }
 
 func Script203()
@@ -244,19 +244,19 @@ func Script203()
 
 func StaffSMFRActivated()
 {
-  ShoutMsg(["Jetzt ist es Zeit für den Feuerstab:","{{MHTB}} Heißes Blut: Der Clonk beginnt zu brennen ohne Schaden zu nehmen. Somit kann er gut Gegner anzünden.", "{{MINC}} Anzünden: Zündet das erste Inventarobjekt des Clonkes an, wenn es brennbar ist. Damit kann man z.B. Flammenspeere werfen."], pMage);
+  ShoutMsg(["$Mage41$","$Mage42$", "$Mage43$"], pMage);
   FreeRect(1340,640,12,40);
   goto(300);
 }
 
 func Script301()
 {
-  ShoutMsg(["{{AUHE}} Hitzeaura: Alle Clonks im Umkreis erleiden Schaden. Aber auch eine Clonks sowie der Zauberer bekommen Schaden. Durch erneutes Zaubern lässt sie sich wieder abstellen.", "{{FLFT}} Feuerfaust: Der Clonk schlägt im Nahkampf mit kräftigen Flammenhieben zu."], pMage);
+  ShoutMsg(["$Mage44$", "$Mage45$"], pMage);
 }
 
 func Script302()
 {
-  ShoutMsg(["{{MFCS}} Feuerkluster: Schleudert drei Feuerprojektile. Diese sind sehr schwach, lassen sich dafür aber gut in Massen zaubern.", "{{MFBL}} Feuerklumpen: Ein brennedes Stück Feuer, das man auf Gegner werfen kann."], pMage);
+  ShoutMsg(["$Mage46$", "$Mage47$"], pMage);
 }
 
 func Script303()
@@ -266,18 +266,18 @@ func Script303()
 
 func StaffSMWTActivated()
 {
-  ShoutMsg(["Als letzes kommt der Wasserstab:","{{RCTL}} Rettungsteleport: Der Clonk wird sofort zur nächsten Basis gebeamt. Dabei verliert er allerdings sein Inventar. PS oben auf einer Himmelsinsel ist eine Basis.", "{{MFBZ}} Frosthauch: Schleudert Clonks weg und friert sie ein."], pMage);
+  ShoutMsg(["$Mage48$","$Mage49$", "$Mage50$"], pMage);
   goto(400);
 }
 
 func Script401()
 {
-  ShoutMsg(["{{MGSW}} Schneeball: Frostiges Projektiel, das dem Gegner schadet und einfriert.", "{{MCIB}} Flaschenclonk: Der Clonk wird in eine Flasche gesteckt. Praktisch zum Transport. Erneutes Zaubern befreit den Clonk wieder."], pMage);
+  ShoutMsg(["$Mage51$", "$Mage52$"], pMage);
 }
 
 func Script402()
 {
-  ShoutMsg(["{{MHGA}} Heilungsaura: Heilt alle verbündeten Clonks im Umkreis. Auch der Zauberer wird dabei geheilt.", "{{ICFT}} Eisfaust: Der Nahkampfgegner wird wärend dem Kampf eingefroren."], pMage);
+  ShoutMsg(["$Mage53$", "$Mage54$"], pMage);
 }
 
 func Script403()
@@ -333,7 +333,7 @@ global func ShoutMsg(sMessage, pSpeaker, szPortrait, iExcludePlayer, fPermanent)
   if(GetType(sMessage)==C4V_String)
     AddMenuItem(sMessage,0,NONE,obj);
   else for(szMsg in sMessage) AddMenuItem(szMsg,0,NONE,obj);
-  AddMenuItem("Weiter", "ScriptGo(1)", LMM2, obj, 0, obj, 0, 2, 4);
+  AddMenuItem("$Next01$", "ScriptGo(1)", LMM2, obj, 0, obj, 0, 2, 4);
 //  SetMenuTextProgress(1, obj);
   ScriptGo(0);
   iExcludePlayer = GetPlayerByIndex(0, C4PT_User)+1;
@@ -376,12 +376,12 @@ global func FxSpecAquaTimer(pAqua, iNumber)
     if(iEff = GetEffect("ChangeNSpell", pClonk))
       if(EffectVar(3, pClonk, iEff) == ACLK)
       {
-        Message("Ah gut. Ein Aquaclonk.|Dir mache ich natürlich gerne das Tor auf.", pAqua);
+        Message("$Mage55$", pAqua);
         Local(0, pAqua)->SetComDir(COMD_Up);
 	FindObject(RCTP)->Activate();
         return -1;
       }
-    Message("Ich mache nur Aquaclonks das Tor auf!|Alle andern Clonks sind doof.", pAqua);
+    Message("$Mage56$", pAqua);
   }
 }
 
@@ -392,16 +392,16 @@ global func FxSpecDyingClonkTimer(pClonk, iNumber)
   {
     if(GetEnergy(pClonk)>10)
       {
-        Message("Ah, es geht mir wieder besser. Ich mach dir das Tor auf.", pClonk);
+        Message("$Mage57$", pClonk);
         ObjectSetAction(pClonk, "Walk", 0, 0, 1);
         SetCommand(pClonk, "MoveTo", 0, GetX(pClonk)-35, GetY(pClonk));
         return -1;
       }
-    Message("Args ich sterbe! Hilft mir denn keiner?", pClonk);
+    Message("$Mage58$", pClonk);
   }
 }
 
-public func MsgSignpost1()  { return "Weg zum Assassinenlager|Du bist am Ziel."; }
+public func MsgSignpost1()  { return "$Mage59$"; }
 
 public func SignpostReached()
   {
