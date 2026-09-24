@@ -302,6 +302,17 @@ class LocalizationCheckerTests(unittest.TestCase):
 
         self.assert_checker_fails(result, "StringTblUS.txt", "duplicate", "Greeting")
 
+    def test_string_table_key_with_surrounding_whitespace_fails(self) -> None:
+        # C4LangStringTable ends a key at the first "=" and keeps everything
+        # before it (C4LangStringTable.cpp:55-67), so this defines
+        # "Greeting " and a script's $Greeting$ is never replaced.
+        self.write("Maintained.c4d/StringTblDE.txt", "Greeting=Hallo\n")
+        self.write("Maintained.c4d/StringTblUS.txt", "Greeting = Hello\n")
+
+        result = self.run_checker()
+
+        self.assert_checker_fails(result, "StringTblUS.txt", "whitespace", "Greeting")
+
     def test_duplicate_metadata_locale_fails(self) -> None:
         self.write(
             "Maintained.c4d/Object.c4d/Names.txt",

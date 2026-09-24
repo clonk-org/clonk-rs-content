@@ -253,6 +253,12 @@ def string_table(path: Path) -> tuple[dict[str, str], list[str]]:
             problems.append(f"{path}:{line_number}: malformed string-table line")
             continue
         key, value = line.split("=", 1)
+        if key != key.strip():
+            # The key is everything before the first "="
+            # (C4LangStringTable.cpp:55-67), so no $Key$ can name this one.
+            problems.append(
+                f"{path}:{line_number}: whitespace around string-table key {key.strip()}"
+            )
         key = key.strip()
         if not key:
             problems.append(f"{path}:{line_number}: empty string-table key")
