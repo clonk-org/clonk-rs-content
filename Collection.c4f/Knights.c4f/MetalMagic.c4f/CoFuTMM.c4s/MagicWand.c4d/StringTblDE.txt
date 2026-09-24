@@ -1,0 +1,4 @@
+Wand01=Keine Zaubersprüche verfügbar
+Wand02=Zaubern: %s
+Wand03=Nicht genug|Zauberenergie!
+DescCast=Zaubern

@@ -2,3 +2,5 @@ TeamLeft=Team Zap
 TeamRight=Team Monster
 TeamLeftJoin=%s joins %s.
 TeamRightJoin=%s joins %s.
+Death01=%s died honorably at the hands of %s. <c ff0000>%d</c> relaunches left
+Death02=%s died honorably by his own hand. <c ff0000>%d</c> relaunches left

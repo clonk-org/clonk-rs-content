@@ -92,3 +92,4 @@ BtnRepeatRound=Runde &wiederholen
 BtnRepeatRoundDesc=Noch einmal probieren.
 BtnNextRound=&Nächste Runde
 BtnNextRoundDesc=Weiter mit der nächsten Runde.
+Task01=<c %x>Aufgabe:</c> %s

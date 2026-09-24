@@ -19,7 +19,7 @@ public func Activate(iByPlayer)
   TimeToGo = FindObjectOwner(_ZAE, iByPlayer) -> LocalN("time");
   var sec = TimeToGo % 60;
   var min = TimeToGo / 60;
-  var string = Format("Das Verteidigerteam muss noch %d Minuten und %d Sekunden aushalten.", min, sec);
+  var string = Format("$Crown01$", min, sec);
   MessageWindow(string, iByPlayer);
   return(1);
 }

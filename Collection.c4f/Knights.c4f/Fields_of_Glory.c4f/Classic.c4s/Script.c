@@ -114,12 +114,12 @@ if (relaunch[iPlr] == 1)
 
   //wenn kein selbstmord dann dem töter den kill geben:
   if (iDeathCausedBy != iPlr) {
-  if(iDeathCausedBy != -1) Log("%s starb ehrenvoll durch %s. Noch <c ff0000>%d</c> Relaunchs",GetTaggedPlayerName(iPlr),GetTaggedPlayerName(iDeathCausedBy),relaunch[iPlr],GiveKillCount(iDeathCausedBy,iPlr));
+  if(iDeathCausedBy != -1) Log("$Death01$",GetTaggedPlayerName(iPlr),GetTaggedPlayerName(iDeathCausedBy),relaunch[iPlr],GiveKillCount(iDeathCausedBy,iPlr));
     UpdateScoreBoard(iPlr,true);  
     return(1);
   }
   //ansonsten selbstmord verkünden
-  Log("%s starb ehrenvoll durch sich selbst. Noch <c ff0000>%d</c> Relaunchs",GetTaggedPlayerName(iPlr),relaunch[iPlr]);
+  Log("$Death02$",GetTaggedPlayerName(iPlr),relaunch[iPlr]);
   UpdateScoreBoard(iPlr,true);
   return(1);
 }

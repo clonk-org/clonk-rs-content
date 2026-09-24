@@ -1,0 +1,3 @@
+Chest01=Secret chest found!|%d of %d found so far.
+Chest02=Secret chest found!|You have found all %d secret chests!
+DescTask=Task

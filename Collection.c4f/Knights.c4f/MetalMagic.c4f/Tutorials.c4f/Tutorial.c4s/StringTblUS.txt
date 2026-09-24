@@ -92,3 +92,4 @@ BtnRepeatRound=&Repeat round
 BtnRepeatRoundDesc=Try again.
 BtnNextRound=&Next round
 BtnNextRoundDesc=Go on to the next round.
+Task01=<c %x>Task:</c> %s

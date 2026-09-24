@@ -41,7 +41,7 @@ protected func DigCastlesFree()
 global func NewTask(szMsg, szHelp)
 {
   Sound("Ding");
-  Message(Format("<c %x>Aufgabe:</c> %s", RGB(250), szMsg), 0);
+  Message(Format("$Assassin01$", RGB(250), szMsg), 0);
   szHelpName = szMsg;
   szHelpingText = szHelp;
 }
@@ -119,63 +119,63 @@ protected func InitializePlayer(int player, int tx, int ty, object pBase, int iT
 func Script21()
 {
   // Angekommen, wer da?
-  ShoutMsg("Hallo, ich soll mich hier beim Ausbilder melden.", pClonk);
+  ShoutMsg("$Assassin02$", pClonk);
 }
 
 func Script22()
 {
   SetCommand(pTeacher, "MoveTo",  0, 362, 766);
-  ShoutMsg("Ah, du bist also der neue Azubi?", pTeacher);
+  ShoutMsg("$Assassin03$", pTeacher);
 }
 
 func Script23()
 {
-  ShoutMsg("Ähm ja, ich will halt was lernen und so.", pClonk);
+  ShoutMsg("$Assassin04$", pClonk);
 }
 
 func Script24()
 {
-  ShoutMsg("Jaja, genau. Also deine Aufgabe ist es heute die Kanderierburg zu überfallen und dich bis zum Goldvorkommen unter der Burg durch zu schlagen.", pTeacher);
+  ShoutMsg("$Assassin05$", pTeacher);
 }
 
 func Script25()
 {
-  ShoutMsg("Aha, klingt spannend. Was muss ich tun?", pClonk);
+  ShoutMsg("$Assassin06$", pClonk);
 }
 
 func Script26()
 {
-  ShoutMsg("Du musst erstmal dort oben hinkommen. Dazu brauchst du eine Armbrust und einen Enterhaken.", pTeacher);
+  ShoutMsg("$Assassin07$", pTeacher);
 }
 
 func Script27()
 {
-  ShoutMsg("Die Armbrust {{CRBW}} ist eine sehr präzise Wafffe mit ihr kann der geübte Assassine zielgenaue Kopfschüsse machen.", pTeacher);  
+  ShoutMsg("$Assassin08$", pTeacher);  
 }
 
 func Script28()
 {
-  ShoutMsg("Man kann sogar die Sehnenspannung variieren und so die Reichweite einstellen {{_CSB:5}} . Sowie die Bolzensorten wechseln {{_CSB:11}} .", pTeacher);
+  ShoutMsg("$Assassin09$", pTeacher);
 }
 
 func Script30()
 {
-  ShoutMsg("Bolzensorten? Was gibt es denn für verschiedene?", pClonk);
+  ShoutMsg("$Assassin10$", pClonk);
 }
 
 func Script31()
 {
-  ShoutMsg(["Zum einen die normalen Bolzen {{BOTP}}, die zwar viel Schaden machen, aber auch sehr leicht bemerkt werden können.","Auf der anderen Seite gibt es die dünnen Nadelbolzen {{NBTP}}, die unbemerkt verschossen werden können und dann im Gegner stecken bleiben.", "Übrigens wenn du genau auf den Kopf zielst, dann bekommt der Getroffene extra Schaden. Dies wird mit einem Ausrufezeichen bzw. einem Punkt bei Nadelbolzen angezeigt."], pTeacher);
+  ShoutMsg(["$Assassin11$","$Assassin12$", "$Assassin13$"], pTeacher);
 }
 
 func Script32()
 {
-  ShoutMsg(["Und dann gibt es natürlich noch den Enterhaken {{HOOK}}, der einem ermöglicht mühelos die höchsten Türme zu erklimmen.","Dazu einfach den Haken wie einen Bolzen verschießen und dann mit dem Seilende {{RPND}} sich hochziehen {{_CSB:4}} oder abseilen {{_CSB:7}} .","Mit dem Seilende kannst du das Seil auch wieder einholen {{_CSB:5}}{{_CSB:5}} ."], pTeacher);
+  ShoutMsg(["$Assassin14$","$Assassin15$","$Assassin16$"], pTeacher);
 }
 
 func Script33()
 {
-  ShoutMsg(["So, jetzt solltest du erstmal deine Armbrust ausprobieren. Hier ist dein Exemplar.", "Wenn du auf der Burg bist bekommst du neue Instruktionen."], pTeacher);
+  ShoutMsg(["$Assassin17$", "$Assassin18$"], pTeacher);
   fCrossbow = 1;
   var iPlr;
   for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
@@ -191,27 +191,27 @@ func Script33()
 func Script50()
 {
   if(!FindObject2(Find_ID(ASAS), Find_InRect(411, 0, LandscapeWidth()-441, 440))) return goto(49);
-  ShoutMsg("Jup, ich bin oben, was soll ich als nächstes machen? Die Burg ist abgesperrt.", pClonk);
+  ShoutMsg("$Assassin19$", pClonk);
 }
 
 func Script51()
 {
-  ShoutMsg("So bevor du dich ins Getümmel stürzt muss du noch ein paar wichtige Sachen wissen.", pTeacher);
+  ShoutMsg("$Assassin20$", pTeacher);
 }
 
 func Script52()
 {
-  ShoutMsg(["Meuchelmörder sind an sich gesehen sehr schwach. Unsere Stärke liegt in der Tarnung.","Über das Kontextmenü {{_CSB:10}} kannst du dich Tarnen. So wirst du nur noch sehr schwer gesehen.","Allerdings darf in der Nähe kein Gegner sein, wenn man sich tarnt. Bekommt man Schaden fliegt die Tarnung auch auf."], pTeacher);
+  ShoutMsg(["$Assassin21$","$Assassin22$","$Assassin23$"], pTeacher);
 }
 
 func Script53()
 {
-  ShoutMsg(["Die Burg ist verriegelt, wie kannst du reinkommen?","Ganz einfach. Knacke das Schloss. Dazu einfach nahe an die Tür stellen und über das Kontextmenü die Tür knacken {{_CSB:10}}."], pTeacher);
+  ShoutMsg(["$Assassin24$","$Assassin25$"], pTeacher);
 }
 
 func Script54()
 {
-  ShoutMsg(["Wenn du drinnen bist kannst du vielleicht noch Wurfmesser {{KNFP}} gebrauchen. Diese sind vielseitig einsetzbar.","Man kann sie zum einen wie der Name schon sagt werfen {{_CSB:3}}, im Nahkampf einsetzen oder jemanden damit erstechen."], pTeacher);
+  ShoutMsg(["$Assassin26$","$Assassin27$"], pTeacher);
   fKnifes = 1;
   var iPlr;
   for(var i = 0; i < GetPlayerCount(C4PT_User); i++)
@@ -223,12 +223,12 @@ func Script54()
 
 func Script55()
 {
-  ShoutMsg(["Zum Erstechen musst du dich genau hinter deinem Gegner befinden. Dann kannst du ihn mit einem gezielten Stich sofort töten {{_CSB:5}}{{_CSB:5}}. Dabei wirst du allerdings kurz sichtbar.","Das könntest du zum Beispiel gleich bei dem Kanderier hinter der Tür probieren, der so schön mit dem Rücken zu dir steht."], pTeacher);
+  ShoutMsg(["$Assassin28$","$Assassin29$"], pTeacher);
 }
 
 func Script56()
 {
-  ShoutMsg("Ok, danke. Jetzt müsste ich alleine klarkommen.", pClonk);
+  ShoutMsg("$Assassin30$", pClonk);
   ScriptGo(0);
 }
 
@@ -289,7 +289,7 @@ global func ShoutMsg(sMessage, pSpeaker, szPortrait, iExcludePlayer, fPermanent)
   if(GetType(sMessage)==C4V_String)
     AddMenuItem(sMessage,0,NONE,obj);
   else for(szMsg in sMessage) AddMenuItem(szMsg,0,NONE,obj);
-  AddMenuItem("Weiter", "ScriptGo(1)", LMM2, obj, 0, obj, 0, 2, 4);
+  AddMenuItem("$Next01$", "ScriptGo(1)", LMM2, obj, 0, obj, 0, 2, 4);
 //  SetMenuTextProgress(1, obj);
   ScriptGo(0);
   iExcludePlayer = GetPlayerByIndex(0, C4PT_User)+1;
@@ -311,4 +311,4 @@ func MenuQueryCancel()
   ScriptGo(1);
 }
 
-public func MsgSignpost1()  { return "Goldlager der Kanderier|Du bist am Ziel."; }
+public func MsgSignpost1()  { return "$Assassin31$"; }

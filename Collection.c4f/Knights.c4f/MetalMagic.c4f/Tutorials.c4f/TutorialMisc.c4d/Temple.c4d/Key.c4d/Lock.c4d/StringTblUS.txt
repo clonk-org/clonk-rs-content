@@ -2,3 +2,4 @@ MsgWrongKey=Key does not fit!
 MsgNoKey=No key!
 MsgStuck=Stuck!
 MsgTurnKey=Turn key
+DescKey=Insert/remove key

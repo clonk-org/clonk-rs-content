@@ -1,0 +1,3 @@
+Chest01=Geheime Truhe gefunden!|Schon %d von %d gefunden.
+Chest02=Geheime Truhe gefunden!|Du hast alle %d Geheimtruhen gefunden!
+DescTask=Aufgabe
