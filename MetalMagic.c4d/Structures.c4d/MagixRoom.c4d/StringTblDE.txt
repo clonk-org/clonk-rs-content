@@ -23,7 +23,7 @@ TxtResearch=Forschen
 TxtResearchs=Erforschen: %s
 Txtsdeveloped=%s erforscht!
 TxtCancelresearch=Forschung abbrechen
-TxtAlreadyDeveloped=% ist bereits erforscht!
+TxtAlreadyDeveloped=%s ist bereits erforscht!
 TxtNothingLeft=Keine Zauber mehr zu erforschen!
 
 TxtNoCrystal=Keine Kristalle gefunden.

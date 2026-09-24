@@ -2,35 +2,36 @@
 
 # Menu #
 MakePaladin=Upgrade to paladin
-MakePriest=Upgrade to priest
-TxtHoly=Conjure wonder
+MakePriest=Train as priest
+TxtHoly=Work a miracle
 
 NeedMoney=You need %d money.
 Only1PLDN=Only one paladin allowed.
-AlreadyIs=Your clonk already is a paladin.
-AlreadyIsPriest=Your clonk already is a priest.
+AlreadyIs=Your clonk is already a paladin.
+AlreadyIsPriest=Your clonk is already a priest.
 
 ChurchService=Hold church service
 PriestNeeded=You need a priest.
 HolyWaterNeeded=You need holy water.
 
-ChruchServiceDesc=For a church service you need a priest and holy water. You wont lose karma energy automatically for a specific time.
+ChruchServiceDesc=A church service needs a priest and holy water. It strengthens your standing with the deity: for a while, you no longer lose karma energy automatically.
 
 # Wonder #
-PainGrail=Paingrail
-FightFire=Fire of fight
-BloodThorns=Bloodthorns
-RevengeLightning=Revengelightnings
+PainGrail=Grail of Pain
+FightFire=Fire of Battle
+BloodThorns=Blood Thorns
+RevengeLightning=Lightning of Vengeance
 HeavensBoon=Heaven's boon
 
-FightFireDesc=Clonk-to-Clonk-Fight enemies get damage.
-BloodThornsDesc=If you lose lives, near enemies will also lose some lives.
-PainGrailDesc=You get the damage, near enemies get, as lives.
-RevengeLightningDesc=Near enemies are damaged by lightnings.
-HeavensBoonDesc=You cannot get damage from non-hostile players.
+FightFireDesc=Melee opponents take damage.
+BloodThornsDesc=When you take damage, your enemies take damage too.
+PainGrailDesc=You gain the damage that nearby enemies lose as life.
+RevengeLightningDesc=A divine lightning cloud follows you and torments your enemies.
+HeavensBoonDesc=You take no damage from allies.
 
-AlreadyHas=This Clonk has the effect already.
+AlreadyHas=The effect is already active.
 
 # Revaluation #
 TxtNoKnight=Only knights can be|upgraded to paladins!
-TxtNoClonk=Only clonks can be|trained to priests!
+TxtNoClonk=Only clonks can be|trained as priests!
+RevengeLightningLightningDesc=Nearby enemies are damaged by lightning.

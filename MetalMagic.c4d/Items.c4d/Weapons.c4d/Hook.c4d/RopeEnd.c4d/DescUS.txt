@@ -1,1 +1,1 @@
-End of a Rope, hold in Hand.
+The end of a rope, held in the hand. <Up> to pull it in, <Down> to let it out, <Left>/<Right> to hold it. <Double-dig> to pull the grappling hook back in.

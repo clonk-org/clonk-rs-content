@@ -2,31 +2,31 @@
 
 TxtAscend=Ascend
 TxtMenu=Menu
-TxtTrainBattlemage=Train Battlemage
+TxtTrainBattlemage=Train battle mage
 TxtMagicItem=Create magic item
-NoPlrKnowledge=Keine Baupläne verfügbar
+NoPlrKnowledge=No construction plans available
 TxtSelectProduction=Create magic item: %s
 
-NeedGold=Needs %d Gold!
-NeedMagiClonk=You need a Magiclonk.
+NeedGold=Needs %d gold!
+NeedMagiClonk=You need a mage.
 NeedEnergy=You need 100 magic energy.
 
 
 
 //WizardTower
-TxtNotEnoughIngredients=Not enough|alchemistic ingredients!|%s|are missing.
+TxtNotEnoughIngredients=Not enough|alchemical ingredients!|Missing:|%s.
 TxtNotEnoughEnergy=Not enough|magical energy!
 TxtNoSpells=No spells available
 TxtDoMagic=Conjure: %s
 TxtConjure=Conjure
 TxtAimspellsleft=Aim spell left
 TxtAimspellsright=Aim spell right
-TxtContinuedevelopement=Continue developement of %s
+TxtContinuedevelopement=Continue research on %s
 TxtResearch=Research
 TxtResearchs=Research: %s
 Txtsdeveloped=%s researched!
 TxtCancelresearch=Cancel research
-TxtAlreadyDeveloped=%s already known!
+TxtAlreadyDeveloped=%s has already been researched!
 TxtNothingLeft=No more spells to research!
 
 TxtNoCrystal=No crystal found.

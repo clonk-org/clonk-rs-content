@@ -15,14 +15,14 @@ msgNotReadyToMagic=%s cannot cast|a spell at the moment.
 
 MnuNoSpells=No spells known
 MnuCast=Cast
-MnuEmpty=Not selected
-MnuDelQuickspell=Delete quickspell
-MnuSetQuickspell=Belegen:
+MnuEmpty=Not assigned
+MnuDelQuickspell=Delete quick spell
+MnuSetQuickspell=Assign:
 MnuSlotQuickspell=Quick spell
 
 # Context
 
-CtxQuickspellDesc=Quickspell
+CtxQuickspellDesc=Quick spell
 CtxMagicDesc=Cast a spell
 CtxCombo=Change spell system
 CtrlTakeoffDesc=Take equipment off
@@ -33,4 +33,4 @@ MsgNoQuickSpells=No quick spells selected
 ChangedToCombo=Combination system|selected
 ChangedToMenu=Menu system|selected
 MsgNotEnoughEnergy=Not enough|magical energy!
-MsgNotEnoughIngredients=Not enough|alchemistic ingredients!|%s|are missing.
+MsgNotEnoughIngredients=Not enough|alchemical ingredients!|Missing:|%s.

@@ -1,1 +1,1 @@
-A claw of air which hurts enemies.
+Creates a claw of air that flings enemies back a little and hurts them.

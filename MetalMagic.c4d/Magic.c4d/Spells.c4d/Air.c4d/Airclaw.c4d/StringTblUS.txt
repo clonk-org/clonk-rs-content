@@ -1,2 +1,2 @@
-must_be_in_free=Magician must be outside|to cast this spell!
+must_be_in_free=The clonk must be outdoors|to cast this spell!
 StillDelay=The spelldelay isn't over.
