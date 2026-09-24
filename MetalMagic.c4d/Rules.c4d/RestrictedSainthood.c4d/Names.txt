@@ -1,2 +1,2 @@
 DE:Eingeschränktes Heiligtum
-US:Restricted Sainthood
+US:Restricted Sanctuary

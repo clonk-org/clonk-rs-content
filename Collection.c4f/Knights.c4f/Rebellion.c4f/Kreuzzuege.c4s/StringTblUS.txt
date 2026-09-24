@@ -1,7 +1,7 @@
 
-HostChoosesDifficulty=chooses the degree of difficulty for the scenario.
-Easy=The severity '<c 88ff88>Easy</c>' was chosen!
-Normal=The severity '<c ffff88>Normal</c>' was chosen!
-Hard=The severity '<c ff8888>Schwer</c>' was chosen!
+HostChoosesDifficulty=chooses the difficulty.|The others have to wait until then...
+Easy=The difficulty '<c 88ff88>Easy</c>' was chosen!
+Normal=The difficulty '<c ffff88>Normal</c>' was chosen!
+Hard=The difficulty '<c ff8888>Hard</c>' was chosen!|Ha ha! Good luck, you worm!
 
-Relaunch=%s relaunchs.
+Relaunch=%s relaunches.
