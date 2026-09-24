@@ -272,8 +272,8 @@
       ],
       "origin": "eke",
       "file_count": 130,
-      "bytes": 2452034,
-      "sha256": "965f38f83ac17b596e0759b44703d9268ffbcf18e98daccc6f51c82e39c5cc04"
+      "bytes": 2446232,
+      "sha256": "b12e59aada216bf590de3d697f8f0ace22a281fc35a9411b1791bd84515162c7"
     },
     "MetalMagic.c4d": {
       "rights": "assumed",
@@ -322,9 +322,9 @@
         "third_party/UltimateClonkCompilation/Authors.txt"
       ],
       "origin": "ucc",
-      "file_count": 12175,
-      "bytes": 605410531,
-      "sha256": "5d1e96ef3edea7476abfafbd5f5ecb55726f0a802e8cee830e78440af5cb1548"
+      "file_count": 12178,
+      "bytes": 605292464,
+      "sha256": "16cbe774ac7d0278a041464c234967da0372bc0595a778f00f6c63e56ee7f182"
     },
     "Golems.c4f": {
       "rights": "assumed",

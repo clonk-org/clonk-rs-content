@@ -355,7 +355,7 @@ func SetBlood(dummy, int set)
 func SetBloodDuration(dummy, bool dur)
 {
 	if(GetLeague())
-		return Log("Liga: $BloodVanishes$");
+		return Log("$League$: $BloodVanishes$");
 
 	BloodStays = dur;
 	if(dur)
@@ -367,7 +367,7 @@ func SetBloodDuration(dummy, bool dur)
 func SetBloodType(dummy, bool enabled)
 {
 	if(GetLeague())
-		return Log("Liga: $ParticleBloodEnabled$");
+		return Log("$League$: $ParticleBloodEnabled$");
 
 	ParticleBlood = enabled;
 	if(enabled)

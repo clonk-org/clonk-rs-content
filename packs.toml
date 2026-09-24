@@ -221,7 +221,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "eke"
 bytes = "preserve"
 upstream_version = "1.7"
-localization = ["clonk-org/clonk-rs-content#74"]
 
 [packs."EkeReloaded.c4f"]
 rights = "assumed"
@@ -230,7 +229,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "eke"
 bytes = "preserve"
 upstream_version = "1.7"
-localization = ["clonk-org/clonk-rs-content#74"]
 
 # ── CCAN ─────────────────────────────────────────────────────────────────────
 
@@ -271,7 +269,6 @@ bytes = "preserve"
 upstream_version = "2.0"
 localization = [
     "clonk-org/clonk-rs-content#68",
-    "clonk-org/clonk-rs-content#74",
     "clonk-org/clonk-rs-content#75",
     "clonk-org/clonk-rs-content#76",
     "clonk-org/clonk-rs-content#77",

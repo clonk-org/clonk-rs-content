@@ -2,5 +2,5 @@ Turns every battlefield into a nice firework.
 Rockets can be accumulated and fired at once.
 
 Ammunition(max.): 40
-Schussmodus 1: Rocket
-Schussmodus 2: Multishot
+Firemode 1: Rocket
+Firemode 2: Multishot

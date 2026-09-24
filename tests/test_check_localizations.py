@@ -260,6 +260,17 @@ class LocalizationCheckerTests(unittest.TestCase):
 
         self.assert_checker_passes(result)
 
+    def test_string_table_value_may_hold_a_windows_1252_ellipsis(self) -> None:
+        # C4LangStringTable ends a line only at "\n" or "\r"
+        # (C4LangStringTable.cpp:54-59), so byte 0x85, the ellipsis of the
+        # shipped charset, stays part of the value.
+        self.write("Maintained.c4d/StringTblDE.txt", b"Wait=<i>Bitte warten\x85</i>\r\nGo=Los\r\n")
+        self.write("Maintained.c4d/StringTblUS.txt", b"Wait=<i>Please wait\x85</i>\r\nGo=Go\r\n")
+
+        result = self.run_checker()
+
+        self.assert_checker_passes(result)
+
     def test_latin1_nul_and_unusual_path_names_are_safe(self) -> None:
         directory = "Päck mit Leerzeichen.c4d/Objekt\nmit Umbruch.c4d"
         self.write(f"{directory}/DescDE.txt", b"Gr\xfc\xdfe\x00\r\n")

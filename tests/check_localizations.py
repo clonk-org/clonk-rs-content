@@ -241,7 +241,11 @@ def string_table(path: Path) -> tuple[dict[str, str], list[str]]:
     entries = {}
     problems = []
 
-    for line_number, line in enumerate(text.splitlines(), 1):
+    # C4LangStringTable ends a line only at "\n" or "\r"
+    # (C4LangStringTable.cpp:54-59); str.splitlines would also split at
+    # bytes such as 0x85, the ellipsis of the shipped charset.
+    lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    for line_number, line in enumerate(lines, 1):
         stripped = line.strip()
         if not stripped or stripped.startswith(("#", ";", "//")):
             continue

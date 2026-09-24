@@ -1,5 +1,5 @@
-Fires a laserbeam that pierces several enemies and bounces of walls.
-Alternatively a ray which is weaker but pierces walls kann be shot.
+Fires a laserbeam that pierces several enemies and bounces off walls.
+Alternatively a ray which is weaker but pierces walls can be shot.
 
 Ammunition(max.): 40
 Firemode 1: Beam

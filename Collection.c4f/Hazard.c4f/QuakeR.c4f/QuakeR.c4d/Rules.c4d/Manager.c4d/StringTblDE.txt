@@ -51,3 +51,4 @@ More=Mehr
 Less=Weniger
 FragsSet=Punkteanzahl gesetzt
 Points=Punkte
+League=Liga
