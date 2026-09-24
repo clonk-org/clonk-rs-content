@@ -1,0 +1,1 @@
+Landscape objects that can be placed automatically.

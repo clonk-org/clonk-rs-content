@@ -1,2 +1,2 @@
 DE:Acid Geysir
-US:Acid Geysir
+US:Acid geyser

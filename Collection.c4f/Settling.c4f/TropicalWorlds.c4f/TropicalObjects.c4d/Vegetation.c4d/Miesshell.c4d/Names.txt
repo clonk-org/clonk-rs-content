@@ -1,2 +1,2 @@
 DE:Miesmuschel
-US:Miesshell
+US:Mussel

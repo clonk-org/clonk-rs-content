@@ -4,7 +4,7 @@
 
 func Initialize()
 {
-  Message("Hier will also mein Meister die Statue haben. |Dann sollte ich mal anfangen damit ich schnell | fertig werde und die Clonkheit mit meinen |Zaubern versklaven kann. |Muahahahahahaha....");
+  Message("$MsgStart$");
   //Zähler starten!
   // Spielziele setzen
   RemoveAll(CROB);

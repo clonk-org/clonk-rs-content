@@ -1,0 +1,1 @@
+MsgStart=I should hurry up and finish the rocket. | Otherwise I'll croak here too.

@@ -4,7 +4,7 @@
 
 func Initialize()
 {
-  Message("Hier ist die Sandwüste also. |Das schöne Land von dem alle sprechen. |Los fangen wir an die Telegraphenmasten zu errichten.");
+  Message("$MsgStart$");
   //Zähler starten!
   ScriptGo(1);
 }

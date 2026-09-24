@@ -1,0 +1,2 @@
+Trees are now in the foreground as well, so that a forest looks a little like a forest.
+You don't notice it much when walking through a "forest", though, only when you build houses there and so on.

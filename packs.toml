@@ -267,10 +267,7 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/U
 origin = "ucc"
 bytes = "preserve"
 upstream_version = "2.0"
-localization = [
-    "clonk-org/clonk-rs-content#68",
-    "clonk-org/clonk-rs-content#77",
-]
+localization = ["clonk-org/clonk-rs-content#68"]
 # Scenario-private definitions stay beside their consumers. Left packed, one
 # file each: a packed group returns its stored header order, which is
 # host-stable and is what C++ C4MaterialMap::Load consumes, where an unpacked

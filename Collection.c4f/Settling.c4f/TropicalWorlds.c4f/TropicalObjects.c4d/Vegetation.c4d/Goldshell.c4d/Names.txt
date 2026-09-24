@@ -1,2 +1,2 @@
 DE:Goldmuschel
-US:Goldshell
+US:Gold shell

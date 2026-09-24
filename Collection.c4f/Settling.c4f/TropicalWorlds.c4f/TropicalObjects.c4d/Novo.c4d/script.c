@@ -12,13 +12,13 @@ local kiffen,Timer;
 local specialding;
 
 protected func ActivateEntrance(object pClonk){
-if(!GetAlive(this())) return(0,Message("Der ist tot.",this()));
+if(!GetAlive(this())) return(0,Message("$Dlg01$",this()));
 SetCommand(pClonk,"");
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0); 
 if(Mod==0){
-AddMenuItem("Wer oder was bist du denn?!","Arschloch",0,pClonk,0,pClonk,0);
-AddMenuItem("Tag?","Neugirig",0,pClonk,0,pClonk,0);
-AddMenuItem("Tach!","Neugirig",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg02$","Arschloch",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg03$","Neugirig",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg04$","Neugirig",0,pClonk,0,pClonk,0);
 }
 if(Mod==1){
 Neugirig(0,pClonk);
@@ -43,11 +43,11 @@ Mes7(0,pClonk);
  }
 }
 if(Folg1==1){
-AddMenuItem("Sind wir da?","",0,pClonk,0,pClonk,0);
-AddMenuItem("Ja","NotFolg",0,pClonk,0,pClonk,0);
-AddMenuItem("Nein","EndTalk",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg05$","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg06$","NotFolg",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg07$","EndTalk",0,pClonk,0,pClonk,0);
 }
-if(Folg1==0) AddMenuItem("Tschöö","EndTalk",0,pClonk,0,pClonk,0);
+if(Folg1==0) AddMenuItem("$Dlg08$","EndTalk",0,pClonk,0,pClonk,0);
 return(true);
 }
 protected func Check(){
@@ -135,10 +135,10 @@ if(Timer > 20){ kiffen = 0; Timer = 0;    }
  
  
 if(Mod==0) SetName("???");
-if(Mod==1) SetName("Novo, aus'm Urwald");
+if(Mod==1) SetName("$Dlg09$");
 if(Folg1==1){
 SetCommand(this(),"MoveTo",FolgTo);
-if(!Random(130)) Message("Sind wir bald da?",this());
+if(!Random(130)) Message("$Dlg10$",this());
   }
  }
 }
@@ -155,106 +155,106 @@ CloseMenu(pClonk);
 private func Neugirig(id doof, object pClonk){
 Mod=1;
 CreateMenu(MILT,pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Agga Ugga mein Freund! Mir'se bin Novo und kommen aus Urwald, man.","",0,pClonk,0,pClonk,0);
-AddMenuItem(Format("Tach! Ich heiße %s!",GetTaggedPlayerName(GetOwner(pClonk))),"Mes2",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg11$","",0,pClonk,0,pClonk,0);
+AddMenuItem(Format("$Dlg12$",GetTaggedPlayerName(GetOwner(pClonk))),"Mes2",0,pClonk,0,pClonk,0);
 }
 
 private func Arschloch(id doof, object pClonk){
 Mod=1;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Ich Leute wie dich essen tue tief im Urwald! Ich sein Novo.","",0,pClonk,0,pClonk,0);
-AddMenuItem(Format("Achso! Ich heiße %s!",GetTaggedPlayerName(GetOwner(pClonk))),"Mes2",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg13$","",0,pClonk,0,pClonk,0);
+AddMenuItem(Format("$Dlg14$",GetTaggedPlayerName(GetOwner(pClonk))),"Mes2",0,pClonk,0,pClonk,0);
 }
 
 private func Mes2(id doof, object pClonk){
 Mod=2;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Wie zur Hölle kamst du hier her?","Mes3",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg15$","Mes3",0,pClonk,0,pClonk,0);
 }
 
 private func Mes3(id doof, object pClonk){
 Mod=3;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Ich nichts wissen von was. Ich rauchen gute Tüte und dann Iche war hier.","",0,pClonk,0,pClonk,0);
-AddMenuItem("Ach so.","Mes4",0,pClonk,0,pClonk,0);
-AddMenuItem("Was für eine gute Tüte.","Mesa4",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg16$","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg17$","Mes4",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg18$","Mesa4",0,pClonk,0,pClonk,0);
 }
 private func Mesa4(id doof, object pClonk){
 iKiff = 1;
 Mod=4;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Also, bring'se mir eine Schwarzmuschel, Iche machen dir eine Tüte.","",0,pClonk,0,pClonk,0);
-AddMenuItem("Super!","EndTalk",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg19$","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg20$","EndTalk",0,pClonk,0,pClonk,0);
 }
 private func Mes4(id doof, object pClonk){
 Mod=5;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Ich haben auch andere Ware.","",0,pClonk,0,pClonk,0);
-AddMenuItem("Zeig mal her!","Handel",0,pClonk,0,pClonk,0);
-AddMenuItem("Wenn das so ist...","EndTalk",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg21$","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg22$","Handel",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg23$","EndTalk",0,pClonk,0,pClonk,0);
 }
 
 private func Mes5(id doof, object pClonk){
 Mod=5;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Hallu Fremder.","",0,pClonk,0,pClonk,0);
-AddMenuItem("Ich will was kaufen.","Handel",0,pClonk,0,pClonk,0);
-if(!Folg1) AddMenuItem("Komm mal mit.","CloseAndGo",0,pClonk,0,pClonk,0);
-if(Folg1) AddMenuItem("Okay, wir sind da.","NotFolg",0,pClonk,0,pClonk,0);
-if(iKiff) AddMenuItem("Machst du mir ein Joint?","MakeJoint",0,pClonk,0,pClonk,0);
-if(!iKiff) AddMenuItem("Wie war das mit der Wundertüte?","Mesa4",0,pClonk,0,pClonk,0);
-AddMenuItem("Ach nichts... (ENDE)","EndTalk",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg24$","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg25$","Handel",0,pClonk,0,pClonk,0);
+if(!Folg1) AddMenuItem("$Dlg26$","CloseAndGo",0,pClonk,0,pClonk,0);
+if(Folg1) AddMenuItem("$Dlg27$","NotFolg",0,pClonk,0,pClonk,0);
+if(iKiff) AddMenuItem("$Dlg28$","MakeJoint",0,pClonk,0,pClonk,0);
+if(!iKiff) AddMenuItem("$Dlg29$","Mesa4",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg30$","EndTalk",0,pClonk,0,pClonk,0);
 }
 
 private func Folg(id doof, object pClonk){
 Folg1 = 1;
 FolgTo = pClonk;
 EndTalk(0,pClonk);
-Message("Wolang denn?",this());
+Message("$Dlg31$",this());
 }
 private func MakeJoint(id doof, object pClonk){
 Mod=5;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-if(FindContents(BSHL,pClonk)) AddMenuItem("So Fertig, da hast du.","",0,pClonk,0,pClonk,0);
-if(!FindContents(BSHL,pClonk)) AddMenuItem("Du haben keine Schwarzmuschel. Ich dir nur aus Schwarzmuschel machen kann Joint.","",0,pClonk,0,pClonk,0);
+if(FindContents(BSHL,pClonk)) AddMenuItem("$Dlg32$","",0,pClonk,0,pClonk,0);
+if(!FindContents(BSHL,pClonk)) AddMenuItem("$Dlg33$","",0,pClonk,0,pClonk,0);
 if(FindContents(BSHL,pClonk)){ RemoveObject(FindContents(BSHL,pClonk));
 CreateContents(JOIN,pClonk,1); }
-if(FindContents(JOIN,pClonk)) AddMenuItem("Danke Man!","EndTalk",0,pClonk,0,pClonk,0);
-if(!FindContents(JOIN,pClonk)) AddMenuItem("Wenn das so ist...","EndTalk",0,pClonk,0,pClonk,0);
+if(FindContents(JOIN,pClonk)) AddMenuItem("$Dlg34$","EndTalk",0,pClonk,0,pClonk,0);
+if(!FindContents(JOIN,pClonk)) AddMenuItem("$Dlg23$","EndTalk",0,pClonk,0,pClonk,0);
 }
 private func NotFolg(id doof, object pClonk){
 Folg1 = 0;
 FolgTo = 0;
 Mod=5;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Nettes Plätzchen!","",0,pClonk,0,pClonk,0);
-AddMenuItem("Ja","EndTalk",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg35$","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg06$","EndTalk",0,pClonk,0,pClonk,0);
 }
 
 private func Mes6(id doof, object pClonk){
 Mod=7;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Ja. :)","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg36$","",0,pClonk,0,pClonk,0);
 AddMenuItem(" ... ","EndTalk",0,pClonk,0,pClonk,0);
 }
 
 private func Mes7(id doof, object pClonk){
 Mod=7;
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Was Gibts?","",0,pClonk,0,pClonk,0);
-AddMenuItem("Ich will Handeln","Handel",0,pClonk,0,pClonk,0);
-AddMenuItem("Folge mir","CloseAndGo",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg37$","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg38$","Handel",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg39$","CloseAndGo",0,pClonk,0,pClonk,0);
 }
 
 private func Handel(id doof, object pClonk){
 CreateMenu(GetID(this()),pClonk,0,C4MN_Extra_None,GetName(),0,C4MN_Style_Dialog,0);
-AddMenuItem("Such dir was aus.","",0,pClonk,0,pClonk,0);
+AddMenuItem("$Dlg40$","",0,pClonk,0,pClonk,0);
 var i;
 while(Contents(i,0)){
-  AddMenuItem(Format("%s kaufen:%d",GetName(Contents(i,0)),GetValue(Contents(i,0))),"Buys",GetID(Contents(i,0)),pClonk,0,pClonk,0);
+  AddMenuItem(Format("$Dlg41$",GetName(Contents(i,0)),GetValue(Contents(i,0))),"Buys",GetID(Contents(i,0)),pClonk,0,pClonk,0);
   i++;
  }
-AddMenuItem("Nichts dabei.","EndTalk",0,pClonk,0,pClonk,0); 
+AddMenuItem("$Dlg42$","EndTalk",0,pClonk,0,pClonk,0); 
 }
 
 private func Buys(id di, object pClonk){

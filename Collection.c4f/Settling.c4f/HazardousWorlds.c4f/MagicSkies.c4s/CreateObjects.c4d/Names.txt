@@ -1,2 +1,2 @@
 DE:Gebäude bauen
-US:Build Constructions
+US:Build structures
