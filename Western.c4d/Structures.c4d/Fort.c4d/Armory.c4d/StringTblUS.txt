@@ -11,5 +11,5 @@ TxtNotEnoughMoney=Not enough money!
 TxtRecruited=%s trained.
 TxtRecruitCaptain=Train a captain
 TxtRecruitBoss=Train a boss
-DescCaptain=The Captain is the leader of the fort.||He hits his enemys more precise at melee and ranged combat and causes thereof more damage.
-DescBoss=The Boss is the leader of his gang.||He hits his enemys more precise at melee and ranged combat and causes thereof more damage.
+DescCaptain=The captain is the leader of the fort.||He hits his enemies more precisely in both melee and ranged combat, and so does more damage.
+DescBoss=The boss is the leader of his gang.||He hits his enemies more precisely in both melee and ranged combat, and so does more damage.

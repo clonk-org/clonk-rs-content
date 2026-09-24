@@ -1,1 +1,1 @@
-Gives your clonk the skill to seek traps.
+Modifies the clonk so that it can search for traps.

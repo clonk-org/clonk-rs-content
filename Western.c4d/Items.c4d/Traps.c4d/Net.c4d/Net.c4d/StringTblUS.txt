@@ -1,1 +1,1 @@
-GetLiving=Exit living
+GetLiving=Take out creature

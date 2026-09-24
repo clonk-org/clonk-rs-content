@@ -9,12 +9,12 @@ TxtNoConMaterial=Construction requires material!
 TxtConstructions=Construction: %s
 TxtNomoresuitabletrees=No more suitable trees!
 CtxConstructionDesc=Construction
-CtxHomeDesc=Back to maintent
+CtxHomeDesc=Back to the main tent
 MsgNoArrow=No arrow!
 
 TxtMagic=Magic
 MsgNotEnoughEnergy=Not enough|magical energy!
-MsgNotEnoughIngredients=Not enough|alchemistic ingredients!|%s|are missing.
+MsgNotEnoughIngredients=Not enough|alchemical ingredients!|Missing:|%s.
 MsgNotReadyToMagic=%s cannot cast|a spell at the moment.
 MnuNoSpells=No spells known
 MnuDecompose=Grind

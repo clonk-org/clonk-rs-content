@@ -1,1 +1,3 @@
-Binoculars to look farther.
+Binoculars for seeing farther.
+
+Use them with 'double-dig'. Then 'Throw' sets the view point or switches between the clonk and the view point. Press 'double-dig' again to stop.

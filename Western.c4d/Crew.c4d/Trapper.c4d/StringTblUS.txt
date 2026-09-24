@@ -1,7 +1,7 @@
 CtxConstructionDesc=Construction
 CtxHomeDesc=Back to base
 CtxRelease=Release
-CtxDeTrap=Trap disarm
+CtxDeTrap=Disarm trap
 CtrlMenuDesc=Menu
 CtrlInventoryDesc=Shift inventory
 TxtCraft=Craft

@@ -1,3 +1,3 @@
-The shaman tepee serves to store mana and to construct magic amulets. 
+The shaman tepee is used to make amulets. 'Dig' shows the tribe's mystic points. The more of these points a tribe has, the more mana grinding bones yields and the better its potions work.
 
 Indians can train their chief here.
