@@ -18,6 +18,7 @@ import sys
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "tools"))
+import group_entry  # noqa: E402
 from packs import Manifest  # noqa: E402
 
 MANIFEST = Manifest.load(REPO_ROOT)
@@ -98,6 +99,35 @@ PLAYER_TEXT_ARGUMENTS = {
     "PlayerMessage": (1,),
     "SetScoreboardData": (2,),
 }
+
+# Arguments that name something the engine looks up: a variable, a function,
+# an effect, an action or a menu command. C4ScriptHost::MakeScript replaces a
+# string-table placeholder from the table of the player's own language
+# (C4ScriptHost.cpp:56-57, 66-75), so a placeholder there names something
+# different in each language (clonk-org/clonk-rs-content#149).
+NAME_ARGUMENTS = {
+    "AddEffect": (0,),
+    "AddMenuItem": (1,),
+    "Call": (0,),
+    "ChangeEffect": (0,),
+    "CheckEffect": (0,),
+    "DefinitionCall": (1,),
+    "EffectCall": (2,),
+    "GameCall": (0,),
+    "GameCallEx": (0,),
+    "GetEffect": (0,),
+    "GetEffectCount": (0,),
+    "GlobalN": (0,),
+    "LocalN": (0,),
+    "ObjectCall": (1,),
+    "ObjectSetAction": (1,),
+    "PrivateCall": (1,),
+    "ProtectedCall": (1,),
+    "RemoveEffect": (0,),
+    "ScheduleCall": (1,),
+    "SetAction": (0,),
+}
+PLACEHOLDER_ARGUMENT = re.compile(r'"\$[^"$]+\$"')
 
 
 def git(*args: str, input_bytes: bytes | None = None) -> bytes:
@@ -420,7 +450,9 @@ def call_arguments(text: str, opening_parenthesis: int) -> tuple[list[str], int]
     return None
 
 
-def player_text_calls(text: str):
+def calls(text: str, functions: dict[str, tuple[int, ...]]):
+    """Each call of one of `functions` in C4Script `text`: its name, its
+    argument sources and the line it starts on."""
     index = 0
     while index < len(text):
         if text[index] == '"':
@@ -438,7 +470,7 @@ def player_text_calls(text: str):
         while index < len(text) and (text[index].isalnum() or text[index] == "_"):
             index += 1
         name = text[start:index]
-        if name not in PLAYER_TEXT_ARGUMENTS:
+        if name not in functions:
             continue
 
         opening = index
@@ -475,7 +507,7 @@ def hardcoded_player_text_problems(paths: list[Path], excluded: set[Path]) -> li
             continue
 
         text = (REPO_ROOT / path).read_bytes().decode("latin-1")
-        for name, arguments, line_number in player_text_calls(text):
+        for name, arguments, line_number in calls(text, PLAYER_TEXT_ARGUMENTS):
             for argument_index in PLAYER_TEXT_ARGUMENTS[name]:
                 if argument_index >= len(arguments):
                     continue
@@ -488,6 +520,55 @@ def hardcoded_player_text_problems(paths: list[Path], excluded: set[Path]) -> li
                             f"{path}:{line_number}: hard-coded German player text: "
                             f"{', '.join(residue)}"
                         )
+
+    return problems
+
+
+def packed_scripts(image: bytes, location: str):
+    """Each script in a packed group image, with its path inside the group."""
+    entries, data_start = group_entry.records(image)
+    for entry in entries:
+        name = entry["name"].decode("latin-1")
+        begin = data_start + entry["offset"]
+        data = image[begin : begin + entry["size"]]
+        if entry["child"]:
+            yield from packed_scripts(data, f"{location}/{name}")
+        elif name.casefold().endswith(".c"):
+            yield f"{location}/{name}", data
+
+
+def scripts(paths: list[Path], excluded: set[Path]):
+    """Each maintained C4Script source, plain or inside a packed group, as
+    (location, text)."""
+    for path in paths:
+        if path in excluded or not is_group_content(path):
+            continue
+        if path.suffix.casefold() == ".c":
+            yield str(path), (REPO_ROOT / path).read_bytes().decode("latin-1")
+        elif path.suffix.casefold() in GROUP_SUFFIXES:
+            raw = (REPO_ROOT / path).read_bytes()
+            if raw[:2] != group_entry.MAGIC:
+                continue
+            for location, data in packed_scripts(group_entry.unpack(raw), str(path)):
+                yield location, data.decode("latin-1")
+
+
+def placeholder_name_problems(paths: list[Path]) -> list[str]:
+    """Pending localization excuses missing English, not a placeholder that
+    already makes each language run different code, so every script counts."""
+    problems = []
+
+    for path, text in scripts(paths, set()):
+        for name, arguments, line_number in calls(text, NAME_ARGUMENTS):
+            for argument_index in NAME_ARGUMENTS[name]:
+                if argument_index >= len(arguments):
+                    continue
+                argument = arguments[argument_index].strip()
+                if PLACEHOLDER_ARGUMENT.fullmatch(argument):
+                    problems.append(
+                        f"{path}:{line_number}: {name} names something with "
+                        f"string-table placeholder {argument}, which differs per language"
+                    )
 
     return problems
 
@@ -525,6 +606,7 @@ def main() -> int:
         + localized_metadata_problems(paths, pending)
         + german_residue_problems(paths, pending)
         + hardcoded_player_text_problems(paths, pending)
+        + placeholder_name_problems(paths)
     )
     if not has_localization_sources(paths):
         problems.append("no localization sources found")
