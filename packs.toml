@@ -269,7 +269,6 @@ bytes = "preserve"
 upstream_version = "2.0"
 localization = [
     "clonk-org/clonk-rs-content#68",
-    "clonk-org/clonk-rs-content#76",
     "clonk-org/clonk-rs-content#77",
 ]
 # Scenario-private definitions stay beside their consumers. Left packed, one
