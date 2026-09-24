@@ -4,7 +4,7 @@
 
 func Initialize()
 {
-  Message("Ich sollte mich beeilen mit der Rakete fertig zu werden. | Sonst werde ich hier auch noch verrecken.");
+  Message("$MsgStart$");
   //Zähler starten!
   // Spielziele setzen
   RemoveAll(CROB);

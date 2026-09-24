@@ -1,2 +1,2 @@
 DE:Schwarzmuschel
-US:Blackshell
+US:Black shell

@@ -1,0 +1,2 @@
+Seabed plant.
+When a Clonk approaches, the blossom of the sea plant closes up.

@@ -1,2 +1,2 @@
 DE:Rubinmuschel
-US:Rubinshell
+US:Ruby shell

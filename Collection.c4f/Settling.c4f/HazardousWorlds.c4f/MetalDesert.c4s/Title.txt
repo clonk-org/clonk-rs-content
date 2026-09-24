@@ -1,2 +1,2 @@
 DE:Eisenwüste
-US:Metaldesert
+US:Metal Desert
