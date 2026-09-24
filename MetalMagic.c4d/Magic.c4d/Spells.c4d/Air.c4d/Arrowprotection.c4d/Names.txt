@@ -1,2 +1,2 @@
 DE:Pfeilabwehr
-US:Arrowprotection
+US:Arrow protection

@@ -442,7 +442,7 @@ public func ContainedDig(pClonk)
 
 public func ContextExit(pClonk)
 {
-  [Ausstieg|Image=SSY1:5]
+  [$DescGetOut$|Image=SSY1:5]
   SetCommand(pClonk, "Exit");
 }
 

@@ -5,3 +5,5 @@ MsgNoPlace=%s kann hier nicht landen!
 CtxGriffonCall=Greif rufen
 CtxSaurianCall=Echse rufen
 CtrlActivateDesc=Bogen einsetzen
+DescCommands=Befehle
+MnuCommands=Befehle
