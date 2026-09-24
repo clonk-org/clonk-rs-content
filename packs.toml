@@ -271,7 +271,6 @@ bytes = "preserve"
 upstream_version = "2.0"
 localization = [
     "clonk-org/clonk-rs-content#68",
-    "clonk-org/clonk-rs-content#73",
     "clonk-org/clonk-rs-content#74",
     "clonk-org/clonk-rs-content#75",
     "clonk-org/clonk-rs-content#76",
@@ -319,7 +318,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/U
 origin = "ucc"
 bytes = "preserve"
 upstream_version = "R1.9"
-localization = ["clonk-org/clonk-rs-content#73"]
 
 # Definitions shared by separate scenario families, so they occupy the data
 # root. Left packed, one file each.
