@@ -420,7 +420,9 @@ def call_arguments(text: str, opening_parenthesis: int) -> tuple[list[str], int]
     return None
 
 
-def player_text_calls(text: str):
+def calls(text: str, functions: dict[str, tuple[int, ...]]):
+    """Each call of one of `functions` in C4Script `text`: its name, its
+    argument sources and the line it starts on."""
     index = 0
     while index < len(text):
         if text[index] == '"':
@@ -438,7 +440,7 @@ def player_text_calls(text: str):
         while index < len(text) and (text[index].isalnum() or text[index] == "_"):
             index += 1
         name = text[start:index]
-        if name not in PLAYER_TEXT_ARGUMENTS:
+        if name not in functions:
             continue
 
         opening = index
@@ -475,7 +477,7 @@ def hardcoded_player_text_problems(paths: list[Path], excluded: set[Path]) -> li
             continue
 
         text = (REPO_ROOT / path).read_bytes().decode("latin-1")
-        for name, arguments, line_number in player_text_calls(text):
+        for name, arguments, line_number in calls(text, PLAYER_TEXT_ARGUMENTS):
             for argument_index in PLAYER_TEXT_ARGUMENTS[name]:
                 if argument_index >= len(arguments):
                     continue
