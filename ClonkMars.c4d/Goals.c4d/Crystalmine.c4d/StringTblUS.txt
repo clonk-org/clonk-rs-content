@@ -1,0 +1,2 @@
+String0=All the crystal has been mined.
+String1=Still|%d units of solid crystal and|%d crystals to mine.|%d crystals sold (%d in total).

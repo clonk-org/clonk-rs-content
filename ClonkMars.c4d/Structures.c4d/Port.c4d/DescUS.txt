@@ -1,3 +1,3 @@
-Save landingplatform for supply capsules.
+Safe landing platform for supply capsules.
 
-The capsules land after completion only here and are save against slipping down or similar dangers.
+Once it is finished, capsules land only here, safe from slipping off and similar dangers.

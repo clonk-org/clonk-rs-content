@@ -1,7 +1,7 @@
 Serves as a research facility for updates and upgrades.
 
-If the green light, everything is fine, it can be researched.
+If the traffic light is green, everything is fine and research can proceed.
 
-Yellow light indicates research enterprise.
+A yellow light signals that research is under way.
 
-In Red light, no research is possible (eg energy)
+With a red light, no research is possible (e.g. for lack of power)

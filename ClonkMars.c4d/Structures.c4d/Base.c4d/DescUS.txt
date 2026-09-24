@@ -1,7 +1,7 @@
-A save base with trading unit
+A safe base with a trading unit.
 
-With jumping you open the menu where you can get supply capsules. These land somewhere near or you build a capsule port. You must wait for five minutes, if you accidently destry your capsule.
+Jump opens the menu for ordering supply capsules. They land somewhere nearby, unless you build a capsule port. If a capsule breaks, you have to wait five minutes for a new one.
 
-Clonks can regenerate their health here.
+Inside the base, the Clonk heals bit by bit.
 
-You also can produce Clonks. While the breeding process is running, there must be always at least one Clonk, enough room, a green base and power. If one of these requirements is not redeemed, the process will fail and start from the beginning. The process always can be started and canceled from within the menue.
+Clonks can also be reproduced. For that, at least one Clonk, enough room, a green base and power must be present at all(!) times while breeding. If any of these conditions fails even briefly, the process fails and starts over. The process can be started and stopped with the context menu.

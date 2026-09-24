@@ -1,1 +1,1 @@
-Grab+Dig to pick up. Dig-Double to make a crystal.
+Can be harvested with grab + dig. Double dig processes the raw crystal further.

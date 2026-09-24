@@ -1,11 +1,12 @@
-Produces finished products out of raw materials.
+Makes finished products from raw materials.
 
-Continuous production with item selection and confirmation with Special2, cancel with grab.
+Continuous production: select an item and confirm with Special2, cancel with Dig.
 
-With jump you can get to the menu with building-possibilitys with available material. With dig are all buildabile construction and the necessary components visible.
+Jump opens the menu of what can be built with the materials at hand. Dig shows everything that can be built, including the components required.
 
-That the lab can produce plastic, it must be connected with the oil tank.
+For the unit to produce plastic, it has to be connected to an oil tank.
 
-Grab to Show the costs for the Items.
-{{METL}} = 2Pieces of Earth
-{{PSTC}} = 300 Oil
+
+Dig shows the production costs.
+{{METL}} = 2 chunks of earth
+{{PSTC}} = 300 oil

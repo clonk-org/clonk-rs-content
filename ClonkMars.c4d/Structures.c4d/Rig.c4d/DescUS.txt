@@ -1,3 +1,3 @@
-Spuds for fluids.
+Drills for liquids.
 
-For exhausting the oil, the drill tower must be connected with a tank.
+For the oil to be pumped out, the drilling rig has to be connected to a tank.

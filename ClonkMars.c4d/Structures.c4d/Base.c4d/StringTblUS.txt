@@ -1,4 +1,4 @@
-TxtSell=Only Sell
+TxtSell=Sell only
 TxtBuy=Buy
 TxtOrder=Order
 TxtAlreadyCapsule=Only one capsule for|each player allowed!
@@ -12,9 +12,9 @@ TxtAlreadyDeveloped=%s already developed!
 TxtTooStormy=Capsules can't land while it's stormy.
 TxtCapsuleDestroyed=Waiting for a new capsule...
 TxtCallCapsule=Call Capsule...
-TxtTranscribe=Transcribe gold
+TxtTranscribe=Transfer gold
 TxtTranscribeAmmount=Amount: %d    
 TxtTranscribeTo=Choose recipient    
 TxtConfirm=Confirm    
 TxtConfirmTransfer=Confirm: %d to %s
-TxtStop=Break
+TxtStop=Cancel

@@ -46,13 +46,13 @@ protected func RelaunchPlayer(int iPlr)
   SetWealth(iPlr,GetWealth(iPlr)-1); 
   if(GetWealth(iPlr) <= 0)
    {
-    Log("<c ffcc00><i>%s hat versagt. :(</i></c>",GetPlayerName(iPlr));
+    Log("$MsgFailed$",GetPlayerName(iPlr));
     EliminatePlayer(iPlr);
     return(1);
    }
    if(GetWealth(iPlr) <= 1)
    {
-    Log("<c ffcc00><i>%s hat seinen letzten Versuch.</i></c>",GetPlayerName(iPlr));
+    Log("$MsgLastTry$",GetPlayerName(iPlr));
     //neues Crewmitglied
     while(!(GetMaterial(x,y)==Material("Tunnel"))) // irgendwo im Tunnel plazieren
     {

@@ -1,4 +1,3 @@
-SelfKill=%s ist tot.
 Kill=%s wurde von %s gekillt.
 MsgFailed=<c ffcc00><i>%s hat versagt. :(</i></c>
 MsgLastTry=<c ffcc00><i>%s hat seinen letzten Versuch.</i></c>

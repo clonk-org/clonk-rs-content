@@ -1,1 +1,1 @@
-This object provides basic control for all objects, that contains o2.
+Provides the basic functionality of all objects that store oxygen.

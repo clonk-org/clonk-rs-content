@@ -1,2 +1,2 @@
 DE:Meteoritensturm
-US:Meteoritestorm
+US:Meteorite storm

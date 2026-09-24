@@ -1,4 +1,3 @@
-Emits microwaves, which can destroy meteorites. Unwary Clonks may also be on target.
+Emits microwaves that can destroy meteorites. Careless Clonks can be caught too, though!
 
-Control: Grab+Left/Right=Rotate
-Grab+Dig=Shoot a testwarp
+Grab + direction to aim. Grab + dig fires a test shot into the distance.

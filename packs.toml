@@ -203,7 +203,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "clonkmars"
 bytes = "preserve"
 upstream_version = "1.5 [Spirit]"
-localization = ["clonk-org/clonk-rs-content#78"]
 
 [packs."ClonkMars.c4f"]
 rights = "assumed"
@@ -212,7 +211,6 @@ evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md"]
 origin = "clonkmars"
 bytes = "preserve"
 upstream_version = "1.5 [Spirit]"
-localization = ["clonk-org/clonk-rs-content#78"]
 
 [packs."EkeReloaded.c4d"]
 rights = "assumed"
@@ -358,7 +356,6 @@ reason = "Maintainer assumes modification permission for local maintenance; reco
 evidence = ["third_party/RIGHTS.md", "third_party/PROVENANCE.md", "third_party/EPIC/PROVENANCE.md"]
 origin = "epic"
 bytes = "preserve"
-localization = ["clonk-org/clonk-rs-content#78"]
 
 [origins.clonk-party-remake]
 source = "https://ccan.de/cgi-bin/ccan/ccan-view.pl?a=view&i=6111"

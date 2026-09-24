@@ -236,8 +236,8 @@
       ],
       "origin": "clonkmars",
       "file_count": 641,
-      "bytes": 32330245,
-      "sha256": "783dc07f8ce3f18fa8976dc45b72054496217c709570428be2b1e0215b880942"
+      "bytes": 32328196,
+      "sha256": "7363af426773c5cff25a5c4b0f32d5a6d656c48d10ab55eebca4fc2e074f4fbd"
     },
     "ClonkMars.c4f": {
       "rights": "assumed",
@@ -247,9 +247,9 @@
         "third_party/PROVENANCE.md"
       ],
       "origin": "clonkmars",
-      "file_count": 198,
-      "bytes": 12923390,
-      "sha256": "3d43174515c4fc6e8da5b716fd5b6f0bc9abf8d424e438fc5343770804d6269d"
+      "file_count": 199,
+      "bytes": 12859863,
+      "sha256": "6319becddb1a814a4274852237d72423cac1db1ec70401d56ccb21ad8bd4fa28"
     },
     "EkeReloaded.c4d": {
       "rights": "assumed",
@@ -440,9 +440,9 @@
         "third_party/EPIC/PROVENANCE.md"
       ],
       "origin": "epic",
-      "file_count": 137,
-      "bytes": 6012453,
-      "sha256": "728066cda0e88ab17726fdcceea5b55c1fa43b567a5e81ae9e90f5d4a757eb8e"
+      "file_count": 141,
+      "bytes": 5978496,
+      "sha256": "38c8c11fb9c94064f75303a0d60db623e84777cc5d97a1c7836b5bae12d9a463"
     },
     "Collection.c4f/Fun.c4f/ClonkPartyRemake8-clonk-rs-localized.c4s": {
       "origin": "clonk-party-remake",
