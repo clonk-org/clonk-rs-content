@@ -440,9 +440,9 @@
         "third_party/EPIC/PROVENANCE.md"
       ],
       "origin": "epic",
-      "file_count": 141,
-      "bytes": 5978496,
-      "sha256": "38c8c11fb9c94064f75303a0d60db623e84777cc5d97a1c7836b5bae12d9a463"
+      "file_count": 142,
+      "bytes": 5980156,
+      "sha256": "926775d3d634c59f3d159a4ecace2288ec1c7826a9dbc57e7bf8a644cb0c906b"
     },
     "Collection.c4f/Fun.c4f/ClonkPartyRemake8-clonk-rs-localized.c4s": {
       "origin": "clonk-party-remake",
