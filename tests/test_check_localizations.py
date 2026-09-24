@@ -12,7 +12,13 @@ import unittest
 
 
 CHECKER_SOURCE = Path(__file__).with_name("check_localizations.py")
-PACKS_SOURCE = Path(__file__).resolve().parents[1] / "tools/packs.py"
+TOOLS = Path(__file__).resolve().parents[1] / "tools"
+PACKS_SOURCE = TOOLS / "packs.py"
+GROUP_ENTRY_SOURCE = TOOLS / "group_entry.py"
+sys.path.insert(0, str(TOOLS))
+
+import group_entry  # noqa: E402
+from test_check_group_entry import MEMBER_HEADER, image  # noqa: E402
 
 
 class LocalizationCheckerTests(unittest.TestCase):
@@ -38,6 +44,7 @@ class LocalizationCheckerTests(unittest.TestCase):
         shutil.copyfile(CHECKER_SOURCE, checker)
         (self.repository / "tools").mkdir()
         shutil.copyfile(PACKS_SOURCE, self.repository / "tools/packs.py")
+        shutil.copyfile(GROUP_ENTRY_SOURCE, self.repository / "tools/group_entry.py")
         self.checker = checker
         self.write_manifest()
 
@@ -372,6 +379,63 @@ class LocalizationCheckerTests(unittest.TestCase):
             "Maintained.c4d/Script.c",
             'AddMenuItem("$Label$", "Call(\\"Keine Objekte gefunden\\")", '
             'ICON, this(), 0, 0, "$Description$");\n',
+        )
+
+        result = self.run_checker()
+
+        self.assert_checker_passes(result)
+
+    def test_placeholder_naming_a_local_variable_fails(self) -> None:
+        # clonk-org/clonk-rs-content#149: the variable is `local Relaunchs`,
+        # so an English game asks LocalN for `Relaunches`, which is nil.
+        self.write("Maintained.c4s/StringTblDE.txt", "Count=Relaunchs\r\n")
+        self.write("Maintained.c4s/StringTblUS.txt", "Count=Relaunches\r\n")
+        self.write("Maintained.c4s/Script.c", 'LocalN("$Count$", pClonk) = 3;\n')
+
+        result = self.run_checker()
+
+        self.assert_checker_fails(result, "Script.c:1", "LocalN", "$Count$")
+
+    def test_placeholder_menu_command_inside_a_packed_scenario_fails(self) -> None:
+        # The command names `func Doof`; only the caption may be translated.
+        scenario = image(
+            [
+                ("StringTblDE.txt", b"Board=Doof\r\n"),
+                ("StringTblUS.txt", b"Board=Dumb\r\n"),
+                ("Script.c", b'AddMenuItem("$Board$", "$Board$", ROCK, pClonk);\r\n'),
+            ]
+        )
+        self.write("Maintained.c4f/Fight.c4s", group_entry.pack(scenario, MEMBER_HEADER))
+        self.write("Maintained.c4f/DescDE.txt", "Beschreibung")
+        self.write("Maintained.c4f/DescUS.txt", "Description")
+
+        result = self.run_checker()
+
+        self.assert_checker_fails(
+            result, "Maintained.c4f/Fight.c4s/Script.c:1", "AddMenuItem", "$Board$"
+        )
+
+    def test_placeholder_name_in_a_pending_scope_still_fails(self) -> None:
+        # Pending localization excuses missing English, not a placeholder
+        # that already makes each language run different code.
+        self.write_manifest(
+            '[packs."Collection.c4f"]',
+            'origin = "import"',
+            'localization = ["clonk-org/clonk-rs-content#74"]',
+        )
+        self.write("Collection.c4f/DescDE.txt", "Beschreibung")
+        self.write("Collection.c4f/Fight.c4s/Script.c", 'LocalN("$Count$", pClonk) = 3;\n')
+
+        result = self.run_checker()
+
+        self.assert_checker_fails(result, "Collection.c4f/Fight.c4s/Script.c:1", "LocalN")
+
+    def test_translated_menu_caption_with_a_named_command_passes(self) -> None:
+        self.write("Maintained.c4d/DescDE.txt", "Beschreibung")
+        self.write("Maintained.c4d/DescUS.txt", "Description")
+        self.write(
+            "Maintained.c4d/Script.c",
+            'AddMenuItem("$Board$", "Doof", ROCK, pClonk, 0, 0, "$BoardInfo$");\n',
         )
 
         result = self.run_checker()
