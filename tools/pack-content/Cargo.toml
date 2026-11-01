@@ -19,7 +19,7 @@ toml = "1"
 # zlib-rs rather than miniz_oxide — so treat a bump here the way
 # .github/dependabot.yml says to, as a content change whose digest was measured
 # before it merged.
-zip = { version = "8.6", default-features = false, features = ["deflate"] }
+zip = { version = "9.1", default-features = false, features = ["deflate"] }
 
 [[bin]]
 name = "pack-content"
